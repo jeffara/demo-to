@@ -1,0 +1,82 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "hero",
+      "cards",
+      "quick-moment-rail",
+      "manifesto",
+      "moments-journey",
+      "segment-showcase",
+      "simulator",
+      "flywheel",
+      "accordion",
+      "cta-banner",
+      "modal",
+      "form",
+      "teaser",
+      "banner",
+      "tabs",
+      "breadcrumb",
+      "comparison-table",
+      "app-download",
+      "stats-counter",
+      "testimonials",
+      "timeline",
+      "carousel",
+      "video-player",
+      "in-page-nav",
+      "pagination",
+      "search-bar",
+      "contact-channels",
+      "alert-inline",
+      "tooltip"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "hero",
+      "cards",
+      "manifesto",
+      "moments-journey",
+      "segment-showcase",
+      "simulator",
+      "flywheel",
+      "accordion",
+      "cta-banner",
+      "modal",
+      "form",
+      "teaser",
+      "banner",
+      "tabs",
+      "breadcrumb",
+      "comparison-table",
+      "app-download",
+      "stats-counter",
+      "testimonials",
+      "timeline",
+      "carousel",
+      "video-player",
+      "in-page-nav",
+      "pagination",
+      "search-bar",
+      "contact-channels",
+      "alert-inline",
+      "tooltip"
+    ]
+  },
+  {
+    "id": "header",
+    "components": [
+      "header",
+      "breadcrumb"
+    ]
+  },
+  {
+    "id": "footer",
+    "components": [
+      "footer"
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+/* Bloco Testimonials - Toranja Design System */
+.testimonials-wrapper {
+  max-width: var(--max-width, 1280px);
+  margin: 4rem auto;
+  padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.toranja-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.toranja-testimonial-card {
+  background: var(--theme-surface, #FFFFFF);
+  border: 1px solid var(--theme-border, #E5E7EB);
+  border-radius: var(--radius-lg, 24px);
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.04));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-fast, 0.2s);
+}
+
+.toranja-testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md, 0 8px 24px rgba(0,0,0,0.08));
+}
+
+.testimonial-stars {
+  color: #FFA000;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.testimonial-quote {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--theme-text, #161616);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.testimonial-author-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--inter-orange, #FF6600);
+  color: #FFFFFF;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.author-name {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--theme-text, #161616);
+}
+
+.author-role {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--theme-text-muted, #707070);
+}

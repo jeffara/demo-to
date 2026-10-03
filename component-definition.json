@@ -1,6 +1,6 @@
 [
   {
-    "title": "Toranja - Hero",
+    "title": "Toranja: Hero",
     "id": "hero",
     "plugins": {
       "xwalk": {
@@ -15,7 +15,7 @@
     }
   },
   {
-    "title": "Toranja - Cards",
+    "title": "Toranja: Cards",
     "id": "cards",
     "plugins": {
       "xwalk": {
@@ -30,7 +30,7 @@
     }
   },
   {
-    "title": "Toranja - Quick Moment Rail",
+    "title": "Toranja: Quick Moment Rail",
     "id": "quick-moment-rail",
     "plugins": {
       "xwalk": {
@@ -45,7 +45,7 @@
     }
   },
   {
-    "title": "Toranja - Manifesto",
+    "title": "Toranja: Manifesto",
     "id": "manifesto",
     "plugins": {
       "xwalk": {
@@ -60,7 +60,7 @@
     }
   },
   {
-    "title": "Toranja - Moments Journey",
+    "title": "Toranja: Moments Journey",
     "id": "moments-journey",
     "plugins": {
       "xwalk": {
@@ -75,7 +75,7 @@
     }
   },
   {
-    "title": "Toranja - Segment Showcase",
+    "title": "Toranja: Segment Showcase",
     "id": "segment-showcase",
     "plugins": {
       "xwalk": {
@@ -90,7 +90,7 @@
     }
   },
   {
-    "title": "Toranja - Simulator",
+    "title": "Toranja: Simulator",
     "id": "simulator",
     "plugins": {
       "xwalk": {
@@ -105,7 +105,7 @@
     }
   },
   {
-    "title": "Toranja - Flywheel",
+    "title": "Toranja: Flywheel",
     "id": "flywheel",
     "plugins": {
       "xwalk": {
@@ -120,7 +120,7 @@
     }
   },
   {
-    "title": "Toranja - Accordion",
+    "title": "Toranja: Accordion",
     "id": "accordion",
     "plugins": {
       "xwalk": {
@@ -135,14 +135,14 @@
     }
   },
   {
-    "title": "Toranja - CTA Banner",
+    "title": "Toranja: Cta Banner",
     "id": "cta-banner",
     "plugins": {
       "xwalk": {
         "page": {
           "resourceType": "core/franklin/components/block/v1/block",
           "template": {
-            "name": "CTA Banner",
+            "name": "Cta Banner",
             "model": "cta-banner"
           }
         }
@@ -150,7 +150,7 @@
     }
   },
   {
-    "title": "Toranja - Modal Dialog",
+    "title": "Toranja: Modal",
     "id": "modal",
     "plugins": {
       "xwalk": {
@@ -165,7 +165,7 @@
     }
   },
   {
-    "title": "Toranja - Lead Form",
+    "title": "Toranja: Form",
     "id": "form",
     "plugins": {
       "xwalk": {
@@ -180,7 +180,7 @@
     }
   },
   {
-    "title": "Toranja - Teaser",
+    "title": "Toranja: Teaser",
     "id": "teaser",
     "plugins": {
       "xwalk": {
@@ -195,7 +195,7 @@
     }
   },
   {
-    "title": "Toranja - Banner",
+    "title": "Toranja: Banner",
     "id": "banner",
     "plugins": {
       "xwalk": {
@@ -210,7 +210,7 @@
     }
   },
   {
-    "title": "Toranja - Tabs",
+    "title": "Toranja: Tabs",
     "id": "tabs",
     "plugins": {
       "xwalk": {
@@ -219,6 +219,216 @@
           "template": {
             "name": "Tabs",
             "model": "tabs"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Breadcrumb",
+    "id": "breadcrumb",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Breadcrumb",
+            "model": "breadcrumb"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Comparison Table",
+    "id": "comparison-table",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Comparison Table",
+            "model": "comparison-table"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: App Download",
+    "id": "app-download",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "App Download",
+            "model": "app-download"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Stats Counter",
+    "id": "stats-counter",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Stats Counter",
+            "model": "stats-counter"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Testimonials",
+    "id": "testimonials",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Testimonials",
+            "model": "testimonials"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Timeline",
+    "id": "timeline",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Timeline",
+            "model": "timeline"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Carousel",
+    "id": "carousel",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Carousel",
+            "model": "carousel"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Video Player",
+    "id": "video-player",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Video Player",
+            "model": "video-player"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: In Page Nav",
+    "id": "in-page-nav",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "In Page Nav",
+            "model": "in-page-nav"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Pagination",
+    "id": "pagination",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Pagination",
+            "model": "pagination"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Search Bar",
+    "id": "search-bar",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Search Bar",
+            "model": "search-bar"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Contact Channels",
+    "id": "contact-channels",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Contact Channels",
+            "model": "contact-channels"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Alert Inline",
+    "id": "alert-inline",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Alert Inline",
+            "model": "alert-inline"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja: Tooltip",
+    "id": "tooltip",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Tooltip",
+            "model": "tooltip"
           }
         }
       }

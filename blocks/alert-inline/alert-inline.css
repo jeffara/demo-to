@@ -1,0 +1,46 @@
+/* Bloco Alert Inline - Toranja Design System */
+.alert-inline-wrapper {
+  max-width: var(--max-width, 1024px);
+  margin: 2rem auto;
+  padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.toranja-alert-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-md, 16px);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.alert-info {
+  background: #EBF3FC;
+  border: 1px solid #C2DCFA;
+  color: #0D47A1;
+}
+
+.alert-warning {
+  background: #FFF8E1;
+  border: 1px solid #FFE082;
+  color: #E65100;
+}
+
+.alert-success {
+  background: #E8F5E9;
+  border: 1px solid #A5D6A7;
+  color: #1B5E20;
+}
+
+.alert-error {
+  background: #FFEBEE;
+  border: 1px solid #FFCDD2;
+  color: #B71C1C;
+}
+
+.alert-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}

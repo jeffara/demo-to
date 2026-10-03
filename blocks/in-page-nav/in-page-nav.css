@@ -1,0 +1,46 @@
+/* Bloco In-Page Nav - Toranja Design System */
+.in-page-nav-wrapper {
+  position: sticky;
+  top: var(--header-height, 72px);
+  z-index: 900;
+  background: var(--theme-surface, rgba(255,255,255,0.95));
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--theme-border, #E5E7EB);
+  padding: 0.75rem 0;
+}
+
+.toranja-in-page-nav {
+  max-width: var(--max-width, 1280px);
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.in-page-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.in-page-nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.in-page-nav-item {
+  color: var(--theme-text-muted, #707070);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: var(--radius-full, 9999px);
+  transition: all var(--transition-fast, 0.2s);
+}
+
+.in-page-nav-item:hover,
+.in-page-nav-item.active {
+  color: var(--inter-orange, #FF6600);
+  background: var(--theme-surface-subtle, var(--inter-sand, #FDF8EE));
+}

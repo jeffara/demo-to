@@ -1,0 +1,72 @@
+/* Bloco Timeline - Toranja Design System */
+.timeline-wrapper {
+  max-width: var(--max-width, 1024px);
+  margin: 4rem auto;
+  padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.toranja-timeline-track {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.toranja-timeline-track::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 24px;
+  width: 2px;
+  background: var(--theme-border, #E5E7EB);
+}
+
+.toranja-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+  position: relative;
+}
+
+.timeline-node {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--theme-surface, #FFFFFF);
+  border: 2px solid var(--inter-orange, #FF6600);
+  color: var(--inter-orange, #FF6600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display, 'Citrina', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  box-shadow: 0 0 0 6px var(--theme-surface-subtle, var(--inter-sand, #FDF8EE));
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline-content {
+  background: var(--theme-surface, #FFFFFF);
+  border: 1px solid var(--theme-border, #E5E7EB);
+  border-radius: var(--radius-lg, 24px);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.04));
+  flex: 1;
+}
+
+.timeline-step-title {
+  font-family: var(--font-heading, 'Citrina', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--theme-text, #161616);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-step-desc {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 0.9375rem;
+  color: var(--theme-text-muted, #707070);
+  line-height: 1.6;
+}

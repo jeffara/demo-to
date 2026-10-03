@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Showcase Banco Inter — Design System Toranja & AEM EDS</title>
+  <title>Showcase Banco Inter — Catálogo Vivo dos 31 Componentes Toranja & AEM EDS</title>
   
   <!-- Fontes Oficiais Toranja / Google Fonts Fallback -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,35 @@
   <!-- Design Tokens e Estilos Globais -->
   <link rel="stylesheet" href="./styles/styles.css">
   
-  <!-- Estilos dos Blocos e Moléculas Oficiais -->
+  <!-- Estilos de Todos os 29 Blocos Toranja Oficiais -->
   <link rel="stylesheet" href="./blocks/banner/banner.css">
-  <link rel="stylesheet" href="./blocks/tabs/tabs.css">
+  <link rel="stylesheet" href="./blocks/breadcrumb/breadcrumb.css">
+  <link rel="stylesheet" href="./blocks/search-bar/search-bar.css">
+  <link rel="stylesheet" href="./blocks/alert-inline/alert-inline.css">
   <link rel="stylesheet" href="./blocks/hero/hero.css">
+  <link rel="stylesheet" href="./blocks/stats-counter/stats-counter.css">
+  <link rel="stylesheet" href="./blocks/in-page-nav/in-page-nav.css">
+  <link rel="stylesheet" href="./blocks/manifesto/manifesto.css">
+  <link rel="stylesheet" href="./blocks/moments-journey/moments-journey.css">
+  <link rel="stylesheet" href="./blocks/segment-showcase/segment-showcase.css">
+  <link rel="stylesheet" href="./blocks/tabs/tabs.css">
   <link rel="stylesheet" href="./blocks/cards/cards.css">
-  <link rel="stylesheet" href="./blocks/accordion/accordion.css">
+  <link rel="stylesheet" href="./blocks/carousel/carousel.css">
+  <link rel="stylesheet" href="./blocks/comparison-table/comparison-table.css">
   <link rel="stylesheet" href="./blocks/simulator/simulator.css">
+  <link rel="stylesheet" href="./blocks/video-player/video-player.css">
+  <link rel="stylesheet" href="./blocks/flywheel/flywheel.css">
+  <link rel="stylesheet" href="./blocks/timeline/timeline.css">
+  <link rel="stylesheet" href="./blocks/testimonials/testimonials.css">
+  <link rel="stylesheet" href="./blocks/accordion/accordion.css">
+  <link rel="stylesheet" href="./blocks/tooltip/tooltip.css">
+  <link rel="stylesheet" href="./blocks/contact-channels/contact-channels.css">
+  <link rel="stylesheet" href="./blocks/pagination/pagination.css">
+  <link rel="stylesheet" href="./blocks/app-download/app-download.css">
   <link rel="stylesheet" href="./blocks/cta-banner/cta-banner.css">
+  <link rel="stylesheet" href="./blocks/teaser/teaser.css">
+  <link rel="stylesheet" href="./blocks/form/form.css">
+  <link rel="stylesheet" href="./blocks/modal/modal.css">
 
   <style>
     /* Barra de Controle de Demonstração (Showcase Toolbar) */
@@ -28,7 +49,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(22, 22, 22, 0.94);
+      background: rgba(22, 22, 22, 0.95);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       color: #FFFFFF;
@@ -94,67 +115,11 @@
       border-color: var(--inter-orange);
     }
 
-    /* Container do Banner de Topo */
     .banner-wrapper {
       max-width: var(--max-width);
-      margin: 1rem auto 0 auto;
+      margin: 1.5rem auto 0 auto;
       padding: 0 clamp(1.25rem, 4vw, 3.5rem);
-    }
-
-    /* Sessão de Átomos e Tokens (Visual Spec) */
-    .atoms-showcase-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .atom-card {
-      background: var(--theme-surface, #FFFFFF);
-      border: 1px solid var(--theme-border, var(--inter-gray));
-      border-radius: var(--radius-md);
-      padding: 1.75rem;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .atom-title {
-      font-family: var(--font-heading);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--theme-text, var(--inter-black));
-      margin-bottom: 0.5rem;
-    }
-
-    .atom-desc {
-      font-size: 0.875rem;
-      color: var(--theme-text-muted, var(--inter-graphite));
-      margin-bottom: 1.25rem;
-    }
-
-    .atom-preview {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .color-swatch-list {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .color-swatch {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.65rem;
-      font-weight: bold;
-      color: #FFF;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-sizing: border-box;
     }
 
     .section-header-block {
@@ -171,6 +136,101 @@
 
     .section-header-block p {
       color: var(--theme-text-muted) !important;
+      margin-bottom: 2.25rem !important;
+    }
+
+    /* Tag de Especificação Visual do Bloco */
+    .component-spec-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(234, 113, 0, 0.1);
+      border: 1px solid rgba(234, 113, 0, 0.25);
+      color: var(--inter-orange);
+      font-family: var(--font-mono, monospace);
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* ==========================================================================\n       SIMULAÇÃO PIXEL-PERFECT DA SUPERFÍCIE WEBVIEW (APP MOBILE)\n       ========================================================================== */
+    html[toranja-surface="webview"] {
+      background-color: #0B0E14 !important;
+      padding: 0 1rem;
+    }
+
+    html[toranja-surface="webview"] body {
+      background-color: #0B0E14 !important;
+    }
+
+    html[toranja-surface="webview"] main {
+      max-width: 420px !important;
+      margin: 2rem auto !important;
+      background-color: var(--theme-bg) !important;
+      border-radius: 46px !important;
+      box-shadow: 0 25px 75px rgba(0, 0, 0, 0.75), 0 0 0 12px #22252C !important;
+      overflow: hidden !important;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    html[toranja-surface="webview"] main::before {
+      content: '9:41  •  Super App Inter';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      background: var(--theme-surface-subtle);
+      color: var(--theme-text-muted);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--theme-border);
+    }
+
+    html[toranja-surface="webview"] .banner-wrapper {
+      max-width: 100% !important;
+      padding: 0 1rem !important;
+      margin: 1rem auto 0 auto !important;
+    }
+
+    html[toranja-surface="webview"] .section {
+      padding: 2.5rem 0 !important;
+    }
+
+    html[toranja-surface="webview"] .section > div {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+
+    html[toranja-surface="webview"] .hero-grid {
+      grid-template-columns: 1fr !important;
+      gap: 2rem !important;
+    }
+
+    html[toranja-surface="webview"] .hero-visual .portal-frame {
+      max-width: 280px !important;
+      margin: 0 auto !important;
+    }
+
+    html[toranja-surface="webview"] .hero-actions {
+      flex-direction: column !important;
+      width: 100% !important;
+    }
+
+    html[toranja-surface="webview"] .hero-actions a.button {
+      width: 100% !important;
+    }
+
+    html[toranja-surface="webview"] .cards-list {
+      grid-template-columns: 1fr !important;
+    }
+
+    html[toranja-surface="webview"] .sim-results {
+      grid-template-columns: 1fr !important;
+      gap: 0.85rem !important;
     }
   </style>
 </head>
@@ -181,7 +241,7 @@
     <div class="showcase-brand">
       <span style="color: var(--inter-orange); font-size: 1.25rem; font-weight: 800;">inter</span>
       <span>Toranja DS & AEM EDS</span>
-      <span class="showcase-badge">Live Spec</span>
+      <span class="showcase-badge">31 Componentes (29 de Conteúdo + Header & Footer)</span>
     </div>
     
     <div class="showcase-controls">
@@ -199,35 +259,85 @@
         <label for="surfaceSwitcher" class="control-label">Superfície:</label>
         <select id="surfaceSwitcher" class="showcase-select">
           <option value="desktop" selected>Desktop (Web)</option>
-          <option value="webview">Webview (App Mobile)</option>
+          <option value="webview">Webview (Super App Mobile)</option>
         </select>
       </div>
     </div>
   </aside>
 
-  <!-- MOLÉCULA: BANNER PROMOCIONAL DE TOPO -->
-  <div class="banner-wrapper">
-    <div class="banner promo" role="region" aria-label="Aviso Promocional">
-      <div class="toranja-banner-container">
-        <div class="toranja-banner-icon">
-          <span>✨</span>
+  <!-- CONTEÚDO PRINCIPAL (DENTRO DO MAIN) -->
+  <main>
+    <!-- BLOCO 1: BANNER PROMOCIONAL -->
+    <div class="banner-wrapper">
+      <span class="component-spec-badge"><span class="badge-type" style="background: #00B167; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Molécula</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">banner</span> · Aviso Promocional</span>
+      <div class="banner promo" role="region" aria-label="Aviso Promocional">
+        <div class="toranja-banner-container">
+          <div class="toranja-banner-icon">
+            <span>✨</span>
+          </div>
+          <div class="toranja-banner-content">
+            <h4>Super App Day: Ganhe 2x pontos no Inter Loop</h4>
+            <p>Aproveite compras com cashback turbinado em mais de 500 lojas parceiras no Inter Shop.</p>
+          </div>
+          <div class="toranja-banner-action">
+            <a href="#cards" class="button secondary">Aproveitar Oferta</a>
+          </div>
         </div>
-        <div class="toranja-banner-content">
-          <h4>Super App Day: Ganhe 2x pontos no Inter Loop</h4>
-          <p>Aproveite compras com cashback turbinado em mais de 500 lojas parceiras no Inter Shop.</p>
-        </div>
-        <div class="toranja-banner-action">
-          <a href="#cards" class="button secondary">Aproveitar Oferta</a>
-        </div>
-        <button class="toranja-banner-close" type="button" aria-label="Fechar aviso" onclick="this.closest('.banner-wrapper').style.display='none'">×</button>
       </div>
     </div>
-  </div>
 
-  <main>
-    <!-- ORGANISMO: HERO TORANJA COM PORTAL ASSIMÉTRICO -->
+    <!-- BLOCO 2: BREADCRUMB (TRILHA DE NAVEGAÇÃO & SEO) -->
+    <div class="section" style="padding-top: 1rem; padding-bottom: 0.5rem;">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #00B167; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Molécula</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">breadcrumb</span> · Trilha de Navegação Dinâmica & SEO</span>
+        <div class="breadcrumb">
+          <nav aria-label="Trilha de Navegação (Breadcrumb)" class="toranja-breadcrumb-nav">
+            <ol class="toranja-breadcrumb-list">
+              <li class="toranja-breadcrumb-item"><a href="/" class="toranja-breadcrumb-link">Início</a><span class="toranja-breadcrumb-separator" aria-hidden="true">›</span></li>
+              <li class="toranja-breadcrumb-item"><a href="#produtos" class="toranja-breadcrumb-link">Pra Você</a><span class="toranja-breadcrumb-separator" aria-hidden="true">›</span></li>
+              <li class="toranja-breadcrumb-item"><span class="toranja-breadcrumb-current" aria-current="page">Conta Digital & Super App</span></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 3: SEARCH BAR (BUSCA INSTANTÂNEA) -->
+    <div class="section" style="padding-top: 1rem; padding-bottom: 2rem;">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #00B167; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Molécula</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">search-bar</span> · Busca Instantânea com Debounce</span>
+        <div class="search-bar">
+          <div class="toranja-search-box">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="search" class="toranja-search-input" placeholder="O que você procura no Inter? (ex: Pix, Cartão Black, Investimentos, Empréstimo)" aria-label="Buscar no portal Inter" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 4: ALERT INLINE (AVISO REGULATÓRIO / SEGURANÇA) -->
+    <div class="section" style="padding-top: 0; padding-bottom: 2rem;">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #00B167; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Molécula</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">alert-inline</span> · Aviso Contextual de Segurança</span>
+        <div class="alert-inline warning">
+          <div class="toranja-alert-box alert-warning" role="alert">
+            <div class="alert-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <div class="alert-content">
+              <strong>Aviso de Segurança:</strong> O Banco Inter nunca solicita sua senha, código de validação por SMS ou transferências de teste por telefone.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 5: HERO COM PORTAL ASSIMÉTRICO -->
     <div class="section hero-container">
       <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">hero</span> · Palco Principal com Portal Assimétrico</span>
         <div class="hero">
           <div class="hero-grid">
             <div class="hero-content">
@@ -257,9 +367,131 @@
       </div>
     </div>
 
-    <!-- MOLÉCULA: ABAS DE NAVEGAÇÃO DE SEGMENTOS (TABS) -->
+    <!-- BLOCO 6: STATS COUNTER (MÉTRICAS DE IMPACTO) -->
+    <div class="section highlight" id="metricas">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #00B167; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Molécula</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">stats-counter</span> · Métricas de Impacto com Contagem</span>
+        <div class="section-header-block">
+          <span class="eyebrow">Solidez & Liderança</span>
+          <h2>Números que comprovam nossa dimensão</h2>
+        </div>
+        <div class="stats-counter">
+          <div class="toranja-stats-grid">
+            <div class="toranja-stat-card">
+              <div class="stat-number">+33M</div>
+              <div class="stat-label">Clientes ativos no Brasil e nos EUA</div>
+            </div>
+            <div class="toranja-stat-card">
+              <div class="stat-number">R$ 100B+</div>
+              <div class="stat-label">Em ativos sob custódia global</div>
+            </div>
+            <div class="toranja-stat-card">
+              <div class="stat-number">102% CDI</div>
+              <div class="stat-label">Rendimento com liquidez diária</div>
+            </div>
+            <div class="toranja-stat-card">
+              <div class="stat-number">R$ 0</div>
+              <div class="stat-label">De anuidade no cartão e tarifa de conta</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 7: CARROSSEL DE VITRINES (CAROUSEL) -->
+    <div class="section" id="carrossel">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">carousel</span> · Vitrines Deslizantes com Swipe Touch</span>
+        <div class="section-header-block">
+          <span class="eyebrow">Vitrines em Destaque</span>
+          <h2>Benefícios que multiplicam seu dinheiro</h2>
+        </div>
+        <div class="carousel">
+          <div class="toranja-carousel-container">
+            <div class="toranja-carousel-track">
+              <div class="toranja-carousel-slide">
+                <span class="tag tag-orange">Cartões</span>
+                <h3 style="margin: 0.75rem 0 0.5rem 0;">Cartão Mastercard Black</h3>
+                <p>Acesso ilimitado a salas VIP LoungeKey, seguro médico internacional e 1 ponto Loop a cada R$ 2,50.</p>
+                <br>
+                <a href="#simulator" class="button primary">Pedir Cartão</a>
+              </div>
+              <div class="toranja-carousel-slide">
+                <span class="tag tag-green">Investimentos</span>
+                <h3 style="margin: 0.75rem 0 0.5rem 0;">CDB Mais Limite</h3>
+                <p>O dinheiro que você guarda rende 100% do CDI com liquidez diária e vira limite no cartão na mesma hora.</p>
+                <br>
+                <a href="#simulator" class="button secondary">Investir Agora</a>
+              </div>
+              <div class="toranja-carousel-slide">
+                <span class="tag tag-blue">Global</span>
+                <h3 style="margin: 0.75rem 0 0.5rem 0;">Câmbio com IOF de 1,1%</h3>
+                <p>Envie dinheiro para a sua conta americana em segundos com cotação comercial justa e cartão de débito internacional.</p>
+                <br>
+                <a href="#tabs" class="button secondary">Abrir Conta EUA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 8: COMPARISON TABLE (MATRIZ COMPARATIVA DE TARIFAS) -->
+    <div class="section highlight" id="comparativo">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">comparison-table</span> · Matriz Comparativa de Tarifas</span>
+        <div class="section-header-block">
+          <span class="eyebrow">Transparência Total</span>
+          <h2>Compare o Inter com os Bancos Tradicionais</h2>
+          <p>Economia real de mais de R$ 1.200 ao ano em tarifas evitadas.</p>
+        </div>
+        <div class="comparison-table">
+          <div class="toranja-table-scroll-wrapper">
+            <table class="toranja-comparison-table">
+              <thead>
+                <tr>
+                  <th>Serviços e Tarifas</th>
+                  <th class="col-highlight"><span class="toranja-table-badge">Mais Escolhido</span>Banco Inter</th>
+                  <th>Bancos Tradicionais</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mensalidade da Conta Corrente</td>
+                  <td class="col-highlight"><strong>R$ 0,00 (Gratuita)</strong></td>
+                  <td>R$ 45,00 a R$ 90,00/mês</td>
+                </tr>
+                <tr>
+                  <td>Anuidade do Cartão Internacional</td>
+                  <td class="col-highlight"><strong>R$ 0,00 (Sem anuidade)</strong></td>
+                  <td>R$ 350,00 a R$ 600,00/ano</td>
+                </tr>
+                <tr>
+                  <td>Transferências Pix & TED</td>
+                  <td class="col-highlight"><span class="icon-status is-checked">✓</span></td>
+                  <td>TED cobrado após limite do pacote</td>
+                </tr>
+                <tr>
+                  <td>Saques na rede Banco24Horas</td>
+                  <td class="col-highlight"><span class="icon-status is-checked">✓</span></td>
+                  <td>Cobrado após limite de saques</td>
+                </tr>
+                <tr>
+                  <td>Conta em Dólar nos EUA (FDIC)</td>
+                  <td class="col-highlight"><span class="icon-status is-checked">✓</span></td>
+                  <td><span class="icon-status is-cross">✕</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 9: ABAS DE NAVEGAÇÃO DE SEGMENTOS (TABS) -->
     <div class="section white-bg" id="tabs">
       <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #00B167; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Molécula</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">tabs</span> · Navegação Horizontal por Abas</span>
         <div class="section-header-block">
           <span class="eyebrow">Molécula Toranja: Tabs</span>
           <h2>Um Inter feito para cada momento</h2>
@@ -275,7 +507,6 @@
           </div>
 
           <div class="toranja-tabpanels">
-            <!-- Painel 1: PF -->
             <div class="toranja-tabpanel active" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
               <h3>Conta Digital PF 100% Gratuita</h3>
               <p>Pix sem tarifas, saques ilimitados na rede Banco24Horas, cartão de crédito internacional e a conveniência de fazer tudo em um só aplicativo.</p>
@@ -284,8 +515,6 @@
                 <a href="#simulator" class="button primary">Abrir Conta PF</a>
               </div>
             </div>
-
-            <!-- Painel 2: PJ -->
             <div class="toranja-tabpanel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
               <h3>Gestão Financeira Completa para sua Empresa</h3>
               <p>Emissão gratuita de até 100 boletos mensais, Pix PJ ilimitado, gestão de folha de pagamento simplificada e maquininha com taxas sob medida.</p>
@@ -294,8 +523,6 @@
                 <a href="#simulator" class="button primary">Abrir Conta PJ</a>
               </div>
             </div>
-
-            <!-- Painel 3: Global -->
             <div class="toranja-tabpanel" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
               <h3>Sua Vida Financeira Global em Dólar</h3>
               <p>Conta sediada nos EUA com garantia FDIC de até US$ 250.000. Dólar comercial com IOF reduzido, compras internacionais e custódia em Wall Street.</p>
@@ -304,8 +531,6 @@
                 <a href="#simulator" class="button primary">Conhecer a Global Account</a>
               </div>
             </div>
-
-            <!-- Painel 4: Win -->
             <div class="toranja-tabpanel" id="panel-3" role="tabpanel" aria-labelledby="tab-3">
               <h3>Wealth Management & Family Office</h3>
               <p>Para clientes com investimentos a partir de R$ 1 milhão. Banker dedicado, assessoria patrimonial internacional e cartão exclusivo Win Mastercard Black.</p>
@@ -319,9 +544,10 @@
       </div>
     </div>
 
-    <!-- ORGANISMO / MOLÉCULA: CARDS DE PRODUTO & ECOSSISTEMA COM TAGS -->
+    <!-- BLOCO 10: CARDS DE PRODUTO & ECOSSISTEMA COM TAGS -->
     <div class="section highlight" id="cards">
       <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">cards</span> · Cards de Ecossistema 360°</span>
         <div class="section-header-block">
           <span class="eyebrow">Moléculas & Átomos: Cards</span>
           <h2>O ecossistema em ação</h2>
@@ -376,9 +602,10 @@
       </div>
     </div>
 
-    <!-- MOLÉCULA: SIMULADOR FINANCEIRO INTERATIVO -->
+    <!-- BLOCO 11: SIMULADOR FINANCEIRO INTERATIVO -->
     <div class="section white-bg" id="simulator">
       <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">simulator</span> · Calculadora Reativa a 102% CDI</span>
         <div class="simulator">
           <div class="mini-simulator" style="margin: 0 auto;">
             <div class="sim-header">
@@ -416,71 +643,103 @@
       </div>
     </div>
 
-    <!-- GUIA DE ESPECIFICAÇÃO DE ÁTOMOS (DESIGN TOKENS & ATOMS) -->
-    <div class="section highlight">
+    <!-- BLOCO 12: VÍDEO PLAYER COM PORTAL TORANJA -->
+    <div class="section highlight" id="video">
       <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">video-player</span> · Vídeo Institucional com Portal Arch</span>
         <div class="section-header-block">
-          <span class="eyebrow">Biblioteca de Átomos Toranja</span>
-          <h2>Componentes Atômicos Incorporados</h2>
-          <p>Os blocos indivisíveis de construção do Design System do Banco Inter.</p>
+          <span class="eyebrow">Manifesto em Vídeo</span>
+          <h2>A revolução do primeiro Super App financeiro</h2>
         </div>
-
-        <div class="atoms-showcase-grid">
-          <!-- Átomo: Cores -->
-          <div class="atom-card">
-            <h3 class="atom-title">Paleta Canônica (Tokens)</h3>
-            <p class="atom-desc">Cores primárias e semânticas registradas no <code>styles.css</code>.</p>
-            <div class="color-swatch-list">
-              <div class="color-swatch" style="background: var(--inter-orange);" title="Laranja Toranja">#EA71</div>
-              <div class="color-swatch" style="background: var(--inter-sand); color: #161616; border: 1px solid #CCC;" title="Areia">#FDF8</div>
-              <div class="color-swatch" style="background: var(--inter-black);" title="Preto Carvão">#1616</div>
-              <div class="color-swatch" style="background: var(--inter-green);" title="Verde Sucesso">#00B1</div>
-              <div class="color-swatch" style="background: var(--inter-blue);" title="Azul Global">#0085</div>
-              <div class="color-swatch" style="background: var(--seg-win-gold); color: #161616;" title="Ouro Win">#C5A0</div>
-            </div>
-          </div>
-
-          <!-- Átomo: Botões -->
-          <div class="atom-card">
-            <h3 class="atom-title">Botões Canônicos</h3>
-            <p class="atom-desc">Átomos de ação com curvas de aceleração e elevação oficiais.</p>
-            <div class="atom-preview">
-              <button class="button primary">Primário</button>
-              <button class="button secondary">Secundário</button>
-              <button class="button outline">Outline</button>
-            </div>
-          </div>
-
-          <!-- Átomo: Tags -->
-          <div class="atom-card">
-            <h3 class="atom-title">Tags & Badges</h3>
-            <p class="atom-desc">Identificadores visuais de status, parcerias e segmentos.</p>
-            <div class="atom-preview">
-              <span class="tag tag-orange">Laranja</span>
-              <span class="tag tag-green">Sem Tarifas</span>
-              <span class="tag tag-blue">Global</span>
-              <span class="tag tag-win">Win Wealth</span>
-              <span class="tag tag-dark">Noturno</span>
-            </div>
-          </div>
-
-          <!-- Átomo: Portais -->
-          <div class="atom-card">
-            <h3 class="atom-title">Portais de Marca</h3>
-            <p class="atom-desc">Máscaras de suporte: Arch, Assimétrico e Pílula.</p>
-            <div class="atom-preview" style="justify-content: space-around; width: 100%;">
-              <div style="width: 50px; height: 70px; background: var(--inter-orange); border-radius: 25px 25px 5px 5px;" title="Arch"></div>
-              <div style="width: 50px; height: 70px; background: var(--inter-orange); border-radius: 25px 5px 5px 25px;" title="Asymmetric"></div>
-              <div style="width: 50px; height: 70px; background: var(--inter-orange); border-radius: 25px;" title="Pill"></div>
+        <div class="video-player">
+          <div class="toranja-video-frame portal-arch">
+            <div class="video-poster-wrapper" style="background-image: url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&auto=format&fit=crop');">
+              <button class="toranja-play-btn" aria-label="Assistir ao vídeo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MOLÉCULA: ACORDEÃO DE DÚVIDAS (ACCORDION) -->
-    <div class="section white-bg">
+    <!-- BLOCO 13: LINHA DO TEMPO / PASSO A PASSO (TIMELINE) -->
+    <div class="section white-bg" id="passo-a-passo">
       <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">timeline</span> · Passo a Passo com Nós Numerados</span>
+        <div class="section-header-block">
+          <span class="eyebrow">Simplicidade Extrema</span>
+          <h2>Abra sua conta em 3 etapas</h2>
+        </div>
+        <div class="timeline">
+          <div class="toranja-timeline-track">
+            <div class="toranja-timeline-item">
+              <div class="timeline-node"><span class="timeline-number">01</span></div>
+              <div class="timeline-content">
+                <h3 class="timeline-step-title">Baixe o Super App</h3>
+                <div class="timeline-step-desc">Faça o download gratuito na App Store ou Google Play e inicie o cadastro com seu CPF.</div>
+              </div>
+            </div>
+            <div class="toranja-timeline-item">
+              <div class="timeline-node"><span class="timeline-number">02</span></div>
+              <div class="timeline-content">
+                <h3 class="timeline-step-title">Validação Segura</h3>
+                <div class="timeline-step-desc">Tire uma selfie para biometria facial e foto de um documento oficial (RG ou CNH).</div>
+              </div>
+            </div>
+            <div class="toranja-timeline-item">
+              <div class="timeline-node"><span class="timeline-number">03</span></div>
+              <div class="timeline-content">
+                <h3 class="timeline-step-title">Conta Pronta para Usar</h3>
+                <div class="timeline-step-desc">Sua conta é ativada em poucos minutos. Você já pode criar chaves Pix e usar seu cartão virtual.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 14: TESTIMONIALS (DEPOIMENTOS & PROVA SOCIAL) -->
+    <div class="section highlight" id="depoimentos">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">testimonials</span> · Prova Social com Avaliações 5 Estrelas</span>
+        <div class="section-header-block">
+          <span class="eyebrow">Voz dos Nossos Clientes</span>
+          <h2>Mais de 33 milhões de pessoas confiam no Inter</h2>
+        </div>
+        <div class="testimonials">
+          <div class="toranja-testimonials-grid">
+            <div class="toranja-testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">“O Inter transformou a forma como eu poupo. O Porquinho rendendo 102% do CDI é imbatível e a conta internacional nos EUA me salvou nas minhas viagens a trabalho.”</p>
+              <div class="testimonial-author-box">
+                <div class="author-avatar">C</div>
+                <div>
+                  <strong class="author-name">Camila Silveira</strong>
+                  <span class="author-role">Cliente Inter One · São Paulo/SP</span>
+                </div>
+              </div>
+            </div>
+            <div class="toranja-testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">“Migrei a folha de pagamento e os recebíveis da minha empresa para o Inter Empresas. Economizei milhares de reais em taxas de boletos e TEDs.”</p>
+              <div class="testimonial-author-box">
+                <div class="author-avatar">R</div>
+                <div>
+                  <strong class="author-name">Rodrigo Mendes</strong>
+                  <span class="author-role">Empresário PJ · Belo Horizonte/MG</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 15: ACORDEÃO DE DÚVIDAS (ACCORDION) -->
+    <div class="section white-bg" id="faq">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #00B167; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Molécula</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">accordion</span> · Gavetas Expansíveis para FAQ</span>
         <div class="section-header-block">
           <span class="eyebrow">Molécula Toranja: Accordion</span>
           <h2>Dúvidas Frequentes</h2>
@@ -523,16 +782,112 @@
       </div>
     </div>
 
-    <!-- ORGANISMO: CTA BANNER FINAL -->
+    <!-- BLOCO 16: GLOSSÁRIO DE TOOLTIPS -->
+    <div class="section" id="glossario">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #0085FF; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Átomo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">tooltip</span> · Micro-Interação & Dicionário Financeiro</span>
+        <div class="section-header-block">
+          <span class="eyebrow">Dicionário Financeiro</span>
+          <h2>Passe o mouse ou toque nos termos para ver a definição</h2>
+        </div>
+        <div class="tooltip" style="text-align: center; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+          <span class="toranja-tooltip-trigger" tabindex="0">
+            <span class="tooltip-term">CDI</span>
+            <span class="tooltip-badge">?</span>
+            <span class="toranja-tooltip-popup" role="tooltip">Certificado de Depósito Interbancário: taxa de juros negociada entre bancos que serve de parâmetro para a rentabilidade da renda fixa no Brasil.</span>
+          </span>
+          <span class="toranja-tooltip-trigger" tabindex="0">
+            <span class="tooltip-term">FDIC</span>
+            <span class="tooltip-badge">?</span>
+            <span class="toranja-tooltip-popup" role="tooltip">Federal Deposit Insurance Corporation: agência do governo dos EUA que garante os depósitos da Global Account do Inter até US$ 250.000.</span>
+          </span>
+          <span class="toranja-tooltip-trigger" tabindex="0">
+            <span class="tooltip-term">FGC</span>
+            <span class="tooltip-badge">?</span>
+            <span class="toranja-tooltip-popup" role="tooltip">Fundo Garantidor de Créditos: entidade que protege depósitos bancários e investimentos de até R$ 250 mil por CPF em caso de intervenção.</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 17: CANAIS DE ATENDIMENTO BACEN -->
+    <div class="section highlight" id="contato">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">contact-channels</span> · Canais Oficiais de Atendimento BACEN</span>
+        <div class="section-header-block">
+          <span class="eyebrow">Suporte Especializado</span>
+          <h2>Canais de Atendimento Oficiais do Inter</h2>
+        </div>
+        <div class="contact-channels">
+          <div class="toranja-contacts-grid">
+            <div class="toranja-contact-card">
+              <span class="contact-badge">Oficial</span>
+              <h3 class="contact-name">Capitais e Regiões Metropolitanas</h3>
+              <div class="contact-info">3003 4070</div>
+              <div class="contact-hours">Atendimento humano de segunda a sábado das 8h às 20h.</div>
+            </div>
+            <div class="toranja-contact-card">
+              <span class="contact-badge">Oficial</span>
+              <h3 class="contact-name">SAC 24 Horas</h3>
+              <div class="contact-info">0800 979 7099</div>
+              <div class="contact-hours">Disponível 24 horas por dia, 7 dias por semana.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 18: APP DOWNLOAD COM QR CODE -->
+    <div class="section white-bg" id="app-download">
+      <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">app-download</span> · Conversão Mobile com QR Code Dinâmico</span>
+        <div class="app-download">
+          <div class="toranja-app-download-card">
+            <div class="app-download-info">
+              <span class="eyebrow">Praticidade na palma da mão</span>
+              <h2 class="app-download-title">Baixe o Super App do Inter</h2>
+              <p class="app-download-subtitle">Aponte a câmera do seu celular para o QR Code ao lado ou acesse sua loja de aplicativos favorita. É gratuito, seguro e rápido.</p>
+              <div class="app-download-buttons">
+                <a href="https://apps.apple.com/br/app/inter/id1071477797" target="_blank" rel="noopener noreferrer" class="store-badge apple-badge">
+                  <div>
+                    <span class="badge-sub">Disponível na</span>
+                    <span class="badge-main">App Store</span>
+                  </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=br.com.intermedium" target="_blank" rel="noopener noreferrer" class="store-badge google-badge">
+                  <div>
+                    <span class="badge-sub">Disponível no</span>
+                    <span class="badge-main">Google Play</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="app-download-qr">
+              <div class="qr-card">
+                <div class="qr-placeholder">
+                  <svg width="120" height="120" viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M0 0h30v30H0zM5 5h20v20H5zM10 10h10v10H10zM70 0h30v30H70zM75 5h20v20H75zM80 10h10v10H80zM0 70h30v30H0zM5 75h20v20H5zM10 80h10v10H10zM40 10h10v10H40zM50 20h10v10H50zM40 30h20v10H40zM70 40h10v20H70zM80 50h20v10H80zM40 70h10v30H40zM60 80h20v20H60zM80 90h20v10H80zM20 40h20v20H20zM30 50h10v10H30z"/>
+                  </svg>
+                </div>
+                <span class="qr-caption">Aponte a câmera</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 19: CTA BANNER FINAL -->
     <div class="section dark-bg">
       <div>
+        <span class="component-spec-badge"><span class="badge-type" style="background: #EA7100; color: #FFF; padding: 2px 7px; border-radius: 999px; font-weight: bold;">Organismo</span> <span style="font-family: monospace; font-weight: bold; color: #161616;">cta-banner</span> · Dobra Final de Fechamento de Alta Conversão</span>
         <div class="cta-banner dark">
           <div class="cta-banner-content" style="text-align: center; max-width: 720px; margin: 0 auto;">
             <h2 class="cta-banner-headline" style="color: #FFFFFF !important; margin-bottom: 1rem;">Pronto para transformar sua vida financeira?</h2>
             <p class="cta-banner-description" style="color: rgba(255, 255, 255, 0.85) !important; margin-bottom: 2rem;">Abra sua conta em menos de 5 minutos, sem burocracia, direto pelo celular.</p>
             <div class="cta-banner-actions" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-              <a href="#" class="button primary">Abra sua conta grátis</a>
-              <a href="#" class="button outline-white">Baixar o Super App</a>
+              <a href="#app-download" class="button primary">Abra sua conta grátis</a>
+              <a href="#app-download" class="button outline-white">Baixar o Super App</a>
             </div>
           </div>
         </div>
@@ -585,12 +940,8 @@
     function updateSimulation() {
       const val = parseFloat(simRange.value);
       simValDisplay.textContent = 'R$ ' + val.toLocaleString('pt-BR');
-
-      // 102% CDI estimado a 10.9% a.a. (~10.91%)
       const interGain = val * 1.10914;
-      // Poupança estimada a ~6.17% a.a.
       const poupGain = val * 1.0617;
-
       simInterResult.textContent = 'R$ ' + interGain.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
       simPoupResult.textContent = 'R$ ' + poupGain.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }

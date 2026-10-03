@@ -1,0 +1,60 @@
+/* Bloco Contact Channels - Toranja Design System */
+.contact-channels-wrapper {
+  max-width: var(--max-width, 1280px);
+  margin: 4rem auto;
+  padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.toranja-contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.toranja-contact-card {
+  background: var(--theme-surface, #FFFFFF);
+  border: 1px solid var(--theme-border, #E5E7EB);
+  border-radius: var(--radius-lg, 24px);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.04));
+  transition: transform var(--transition-fast, 0.2s), border-color var(--transition-fast, 0.2s);
+}
+
+.toranja-contact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--inter-orange, #FF6600);
+}
+
+.contact-badge {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--inter-orange, #FF6600);
+  background: var(--theme-surface-subtle, var(--inter-sand, #FDF8EE));
+  padding: 2px 8px;
+  border-radius: var(--radius-full, 9999px);
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.contact-name {
+  font-family: var(--font-heading, 'Citrina', sans-serif);
+  font-size: 1.25rem;
+  color: var(--theme-text, #161616);
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--inter-orange, #FF6600);
+  margin-bottom: 0.5rem;
+}
+
+.contact-hours {
+  font-size: 0.8125rem;
+  color: var(--theme-text-muted, #707070);
+  line-height: 1.4;
+}
