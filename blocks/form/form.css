@@ -1,0 +1,135 @@
+.form {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.toranja-form {
+  background: var(--inter-white);
+  border: 1px solid var(--inter-gray);
+  border-radius: var(--radius-xl);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  box-shadow: var(--shadow-md);
+}
+
+.form-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-title {
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  color: var(--inter-black);
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  font-size: 0.9375rem;
+  color: var(--inter-graphite);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--inter-black);
+}
+
+.form-group input,
+.form-group select {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--inter-gray);
+  background-color: var(--inter-sand-light);
+  color: var(--inter-black);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--inter-orange);
+  box-shadow: 0 0 0 3px rgba(234, 113, 0, 0.15);
+  background-color: var(--inter-white);
+}
+
+.checkbox-group .checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--inter-graphite);
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  accent-color: var(--inter-orange);
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.checkbox-group a {
+  color: var(--inter-orange);
+  text-decoration: underline;
+}
+
+.form-status.success {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.form-status .success-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 177, 103, 0.15);
+  color: var(--inter-green);
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.form-status h4 {
+  font-size: 1.5rem;
+  color: var(--inter-black);
+  margin-bottom: 0.75rem;
+}
+
+.form-status p {
+  color: var(--inter-graphite);
+  font-size: 1rem;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+}

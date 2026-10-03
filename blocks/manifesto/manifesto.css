@@ -1,0 +1,41 @@
+.manifesto-container {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.manifesto-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 3.8vw, 3rem);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--inter-black);
+  margin-bottom: 2.5rem;
+  border: none;
+  padding: 0;
+}
+
+.manifesto-highlight {
+  color: var(--inter-orange);
+  font-weight: 400;
+}
+
+.manifesto-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--inter-graphite);
+}
+
+.manifesto-divider {
+  width: 40px;
+  height: 2px;
+  background-color: var(--inter-orange);
+}

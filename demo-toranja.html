@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR" toranja-theme="pf-light" toranja-surface="desktop">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase Banco Inter — Design System Toranja & AEM EDS</title>
+  
+  <!-- Fontes Oficiais Toranja / Google Fonts Fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@300;400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Design Tokens e Estilos Globais -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+  <!-- Estilos dos Blocos e Moléculas Oficiais -->
+  <link rel="stylesheet" href="./blocks/banner/banner.css">
+  <link rel="stylesheet" href="./blocks/tabs/tabs.css">
+  <link rel="stylesheet" href="./blocks/hero/hero.css">
+  <link rel="stylesheet" href="./blocks/cards/cards.css">
+  <link rel="stylesheet" href="./blocks/accordion/accordion.css">
+  <link rel="stylesheet" href="./blocks/simulator/simulator.css">
+  <link rel="stylesheet" href="./blocks/cta-banner/cta-banner.css">
+
+  <style>
+    /* Barra de Controle de Demonstração (Showcase Toolbar) */
+    .showcase-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(22, 22, 22, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #FFFFFF;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+    }
+
+    .showcase-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 600;
+    }
+
+    .showcase-badge {
+      background: var(--inter-orange);
+      color: #FFFFFF;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .showcase-controls {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .control-label {
+      color: #A0A0A0;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .showcase-select {
+      background: #2A2A2A;
+      color: #FFFFFF;
+      border: 1px solid #444;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8125rem;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .showcase-select:focus {
+      border-color: var(--inter-orange);
+    }
+
+    /* Container do Banner de Topo */
+    .banner-wrapper {
+      max-width: var(--max-width);
+      margin: 1rem auto 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+    }
+
+    /* Sessão de Átomos e Tokens (Visual Spec) */
+    .atoms-showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .atom-card {
+      background: var(--theme-surface, #FFFFFF);
+      border: 1px solid var(--theme-border, var(--inter-gray));
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .atom-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--theme-text, var(--inter-black));
+      margin-bottom: 0.5rem;
+    }
+
+    .atom-desc {
+      font-size: 0.875rem;
+      color: var(--theme-text-muted, var(--inter-graphite));
+      margin-bottom: 1.25rem;
+    }
+
+    .atom-preview {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .color-swatch-list {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .color-swatch {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: bold;
+      color: #FFF;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .section-header-block {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3rem auto;
+    }
+
+    .section-header-block h2 {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      color: var(--theme-text) !important;
+    }
+
+    .section-header-block p {
+      color: var(--theme-text-muted) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA DE CONTROLE INTERATIVA -->
+  <aside class="showcase-toolbar">
+    <div class="showcase-brand">
+      <span style="color: var(--inter-orange); font-size: 1.25rem; font-weight: 800;">inter</span>
+      <span>Toranja DS & AEM EDS</span>
+      <span class="showcase-badge">Live Spec</span>
+    </div>
+    
+    <div class="showcase-controls">
+      <div class="control-group">
+        <label for="themeSwitcher" class="control-label">Contrato de Tema:</label>
+        <select id="themeSwitcher" class="showcase-select">
+          <option value="pf-light" selected>PF Light (Pessoa Física Padrão)</option>
+          <option value="pf-dark">PF Dark (Pessoa Física Noturno)</option>
+          <option value="pj-light">PJ Light (Pessoa Jurídica)</option>
+          <option value="pj-dark">PJ Dark (Pessoa Jurídica Noturno)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="surfaceSwitcher" class="control-label">Superfície:</label>
+        <select id="surfaceSwitcher" class="showcase-select">
+          <option value="desktop" selected>Desktop (Web)</option>
+          <option value="webview">Webview (App Mobile)</option>
+        </select>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MOLÉCULA: BANNER PROMOCIONAL DE TOPO -->
+  <div class="banner-wrapper">
+    <div class="banner promo" role="region" aria-label="Aviso Promocional">
+      <div class="toranja-banner-container">
+        <div class="toranja-banner-icon">
+          <span>✨</span>
+        </div>
+        <div class="toranja-banner-content">
+          <h4>Super App Day: Ganhe 2x pontos no Inter Loop</h4>
+          <p>Aproveite compras com cashback turbinado em mais de 500 lojas parceiras no Inter Shop.</p>
+        </div>
+        <div class="toranja-banner-action">
+          <a href="#cards" class="button secondary">Aproveitar Oferta</a>
+        </div>
+        <button class="toranja-banner-close" type="button" aria-label="Fechar aviso" onclick="this.closest('.banner-wrapper').style.display='none'">×</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ORGANISMO: HERO TORANJA COM PORTAL ASSIMÉTRICO -->
+    <div class="section hero-container">
+      <div>
+        <div class="hero">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <span class="eyebrow">Dossiê Estratégico · Banco Inter</span>
+              <h1 class="hero-headline">Em todo momento da vida, <span class="text-orange">vejo você</span>.</h1>
+              <p class="hero-description">O Super App financeiro completo que une conta gratuita, investimentos globais, cartão sem anuidade, crédito e compras com cashback direto no saldo.</p>
+              
+              <div class="hero-actions">
+                <a href="#simulator" class="button primary">Abra sua conta grátis</a>
+                <a href="#tabs" class="button secondary">Conhecer o Ecossistema</a>
+              </div>
+
+              <ul class="hero-tags">
+                <li class="hero-tag-item">✓ Sem taxa de manutenção</li>
+                <li class="hero-tag-item">✓ Cartão com cashback ou milhas</li>
+                <li class="hero-tag-item">✓ Global Account em dólar</li>
+              </ul>
+            </div>
+
+            <div class="hero-visual">
+              <div class="portal-frame asymmetric">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80" alt="Cliente Inter utilizando o Super App" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOLÉCULA: ABAS DE NAVEGAÇÃO DE SEGMENTOS (TABS) -->
+    <div class="section white-bg" id="tabs">
+      <div>
+        <div class="section-header-block">
+          <span class="eyebrow">Molécula Toranja: Tabs</span>
+          <h2>Um Inter feito para cada momento</h2>
+          <p>Navegue pelas soluções desenhadas para pessoas físicas, empresas e patrimônios exclusivos.</p>
+        </div>
+
+        <div class="tabs">
+          <div class="toranja-tablist" role="tablist">
+            <button class="toranja-tab-btn active" role="tab" id="tab-0" aria-selected="true" aria-controls="panel-0">Pessoa Física</button>
+            <button class="toranja-tab-btn" role="tab" id="tab-1" aria-selected="false" aria-controls="panel-1">Pessoa Jurídica (PJ)</button>
+            <button class="toranja-tab-btn" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2">Global Account (EUA)</button>
+            <button class="toranja-tab-btn" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3">Inter Win (Wealth)</button>
+          </div>
+
+          <div class="toranja-tabpanels">
+            <!-- Painel 1: PF -->
+            <div class="toranja-tabpanel active" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
+              <h3>Conta Digital PF 100% Gratuita</h3>
+              <p>Pix sem tarifas, saques ilimitados na rede Banco24Horas, cartão de crédito internacional e a conveniência de fazer tudo em um só aplicativo.</p>
+              <br>
+              <div class="button-container">
+                <a href="#simulator" class="button primary">Abrir Conta PF</a>
+              </div>
+            </div>
+
+            <!-- Painel 2: PJ -->
+            <div class="toranja-tabpanel" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+              <h3>Gestão Financeira Completa para sua Empresa</h3>
+              <p>Emissão gratuita de até 100 boletos mensais, Pix PJ ilimitado, gestão de folha de pagamento simplificada e maquininha com taxas sob medida.</p>
+              <br>
+              <div class="button-container">
+                <a href="#simulator" class="button primary">Abrir Conta PJ</a>
+              </div>
+            </div>
+
+            <!-- Painel 3: Global -->
+            <div class="toranja-tabpanel" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+              <h3>Sua Vida Financeira Global em Dólar</h3>
+              <p>Conta sediada nos EUA com garantia FDIC de até US$ 250.000. Dólar comercial com IOF reduzido, compras internacionais e custódia em Wall Street.</p>
+              <br>
+              <div class="button-container">
+                <a href="#simulator" class="button primary">Conhecer a Global Account</a>
+              </div>
+            </div>
+
+            <!-- Painel 4: Win -->
+            <div class="toranja-tabpanel" id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+              <h3>Wealth Management & Family Office</h3>
+              <p>Para clientes com investimentos a partir de R$ 1 milhão. Banker dedicado, assessoria patrimonial internacional e cartão exclusivo Win Mastercard Black.</p>
+              <br>
+              <div class="button-container">
+                <a href="#simulator" class="button primary">Falar com um Banker</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORGANISMO / MOLÉCULA: CARDS DE PRODUTO & ECOSSISTEMA COM TAGS -->
+    <div class="section highlight" id="cards">
+      <div>
+        <div class="section-header-block">
+          <span class="eyebrow">Moléculas & Átomos: Cards</span>
+          <h2>O ecossistema em ação</h2>
+          <p>Cards com composição de tags semânticas, botões primários e tipografia Citrina.</p>
+        </div>
+
+        <div class="cards">
+          <ul class="cards-list">
+            <li class="cards-card">
+              <div class="cards-card-image">
+                <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&auto=format&fit=crop&q=80" alt="Conta Digital">
+              </div>
+              <div class="cards-card-body">
+                <span class="tag tag-green">Sem Tarifas</span>
+                <h3 class="cards-card-title">Conta Digital Completa</h3>
+                <p>Pix ilimitado, transferências gratuitas, recarga e pagamentos instantâneos com total segurança.</p>
+                <div class="button-container">
+                  <a href="#" class="button primary">Abrir Conta</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards-card">
+              <div class="cards-card-image">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80" alt="Cartão Black">
+              </div>
+              <div class="cards-card-body">
+                <span class="tag tag-orange">Pontos Loop</span>
+                <h3 class="cards-card-title">Cartão Mastercard Black</h3>
+                <p>Pontos que nunca expiram no Inter Loop, acesso ilimitado a salas VIP LoungeKey e cashback em fatura.</p>
+                <div class="button-container">
+                  <a href="#" class="button primary">Pedir Cartão</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards-card">
+              <div class="cards-card-image">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80" alt="Investimentos Internacionais">
+              </div>
+              <div class="cards-card-body">
+                <span class="tag tag-blue">Global</span>
+                <h3 class="cards-card-title">Investimentos nos EUA</h3>
+                <p>Ações de Wall Street, ETFs e REITs em dólar comercial direto pelo aplicativo com taxa zero.</p>
+                <div class="button-container">
+                  <a href="#" class="button primary">Investir em Dólar</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOLÉCULA: SIMULADOR FINANCEIRO INTERATIVO -->
+    <div class="section white-bg" id="simulator">
+      <div>
+        <div class="simulator">
+          <div class="mini-simulator" style="margin: 0 auto;">
+            <div class="sim-header">
+              <span class="eyebrow">Simulador Reativo Toranja</span>
+              <h2 class="sim-title">Simule seu Rendimento no Meu Porquinho</h2>
+              <p class="sim-subtitle">Veja quanto seu dinheiro rende a 102% do CDI com liquidez diária e segurança total.</p>
+            </div>
+
+            <div class="sim-controls">
+              <div class="sim-row">
+                <span>Valor Guardado:</span>
+                <strong id="simValDisplay">R$ 5.000</strong>
+              </div>
+              <input type="range" class="sim-slider" id="simRange" min="500" max="50000" step="500" value="5000">
+            </div>
+
+            <div class="sim-results">
+              <div class="sim-res-col highlight">
+                <span>No Inter (102% CDI)</span>
+                <strong id="simInterResult">R$ 5.545,70</strong>
+                <span class="sim-badge">+R$ 545,70 em 1 ano</span>
+              </div>
+              <div class="sim-res-col">
+                <span>Na Poupança Tradicional</span>
+                <strong id="simPoupResult">R$ 5.308,50</strong>
+                <span class="sim-diff-note">+R$ 308,50 em 1 ano</span>
+              </div>
+            </div>
+
+            <div style="text-align: center;">
+              <a href="#" class="button primary" style="width: 100%;">Começar a Investir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUIA DE ESPECIFICAÇÃO DE ÁTOMOS (DESIGN TOKENS & ATOMS) -->
+    <div class="section highlight">
+      <div>
+        <div class="section-header-block">
+          <span class="eyebrow">Biblioteca de Átomos Toranja</span>
+          <h2>Componentes Atômicos Incorporados</h2>
+          <p>Os blocos indivisíveis de construção do Design System do Banco Inter.</p>
+        </div>
+
+        <div class="atoms-showcase-grid">
+          <!-- Átomo: Cores -->
+          <div class="atom-card">
+            <h3 class="atom-title">Paleta Canônica (Tokens)</h3>
+            <p class="atom-desc">Cores primárias e semânticas registradas no <code>styles.css</code>.</p>
+            <div class="color-swatch-list">
+              <div class="color-swatch" style="background: var(--inter-orange);" title="Laranja Toranja">#EA71</div>
+              <div class="color-swatch" style="background: var(--inter-sand); color: #161616; border: 1px solid #CCC;" title="Areia">#FDF8</div>
+              <div class="color-swatch" style="background: var(--inter-black);" title="Preto Carvão">#1616</div>
+              <div class="color-swatch" style="background: var(--inter-green);" title="Verde Sucesso">#00B1</div>
+              <div class="color-swatch" style="background: var(--inter-blue);" title="Azul Global">#0085</div>
+              <div class="color-swatch" style="background: var(--seg-win-gold); color: #161616;" title="Ouro Win">#C5A0</div>
+            </div>
+          </div>
+
+          <!-- Átomo: Botões -->
+          <div class="atom-card">
+            <h3 class="atom-title">Botões Canônicos</h3>
+            <p class="atom-desc">Átomos de ação com curvas de aceleração e elevação oficiais.</p>
+            <div class="atom-preview">
+              <button class="button primary">Primário</button>
+              <button class="button secondary">Secundário</button>
+              <button class="button outline">Outline</button>
+            </div>
+          </div>
+
+          <!-- Átomo: Tags -->
+          <div class="atom-card">
+            <h3 class="atom-title">Tags & Badges</h3>
+            <p class="atom-desc">Identificadores visuais de status, parcerias e segmentos.</p>
+            <div class="atom-preview">
+              <span class="tag tag-orange">Laranja</span>
+              <span class="tag tag-green">Sem Tarifas</span>
+              <span class="tag tag-blue">Global</span>
+              <span class="tag tag-win">Win Wealth</span>
+              <span class="tag tag-dark">Noturno</span>
+            </div>
+          </div>
+
+          <!-- Átomo: Portais -->
+          <div class="atom-card">
+            <h3 class="atom-title">Portais de Marca</h3>
+            <p class="atom-desc">Máscaras de suporte: Arch, Assimétrico e Pílula.</p>
+            <div class="atom-preview" style="justify-content: space-around; width: 100%;">
+              <div style="width: 50px; height: 70px; background: var(--inter-orange); border-radius: 25px 25px 5px 5px;" title="Arch"></div>
+              <div style="width: 50px; height: 70px; background: var(--inter-orange); border-radius: 25px 5px 5px 25px;" title="Asymmetric"></div>
+              <div style="width: 50px; height: 70px; background: var(--inter-orange); border-radius: 25px;" title="Pill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOLÉCULA: ACORDEÃO DE DÚVIDAS (ACCORDION) -->
+    <div class="section white-bg">
+      <div>
+        <div class="section-header-block">
+          <span class="eyebrow">Molécula Toranja: Accordion</span>
+          <h2>Dúvidas Frequentes</h2>
+          <p>Gavetas expansíveis com acessibilidade nativa e chevron animado.</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-list">
+            <details class="accordion-item" open>
+              <summary class="accordion-summary">
+                <span class="accordion-title">A conta digital do Inter é realmente gratuita?</span>
+                <span class="accordion-icon" aria-hidden="true">▾</span>
+              </summary>
+              <div class="accordion-body">
+                <p>Sim! Não cobramos taxas de manutenção, você tem Pix ilimitado e gratuito, transferências sem custo e saques na rede Banco24Horas.</p>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary class="accordion-summary">
+                <span class="accordion-title">Como funciona a Global Account em dólar?</span>
+                <span class="accordion-icon" aria-hidden="true">▾</span>
+              </summary>
+              <div class="accordion-body">
+                <p>A Global Account é uma conta corrente sediada nos Estados Unidos através do Evolve Bank & Trust, membro do FDIC. Você converte reais para dólares em segundos com IOF reduzido.</p>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary class="accordion-summary">
+                <span class="accordion-title">O que é o CDB Mais Limite de Crédito?</span>
+                <span class="accordion-icon" aria-hidden="true">▾</span>
+              </summary>
+              <div class="accordion-body">
+                <p>É uma modalidade onde o valor que você investe no CDB se transforma na mesma hora em limite para o seu cartão de crédito, enquanto o dinheiro continua rendendo 100% do CDI.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORGANISMO: CTA BANNER FINAL -->
+    <div class="section dark-bg">
+      <div>
+        <div class="cta-banner dark">
+          <div class="cta-banner-content" style="text-align: center; max-width: 720px; margin: 0 auto;">
+            <h2 class="cta-banner-headline" style="color: #FFFFFF !important; margin-bottom: 1rem;">Pronto para transformar sua vida financeira?</h2>
+            <p class="cta-banner-description" style="color: rgba(255, 255, 255, 0.85) !important; margin-bottom: 2rem;">Abra sua conta em menos de 5 minutos, sem burocracia, direto pelo celular.</p>
+            <div class="cta-banner-actions" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <a href="#" class="button primary">Abra sua conta grátis</a>
+              <a href="#" class="button outline-white">Baixar o Super App</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SCRIPTS DE INTERATIVIDADE DO SHOWCASE -->
+  <script>
+    // 1. Alternador de Contrato de Tema
+    const themeSwitcher = document.getElementById('themeSwitcher');
+    themeSwitcher.addEventListener('change', (e) => {
+      document.documentElement.setAttribute('toranja-theme', e.target.value);
+    });
+
+    // 2. Alternador de Superfície
+    const surfaceSwitcher = document.getElementById('surfaceSwitcher');
+    surfaceSwitcher.addEventListener('change', (e) => {
+      document.documentElement.setAttribute('toranja-surface', e.target.value);
+    });
+
+    // 3. Interatividade das Abas (Tabs)
+    const tabButtons = document.querySelectorAll('.toranja-tab-btn');
+    const tabPanels = document.querySelectorAll('.toranja-tabpanel');
+
+    tabButtons.forEach((btn, idx) => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        tabPanels.forEach(p => {
+          p.classList.remove('active');
+        });
+
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        if (tabPanels[idx]) {
+          tabPanels[idx].classList.add('active');
+        }
+      });
+    });
+
+    // 4. Interatividade do Mini Simulador Financeiro
+    const simRange = document.getElementById('simRange');
+    const simValDisplay = document.getElementById('simValDisplay');
+    const simInterResult = document.getElementById('simInterResult');
+    const simPoupResult = document.getElementById('simPoupResult');
+
+    function updateSimulation() {
+      const val = parseFloat(simRange.value);
+      simValDisplay.textContent = 'R$ ' + val.toLocaleString('pt-BR');
+
+      // 102% CDI estimado a 10.9% a.a. (~10.91%)
+      const interGain = val * 1.10914;
+      // Poupança estimada a ~6.17% a.a.
+      const poupGain = val * 1.0617;
+
+      simInterResult.textContent = 'R$ ' + interGain.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      simPoupResult.textContent = 'R$ ' + poupGain.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    if (simRange) {
+      simRange.addEventListener('input', updateSimulation);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+.segment-showcase-container {
+  padding: 6rem 0 !important;
+}
+
+.segment-tabs-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 3.5rem;
+}
+
+.seg-tab {
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  background-color: var(--inter-sand);
+  color: var(--inter-graphite);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.seg-tab:hover {
+  background-color: var(--inter-sand-dark);
+  color: var(--inter-black);
+}
+
+.seg-tab.active[data-segment="digital"] {
+  background-color: var(--seg-digital);
+  color: var(--inter-white);
+  box-shadow: 0 4px 16px rgba(234, 113, 0, 0.35);
+}
+
+.seg-tab.active[data-segment="one"] {
+  background-color: var(--seg-one);
+  color: var(--inter-white);
+  box-shadow: 0 4px 16px rgba(122, 139, 153, 0.35);
+}
+
+.seg-tab.active[data-segment="prime"] {
+  background-color: var(--seg-prime);
+  color: var(--inter-white);
+  box-shadow: 0 4px 16px rgba(31, 35, 38, 0.35);
+}
+
+.seg-tab.active[data-segment="win"] {
+  background-color: var(--seg-win);
+  color: var(--seg-win-gold);
+  border-color: var(--seg-win-gold);
+  box-shadow: 0 4px 16px rgba(50, 55, 71, 0.45);
+}
+
+.segment-showcase {
+  background: var(--inter-sand-light);
+  border-radius: var(--radius-xl);
+  padding: clamp(2rem, 4vw, 4rem);
+  border: 1px solid var(--inter-gray);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.seg-card-view {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.seg-card-view.active {
+  display: grid;
+  animation: fadeIn 0.4s var(--ease-out);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card-visual-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.metallic-card.card-digital {
+  background: linear-gradient(135deg, #EA7100 0%, #D66300 60%, #943D15 100%);
+  color: var(--inter-white);
+}
+
+.metallic-card.card-one {
+  background: linear-gradient(135deg, #9E9E9E 0%, #7A8B99 60%, #4A5B69 100%);
+  color: var(--inter-white);
+}
+
+.metallic-card.card-prime {
+  background: linear-gradient(135deg, #2A2A2A 0%, #161616 60%, #0A0A0A 100%);
+  color: var(--inter-white);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.metallic-card.card-win {
+  background: linear-gradient(135deg, #323747 0%, #1E222B 60%, #15181F 100%);
+  color: var(--seg-win-gold);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+}
+
+.seg-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.seg-criteria {
+  font-size: 0.8125rem;
+  color: var(--inter-orange-clay);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.seg-title {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  color: var(--inter-black);
+}
+
+.seg-perks-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.seg-perks-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.9375rem;
+  color: var(--inter-graphite);
+}
+
+.seg-perks-list li svg {
+  color: var(--inter-green);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .seg-card-view {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,164 @@
+/* ==========================================================================
+   BANCO INTER — TORANJA DESIGN SYSTEM
+   Block: Banner
+   ========================================================================== */
+
+.banner {
+  width: 100%;
+  margin: 1.5rem 0;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.toranja-banner-container {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  background-color: var(--theme-surface, #FFFFFF);
+  border: 1px solid var(--theme-border, var(--inter-gray));
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+/* Variante Padrão / Informativa */
+.banner.info .toranja-banner-container,
+.banner:not(.promo):not(.alert):not(.success) .toranja-banner-container {
+  background-color: var(--theme-surface-subtle, var(--inter-sand-light));
+  border-left: 4px solid var(--theme-accent, var(--inter-orange));
+}
+
+.toranja-banner-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(234, 113, 0, 0.15);
+  color: var(--theme-accent, var(--inter-orange));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.toranja-banner-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.toranja-banner-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.toranja-banner-content h3,
+.toranja-banner-content h4,
+.toranja-banner-content strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--theme-text, var(--inter-black));
+  margin-bottom: 0.25rem;
+}
+
+.toranja-banner-content p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--theme-text-muted, var(--inter-graphite));
+  margin: 0;
+}
+
+.toranja-banner-action {
+  flex-shrink: 0;
+}
+
+.toranja-banner-action .button {
+  min-height: 40px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.toranja-banner-close {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--theme-text-muted, var(--inter-gray-dark));
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.toranja-banner-close:hover {
+  background-color: var(--theme-border, var(--inter-gray-light));
+  color: var(--theme-text, var(--inter-black));
+}
+
+/* Variante Promocional / Gradiente */
+.banner.promo .toranja-banner-container,
+.banner.promo {
+  background: var(--gradient) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+.banner.promo .toranja-banner-icon {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+}
+
+.banner.promo .toranja-banner-content h3,
+.banner.promo .toranja-banner-content h4,
+.banner.promo .toranja-banner-content strong,
+.banner.promo .toranja-banner-content p {
+  color: #FFFFFF !important;
+}
+
+.banner.promo .toranja-banner-close {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.banner.promo .toranja-banner-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+/* Variante Alerta / Atenção */
+.banner.alert .toranja-banner-container {
+  background-color: #FFFBEB;
+  border-left: 4px solid #D97706;
+}
+
+.banner.alert .toranja-banner-icon {
+  background-color: rgba(217, 119, 6, 0.15);
+  color: #D97706;
+}
+
+@media (max-width: 768px) {
+  .toranja-banner-container {
+    flex-wrap: wrap;
+    padding: 1.25rem;
+  }
+
+  .toranja-banner-action {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .toranja-banner-action .button {
+    width: 100%;
+  }
+
+  .toranja-banner-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}

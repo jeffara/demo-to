@@ -1,0 +1,158 @@
+[
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow / Chapéu"
+      },
+      {
+        "component": "text",
+        "name": "headline",
+        "label": "Título Principal (Citrina)"
+      },
+      {
+        "component": "text",
+        "name": "description",
+        "label": "Descrição / Subtítulo"
+      },
+      {
+        "component": "reference",
+        "name": "primaryCta",
+        "label": "Link Botão Primário (Laranja)"
+      },
+      {
+        "component": "reference",
+        "name": "secondaryCta",
+        "label": "Link Botão Secundário"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Imagem / Portal Visual"
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Estilo do Card",
+        "options": [
+          {
+            "name": "Padrão de Produto",
+            "value": ""
+          },
+          {
+            "name": "Ecossistema Super App",
+            "value": "ecosystem"
+          },
+          {
+            "name": "Cartões Metálicos Mastercard",
+            "value": "metallic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "segment-showcase",
+    "fields": [
+      {
+        "component": "select",
+        "name": "defaultSegment",
+        "label": "Segmento Inicial",
+        "options": [
+          {
+            "name": "Inter Digital",
+            "value": "digital"
+          },
+          {
+            "name": "Inter One",
+            "value": "one"
+          },
+          {
+            "name": "Inter Prime",
+            "value": "prime"
+          },
+          {
+            "name": "Inter Win",
+            "value": "win"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "simulator",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Título do Simulador"
+      },
+      {
+        "component": "number",
+        "name": "defaultValue",
+        "label": "Valor Inicial (R$)"
+      }
+    ]
+  },
+  {
+    "id": "cta-banner",
+    "fields": [
+      {
+        "component": "select",
+        "name": "theme",
+        "label": "Tema de Cor",
+        "options": [
+          {
+            "name": "Escuro Sofisticado (Black)",
+            "value": "dark"
+          },
+          {
+            "name": "Laranja Inter (Vibrante)",
+            "value": "orange"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "banner",
+    "fields": [
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Tipo de Banner",
+        "options": [
+          {
+            "name": "Informativo (Padrão)",
+            "value": "info"
+          },
+          {
+            "name": "Promocional (Gradiente)",
+            "value": "promo"
+          },
+          {
+            "name": "Alerta / Atenção",
+            "value": "alert"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "text",
+        "name": "activeTab",
+        "label": "Aba Ativa Inicial (1, 2, 3...)"
+      }
+    ]
+  }
+]

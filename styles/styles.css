@@ -1,0 +1,579 @@
+/* ==========================================================================
+   BANCO INTER — DESIGN SYSTEM TORANJA
+   AEM Edge Delivery Services (XWalk / Crosswalk Boilerplate)
+   Styles & Design Tokens
+   ========================================================================== */
+
+/* --- Font Faces Oficiais --- */
+@font-face {
+  font-family: 'Citrina';
+  src: url('fonts/Citrina-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Citrina';
+  src: url('fonts/citrina.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CitrinaText';
+  src: url('fonts/CitrinaText-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Design Tokens Imutáveis da Marca Inter --- */
+:root {
+  /* Breakpoints Canônicos Oficiais Toranja */
+  --breakpoint-xs: 393px;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 905px;
+  --breakpoint-lg: 1240px;
+  --breakpoint-xl: 1440px;
+
+  /* Cores Base Toranja (Paleta Global Imutável) */
+  --inter-orange: #EA7100;
+  --inter-orange-hover: #D66300;
+  --inter-orange-light: #FFCA96;
+  --inter-orange-clay: #943D15;
+  --inter-orange-earth: #72370E;
+  
+  --inter-sand: #FDF8EE;
+  --inter-sand-light: #FFFCF7;
+  --inter-sand-dark: #F5EEDB;
+  
+  --inter-white: #FFFFFF;
+  --inter-black: #161616;
+  --inter-graphite: #3C3331;
+  --inter-gray-light: #F7F7F7;
+  --inter-gray: #EBEBEB;
+  --inter-gray-dark: #8C8583;
+
+  /* 4 Segmentos Oficiais */
+  --seg-digital: #EA7100;
+  --seg-one: #7A8B99;
+  --seg-prime: #1F2326;
+  --seg-win: #323747;
+  --seg-win-gold: #C5A059;
+
+  /* Cores de Acento Funcional */
+  --inter-blue: #0085FF;
+  --inter-blue-light: #66CCFB;
+  --inter-green: #00B167;
+  --inter-green-light: #80E7BD;
+  --inter-yellow: #FBFF71;
+  --inter-pink: #F8B6E6;
+
+  /* Gradientes Oficiais do Toranja */
+  --gradient: linear-gradient(135deg, #EA7100 0%, #FF9E42 100%);
+  --ai-gradient: linear-gradient(135deg, #FF6A00 0%, #EE0979 50%, #7A00FF 100%);
+
+  /* Elevação Oficial Toranja */
+  --elevation-surface-raised: 0 4px 24px rgba(22, 22, 22, 0.08);
+
+  /* Tipografia Oficial Toranja */
+  --font-display: 'Citrina', 'Sora', sans-serif;
+  --font-display-text: 'CitrinaText', 'Citrina', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Sora', 'Inter', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  /* Espaçamentos & Layout AEM EDS */
+  --header-height: 80px;
+  --max-width: 1440px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --radius-full: 9999px;
+
+  /* Sombras & Efeitos */
+  --shadow-sm: 0 2px 8px rgba(22, 22, 22, 0.05);
+  --shadow-md: var(--elevation-surface-raised);
+  --shadow-lg: 0 16px 40px rgba(22, 22, 22, 0.12);
+  --shadow-glow: 0 12px 36px rgba(234, 113, 0, 0.25);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.6);
+
+  /* Transições e Curvas (Ease) */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-normal: 0.35s var(--ease-out);
+  --transition-slow: 0.6s var(--ease-out);
+}
+
+/* ==========================================================================
+   CONTRATO DE TEMAS OFICIAIS TORANJA (toranja-theme)
+   ========================================================================== */
+
+/* Tema PF Light (Padrão) */
+:root,
+:root[toranja-theme="pf-light"],
+html[toranja-theme="pf-light"] {
+  --theme-bg: var(--inter-sand);
+  --theme-surface: var(--inter-white);
+  --theme-surface-subtle: #F5EEDB;
+  --theme-text: var(--inter-black);
+  --theme-text-muted: var(--inter-graphite);
+  --theme-border: var(--inter-gray);
+  --theme-accent: var(--inter-orange);
+  --theme-accent-hover: var(--inter-orange-hover);
+  --hero-bg: radial-gradient(circle at 75% 30%, rgba(234, 113, 0, 0.1) 0%, #FDF8EE 65%);
+}
+
+/* Tema PF Dark (Pessoa Física Noturno) */
+:root[toranja-theme="pf-dark"],
+html[toranja-theme="pf-dark"] {
+  --theme-bg: #121212;
+  --theme-surface: #1E1E1E;
+  --theme-surface-subtle: #2A2A2A;
+  --theme-text: #F5F5F5;
+  --theme-text-muted: #B3B3B3;
+  --theme-border: #333333;
+  --theme-accent: var(--inter-orange);
+  --theme-accent-hover: #FF851A;
+  --hero-bg: radial-gradient(circle at 75% 30%, rgba(234, 113, 0, 0.18) 0%, #121212 65%);
+}
+
+/* Tema PJ Light (Pessoa Jurídica) */
+:root[toranja-theme="pj-light"],
+html[toranja-theme="pj-light"] {
+  --theme-bg: #F8FAFC;
+  --theme-surface: var(--inter-white);
+  --theme-surface-subtle: #F1F5F9;
+  --theme-text: #0F172A;
+  --theme-text-muted: #475569;
+  --theme-border: #E2E8F0;
+  --theme-accent: #0284C7;
+  --theme-accent-hover: #0369A1;
+  --gradient: linear-gradient(135deg, #0284C7 0%, #38BDF8 100%);
+  --hero-bg: radial-gradient(circle at 75% 30%, rgba(2, 132, 199, 0.1) 0%, #F8FAFC 65%);
+}
+
+/* Tema PJ Dark (Pessoa Jurídica Noturno) */
+:root[toranja-theme="pj-dark"],
+html[toranja-theme="pj-dark"] {
+  --theme-bg: #0B0F17;
+  --theme-surface: #151D2A;
+  --theme-surface-subtle: #1E293B;
+  --theme-text: #F1F5F9;
+  --theme-text-muted: #94A3B8;
+  --theme-border: #1E293B;
+  --theme-accent: #38BDF8;
+  --theme-accent-hover: #7DD3FC;
+  --gradient: linear-gradient(135deg, #0284C7 0%, #38BDF8 100%);
+  --hero-bg: radial-gradient(circle at 75% 30%, rgba(56, 189, 248, 0.18) 0%, #0B0F17 65%);
+}
+
+/* ==========================================================================
+   CONTRATO DE SUPERFÍCIE OFICIAL TORANJA (toranja-surface)
+   ========================================================================== */
+
+/* Superfície Webview (App / Mobile nativo) */
+:root[toranja-surface="webview"],
+html[toranja-surface="webview"] {
+  --surface-padding-inline: 1rem;
+  --surface-border-radius: var(--radius-md);
+}
+
+/* Superfície Desktop (Internet Banking / Browser Desktop) */
+:root[toranja-surface="desktop"],
+html[toranja-surface="desktop"] {
+  --surface-padding-inline: 2.5rem;
+  --surface-border-radius: var(--radius-sm);
+}
+
+/* Escape hatch para transparência */
+html.toranja-transparent,
+html[toranja-transparent] {
+  background-color: transparent !important;
+}
+
+/* --- Reset & Global Baseline --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--theme-text);
+  background-color: var(--theme-bg);
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 20px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img, svg, picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast), opacity var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* --- Tipografia Global Vinculada aos Tokens de Tema --- */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--theme-text);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+}
+
+p {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--theme-text-muted);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--theme-accent, var(--inter-orange));
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--theme-accent, var(--inter-orange));
+}
+
+/* --- Estrutura de Seções AEM EDS --- */
+main > .section {
+  width: 100%;
+  position: relative;
+  padding: 4rem 0;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+main > .section > div {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 3.5rem);
+  padding-right: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+/* Variantes de Seção AEM EDS com Tokens Semânticos */
+main > .section.highlight {
+  background-color: var(--theme-surface-subtle);
+  border-top: 1px solid var(--theme-border);
+  border-bottom: 1px solid var(--theme-border);
+}
+
+main > .section.white-bg {
+  background-color: var(--theme-surface);
+  border-top: 1px solid var(--theme-border);
+  border-bottom: 1px solid var(--theme-border);
+}
+
+main > .section.dark-bg {
+  background-color: #121212 !important;
+  color: #FFFFFF !important;
+}
+
+main > .section.dark-bg h1,
+main > .section.dark-bg h2,
+main > .section.dark-bg h3,
+main > .section.dark-bg h4,
+main > .section.dark-bg p {
+  color: #FFFFFF !important;
+}
+
+/* --- Botões do Design System Toranja --- */
+a.button:any-link,
+button.button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 52px;
+  padding: 0.875rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Botão Primário */
+a.button.primary:any-link,
+button.button.primary,
+.btn-primary {
+  background-color: var(--theme-accent, var(--inter-orange));
+  color: #FFFFFF !important;
+  border: 1px solid var(--theme-accent, var(--inter-orange));
+  box-shadow: var(--shadow-sm);
+}
+
+a.button.primary:hover,
+button.button.primary:hover,
+.btn-primary:hover {
+  background-color: var(--theme-accent-hover, var(--inter-orange-hover));
+  border-color: var(--theme-accent-hover, var(--inter-orange-hover));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Botão Secundário */
+a.button.secondary:any-link,
+button.button.secondary,
+.btn-secondary {
+  background-color: var(--theme-surface);
+  color: var(--theme-text) !important;
+  border: 1px solid var(--theme-border);
+  box-shadow: var(--shadow-sm);
+}
+
+a.button.secondary:hover,
+button.button.secondary:hover,
+.btn-secondary:hover {
+  background-color: var(--theme-surface-subtle);
+  border-color: var(--theme-accent);
+  transform: translateY(-2px);
+}
+
+/* Botão Outline */
+a.button.outline:any-link,
+button.button.outline,
+.btn-outline {
+  background-color: transparent;
+  color: var(--theme-text);
+  border: 1px solid var(--theme-text);
+}
+
+a.button.outline:hover,
+button.button.outline:hover,
+.btn-outline:hover {
+  background-color: var(--theme-text);
+  color: var(--theme-surface) !important;
+  transform: translateY(-2px);
+}
+
+/* Botão Outline White (específico para fundos escuros, nunca quebra em temas claros/escuros) */
+a.button.outline-white:any-link,
+button.button.outline-white,
+.btn-outline-white {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  border: 1px solid #FFFFFF !important;
+}
+
+a.button.outline-white:hover,
+button.button.outline-white:hover,
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* Container de botões (AEM EDS decorator) */
+.button-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+/* --- Badges & Tags Semânticas Toranja --- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tag-orange {
+  background-color: rgba(234, 113, 0, 0.15);
+  color: var(--inter-orange);
+}
+
+.tag-blue {
+  background-color: rgba(0, 133, 255, 0.15);
+  color: var(--inter-blue);
+}
+
+.tag-green {
+  background-color: rgba(0, 177, 103, 0.15);
+  color: var(--inter-green);
+}
+
+.tag-dark {
+  background-color: #2A2A2A;
+  color: #FFFFFF;
+}
+
+.tag-win {
+  background-color: var(--seg-win);
+  color: var(--seg-win-gold);
+}
+
+/* Ícones em EDS */
+span.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+span.icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* --- Portais & Máscaras de Apoio Oficiais Inter --- */
+.portal-frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  border-radius: 260px 260px 40px 40px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 5;
+  background-color: var(--theme-surface-subtle);
+}
+
+.portal-frame.asymmetric {
+  border-radius: 260px 40px 40px 260px;
+}
+
+.portal-frame.pill {
+  border-radius: 260px;
+}
+
+.portal-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.portal-frame:hover img {
+  transform: scale(1.04);
+}
+
+/* --- Suporte a Acessibilidade e Redução de Movimento --- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- Responsividade Mobile --- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+  a.button:any-link,
+  button.button,
+  .btn {
+    width: 100%;
+  }
+  .button-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "aem-eds-inter-toranja",
+  "version": "1.0.0",
+  "description": "Biblioteca de Componentes Toranja do Banco Inter para Adobe Experience Manager Edge Delivery Services (Boilerplate XWalk)",
+  "scripts": {
+    "lint:js": "eslint .",
+    "lint:css": "stylelint styles/**/*.css blocks/**/*.css",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "stylelint": "^16.8.2",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "dependencies": {
+    "node-domexception": "^1.0.0"
+  }
+}

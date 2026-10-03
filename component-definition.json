@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Toranja - Hero",
+    "id": "hero",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Hero",
+            "model": "hero"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Cards",
+    "id": "cards",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Cards",
+            "model": "cards"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Quick Moment Rail",
+    "id": "quick-moment-rail",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Quick Moment Rail",
+            "model": "quick-moment-rail"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Manifesto",
+    "id": "manifesto",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Manifesto",
+            "model": "manifesto"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Moments Journey",
+    "id": "moments-journey",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Moments Journey",
+            "model": "moments-journey"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Segment Showcase",
+    "id": "segment-showcase",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Segment Showcase",
+            "model": "segment-showcase"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Simulator",
+    "id": "simulator",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Simulator",
+            "model": "simulator"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Flywheel",
+    "id": "flywheel",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Flywheel",
+            "model": "flywheel"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Accordion",
+    "id": "accordion",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Accordion",
+            "model": "accordion"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - CTA Banner",
+    "id": "cta-banner",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "CTA Banner",
+            "model": "cta-banner"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Modal Dialog",
+    "id": "modal",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Modal",
+            "model": "modal"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Lead Form",
+    "id": "form",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Form",
+            "model": "form"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Teaser",
+    "id": "teaser",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Teaser",
+            "model": "teaser"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Banner",
+    "id": "banner",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Banner",
+            "model": "banner"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "Toranja - Tabs",
+    "id": "tabs",
+    "plugins": {
+      "xwalk": {
+        "page": {
+          "resourceType": "core/franklin/components/block/v1/block",
+          "template": {
+            "name": "Tabs",
+            "model": "tabs"
+          }
+        }
+      }
+    }
+  }
+]
