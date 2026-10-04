@@ -3,13 +3,22 @@
  * Toranja Design System - Banco Inter
  */
 export default function decorate(block) {
+  const rows = [...block.children];
+  let placeholder = 'O que você procura no Inter? (ex: Pix, Cartão Black, Financiamento)';
+  let indexEndpoint = '/query-index.json';
+  if (rows[0]) {
+    const cols = [...rows[0].children];
+    if (cols[0] && cols[0].textContent.trim()) placeholder = cols[0].textContent.trim();
+    if (cols[1] && cols[1].textContent.trim()) indexEndpoint = cols[1].textContent.trim();
+  }
+
   const container = document.createElement('div');
   container.className = 'toranja-search-box';
 
   container.innerHTML = `
     <div class="search-input-wrapper">
       <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-      <input type="search" class="toranja-search-input" placeholder="O que você procura no Inter? (ex: Pix, Cartão Black, Financiamento)" aria-label="Buscar no portal Inter" />
+      <input type="search" class="toranja-search-input" placeholder="${placeholder}" aria-label="Buscar no portal Inter" />
       <button class="search-clear-btn" aria-label="Limpar busca" style="display:none;">&times;</button>
     </div>
     <div class="search-results-dropdown" style="display:none;" role="region" aria-live="polite"></div>
@@ -32,7 +41,7 @@ export default function decorate(block) {
 
     debounceTimer = setTimeout(async () => {
       try {
-        const resp = await fetch('/query-index.json');
+        const resp = await fetch(indexEndpoint);
         if (!resp.ok) throw new Error('Falha ao carregar índice');
         const json = await resp.json();
         const matches = (json.data || []).filter((item) =>

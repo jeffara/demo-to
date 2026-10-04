@@ -65,7 +65,8 @@ export default function decorate(block) {
   // Visual column assembly
   if (mediaFound) {
     const portal = document.createElement('div');
-    portal.className = 'portal-frame asymmetric';
+    const portalVariant = ['arch', 'pill', 'rounded', 'asymmetric'].find((v) => block.classList.contains(v)) || 'asymmetric';
+    portal.className = ;
     portal.append(mediaFound);
     visualCol.append(portal);
   } else {

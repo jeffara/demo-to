@@ -70,3 +70,32 @@
   color: var(--theme-text-muted, #707070);
   line-height: 1.6;
 }
+
+/* Variante Horizontal (Stepper) */
+@media (min-width: 768px) {
+  .toranja-timeline-track.horizontal {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .toranja-timeline-track.horizontal::before {
+    top: 24px;
+    bottom: auto;
+    left: 24px;
+    right: 24px;
+    width: auto;
+    height: 2px;
+  }
+
+  .toranja-timeline-track.horizontal .toranja-timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    gap: 1.25rem;
+  }
+
+  .toranja-timeline-track.horizontal .timeline-content {
+    width: 100%;
+  }
+}

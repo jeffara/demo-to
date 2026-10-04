@@ -9,7 +9,8 @@ export default function decorate(block) {
   const posterUrl = img ? img.getAttribute('src') : '';
 
   const frame = document.createElement('div');
-  frame.className = 'toranja-video-frame portal-arch';
+  const portalVariant = ['arch', 'asymmetric', 'pill', 'rounded'].find((v) => block.classList.contains(v)) || 'arch';
+  frame.className = ;
 
   frame.innerHTML = `
     <div class="video-poster-wrapper" style="background-image: url('${posterUrl}')">

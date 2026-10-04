@@ -3,8 +3,9 @@
  * Toranja Design System - Banco Inter
  */
 export default function decorate(block) {
+  const isHorizontal = block.classList.contains('horizontal');
   const track = document.createElement('div');
-  track.className = 'toranja-timeline-track';
+  track.className = `toranja-timeline-track ${isHorizontal ? 'horizontal' : 'vertical'}`;
 
   const rows = [...block.children];
   rows.forEach((row, idx) => {

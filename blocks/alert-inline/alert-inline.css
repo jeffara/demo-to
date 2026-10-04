@@ -14,6 +14,8 @@
   font-family: var(--font-body, 'Inter', sans-serif);
   font-size: 0.9375rem;
   line-height: 1.5;
+  position: relative;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .alert-info {
@@ -43,4 +45,24 @@
 .alert-icon {
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: inherit;
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 0 0 0 0.5rem;
+  transition: opacity var(--transition-fast, 0.2s);
+}
+
+.alert-close-btn:hover {
+  opacity: 1;
 }

@@ -14,11 +14,25 @@ export default function decorate(block) {
     error: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
   };
 
+  const isDismissible = block.classList.contains('dismissible');
   const content = block.innerHTML;
+
   block.innerHTML = `
     <div class="toranja-alert-box alert-${type}" role="alert">
       <div class="alert-icon">${icons[type]}</div>
       <div class="alert-content">${content}</div>
+      ${isDismissible ? '<button class="alert-close-btn" type="button" aria-label="Fechar alerta">&times;</button>' : ''}
     </div>
   `;
+
+  if (isDismissible) {
+    const closeBtn = block.querySelector('.alert-close-btn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        block.style.opacity = '0';
+        block.style.transform = 'translateY(-6px)';
+        setTimeout(() => block.remove(), 250);
+      });
+    }
+  }
 }

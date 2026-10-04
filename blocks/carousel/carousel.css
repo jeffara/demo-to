@@ -67,3 +67,29 @@
   color: #FFFFFF;
   border-color: var(--inter-orange, #FF6600);
 }
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full, 9999px);
+  background: var(--theme-border, #E5E7EB);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-fast, 0.2s);
+}
+
+.carousel-dot:hover {
+  background: var(--inter-orange-light, #FFCA96);
+}
+
+.carousel-dot.active {
+  width: 24px;
+  background: var(--inter-orange, #EA7100);
+}

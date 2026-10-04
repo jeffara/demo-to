@@ -38,9 +38,24 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(wrapper);
 
-  // Eventos de Navegação
+  // Renderiza dots e adiciona interatividade
+  const dotsContainer = controls.querySelector('.carousel-dots');
   const prevBtn = controls.querySelector('.prev-btn');
   const nextBtn = controls.querySelector('.next-btn');
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = ;
+    dot.setAttribute('role', 'tab');
+    dot.setAttribute('aria-label', );
+    dot.addEventListener('click', () => {
+      const slide = track.children[i];
+      if (slide) {
+        slide.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+      }
+    });
+    dotsContainer.append(dot);
+  });
 
   const scrollSlide = (direction) => {
     const slideWidth = track.querySelector('.toranja-carousel-slide')?.offsetWidth || 300;
@@ -49,4 +64,29 @@ export default function decorate(block) {
 
   prevBtn.addEventListener('click', () => scrollSlide(-1));
   nextBtn.addEventListener('click', () => scrollSlide(1));
+
+  track.addEventListener('scroll', () => {
+    const scrollLeft = track.scrollLeft;
+    const slideWidth = track.querySelector('.toranja-carousel-slide')?.offsetWidth || 300;
+    const activeIndex = Math.round(scrollLeft / (slideWidth + 24));
+    dotsContainer.querySelectorAll('.carousel-dot').forEach((d, idx) => {
+      d.classList.toggle('active', idx === activeIndex);
+    });
+  }, { passive: true });
+
+  // Suporte a Autoplay se configurado
+  if (block.classList.contains('autoplay')) {
+    let autoInterval = setInterval(() => {
+      const slideWidth = track.querySelector('.toranja-carousel-slide')?.offsetWidth || 300;
+      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        scrollSlide(1);
+      }
+    }, 5000);
+    wrapper.addEventListener('mouseenter', () => clearInterval(autoInterval));
+    wrapper.addEventListener('mouseleave', () => {
+      autoInterval = setInterval(() => scrollSlide(1), 5000);
+    });
+  }
 }

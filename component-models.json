@@ -4,18 +4,84 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "name": "eyebrow",
+        "label": "Chapéu / Eyebrow",
+        "value": "Dossiê Estratégico · Banco Inter"
+      },
+      {
+        "component": "text",
+        "name": "headline",
+        "label": "Título Principal (Citrina)",
+        "value": "Em todo momento da vida, vejo você."
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "description",
+        "label": "Descrição / Subtítulo",
+        "value": "O Super App financeiro que conecta conta corrente, investimentos, cartões, seguros, compras com cashback e conta internacional em dólar."
+      },
+      {
+        "component": "text",
+        "name": "primaryCtaText",
+        "label": "Texto do Botão Primário",
+        "value": "Abra sua conta grátis"
+      },
+      {
+        "component": "reference",
+        "name": "primaryCtaLink",
+        "label": "Link do Botão Primário",
+        "value": "/abra-sua-conta"
+      },
+      {
+        "component": "text",
+        "name": "secondaryCtaText",
+        "label": "Texto do Botão Secundário",
+        "value": "Conhecer os Produtos"
+      },
+      {
+        "component": "reference",
+        "name": "secondaryCtaLink",
+        "label": "Link do Botão Secundário",
+        "value": "/#momentos"
+      },
+      {
+        "component": "richtext",
+        "name": "checklist",
+        "label": "Lista de Vantagens (Bullets com Check)",
+        "value": "<ul><li>Sem taxa de manutenção</li><li>Cartão de crédito sem anuidade</li><li>Global Account em dólar</li></ul>"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Fotografia do Portal Visual",
+        "value": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
+      },
+      {
+        "component": "select",
+        "name": "portalVariant",
+        "label": "Formato do Portal Visual",
+        "value": "asymmetric",
+        "options": [
+          { "name": "Assimétrico Oficial (Padrão)", "value": "asymmetric" },
+          { "name": "Arco Clássico (Arch)", "value": "arch" },
+          { "name": "Pílula Horizontal (Pill)", "value": "pill" },
+          { "name": "Bordas Arredondadas (Rounded)", "value": "rounded" }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "theme",
+        "label": "Tema do Hero",
+        "value": "default",
+        "options": [
+          { "name": "Padrão (Sand & Orange)", "value": "default" },
+          { "name": "Claro Minimalista (Light)", "value": "light" }
+        ]
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -23,19 +89,36 @@
     "id": "cards",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "select",
+        "name": "variant",
+        "label": "Estilo do Card",
+        "value": "",
+        "options": [
+          { "name": "Padrão de Produto", "value": "" },
+          { "name": "Ecossistema Super App 360°", "value": "ecosystem" },
+          { "name": "Cartões Metálicos Mastercard Black", "value": "metallic" }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "columns",
+        "label": "Número de Colunas",
+        "value": "3",
+        "options": [
+          { "name": "2 Colunas", "value": "2" },
+          { "name": "3 Colunas", "value": "3" },
+          { "name": "4 Colunas", "value": "4" }
+        ]
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Lista de Cards (Imagem/Ícone, Título, Descrição, Tag e CTA)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -44,18 +127,30 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "name": "label",
+        "label": "Rótulo do Trilho",
+        "value": "Momentos de Vida"
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "moments",
+        "label": "Links dos Momentos (ex: Começar, Conquistar, Construir...)"
+      },
+      {
+        "component": "select",
+        "name": "behavior",
+        "label": "Comportamento de Fixação",
+        "value": "floating",
+        "options": [
+          { "name": "Flutuante no Rodapé (Floating)", "value": "floating" },
+          { "name": "Fixado no Topo (Sticky)", "value": "sticky" },
+          { "name": "Em linha com a página (Inline)", "value": "inline" }
+        ]
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -63,19 +158,31 @@
     "id": "manifesto",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "richtext",
+        "name": "quote",
+        "label": "Citação Editorial (Citrina Light)",
+        "value": "Acreditamos que a vida financeira não precisa ser complicada, fria ou distante. Ela precisa ser humana, transparente e presente em cada momento de realização."
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "text",
+        "name": "attribution",
+        "label": "Autoria / Assinatura",
+        "value": "Manifesto Oficial do Banco Inter"
+      },
+      {
+        "component": "select",
+        "name": "align",
+        "label": "Alinhamento do Texto",
+        "value": "center",
+        "options": [
+          { "name": "Centralizado", "value": "center" },
+          { "name": "Alinhado à Esquerda", "value": "left" }
+        ]
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -83,19 +190,60 @@
     "id": "moments-journey",
     "fields": [
       {
+        "component": "select",
+        "name": "portalVariant",
+        "label": "Formato do Portal",
+        "value": "asymmetric",
+        "options": [
+          { "name": "Assimétrico (Asymmetric)", "value": "asymmetric" },
+          { "name": "Arco Clássico (Arch)", "value": "arch" },
+          { "name": "Pílula Horizontal (Pill)", "value": "pill" },
+          { "name": "Invertido (Reverse)", "value": "reverse" }
+        ]
+      },
+      {
         "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "name": "moment",
+        "label": "Capítulo / Momento",
+        "value": "Começar: Autonomia e Faculdade"
+      },
+      {
+        "component": "text",
+        "name": "headline",
+        "label": "Título do Capítulo (Citrina)",
+        "value": "Vejo você conquistando a sua independência financeira."
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "description",
+        "label": "Narrativa do Capítulo"
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "Texto do Botão",
+        "value": "Abra sua conta grátis"
+      },
+      {
+        "component": "reference",
+        "name": "ctaLink",
+        "label": "Link do Botão",
+        "value": "/abra-sua-conta"
+      },
+      {
+        "component": "text",
+        "name": "disclaimer",
+        "label": "Aviso Legal / Regras"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Fotografia do Portal"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -105,17 +253,31 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título da Seção de Segmentos",
+        "value": "Uma experiência desenhada para o seu momento de vida"
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtítulo / Descrição",
+        "value": "Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter."
+      },
+      {
+        "component": "select",
+        "name": "defaultSegment",
+        "label": "Segmento Selecionado Inicialmente",
+        "value": "digital",
+        "options": [
+          { "name": "Inter Digital (Sem exigência)", "value": "digital" },
+          { "name": "Inter One (R$ 50k+)", "value": "one" },
+          { "name": "Inter Prime (R$ 250k+)", "value": "prime" },
+          { "name": "Inter Win (R$ 1M+ Wealth)", "value": "win" }
+        ]
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -125,17 +287,55 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título do Simulador",
+        "value": "Simule seu Rendimento no Meu Porquinho"
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtítulo Explicativo",
+        "value": "Rendimento automático a 102% do CDI com liquidez diária."
+      },
+      {
+        "component": "number",
+        "name": "defaultValue",
+        "label": "Valor Inicial de Simulação (R$)",
+        "value": 10000
+      },
+      {
+        "component": "number",
+        "name": "minValue",
+        "label": "Valor Mínimo do Slider (R$)",
+        "value": 500
+      },
+      {
+        "component": "number",
+        "name": "maxValue",
+        "label": "Valor Máximo do Slider (R$)",
+        "value": 100000
+      },
+      {
+        "component": "number",
+        "name": "cdiRate",
+        "label": "Taxa CDI Anual (% a.a.)",
+        "value": 10.75
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "Texto do Botão",
+        "value": "Começar a Investir"
+      },
+      {
+        "component": "reference",
+        "name": "ctaLink",
+        "label": "Link do Botão",
+        "value": "/investimentos"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -144,18 +344,42 @@
     "fields": [
       {
         "component": "text",
+        "name": "eyebrow",
+        "label": "Chapéu / Eyebrow",
+        "value": "Programa de Recompensas"
+      },
+      {
+        "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título da Seção",
+        "value": "O Ciclo de Valor Virtuoso do Inter Loop"
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "description",
+        "label": "Descrição Editorial do Ciclo"
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "Texto do Botão",
+        "value": "Conhecer o Inter Loop"
+      },
+      {
+        "component": "reference",
+        "name": "ctaLink",
+        "label": "Link do Botão",
+        "value": "/inter-loop"
+      },
+      {
+        "component": "richtext",
+        "name": "steps",
+        "label": "Etapas do Flywheel (1 a 4)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -163,19 +387,24 @@
     "id": "accordion",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "select",
+        "name": "behavior",
+        "label": "Comportamento de Abertura",
+        "value": "single-open",
+        "options": [
+          { "name": "Uma Gaveta Aberta por Vez (Exclusivo)", "value": "single-open" },
+          { "name": "Múltiplas Gavetas Abertas (Multi-Open)", "value": "multi-open" }
+        ]
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Lista de Perguntas e Respostas (FAQ)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -183,19 +412,55 @@
     "id": "cta-banner",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "select",
+        "name": "theme",
+        "label": "Tema de Cores",
+        "value": "dark",
+        "options": [
+          { "name": "Escuro Sofisticado (Black & Graphite)", "value": "dark" },
+          { "name": "Laranja Inter Vibrante", "value": "orange" }
+        ]
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "text",
+        "name": "headline",
+        "label": "Título de Alta Conversão (Citrina)",
+        "value": "Pronto para transformar a sua vida financeira?"
+      },
+      {
+        "component": "text",
+        "name": "description",
+        "label": "Texto de Apoio",
+        "value": "Abra sua conta em menos de 5 minutos, direto pelo celular, sem tarifas e com atendimento 24 horas."
+      },
+      {
+        "component": "text",
+        "name": "primaryCtaText",
+        "label": "Texto do Botão Primário",
+        "value": "Abra sua conta grátis"
+      },
+      {
+        "component": "reference",
+        "name": "primaryCtaLink",
+        "label": "Link do Botão Primário",
+        "value": "/abra-sua-conta"
+      },
+      {
+        "component": "text",
+        "name": "secondaryCtaText",
+        "label": "Texto do Botão Secundário",
+        "value": "Baixar o Super App"
+      },
+      {
+        "component": "reference",
+        "name": "secondaryCtaLink",
+        "label": "Link do Botão Secundário",
+        "value": "/app"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -204,18 +469,30 @@
     "fields": [
       {
         "component": "text",
+        "name": "modalId",
+        "label": "ID Único do Modal (Âncora)",
+        "value": "garantia-fgc"
+      },
+      {
+        "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título do Diálogo / Modal",
+        "value": "Proteção Regulatória do FGC e FDIC"
       },
       {
         "component": "richtext",
         "name": "content",
-        "label": "Conteúdo Editorial"
+        "label": "Conteúdo Completo do Modal"
+      },
+      {
+        "component": "text",
+        "name": "triggerText",
+        "label": "Texto do Botão / Link Disparador"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -225,17 +502,36 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título do Formulário",
+        "value": "Fale com um Especialista do Inter"
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtítulo / Instrução",
+        "value": "Preencha seus dados para receber uma consultoria exclusiva sobre contas, investimentos ou crédito."
+      },
+      {
+        "component": "text",
+        "name": "submitLabel",
+        "label": "Texto do Botão de Envio",
+        "value": "Enviar Solicitação"
+      },
+      {
+        "component": "text",
+        "name": "successMessage",
+        "label": "Mensagem de Sucesso",
+        "value": "Solicitação recebida com sucesso! Entraremos em contato em breve."
+      },
+      {
+        "component": "text",
+        "name": "endpoint",
+        "label": "Endpoint Webhook CRM / Salesforce"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -243,19 +539,55 @@
     "id": "teaser",
     "fields": [
       {
+        "component": "select",
+        "name": "variant",
+        "label": "Disposição / Formato",
+        "value": "pill",
+        "options": [
+          { "name": "Portal Pílula (Padrão)", "value": "pill" },
+          { "name": "Portal Arco (Arch)", "value": "arch" },
+          { "name": "Invertido (Reverse - Imagem à Direita)", "value": "reverse" },
+          { "name": "Retangular (Default)", "value": "default" }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Chapéu / Eyebrow",
+        "value": "Vida Global Sem Fronteiras"
+      },
+      {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título (Citrina)",
+        "value": "Uma só marca. Duas moedas. Zero barreiras."
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "description",
+        "label": "Texto Explicativo"
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "Texto do Botão",
+        "value": "Conhecer a Global Account"
+      },
+      {
+        "component": "reference",
+        "name": "ctaLink",
+        "label": "Link do Botão",
+        "value": "/global"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Fotografia do Portal"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -263,19 +595,65 @@
     "id": "banner",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "select",
+        "name": "variant",
+        "label": "Tipo de Banner",
+        "value": "promo",
+        "options": [
+          { "name": "Promocional Gradiente Toranja (Promo)", "value": "promo" },
+          { "name": "Informativo Neutro (Info)", "value": "info" },
+          { "name": "Alerta Amarelo (Alert)", "value": "alert" },
+          { "name": "Modo Escuro (Dark)", "value": "dark" }
+        ]
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "select",
+        "name": "icon",
+        "label": "Ícone em Destaque",
+        "value": "sparkle",
+        "options": [
+          { "name": "Brilho / Novidade (Sparkle)", "value": "sparkle" },
+          { "name": "Estrela (Star)", "value": "star" },
+          { "name": "Presente (Gift)", "value": "gift" },
+          { "name": "Porquinho (Piggy Bank)", "value": "piggy_bank" },
+          { "name": "Informação (Info)", "value": "info" },
+          { "name": "Alerta (Alert)", "value": "alert" }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Título do Aviso",
+        "value": "Super App Day no Inter"
+      },
+      {
+        "component": "text",
+        "name": "description",
+        "label": "Mensagem do Aviso",
+        "value": "Ganhe até 2x pontos no Inter Loop e cashback turbinado em mais de 500 lojas parceiras no Inter Shop."
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "Texto do Link",
+        "value": "Aproveitar Oferta"
+      },
+      {
+        "component": "reference",
+        "name": "ctaLink",
+        "label": "Link da Ação",
+        "value": "/loop"
+      },
+      {
+        "component": "boolean",
+        "name": "dismissible",
+        "label": "Permitir fechar o banner",
+        "value": true
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -284,18 +662,19 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "name": "defaultTab",
+        "label": "Aba Ativa Inicial (1, 2, 3...)",
+        "value": "1"
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Abas e Painéis de Conteúdo"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -304,18 +683,25 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "name": "separator",
+        "label": "Caractere Separador",
+        "value": "/"
+      },
+      {
+        "component": "boolean",
+        "name": "showHome",
+        "label": "Exibir link para Página Inicial",
+        "value": true
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Trilha Manual de Navegação (ou deixe em branco para automático)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -325,17 +711,30 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título da Tabela",
+        "value": "Compare as Vantagens do Inter"
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtítulo",
+        "value": "Transparência total sem letras miúdas."
+      },
+      {
+        "component": "number",
+        "name": "highlightColumn",
+        "label": "Índice da Coluna em Destaque (padrão 2 para Inter)",
+        "value": 2
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Tabela Comparativa (Títulos, Linhas e Ícones [check]/[x])"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -345,17 +744,36 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título",
+        "value": "Baixe o Super App do Inter"
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtítulo / Instrução",
+        "value": "Aponte a câmera do seu celular para o QR Code e abra sua conta gratuita em poucos minutos."
+      },
+      {
+        "component": "reference",
+        "name": "appleStoreUrl",
+        "label": "Link Apple App Store",
+        "value": "https://apps.apple.com/br/app/inter/id1071477797"
+      },
+      {
+        "component": "reference",
+        "name": "googlePlayUrl",
+        "label": "Link Google Play Store",
+        "value": "https://play.google.com/store/apps/details?id=br.com.intermedium"
+      },
+      {
+        "component": "reference",
+        "name": "qrCodeImage",
+        "label": "Imagem do QR Code"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -363,19 +781,31 @@
     "id": "stats-counter",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "select",
+        "name": "variant",
+        "label": "Estilo Visual dos Cards",
+        "value": "default",
+        "options": [
+          { "name": "Grid de Cartões Padrão", "value": "default" },
+          { "name": "Bordas em Destaque (Cards)", "value": "cards" },
+          { "name": "Minimalista sem borda", "value": "minimal" }
+        ]
+      },
+      {
+        "component": "boolean",
+        "name": "animated",
+        "label": "Animar contagem numérica ao rolar",
+        "value": true
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Lista de Métricas (Número e Legenda)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -385,17 +815,24 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título da Seção de Depoimentos",
+        "value": "O que nossos clientes dizem"
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtítulo",
+        "value": "Mais de 33 milhões de pessoas confiam a sua vida financeira ao Inter."
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Depoimentos (Citação, Nome do Cliente, Segmento e Avaliação)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -403,19 +840,24 @@
     "id": "timeline",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "select",
+        "name": "variant",
+        "label": "Orientação da Linha do Tempo",
+        "value": "vertical",
+        "options": [
+          { "name": "Vertical (Passo a Passo)", "value": "vertical" },
+          { "name": "Horizontal (Stepper em Linha)", "value": "horizontal" }
+        ]
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Etapas / Marcos (Título da Etapa e Descrição)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -423,19 +865,38 @@
     "id": "carousel",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "boolean",
+        "name": "autoplay",
+        "label": "Rolagem Automática (Autoplay)",
+        "value": false
+      },
+      {
+        "component": "number",
+        "name": "interval",
+        "label": "Intervalo do Autoplay (ms)",
+        "value": 5000
+      },
+      {
+        "component": "boolean",
+        "name": "showIndicators",
+        "label": "Exibir Pontos Indicadores (Dots)",
+        "value": true
+      },
+      {
+        "component": "boolean",
+        "name": "showArrows",
+        "label": "Exibir Botões de Navegação",
+        "value": true
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "slides",
+        "label": "Conteúdo dos Slides"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -443,19 +904,41 @@
     "id": "video-player",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "reference",
+        "name": "videoUrl",
+        "label": "URL do Vídeo (MP4 ou YouTube)"
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "reference",
+        "name": "posterImage",
+        "label": "Imagem de Capa (Poster)"
+      },
+      {
+        "component": "select",
+        "name": "portalVariant",
+        "label": "Moldura do Vídeo",
+        "value": "arch",
+        "options": [
+          { "name": "Portal em Arco (Arch)", "value": "arch" },
+          { "name": "Portal Assimétrico (Asymmetric)", "value": "asymmetric" },
+          { "name": "Portal em Pílula (Pill)", "value": "pill" },
+          { "name": "Retangular Arredondado (Rounded)", "value": "rounded" }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Título do Vídeo"
+      },
+      {
+        "component": "text",
+        "name": "caption",
+        "label": "Legenda Inferior"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -465,17 +948,30 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Rótulo do Sumário",
+        "value": "Nesta Página"
+      },
+      {
+        "component": "boolean",
+        "name": "sticky",
+        "label": "Fixar no Topo durante Scroll",
+        "value": true
+      },
+      {
+        "component": "boolean",
+        "name": "scrollSpy",
+        "label": "Destacar Seção Ativa Dinamicamente",
+        "value": true
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Links de Âncoras (ou automático com base nos H2)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -483,19 +979,38 @@
     "id": "pagination",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "component": "number",
+        "name": "currentPage",
+        "label": "Página Atual",
+        "value": 1
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "number",
+        "name": "totalPages",
+        "label": "Total de Páginas",
+        "value": 5
+      },
+      {
+        "component": "reference",
+        "name": "baseUrl",
+        "label": "URL Base com Parâmetro de Página",
+        "value": "?pagina="
+      },
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Estilo da Paginação",
+        "value": "numeric",
+        "options": [
+          { "name": "Numérica com Anterior e Próximo", "value": "numeric" },
+          { "name": "Compacta", "value": "compact" },
+          { "name": "Indicador por Pontos (Dots)", "value": "dots" }
+        ]
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -504,18 +1019,32 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "name": "placeholder",
+        "label": "Texto do Placeholder",
+        "value": "O que você procura no Inter? (ex: Pix, Cartão Black, Financiamento)"
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "reference",
+        "name": "indexEndpoint",
+        "label": "Endpoint do Índice de Busca",
+        "value": "/query-index.json"
+      },
+      {
+        "component": "boolean",
+        "name": "instantSearch",
+        "label": "Busca Instantânea ao Digitar",
+        "value": true
+      },
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Rótulo Acessível",
+        "value": "Buscar no portal Inter"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -525,17 +1054,24 @@
       {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título da Seção de Atendimento",
+        "value": "Canais Oficiais de Atendimento Inter"
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtítulo",
+        "value": "Estamos prontos para atender você 24 horas por dia, 7 dias por semana."
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "items",
+        "label": "Lista de Canais (Nome do Canal, Número/Link e Horário de Funcionamento)"
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -543,19 +1079,39 @@
     "id": "alert-inline",
     "fields": [
       {
+        "component": "select",
+        "name": "variant",
+        "label": "Tipo de Alerta",
+        "value": "warning",
+        "options": [
+          { "name": "Atenção / Segurança (Warning)", "value": "warning" },
+          { "name": "Informativo (Info)", "value": "info" },
+          { "name": "Sucesso / Concluído (Success)", "value": "success" },
+          { "name": "Erro / Bloqueio (Error)", "value": "error" }
+        ]
+      },
+      {
         "component": "text",
         "name": "title",
-        "label": "Título do Bloco"
+        "label": "Título do Alerta",
+        "value": "Aviso Importante de Segurança"
       },
       {
         "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "name": "message",
+        "label": "Mensagem do Alerta",
+        "value": "O Banco Inter nunca solicita senhas, tokens i-safe ou transferências por telefone ou mensagem."
+      },
+      {
+        "component": "boolean",
+        "name": "dismissible",
+        "label": "Permitir fechar o alerta",
+        "value": false
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   },
@@ -564,18 +1120,92 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Título do Bloco"
+        "name": "term",
+        "label": "Termo ou Palavra-Chave",
+        "value": "CDI"
       },
       {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Editorial"
+        "component": "text",
+        "name": "definition",
+        "label": "Definição do Glossário",
+        "value": "Certificado de Depósito Interbancário: taxa de juros praticada entre os bancos, usada como referência para investimentos."
+      },
+      {
+        "component": "select",
+        "name": "position",
+        "label": "Posição da Dica Flutuante",
+        "value": "top",
+        "options": [
+          { "name": "Acima (Top)", "value": "top" },
+          { "name": "Abaixo (Bottom)", "value": "bottom" },
+          { "name": "À Esquerda (Left)", "value": "left" },
+          { "name": "À Direita (Right)", "value": "right" }
+        ]
       },
       {
         "component": "text",
         "name": "classes",
-        "label": "Variantes / Classes CSS"
+        "label": "Variantes / Classes CSS Adicionais"
+      }
+    ]
+  },
+  {
+    "id": "header",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "logo",
+        "label": "Logo Oficial Inter",
+        "value": "/assets/brand/logo.svg"
+      },
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Estilo do Cabeçalho",
+        "value": "default",
+        "options": [
+          { "name": "Padrão Branco com Sombra", "value": "default" },
+          { "name": "Transparente sobre Hero", "value": "transparent" }
+        ]
+      },
+      {
+        "component": "boolean",
+        "name": "showCountrySelector",
+        "label": "Exibir Seletor de País (Brasil / EUA)",
+        "value": true
+      },
+      {
+        "component": "reference",
+        "name": "loginUrl",
+        "label": "Link do Botão Acessar Conta",
+        "value": "/login"
+      },
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Variantes / Classes CSS Adicionais"
+      }
+    ]
+  },
+  {
+    "id": "footer",
+    "fields": [
+      {
+        "component": "boolean",
+        "name": "showRegulatorySeals",
+        "label": "Exibir Selos Regulatórios (BACEN, FDIC, NASDAQ)",
+        "value": true
+      },
+      {
+        "component": "text",
+        "name": "copyrightText",
+        "label": "Texto Legal & CNPJ",
+        "value": "Banco Inter S.A. CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG."
+      },
+      {
+        "component": "text",
+        "name": "classes",
+        "label": "Variantes / Classes CSS Adicionais"
       }
     ]
   }

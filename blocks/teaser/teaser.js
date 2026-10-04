@@ -24,7 +24,8 @@ export default function decorate(block) {
 
   if (pic) {
     const portal = document.createElement('div');
-    portal.className = 'portal-frame pill';
+    const portalMask = ['arch', 'asymmetric', 'rounded', 'pill'].find((v) => block.classList.contains(v)) || 'pill';
+    portal.className = ;
     portal.append(pic);
     mediaCol.append(portal);
   }

@@ -4,7 +4,7 @@
 > **Arquitetura Base:** Adobe Experience Manager Edge Delivery Services (AEM EDS)  
 > **Boilerplate Oficial:** `adobe-rnd/aem-boilerplate-xwalk` (Crosswalk / Universal Editor & Document Authoring)  
 > **Data de Homologação:** Outubro de 2026  
-> **Versão da Biblioteca:** 1.0.0 (15 Componentes Oficiais)
+> **Versão da Biblioteca:** 2.0.0 (Suite Completa de 31 Componentes Oficiais Toranja)
 
 ---
 
@@ -64,7 +64,7 @@ aem-eds-inter-toranja/
 
 ---
 
-## 3. CATÁLOGO DOS 15 COMPONENTES TORANJA CONVERTIDOS
+## 3. CATÁLOGO COMPLETO DOS 31 COMPONENTES TORANJA CONVERTIDOS
 
 | # | Nome do Bloco | Função / Aplicação | Variantes Suportadas | Sintaxe no Google Docs / Word |
 |---|---|---|---|---|
