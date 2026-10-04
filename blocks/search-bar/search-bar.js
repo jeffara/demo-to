@@ -1,79 +1,96 @@
-/**
- * Bloco: Search Bar (Busca Instantânea no Portal via query-index.json)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, text, plain, href, safeURL, finish, uid, cleanup } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const rows = [...block.children];
-  let placeholder = 'O que você procura no Inter? (ex: Pix, Cartão Black, Financiamento)';
-  let indexEndpoint = '/query-index.json';
-  if (rows[0]) {
-    const cols = [...rows[0].children];
-    if (cols[0] && cols[0].textContent.trim()) placeholder = cols[0].textContent.trim();
-    if (cols[1] && cols[1].textContent.trim()) indexEndpoint = cols[1].textContent.trim();
-  }
-
-  const container = document.createElement('div');
-  container.className = 'toranja-search-box';
-
-  container.innerHTML = `
-    <div class="search-input-wrapper">
-      <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-      <input type="search" class="toranja-search-input" placeholder="${placeholder}" aria-label="Buscar no portal Inter" />
-      <button class="search-clear-btn" aria-label="Limpar busca" style="display:none;">&times;</button>
-    </div>
-    <div class="search-results-dropdown" style="display:none;" role="region" aria-live="polite"></div>
-  `;
-
-  const input = container.querySelector('.toranja-search-input');
-  const clearBtn = container.querySelector('.search-clear-btn');
-  const dropdown = container.querySelector('.search-results-dropdown');
-
-  let debounceTimer;
-  input.addEventListener('input', () => {
-    clearTimeout(debounceTimer);
-    const query = input.value.trim().toLowerCase();
-    clearBtn.style.display = query ? 'block' : 'none';
-
+  const { fields: f } = read(block),
+    box = el("form", "toranja-search-box"),
+    wrapper = el("div", "search-input-wrapper"),
+    input = el("input", "toranja-search-input"),
+    label = plain(f.label, "label", "search-label"),
+    submit = el("button", "button secondary", "Buscar"),
+    clear = el("button", "search-clear-btn", "×"),
+    results = el("div", "search-results-dropdown");
+  input.type = "search";
+  input.id = uid("search");
+  label.htmlFor = input.id;
+  input.placeholder = text(f.placeholder);
+  submit.type = "submit";
+  clear.type = "button";
+  clear.setAttribute("aria-label", "Limpar busca");
+  results.hidden = true;
+  results.setAttribute("aria-live", "polite");
+  let timer,
+    sequence = 0;
+  const controller = new AbortController();
+  cleanup(block, () => {
+    clearTimeout(timer);
+    controller.abort();
+  });
+  async function search() {
+    const query = input.value.trim().toLocaleLowerCase("pt-BR"),
+      current = ++sequence;
+    results.replaceChildren();
     if (!query) {
-      dropdown.style.display = 'none';
+      results.hidden = true;
       return;
     }
-
-    debounceTimer = setTimeout(async () => {
-      try {
-        const resp = await fetch(indexEndpoint);
-        if (!resp.ok) throw new Error('Falha ao carregar índice');
-        const json = await resp.json();
-        const matches = (json.data || []).filter((item) =>
-          (item.title && item.title.toLowerCase().includes(query)) ||
-          (item.description && item.description.toLowerCase().includes(query))
-        ).slice(0, 5);
-
-        if (matches.length > 0) {
-          dropdown.innerHTML = matches.map((m) => `
-            <a href="${m.path}" class="search-result-item">
-              <span class="search-result-title">${m.title}</span>
-              <span class="search-result-desc">${m.description || ''}</span>
-            </a>
-          `).join('');
-        } else {
-          dropdown.innerHTML = `<div class="search-empty">Nenhum resultado encontrado para "<strong>${query}</strong>"</div>`;
-        }
-        dropdown.style.display = 'block';
-      } catch (e) {
-        dropdown.innerHTML = `<div class="search-empty">Pressione Enter para buscar no portal</div>`;
-        dropdown.style.display = 'block';
-      }
-    }, 250);
-  });
-
-  clearBtn.addEventListener('click', () => {
-    input.value = '';
-    clearBtn.style.display = 'none';
-    dropdown.style.display = 'none';
+    try {
+      const response = await fetch(href(f.indexEndpoint, "/query-index.json"), {
+        signal: controller.signal,
+      });
+      if (!response.ok) throw Error("Índice indisponível");
+      const json = await response.json();
+      if (current !== sequence) return;
+      const matches = (json.data || [])
+        .filter((i) =>
+          (String(i.title || "") + " " + String(i.description || ""))
+            .toLocaleLowerCase("pt-BR")
+            .includes(query),
+        )
+        .slice(0, 8);
+      matches.forEach((m) => {
+        const a = el("a", "search-result-item");
+        a.href = safeURL(m.path);
+        a.append(
+          el("strong", "search-result-title", m.title),
+          el("span", "search-result-desc", m.description || ""),
+        );
+        results.append(a);
+      });
+      if (!matches.length)
+        results.append(el("p", "search-empty", "Nenhum resultado encontrado."));
+    } catch (error) {
+      if (error.name === "AbortError") return;
+      results.append(
+        el(
+          "p",
+          "search-empty",
+          "Busca indisponível no momento. Tente novamente.",
+        ),
+      );
+    }
+    results.hidden = false;
+  }
+  box.onsubmit = (e) => {
+    e.preventDefault();
+    search();
+  };
+  input.oninput = () => {
+    clearTimeout(timer);
+    sequence++;
+    if (!input.value.trim()) {
+      results.hidden = true;
+      return;
+    }
+    if (block.classList.contains("instant-search"))
+      timer = setTimeout(search, 250);
+  };
+  clear.onclick = () => {
+    sequence++;
+    input.value = "";
+    results.hidden = true;
     input.focus();
-  });
-
-  block.textContent = '';
-  block.append(container);
+  };
+  wrapper.append(input, submit, clear);
+  box.append(label, wrapper, results);
+  finish(block, box);
 }

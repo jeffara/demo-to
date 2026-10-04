@@ -1,0 +1,75 @@
+{
+  "definitions": [
+    {
+      "title": "Toranja: pagination",
+      "id": "pagination",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "pagination",
+              "model": "pagination",
+              "currentPage": 1,
+              "totalPages": 5,
+              "baseUrl": "?pagina=",
+              "classes_variant": "numeric"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "pagination",
+      "fields": [
+        {
+          "component": "number",
+          "name": "currentPage",
+          "label": "Página Atual",
+          "value": 1,
+          "valueType": "number",
+          "valueFormat": "long"
+        },
+        {
+          "component": "number",
+          "name": "totalPages",
+          "label": "Total de Páginas",
+          "value": 5,
+          "valueType": "number",
+          "valueFormat": "long"
+        },
+        {
+          "component": "aem-content",
+          "name": "baseUrl",
+          "label": "URL Base com Parâmetro de Página",
+          "value": "?pagina=",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "classes_variant",
+          "label": "Estilo da Paginação",
+          "value": "numeric",
+          "options": [
+            {
+              "name": "Numérica com Anterior e Próximo",
+              "value": "numeric"
+            },
+            {
+              "name": "Compacta",
+              "value": "compact"
+            },
+            {
+              "name": "Indicador por Pontos (Dots)",
+              "value": "dots"
+            }
+          ],
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

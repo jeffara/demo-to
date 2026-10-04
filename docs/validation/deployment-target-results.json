@@ -1,0 +1,22 @@
+{
+  "version": "2.0.1",
+  "siteRoot": "/content/demo-to",
+  "package": "content/demo-to-content.zip",
+  "filters": [
+    "/content/demo-to/index",
+    "/content/demo-to/demo-toranja",
+    "/content/demo-to/nav",
+    "/content/demo-to/footer",
+    "/content/dam/toranja-eds-demo"
+  ],
+  "checks": {
+    "zip_integrity": true,
+    "all_xmls_parse": true,
+    "xml_count": 27,
+    "four_page_paths": true,
+    "nav_footer_references": true,
+    "no_example_target_in_package": true,
+    "package_identity": "demo-to-content"
+  },
+  "aem_installation": "Não executada; validação local do pacote."
+}

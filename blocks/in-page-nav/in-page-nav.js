@@ -1,56 +1,63 @@
-/**
- * Bloco: In-Page Navigation (Table of Contents / Âncoras da Página)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, text, plain, link, href, finish, instrument, cleanup } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const nav = document.createElement('nav');
-  nav.className = 'toranja-in-page-nav';
-  nav.setAttribute('aria-label', 'Sumário de seções');
-
-  const linksContainer = document.createElement('div');
-  linksContainer.className = 'in-page-nav-links';
-
-  // Se o autor informou links manuais
-  const manualLinks = block.querySelectorAll('a');
-  if (manualLinks.length > 0) {
-    manualLinks.forEach((a) => {
-      const link = document.createElement('a');
-      link.href = a.getAttribute('href');
-      link.className = 'in-page-nav-item';
-      link.textContent = a.textContent.trim();
-      linksContainer.append(link);
-    });
-  } else {
-    // Auto-descoberta dos h2 presentes na página
-    const headings = document.querySelectorAll('main h2');
-    headings.forEach((h2, idx) => {
-      let id = h2.id;
-      if (!id) {
-        id = `secao-${idx + 1}`;
-        h2.id = id;
+  const { fields: f, items } = read(block),
+    nav = el(
+      "nav",
+      "in-page-nav" === "quick-moment-rail"
+        ? "quick-moment-bar"
+        : "toranja-in-page-nav",
+    ),
+    list = el(
+      "div",
+      "in-page-nav" === "quick-moment-rail"
+        ? "rail-items"
+        : "in-page-nav-links",
+    );
+  nav.setAttribute(
+    "aria-label",
+    text(f.label || f.title, "Navegação nesta página"),
+  );
+  nav.append(plain(f.label || f.title, "span", "rail-label"));
+  items.forEach((item) => {
+    const a = instrument(
+      item.row,
+      plain(
+        item.label,
+        "a",
+        "in-page-nav" === "quick-moment-rail"
+          ? "rail-item"
+          : "in-page-nav-item",
+      ),
+    );
+    a.href = href(item.link);
+    list.append(a);
+  });
+  nav.append(list);
+  finish(block, nav);
+  const spy =
+    "in-page-nav" === "quick-moment-rail" ||
+    block.classList.contains("scroll-spy");
+  if (spy) {
+    const links = [...list.querySelectorAll("a")];
+    const observer = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((entry) => {
+          if (entry.isIntersecting)
+            links.forEach((a) =>
+              a.classList.toggle("active", a.hash === "#" + entry.target.id),
+            );
+        }),
+      { rootMargin: "-10% 0px -60% 0px" },
+    );
+    links.forEach((a) => {
+      if (a.hash) {
+        const target = document.getElementById(
+          decodeURIComponent(a.hash.slice(1)),
+        );
+        if (target) observer.observe(target);
       }
-      const link = document.createElement('a');
-      link.href = `#${id}`;
-      link.className = 'in-page-nav-item';
-      link.textContent = h2.textContent.trim();
-      linksContainer.append(link);
     });
+    cleanup(block, () => observer.disconnect());
   }
-
-  nav.append(linksContainer);
-  block.textContent = '';
-  block.append(nav);
-
-  // Scroll spy ativo
-  const navItems = linksContainer.querySelectorAll('.in-page-nav-item');
-  window.addEventListener('scroll', () => {
-    let currentId = '';
-    document.querySelectorAll('main h2').forEach((h2) => {
-      const rect = h2.getBoundingClientRect();
-      if (rect.top <= 140) currentId = `#${h2.id}`;
-    });
-    navItems.forEach((item) => {
-      item.classList.toggle('active', item.getAttribute('href') === currentId);
-    });
-  }, { passive: true });
 }

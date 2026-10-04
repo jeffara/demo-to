@@ -1,0 +1,84 @@
+{
+  "models": [
+    {
+      "id": "page-metadata",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "jcr:title",
+          "label": "Title"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "jcr:description",
+          "label": "Description"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "keywords",
+          "multi": true,
+          "label": "Keywords"
+        },
+        {
+          "component": "select",
+          "name": "toranjaTheme",
+          "label": "Tema Toranja",
+          "valueType": "string",
+          "value": "pf-light",
+          "options": [
+            {
+              "name": "pf-light",
+              "value": "pf-light"
+            },
+            {
+              "name": "pf-dark",
+              "value": "pf-dark"
+            },
+            {
+              "name": "pj-light",
+              "value": "pj-light"
+            },
+            {
+              "name": "pj-dark",
+              "value": "pj-dark"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "toranjaSurface",
+          "label": "Superfície",
+          "valueType": "string",
+          "value": "desktop",
+          "options": [
+            {
+              "name": "desktop",
+              "value": "desktop"
+            },
+            {
+              "name": "webview",
+              "value": "webview"
+            }
+          ]
+        },
+        {
+          "component": "aem-content",
+          "name": "nav",
+          "label": "Página de navegação",
+          "valueType": "string",
+          "value": "/nav"
+        },
+        {
+          "component": "aem-content",
+          "name": "footer",
+          "label": "Página de rodapé",
+          "valueType": "string",
+          "value": "/footer"
+        }
+      ]
+    }
+  ]
+}

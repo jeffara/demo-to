@@ -1,42 +1,23 @@
-/**
- * Bloco: Timeline (Passo a Passo e Linha do Tempo)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, number, take, plain, finish, option, instrument } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const isHorizontal = block.classList.contains('horizontal');
-  const track = document.createElement('div');
-  track.className = `toranja-timeline-track ${isHorizontal ? 'horizontal' : 'vertical'}`;
-
-  const rows = [...block.children];
-  rows.forEach((row, idx) => {
-    const cols = [...row.children];
-    const stepNumber = String(idx + 1).padStart(2, '0');
-    let title = '';
-    let desc = '';
-
-    if (cols.length >= 2) {
-      title = cols[0].textContent.trim();
-      desc = cols[1].innerHTML;
-    } else if (cols.length === 1) {
-      const h3 = cols[0].querySelector('h3, h4, strong');
-      title = h3 ? h3.textContent.trim() : `Etapa ${idx + 1}`;
-      desc = cols[0].innerHTML;
-    }
-
-    const item = document.createElement('div');
-    item.className = 'toranja-timeline-item';
-    item.innerHTML = `
-      <div class="timeline-node">
-        <span class="timeline-number">${stepNumber}</span>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-step-title">${title}</h3>
-        <div class="timeline-step-desc">${desc}</div>
-      </div>
-    `;
-    track.append(item);
+  const { items } = read(block),
+    track = el(
+      "div",
+      "toranja-timeline-track " +
+        option(block, ["horizontal", "vertical"], "vertical"),
+    );
+  items.forEach((item, i) => {
+    const row = instrument(item.row, el("div", "toranja-timeline-item")),
+      node = el("div", "timeline-node"),
+      body = el("div", "timeline-content");
+    node.append(el("span", "timeline-number", String(i + 1).padStart(2, "0")));
+    body.append(
+      plain(item.title, "h3", "timeline-step-title"),
+      take(item.description, "timeline-step-desc"),
+    );
+    row.append(node, body);
+    track.append(row);
   });
-
-  block.textContent = '';
-  block.append(track);
+  finish(block, track);
 }

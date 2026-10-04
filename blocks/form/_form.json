@@ -1,0 +1,199 @@
+{
+  "definitions": [
+    {
+      "title": "Item — form",
+      "id": "form-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Item",
+              "model": "form-item",
+              "kind": "text",
+              "required": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Toranja: form",
+      "id": "form",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "form",
+              "model": "form",
+              "filter": "form",
+              "title": "Fale com um Especialista do Inter",
+              "titleType": "h2",
+              "subtitle": "Preencha seus dados para receber uma consultoria exclusiva sobre contas, investimentos ou crédito.",
+              "submitLabel": "Enviar Solicitação",
+              "successMessage": "Solicitação recebida com sucesso! Entraremos em contato em breve."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "form",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Título do Formulário",
+          "value": "Fale com um Especialista do Inter",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "titleType",
+          "label": "Nível do título",
+          "valueType": "string",
+          "value": "h2",
+          "options": [
+            {
+              "name": "H1",
+              "value": "h1"
+            },
+            {
+              "name": "H2",
+              "value": "h2"
+            },
+            {
+              "name": "H3",
+              "value": "h3"
+            },
+            {
+              "name": "H4",
+              "value": "h4"
+            },
+            {
+              "name": "H5",
+              "value": "h5"
+            },
+            {
+              "name": "H6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "subtitle",
+          "label": "Subtítulo / Instrução",
+          "value": "Preencha seus dados para receber uma consultoria exclusiva sobre contas, investimentos ou crédito.",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "submitLabel",
+          "label": "Texto do Botão de Envio",
+          "value": "Enviar Solicitação",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "successMessage",
+          "label": "Mensagem de Sucesso",
+          "value": "Solicitação recebida com sucesso! Entraremos em contato em breve.",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "endpoint",
+          "label": "Endpoint Webhook CRM / Salesforce",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "consent",
+          "label": "Texto e link de consentimento",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "form-item",
+      "fields": [
+        {
+          "component": "text",
+          "name": "fieldName",
+          "label": "Nome técnico",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "label",
+          "label": "Rótulo",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "kind",
+          "label": "Tipo",
+          "valueType": "string",
+          "value": "text",
+          "options": [
+            {
+              "name": "text",
+              "value": "text"
+            },
+            {
+              "name": "email",
+              "value": "email"
+            },
+            {
+              "name": "tel",
+              "value": "tel"
+            },
+            {
+              "name": "cpf",
+              "value": "cpf"
+            },
+            {
+              "name": "textarea",
+              "value": "textarea"
+            },
+            {
+              "name": "select",
+              "value": "select"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "placeholder",
+          "label": "Placeholder",
+          "valueType": "string"
+        },
+        {
+          "component": "boolean",
+          "name": "required",
+          "label": "Obrigatório",
+          "valueType": "boolean",
+          "value": false
+        },
+        {
+          "component": "richtext",
+          "name": "options",
+          "label": "Opções: lista de valores",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "form",
+      "components": [
+        "form-item"
+      ]
+    }
+  ]
+}

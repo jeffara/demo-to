@@ -1,108 +1,102 @@
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, text, take, plain, link, href, finish, instrument, uid, listen } from "../../scripts/toranja.js";
+import { getMetadata } from "../../scripts/aem.js";
 export default async function decorate(block) {
-  // Check if there is nav content from authoring
-  let navHtml = '';
-  try {
-    const resp = await fetch('/nav.plain.html');
-    if (resp.ok) {
-      navHtml = await resp.text();
+  if (!block.textContent.trim() && !block.querySelector("img")) {
+    if (document.querySelector("main .header")) {
+      block.remove();
+      return;
     }
-  } catch (e) {
-    // fallback to inline/default
+    const path = getMetadata("nav") || "/nav";
+    if (path === "none") {
+      block.remove();
+      return;
+    }
+    try {
+      const response = await fetch(path.replace(/\.html$/, "") + ".plain.html");
+      if (!response.ok) throw Error("Navegação indisponível");
+      const doc = new DOMParser().parseFromString(
+          await response.text(),
+          "text/html",
+        ),
+        source = doc.querySelector(".header");
+      if (source) {
+        block.replaceChildren(...source.children);
+        block.classList.add(...source.classList);
+        instrument(source, block);
+      } else throw Error("Bloco de conteúdo compartilhado ausente");
+    } catch (error) {
+      console.warn(error.message);
+      return;
+    }
   }
-
-  block.innerHTML = `
-    <div class="header-inner container">
-      <div class="header-brand">
-        <a href="/" aria-label="Ir para a página inicial do Banco Inter">
-          <img src="/assets/brand/logo.svg" alt="Banco Inter" class="brand-logo" width="108" height="30" />
-        </a>
-        <span class="brand-tag">Super App</span>
-      </div>
-
-      <nav class="main-nav" aria-label="Navegação Principal">
-        <div class="nav-item">
-          <a href="/#momentos" class="nav-link">Pra Você</a>
-        </div>
-        <div class="nav-item nav-dropdown">
-          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-            Empresas
-            <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu" role="menu">
-            <a href="/empresas/conta-pj" class="dropdown-item" role="menuitem">Conta PJ Digital</a>
-            <a href="/empresas/credito" class="dropdown-item" role="menuitem">Crédito Empresarial</a>
-            <a href="/empresas/maquininha" class="dropdown-item" role="menuitem">Inter Pag / Granito</a>
-          </div>
-        </div>
-        <div class="nav-item">
-          <a href="/#segmentos" class="nav-link">Segmentos</a>
-        </div>
-        <div class="nav-item">
-          <a href="/#global" class="nav-link">Global Account 🇺🇸</a>
-        </div>
-        <div class="nav-item">
-          <a href="/#loop" class="nav-link">Inter Loop</a>
-        </div>
-      </nav>
-
-      <div class="header-actions">
-        <a href="https://internetbanking.bancointer.com.br" class="btn btn-outline login-btn" style="min-height: 40px; padding: 6px 16px; font-size: 0.8125rem;">
-          Acessar Conta
-        </a>
-        <a href="/abra-sua-conta" class="btn btn-primary cta-btn" style="min-height: 40px; padding: 6px 18px; font-size: 0.8125rem;">
-          Abra sua conta
-        </a>
-        <button class="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-drawer" aria-hidden="true">
-      <div class="mobile-nav-links">
-        <a href="/#momentos" class="mobile-nav-link">Pra Você</a>
-        <a href="/empresas" class="mobile-nav-link">Empresas</a>
-        <a href="/#segmentos" class="mobile-nav-link">Segmentos (Digital a Win)</a>
-        <a href="/#global" class="mobile-nav-link">Global Account (Dólar)</a>
-        <a href="/#loop" class="mobile-nav-link">Inter Loop</a>
-      </div>
-      <div class="mobile-actions">
-        <a href="/abra-sua-conta" class="btn btn-primary" style="width: 100%;">Abra sua conta grátis</a>
-        <a href="https://internetbanking.bancointer.com.br" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">Já sou cliente</a>
-      </div>
-    </div>
-  `;
-
-  // Scroll effect on header
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      block.classList.add('scrolled');
-    } else {
-      block.classList.remove('scrolled');
+  const { fields: f, items } = read(block),
+    inner = el("div", "header-inner container"),
+    brand = el("div", "header-brand"),
+    home = el("a"),
+    nav = el("nav", "main-nav"),
+    actions = el("div", "header-actions"),
+    toggle = el("button", "mobile-toggle", "☰");
+  home.href = "/";
+  home.setAttribute("aria-label", "Página inicial");
+  const img = f.logo?.querySelector("img");
+  if (img) {
+    img.classList.add("brand-logo");
+    instrument(f.logo, img);
+    home.append(img);
+  } else home.textContent = "Inter";
+  brand.append(home, plain(f.brandTag, "span", "brand-tag"));
+  nav.id = uid("nav");
+  nav.setAttribute("aria-label", "Navegação principal");
+  items.forEach((item) => {
+    const node = instrument(item.row, el("div", "nav-item")),
+      a = plain(item.label, "a", "nav-link");
+    a.href = href(item.link);
+    node.append(a);
+    if (item.children?.querySelector("a")) {
+      node.classList.add("nav-dropdown");
+      const disclosure = el("button", "nav-dropdown-trigger", "⌄"),
+        submenu = take(item.children, "nav-dropdown-menu");
+      disclosure.type = "button";
+      disclosure.setAttribute("aria-label", "Abrir submenu " + a.textContent);
+      submenu.id = uid("submenu");
+      disclosure.setAttribute("aria-controls", submenu.id);
+      disclosure.setAttribute("aria-expanded", "false");
+      submenu.hidden = true;
+      disclosure.onclick = () => {
+        submenu.hidden = !submenu.hidden;
+        disclosure.setAttribute("aria-expanded", String(!submenu.hidden));
+      };
+      node.append(disclosure, submenu);
     }
-  }, { passive: true });
-
-  // Mobile drawer toggle
-  const toggleBtn = block.querySelector('.mobile-toggle');
-  const drawer = block.querySelector('.mobile-drawer');
-  if (toggleBtn && drawer) {
-    toggleBtn.addEventListener('click', () => {
-      const isOpen = drawer.classList.toggle('open');
-      toggleBtn.setAttribute('aria-expanded', isOpen);
-      drawer.setAttribute('aria-hidden', !isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-
-    drawer.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        drawer.classList.remove('open');
-        toggleBtn.setAttribute('aria-expanded', 'false');
-        drawer.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
+    nav.append(node);
+  });
+  const login = link(f.loginUrl, "btn btn-outline login-btn", "Acessar conta");
+  login.textContent = "Acessar conta";
+  actions.append(login, link(f.cta, "btn btn-primary cta-btn"));
+  if (block.classList.contains("show-country-selector"))
+    actions.append(take(f.countries, "country-selector"));
+  toggle.type = "button";
+  toggle.setAttribute("aria-label", "Abrir menu");
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", nav.id);
+  toggle.onclick = () => {
+    const open = block.classList.toggle("menu-open");
+    toggle.setAttribute("aria-expanded", String(open));
+  };
+  actions.append(toggle);
+  inner.append(brand, nav, actions);
+  finish(block, inner);
+  listen(block, document, "keydown", (e) => {
+    if (e.key === "Escape") {
+      block.classList.remove("menu-open");
+      toggle.setAttribute("aria-expanded", "false");
+      nav.querySelectorAll(".nav-dropdown-menu").forEach((s) => {
+        s.hidden = true;
       });
-    });
-  }
+      nav
+        .querySelectorAll("[aria-expanded]")
+        .forEach((b) => b.setAttribute("aria-expanded", "false"));
+    }
+  });
 }

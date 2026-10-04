@@ -1,0 +1,77 @@
+{
+  "definitions": [
+    {
+      "title": "Toranja: alert-inline",
+      "id": "alert-inline",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "alert-inline",
+              "model": "alert-inline",
+              "title": "Aviso Importante de Segurança",
+              "message": "<p>O Banco Inter nunca solicita senhas, tokens i-safe ou transferências por telefone ou mensagem.</p>",
+              "classes_variant": "warning",
+              "classes_dismissible": false
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "alert-inline",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Título do Alerta",
+          "value": "Aviso Importante de Segurança",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "message",
+          "label": "Mensagem do Alerta",
+          "value": "<p>O Banco Inter nunca solicita senhas, tokens i-safe ou transferências por telefone ou mensagem.</p>",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "classes_variant",
+          "label": "Tipo de Alerta",
+          "value": "warning",
+          "options": [
+            {
+              "name": "Atenção / Segurança (Warning)",
+              "value": "warning"
+            },
+            {
+              "name": "Informativo (Info)",
+              "value": "info"
+            },
+            {
+              "name": "Sucesso / Concluído (Success)",
+              "value": "success"
+            },
+            {
+              "name": "Erro / Bloqueio (Error)",
+              "value": "error"
+            }
+          ],
+          "valueType": "string"
+        },
+        {
+          "component": "boolean",
+          "name": "classes_dismissible",
+          "label": "Permitir fechar o alerta",
+          "value": false,
+          "valueType": "boolean"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

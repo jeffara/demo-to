@@ -1,36 +1,27 @@
-/**
- * Bloco: Testimonials (Depoimentos e Prova Social de Clientes)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, number, take, plain, heading, finish, instrument } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const container = document.createElement('div');
-  container.className = 'toranja-testimonials-grid';
-
-  const rows = [...block.children];
-  rows.forEach((row) => {
-    const cols = [...row.children];
-    if (cols.length >= 2) {
-      const quote = cols[0].textContent.trim();
-      const author = cols[1].textContent.trim();
-      const role = cols.length > 2 ? cols[2].textContent.trim() : 'Cliente Inter';
-
-      const card = document.createElement('div');
-      card.className = 'toranja-testimonial-card';
-      card.innerHTML = `
-        <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">★★★★★</div>
-        <p class="testimonial-quote">“${quote}”</p>
-        <div class="testimonial-author-box">
-          <div class="author-avatar">${author.charAt(0)}</div>
-          <div>
-            <strong class="author-name">${author}</strong>
-            <span class="author-role">${role}</span>
-          </div>
-        </div>
-      `;
-      container.append(card);
-    }
+  const { fields: f, items } = read(block),
+    grid = el("div", "toranja-testimonials-grid");
+  items.forEach((item) => {
+    const card = instrument(
+        item.row,
+        el("article", "toranja-testimonial-card"),
+      ),
+      author = el("div", "testimonial-author-box"),
+      rating = Math.max(0, Math.min(5, Math.round(number(item.rating, 5)))),
+      stars = el("div", "testimonial-stars", "★".repeat(rating));
+    stars.setAttribute("aria-label", `${rating} de 5 estrelas`);
+    author.append(
+      plain(item.author, "strong", "author-name"),
+      plain(item.role, "span", "author-role"),
+    );
+    card.append(
+      stars,
+      plain(item.quote, "blockquote", "testimonial-quote"),
+      author,
+    );
+    grid.append(card);
   });
-
-  block.textContent = '';
-  block.append(container);
+  finish(block, heading(f.title), take(f.subtitle), grid);
 }

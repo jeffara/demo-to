@@ -1,0 +1,105 @@
+{
+  "definitions": [
+    {
+      "title": "Section",
+      "id": "section",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "model": "section",
+              "filter": "section"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "section",
+      "fields": [
+        {
+          "component": "text",
+          "name": "name",
+          "label": "Nome da seção",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "id",
+          "label": "Âncora",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "style",
+          "label": "Estilo",
+          "valueType": "string",
+          "value": "",
+          "options": [
+            {
+              "name": "",
+              "value": ""
+            },
+            {
+              "name": "highlight",
+              "value": "highlight"
+            },
+            {
+              "name": "white-bg",
+              "value": "white-bg"
+            },
+            {
+              "name": "dark-bg",
+              "value": "dark-bg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        "text",
+        "title",
+        "image",
+        "button",
+        "hero",
+        "cards",
+        "quick-moment-rail",
+        "manifesto",
+        "moments-journey",
+        "segment-showcase",
+        "simulator",
+        "flywheel",
+        "accordion",
+        "cta-banner",
+        "modal",
+        "form",
+        "teaser",
+        "banner",
+        "tabs",
+        "breadcrumb",
+        "comparison-table",
+        "app-download",
+        "stats-counter",
+        "testimonials",
+        "timeline",
+        "carousel",
+        "video-player",
+        "in-page-nav",
+        "pagination",
+        "search-bar",
+        "contact-channels",
+        "alert-inline",
+        "tooltip",
+        "header",
+        "footer"
+      ]
+    }
+  ]
+}

@@ -1,30 +1,19 @@
-/**
- * Bloco: Tooltip (Dicas de Contexto e Glossário Financeiro Acessível)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, plain, finish, uid } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const container = document.createElement('div');
-  container.className = 'toranja-tooltip-container';
-
-  const rows = [...block.children];
-  rows.forEach((row) => {
-    const cols = [...row.children];
-    if (cols.length >= 2) {
-      const term = cols[0].textContent.trim();
-      const definition = cols[1].textContent.trim();
-
-      const item = document.createElement('span');
-      item.className = 'toranja-tooltip-trigger';
-      item.setAttribute('tabindex', '0');
-      item.innerHTML = `
-        <span class="tooltip-term">${term}</span>
-        <span class="tooltip-badge">?</span>
-        <span class="toranja-tooltip-popup" role="tooltip">${definition}</span>
-      `;
-      container.append(item);
-    }
-  });
-
-  block.textContent = '';
-  block.append(container);
+  const { fields: f } = read(block),
+    box = el("div", "toranja-tooltip-container"),
+    trigger = el("span", "toranja-tooltip-trigger"),
+    popup = plain(f.definition, "span", "toranja-tooltip-popup");
+  trigger.tabIndex = 0;
+  popup.id = uid("tooltip");
+  popup.setAttribute("role", "tooltip");
+  trigger.setAttribute("aria-describedby", popup.id);
+  trigger.append(
+    plain(f.term, "span", "tooltip-term"),
+    el("span", "tooltip-badge", "?"),
+    popup,
+  );
+  box.append(trigger);
+  finish(block, box);
 }

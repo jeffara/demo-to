@@ -1,55 +1,44 @@
-/**
- * Bloco: Pagination (Paginação de Notícias e Comunicados de RI)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, number, link, href, safeURL, finish } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const nav = document.createElement('nav');
-  nav.className = 'toranja-pagination';
-  nav.setAttribute('aria-label', 'Paginação de páginas');
-
-  const ul = document.createElement('ul');
-  ul.className = 'pagination-list';
-
-  // Lógica de parâmetros: permite configuração via tabela de autoria ou query string
-  const urlParams = new URLSearchParams(window.location.search);
-  let currentPage = parseInt(urlParams.get('pagina') || '1', 10);
-  let totalPages = 5;
-  let baseUrl = '?pagina=';
-
-  const rows = [...block.children];
-  if (rows[0]) {
-    const cols = [...rows[0].children];
-    if (cols[0] && cols[0].textContent.trim()) {
-      const p = parseInt(cols[0].textContent.trim(), 10);
-      if (!Number.isNaN(p)) currentPage = p;
+  const { fields: f } = read(block),
+    nav = el("nav", "toranja-pagination"),
+    list = el("ul", "pagination-list");
+  nav.setAttribute("aria-label", "Paginação");
+  const total = Math.max(1, Math.round(number(f.totalPages, 5))),
+    current = Math.max(
+      1,
+      Math.min(total, Math.round(number(f.currentPage, 1))),
+    ),
+    base = href(f.baseUrl, "?pagina=");
+  const add = (label, page, disabled = false) => {
+    const li = el("li"),
+      a = el("a", "page-link", label);
+    a.href = safeURL(base + page);
+    if (disabled) {
+      a.setAttribute("aria-disabled", "true");
+      a.tabIndex = -1;
+      a.onclick = (e) => e.preventDefault();
     }
-    if (cols[1] && cols[1].textContent.trim()) {
-      const t = parseInt(cols[1].textContent.trim(), 10);
-      if (!Number.isNaN(t)) totalPages = t;
-    }
-    if (cols[2] && cols[2].textContent.trim()) {
-      baseUrl = cols[2].textContent.trim();
-    }
+    if (page === current && !disabled) a.setAttribute("aria-current", "page");
+    li.append(a);
+    list.append(li);
+  };
+  add("Anterior", Math.max(1, current - 1), current === 1);
+  if (block.classList.contains("compact"))
+    list.append(el("li", "page-link", `${current} / ${total}`));
+  else {
+    const pages =
+      total <= 9
+        ? Array.from({ length: total }, (_, i) => i + 1)
+        : [...new Set([1, current - 1, current, current + 1, total])].filter(
+            (i) => i > 0 && i <= total,
+          );
+    pages.forEach((i) =>
+      add(block.classList.contains("dots") ? "●" : String(i), i),
+    );
   }
-
-  // Botão Anterior
-  const prevLi = document.createElement('li');
-  prevLi.innerHTML = `<a href="${baseUrl}${Math.max(1, currentPage - 1)}" class="page-link prev-link ${currentPage === 1 ? 'disabled' : ''}" aria-label="Página anterior">&lsaquo;</a>`;
-  ul.append(prevLi);
-
-  for (let i = 1; i <= totalPages; i += 1) {
-    const li = document.createElement('li');
-    const isActive = i === currentPage;
-    li.innerHTML = `<a href="${baseUrl}${i}" class="page-link ${isActive ? 'active' : ''}" ${isActive ? 'aria-current="page"' : ''}>${i}</a>`;
-    ul.append(li);
-  }
-
-  // Botão Próximo
-  const nextLi = document.createElement('li');
-  nextLi.innerHTML = `<a href="${baseUrl}${Math.min(totalPages, currentPage + 1)}" class="page-link next-link ${currentPage === totalPages ? 'disabled' : ''}" aria-label="Próxima página">&rsaquo;</a>`;
-  ul.append(nextLi);
-
-  nav.append(ul);
-  block.textContent = '';
-  block.append(nav);
+  add("Próximo", Math.min(total, current + 1), current === total);
+  nav.append(list);
+  finish(block, nav);
 }

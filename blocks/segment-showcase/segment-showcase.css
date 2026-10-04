@@ -51,7 +51,7 @@
   box-shadow: 0 4px 16px rgba(50, 55, 71, 0.45);
 }
 
-.segment-showcase {
+.segment-showcase-panel {
   background: var(--inter-sand-light);
   border-radius: var(--radius-xl);
   padding: clamp(2rem, 4vw, 4rem);

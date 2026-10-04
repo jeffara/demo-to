@@ -1,0 +1,17 @@
+{
+  "syntax": "31 blocos, 43 arquivos JS válidos",
+  "models": 53,
+  "fields": 220,
+  "container_models": 17,
+  "filevault": "ZIP íntegro e todos os XMLs válidos; importação AEM não executada",
+  "original_assets": "nenhum arquivo original de assets alterado",
+  "browser": "64/64 testes locais aprovados",
+  "upstream_sha256": {
+    "scripts/aem.js": "b7b81a7c738cda6d7be9c269bb0490003bd83e4e5c0ade60898fe8d25dc7b057",
+    "scripts/editor-support.js": "aa490bc28c34938063102e62a659598f2aaaf1d25639a927bdaa81f5cc88c4b8",
+    "scripts/editor-support-rte.js": "de2748a1acfba38ebe5d75fccd31730c88593ad866991303ea80e94ed38cf541"
+  },
+  "deployment_target": "/content/demo-to",
+  "content_package": "content/demo-to-content.zip",
+  "deployment_validation": "docs/validation/deployment-target-results.json"
+}

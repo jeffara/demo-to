@@ -1,0 +1,106 @@
+{
+  "definitions": [
+    {
+      "title": "Item — carousel",
+      "id": "carousel-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Item",
+              "model": "carousel-item"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Toranja: carousel",
+      "id": "carousel",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "carousel",
+              "model": "carousel",
+              "filter": "carousel",
+              "interval": 5000,
+              "classes_autoplay": false,
+              "classes_show-indicators": true,
+              "classes_show-arrows": true
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "carousel",
+      "fields": [
+        {
+          "component": "number",
+          "name": "interval",
+          "label": "Intervalo do Autoplay (ms)",
+          "value": 5000,
+          "valueType": "number",
+          "valueFormat": "long"
+        },
+        {
+          "component": "boolean",
+          "name": "classes_autoplay",
+          "label": "Rolagem Automática (Autoplay)",
+          "value": false,
+          "valueType": "boolean"
+        },
+        {
+          "component": "boolean",
+          "name": "classes_show-indicators",
+          "label": "Exibir Pontos Indicadores (Dots)",
+          "value": true,
+          "valueType": "boolean"
+        },
+        {
+          "component": "boolean",
+          "name": "classes_show-arrows",
+          "label": "Exibir Botões de Navegação",
+          "value": true,
+          "valueType": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "carousel-item",
+      "fields": [
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Imagem",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "imageAlt",
+          "label": "Texto alternativo",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "content",
+          "label": "Conteúdo do slide",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "carousel",
+      "components": [
+        "carousel-item"
+      ]
+    }
+  ]
+}

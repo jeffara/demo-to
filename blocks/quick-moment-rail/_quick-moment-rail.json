@@ -1,0 +1,97 @@
+{
+  "definitions": [
+    {
+      "title": "Item — quick-moment-rail",
+      "id": "quick-moment-rail-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Item",
+              "model": "quick-moment-rail-item"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Toranja: quick-moment-rail",
+      "id": "quick-moment-rail",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "quick-moment-rail",
+              "model": "quick-moment-rail",
+              "filter": "quick-moment-rail",
+              "label": "Momentos de Vida",
+              "classes_behavior": "floating"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "quick-moment-rail",
+      "fields": [
+        {
+          "component": "text",
+          "name": "label",
+          "label": "Rótulo do Trilho",
+          "value": "Momentos de Vida",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "classes_behavior",
+          "label": "Comportamento de Fixação",
+          "value": "floating",
+          "options": [
+            {
+              "name": "Flutuante no Rodapé (Floating)",
+              "value": "floating"
+            },
+            {
+              "name": "Fixado no Topo (Sticky)",
+              "value": "sticky"
+            },
+            {
+              "name": "Em linha com a página (Inline)",
+              "value": "inline"
+            }
+          ],
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "quick-moment-rail-item",
+      "fields": [
+        {
+          "component": "text",
+          "name": "label",
+          "label": "Momento",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Âncora",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "quick-moment-rail",
+      "components": [
+        "quick-moment-rail-item"
+      ]
+    }
+  ]
+}

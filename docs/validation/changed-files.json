@@ -1,0 +1,538 @@
+[
+  {
+    "arquivo": ".hlxignore",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "LICENSE",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "README.md",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "RUNBOOK-TORANJA-EDS.md",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "assets/demo/11fa52f4aa2b.jpg",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "assets/demo/27039a3ce868.jpg",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "assets/demo/6aa4033b9055.jpg",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "assets/demo/929b38390928.jpg",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "assets/demo/c655230f9197.jpg",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "assets/demo/ec9cc3472288.jpg",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "assets/demo/ede5e1c82aad.jpg",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "authoring-guide.md",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/accordion/_accordion.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/accordion/accordion.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/alert-inline/_alert-inline.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/alert-inline/alert-inline.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/app-download/_app-download.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/app-download/app-download.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/banner/_banner.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/banner/banner.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/breadcrumb/_breadcrumb.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/breadcrumb/breadcrumb.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/cards/_cards.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/cards/cards.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/carousel/_carousel.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/carousel/carousel.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/comparison-table/_comparison-table.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/comparison-table/comparison-table.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/contact-channels/_contact-channels.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/contact-channels/contact-channels.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/cta-banner/_cta-banner.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/cta-banner/cta-banner.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/flywheel/_flywheel.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/flywheel/flywheel.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/footer/_footer.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/footer/footer.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/form/_form.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/form/form.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/header/_header.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/header/header.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/hero/_hero.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/hero/hero.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/in-page-nav/_in-page-nav.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/in-page-nav/in-page-nav.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/manifesto/_manifesto.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/manifesto/manifesto.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/modal/_modal.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/modal/modal.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/moments-journey/_moments-journey.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/moments-journey/moments-journey.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/pagination/_pagination.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/pagination/pagination.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/quick-moment-rail/_quick-moment-rail.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/quick-moment-rail/quick-moment-rail.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/search-bar/_search-bar.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/search-bar/search-bar.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/segment-showcase/_segment-showcase.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/segment-showcase/segment-showcase.css",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/segment-showcase/segment-showcase.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/simulator/_simulator.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/simulator/simulator.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/stats-counter/_stats-counter.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/stats-counter/stats-counter.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/tabs/_tabs.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/tabs/tabs.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/teaser/_teaser.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/teaser/teaser.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/testimonials/_testimonials.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/testimonials/testimonials.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/timeline/_timeline.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/timeline/timeline.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/tooltip/_tooltip.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/tooltip/tooltip.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "blocks/video-player/_video-player.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "blocks/video-player/video-player.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "component-definition.json",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "component-filters.json",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "component-models.json",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "content/aem-config.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "content/contracts.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "content/demo-to-content.zip",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "content/image-sources.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "content/pages.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/DIAGNOSTICO.md",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/MATRIZ-COMPONENTES.md",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/MIGRACAO-AEM.md",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/browser-results.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/changed-files.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/demo-1440.png",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/demo-390.png",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/deployment-target-results.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/hero-1440.png",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/hero-390.png",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/segmentos-1440.png",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/segmentos-390.png",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "docs/validation/static-results.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/demo-toranja.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/demo-toranja.plain.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/footer.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/footer.plain.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/index.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/index.plain.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/nav.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "drafts/nav.plain.html",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "helix-query.yaml",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "helix-sitemap.yaml",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "models/_button.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "models/_image.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "models/_main.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "models/_page.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "models/_section.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "models/_text.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "models/_title.json",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "package-lock.json",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "package.json",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "scripts/aem.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "scripts/contracts.js",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "scripts/dompurify.min.js",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "scripts/editor-support-rte.js",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "scripts/editor-support.js",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "scripts/scripts.js",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "scripts/toranja.js",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "styles/styles.css",
+    "estado": "alterado"
+  },
+  {
+    "arquivo": "tests/browser.mjs",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "tests/contracts.mjs",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "tools/build-json.mjs",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "tools/export-aem.py",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "tools/render-content.mjs",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "tools/serve.mjs",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "tools/vault/config.xml",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "tools/vault/settings.xml",
+    "estado": "adicionado"
+  },
+  {
+    "arquivo": "index.html",
+    "estado": "removido ou migrado"
+  },
+  {
+    "arquivo": "demo-toranja.html",
+    "estado": "removido ou migrado"
+  },
+  {
+    "arquivo": ".well-known/adobe/cloud-manager-challenge",
+    "estado": "removido ou migrado"
+  }
+]

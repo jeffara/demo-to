@@ -1,92 +1,121 @@
-/**
- * Bloco: Carousel (Slider Horizontal com Suporte a Swipe e Teclado)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, number, take, finish, media, instrument, editing, cleanup } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const wrapper = document.createElement('div');
-  wrapper.className = 'toranja-carousel-container';
-
-  const track = document.createElement('div');
-  track.className = 'toranja-carousel-track';
-  track.setAttribute('tabindex', '0');
-  track.setAttribute('aria-label', 'Vitrines em Carrossel');
-
-  const slides = [...block.children];
-  slides.forEach((slide, i) => {
-    slide.className = 'toranja-carousel-slide';
-    slide.setAttribute('role', 'group');
-    slide.setAttribute('aria-roledescription', 'slide');
-    slide.setAttribute('aria-label', `${i + 1} de ${slides.length}`);
+  const { fields: f, items } = read(block),
+    box = el("div", "toranja-carousel-container"),
+    track = el("div", "toranja-carousel-track"),
+    controls = el("div", "toranja-carousel-controls"),
+    dots = el("div", "carousel-dots");
+  track.tabIndex = 0;
+  track.setAttribute("aria-label", "Carrossel");
+  items.forEach((item, i) => {
+    const slide = instrument(item.row, el("div", "toranja-carousel-slide"));
+    slide.setAttribute("role", "group");
+    slide.setAttribute("aria-label", `${i + 1} de ${items.length}`);
+    slide.append(
+      media(item.image, "cards-card-image"),
+      take(item.content, "cards-card-body"),
+    );
     track.append(slide);
   });
-
-  // Controles de Navegação
-  const controls = document.createElement('div');
-  controls.className = 'toranja-carousel-controls';
-  controls.innerHTML = `
-    <button class="carousel-btn prev-btn" aria-label="Slide anterior">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
-    </button>
-    <div class="carousel-dots" role="tablist"></div>
-    <button class="carousel-btn next-btn" aria-label="Próximo slide">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-    </button>
-  `;
-
-  wrapper.append(track);
-  wrapper.append(controls);
-  block.textContent = '';
-  block.append(wrapper);
-
-  // Renderiza dots e adiciona interatividade
-  const dotsContainer = controls.querySelector('.carousel-dots');
-  const prevBtn = controls.querySelector('.prev-btn');
-  const nextBtn = controls.querySelector('.next-btn');
-
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = ;
-    dot.setAttribute('role', 'tab');
-    dot.setAttribute('aria-label', );
-    dot.addEventListener('click', () => {
-      const slide = track.children[i];
-      if (slide) {
-        slide.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-      }
+  let active = 0;
+  const go = (i) => {
+    active = (i + items.length) % Math.max(items.length, 1);
+    const slide = track.children[active];
+    if (slide)
+      track.scrollTo({
+        left: slide.offsetLeft - track.children[0].offsetLeft,
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+      });
+    [...dots.children].forEach((d, j) => {
+      d.classList.toggle("active", j === active);
+      d.setAttribute("aria-current", String(j === active));
     });
-    dotsContainer.append(dot);
-  });
-
-  const scrollSlide = (direction) => {
-    const slideWidth = track.querySelector('.toranja-carousel-slide')?.offsetWidth || 300;
-    track.scrollBy({ left: direction * (slideWidth + 24), behavior: 'smooth' });
   };
-
-  prevBtn.addEventListener('click', () => scrollSlide(-1));
-  nextBtn.addEventListener('click', () => scrollSlide(1));
-
-  track.addEventListener('scroll', () => {
-    const scrollLeft = track.scrollLeft;
-    const slideWidth = track.querySelector('.toranja-carousel-slide')?.offsetWidth || 300;
-    const activeIndex = Math.round(scrollLeft / (slideWidth + 24));
-    dotsContainer.querySelectorAll('.carousel-dot').forEach((d, idx) => {
-      d.classList.toggle('active', idx === activeIndex);
+  if (block.classList.contains("show-arrows")) {
+    for (const [label, step] of [
+      ["Anterior", -1],
+      ["Próximo", 1],
+    ]) {
+      const b = el("button", "carousel-btn", label);
+      b.type = "button";
+      b.onclick = () => go(active + step);
+      controls.append(b);
+    }
+  }
+  if (block.classList.contains("show-indicators"))
+    items.forEach((_, i) => {
+      const dot = el("button", "carousel-dot");
+      dot.type = "button";
+      dot.setAttribute("aria-label", `Ir para slide ${i + 1}`);
+      dot.onclick = () => go(i);
+      dots.append(dot);
     });
-  }, { passive: true });
-
-  // Suporte a Autoplay se configurado
-  if (block.classList.contains('autoplay')) {
-    let autoInterval = setInterval(() => {
-      const slideWidth = track.querySelector('.toranja-carousel-slide')?.offsetWidth || 300;
-      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
-        track.scrollTo({ left: 0, behavior: 'smooth' });
-      } else {
-        scrollSlide(1);
-      }
-    }, 5000);
-    wrapper.addEventListener('mouseenter', () => clearInterval(autoInterval));
-    wrapper.addEventListener('mouseleave', () => {
-      autoInterval = setInterval(() => scrollSlide(1), 5000);
-    });
+  controls.append(dots);
+  box.append(track, controls);
+  finish(block, box);
+  go(0);
+  track.addEventListener("keydown", (e) => {
+    if (["ArrowLeft", "ArrowRight"].includes(e.key)) {
+      e.preventDefault();
+      go(active + (e.key === "ArrowLeft" ? -1 : 1));
+    }
+  });
+  track.addEventListener(
+    "scroll",
+    () => {
+      const first = track.children[0];
+      if (!first) return;
+      active = [...track.children].reduce(
+        (best, s, i) =>
+          Math.abs(s.offsetLeft - first.offsetLeft - track.scrollLeft) <
+          Math.abs(
+            track.children[best].offsetLeft -
+              first.offsetLeft -
+              track.scrollLeft,
+          )
+            ? i
+            : best,
+        0,
+      );
+      [...dots.children].forEach((d, i) =>
+        d.classList.toggle("active", i === active),
+      );
+    },
+    { passive: true },
+  );
+  if (
+    block.classList.contains("autoplay") &&
+    !editing() &&
+    !matchMedia("(prefers-reduced-motion: reduce)").matches &&
+    items.length > 1
+  ) {
+    let timer,
+      paused = false;
+    const stop = () => clearInterval(timer),
+      start = () => {
+        stop();
+        if (!paused)
+          timer = setInterval(
+            () => go(active + 1),
+            Math.max(1500, number(f.interval, 5000)),
+          );
+      };
+    const pause = el("button", "carousel-btn", "Pausar");
+    pause.type = "button";
+    pause.onclick = () => {
+      paused = !paused;
+      pause.textContent = paused ? "Reproduzir" : "Pausar";
+      start();
+    };
+    controls.append(pause);
+    box.addEventListener("mouseenter", stop);
+    box.addEventListener("mouseleave", start);
+    box.addEventListener("focusin", stop);
+    box.addEventListener("focusout", start);
+    start();
+    cleanup(block, stop);
   }
 }

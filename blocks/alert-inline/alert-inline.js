@@ -1,38 +1,24 @@
-/**
- * Bloco: Alert Inline (Avisos de Segurança e Comunicados Regulatórios)
- * Toranja Design System - Banco Inter
- */
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, take, plain, finish, option, editing } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const type = block.classList.contains('warning') ? 'warning'
-    : block.classList.contains('success') ? 'success'
-    : block.classList.contains('error') ? 'error' : 'info';
-
-  const icons = {
-    info: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>',
-    warning: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>',
-    success: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>',
-    error: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>',
-  };
-
-  const isDismissible = block.classList.contains('dismissible');
-  const content = block.innerHTML;
-
-  block.innerHTML = `
-    <div class="toranja-alert-box alert-${type}" role="alert">
-      <div class="alert-icon">${icons[type]}</div>
-      <div class="alert-content">${content}</div>
-      ${isDismissible ? '<button class="alert-close-btn" type="button" aria-label="Fechar alerta">&times;</button>' : ''}
-    </div>
-  `;
-
-  if (isDismissible) {
-    const closeBtn = block.querySelector('.alert-close-btn');
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        block.style.opacity = '0';
-        block.style.transform = 'translateY(-6px)';
-        setTimeout(() => block.remove(), 250);
-      });
-    }
+  const { fields: f } = read(block);
+  const box = el(
+      "div",
+      "toranja-alert-box alert-" +
+        option(block, ["warning", "success", "error", "info"], "info"),
+    ),
+    body = el("div", "alert-content");
+  box.setAttribute("role", "status");
+  body.append(plain(f.title, "strong"), take(f.message));
+  box.append(body);
+  if (block.classList.contains("dismissible") && !editing()) {
+    const close = el("button", "alert-close-btn", "×");
+    close.type = "button";
+    close.setAttribute("aria-label", "Fechar alerta");
+    close.onclick = () => {
+      block.hidden = true;
+    };
+    box.append(close);
   }
+  finish(block, box);
 }

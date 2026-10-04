@@ -1,51 +1,50 @@
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, text, take, plain, heading, href, finish, uid, editing, listen } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const rows = [...block.children];
-  const dialog = document.createElement('dialog');
-  dialog.className = 'toranja-dialog';
-
-  let modalId = 'default-modal';
-  let contentHtml = '';
-
-  rows.forEach((row, idx) => {
-    if (idx === 0 && row.textContent.includes('modal-id:')) {
-      modalId = row.textContent.replace('modal-id:', '').trim();
-    } else {
-      contentHtml += row.innerHTML;
+  const { fields: f } = read(block),
+    dialog = el("dialog", "toranja-dialog"),
+    id = text(f.modalId) || uid("modal"),
+    trigger = plain(f.trigger, "button", "button secondary"),
+    head = el("div", "dialog-header"),
+    close = el("button", "dialog-close-btn", "×"),
+    title = heading(f.title, "dialog-title");
+  dialog.id = document.getElementById(id) ? uid(id) : id;
+  title.id = uid("dialog-title");
+  dialog.setAttribute("aria-labelledby", title.id);
+  trigger.type = "button";
+  if (!trigger.textContent.trim()) trigger.textContent = "Abrir detalhes";
+  trigger.setAttribute("aria-haspopup", "dialog");
+  trigger.setAttribute("aria-controls", dialog.id);
+  close.type = "button";
+  close.setAttribute("aria-label", "Fechar");
+  head.append(title, close);
+  dialog.append(head, take(f.content, "dialog-content"));
+  close.onclick = () => dialog.close();
+  trigger.onclick = () => dialog.showModal();
+  dialog.addEventListener("click", (e) => {
+    if (e.target === dialog) {
+      const r = dialog.getBoundingClientRect();
+      if (
+        e.clientX < r.left ||
+        e.clientX > r.right ||
+        e.clientY < r.top ||
+        e.clientY > r.bottom
+      )
+        dialog.close();
     }
   });
-
-  dialog.id = modalId;
-  dialog.innerHTML = `
-    <div class="dialog-header">
-      <div class="dialog-brand-badge">Inter Informa</div>
-      <button class="dialog-close-btn" aria-label="Fechar modal">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-    </div>
-    <div class="dialog-content">
-      ${contentHtml}
-    </div>
-  `;
-
-  block.innerHTML = '';
-  block.append(dialog);
-
-  // Close handlers
-  const closeBtn = dialog.querySelector('.dialog-close-btn');
-  closeBtn.addEventListener('click', () => dialog.close());
-
-  dialog.addEventListener('click', (e) => {
-    const rect = dialog.getBoundingClientRect();
-    const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-    if (!isInDialog) dialog.close();
-  });
-
-  // Global trigger listener for any link pointing to #modalId or data-modal-open
-  document.addEventListener('click', (e) => {
-    const trigger = e.target.closest(`a[href="#${modalId}"], [data-modal-open="${modalId}"]`);
-    if (trigger) {
+  finish(block, trigger, dialog);
+  listen(block, document, "click", (e) => {
+    const a = e.target.closest("a[href]");
+    if (a && a.getAttribute("href") === "#" + dialog.id) {
       e.preventDefault();
-      dialog.showModal();
+      if (!dialog.open) dialog.showModal();
     }
   });
+  if (editing()) {
+    dialog.setAttribute("open", "");
+    block.classList.add("authoring-modal");
+    trigger.disabled = true;
+    close.hidden = true;
+  }
 }

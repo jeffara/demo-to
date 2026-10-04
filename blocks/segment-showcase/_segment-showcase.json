@@ -1,0 +1,173 @@
+{
+  "definitions": [
+    {
+      "title": "Item — segment-showcase",
+      "id": "segment-showcase-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Item",
+              "model": "segment-showcase-item"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Toranja: segment-showcase",
+      "id": "segment-showcase",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "segment-showcase",
+              "model": "segment-showcase",
+              "filter": "segment-showcase",
+              "title": "Uma experiência desenhada para o seu momento de vida",
+              "titleType": "h2",
+              "subtitle": "Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter.",
+              "defaultSegment": "digital"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "segment-showcase",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Título da Seção de Segmentos",
+          "value": "Uma experiência desenhada para o seu momento de vida",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "titleType",
+          "label": "Nível do título",
+          "valueType": "string",
+          "value": "h2",
+          "options": [
+            {
+              "name": "H1",
+              "value": "h1"
+            },
+            {
+              "name": "H2",
+              "value": "h2"
+            },
+            {
+              "name": "H3",
+              "value": "h3"
+            },
+            {
+              "name": "H4",
+              "value": "h4"
+            },
+            {
+              "name": "H5",
+              "value": "h5"
+            },
+            {
+              "name": "H6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "subtitle",
+          "label": "Subtítulo / Descrição",
+          "value": "Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter.",
+          "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "defaultSegment",
+          "label": "Segmento Selecionado Inicialmente",
+          "value": "digital",
+          "options": [
+            {
+              "name": "Inter Digital (Sem exigência)",
+              "value": "digital"
+            },
+            {
+              "name": "Inter One (R$ 50k+)",
+              "value": "one"
+            },
+            {
+              "name": "Inter Prime (R$ 250k+)",
+              "value": "prime"
+            },
+            {
+              "name": "Inter Win (R$ 1M+ Wealth)",
+              "value": "win"
+            }
+          ],
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "segment-showcase-item",
+      "fields": [
+        {
+          "component": "text",
+          "name": "segmentId",
+          "label": "Identificador",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "label",
+          "label": "Nome",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "criteria",
+          "label": "Critério",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "tier",
+          "label": "Cartão",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "perks",
+          "label": "Benefícios",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "cta",
+          "label": "Destino",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "ctaText",
+          "label": "Texto do botão",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "segment-showcase",
+      "components": [
+        "segment-showcase-item"
+      ]
+    }
+  ]
+}

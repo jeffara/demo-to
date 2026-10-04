@@ -1,41 +1,25 @@
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, number, take, plain, heading, link, finish, instrument } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const steps = [...block.children];
-  const container = document.createElement('div');
-  container.className = 'flywheel-grid';
-
-  const leftCol = document.createElement('div');
-  leftCol.className = 'flywheel-info';
-  leftCol.innerHTML = `
-    <span class="eyebrow">Programa de Recompensas</span>
-    <h2 class="font-display">O Ciclo de Valor Virtuoso do Inter Loop</h2>
-    <p>Quanto mais você usa o Super App para pagar contas, fazer compras e investir, mais valor retorna diretamente para o seu patrimônio. Sem pegadinhas, sem pontos expirando.</p>
-    <div class="button-container">
-      <a href="/inter-loop" class="button primary">Conhecer o Inter Loop</a>
-    </div>
-  `;
-
-  const rightCol = document.createElement('div');
-  rightCol.className = 'flywheel-cycle';
-
-  steps.forEach((step, idx) => {
-    const cols = [...step.children];
-    const card = document.createElement('div');
-    card.className = 'flywheel-step';
-
-    const num = cols[0] ? cols[0].textContent.trim() : `${idx + 1}`;
-    const title = cols[1] ? cols[1].textContent.trim() : '';
-    const desc = cols[2] ? cols[2].textContent.trim() : '';
-
-    card.innerHTML = `
-      <div class="step-num">ETAPA 0${num}</div>
-      <h3 class="step-title">${title}</h3>
-      <p class="step-desc">${desc}</p>
-    `;
-
-    rightCol.append(card);
+  const { fields: f, items } = read(block),
+    grid = el("div", "flywheel-grid"),
+    info = el("div", "flywheel-info"),
+    cycle = el("div", "flywheel-cycle");
+  info.append(
+    plain(f.eyebrow, "p", "eyebrow"),
+    heading(f.title, "font-display"),
+    take(f.description),
+    link(f.cta),
+  );
+  items.forEach((item, i) => {
+    const card = instrument(item.row, el("div", "flywheel-step"));
+    card.append(
+      plain(item.number, "div", "step-num"),
+      plain(item.title, "h3", "step-title"),
+      take(item.description, "step-desc"),
+    );
+    cycle.append(card);
   });
-
-  container.append(leftCol, rightCol);
-  block.innerHTML = '';
-  block.append(container);
+  grid.append(info, cycle);
+  finish(block, grid);
 }

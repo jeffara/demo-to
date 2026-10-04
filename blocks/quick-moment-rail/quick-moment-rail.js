@@ -1,53 +1,63 @@
+/** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
+import { read, el, text, plain, link, href, finish, instrument, cleanup } from "../../scripts/toranja.js";
 export default function decorate(block) {
-  const rows = [...block.children];
-  const bar = document.createElement('div');
-  bar.className = 'quick-moment-bar';
-
-  // Row 1: Label
-  let labelText = 'Momentos de Vida';
-  if (rows[0] && rows[0].textContent.trim()) {
-    labelText = rows[0].textContent.trim();
-  }
-
-  const labelDiv = document.createElement('span');
-  labelDiv.className = 'rail-label';
-  labelDiv.textContent = labelText;
-  bar.append(labelDiv);
-
-  // Row 2: Links
-  const itemsContainer = document.createElement('div');
-  itemsContainer.className = 'rail-items';
-
-  const links = rows[1] ? rows[1].querySelectorAll('a') : block.querySelectorAll('a');
-  links.forEach((a, idx) => {
-    const item = document.createElement('a');
-    item.href = a.getAttribute('href');
-    item.className = `rail-item ${idx === 0 ? 'active' : ''}`;
-    item.textContent = a.textContent;
-    itemsContainer.append(item);
+  const { fields: f, items } = read(block),
+    nav = el(
+      "nav",
+      "quick-moment-rail" === "quick-moment-rail"
+        ? "quick-moment-bar"
+        : "toranja-in-page-nav",
+    ),
+    list = el(
+      "div",
+      "quick-moment-rail" === "quick-moment-rail"
+        ? "rail-items"
+        : "in-page-nav-links",
+    );
+  nav.setAttribute(
+    "aria-label",
+    text(f.label || f.title, "Navegação nesta página"),
+  );
+  nav.append(plain(f.label || f.title, "span", "rail-label"));
+  items.forEach((item) => {
+    const a = instrument(
+      item.row,
+      plain(
+        item.label,
+        "a",
+        "quick-moment-rail" === "quick-moment-rail"
+          ? "rail-item"
+          : "in-page-nav-item",
+      ),
+    );
+    a.href = href(item.link);
+    list.append(a);
   });
-
-  bar.append(itemsContainer);
-  block.innerHTML = '';
-  block.append(bar);
-
-  // Highlight active moment item on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        itemsContainer.querySelectorAll('.rail-item').forEach((link) => {
-          if (link.getAttribute('href') === `#${id}`) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
-          }
-        });
+  nav.append(list);
+  finish(block, nav);
+  const spy =
+    "quick-moment-rail" === "quick-moment-rail" ||
+    block.classList.contains("scroll-spy");
+  if (spy) {
+    const links = [...list.querySelectorAll("a")];
+    const observer = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((entry) => {
+          if (entry.isIntersecting)
+            links.forEach((a) =>
+              a.classList.toggle("active", a.hash === "#" + entry.target.id),
+            );
+        }),
+      { rootMargin: "-10% 0px -60% 0px" },
+    );
+    links.forEach((a) => {
+      if (a.hash) {
+        const target = document.getElementById(
+          decodeURIComponent(a.hash.slice(1)),
+        );
+        if (target) observer.observe(target);
       }
     });
-  }, { threshold: 0.4 });
-
-  document.querySelectorAll('section[id], div[id]').forEach((section) => {
-    observer.observe(section);
-  });
+    cleanup(block, () => observer.disconnect());
+  }
 }
