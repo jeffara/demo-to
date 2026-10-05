@@ -1,7 +1,6 @@
 /** Utilitários EDS: preservam os nós autorados e seus atributos do Universal Editor. */
 import { resolveLink } from "./links.js";
 import { cells, containers } from "./contracts.js";
-import {cells as legacyCells,containers as legacyContainers} from "./legacy-contracts.js";
 let sequence = 0;
 export const uid = (prefix = "toranja") => `${prefix}-${++sequence}`;
 export const editing = () =>
@@ -39,10 +38,7 @@ export function read(
       );
   });
   const rows = [...block.children];
-  const first=rows[0]?.firstElementChild;
-  const v3=first?.textContent.trim()==='toranja-v3'||first?.getAttribute('data-aue-prop')==='schemaVersion';
-  const cellMap=v3||!legacyCells[name]?cells:legacyCells;
-  const containerMap=v3||!legacyCells[name]?containers:legacyContainers;
+  const cellMap=cells,containerMap=containers;
   const fields = Object.fromEntries(
     (cellMap[name] || []).map((key, i) => [
       key,
@@ -65,10 +61,6 @@ export function read(
 }
 export const text = (cell, fallback = "") =>
   cell?.textContent?.trim() || fallback;
-export const number = (cell, fallback) => {
-  const n = Number(text(cell).replace(",", "."));
-  return text(cell) && Number.isFinite(n) ? n : fallback;
-};
 export const safeURL = (value, fallback = "#") => {
   const s = String(value || "").trim();
   try {
@@ -94,15 +86,6 @@ export function plain(cell, tag, cls = "") {
   const node = instrument(cell, el(tag, cls, text(cell)));
   return node;
 }
-export function heading(cell, cls = "", level = "h2") {
-  const h = cell?.querySelector("h1,h2,h3,h4,h5,h6");
-  if (h) {
-    instrument(cell, h);
-    h.classList.add(...cls.split(" ").filter(Boolean));
-    return h;
-  }
-  return plain(cell, level, cls);
-}
 export function link(cell, cls = "button primary", label) {
   const a = cell?.querySelector("a") || el("a");
   a.href = resolveLink(href(cell));
@@ -113,29 +96,18 @@ export function link(cell, cls = "button primary", label) {
   instrument(cell, a);
   return a;
 }
-export function option(block, values, fallback) {
-  return values.find((v) => block.classList.contains(v)) || fallback;
-}
 export function finish(block, ...children) {
   block.replaceChildren(...children.filter(Boolean));
   block.querySelectorAll("a[href]").forEach(a => {const url=resolveLink(a.getAttribute("href"));if(url)a.setAttribute("href",url);});
   block.dataset.toranjaReady = "true";
 }
-export function media(cell, cls = "portal-frame asymmetric") {
+export function media(cell, cls = "v3-media") {
   const box = take(cell, cls);
   box.querySelectorAll("img").forEach((img) => {
     if (!img.hasAttribute("alt")) img.alt = "";
     if (!img.hasAttribute("loading")) img.loading = "lazy";
   });
   return box;
-}
-export function icon(name) {
-  const img = el("img");
-  img.src = `${window.hlx?.codeBasePath || ""}/icons/${/^[a-z0-9_-]+$/i.test(name) ? name : "sparkle"}.svg`;
-  img.alt = "";
-  img.width = 24;
-  img.height = 24;
-  return img;
 }
 /** Listeners globais e timers são removidos quando o editor substitui o bloco. */
 const cleanups = new Map();
@@ -156,44 +128,4 @@ export function cleanup(block, fn) {
   }
   if (!cleanups.has(block)) cleanups.set(block, []);
   cleanups.get(block).push(fn);
-}
-export function listen(block, target, event, fn, options) {
-  target.addEventListener(event, fn, options);
-  cleanup(block, () => target.removeEventListener(event, fn, options));
-}
-export function initTabs(root, buttons, panels, selected = 0) {
-  const activate = (i) => {
-    buttons.forEach((b, j) => {
-      b.classList.toggle("active", j === i);
-      b.setAttribute("aria-selected", String(j === i));
-      b.tabIndex = j === i ? 0 : -1;
-      panels[j].hidden = j !== i;
-      panels[j].classList.toggle("active", j === i);
-    });
-  };
-  buttons.forEach((b, i) => {
-    b.type = "button";
-    b.id = uid("tab");
-    panels[i].id = uid("panel");
-    b.setAttribute("role", "tab");
-    b.setAttribute("aria-controls", panels[i].id);
-    panels[i].setAttribute("role", "tabpanel");
-    panels[i].setAttribute("aria-labelledby", b.id);
-    b.addEventListener("click", () => activate(i));
-    b.addEventListener("keydown", (e) => {
-      let next;
-      if (e.key === "ArrowRight") next = (i + 1) % buttons.length;
-      if (e.key === "ArrowLeft")
-        next = (i - 1 + buttons.length) % buttons.length;
-      if (e.key === "Home") next = 0;
-      if (e.key === "End") next = buttons.length - 1;
-      if (next !== undefined) {
-        e.preventDefault();
-        activate(next);
-        buttons[next].focus();
-      }
-    });
-  });
-  if (buttons.length)
-    activate(Math.max(0, Math.min(buttons.length - 1, selected)));
 }

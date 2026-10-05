@@ -40,20 +40,36 @@
           "value": "",
           "options": [
             {
-              "name": "",
+              "name": "Padrão",
               "value": ""
             },
             {
-              "name": "highlight",
+              "name": "Destaque",
               "value": "highlight"
             },
             {
-              "name": "white-bg",
-              "value": "white-bg"
+              "name": "Duas colunas",
+              "value": "columns-2"
             },
             {
-              "name": "dark-bg",
-              "value": "dark-bg"
+              "name": "Três colunas",
+              "value": "columns-3"
+            },
+            {
+              "name": "Quatro colunas",
+              "value": "columns-4"
+            },
+            {
+              "name": "Navegação horizontal",
+              "value": "nav-row"
+            },
+            {
+              "name": "Hero",
+              "value": "hero-layout"
+            },
+            {
+              "name": "Rodapé em colunas",
+              "value": "footer-columns"
             }
           ]
         }
@@ -65,40 +81,6 @@
       "id": "section",
       "components": [
         "text",
-        "title",
-        "image",
-        "button",
-        "hero",
-        "cards",
-        "quick-moment-rail",
-        "manifesto",
-        "moments-journey",
-        "segment-showcase",
-        "simulator",
-        "flywheel",
-        "accordion",
-        "cta-banner",
-        "modal",
-        "form",
-        "teaser",
-        "banner",
-        "tabs",
-        "breadcrumb",
-        "comparison-table",
-        "app-download",
-        "stats-counter",
-        "testimonials",
-        "timeline",
-        "carousel",
-        "video-player",
-        "in-page-nav",
-        "pagination",
-        "search-bar",
-        "contact-channels",
-        "alert-inline",
-        "tooltip",
-        "header",
-        "footer",
         "ds-alert",
         "ds-avatar",
         "ds-accordion",
@@ -162,7 +144,11 @@
         "ds-text",
         "ds-text-area",
         "ds-timeline",
-        "ds-widget"
+        "ds-widget",
+        "v3-form",
+        "v3-search",
+        "v3-video",
+        "v3-simulator"
       ]
     }
   ]

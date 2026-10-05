@@ -5,32 +5,6 @@
       "title": "Estrutura e conteúdo",
       "components": [
         {
-          "title": "Button",
-          "id": "button",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/button/v1/button",
-                "template": {
-                  "model": "button"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Image",
-          "id": "image",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/image/v1/image",
-                "template": {}
-              }
-            }
-          }
-        },
-        {
           "title": "Section",
           "id": "section",
           "plugins": {
@@ -56,26 +30,12 @@
               }
             }
           }
-        },
-        {
-          "title": "Title",
-          "id": "title",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/title/v1/title",
-                "template": {
-                  "model": "title"
-                }
-              }
-            }
-          }
         }
       ]
     },
     {
       "id": "toranja-official",
-      "title": "Toranja oficial — 64 componentes",
+      "title": "Toranja — componentes oficiais",
       "components": [
         {
           "id": "ds-alert",
@@ -1414,267 +1374,20 @@
       ]
     },
     {
-      "id": "toranja",
-      "title": "Toranja — composições de página",
+      "id": "v3-features",
+      "title": "V3 — funcionalidades do site",
       "components": [
         {
-          "title": "Toranja: accordion",
-          "id": "accordion",
+          "title": "Formulário configurável",
+          "id": "v3-form",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "accordion",
-                  "model": "accordion",
-                  "filter": "accordion",
-                  "classes_behavior": "single-open",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: alert-inline",
-          "id": "alert-inline",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "alert-inline",
-                  "model": "alert-inline",
-                  "title": "Aviso Importante de Segurança",
-                  "message": "<p>O Banco Inter nunca solicita senhas, tokens i-safe ou transferências por telefone ou mensagem.</p>",
-                  "classes_variant": "warning",
-                  "classes_dismissible": false,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: app-download",
-          "id": "app-download",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "app-download",
-                  "model": "app-download",
-                  "title": "Baixe o Super App do Inter",
-                  "titleType": "h2",
-                  "subtitle": "Aponte a câmera do seu celular para o QR Code e abra sua conta gratuita em poucos minutos.",
-                  "appleStoreUrl": "https://apps.apple.com/br/app/inter/id1071477797",
-                  "googlePlayUrl": "https://play.google.com/store/apps/details?id=br.com.intermedium",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: banner",
-          "id": "banner",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "banner",
-                  "model": "banner",
-                  "icon": "sparkle",
-                  "title": "Super App Day no Inter",
-                  "description": "Ganhe até 2x pontos no Inter Loop e cashback turbinado em mais de 500 lojas parceiras no Inter Shop.",
-                  "cta": "/loop",
-                  "ctaText": "Aproveitar Oferta",
-                  "classes_variant": "promo",
-                  "classes_dismissible": true,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: breadcrumb",
-          "id": "breadcrumb",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "breadcrumb",
-                  "model": "breadcrumb",
-                  "filter": "breadcrumb",
-                  "separator": "/",
-                  "classes_show-home": true,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: cards",
-          "id": "cards",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "cards",
-                  "model": "cards",
-                  "filter": "cards",
-                  "classes_variant": "",
-                  "classes_columns": "3",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: carousel",
-          "id": "carousel",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "carousel",
-                  "model": "carousel",
-                  "filter": "carousel",
-                  "interval": 5000,
-                  "classes_autoplay": false,
-                  "classes_show-indicators": true,
-                  "classes_show-arrows": true,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: comparison-table",
-          "id": "comparison-table",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "comparison-table",
-                  "model": "comparison-table",
-                  "filter": "comparison-table",
-                  "title": "Compare as Vantagens do Inter",
-                  "titleType": "h2",
-                  "subtitle": "Transparência total sem letras miúdas.",
-                  "highlightColumn": 2,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: contact-channels",
-          "id": "contact-channels",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "contact-channels",
-                  "model": "contact-channels",
-                  "filter": "contact-channels",
-                  "title": "Canais Oficiais de Atendimento Inter",
-                  "titleType": "h2",
-                  "subtitle": "Estamos prontos para atender você 24 horas por dia, 7 dias por semana.",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: cta-banner",
-          "id": "cta-banner",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "cta-banner",
-                  "model": "cta-banner",
-                  "headline": "Pronto para transformar a sua vida financeira?",
-                  "headlineType": "h2",
-                  "description": "Abra sua conta em menos de 5 minutos, direto pelo celular, sem tarifas e com atendimento 24 horas.",
-                  "primaryCta": "/abra-sua-conta",
-                  "primaryCtaText": "Abra sua conta grátis",
-                  "secondaryCta": "/app",
-                  "secondaryCtaText": "Baixar o Super App",
-                  "classes_theme": "dark",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: flywheel",
-          "id": "flywheel",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "flywheel",
-                  "model": "flywheel",
-                  "filter": "flywheel",
-                  "eyebrow": "Programa de Recompensas",
-                  "title": "O Ciclo de Valor Virtuoso do Inter Loop",
-                  "titleType": "h2",
-                  "cta": "/inter-loop",
-                  "ctaText": "Conhecer o Inter Loop",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: footer",
-          "id": "footer",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "footer",
-                  "model": "footer",
-                  "filter": "footer",
-                  "copyright": "Banco Inter S.A. CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG.",
-                  "classes_show-regulatory-seals": true,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: form",
-          "id": "form",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "form",
-                  "model": "form",
-                  "filter": "form",
+                  "name": "v3-form",
+                  "model": "v3-form",
+                  "filter": "v3-form",
                   "title": "Fale com um Especialista do Inter",
                   "titleType": "h2",
                   "subtitle": "Preencha seus dados para receber uma consultoria exclusiva sobre contas, investimentos ou crédito.",
@@ -1687,186 +1400,15 @@
           }
         },
         {
-          "title": "Toranja: header",
-          "id": "header",
+          "title": "Busca de conteúdo",
+          "id": "v3-search",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "header",
-                  "model": "header",
-                  "filter": "header",
-                  "logo": "",
-                  "loginUrl": "/login",
-                  "cta": "/abra-sua-conta",
-                  "ctaText": "Abra sua conta",
-                  "brandTag": "Super App",
-                  "classes_variant": "default",
-                  "classes_show-country-selector": true,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: hero",
-          "id": "hero",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "hero",
-                  "model": "hero",
-                  "eyebrow": "Dossiê Estratégico · Banco Inter",
-                  "headline": "Em todo momento da vida, vejo você.",
-                  "headlineType": "h1",
-                  "description": "<p>O Super App financeiro que conecta conta corrente, investimentos, cartões, seguros, compras com cashback e conta internacional em dólar.</p>",
-                  "primaryCta": "/abra-sua-conta",
-                  "primaryCtaText": "Abra sua conta grátis",
-                  "secondaryCta": "/#momentos",
-                  "secondaryCtaText": "Conhecer os Produtos",
-                  "checklist": "<ul><li>Sem taxa de manutenção</li><li>Cartão de crédito sem anuidade</li><li>Global Account em dólar</li></ul>",
-                  "image": "",
-                  "classes_portal-variant": "asymmetric",
-                  "classes_theme": "default",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: in-page-nav",
-          "id": "in-page-nav",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "in-page-nav",
-                  "model": "in-page-nav",
-                  "filter": "in-page-nav",
-                  "title": "Nesta Página",
-                  "classes_sticky": true,
-                  "classes_scroll-spy": true,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: manifesto",
-          "id": "manifesto",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "manifesto",
-                  "model": "manifesto",
-                  "quote": "<p>Acreditamos que a vida financeira não precisa ser complicada, fria ou distante. Ela precisa ser humana, transparente e presente em cada momento de realização.</p>",
-                  "attribution": "Manifesto Oficial do Banco Inter",
-                  "classes_align": "center",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: modal",
-          "id": "modal",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "modal",
-                  "model": "modal",
-                  "modalId": "garantia-fgc",
-                  "title": "Proteção Regulatória do FGC e FDIC",
-                  "titleType": "h2",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: moments-journey",
-          "id": "moments-journey",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "moments-journey",
-                  "model": "moments-journey",
-                  "moment": "Começar: Autonomia e Faculdade",
-                  "headline": "Vejo você conquistando a sua independência financeira.",
-                  "headlineType": "h2",
-                  "cta": "/abra-sua-conta",
-                  "ctaText": "Abra sua conta grátis",
-                  "classes_portal-variant": "asymmetric",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: pagination",
-          "id": "pagination",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "pagination",
-                  "model": "pagination",
-                  "currentPage": 1,
-                  "totalPages": 5,
-                  "baseUrl": "?pagina=",
-                  "classes_variant": "numeric",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: quick-moment-rail",
-          "id": "quick-moment-rail",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "quick-moment-rail",
-                  "model": "quick-moment-rail",
-                  "filter": "quick-moment-rail",
-                  "label": "Momentos de Vida",
-                  "classes_behavior": "floating",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: search-bar",
-          "id": "search-bar",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "search-bar",
-                  "model": "search-bar",
+                  "name": "v3-search",
+                  "model": "v3-search",
                   "placeholder": "O que você procura no Inter? (ex: Pix, Cartão Black, Financiamento)",
                   "indexEndpoint": "/query-index.json",
                   "label": "Buscar no portal Inter",
@@ -1878,20 +1420,15 @@
           }
         },
         {
-          "title": "Toranja: segment-showcase",
-          "id": "segment-showcase",
+          "id": "v3-simulator",
+          "title": "Simulação configurável",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "segment-showcase",
-                  "model": "segment-showcase",
-                  "filter": "segment-showcase",
-                  "title": "Uma experiência desenhada para o seu momento de vida",
-                  "titleType": "h2",
-                  "subtitle": "Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter.",
-                  "defaultSegment": "digital",
+                  "name": "v3-simulator",
+                  "model": "v3-simulator",
                   "schemaVersion": "toranja-v3"
                 }
               }
@@ -1899,157 +1436,15 @@
           }
         },
         {
-          "title": "Toranja: simulator",
-          "id": "simulator",
+          "title": "Vídeo responsivo",
+          "id": "v3-video",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "simulator",
-                  "model": "simulator",
-                  "title": "Simule seu Rendimento no Meu Porquinho",
-                  "titleType": "h2",
-                  "subtitle": "Rendimento automático a 102% do CDI com liquidez diária.",
-                  "defaultValue": 10000,
-                  "minValue": 500,
-                  "maxValue": 100000,
-                  "cdiRate": 10.75,
-                  "cta": "/investimentos",
-                  "ctaText": "Começar a Investir",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: stats-counter",
-          "id": "stats-counter",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "stats-counter",
-                  "model": "stats-counter",
-                  "filter": "stats-counter",
-                  "classes_variant": "default",
-                  "classes_animated": true,
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: tabs",
-          "id": "tabs",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "tabs",
-                  "model": "tabs",
-                  "filter": "tabs",
-                  "defaultTab": "1",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: teaser",
-          "id": "teaser",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "teaser",
-                  "model": "teaser",
-                  "eyebrow": "Vida Global Sem Fronteiras",
-                  "title": "Uma só marca. Duas moedas. Zero barreiras.",
-                  "titleType": "h2",
-                  "cta": "/global",
-                  "ctaText": "Conhecer a Global Account",
-                  "classes_variant": "pill",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: testimonials",
-          "id": "testimonials",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "testimonials",
-                  "model": "testimonials",
-                  "filter": "testimonials",
-                  "title": "O que nossos clientes dizem",
-                  "titleType": "h2",
-                  "subtitle": "Mais de 33 milhões de pessoas confiam a sua vida financeira ao Inter.",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: timeline",
-          "id": "timeline",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "timeline",
-                  "model": "timeline",
-                  "filter": "timeline",
-                  "classes_variant": "vertical",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: tooltip",
-          "id": "tooltip",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "tooltip",
-                  "model": "tooltip",
-                  "term": "CDI",
-                  "definition": "Certificado de Depósito Interbancário: taxa de juros praticada entre os bancos, usada como referência para investimentos.",
-                  "classes_position": "top",
-                  "schemaVersion": "toranja-v3"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Toranja: video-player",
-          "id": "video-player",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "video-player",
-                  "model": "video-player",
-                  "classes_portal-variant": "arch",
+                  "name": "v3-video",
+                  "model": "v3-video",
                   "schemaVersion": "toranja-v3"
                 }
               }
@@ -2059,8 +1454,8 @@
       ]
     },
     {
-      "id": "toranja-items",
-      "title": "Toranja — itens",
+      "id": "v3-items",
+      "title": "V3 — itens",
       "components": [
         {
           "id": "ds-bottom-sheet-country-item",
@@ -2543,258 +1938,17 @@
           }
         },
         {
-          "title": "Item — accordion",
-          "id": "accordion-item",
+          "title": "Item — v3-form",
+          "id": "v3-form-item",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Item",
-                  "model": "accordion-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — breadcrumb",
-          "id": "breadcrumb-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "breadcrumb-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — cards",
-          "id": "cards-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "cards-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — carousel",
-          "id": "carousel-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "carousel-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — comparison-table",
-          "id": "comparison-table-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "comparison-table-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — contact-channels",
-          "id": "contact-channels-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "contact-channels-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — flywheel",
-          "id": "flywheel-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "flywheel-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — footer",
-          "id": "footer-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "footer-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — form",
-          "id": "form-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "form-item",
+                  "model": "v3-form-item",
                   "kind": "text",
                   "required": false
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — header",
-          "id": "header-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "header-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — in-page-nav",
-          "id": "in-page-nav-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "in-page-nav-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — quick-moment-rail",
-          "id": "quick-moment-rail-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "quick-moment-rail-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — segment-showcase",
-          "id": "segment-showcase-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "segment-showcase-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — stats-counter",
-          "id": "stats-counter-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "stats-counter-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — tabs",
-          "id": "tabs-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "tabs-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — testimonials",
-          "id": "testimonials-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "testimonials-item",
-                  "rating": 5
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Item — timeline",
-          "id": "timeline-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Item",
-                  "model": "timeline-item"
                 }
               }
             }

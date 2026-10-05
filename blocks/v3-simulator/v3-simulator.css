@@ -1,0 +1,1 @@
+.v3-simulator-panel{display:grid;gap:20px;max-width:850px;margin:auto}.v3-simulation-results{display:grid;grid-template-columns:1fr 1fr;gap:20px}.v3-simulation-results .card{padding:20px}@media(max-width:600px){.v3-simulation-results{grid-template-columns:1fr}}

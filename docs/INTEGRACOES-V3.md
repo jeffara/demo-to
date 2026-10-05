@@ -48,7 +48,7 @@ A resposta deve respeitar os tipos do contrato em `docs/toranja-contract.json`. 
 
 ## Busca
 
-`search-bar` consulta o índice do **conteúdo AEM entregue pelo EDS**, não o repositório privado do Author. O índice padrão é `/query-index.json`; `helix-query.yaml` indexa título, descrição e corpo. A busca ignora acentos, exige todos os termos, prioriza título, aplica raiz e exclusões e percorre páginas do índice. Cache local de cinco minutos. Conteúdo não publicado/indexado não aparece. A ativação/atualização real desse índice precisa ser verificada na instância.
+`v3-search` consulta o índice do **conteúdo AEM entregue pelo EDS**, não o repositório privado do Author. O índice padrão é `/query-index.json`; `helix-query.yaml` indexa título, descrição e corpo. A busca ignora acentos, exige todos os termos, prioriza título, aplica raiz e exclusões e percorre páginas do índice. Cache local de cinco minutos. Conteúdo não publicado/indexado não aparece. A ativação/atualização real desse índice precisa ser verificada na instância.
 
 ## Vídeo
 
@@ -60,4 +60,4 @@ Cada callback de ação exposto pode navegar, abrir/fechar painel, enviar/limpar
 
 `registerAction(id, handler)` em `scripts/actions.js` registra extensões técnicas. `toranja:interaction` e `toranja:field-change` são eventos funcionais e podem conter valores do controle; não os encaminhe indiscriminadamente para analytics. `toranja:tagging` possui contrato separado e elimina rótulos/textos pessoais. Nenhum coletor analytics foi ativado.
 
-O simulador nativo continua sendo uma demonstração local baseada nos parâmetros editoriais. Não consulta cotação, taxa ou motor financeiro de produção.
+O `v3-simulator` é uma demonstração local baseada nos parâmetros editoriais. Não consulta cotação, taxa ou motor financeiro de produção.

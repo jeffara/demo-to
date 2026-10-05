@@ -18,7 +18,7 @@ export function ListItemControl(props){
  const v=useListItemControlViewModel(props);if(props.trailingVariant!=='stepper')return <DS.ListItemControl {...props}/>;
  return <ListItemBase {...props} interactive={false} testId="listItemControl" componentName="ListItemControl" leading={v.leadingElement} content={v.contentElement} trailing={<Stepper {...props.trailingProps} state={props.state} onChange={props.trailingProps?.onStepperChange} onTag={props.onTag}/>}/>;
 }
-export function LegacyListItem(p){
+export function ListItemCompatibility(p){
  const state=p.state||'enabled';let leading=null,trailing=null;
  if(p.showLeading!==false){if(p.leadingAvatar)leading=<DS.Avatar {...p.leadingAvatar} state={state}/>;
  else if(p.leadingCheckbox)leading=<DS.Checkbox {...p.leadingCheckbox} state={state}/>;

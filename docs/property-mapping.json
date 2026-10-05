@@ -7401,7 +7401,7 @@
         ],
         "events": [],
         "primitive": false,
-        "legacy": true
+        "primary": true
       },
       {
         "id": "featuredItems",
@@ -11782,7 +11782,7 @@
         ],
         "events": [],
         "primitive": false,
-        "legacy": true
+        "primary": true
       },
       {
         "id": "categories",
@@ -13091,7 +13091,7 @@
         ],
         "events": [],
         "primitive": false,
-        "legacy": true,
+        "primary": true,
         "composition": true
       }
     ],
@@ -14680,7 +14680,7 @@
           }
         ],
         "primitive": false,
-        "legacy": true
+        "primary": true
       },
       {
         "id": "content:children",
@@ -27506,7 +27506,7 @@
         ],
         "events": [],
         "primitive": false,
-        "legacy": true
+        "primary": true
       },
       {
         "id": "hints",
@@ -59431,7 +59431,7 @@
         ],
         "events": [],
         "primitive": false,
-        "legacy": true
+        "primary": true
       }
     ],
     "version": 3
@@ -61648,6 +61648,14 @@
             "count"
           ],
           "key": "p62616467652e636f756e74"
+        },
+        {
+          "name": "panelContent",
+          "path": [
+            "$panel"
+          ],
+          "key": "panelContent",
+          "kind": "slot"
         }
       ],
       "events": [
@@ -61739,6 +61747,14 @@
               "count"
             ],
             "key": "p62616467652e636f756e74"
+          },
+          {
+            "name": "panelContent",
+            "path": [
+              "$panel"
+            ],
+            "key": "panelContent",
+            "kind": "slot"
           }
         ],
         "events": [
@@ -61755,7 +61771,7 @@
           }
         ],
         "primitive": false,
-        "legacy": true
+        "primary": true
       }
     ],
     "version": 3
@@ -63005,7 +63021,7 @@
           }
         ],
         "primitive": false,
-        "legacy": true
+        "primary": true
       }
     ],
     "version": 3

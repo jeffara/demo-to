@@ -13,7 +13,7 @@ const data=JSON.parse(fs.readFileSync('content/ds-samples.json')),schemas=JSON.p
 const report={scope:'Testes locais em Chromium, com eventos Universal Editor simulados. Sem validação remota autenticada.',tests:[]};
 async function test(name,fn){try{await fn();report.tests.push({name,pass:true});console.log('OK',name);}catch(e){report.tests.push({name,pass:false,error:e.message});console.log('FAIL',name,e.message);}}
 async function visit(path='/'){await page.goto(origin+path);await page.waitForFunction(()=>document.documentElement.dataset.toranjaLoaded==='true');}
-async function mount(name,props={},authored=false){const b=structuredClone(data.find(b=>b.block===name));Object.assign(b.properties,props);await page.evaluate(async({markup,name,authored})=>{const m=document.querySelector('main');m.replaceChildren();if(authored)m.dataset.aueResource='urn:test:main';else m.removeAttribute('data-aue-resource');m.innerHTML=markup;const block=m.firstElementChild;block.classList.add('block');await(await import(`/blocks/${name}/${name}.js`)).default(block);}, {markup:blockHTML(b,authored,'urn:test:block'),name,authored});await page.locator('.ds-official').waitFor();await page.waitForFunction(()=>document.querySelector('.ds-official')?.querySelector(':not(.ds-fallback)'));return b;}
+async function mount(name,props={},authored=false){const b=structuredClone(data.find(b=>b.block===name));Object.assign(b.properties,props);await page.evaluate(async({markup,name,authored})=>{const m=document.querySelector('main');m.replaceChildren();if(authored)m.dataset.aueResource='urn:test:main';else m.removeAttribute('data-aue-resource');m.innerHTML=markup;const block=m.firstElementChild;block.classList.add('block');await(await import(`/blocks/${name}/${name}.js`)).default(block);}, {markup:blockHTML(b,authored,'urn:test:block'),name,authored});await page.locator('main .ds-official').waitFor();await page.waitForFunction(()=>document.querySelector('main .ds-official')?.querySelector(':not(.ds-fallback)'));return b;}
 const prop=k=>'p'+Buffer.from(k).toString('hex');
 try{
 await visit();
@@ -43,7 +43,7 @@ await test('UE: alteração de propriedade redecorada sem perder recurso',async(
  await visit();const b=await mount('ds-button',{},true);await page.evaluate(()=>import('/scripts/editor-support.js'));
  b.properties[prop('label')]='Editado no painel';const markup=blockHTML(b,true,'urn:test:block');
  await page.evaluate(markup=>document.querySelector('main').dispatchEvent(new CustomEvent('aue:content-patch',{bubbles:true,detail:{request:{target:{resource:'urn:test:block'}},response:{updates:[{content:markup}]}}})),markup);
- await page.getByText('Editado no painel',{exact:true}).waitFor();assert.equal(await page.locator('.ds-button').getAttribute('data-aue-resource'),'urn:test:block');
+ await page.locator('main').getByText('Editado no painel',{exact:true}).waitFor();assert.equal(await page.locator('main .ds-button').getAttribute('data-aue-resource'),'urn:test:block');
 });
 await test('UE: incluir, reordenar e remover itens',async()=>{
  const b=await mount('ds-tabs',{},true);const label=schemas['ds-tabs'].item.descriptors.find(d=>d.name==='label').key;

@@ -1,11 +1,5 @@
 {
   "cells": {
-    "button": [
-      "link"
-    ],
-    "image": [
-      "image"
-    ],
     "ds-alert": [
       "schemaVersion",
       "p76617269616e74",
@@ -2006,6 +2000,7 @@
       "p7374617465",
       "p62616467652e76617269616e74",
       "p62616467652e636f756e74",
+      "panelContent",
       "itemLink",
       "itemTarget"
     ],
@@ -2332,131 +2327,18 @@
       "id",
       "style"
     ],
-    "title": [
-      "title"
-    ],
-    "accordion": [
-      "schemaVersion"
-    ],
-    "accordion-item": [
-      "question",
-      "answer"
-    ],
-    "alert-inline": [
-      "schemaVersion",
-      "title",
-      "message"
-    ],
-    "app-download": [
-      "schemaVersion",
-      "title",
-      "subtitle",
-      "appleStoreUrl",
-      "googlePlayUrl",
-      "qrCodeImage",
-      "appleStoreUrlTarget",
-      "googlePlayUrlTarget"
-    ],
-    "banner": [
-      "schemaVersion",
-      "icon",
-      "title",
-      "description",
-      "cta",
-      "ctaTarget"
-    ],
-    "breadcrumb": [
-      "schemaVersion",
-      "separator"
-    ],
-    "breadcrumb-item": [
-      "label",
-      "link",
-      "linkTarget"
-    ],
-    "cards": [
-      "schemaVersion"
-    ],
-    "cards-item": [
-      "image",
-      "content"
-    ],
-    "carousel": [
-      "schemaVersion",
-      "interval"
-    ],
-    "carousel-item": [
-      "image",
-      "content"
-    ],
-    "comparison-table": [
-      "schemaVersion",
-      "title",
-      "subtitle",
-      "highlightColumn"
-    ],
-    "comparison-table-item": [
-      "feature",
-      "value1",
-      "value2",
-      "value3"
-    ],
-    "contact-channels": [
-      "schemaVersion",
-      "title",
-      "subtitle"
-    ],
-    "contact-channels-item": [
-      "channel",
-      "info",
-      "hours"
-    ],
-    "cta-banner": [
-      "schemaVersion",
-      "headline",
-      "description",
-      "primaryCta",
-      "secondaryCta",
-      "primaryCtaTarget",
-      "secondaryCtaTarget"
-    ],
-    "flywheel": [
-      "schemaVersion",
-      "eyebrow",
-      "title",
-      "description",
-      "cta",
-      "ctaTarget"
-    ],
-    "flywheel-item": [
-      "number",
-      "title",
-      "description"
-    ],
-    "footer": [
-      "schemaVersion",
-      "copyright",
-      "description",
-      "seals",
-      "socialLinks"
-    ],
-    "footer-item": [
-      "title",
-      "links"
-    ],
-    "form": [
+    "v3-form": [
       "schemaVersion",
       "title",
       "subtitle",
       "submitLabel",
       "successMessage",
-      "endpoint",
       "consent",
       "integrationId",
       "formId",
       "failureMessage"
     ],
-    "form-item": [
+    "v3-form-item": [
       "fieldName",
       "label",
       "kind",
@@ -2478,82 +2360,7 @@
       "showWhenValue",
       "showWhenOperator"
     ],
-    "header": [
-      "schemaVersion",
-      "logo",
-      "loginUrl",
-      "cta",
-      "brandTag",
-      "countries",
-      "loginUrlTarget",
-      "ctaTarget"
-    ],
-    "header-item": [
-      "label",
-      "link",
-      "children",
-      "linkTarget"
-    ],
-    "hero": [
-      "schemaVersion",
-      "eyebrow",
-      "headline",
-      "description",
-      "primaryCta",
-      "secondaryCta",
-      "checklist",
-      "image",
-      "primaryCtaTarget",
-      "secondaryCtaTarget"
-    ],
-    "in-page-nav": [
-      "schemaVersion",
-      "title"
-    ],
-    "in-page-nav-item": [
-      "label",
-      "link",
-      "linkTarget"
-    ],
-    "manifesto": [
-      "schemaVersion",
-      "quote",
-      "attribution"
-    ],
-    "modal": [
-      "schemaVersion",
-      "modalId",
-      "title",
-      "content",
-      "trigger"
-    ],
-    "moments-journey": [
-      "schemaVersion",
-      "moment",
-      "headline",
-      "description",
-      "cta",
-      "disclaimer",
-      "image",
-      "ctaTarget"
-    ],
-    "pagination": [
-      "schemaVersion",
-      "currentPage",
-      "totalPages",
-      "baseUrl",
-      "baseUrlTarget"
-    ],
-    "quick-moment-rail": [
-      "schemaVersion",
-      "label"
-    ],
-    "quick-moment-rail-item": [
-      "label",
-      "link",
-      "linkTarget"
-    ],
-    "search-bar": [
+    "v3-search": [
       "schemaVersion",
       "placeholder",
       "indexEndpoint",
@@ -2562,80 +2369,21 @@
       "maxResults",
       "minChars"
     ],
-    "segment-showcase": [
-      "schemaVersion",
-      "title",
-      "subtitle",
-      "defaultSegment"
-    ],
-    "segment-showcase-item": [
-      "segmentId",
-      "label",
-      "criteria",
-      "tier",
-      "perks",
-      "cta",
-      "ctaTarget"
-    ],
-    "simulator": [
+    "v3-simulator": [
       "schemaVersion",
       "title",
       "subtitle",
       "defaultValue",
       "minValue",
       "maxValue",
-      "cdiRate",
-      "cta",
-      "ctaTarget"
+      "annualRate",
+      "referenceRate",
+      "resultLabel",
+      "referenceLabel",
+      "disclaimer",
+      "cta"
     ],
-    "stats-counter": [
-      "schemaVersion"
-    ],
-    "stats-counter-item": [
-      "value",
-      "label"
-    ],
-    "tabs": [
-      "schemaVersion",
-      "defaultTab"
-    ],
-    "tabs-item": [
-      "label",
-      "content"
-    ],
-    "teaser": [
-      "schemaVersion",
-      "eyebrow",
-      "title",
-      "description",
-      "cta",
-      "image",
-      "ctaTarget"
-    ],
-    "testimonials": [
-      "schemaVersion",
-      "title",
-      "subtitle"
-    ],
-    "testimonials-item": [
-      "quote",
-      "author",
-      "role",
-      "rating"
-    ],
-    "timeline": [
-      "schemaVersion"
-    ],
-    "timeline-item": [
-      "title",
-      "description"
-    ],
-    "tooltip": [
-      "schemaVersion",
-      "term",
-      "definition"
-    ],
-    "video-player": [
+    "v3-video": [
       "schemaVersion",
       "videoUrl",
       "posterImage",
@@ -2680,22 +2428,6 @@
     "ds-text-area": "ds-text-area-item",
     "ds-timeline": "ds-timeline-item",
     "ds-widget": "ds-widget-item",
-    "accordion": "accordion-item",
-    "breadcrumb": "breadcrumb-item",
-    "cards": "cards-item",
-    "carousel": "carousel-item",
-    "comparison-table": "comparison-table-item",
-    "contact-channels": "contact-channels-item",
-    "flywheel": "flywheel-item",
-    "footer": "footer-item",
-    "form": "form-item",
-    "header": "header-item",
-    "in-page-nav": "in-page-nav-item",
-    "quick-moment-rail": "quick-moment-rail-item",
-    "segment-showcase": "segment-showcase-item",
-    "stats-counter": "stats-counter-item",
-    "tabs": "tabs-item",
-    "testimonials": "testimonials-item",
-    "timeline": "timeline-item"
+    "v3-form": "v3-form-item"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "scope": "Local ZIP/filter contract and helper fixtures; not an AEM import execution",
+  "tests": [
+    {
+      "name": "Replacement covers every delivered page and obsolete descendants",
+      "pass": true
+    },
+    {
+      "name": "Site configuration, site root and other sites excluded",
+      "pass": true
+    },
+    {
+      "name": "Exactly 113 pages; old block names absent from serialized content",
+      "pass": true
+    },
+    {
+      "name": "Assets scoped individually",
+      "pass": true
+    },
+    {
+      "name": "Read-only planner identifies obsolete URLs and all publication paths",
+      "pass": true
+    },
+    {
+      "name": "Local sync removes old code, preserves Git/configuration and is idempotent",
+      "pass": true
+    }
+  ]
+}

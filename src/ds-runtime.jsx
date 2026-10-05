@@ -8,9 +8,9 @@ import './ds-runtime.css';
 import {runAction, tagPayload} from '../scripts/actions.js';
 import {runIntegration} from '../scripts/integrations.js';
 import {normalizeProps} from '../scripts/ds-values.js';
-import {Stepper, ListItemControl, LegacyListItem, Select} from './ds-compat.jsx';
+import {Stepper, ListItemControl, ListItemCompatibility, Select} from './ds-compat.jsx';
 const h=React.createElement;
-const allowed=new Set(['P','BR','STRONG','EM','B','I','UL','OL','LI','H2','H3','H4','H5','H6','SPAN','A','IMG','BLOCKQUOTE']);
+const allowed=new Set(['P','BR','STRONG','EM','B','I','UL','OL','LI','H2','H3','H4','H5','H6','SPAN','A','IMG','BLOCKQUOTE','DIV','TABLE','THEAD','TBODY','TR','TH','TD']);
 function rich(value,key='root') {
  if(React.isValidElement(value))return value;
  if(value?.$compositionGroup)return h(React.Fragment,null,...value.$compositionGroup.map((v,i)=>rich(v,key+i)));
@@ -70,6 +70,7 @@ function App({schema,initial,host,options}) {
   if(name==='onCountryChange'||name==='onSelect'&&schema.name==='BottomSheetCountry'){setProps({...props,selectedValue:val?.value||val,selectedCountryValue:val?.value||val});setOpen(false);}
   if(name==='onVisibleMonthChange')setProps({...props,visibleMonth:val});
   if(name==='onSearchOpenChange')setProps({...props,isSearchOpen:!!val});
+  if(schema.name==='Tabs'&&name==='onClick'&&path[0]==='tabs'){copy.tabs=copy.tabs.map((t,i)=>({...t,selected:i===path[1]}));setProps(copy);}
   if(name==='onClick'&&prefix.at(-1)==='chip'){put(copy,[...prefix,'selected'],!at(copy,[...prefix,'selected']));setProps(copy);}
   if(name==='onClick'&&['Chip','IconChip'].includes(schema.name))setProps({...props,selected:!props.selected});
   if(name==='onSelect'&&schema.name==='Card')setProps({...props,isSelected:!props.isSelected});
@@ -104,7 +105,7 @@ function App({schema,initial,host,options}) {
  for(const k of Object.keys(p))if(k.startsWith('$'))delete p[k];
  if(props.$accessibleLabel)p['aria-label']??=props.$accessibleLabel;
  p.id ||= host.id+'-control';
- let Component=({Stepper,ListItemControl,ListItem:LegacyListItem,Select})[schema.name]||DS[schema.name];
+ let Component=({Stepper,ListItemControl,ListItem:ListItemCompatibility,Select})[schema.name]||DS[schema.name];
  if(['BottomSheet','BottomSheetCountry'].includes(schema.name)){p.isOpen=open;p.close=makeHandler(['close']);}
  if(schema.name==='Snackbar'){p.show=open;p.onClose=makeHandler(['onClose']);}
  
@@ -133,6 +134,7 @@ function App({schema,initial,host,options}) {
  return h(React.Fragment,null,
   ['BottomSheet','BottomSheetCountry','Snackbar'].includes(schema.name)&&props.$showTrigger!==false&&(props.$showTrigger||props.$triggerLabel)&&h('button',{className:'ds-launch',type:'button',onClick:()=>setOpen(true)},props.$triggerLabel||'Abrir '+schema.name),
   h(Component,p),
+  schema.name==='Tabs'&&props.tabs?.some(t=>t.$panel)&&h('div',{role:'tabpanel',className:'ds-tab-panel'},rich((props.tabs.find(t=>t.selected)||props.tabs[0])?.$panel)),
   open&&['BottomSheet','BottomSheetCountry'].includes(schema.name)&&h('button',{className:'ds-modal-close',type:'button',onClick:()=>setOpen(false),'aria-label':'Fechar painel'},'Fechar'),
   h('span',{className:'ds-status','aria-live':'polite'},status));
 }
@@ -144,3 +146,4 @@ class Boundary extends React.Component {
 }
 export function mount(host,schema,props,options){const root=createRoot(host);root.render(h(Boundary,{host},h(App,{schema,initial:props,host,options})));return()=>root.unmount();}
 export {mountForm} from './ds-form.jsx';
+export {mountSearch,mountSimulator,mountMenuButton} from './site-features.jsx';

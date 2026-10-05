@@ -189,40 +189,6 @@
     "id": "section",
     "components": [
       "text",
-      "title",
-      "image",
-      "button",
-      "hero",
-      "cards",
-      "quick-moment-rail",
-      "manifesto",
-      "moments-journey",
-      "segment-showcase",
-      "simulator",
-      "flywheel",
-      "accordion",
-      "cta-banner",
-      "modal",
-      "form",
-      "teaser",
-      "banner",
-      "tabs",
-      "breadcrumb",
-      "comparison-table",
-      "app-download",
-      "stats-counter",
-      "testimonials",
-      "timeline",
-      "carousel",
-      "video-player",
-      "in-page-nav",
-      "pagination",
-      "search-bar",
-      "contact-channels",
-      "alert-inline",
-      "tooltip",
-      "header",
-      "footer",
       "ds-alert",
       "ds-avatar",
       "ds-accordion",
@@ -286,109 +252,17 @@
       "ds-text",
       "ds-text-area",
       "ds-timeline",
-      "ds-widget"
+      "ds-widget",
+      "v3-form",
+      "v3-search",
+      "v3-video",
+      "v3-simulator"
     ]
   },
   {
-    "id": "accordion",
+    "id": "v3-form",
     "components": [
-      "accordion-item"
-    ]
-  },
-  {
-    "id": "breadcrumb",
-    "components": [
-      "breadcrumb-item"
-    ]
-  },
-  {
-    "id": "cards",
-    "components": [
-      "cards-item"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "carousel-item"
-    ]
-  },
-  {
-    "id": "comparison-table",
-    "components": [
-      "comparison-table-item"
-    ]
-  },
-  {
-    "id": "contact-channels",
-    "components": [
-      "contact-channels-item"
-    ]
-  },
-  {
-    "id": "flywheel",
-    "components": [
-      "flywheel-item"
-    ]
-  },
-  {
-    "id": "footer",
-    "components": [
-      "footer-item"
-    ]
-  },
-  {
-    "id": "form",
-    "components": [
-      "form-item"
-    ]
-  },
-  {
-    "id": "header",
-    "components": [
-      "header-item"
-    ]
-  },
-  {
-    "id": "in-page-nav",
-    "components": [
-      "in-page-nav-item"
-    ]
-  },
-  {
-    "id": "quick-moment-rail",
-    "components": [
-      "quick-moment-rail-item"
-    ]
-  },
-  {
-    "id": "segment-showcase",
-    "components": [
-      "segment-showcase-item"
-    ]
-  },
-  {
-    "id": "stats-counter",
-    "components": [
-      "stats-counter-item"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tabs-item"
-    ]
-  },
-  {
-    "id": "testimonials",
-    "components": [
-      "testimonials-item"
-    ]
-  },
-  {
-    "id": "timeline",
-    "components": [
-      "timeline-item"
+      "v3-form-item"
     ]
   }
 ]

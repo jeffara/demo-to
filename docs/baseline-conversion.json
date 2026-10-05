@@ -1,0 +1,560 @@
+{
+  "removedBlockIds": [
+    "banner",
+    "breadcrumb",
+    "search-bar",
+    "alert-inline",
+    "hero",
+    "quick-moment-rail",
+    "stats-counter",
+    "in-page-nav",
+    "manifesto",
+    "moments-journey",
+    "segment-showcase",
+    "tabs",
+    "cards",
+    "carousel",
+    "comparison-table",
+    "teaser",
+    "simulator",
+    "video-player",
+    "flywheel",
+    "timeline",
+    "testimonials",
+    "accordion",
+    "tooltip",
+    "modal",
+    "form",
+    "contact-channels",
+    "pagination",
+    "app-download",
+    "cta-banner",
+    "header",
+    "footer"
+  ],
+  "replacements": [
+    {
+      "from": "banner",
+      "to": [
+        "ds-alert"
+      ]
+    },
+    {
+      "from": "breadcrumb",
+      "to": [
+        "ds-link",
+        "ds-link",
+        "ds-text"
+      ]
+    },
+    {
+      "from": "search-bar",
+      "to": [
+        "v3-search"
+      ]
+    },
+    {
+      "from": "alert-inline",
+      "to": [
+        "ds-alert"
+      ]
+    },
+    {
+      "from": "hero",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "quick-moment-rail",
+      "to": [
+        "ds-text",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link"
+      ]
+    },
+    {
+      "from": "stats-counter",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "in-page-nav",
+      "to": [
+        "ds-text",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link"
+      ]
+    },
+    {
+      "from": "manifesto",
+      "to": [
+        "ds-card"
+      ]
+    },
+    {
+      "from": "moments-journey",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "segment-showcase",
+      "to": [
+        "ds-card",
+        "ds-accordion",
+        "ds-accordion",
+        "ds-accordion",
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tabs",
+      "to": [
+        "ds-tabs"
+      ]
+    },
+    {
+      "from": "cards",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": [
+        "ds-carousel"
+      ]
+    },
+    {
+      "from": "comparison-table",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "teaser",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "simulator",
+      "to": [
+        "v3-simulator"
+      ]
+    },
+    {
+      "from": "video-player",
+      "to": [
+        "v3-video"
+      ]
+    },
+    {
+      "from": "flywheel",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "timeline",
+      "to": [
+        "ds-timeline"
+      ]
+    },
+    {
+      "from": "testimonials",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "accordion",
+      "to": [
+        "ds-accordion",
+        "ds-accordion",
+        "ds-accordion",
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tooltip",
+      "to": [
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tooltip",
+      "to": [
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tooltip",
+      "to": [
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tooltip",
+      "to": [
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "modal",
+      "to": [
+        "ds-button",
+        "ds-bottom-sheet"
+      ]
+    },
+    {
+      "from": "form",
+      "to": [
+        "v3-form"
+      ]
+    },
+    {
+      "from": "contact-channels",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "pagination",
+      "to": [
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link"
+      ]
+    },
+    {
+      "from": "app-download",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "cta-banner",
+      "to": [
+        "ds-card",
+        "ds-button",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "banner",
+      "to": [
+        "ds-alert"
+      ]
+    },
+    {
+      "from": "in-page-nav",
+      "to": [
+        "ds-text",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link"
+      ]
+    },
+    {
+      "from": "breadcrumb",
+      "to": [
+        "ds-link",
+        "ds-link"
+      ]
+    },
+    {
+      "from": "search-bar",
+      "to": [
+        "v3-search"
+      ]
+    },
+    {
+      "from": "alert-inline",
+      "to": [
+        "ds-alert"
+      ]
+    },
+    {
+      "from": "hero",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "quick-moment-rail",
+      "to": [
+        "ds-text",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link"
+      ]
+    },
+    {
+      "from": "stats-counter",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "manifesto",
+      "to": [
+        "ds-card"
+      ]
+    },
+    {
+      "from": "moments-journey",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": [
+        "ds-carousel"
+      ]
+    },
+    {
+      "from": "comparison-table",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "segment-showcase",
+      "to": [
+        "ds-card",
+        "ds-accordion",
+        "ds-accordion",
+        "ds-accordion",
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tabs",
+      "to": [
+        "ds-tabs"
+      ]
+    },
+    {
+      "from": "cards",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "teaser",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "simulator",
+      "to": [
+        "v3-simulator"
+      ]
+    },
+    {
+      "from": "video-player",
+      "to": [
+        "v3-video"
+      ]
+    },
+    {
+      "from": "flywheel",
+      "to": [
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-card",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "timeline",
+      "to": [
+        "ds-timeline",
+        "ds-text",
+        "ds-text",
+        "ds-text"
+      ]
+    },
+    {
+      "from": "testimonials",
+      "to": [
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "accordion",
+      "to": [
+        "ds-accordion",
+        "ds-accordion",
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tooltip",
+      "to": [
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tooltip",
+      "to": [
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "tooltip",
+      "to": [
+        "ds-accordion"
+      ]
+    },
+    {
+      "from": "contact-channels",
+      "to": [
+        "ds-card",
+        "ds-card"
+      ]
+    },
+    {
+      "from": "app-download",
+      "to": [
+        "ds-card",
+        "ds-image",
+        "ds-button",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "modal",
+      "to": [
+        "ds-button",
+        "ds-bottom-sheet"
+      ]
+    },
+    {
+      "from": "form",
+      "to": [
+        "v3-form"
+      ]
+    },
+    {
+      "from": "pagination",
+      "to": [
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link",
+        "ds-link"
+      ]
+    },
+    {
+      "from": "cta-banner",
+      "to": [
+        "ds-card",
+        "ds-button",
+        "ds-button"
+      ]
+    },
+    {
+      "from": "form",
+      "to": [
+        "v3-form"
+      ]
+    },
+    {
+      "from": "video-player",
+      "to": [
+        "v3-video"
+      ]
+    }
+  ],
+  "sharedContent": [
+    "nav",
+    "footer"
+  ],
+  "pagesPreserved": 113
+}

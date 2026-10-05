@@ -33,7 +33,7 @@ for (const [label, arr] of [
     ids.add(e.id);
   }
 }
-// Marcador explícito evita interpretar HTML publicado da V2 com a ordem da V3.
+// Identifica o contrato da baseline V3.
 for(const d of definitions){if(d.plugins?.xwalk?.page?.resourceType==='core/franklin/components/block/v1/block'){
  const id=d.plugins.xwalk.page.template.model;const model=models.find(m=>m.id===id);
  if(model&&!model.fields.some(f=>f.name==='schemaVersion'))model.fields.unshift({component:'text',name:'schemaVersion',label:'Versão do conteúdo',valueType:'string',value:'toranja-v3',hidden:true});
@@ -48,8 +48,8 @@ const groups = [
     ),
   },
   {
-    id: "toranja",
-    title: "Toranja — composições de página",
+    id: "v3-features",
+    title: "V3 — funcionalidades do site",
     components: definitions.filter(
       (d) =>
         !["text", "title", "image", "button", "section"].includes(d.id) &&
@@ -57,12 +57,12 @@ const groups = [
     ),
   },
   {
-    id: "toranja-items",
-    title: "Toranja — itens",
+    id: "v3-items",
+    title: "V3 — itens",
     components: definitions.filter((d) => d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")),
   },
 ];
-groups.splice(1,0,{id:"toranja-official",title:"Toranja oficial — 64 componentes",components:definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item"))});
+groups.splice(1,0,{id:"toranja-official",title:"Toranja — componentes oficiais",components:definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item"))});
 const cells = {},
   containers = {};
 for (const m of models) {

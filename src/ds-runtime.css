@@ -28,3 +28,6 @@
 .ds-select .select-wrapper input{pointer-events:none;}
 .ds-modal-close{background:var(--color-surface-neutral-softest);color:var(--color-text-neutral-primary);border-radius:var(--radius-medium);box-shadow:var(--elevation-surface-raised);}
 .ds-launch{background:var(--color-background-brand-default)!important;color:var(--color-text-neutral-inverse)!important;border-radius:var(--radius-medium)!important;}
+
+/* DS 1.13.3: measured skeleton text can exceed a narrow EDS section. */
+.ds-official .accordion--skeleton .skeleton__description,.ds-official .accordion--skeleton .skeleton__title{min-width:0;max-width:100%;}

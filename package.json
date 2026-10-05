@@ -1,19 +1,19 @@
 {
   "name": "aem-eds-inter-toranja",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "type": "module",
-  "description": "Toranja oficial 1.13.3 em blocos EDS XWalk, com autoria Universal Editor",
+  "description": "Baseline V3 exclusiva: 64 componentes oficiais Toranja e funcionalidades EDS",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
     "build:json": "node tools/build-json.mjs",
-    "build:content": "node tools/showcase-v3.mjs && node tools/migrate-v3.mjs && node tools/render-content.mjs",
+    "build:content": "node tools/showcase-v3.mjs && node tools/normalize-content.mjs && node tools/render-content.mjs",
     "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:runtime",
     "preview": "npm run build && node tools/serve.mjs",
     "check": "node tests/contracts.mjs",
-    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && node tests/browser.mjs && node tests/ds-browser.mjs && node tests/acceptance.mjs && npm run test:v3",
+    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && python3 tests/baseline-package.py && node tools/validate-v3.mjs",
     "export:aem": "python3 tools/export-aem.py",
     "inventory:ds": "node tools/inventory-ds.mjs",
     "build:ds-models": "node tools/build-ds.mjs",

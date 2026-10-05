@@ -1939,7 +1939,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -2005,7 +2005,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6c696e6b2e6f6e436c69636bkind",
@@ -9214,7 +9214,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -9273,7 +9273,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6f6e436c69636bkind",
@@ -15660,7 +15660,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -15721,7 +15721,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "editorMode",
@@ -15790,7 +15790,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -19115,7 +19115,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -19390,7 +19390,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -19711,7 +19711,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -19806,7 +19806,7 @@
           "name": "p66656174757265644974656d73",
           "label": "featured Items",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -20086,7 +20086,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -21556,7 +21556,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -21800,7 +21800,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -28810,7 +28810,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -29033,7 +29033,7 @@
           "name": "p63617465676f72696573",
           "label": "Categorias",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29041,7 +29041,7 @@
           "name": "p76616c756573",
           "label": "Valores",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29049,7 +29049,7 @@
           "name": "p76616c75654c6162656c73",
           "label": "value Labels",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29319,7 +29319,7 @@
           "name": "p666f726365436f6c6f72",
           "label": "Cores das séries",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29570,7 +29570,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -29631,7 +29631,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "dataSource",
@@ -29678,7 +29678,7 @@
           "name": "p736c696365",
           "label": "slice",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29686,7 +29686,7 @@
           "name": "p6c6162656c",
           "label": "Rótulo",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29694,7 +29694,7 @@
           "name": "p76616c7565",
           "label": "Valor",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29949,7 +29949,7 @@
           "name": "p666f726365436f6c6f72",
           "label": "Cores das séries",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -29957,7 +29957,7 @@
           "name": "p666f726365496e646578",
           "label": "force Index",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -30129,7 +30129,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -30190,7 +30190,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "dataSource",
@@ -30258,7 +30258,7 @@
           "name": "p63617465676f72696573",
           "label": "Categorias",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -30266,7 +30266,7 @@
           "name": "p794c6162656c73",
           "label": "y Labels",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -30536,7 +30536,7 @@
           "name": "p666f726365436f6c6f72",
           "label": "Cores das séries",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -30816,7 +30816,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -30877,7 +30877,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "dataSource",
@@ -31128,7 +31128,7 @@
           "name": "p62617273",
           "label": "bars",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -31215,7 +31215,7 @@
           "name": "p6c6567656e64",
           "label": "legend",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -31223,7 +31223,7 @@
           "name": "p76616c7565",
           "label": "Valor",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -31348,7 +31348,7 @@
           "name": "p666f726365436f6c6f72",
           "label": "Cores das séries",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -31488,7 +31488,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -31549,7 +31549,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "dataSource",
@@ -31724,7 +31724,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -31968,7 +31968,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -32034,7 +32034,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6f6e436c69636bkind",
@@ -32392,7 +32392,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -32983,7 +32983,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -33037,7 +33037,7 @@
           "name": "disabledDates",
           "label": "$disabled Dates",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -33059,7 +33059,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable64656661756c7456616c7565",
@@ -33080,7 +33080,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "component": "text",
@@ -33636,7 +33636,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -33755,7 +33755,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -34302,7 +34302,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -34389,7 +34389,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7365636f6e64617279427574746f6e",
@@ -34410,7 +34410,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7465727469617279427574746f6e",
@@ -34431,7 +34431,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable616c657274",
@@ -34452,7 +34452,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action7072696d617279427574746f6e2e6f6e436c69636bkind",
@@ -36353,7 +36353,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -36451,7 +36451,7 @@
           "name": "p73656172636850726f70732e6572726f72",
           "label": "search Props › Mensagens de erro",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "condition": {
             "!": {
               "===": [
@@ -37973,7 +37973,7 @@
           "name": "p73656172636850726f70732e68696e7473",
           "label": "search Props › Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "condition": {
             "!": {
               "===": [
@@ -57558,7 +57558,7 @@
           "name": "p7365676d656e746564436f6e74726f6c2e7365676d656e7473",
           "label": "segmented Control › segments",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "condition": {
             "!": {
               "===": [
@@ -57617,7 +57617,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -57732,7 +57732,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable737461727449636f6e",
@@ -57753,7 +57753,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable6d6964646c6549636f6e",
@@ -57774,7 +57774,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable656e6449636f6e",
@@ -57795,7 +57795,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable63686970",
@@ -57816,7 +57816,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable617661746172",
@@ -57837,7 +57837,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7365676d656e746564436f6e74726f6c",
@@ -57858,7 +57858,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action73656172636850726f70732e6f6e48656c706572kind",
@@ -61941,7 +61941,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -65234,7 +65234,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -65717,7 +65717,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -65778,7 +65778,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "editorMode",
@@ -68953,7 +68953,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -72074,7 +72074,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -72388,7 +72388,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -72396,7 +72396,7 @@
           "name": "p6572726f72",
           "label": "Mensagens de erro",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -72462,7 +72462,7 @@
           "name": "p6665617475726564436f756e7472794974656d73",
           "label": "featured Country Items",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -72625,7 +72625,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -74163,7 +74163,7 @@
           "name": "p6572726f72",
           "label": "Mensagens de erro",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -75598,7 +75598,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -76405,7 +76405,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -76464,7 +76464,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable666f726365426172",
@@ -76485,7 +76485,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7069636b657252616e6765",
@@ -76506,7 +76506,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6f6e48656c706572kind",
@@ -76641,7 +76641,7 @@
           "name": "p6572726f72",
           "label": "Mensagens de erro",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -78117,7 +78117,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -78784,7 +78784,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -78843,7 +78843,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable666f726365426172",
@@ -78864,7 +78864,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7069636b657252616e6765",
@@ -78885,7 +78885,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6f6e48656c706572kind",
@@ -79020,7 +79020,7 @@
           "name": "p6572726f72",
           "label": "Mensagens de erro",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -80496,7 +80496,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -81266,7 +81266,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -81325,7 +81325,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable666f726365426172",
@@ -81346,7 +81346,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7069636b657252616e6765",
@@ -81367,7 +81367,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6f6e48656c706572kind",
@@ -81532,7 +81532,7 @@
           "name": "p6572726f72",
           "label": "Mensagens de erro",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -83085,7 +83085,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -83826,7 +83826,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -83885,7 +83885,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable666f726365426172",
@@ -83906,7 +83906,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7069636b657252616e6765",
@@ -83927,7 +83927,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6f6e48656c706572kind",
@@ -84159,7 +84159,7 @@
           "name": "p68696e74",
           "label": "hint",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -84300,7 +84300,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -84580,7 +84580,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -100898,7 +100898,7 @@
           "name": "p74616773",
           "label": "Tags",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -100925,7 +100925,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -101012,7 +101012,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable6c656164696e67496d616765",
@@ -101033,7 +101033,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable6c656164696e67417661746172",
@@ -101054,7 +101054,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e67427574746f6e",
@@ -101075,7 +101075,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e67436865636b626f78",
@@ -101096,7 +101096,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e674e65757472616c49636f6e427574746f6e",
@@ -101117,7 +101117,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e67526164696f427574746f6e",
@@ -101138,7 +101138,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e6753746570706572",
@@ -101159,7 +101159,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e67537769746368",
@@ -101180,7 +101180,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e6754616743686576726f6e",
@@ -101201,7 +101201,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e6754657874",
@@ -101222,7 +101222,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "leadingChoice",
@@ -116805,13 +116805,13 @@
           "name": "p74616773",
           "label": "Tags",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -116884,7 +116884,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable6c656164696e6750726f7073",
@@ -116905,7 +116905,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bkind",
@@ -131729,7 +131729,7 @@
           "name": "p74616773",
           "label": "Tags",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -132404,7 +132404,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -132477,7 +132477,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable747261696c696e6750726f7073",
@@ -132498,7 +132498,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bkind",
@@ -156554,13 +156554,13 @@
           "name": "p74616773",
           "label": "Tags",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -156661,7 +156661,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable6c656164696e6750726f7073",
@@ -156682,7 +156682,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action747261696c696e6750726f70732e6f6e427574746f6e436c69636bkind",
@@ -157740,7 +157740,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -157799,7 +157799,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action68656c7065724f6e436c69636bkind",
@@ -161073,7 +161073,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -164398,7 +164398,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -164595,7 +164595,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -164837,7 +164837,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -164978,7 +164978,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -165080,7 +165080,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -165710,7 +165710,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -165850,7 +165850,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -166061,7 +166061,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -169125,7 +169125,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -169421,7 +169421,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -169482,7 +169482,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "editorMode",
@@ -169560,7 +169560,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -169840,7 +169840,7 @@
           "name": "p6572726f72",
           "label": "Mensagens de erro",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -171316,7 +171316,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -172086,7 +172086,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -172131,7 +172131,7 @@
           "name": "selectOptions",
           "label": "$options",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -172153,7 +172153,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable666f726365426172",
@@ -172174,7 +172174,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "enable7069636b657252616e6765",
@@ -172195,7 +172195,7 @@
               "value": "false"
             }
           ],
-          "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+          "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
         },
         {
           "name": "action6f6e436c69636bkind",
@@ -172630,7 +172630,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -172783,7 +172783,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -172898,7 +172898,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -173094,7 +173094,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -173466,7 +173466,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -173592,7 +173592,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -173828,6 +173828,32 @@
           "label": "badge › count",
           "valueType": "number",
           "description": "",
+          "condition": {
+            "or": [
+              {
+                "===": [
+                  {
+                    "var": "collection"
+                  },
+                  ""
+                ]
+              },
+              {
+                "===": [
+                  {
+                    "var": "collection"
+                  },
+                  "tabs"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "panelContent",
+          "label": "$panel",
+          "component": "richtext",
+          "valueType": "string",
           "condition": {
             "or": [
               {
@@ -174090,7 +174116,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -174421,7 +174447,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -174490,7 +174516,7 @@
           "name": "p68696e7473",
           "label": "Mensagens de ajuda",
           "valueType": "string",
-          "description": "Compatibilidade V2; edite pelos itens do componente.",
+          "description": "Representação interna da coleção; edite pelos itens do componente.",
           "hidden": true
         },
         {
@@ -174938,7 +174964,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },
@@ -175134,7 +175160,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
           "hidden": true
@@ -175675,7 +175701,7 @@
         {
           "component": "aem-content",
           "name": "actionLink",
-          "label": "Destino padrão (compatibilidade)",
+          "label": "Destino padrão",
           "valueType": "string",
           "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
         },

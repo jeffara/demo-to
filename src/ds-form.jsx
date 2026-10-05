@@ -3,7 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {flushSync} from 'react-dom';
 import * as DS from '../vendor/@interco/inter-toranja/dist/components.js';
 import {Select,Stepper} from './ds-compat.jsx';
-import {hasIntegration,runIntegration,registerIntegration,jsonEndpoint} from '../scripts/integrations.js';
+import {hasIntegration,runIntegration} from '../scripts/integrations.js';
 export function validCPF(value){const s=String(value||'').replace(/\D/g,'');if(s.length!==11||/^(\d)\1+$/.test(s))return false;for(let n=9;n<11;n++){let sum=0;for(let i=0;i<n;i++)sum+=Number(s[i])*(n+1-i);const digit=(sum*10)%11%10;if(digit!==Number(s[n]))return false;}return true;}
 const initial=f=>f.kind==='checkbox'||f.kind==='switch'?f.defaultValue===true||f.defaultValue==='true':f.defaultValue??'';
 const shown=(f,values)=>!f.showWhenField||(f.showWhenOperator==='notEquals'?String(values[f.showWhenField])!==f.showWhenValue:String(values[f.showWhenField])===f.showWhenValue);
@@ -33,13 +33,13 @@ function Form({config,host}){
   const visible=fields.filter(f=>shown(f,values)&&!f.disabled);const invalid=Object.fromEntries(visible.map(f=>[f.fieldName,validate(f,values[f.fieldName])]).filter(([,error])=>error));
   if(config.consent&&!values.consent)invalid.consent='Aceite o consentimento para continuar.';setErrors(invalid);
   if(Object.keys(invalid).length){setStatus('Revise os campos indicados.');requestAnimationFrame(()=>host.querySelector('[data-invalid="true"] input,[data-invalid="true"] textarea,[data-invalid="true"] [tabindex="0"]')?.focus());return;}
-  if(!config.endpoint&&!hasIntegration(config.integrationId)){setStatus('Formulário preparado: integração de envio ainda não configurada.');return;}
+  if(!hasIntegration(config.integrationId)){setStatus('Formulário preparado: integração de envio ainda não configurada.');return;}
   const payload=Object.fromEntries(visible.map(f=>[f.fieldName,values[f.fieldName]]));if(config.consent)payload.consent=true;
-  let unregister;const id=config.endpoint?'form-'+config.id:config.integrationId;if(config.endpoint)unregister=registerIntegration(id,jsonEndpoint(config.endpoint));
+  const id=config.integrationId;
   controller.current=new AbortController();setBusy(true);setStatus('Enviando…');
   try{await runIntegration(id,payload,{signal:controller.current.signal,timeout:config.timeout||15000});setStatus(config.successMessage||'Solicitação recebida.');setValues(resetValues());setGeneration(x=>x+1);host.dispatchEvent(new CustomEvent('toranja:form-success',{bubbles:true,detail:{form:config.id}}));}
   catch(error){setStatus(error.name==='AbortError'?'Tempo de envio excedido. Tente novamente.':config.failureMessage||'Não foi possível enviar. Tente novamente.');}
-  finally{unregister?.();setBusy(false);}
+  finally{setBusy(false);}
  };
  return <form id={config.id} className="toranja-form ds-official" onSubmit={submit} noValidate onReset={()=>{setValues(resetValues());setErrors({});setGeneration(x=>x+1);setStatus('')}}>
   <div className="form-header">{React.createElement(/^h[1-6]$/.test(config.titleType)?config.titleType:'h2',null,config.title)}<p>{config.subtitle}</p></div>

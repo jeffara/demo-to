@@ -1,66 +1,5 @@
 [
   {
-    "id": "button",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "linkType",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "image",
-    "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false,
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Alt Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "ds-alert",
     "fields": [
       {
@@ -255,7 +194,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -321,7 +260,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6c696e6b2e6f6e436c69636bkind",
@@ -7538,7 +7477,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -7597,7 +7536,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6f6e436c69636bkind",
@@ -13992,7 +13931,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -14053,7 +13992,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "editorMode",
@@ -14130,7 +14069,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -17463,7 +17402,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -17746,7 +17685,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -18075,7 +18014,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -18178,7 +18117,7 @@
         "name": "p66656174757265644974656d73",
         "label": "featured Items",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -18458,7 +18397,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -19936,7 +19875,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -20188,7 +20127,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -27206,7 +27145,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -27437,7 +27376,7 @@
         "name": "p63617465676f72696573",
         "label": "Categorias",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -27445,7 +27384,7 @@
         "name": "p76616c756573",
         "label": "Valores",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -27453,7 +27392,7 @@
         "name": "p76616c75654c6162656c73",
         "label": "value Labels",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -27723,7 +27662,7 @@
         "name": "p666f726365436f6c6f72",
         "label": "Cores das séries",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -27974,7 +27913,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -28035,7 +27974,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "dataSource",
@@ -28090,7 +28029,7 @@
         "name": "p736c696365",
         "label": "slice",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -28098,7 +28037,7 @@
         "name": "p6c6162656c",
         "label": "Rótulo",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -28106,7 +28045,7 @@
         "name": "p76616c7565",
         "label": "Valor",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -28361,7 +28300,7 @@
         "name": "p666f726365436f6c6f72",
         "label": "Cores das séries",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -28369,7 +28308,7 @@
         "name": "p666f726365496e646578",
         "label": "force Index",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -28541,7 +28480,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -28602,7 +28541,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "dataSource",
@@ -28678,7 +28617,7 @@
         "name": "p63617465676f72696573",
         "label": "Categorias",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -28686,7 +28625,7 @@
         "name": "p794c6162656c73",
         "label": "y Labels",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -28956,7 +28895,7 @@
         "name": "p666f726365436f6c6f72",
         "label": "Cores das séries",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -29236,7 +29175,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -29297,7 +29236,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "dataSource",
@@ -29556,7 +29495,7 @@
         "name": "p62617273",
         "label": "bars",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -29643,7 +29582,7 @@
         "name": "p6c6567656e64",
         "label": "legend",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -29651,7 +29590,7 @@
         "name": "p76616c7565",
         "label": "Valor",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -29776,7 +29715,7 @@
         "name": "p666f726365436f6c6f72",
         "label": "Cores das séries",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -29916,7 +29855,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -29977,7 +29916,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "dataSource",
@@ -30160,7 +30099,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -30412,7 +30351,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -30478,7 +30417,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6f6e436c69636bkind",
@@ -30844,7 +30783,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -31443,7 +31382,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -31497,7 +31436,7 @@
         "name": "disabledDates",
         "label": "$disabled Dates",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -31519,7 +31458,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable64656661756c7456616c7565",
@@ -31540,7 +31479,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "component": "text",
@@ -32104,7 +32043,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -32231,7 +32170,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -32786,7 +32725,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -32873,7 +32812,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7365636f6e64617279427574746f6e",
@@ -32894,7 +32833,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7465727469617279427574746f6e",
@@ -32915,7 +32854,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable616c657274",
@@ -32936,7 +32875,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action7072696d617279427574746f6e2e6f6e436c69636bkind",
@@ -34845,7 +34784,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -34951,7 +34890,7 @@
         "name": "p73656172636850726f70732e6572726f72",
         "label": "search Props › Mensagens de erro",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "condition": {
           "!": {
             "===": [
@@ -36473,7 +36412,7 @@
         "name": "p73656172636850726f70732e68696e7473",
         "label": "search Props › Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "condition": {
           "!": {
             "===": [
@@ -56058,7 +55997,7 @@
         "name": "p7365676d656e746564436f6e74726f6c2e7365676d656e7473",
         "label": "segmented Control › segments",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "condition": {
           "!": {
             "===": [
@@ -56117,7 +56056,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -56232,7 +56171,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable737461727449636f6e",
@@ -56253,7 +56192,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable6d6964646c6549636f6e",
@@ -56274,7 +56213,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable656e6449636f6e",
@@ -56295,7 +56234,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable63686970",
@@ -56316,7 +56255,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable617661746172",
@@ -56337,7 +56276,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7365676d656e746564436f6e74726f6c",
@@ -56358,7 +56297,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action73656172636850726f70732e6f6e48656c706572kind",
@@ -60449,7 +60388,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -63750,7 +63689,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -64241,7 +64180,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -64302,7 +64241,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "editorMode",
@@ -67485,7 +67424,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -70614,7 +70553,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -70936,7 +70875,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -70944,7 +70883,7 @@
         "name": "p6572726f72",
         "label": "Mensagens de erro",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -71010,7 +70949,7 @@
         "name": "p6665617475726564436f756e7472794974656d73",
         "label": "featured Country Items",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -71173,7 +71112,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -72719,7 +72658,7 @@
         "name": "p6572726f72",
         "label": "Mensagens de erro",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -74154,7 +74093,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -74961,7 +74900,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -75020,7 +74959,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable666f726365426172",
@@ -75041,7 +74980,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7069636b657252616e6765",
@@ -75062,7 +75001,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6f6e48656c706572kind",
@@ -75205,7 +75144,7 @@
         "name": "p6572726f72",
         "label": "Mensagens de erro",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -76681,7 +76620,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -77348,7 +77287,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -77407,7 +77346,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable666f726365426172",
@@ -77428,7 +77367,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7069636b657252616e6765",
@@ -77449,7 +77388,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6f6e48656c706572kind",
@@ -77592,7 +77531,7 @@
         "name": "p6572726f72",
         "label": "Mensagens de erro",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -79068,7 +79007,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -79838,7 +79777,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -79897,7 +79836,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable666f726365426172",
@@ -79918,7 +79857,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7069636b657252616e6765",
@@ -79939,7 +79878,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6f6e48656c706572kind",
@@ -80112,7 +80051,7 @@
         "name": "p6572726f72",
         "label": "Mensagens de erro",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -81665,7 +81604,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -82406,7 +82345,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -82465,7 +82404,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable666f726365426172",
@@ -82486,7 +82425,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7069636b657252616e6765",
@@ -82507,7 +82446,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6f6e48656c706572kind",
@@ -82747,7 +82686,7 @@
         "name": "p68696e74",
         "label": "hint",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -82888,7 +82827,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -83176,7 +83115,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -99502,7 +99441,7 @@
         "name": "p74616773",
         "label": "Tags",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -99529,7 +99468,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -99616,7 +99555,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable6c656164696e67496d616765",
@@ -99637,7 +99576,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable6c656164696e67417661746172",
@@ -99658,7 +99597,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e67427574746f6e",
@@ -99679,7 +99618,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e67436865636b626f78",
@@ -99700,7 +99639,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e674e65757472616c49636f6e427574746f6e",
@@ -99721,7 +99660,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e67526164696f427574746f6e",
@@ -99742,7 +99681,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e6753746570706572",
@@ -99763,7 +99702,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e67537769746368",
@@ -99784,7 +99723,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e6754616743686576726f6e",
@@ -99805,7 +99744,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e6754657874",
@@ -99826,7 +99765,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "leadingChoice",
@@ -115417,13 +115356,13 @@
         "name": "p74616773",
         "label": "Tags",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -115496,7 +115435,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable6c656164696e6750726f7073",
@@ -115517,7 +115456,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bkind",
@@ -130349,7 +130288,7 @@
         "name": "p74616773",
         "label": "Tags",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -131024,7 +130963,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -131097,7 +131036,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable747261696c696e6750726f7073",
@@ -131118,7 +131057,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bkind",
@@ -155182,13 +155121,13 @@
         "name": "p74616773",
         "label": "Tags",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -155289,7 +155228,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable6c656164696e6750726f7073",
@@ -155310,7 +155249,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action747261696c696e6750726f70732e6f6e427574746f6e436c69636bkind",
@@ -156376,7 +156315,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -156435,7 +156374,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action68656c7065724f6e436c69636bkind",
@@ -159717,7 +159656,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -163050,7 +162989,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -163255,7 +163194,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -163505,7 +163444,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -163654,7 +163593,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -163756,7 +163695,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -164394,7 +164333,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -164542,7 +164481,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -164761,7 +164700,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -167833,7 +167772,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -168137,7 +168076,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -168198,7 +168137,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "editorMode",
@@ -168284,7 +168223,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -168572,7 +168511,7 @@
         "name": "p6572726f72",
         "label": "Mensagens de erro",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -170048,7 +169987,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -170818,7 +170757,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -170863,7 +170802,7 @@
         "name": "selectOptions",
         "label": "$options",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -170885,7 +170824,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable666f726365426172",
@@ -170906,7 +170845,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "enable7069636b657252616e6765",
@@ -170927,7 +170866,7 @@
             "value": "false"
           }
         ],
-        "description": "Automático preserva conteúdo legado. Não remove a configuração salva."
+        "description": "Automático usa as propriedades configuradas. Não remove a configuração salva."
       },
       {
         "name": "action6f6e436c69636bkind",
@@ -171370,7 +171309,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -171531,7 +171470,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -171654,7 +171593,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -171858,7 +171797,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -172238,7 +172177,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -172372,7 +172311,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -172608,6 +172547,32 @@
         "label": "badge › count",
         "valueType": "number",
         "description": "",
+        "condition": {
+          "or": [
+            {
+              "===": [
+                {
+                  "var": "collection"
+                },
+                ""
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "collection"
+                },
+                "tabs"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "panelContent",
+        "label": "$panel",
+        "component": "richtext",
+        "valueType": "string",
         "condition": {
           "or": [
             {
@@ -172878,7 +172843,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -173217,7 +173182,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -173294,7 +173259,7 @@
         "name": "p68696e7473",
         "label": "Mensagens de ajuda",
         "valueType": "string",
-        "description": "Compatibilidade V2; edite pelos itens do componente.",
+        "description": "Representação interna da coleção; edite pelos itens do componente.",
         "hidden": true
       },
       {
@@ -173742,7 +173707,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -173946,7 +173911,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal.",
         "hidden": true
@@ -174495,7 +174460,7 @@
       {
         "component": "aem-content",
         "name": "actionLink",
-        "label": "Destino padrão (compatibilidade)",
+        "label": "Destino padrão",
         "valueType": "string",
         "description": "Página interna do AEM, URL externa ou âncora para a ação principal."
       },
@@ -177391,1124 +177356,43 @@
         "value": "",
         "options": [
           {
-            "name": "",
+            "name": "Padrão",
             "value": ""
           },
           {
-            "name": "highlight",
+            "name": "Destaque",
             "value": "highlight"
           },
           {
-            "name": "white-bg",
-            "value": "white-bg"
+            "name": "Duas colunas",
+            "value": "columns-2"
           },
           {
-            "name": "dark-bg",
-            "value": "dark-bg"
+            "name": "Três colunas",
+            "value": "columns-3"
+          },
+          {
+            "name": "Quatro colunas",
+            "value": "columns-4"
+          },
+          {
+            "name": "Navegação horizontal",
+            "value": "nav-row"
+          },
+          {
+            "name": "Hero",
+            "value": "hero-layout"
+          },
+          {
+            "name": "Rodapé em colunas",
+            "value": "footer-columns"
           }
         ]
       }
     ]
   },
   {
-    "id": "title",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Title Type",
-        "options": [
-          {
-            "name": "h1",
-            "value": "h1"
-          },
-          {
-            "name": "h2",
-            "value": "h2"
-          },
-          {
-            "name": "h3",
-            "value": "h3"
-          },
-          {
-            "name": "h4",
-            "value": "h4"
-          },
-          {
-            "name": "h5",
-            "value": "h5"
-          },
-          {
-            "name": "h6",
-            "value": "h6"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "accordion",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "select",
-        "name": "classes_behavior",
-        "label": "Comportamento de Abertura",
-        "value": "single-open",
-        "options": [
-          {
-            "name": "Uma Gaveta Aberta por Vez (Exclusivo)",
-            "value": "single-open"
-          },
-          {
-            "name": "Múltiplas Gavetas Abertas (Multi-Open)",
-            "value": "multi-open"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "accordion-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "question",
-        "label": "Pergunta",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "answer",
-        "label": "Resposta",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "alert-inline",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Alerta",
-        "value": "Aviso Importante de Segurança",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "message",
-        "label": "Mensagem do Alerta",
-        "value": "<p>O Banco Inter nunca solicita senhas, tokens i-safe ou transferências por telefone ou mensagem.</p>",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Tipo de Alerta",
-        "value": "warning",
-        "options": [
-          {
-            "name": "Atenção / Segurança (Warning)",
-            "value": "warning"
-          },
-          {
-            "name": "Informativo (Info)",
-            "value": "info"
-          },
-          {
-            "name": "Sucesso / Concluído (Success)",
-            "value": "success"
-          },
-          {
-            "name": "Erro / Bloqueio (Error)",
-            "value": "error"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_dismissible",
-        "label": "Permitir fechar o alerta",
-        "value": false,
-        "valueType": "boolean"
-      }
-    ]
-  },
-  {
-    "id": "app-download",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título",
-        "value": "Baixe o Super App do Inter",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "subtitle",
-        "label": "Subtítulo / Instrução",
-        "value": "Aponte a câmera do seu celular para o QR Code e abra sua conta gratuita em poucos minutos.",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "appleStoreUrl",
-        "label": "Link Apple App Store",
-        "value": "https://apps.apple.com/br/app/inter/id1071477797",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "googlePlayUrl",
-        "label": "Link Google Play Store",
-        "value": "https://play.google.com/store/apps/details?id=br.com.intermedium",
-        "valueType": "string"
-      },
-      {
-        "component": "reference",
-        "name": "qrCodeImage",
-        "label": "Imagem do QR Code",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "qrCodeImageAlt",
-        "label": "Texto alternativo",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "appleStoreUrlTarget",
-        "label": "Link Apple App Store — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "googlePlayUrlTarget",
-        "label": "Link Google Play Store — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "banner",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "select",
-        "name": "icon",
-        "label": "Ícone em Destaque",
-        "value": "sparkle",
-        "options": [
-          {
-            "name": "Brilho / Novidade (Sparkle)",
-            "value": "sparkle"
-          },
-          {
-            "name": "Estrela (Star)",
-            "value": "star"
-          },
-          {
-            "name": "Presente (Gift)",
-            "value": "gift"
-          },
-          {
-            "name": "Porquinho (Piggy Bank)",
-            "value": "piggy_bank"
-          },
-          {
-            "name": "Informação (Info)",
-            "value": "info"
-          },
-          {
-            "name": "Alerta (Alert)",
-            "value": "alert"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Aviso",
-        "value": "Super App Day no Inter",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Mensagem do Aviso",
-        "value": "Ganhe até 2x pontos no Inter Loop e cashback turbinado em mais de 500 lojas parceiras no Inter Shop.",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "Link da Ação",
-        "value": "/loop",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "Texto do Link",
-        "value": "Aproveitar Oferta",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Tipo de Banner",
-        "value": "promo",
-        "options": [
-          {
-            "name": "Promocional Gradiente Toranja (Promo)",
-            "value": "promo"
-          },
-          {
-            "name": "Informativo Neutro (Info)",
-            "value": "info"
-          },
-          {
-            "name": "Alerta Amarelo (Alert)",
-            "value": "alert"
-          },
-          {
-            "name": "Modo Escuro (Dark)",
-            "value": "dark"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_dismissible",
-        "label": "Permitir fechar o banner",
-        "value": true,
-        "valueType": "boolean"
-      },
-      {
-        "component": "select",
-        "name": "ctaTarget",
-        "label": "Link da Ação — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "breadcrumb",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "separator",
-        "label": "Caractere Separador",
-        "value": "/",
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_show-home",
-        "label": "Exibir link para Página Inicial",
-        "value": true,
-        "valueType": "boolean"
-      }
-    ]
-  },
-  {
-    "id": "breadcrumb-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Rótulo",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Destino",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "linkTarget",
-        "label": "Destino — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Estilo do Card",
-        "value": "",
-        "options": [
-          {
-            "name": "Padrão de Produto",
-            "value": ""
-          },
-          {
-            "name": "Ecossistema Super App 360°",
-            "value": "ecosystem"
-          },
-          {
-            "name": "Cartões Metálicos Mastercard Black",
-            "value": "metallic"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_columns",
-        "label": "Número de Colunas",
-        "value": "3",
-        "options": [
-          {
-            "name": "2 Colunas",
-            "value": "2"
-          },
-          {
-            "name": "3 Colunas",
-            "value": "3"
-          },
-          {
-            "name": "4 Colunas",
-            "value": "4"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "cards-item",
-    "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Imagem",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Texto alternativo",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "content",
-        "label": "Título, descrição e botão",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "carousel",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "number",
-        "name": "interval",
-        "label": "Intervalo do Autoplay (ms)",
-        "value": 5000,
-        "valueType": "number",
-        "valueFormat": "long"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_autoplay",
-        "label": "Rolagem Automática (Autoplay)",
-        "value": false,
-        "valueType": "boolean"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_show-indicators",
-        "label": "Exibir Pontos Indicadores (Dots)",
-        "value": true,
-        "valueType": "boolean"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_show-arrows",
-        "label": "Exibir Botões de Navegação",
-        "value": true,
-        "valueType": "boolean"
-      }
-    ]
-  },
-  {
-    "id": "carousel-item",
-    "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Imagem",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Texto alternativo",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo do slide",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "comparison-table",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título da Tabela",
-        "value": "Compare as Vantagens do Inter",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "subtitle",
-        "label": "Subtítulo",
-        "value": "Transparência total sem letras miúdas.",
-        "valueType": "string"
-      },
-      {
-        "component": "number",
-        "name": "highlightColumn",
-        "label": "Índice da Coluna em Destaque (padrão 2 para Inter)",
-        "value": 2,
-        "valueType": "number",
-        "valueFormat": "long"
-      }
-    ]
-  },
-  {
-    "id": "comparison-table-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "feature",
-        "label": "Critério",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "value1",
-        "label": "Inter",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "value2",
-        "label": "Opção 2",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "value3",
-        "label": "Opção 3",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "contact-channels",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título da Seção de Atendimento",
-        "value": "Canais Oficiais de Atendimento Inter",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "subtitle",
-        "label": "Subtítulo",
-        "value": "Estamos prontos para atender você 24 horas por dia, 7 dias por semana.",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "contact-channels-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "channel",
-        "label": "Canal",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "info",
-        "label": "Telefone / link",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "hours",
-        "label": "Horário",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "cta-banner",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "headline",
-        "label": "Título de Alta Conversão (Citrina)",
-        "value": "Pronto para transformar a sua vida financeira?",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "headlineType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Texto de Apoio",
-        "value": "Abra sua conta em menos de 5 minutos, direto pelo celular, sem tarifas e com atendimento 24 horas.",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "primaryCta",
-        "label": "Link do Botão Primário",
-        "value": "/abra-sua-conta",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "primaryCtaText",
-        "label": "Texto do Botão Primário",
-        "value": "Abra sua conta grátis",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "secondaryCta",
-        "label": "Link do Botão Secundário",
-        "value": "/app",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "secondaryCtaText",
-        "label": "Texto do Botão Secundário",
-        "value": "Baixar o Super App",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_theme",
-        "label": "Tema de Cores",
-        "value": "dark",
-        "options": [
-          {
-            "name": "Escuro Sofisticado (Black & Graphite)",
-            "value": "dark"
-          },
-          {
-            "name": "Laranja Inter Vibrante",
-            "value": "orange"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "primaryCtaTarget",
-        "label": "Link do Botão Primário — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "secondaryCtaTarget",
-        "label": "Link do Botão Secundário — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "flywheel",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "eyebrow",
-        "label": "Chapéu / Eyebrow",
-        "value": "Programa de Recompensas",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título da Seção",
-        "value": "O Ciclo de Valor Virtuoso do Inter Loop",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Descrição Editorial do Ciclo",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "Link do Botão",
-        "value": "/inter-loop",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "Texto do Botão",
-        "value": "Conhecer o Inter Loop",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "ctaTarget",
-        "label": "Link do Botão — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "flywheel-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "number",
-        "label": "Número",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Etapa",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Descrição",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "footer",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "copyright",
-        "label": "Texto Legal & CNPJ",
-        "value": "Banco Inter S.A. CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG.",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Descrição",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "seals",
-        "label": "Selos / informações",
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_show-regulatory-seals",
-        "label": "Exibir Selos Regulatórios (BACEN, FDIC, NASDAQ)",
-        "value": true,
-        "valueType": "boolean"
-      },
-      {
-        "component": "richtext",
-        "name": "socialLinks",
-        "label": "Redes sociais",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "footer-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Coluna",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "links",
-        "label": "Links da coluna",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "form",
+    "id": "v3-form",
     "fields": [
       {
         "component": "text",
@@ -178580,13 +177464,6 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "name": "endpoint",
-        "label": "Endpoint Webhook CRM / Salesforce",
-        "valueType": "string",
-        "hidden": true
-      },
-      {
         "component": "richtext",
         "name": "consent",
         "label": "Texto e link de consentimento",
@@ -178597,12 +177474,12 @@
         "name": "integrationId",
         "label": "Integração cadastrada",
         "valueType": "string",
-        "description": "Identificador definido pelo time técnico; exemplo inter-lead. Sem integração cadastrada, o formulário não envia dados."
+        "description": "Identificador definido pelo time técnico; exemplo inter-lead. Sem integração cadastrada, o v3-formulário não envia dados."
       },
       {
         "component": "text",
         "name": "formId",
-        "label": "Identificador do formulário",
+        "label": "Identificador do v3-formulário",
         "valueType": "string"
       },
       {
@@ -178614,7 +177491,7 @@
     ]
   },
   {
-    "id": "form-item",
+    "id": "v3-form-item",
     "fields": [
       {
         "component": "text",
@@ -178836,829 +177713,7 @@
     ]
   },
   {
-    "id": "header",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "reference",
-        "name": "logo",
-        "label": "Logo Oficial Inter",
-        "value": "",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "logoAlt",
-        "label": "Texto alternativo",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "loginUrl",
-        "label": "Link do Botão Acessar Conta",
-        "value": "/login",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "CTA — destino",
-        "valueType": "string",
-        "value": "/abra-sua-conta"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "CTA — texto",
-        "valueType": "string",
-        "value": "Abra sua conta"
-      },
-      {
-        "component": "text",
-        "name": "brandTag",
-        "label": "Descrição da marca",
-        "valueType": "string",
-        "value": "Super App"
-      },
-      {
-        "component": "richtext",
-        "name": "countries",
-        "label": "Links de países",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Estilo do Cabeçalho",
-        "value": "default",
-        "options": [
-          {
-            "name": "Padrão Branco com Sombra",
-            "value": "default"
-          },
-          {
-            "name": "Transparente sobre Hero",
-            "value": "transparent"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_show-country-selector",
-        "label": "Exibir Seletor de País (Brasil / EUA)",
-        "value": true,
-        "valueType": "boolean"
-      },
-      {
-        "component": "select",
-        "name": "loginUrlTarget",
-        "label": "Link do Botão Acessar Conta — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "ctaTarget",
-        "label": "CTA — destino — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "header-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Item de menu",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Destino",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "children",
-        "label": "Submenu — lista de links",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "linkTarget",
-        "label": "Destino — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "hero",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "eyebrow",
-        "label": "Chapéu / Eyebrow",
-        "value": "Dossiê Estratégico · Banco Inter",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "headline",
-        "label": "Título Principal (Citrina)",
-        "value": "Em todo momento da vida, vejo você.",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "headlineType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h1",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Descrição / Subtítulo",
-        "value": "<p>O Super App financeiro que conecta conta corrente, investimentos, cartões, seguros, compras com cashback e conta internacional em dólar.</p>",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "primaryCta",
-        "label": "Link do Botão Primário",
-        "value": "/abra-sua-conta",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "primaryCtaText",
-        "label": "Texto do Botão Primário",
-        "value": "Abra sua conta grátis",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "secondaryCta",
-        "label": "Link do Botão Secundário",
-        "value": "/#momentos",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "secondaryCtaText",
-        "label": "Texto do Botão Secundário",
-        "value": "Conhecer os Produtos",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "checklist",
-        "label": "Lista de Vantagens (Bullets com Check)",
-        "value": "<ul><li>Sem taxa de manutenção</li><li>Cartão de crédito sem anuidade</li><li>Global Account em dólar</li></ul>",
-        "valueType": "string"
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Fotografia do Portal Visual",
-        "value": "",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Texto alternativo",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_portal-variant",
-        "label": "Formato do Portal Visual",
-        "value": "asymmetric",
-        "options": [
-          {
-            "name": "Assimétrico Oficial (Padrão)",
-            "value": "asymmetric"
-          },
-          {
-            "name": "Arco Clássico (Arch)",
-            "value": "arch"
-          },
-          {
-            "name": "Pílula Horizontal (Pill)",
-            "value": "pill"
-          },
-          {
-            "name": "Bordas Arredondadas (Rounded)",
-            "value": "rounded"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_theme",
-        "label": "Tema do Hero",
-        "value": "default",
-        "options": [
-          {
-            "name": "Padrão (Sand & Orange)",
-            "value": "default"
-          },
-          {
-            "name": "Claro Minimalista (Light)",
-            "value": "light"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "primaryCtaTarget",
-        "label": "Link do Botão Primário — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "secondaryCtaTarget",
-        "label": "Link do Botão Secundário — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "in-page-nav",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Rótulo do Sumário",
-        "value": "Nesta Página",
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_sticky",
-        "label": "Fixar no Topo durante Scroll",
-        "value": true,
-        "valueType": "boolean"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_scroll-spy",
-        "label": "Destacar Seção Ativa Dinamicamente",
-        "value": true,
-        "valueType": "boolean"
-      }
-    ]
-  },
-  {
-    "id": "in-page-nav-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Rótulo",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Âncora",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "linkTarget",
-        "label": "Âncora — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "manifesto",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "richtext",
-        "name": "quote",
-        "label": "Citação Editorial (Citrina Light)",
-        "value": "<p>Acreditamos que a vida financeira não precisa ser complicada, fria ou distante. Ela precisa ser humana, transparente e presente em cada momento de realização.</p>",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "attribution",
-        "label": "Autoria / Assinatura",
-        "value": "Manifesto Oficial do Banco Inter",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_align",
-        "label": "Alinhamento do Texto",
-        "value": "center",
-        "options": [
-          {
-            "name": "Centralizado",
-            "value": "center"
-          },
-          {
-            "name": "Alinhado à Esquerda",
-            "value": "left"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "modal",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "modalId",
-        "label": "ID Único do Modal (Âncora)",
-        "value": "garantia-fgc",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Diálogo / Modal",
-        "value": "Proteção Regulatória do FGC e FDIC",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo Completo do Modal",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "trigger",
-        "label": "Texto do Botão / Link Disparador",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "moments-journey",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "moment",
-        "label": "Capítulo / Momento",
-        "value": "Começar: Autonomia e Faculdade",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "headline",
-        "label": "Título do Capítulo (Citrina)",
-        "value": "Vejo você conquistando a sua independência financeira.",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "headlineType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Narrativa do Capítulo",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "Link do Botão",
-        "value": "/abra-sua-conta",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "Texto do Botão",
-        "value": "Abra sua conta grátis",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "disclaimer",
-        "label": "Aviso Legal / Regras",
-        "valueType": "string"
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Fotografia do Portal",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Texto alternativo",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_portal-variant",
-        "label": "Formato do Portal",
-        "value": "asymmetric",
-        "options": [
-          {
-            "name": "Assimétrico (Asymmetric)",
-            "value": "asymmetric"
-          },
-          {
-            "name": "Arco Clássico (Arch)",
-            "value": "arch"
-          },
-          {
-            "name": "Pílula Horizontal (Pill)",
-            "value": "pill"
-          },
-          {
-            "name": "Invertido (Reverse)",
-            "value": "reverse"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "ctaTarget",
-        "label": "Link do Botão — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "pagination",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "number",
-        "name": "currentPage",
-        "label": "Página Atual",
-        "value": 1,
-        "valueType": "number",
-        "valueFormat": "long"
-      },
-      {
-        "component": "number",
-        "name": "totalPages",
-        "label": "Total de Páginas",
-        "value": 5,
-        "valueType": "number",
-        "valueFormat": "long"
-      },
-      {
-        "component": "aem-content",
-        "name": "baseUrl",
-        "label": "URL Base com Parâmetro de Página",
-        "value": "?pagina=",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Estilo da Paginação",
-        "value": "numeric",
-        "options": [
-          {
-            "name": "Numérica com Anterior e Próximo",
-            "value": "numeric"
-          },
-          {
-            "name": "Compacta",
-            "value": "compact"
-          },
-          {
-            "name": "Indicador por Pontos (Dots)",
-            "value": "dots"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "baseUrlTarget",
-        "label": "URL Base com Parâmetro de Página — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "quick-moment-rail",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Rótulo do Trilho",
-        "value": "Momentos de Vida",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_behavior",
-        "label": "Comportamento de Fixação",
-        "value": "floating",
-        "options": [
-          {
-            "name": "Flutuante no Rodapé (Floating)",
-            "value": "floating"
-          },
-          {
-            "name": "Fixado no Topo (Sticky)",
-            "value": "sticky"
-          },
-          {
-            "name": "Em linha com a página (Inline)",
-            "value": "inline"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "quick-moment-rail-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Momento",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Âncora",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "linkTarget",
-        "label": "Âncora — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "search-bar",
+    "id": "v3-search",
     "fields": [
       {
         "component": "text",
@@ -179728,7 +177783,7 @@
     ]
   },
   {
-    "id": "segment-showcase",
+    "id": "v3-simulator",
     "fields": [
       {
         "component": "text",
@@ -179739,687 +177794,108 @@
         "hidden": true
       },
       {
-        "component": "text",
         "name": "title",
-        "label": "Título da Seção de Segmentos",
-        "value": "Uma experiência desenhada para o seu momento de vida",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
+        "label": "Título",
         "component": "text",
+        "valueType": "string",
+        "value": "Simulação ilustrativa"
+      },
+      {
         "name": "subtitle",
-        "label": "Subtítulo / Descrição",
-        "value": "Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter.",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "defaultSegment",
-        "label": "Segmento Selecionado Inicialmente",
-        "value": "digital",
-        "options": [
-          {
-            "name": "Inter Digital (Sem exigência)",
-            "value": "digital"
-          },
-          {
-            "name": "Inter One (R$ 50k+)",
-            "value": "one"
-          },
-          {
-            "name": "Inter Prime (R$ 250k+)",
-            "value": "prime"
-          },
-          {
-            "name": "Inter Win (R$ 1M+ Wealth)",
-            "value": "win"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "segment-showcase-item",
-    "fields": [
-      {
+        "label": "Descrição",
         "component": "text",
-        "name": "segmentId",
-        "label": "Identificador",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Nome",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "criteria",
-        "label": "Critério",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "tier",
-        "label": "Cartão",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "perks",
-        "label": "Benefícios",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "Destino",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "Texto do botão",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "ctaTarget",
-        "label": "Destino — abrir em",
         "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "simulator",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
+        "value": "Configure os parâmetros para explorar os cenários."
       },
       {
-        "component": "text",
-        "name": "title",
-        "label": "Título do Simulador",
-        "value": "Simule seu Rendimento no Meu Porquinho",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "subtitle",
-        "label": "Subtítulo Explicativo",
-        "value": "Rendimento automático a 102% do CDI com liquidez diária.",
-        "valueType": "string"
-      },
-      {
-        "component": "number",
         "name": "defaultValue",
-        "label": "Valor Inicial de Simulação (R$)",
+        "label": "Valor inicial",
+        "component": "number",
+        "valueType": "number",
         "value": 10000,
-        "valueType": "number",
-        "valueFormat": "long"
+        "validation": {
+          "numberMin": 0
+        }
       },
       {
-        "component": "number",
         "name": "minValue",
-        "label": "Valor Mínimo do Slider (R$)",
+        "label": "Valor mínimo",
+        "component": "number",
+        "valueType": "number",
         "value": 500,
-        "valueType": "number",
-        "valueFormat": "long"
+        "validation": {
+          "numberMin": 0
+        }
       },
       {
-        "component": "number",
         "name": "maxValue",
-        "label": "Valor Máximo do Slider (R$)",
+        "label": "Valor máximo",
+        "component": "number",
+        "valueType": "number",
         "value": 100000,
-        "valueType": "number",
-        "valueFormat": "long"
+        "validation": {
+          "numberMin": 0
+        }
       },
       {
+        "name": "annualRate",
+        "label": "Taxa anual do cenário (%)",
         "component": "number",
-        "name": "cdiRate",
-        "label": "Taxa CDI Anual (% a.a.)",
-        "value": 10.75,
         "valueType": "number",
-        "valueFormat": "double"
+        "value": 10,
+        "validation": {
+          "numberMin": 0
+        }
       },
       {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "Link do Botão",
-        "value": "/investimentos",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "Texto do Botão",
-        "value": "Começar a Investir",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "ctaTarget",
-        "label": "Link do Botão — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "stats-counter",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Estilo Visual dos Cards",
-        "value": "default",
-        "options": [
-          {
-            "name": "Grid de Cartões Padrão",
-            "value": "default"
-          },
-          {
-            "name": "Bordas em Destaque (Cards)",
-            "value": "cards"
-          },
-          {
-            "name": "Minimalista sem borda",
-            "value": "minimal"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "name": "classes_animated",
-        "label": "Animar contagem numérica ao rolar",
-        "value": true,
-        "valueType": "boolean"
-      }
-    ]
-  },
-  {
-    "id": "stats-counter-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "value",
-        "label": "Valor formatado",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "label",
-        "label": "Descrição",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "tabs",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "defaultTab",
-        "label": "Aba Ativa Inicial (1, 2, 3...)",
-        "value": "1",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "tabs-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Nome da aba",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "content",
-        "label": "Conteúdo da aba",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "teaser",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "eyebrow",
-        "label": "Chapéu / Eyebrow",
-        "value": "Vida Global Sem Fronteiras",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título (Citrina)",
-        "value": "Uma só marca. Duas moedas. Zero barreiras.",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Texto Explicativo",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "Link do Botão",
-        "value": "/global",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "Texto do Botão",
-        "value": "Conhecer a Global Account",
-        "valueType": "string"
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Fotografia do Portal",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Texto alternativo",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Disposição / Formato",
-        "value": "pill",
-        "options": [
-          {
-            "name": "Portal Pílula (Padrão)",
-            "value": "pill"
-          },
-          {
-            "name": "Portal Arco (Arch)",
-            "value": "arch"
-          },
-          {
-            "name": "Invertido (Reverse - Imagem à Direita)",
-            "value": "reverse"
-          },
-          {
-            "name": "Retangular (Default)",
-            "value": "default"
-          }
-        ],
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "ctaTarget",
-        "label": "Link do Botão — abrir em",
-        "valueType": "string",
-        "value": "_self",
-        "options": [
-          {
-            "name": "Mesma aba",
-            "value": "_self"
-          },
-          {
-            "name": "Nova aba",
-            "value": "_blank"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "testimonials",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
-        "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Título da Seção de Depoimentos",
-        "value": "O que nossos clientes dizem",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Nível do título",
-        "valueType": "string",
-        "value": "h2",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "subtitle",
-        "label": "Subtítulo",
-        "value": "Mais de 33 milhões de pessoas confiam a sua vida financeira ao Inter.",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "testimonials-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "quote",
-        "label": "Depoimento",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "author",
-        "label": "Nome",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "role",
-        "label": "Cargo / contexto",
-        "valueType": "string"
-      },
-      {
+        "name": "referenceRate",
+        "label": "Taxa anual da referência (%)",
         "component": "number",
-        "name": "rating",
-        "label": "Estrelas",
         "valueType": "number",
-        "value": 5,
-        "valueFormat": "long"
-      }
-    ]
-  },
-  {
-    "id": "timeline",
-    "fields": [
+        "value": 6,
+        "validation": {
+          "numberMin": 0
+        }
+      },
       {
+        "name": "resultLabel",
+        "label": "Rótulo do cenário",
         "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
         "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
+        "value": "Cenário configurado · 1 ano"
       },
       {
-        "component": "select",
-        "name": "classes_variant",
-        "label": "Orientação da Linha do Tempo",
-        "value": "vertical",
-        "options": [
-          {
-            "name": "Vertical (Passo a Passo)",
-            "value": "vertical"
-          },
-          {
-            "name": "Horizontal (Stepper em Linha)",
-            "value": "horizontal"
-          }
-        ],
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "timeline-item",
-    "fields": [
-      {
+        "name": "referenceLabel",
+        "label": "Rótulo da referência",
         "component": "text",
-        "name": "title",
-        "label": "Etapa",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Descrição",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "tooltip",
-    "fields": [
-      {
-        "component": "text",
-        "name": "schemaVersion",
-        "label": "Versão do conteúdo",
         "valueType": "string",
-        "value": "toranja-v3",
-        "hidden": true
+        "value": "Referência configurada · 1 ano"
       },
       {
+        "name": "disclaimer",
+        "label": "Observação",
         "component": "text",
-        "name": "term",
-        "label": "Termo ou Palavra-Chave",
-        "value": "CDI",
-        "valueType": "string"
+        "valueType": "string",
+        "value": "Simulação ilustrativa, sem impostos. Taxas não representam uma oferta."
       },
       {
+        "name": "cta",
+        "label": "Destino da ação",
+        "component": "aem-content",
+        "valueType": "string",
+        "value": "/investimentos"
+      },
+      {
+        "name": "ctaText",
+        "label": "Texto da ação",
         "component": "text",
-        "name": "definition",
-        "label": "Definição do Glossário",
-        "value": "Certificado de Depósito Interbancário: taxa de juros praticada entre os bancos, usada como referência para investimentos.",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_position",
-        "label": "Posição da Dica Flutuante",
-        "value": "top",
-        "options": [
-          {
-            "name": "Acima (Top)",
-            "value": "top"
-          },
-          {
-            "name": "Abaixo (Bottom)",
-            "value": "bottom"
-          },
-          {
-            "name": "À Esquerda (Left)",
-            "value": "left"
-          },
-          {
-            "name": "À Direita (Right)",
-            "value": "right"
-          }
-        ],
-        "valueType": "string"
+        "valueType": "string",
+        "value": "Conhecer"
       }
     ]
   },
   {
-    "id": "video-player",
+    "id": "v3-video",
     "fields": [
       {
         "component": "text",
@@ -180458,31 +177934,6 @@
         "component": "text",
         "name": "caption",
         "label": "Legenda Inferior",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "classes_portal-variant",
-        "label": "Moldura do Vídeo",
-        "value": "arch",
-        "options": [
-          {
-            "name": "Portal em Arco (Arch)",
-            "value": "arch"
-          },
-          {
-            "name": "Portal Assimétrico (Asymmetric)",
-            "value": "asymmetric"
-          },
-          {
-            "name": "Portal em Pílula (Pill)",
-            "value": "pill"
-          },
-          {
-            "name": "Retangular Arredondado (Rounded)",
-            "value": "rounded"
-          }
-        ],
         "valueType": "string"
       },
       {

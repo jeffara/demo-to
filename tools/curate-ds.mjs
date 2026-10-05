@@ -28,7 +28,7 @@ export function curate(schema,partial,samples){
   const topObjects=[...new Set(s.descriptors.filter(d=>d.path.length>1&&!d.path[0].startsWith('$')).map(d=>d.path[0]))];
   for(const object of topObjects){
    const control='enable'+Buffer.from(object).toString('hex');
-   add({name:control,path:['$enabled',object],key:control,kind:'enum',values:['auto','true','false']},{...choice(control,'Exibir '+title([object]),['auto','true','false']),description:'Automático preserva conteúdo legado. Não remove a configuração salva.',value:'auto'});
+   add({name:control,path:['$enabled',object],key:control,kind:'enum',values:['auto','true','false']},{...choice(control,'Exibir '+title([object]),['auto','true','false']),description:'Automático usa as propriedades configuradas. Não remove a configuração salva.',value:'auto'});
    for(const f of model.fields){const d=s.descriptors.find(x=>x.key===f.name);if(d?.path[0]===object&&d.path.length>1)f.condition={'!':when(control,'false')};}
   }
   if(s.name==='ListItem')for(const side of ['leading','trailing']){
@@ -53,7 +53,7 @@ export function curate(schema,partial,samples){
    if(d.kind==='number'){f.valueFormat='double';if(/count|progress|steps|counter|maxLength|width|height/i.test(d.name))f.validation={numberMin:0};}
    if(d.name==='className'||d.name==='testId'||d.name==='data-testid')f.hidden=true;
    if(generic.has(f.name)){
-    f.label=({actionLink:'Destino padrão (compatibilidade)',actionTarget:'Abrir destino padrão em',accessibleLabel:'Nome acessível (opcional)',triggerLabel:'Texto do acionador'})[f.name];
+    f.label=({actionLink:'Destino padrão',actionTarget:'Abrir destino padrão em',accessibleLabel:'Nome acessível (opcional)',triggerLabel:'Texto do acionador'})[f.name];
     if(['actionLink','actionTarget'].includes(f.name)&&!actions.length&&s.name!=='Link')f.hidden=true;
     if(f.name==='triggerLabel'&&!['BottomSheet','BottomSheetCountry','Snackbar'].includes(s.name))f.hidden=true;
    }
@@ -73,13 +73,13 @@ export function curate(schema,partial,samples){
   if(s.name==='FloatingActionButton')add({name:'placement',path:['$placement'],key:'placement',kind:'enum',values:['floating','inline']},choice('placement','Posicionamento',['floating','inline']));
   if(s.name==='DatePicker')add({name:'defaultDate',path:['$defaultDate'],key:'defaultDate',kind:'string'},{component:'text',name:'defaultDate',label:'Data inicial única',valueType:'string',validation:{regExp:'^$|^\\d{4}-\\d{2}-\\d{2}$'},description:'AAAA-MM-DD; usada somente no modo de data única.'});
   const collections=[];
-  if(s.item)collections.push({id:s.item.property,path:[s.item.property],...s.item,legacy:true});
+  if(s.item)collections.push({id:s.item.property,path:[s.item.property],...s.item,primary:true});
   for(const d of s.descriptors.filter(d=>['array','json'].includes(d.kind))){
    let spec=d.item||{kind:'string'};
    if(d.path[0]==='$options')spec={kind:'object',fields:[{name:'label',kind:'string'},{name:'value',kind:'string'},{name:'disabled',kind:'boolean'}]};
    const descriptors=spec.kind==='object'?leaves(spec.fields||[]):[{name:'value',path:['value'],key:key(['value']),kind:spec.kind||'string'}];
    collections.push({id:d.path.join('.'),path:d.path,property:d.path.join('.'),primitive:spec.kind!=='object',descriptors,events:[],maxItems:d.name==='hints'?3:undefined});
-   const f=model.fields.find(f=>f.name===d.key);if(f){f.hidden=true;f.description='Compatibilidade V2; edite pelos itens do componente.';}
+   const f=model.fields.find(f=>f.name===d.key);if(f){f.hidden=true;f.description='Representação interna da coleção; edite pelos itens do componente.';}
   }
   // Conteúdo composto: itens tipados, sem contêineres arbitrários incompatíveis com XWalk.
   const slots=s.descriptors.filter(d=>['Card','Accordion','BottomSheet','Widget','FeedbackScreen','Banner'].includes(s.name)&&d.kind==='slot'&&d.path.length===1&&['children','slot','webContent'].includes(d.name));
@@ -102,13 +102,14 @@ export function curate(schema,partial,samples){
   }
   // Todos os dados de uma barra/fatia ficam na mesma linha.
   if(['ChartBar','ChartDonut','ChartMeter'].includes(s.name))collections.push({id:'chartData',path:['$chartData'],primitive:false,events:[],descriptors:[{name:'label',path:['label'],key:'chartLabel',kind:'string'},{name:'value',path:['value'],key:'chartValue',kind:'number'},{name:'color',path:['color'],key:'chartColor',kind:'string'}]});
+  if(s.name==='Tabs')collections.find(c=>c.id==='tabs')?.descriptors.push({name:'panelContent',path:['$panel'],key:'panelContent',kind:'slot'});
   const aligned=collections.findIndex(c=>c.id==='chartData');if(aligned>=0)collections.unshift(...collections.splice(aligned,1));
   if(collections.length){
    const modelId=id+'-item';let itemModel=partial.models.find(m=>m.id===modelId);
    if(!itemModel){itemModel={id:modelId,fields:[]};partial.models.push(itemModel);partial.definitions.push({id:modelId,title:s.name+' — item',plugins:{xwalk:{page:{resourceType:'core/franklin/components/block/v1/block/item',template:{name:modelId,model:modelId}}}}});partial.filters.push({id,components:[modelId]});}
    const existing=new Map(itemModel.fields.map(f=>[f.name,f]));itemModel.fields=[choice('collection','Tipo de item',collections.map(c=>c.id))];
-   for(const c of collections){c.model=modelId;c.descriptors=c.descriptors.map(d=>({...d,key:c.legacy?d.key:'c'+Buffer.from(c.id).toString('hex')+d.key}));
-    for(const d of c.descriptors){const f=c.legacy&&existing.has(d.key)?existing.get(d.key):field(d);delete f.value;f.condition=c.legacy?{or:[when('collection',''),when('collection',c.id)]}:when('collection',c.id);if(d.kind==='array'){Object.assign(f,{component:'text',multi:true,valueType:'string[]'});}
+   for(const c of collections){c.model=modelId;c.descriptors=c.descriptors.map(d=>({...d,key:c.primary?d.key:'c'+Buffer.from(c.id).toString('hex')+d.key}));
+    for(const d of c.descriptors){const f=c.primary&&existing.has(d.key)?existing.get(d.key):field(d);delete f.value;f.condition=c.primary?{or:[when('collection',''),when('collection',c.id)]}:when('collection',c.id);if(d.kind==='array'){Object.assign(f,{component:'text',multi:true,valueType:'string[]'});}
      if(c.composition&&d.name==='src')f.component='reference';itemModel.fields.push(f);
     }
    }
