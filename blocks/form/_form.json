@@ -108,12 +108,32 @@
           "component": "text",
           "name": "endpoint",
           "label": "Endpoint Webhook CRM / Salesforce",
-          "valueType": "string"
+          "valueType": "string",
+          "hidden": true
         },
         {
           "component": "richtext",
           "name": "consent",
           "label": "Texto e link de consentimento",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "integrationId",
+          "label": "Integração cadastrada",
+          "valueType": "string",
+          "description": "Identificador definido pelo time técnico; exemplo inter-lead. Sem integração cadastrada, o formulário não envia dados."
+        },
+        {
+          "component": "text",
+          "name": "formId",
+          "label": "Identificador do formulário",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "failureMessage",
+          "label": "Mensagem de falha",
           "valueType": "string"
         }
       ]
@@ -125,13 +145,18 @@
           "component": "text",
           "name": "fieldName",
           "label": "Nome técnico",
-          "valueType": "string"
+          "valueType": "string",
+          "required": true,
+          "validation": {
+            "regExp": "^[a-zA-Z][a-zA-Z0-9_-]*$"
+          }
         },
         {
           "component": "text",
           "name": "label",
           "label": "Rótulo",
-          "valueType": "string"
+          "valueType": "string",
+          "required": true
         },
         {
           "component": "select",
@@ -163,6 +188,38 @@
             {
               "name": "select",
               "value": "select"
+            },
+            {
+              "name": "checkbox",
+              "value": "checkbox"
+            },
+            {
+              "name": "switch",
+              "value": "switch"
+            },
+            {
+              "name": "radio",
+              "value": "radio"
+            },
+            {
+              "name": "stepper",
+              "value": "stepper"
+            },
+            {
+              "name": "money",
+              "value": "money"
+            },
+            {
+              "name": "number",
+              "value": "number"
+            },
+            {
+              "name": "date",
+              "value": "date"
+            },
+            {
+              "name": "password",
+              "value": "password"
             }
           ]
         },
@@ -183,7 +240,123 @@
           "component": "richtext",
           "name": "options",
           "label": "Opções: lista de valores",
+          "valueType": "string",
+          "description": "Lista: um item por opção. Use Rótulo | valor quando forem diferentes.",
+          "condition": {
+            "in": [
+              {
+                "var": "kind"
+              },
+              [
+                "select",
+                "radio"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "defaultValue",
+          "label": "Valor inicial",
+          "component": "text",
           "valueType": "string"
+        },
+        {
+          "name": "hint",
+          "label": "Ajuda",
+          "component": "text",
+          "valueType": "string"
+        },
+        {
+          "name": "errorMessage",
+          "label": "Mensagem de validação",
+          "component": "text",
+          "valueType": "string"
+        },
+        {
+          "name": "min",
+          "label": "Mínimo",
+          "component": "number",
+          "valueType": "number"
+        },
+        {
+          "name": "max",
+          "label": "Máximo",
+          "component": "number",
+          "valueType": "number"
+        },
+        {
+          "name": "step",
+          "label": "Incremento",
+          "component": "number",
+          "valueType": "number"
+        },
+        {
+          "name": "minLength",
+          "label": "Mínimo de caracteres",
+          "component": "number",
+          "valueType": "number"
+        },
+        {
+          "name": "maxLength",
+          "label": "Máximo de caracteres",
+          "component": "number",
+          "valueType": "number"
+        },
+        {
+          "name": "pattern",
+          "label": "Formato (expressão regular)",
+          "component": "text",
+          "valueType": "string"
+        },
+        {
+          "name": "disabled",
+          "label": "Desabilitado",
+          "component": "boolean",
+          "valueType": "boolean"
+        },
+        {
+          "name": "readOnly",
+          "label": "Somente leitura",
+          "component": "boolean",
+          "valueType": "boolean"
+        },
+        {
+          "name": "showWhenField",
+          "label": "Mostrar quando este campo",
+          "component": "text",
+          "valueType": "string"
+        },
+        {
+          "name": "showWhenValue",
+          "label": "Tiver este valor",
+          "component": "text",
+          "valueType": "string",
+          "condition": {
+            "!!": {
+              "var": "showWhenField"
+            }
+          }
+        },
+        {
+          "name": "showWhenOperator",
+          "label": "Condição",
+          "component": "select",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Igual a",
+              "value": "equals"
+            },
+            {
+              "name": "Diferente de",
+              "value": "notEquals"
+            }
+          ],
+          "condition": {
+            "!!": {
+              "var": "showWhenField"
+            }
+          }
         }
       ]
     }

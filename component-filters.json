@@ -54,6 +54,138 @@
     ]
   },
   {
+    "id": "ds-accordion",
+    "components": [
+      "ds-accordion-item"
+    ]
+  },
+  {
+    "id": "ds-banner",
+    "components": [
+      "ds-banner-item"
+    ]
+  },
+  {
+    "id": "ds-bottom-sheet",
+    "components": [
+      "ds-bottom-sheet-item"
+    ]
+  },
+  {
+    "id": "ds-card",
+    "components": [
+      "ds-card-item"
+    ]
+  },
+  {
+    "id": "ds-chart-bar",
+    "components": [
+      "ds-chart-bar-item"
+    ]
+  },
+  {
+    "id": "ds-chart-donut",
+    "components": [
+      "ds-chart-donut-item"
+    ]
+  },
+  {
+    "id": "ds-chart-meter",
+    "components": [
+      "ds-chart-meter-item"
+    ]
+  },
+  {
+    "id": "ds-date-picker",
+    "components": [
+      "ds-date-picker-item"
+    ]
+  },
+  {
+    "id": "ds-header",
+    "components": [
+      "ds-header-item"
+    ]
+  },
+  {
+    "id": "ds-input-date",
+    "components": [
+      "ds-input-date-item"
+    ]
+  },
+  {
+    "id": "ds-input-password",
+    "components": [
+      "ds-input-password-item"
+    ]
+  },
+  {
+    "id": "ds-input-search",
+    "components": [
+      "ds-input-search-item"
+    ]
+  },
+  {
+    "id": "ds-input-text",
+    "components": [
+      "ds-input-text-item"
+    ]
+  },
+  {
+    "id": "ds-input-money",
+    "components": [
+      "ds-input-money-item"
+    ]
+  },
+  {
+    "id": "ds-list-item",
+    "components": [
+      "ds-list-item-item"
+    ]
+  },
+  {
+    "id": "ds-list-item-control",
+    "components": [
+      "ds-list-item-control-item"
+    ]
+  },
+  {
+    "id": "ds-list-item-general",
+    "components": [
+      "ds-list-item-general-item"
+    ]
+  },
+  {
+    "id": "ds-list-item-action",
+    "components": [
+      "ds-list-item-action-item"
+    ]
+  },
+  {
+    "id": "ds-pin-code",
+    "components": [
+      "ds-pin-code-item"
+    ]
+  },
+  {
+    "id": "ds-select",
+    "components": [
+      "ds-select-item"
+    ]
+  },
+  {
+    "id": "ds-text-area",
+    "components": [
+      "ds-text-area-item"
+    ]
+  },
+  {
+    "id": "ds-widget",
+    "components": [
+      "ds-widget-item"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",

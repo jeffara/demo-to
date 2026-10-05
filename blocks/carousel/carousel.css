@@ -27,17 +27,17 @@
 .toranja-carousel-slide {
   flex: 0 0 clamp(280px, 32vw, 380px);
   scroll-snap-align: start;
-  background: var(--theme-surface, #FFFFFF);
-  border: 1px solid var(--theme-border, #E5E7EB);
+  background: var(--theme-surface, var(--color-background-neutral-default));
+  border: 1px solid var(--theme-border, var(--color-surface-disabled));
   border-radius: var(--radius-lg, 24px);
   padding: 2rem;
-  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.04));
+  box-shadow: var(--shadow-sm, 0 2px 8px color-mix(in srgb, var(--color-surface-static-black) 4.0%, transparent));
   transition: transform var(--transition-fast, 0.2s);
 }
 
 .toranja-carousel-slide:hover {
   transform: translateY(-4px);
-  border-color: var(--inter-orange, #FF6600);
+  border-color: var(--inter-orange, var(--color-background-brand-default));
 }
 
 .toranja-carousel-controls {
@@ -52,9 +52,9 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid var(--theme-border, #E5E7EB);
-  background: var(--theme-surface, #FFFFFF);
-  color: var(--theme-text, #161616);
+  border: 1px solid var(--theme-border, var(--color-surface-disabled));
+  background: var(--theme-surface, var(--color-background-neutral-default));
+  color: var(--theme-text, var(--color-background-static-black));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,9 +63,9 @@
 }
 
 .carousel-btn:hover {
-  background: var(--inter-orange, #FF6600);
-  color: #FFFFFF;
-  border-color: var(--inter-orange, #FF6600);
+  background: var(--inter-orange, var(--color-background-brand-default));
+  color: var(--color-background-neutral-default);
+  border-color: var(--inter-orange, var(--color-background-brand-default));
 }
 
 .carousel-dots {
@@ -78,7 +78,7 @@
   width: 8px;
   height: 8px;
   border-radius: var(--radius-full, 9999px);
-  background: var(--theme-border, #E5E7EB);
+  background: var(--theme-border, var(--color-surface-disabled));
   border: none;
   cursor: pointer;
   padding: 0;
@@ -86,10 +86,10 @@
 }
 
 .carousel-dot:hover {
-  background: var(--inter-orange-light, #FFCA96);
+  background: var(--inter-orange-light, var(--color-background-brand-soft));
 }
 
 .carousel-dot.active {
   width: 24px;
-  background: var(--inter-orange, #EA7100);
+  background: var(--inter-orange, var(--color-background-brand-default));
 }

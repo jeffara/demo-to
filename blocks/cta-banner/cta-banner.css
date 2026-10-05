@@ -4,13 +4,13 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #161616 0%, #2A2A2A 100%);
+  background: linear-gradient(135deg, var(--color-background-static-black) 0%, var(--color-surface-neutral-stronger) 100%);
   color: var(--inter-white);
   margin: 3rem 0;
 }
 
 .cta-banner.orange {
-  background: linear-gradient(135deg, #EA7100 0%, #D66300 100%);
+  background: linear-gradient(135deg, var(--color-background-brand-default) 0%, var(--color-background-brand-default) 100%);
   color: var(--inter-white);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .cta-banner-desc {
-  color: rgba(255, 255, 255, 0.85);
+  color: color-mix(in srgb, var(--color-background-neutral-default) 85.0%, transparent);
   font-size: 1.125rem;
   line-height: 1.6;
   margin-bottom: 2.5rem;
@@ -43,10 +43,10 @@
 .cta-banner .button.secondary {
   background: transparent;
   color: var(--inter-white);
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: color-mix(in srgb, var(--color-background-neutral-default) 40.0%, transparent);
 }
 
 .cta-banner .button.secondary:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: color-mix(in srgb, var(--color-background-neutral-default) 15.0%, transparent);
   border-color: var(--inter-white);
 }

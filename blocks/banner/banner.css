@@ -15,7 +15,7 @@
   gap: 1.25rem;
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius-md);
-  background-color: var(--theme-surface, #FFFFFF);
+  background-color: var(--theme-surface, var(--color-background-neutral-default));
   border: 1px solid var(--theme-border, var(--inter-gray));
   box-shadow: var(--shadow-sm);
   position: relative;
@@ -33,7 +33,7 @@
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  background-color: rgba(234, 113, 0, 0.15);
+  background-color: color-mix(in srgb, var(--color-background-brand-default) 15.0%, transparent);
   color: var(--theme-accent, var(--inter-orange));
   display: flex;
   align-items: center;
@@ -105,40 +105,40 @@
 .banner.promo .toranja-banner-container,
 .banner.promo {
   background: var(--gradient) !important;
-  color: #FFFFFF !important;
+  color: var(--color-background-neutral-default) !important;
   border: none !important;
 }
 
 .banner.promo .toranja-banner-icon {
-  background-color: rgba(255, 255, 255, 0.25);
-  color: #FFFFFF;
+  background-color: color-mix(in srgb, var(--color-background-neutral-default) 25.0%, transparent);
+  color: var(--color-background-neutral-default);
 }
 
 .banner.promo .toranja-banner-content h3,
 .banner.promo .toranja-banner-content h4,
 .banner.promo .toranja-banner-content strong,
 .banner.promo .toranja-banner-content p {
-  color: #FFFFFF !important;
+  color: var(--color-background-neutral-default) !important;
 }
 
 .banner.promo .toranja-banner-close {
-  color: rgba(255, 255, 255, 0.85);
+  color: color-mix(in srgb, var(--color-background-neutral-default) 85.0%, transparent);
 }
 
 .banner.promo .toranja-banner-close:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #FFFFFF;
+  background-color: color-mix(in srgb, var(--color-background-neutral-default) 20.0%, transparent);
+  color: var(--color-background-neutral-default);
 }
 
 /* Variante Alerta / Atenção */
 .banner.alert .toranja-banner-container {
-  background-color: #FFFBEB;
-  border-left: 4px solid #D97706;
+  background-color: var(--color-background-brand-softer);
+  border-left: 4px solid var(--color-background-brand-default);
 }
 
 .banner.alert .toranja-banner-icon {
-  background-color: rgba(217, 119, 6, 0.15);
-  color: #D97706;
+  background-color: color-mix(in srgb, var(--color-background-brand-default) 15.0%, transparent);
+  color: var(--color-background-brand-default);
 }
 
 @media (max-width: 768px) {

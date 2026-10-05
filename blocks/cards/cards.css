@@ -13,7 +13,7 @@
 
 /* Card Padrão Toranja */
 .cards .cards-card {
-  background-color: var(--theme-surface, #FFFFFF);
+  background-color: var(--theme-surface, var(--color-background-neutral-default));
   border: 1px solid var(--theme-border, var(--inter-gray));
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -123,27 +123,27 @@
   aspect-ratio: 1.586 / 1;
   border-radius: 20px;
   padding: 1.75rem;
-  color: #FFFFFF;
+  color: var(--color-background-neutral-default);
   border: none;
 }
 
 .cards.metallic .cards-card:nth-child(1) {
-  background: linear-gradient(135deg, #EA7100 0%, #D66300 60%, #943D15 100%);
+  background: linear-gradient(135deg, var(--color-background-brand-default) 0%, var(--color-background-brand-default) 60%, var(--color-background-brand-strong) 100%);
 }
 
 .cards.metallic .cards-card:nth-child(2) {
-  background: linear-gradient(135deg, #9E9E9E 0%, #7A8B99 60%, #4A5B69 100%);
+  background: linear-gradient(135deg, var(--color-chart-neutral-soft) 0%, var(--color-chart-sequential-silver-3) 60%, var(--color-chart-categorical-6) 100%);
 }
 
 .cards.metallic .cards-card:nth-child(3) {
-  background: linear-gradient(135deg, #2A2A2A 0%, #161616 60%, #0A0A0A 100%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, var(--color-surface-neutral-stronger) 0%, var(--color-background-static-black) 60%, var(--color-surface-static-black) 100%);
+  border: 1px solid color-mix(in srgb, var(--color-background-neutral-default) 15.0%, transparent);
 }
 
 .cards.metallic .cards-card:nth-child(4) {
-  background: linear-gradient(135deg, #323747 0%, #1E222B 60%, #15181F 100%);
+  background: linear-gradient(135deg, var(--color-background-segment-pf-win-primary) 0%, var(--color-surface-neutral-strongest) 60%, var(--color-background-static-black) 100%);
   color: var(--seg-win-gold);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  border: 1px solid color-mix(in srgb, var(--color-background-segment-pj-pro) 35.0%, transparent);
 }
 
 @media (max-width: 768px) {

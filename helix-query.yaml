@@ -6,6 +6,12 @@ indices:
       - '/**'
     exclude:
       - '/**.json'
+      - '/nav'
+      - '/header'
+      - '/footer'
+      - '/demo-toranja'
+      - '/showcase/**'
+      - '/qa/**'
     target: /query-index.json
     properties:
       title:
@@ -20,3 +26,6 @@ indices:
       robots:
         select: head > meta[name="robots"]
         value: attribute(el, "content")
+      body:
+        select: main
+        value: textContent(el)

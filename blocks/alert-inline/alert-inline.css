@@ -19,27 +19,27 @@
 }
 
 .alert-info {
-  background: #EBF3FC;
-  border: 1px solid #C2DCFA;
-  color: #0D47A1;
+  background: var(--color-surface-feedback-information-soft);
+  border: 1px solid var(--color-chart-sequential-blue-1);
+  color: var(--color-chart-sequential-blue-6);
 }
 
 .alert-warning {
-  background: #FFF8E1;
-  border: 1px solid #FFE082;
-  color: #E65100;
+  background: var(--color-background-brand-softer);
+  border: 1px solid var(--color-background-brand-soft);
+  color: var(--color-background-brand-default);
 }
 
 .alert-success {
-  background: #E8F5E9;
-  border: 1px solid #A5D6A7;
-  color: #1B5E20;
+  background: var(--color-surface-disabled);
+  border: 1px solid var(--color-icon-disabled);
+  color: var(--color-icon-accent-mint-strong);
 }
 
 .alert-error {
-  background: #FFEBEE;
-  border: 1px solid #FFCDD2;
-  color: #B71C1C;
+  background: var(--color-surface-feedback-error-soft);
+  border: 1px solid var(--color-surface-brand-soft);
+  color: var(--color-icon-accent-red-strong);
 }
 
 .alert-icon {

@@ -27,9 +27,9 @@
   height: 40px;
   padding: 0 8px;
   border-radius: var(--radius-sm, 8px);
-  border: 1px solid var(--theme-border, #E5E7EB);
-  background: var(--theme-surface, #FFFFFF);
-  color: var(--theme-text, #161616);
+  border: 1px solid var(--theme-border, var(--color-surface-disabled));
+  background: var(--theme-surface, var(--color-background-neutral-default));
+  color: var(--theme-text, var(--color-background-static-black));
   font-family: var(--font-body, 'Inter', sans-serif);
   font-size: 0.9375rem;
   font-weight: 500;
@@ -38,14 +38,14 @@
 }
 
 .page-link:hover:not(.disabled) {
-  border-color: var(--inter-orange, #FF6600);
-  color: var(--inter-orange, #FF6600);
+  border-color: var(--inter-orange, var(--color-background-brand-default));
+  color: var(--inter-orange, var(--color-background-brand-default));
 }
 
 .page-link.active {
-  background: var(--inter-orange, #FF6600);
-  color: #FFFFFF;
-  border-color: var(--inter-orange, #FF6600);
+  background: var(--inter-orange, var(--color-background-brand-default));
+  color: var(--color-background-neutral-default);
+  border-color: var(--inter-orange, var(--color-background-brand-default));
   font-weight: 600;
 }
 

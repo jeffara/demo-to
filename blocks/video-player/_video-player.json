@@ -25,7 +25,8 @@
           "component": "aem-content",
           "name": "videoUrl",
           "label": "URL do Vídeo (MP4 ou YouTube)",
-          "valueType": "string"
+          "valueType": "string",
+          "required": true
         },
         {
           "component": "reference",
@@ -92,6 +93,72 @@
               "value": "_blank"
             }
           ]
+        },
+        {
+          "name": "ratio",
+          "label": "Proporção",
+          "component": "select",
+          "valueType": "string",
+          "value": "16/9",
+          "options": [
+            {
+              "name": "16/9",
+              "value": "16/9"
+            },
+            {
+              "name": "4/3",
+              "value": "4/3"
+            },
+            {
+              "name": "1/1",
+              "value": "1/1"
+            },
+            {
+              "name": "9/16",
+              "value": "9/16"
+            }
+          ]
+        },
+        {
+          "name": "videoFormat",
+          "label": "Formato do vídeo",
+          "component": "select",
+          "valueType": "string",
+          "value": "auto",
+          "options": [
+            {
+              "name": "auto",
+              "value": "auto"
+            },
+            {
+              "name": "mp4",
+              "value": "mp4"
+            },
+            {
+              "name": "webm",
+              "value": "webm"
+            }
+          ]
+        },
+        {
+          "name": "captionsUrl",
+          "label": "Arquivo de legendas WebVTT",
+          "component": "aem-content",
+          "valueType": "string"
+        },
+        {
+          "name": "captionsLanguage",
+          "label": "Idioma das legendas",
+          "component": "text",
+          "valueType": "string",
+          "value": "pt-BR"
+        },
+        {
+          "name": "captionsLabel",
+          "label": "Nome das legendas",
+          "component": "text",
+          "valueType": "string",
+          "value": "Português"
         }
       ]
     }

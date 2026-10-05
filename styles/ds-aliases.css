@@ -1,0 +1,21 @@
+/* Composições EDS usam aliases semânticos; a fonte dos valores é o pacote oficial. */
+:root[toranja-theme] {
+ --inter-orange:var(--color-background-brand-default); --inter-orange-hover:var(--color-background-brand-strong); --inter-orange-light:var(--color-background-brand-soft); --inter-orange-clay:var(--color-background-brand-strong); --inter-orange-earth:var(--color-background-brand-stronger);
+ --inter-sand:var(--color-background-brand-softer); --inter-sand-light:var(--color-background-neutral-default); --inter-sand-dark:var(--color-surface-brand-soft);
+ --inter-white:var(--color-background-static-white); --inter-black:var(--color-background-static-black); --inter-graphite:var(--color-text-neutral-primary); --inter-gray:var(--color-border-neutral-default); --inter-gray-light:var(--color-surface-neutral-softer); --inter-gray-dark:var(--color-text-neutral-secondary);
+ --theme-bg:var(--color-background-neutral-default); --theme-surface:var(--color-surface-neutral-softest); --theme-surface-subtle:var(--color-surface-neutral-softer); --theme-text:var(--color-text-neutral-primary); --theme-text-muted:var(--color-text-neutral-secondary); --theme-border:var(--color-border-neutral-default); --theme-accent:var(--color-background-brand-default); --theme-accent-hover:var(--color-background-brand-strong);
+ --seg-digital:var(--color-background-segment-pf-digital); --seg-one:var(--color-background-segment-pf-one); --seg-prime:var(--color-background-segment-pf-prime); --seg-win:var(--color-background-segment-pf-win-primary); --seg-win-gold:var(--color-background-segment-pf-win-secondary);
+ --font-body:var(--type-font-default),sans-serif; --font-heading:var(--type-font-brand),sans-serif; --font-display:var(--type-font-brand),sans-serif; --font-display-text:var(--type-font-default),sans-serif; --font-mono:var(--type-font-code),monospace;
+ --radius-sm:var(--radius-small); --radius-md:var(--radius-medium); --radius-lg:var(--radius-large); --radius-xl:var(--radius-large);
+ --shadow-sm:var(--elevation-surface-raised); --shadow-md:var(--elevation-surface-raised); --shadow-lg:var(--elevation-surface-raised); --shadow-glow:var(--elevation-surface-raised);
+}
+:focus-visible { outline:2px solid var(--color-border-brand-default);outline-offset:3px; }
+.form-error,.video-error { color:var(--color-text-feedback-error); }
+.form-group { min-width:0; }
+.form-group fieldset { border:0;padding:0; }
+.form-group input,.form-group textarea { max-width:100%; }
+.video-poster-wrapper picture { position:absolute;inset:0;width:100%;height:100%; }
+.video-poster-wrapper img { width:100%;height:100%;object-fit:cover; }
+.toranja-play-btn { z-index:1; }
+.video-iframe { object-fit:contain; }
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important;}}

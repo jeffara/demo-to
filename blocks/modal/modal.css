@@ -5,13 +5,13 @@ dialog.toranja-dialog {
   max-width: 560px;
   width: 90%;
   margin: auto;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 50px -12px color-mix(in srgb, var(--color-surface-static-black) 25.0%, transparent);
   background: var(--inter-white);
   color: var(--inter-black);
 }
 
 dialog.toranja-dialog::backdrop {
-  background: rgba(22, 22, 22, 0.65);
+  background: color-mix(in srgb, var(--color-background-static-black) 65.0%, transparent);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -29,7 +29,7 @@ dialog.toranja-dialog::backdrop {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--inter-orange);
-  background: rgba(234, 113, 0, 0.1);
+  background: color-mix(in srgb, var(--color-background-brand-default) 10.0%, transparent);
   padding: 4px 12px;
   border-radius: var(--radius-full);
 }

@@ -1,3 +1,4 @@
+import {loadIndex,searchRecords} from '../../scripts/search-index.js';
 /** Toranja nativo EDS. Conteúdo e instrumentação preservados para autoria AEM. */
 import { read, el, text, plain, href, safeURL, finish, uid, cleanup } from "../../scripts/toranja.js";
 export default function decorate(block) {
@@ -29,24 +30,14 @@ export default function decorate(block) {
     const query = input.value.trim().toLocaleLowerCase("pt-BR"),
       current = ++sequence;
     results.replaceChildren();
-    if (!query) {
+    if (query.length < Number(text(f.minChars, "2"))) {
       results.hidden = true;
       return;
     }
     try {
-      const response = await fetch(href(f.indexEndpoint, "/query-index.json"), {
-        signal: controller.signal,
-      });
-      if (!response.ok) throw Error("Índice indisponível");
-      const json = await response.json();
-      if (current !== sequence) return;
-      const matches = (json.data || [])
-        .filter((i) =>
-          (String(i.title || "") + " " + String(i.description || ""))
-            .toLocaleLowerCase("pt-BR")
-            .includes(query),
-        )
-        .slice(0, 8);
+      const records=await loadIndex(href(f.indexEndpoint,'/query-index.json'),controller.signal);
+      if(current!==sequence)return;
+      const matches=searchRecords(records,query,{root:text(f.searchRoot,'/'),limit:Number(text(f.maxResults,'8'))});
       matches.forEach((m) => {
         const a = el("a", "search-result-item");
         a.href = safeURL(m.path);

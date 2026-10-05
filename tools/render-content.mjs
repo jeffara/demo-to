@@ -16,6 +16,7 @@ export const esc = (v) =>
 export function valueHTML(model, name, values) {
   const f = models[model].fields.find((x) => x.name === name),
     v = values[name] ?? f?.value ?? "";
+  if(f?.multi){let values=v;if(!Array.isArray(values)){try{values=JSON.parse(v)}catch{values=String(v||'').split(/\r?\n|,\s*/).filter(Boolean)}}return '<ul>'+values.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';}
   if (f?.component === "reference")
     return v
       ? `<picture><img src="${esc(v)}" alt="${esc(values[name + "Alt"] || "")}" loading="lazy"></picture>`

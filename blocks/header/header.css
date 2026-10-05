@@ -4,17 +4,17 @@
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(253, 248, 238, 0.94);
+  background-color: color-mix(in srgb, var(--color-background-brand-softer) 94.0%, transparent);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(235, 235, 235, 0.8);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-surface-disabled) 80.0%, transparent);
   z-index: 1000;
   transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .header.scrolled {
-  background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 4px 20px rgba(22, 22, 22, 0.06);
+  background-color: color-mix(in srgb, var(--color-background-neutral-default) 98.0%, transparent);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--color-background-static-black) 6.0%, transparent);
 }
 
 .header-inner {

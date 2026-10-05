@@ -10861,8 +10861,12 @@
               "name": "hints",
               "optional": true,
               "description": "",
-              "kind": "string",
-              "type": "string | UpTo3<string> | undefined"
+              "kind": "array",
+              "type": "string | UpTo3<string> | undefined",
+              "item": {
+                "kind": "string",
+                "type": "never"
+              }
             },
             {
               "name": "onHelper",
@@ -19994,8 +19998,12 @@
           "name": "hints",
           "optional": true,
           "description": "",
-          "kind": "string",
-          "type": "string | UpTo3<string> | undefined"
+          "kind": "array",
+          "type": "string | UpTo3<string> | undefined",
+          "item": {
+            "kind": "string",
+            "type": "never"
+          }
         },
         {
           "name": "error",
@@ -21231,8 +21239,12 @@
           "name": "hints",
           "optional": true,
           "description": "",
-          "kind": "string",
-          "type": "string | UpTo3<string> | undefined"
+          "kind": "array",
+          "type": "string | UpTo3<string> | undefined",
+          "item": {
+            "kind": "string",
+            "type": "never"
+          }
         },
         {
           "name": "onHelper",
@@ -22145,8 +22157,12 @@
           "name": "hints",
           "optional": true,
           "description": "",
-          "kind": "string",
-          "type": "string | UpTo3<string> | undefined"
+          "kind": "array",
+          "type": "string | UpTo3<string> | undefined",
+          "item": {
+            "kind": "string",
+            "type": "never"
+          }
         },
         {
           "name": "onHelper",
@@ -23011,8 +23027,12 @@
           "name": "hints",
           "optional": true,
           "description": "",
-          "kind": "string",
-          "type": "string | UpTo3<string> | undefined"
+          "kind": "array",
+          "type": "string | UpTo3<string> | undefined",
+          "item": {
+            "kind": "string",
+            "type": "never"
+          }
         },
         {
           "name": "onHelper",
@@ -23953,8 +23973,12 @@
           "name": "hints",
           "optional": true,
           "description": "",
-          "kind": "string",
-          "type": "string | UpTo3<string> | undefined"
+          "kind": "array",
+          "type": "string | UpTo3<string> | undefined",
+          "item": {
+            "kind": "string",
+            "type": "never"
+          }
         },
         {
           "name": "onHelper",
@@ -47250,8 +47274,12 @@
           "name": "hints",
           "optional": true,
           "description": "",
-          "kind": "string",
-          "type": "string | UpTo3<string> | undefined"
+          "kind": "array",
+          "type": "string | UpTo3<string> | undefined",
+          "item": {
+            "kind": "string",
+            "type": "never"
+          }
         },
         {
           "name": "onHelper",

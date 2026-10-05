@@ -27,7 +27,11 @@ def attr_name(name):
 def node(name, props=None, parent=None):
     values = {}
     for key, value in (props or {}).items():
-        if isinstance(value, bool):
+        if isinstance(value, list):
+            def escape_entry(v):
+                return str(v).replace('\\', '\\\\').replace(',', '\\,').replace('[', '\\[').replace(']', '\\]')
+            value = '{String}[' + ','.join(escape_entry(v) for v in value) + ']'
+        elif isinstance(value, bool):
             value = '{Boolean}' + str(value).lower()
         elif isinstance(value, int):
             value = '{Long}' + str(value)
@@ -73,6 +77,7 @@ def main():
     assets = {}
 
     def rewrite(value):
+        if isinstance(value, list): return [rewrite(v) for v in value]
         if not isinstance(value, str):
             return value
         for ref in re.findall(r'/assets/[a-zA-Z0-9_./-]+', value):

@@ -26,11 +26,11 @@
 .toranja-breadcrumb-item {
   display: inline-flex;
   align-items: center;
-  color: var(--theme-text-muted, var(--inter-graphite, #707070));
+  color: var(--theme-text-muted, var(--inter-graphite, var(--color-link-static-black-pressed)));
 }
 
 .toranja-breadcrumb-link {
-  color: var(--theme-text-muted, var(--inter-graphite, #707070));
+  color: var(--theme-text-muted, var(--inter-graphite, var(--color-link-static-black-pressed)));
   text-decoration: none;
   font-weight: 500;
   transition: color var(--transition-fast, 0.2s ease);
@@ -40,12 +40,12 @@
 
 .toranja-breadcrumb-link:hover,
 .toranja-breadcrumb-link:focus-visible {
-  color: var(--inter-orange, #FF6600);
-  background-color: var(--theme-surface-subtle, rgba(255, 102, 0, 0.06));
+  color: var(--inter-orange, var(--color-background-brand-default));
+  background-color: var(--theme-surface-subtle, color-mix(in srgb, var(--color-background-brand-default) 6.0%, transparent));
 }
 
 .toranja-breadcrumb-current {
-  color: var(--theme-text, var(--inter-black, #161616));
+  color: var(--theme-text, var(--inter-black, var(--color-background-static-black)));
   font-weight: 600;
   padding: 2px 4px;
 }
@@ -55,7 +55,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 0.35rem;
-  color: var(--theme-border, #D1D5DB);
+  color: var(--theme-border, var(--color-chart-sequential-silver-1));
 }
 
 .toranja-breadcrumb-separator svg {

@@ -19,7 +19,7 @@
   bottom: 20px;
   left: 24px;
   width: 2px;
-  background: var(--theme-border, #E5E7EB);
+  background: var(--theme-border, var(--color-surface-disabled));
 }
 
 .toranja-timeline-item {
@@ -33,26 +33,26 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--theme-surface, #FFFFFF);
-  border: 2px solid var(--inter-orange, #FF6600);
-  color: var(--inter-orange, #FF6600);
+  background: var(--theme-surface, var(--color-background-neutral-default));
+  border: 2px solid var(--inter-orange, var(--color-background-brand-default));
+  color: var(--inter-orange, var(--color-background-brand-default));
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-display, 'Citrina', sans-serif);
   font-size: 1.15rem;
   font-weight: 600;
-  box-shadow: 0 0 0 6px var(--theme-surface-subtle, var(--inter-sand, #FDF8EE));
+  box-shadow: 0 0 0 6px var(--theme-surface-subtle, var(--inter-sand, var(--color-background-brand-softer)));
   flex-shrink: 0;
   z-index: 1;
 }
 
 .timeline-content {
-  background: var(--theme-surface, #FFFFFF);
-  border: 1px solid var(--theme-border, #E5E7EB);
+  background: var(--theme-surface, var(--color-background-neutral-default));
+  border: 1px solid var(--theme-border, var(--color-surface-disabled));
   border-radius: var(--radius-lg, 24px);
   padding: 1.75rem 2rem;
-  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.04));
+  box-shadow: var(--shadow-sm, 0 2px 8px color-mix(in srgb, var(--color-surface-static-black) 4.0%, transparent));
   flex: 1;
 }
 
@@ -60,14 +60,14 @@
   font-family: var(--font-heading, 'Citrina', sans-serif);
   font-size: 1.35rem;
   font-weight: 400;
-  color: var(--theme-text, #161616);
+  color: var(--theme-text, var(--color-background-static-black));
   margin-bottom: 0.5rem;
 }
 
 .timeline-step-desc {
   font-family: var(--font-body, 'Inter', sans-serif);
   font-size: 0.9375rem;
-  color: var(--theme-text-muted, #707070);
+  color: var(--theme-text-muted, var(--color-link-static-black-pressed));
   line-height: 1.6;
 }
 

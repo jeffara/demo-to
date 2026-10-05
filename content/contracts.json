@@ -7,6 +7,7 @@
       "image"
     ],
     "ds-alert": [
+      "schemaVersion",
       "p76617269616e74",
       "p7374617465",
       "p7469746c65",
@@ -19,9 +20,16 @@
       "actionTarget",
       "accessibleLabel",
       "triggerLabel",
-      "ap6c696e6b2e6f6e436c69636b"
+      "ap6c696e6b2e6f6e436c69636b",
+      "enable6c696e6b",
+      "action6c696e6b2e6f6e436c69636bkind",
+      "action6c696e6b2e6f6e436c69636blink",
+      "action6c696e6b2e6f6e436c69636btarget",
+      "action6c696e6b2e6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-avatar": [
+      "schemaVersion",
       "p636f6c6f72",
       "p7374617465",
       "p69636f6e",
@@ -40,9 +48,20 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable626164676550726f7073",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "action6f6e45646974kind",
+      "action6f6e45646974link",
+      "action6f6e45646974target",
+      "action6f6e45646974id",
+      "editorMode"
     ],
     "ds-accordion": [
+      "schemaVersion",
       "p7469746c65",
       "p6465736372697074696f6e",
       "p657870616e64",
@@ -64,17 +83,22 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable6c656164696e67",
+      "editorMode"
     ],
     "ds-badge": [
+      "schemaVersion",
       "p76617269616e74",
       "p636f756e74",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-button": [
+      "schemaVersion",
       "p687567",
       "p66696c6c",
       "p6c6162656c",
@@ -99,9 +123,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-banner": [
+      "schemaVersion",
       "p76617269616e74",
       "p7374617465",
       "p73697a65",
@@ -111,9 +141,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-bottom-sheet": [
+      "schemaVersion",
       "p7469746c65",
       "p69734f70656e",
       "p6964",
@@ -124,9 +160,13 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "overlayId",
+      "showTrigger",
+      "editorMode"
     ],
     "ds-bottom-sheet-country": [
+      "schemaVersion",
       "p66656174757265644974656d73",
       "p73656c656374656456616c7565",
       "p73686f77536561726368",
@@ -144,34 +184,54 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "overlayId",
+      "showTrigger",
+      "dataSource",
+      "dataParameter",
+      "editorMode"
     ],
     "ds-bottom-sheet-country-item": [
+      "collection",
       "p76616c7565",
       "p6c6162656c",
       "p6465736372697074696f6e",
       "p666c6167",
-      "itemLink"
+      "c66656174757265644974656d73p76616c7565",
+      "c66656174757265644974656d73p6c6162656c",
+      "c66656174757265644974656d73p6465736372697074696f6e",
+      "c66656174757265644974656d73p666c6167",
+      "itemLink",
+      "itemTarget"
     ],
     "ds-card": [
+      "schemaVersion",
       "p6368696c6472656e",
       "p7374617465",
       "p697353656c6563746564",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-checkbox": [
+      "schemaVersion",
       "p76617269616e74",
       "p7374617465",
       "p636865636b6564",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-chip": [
+      "schemaVersion",
       "p6c6162656c",
       "p73656c6563746564",
       "p6c656164696e6749636f6e",
@@ -189,9 +249,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-chart-bar": [
+      "schemaVersion",
       "p7374617465",
       "p6f7269656e746174696f6e",
       "p63617465676f72696573",
@@ -221,9 +287,14 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable76616c75654275696c646572",
+      "dataSource",
+      "dataParameter",
+      "editorMode"
     ],
     "ds-chart-donut": [
+      "schemaVersion",
       "p736c696365",
       "p6c6162656c",
       "p76616c7565",
@@ -245,9 +316,14 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable76616c75654275696c646572",
+      "dataSource",
+      "dataParameter",
+      "editorMode"
     ],
     "ds-chart-line": [
+      "schemaVersion",
       "p7374617465",
       "p63617465676f72696573",
       "p794c6162656c73",
@@ -276,15 +352,25 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable76616c75654275696c646572",
+      "dataSource",
+      "dataParameter",
+      "editorMode"
     ],
     "ds-chart-line-item": [
+      "collection",
       "p6c6162656c",
       "p76616c756573",
       "p636f6c6f72",
-      "itemLink"
+      "c63617465676f72696573p76616c7565",
+      "c794c6162656c73p76616c7565",
+      "c666f726365436f6c6f72p76616c7565",
+      "itemLink",
+      "itemTarget"
     ],
     "ds-chart-meter": [
+      "schemaVersion",
       "p7374617465",
       "p7469746c65",
       "p62617273",
@@ -305,9 +391,14 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable76616c75654275696c646572",
+      "dataSource",
+      "dataParameter",
+      "editorMode"
     ],
     "ds-counter": [
+      "schemaVersion",
       "p636f756e74",
       "p6d61784c656e677468",
       "p6964",
@@ -320,9 +411,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-cross-selling": [
+      "schemaVersion",
       "p6465736372697074696f6e",
       "p7374617465",
       "p7375627469746c65",
@@ -336,9 +429,20 @@
       "actionTarget",
       "accessibleLabel",
       "triggerLabel",
-      "ap6c696e6b2e6f6e436c69636b"
+      "ap6c696e6b2e6f6e436c69636b",
+      "enable6c696e6b",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "action6c696e6b2e6f6e436c69636bkind",
+      "action6c696e6b2e6f6e436c69636blink",
+      "action6c696e6b2e6f6e436c69636btarget",
+      "action6c696e6b2e6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-carousel": [
+      "schemaVersion",
       "p73686f7750726576696577",
       "p706167655769647468",
       "p76617269616e74",
@@ -348,13 +452,23 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-carousel-item": [
+      "collection",
       "p76616c7565",
-      "itemLink"
+      "slideKind",
+      "slideHeading",
+      "slideAsset",
+      "slideDescription",
+      "slideLabel",
+      "slideLink",
+      "itemLink",
+      "itemTarget"
     ],
     "ds-date-picker": [
+      "schemaVersion",
       "p76616c75652e7374617274",
       "p76616c75652e656e64",
       "p64656661756c7456616c75652e7374617274",
@@ -374,9 +488,14 @@
       "accessibleLabel",
       "triggerLabel",
       "dateValue",
-      "disabledDates"
+      "disabledDates",
+      "enable76616c7565",
+      "enable64656661756c7456616c7565",
+      "defaultDate",
+      "editorMode"
     ],
     "ds-decorated-text": [
+      "schemaVersion",
       "p6368696c6472656e",
       "p636c6173735374796c65",
       "p636c617373436f6c6f72",
@@ -395,17 +514,21 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-divider": [
+      "schemaVersion",
       "p76617269616e74",
       "p6f7269656e746174696f6e",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-feedback-screen": [
+      "schemaVersion",
       "p76617269616e74",
       "p7374617465",
       "p7469746c65",
@@ -432,15 +555,46 @@
       "ap7072696d617279427574746f6e2e6f6e436c69636b",
       "ap7365636f6e64617279427574746f6e2e6f6e436c69636b",
       "ap7465727469617279427574746f6e2e6f6e436c69636b",
-      "ap616c6572742e6c696e6b2e6f6e436c69636b"
+      "ap616c6572742e6c696e6b2e6f6e436c69636b",
+      "enable7072696d617279427574746f6e",
+      "enable7365636f6e64617279427574746f6e",
+      "enable7465727469617279427574746f6e",
+      "enable616c657274",
+      "action7072696d617279427574746f6e2e6f6e436c69636bkind",
+      "action7072696d617279427574746f6e2e6f6e436c69636blink",
+      "action7072696d617279427574746f6e2e6f6e436c69636btarget",
+      "action7072696d617279427574746f6e2e6f6e436c69636bid",
+      "action7365636f6e64617279427574746f6e2e6f6e436c69636bkind",
+      "action7365636f6e64617279427574746f6e2e6f6e436c69636blink",
+      "action7365636f6e64617279427574746f6e2e6f6e436c69636btarget",
+      "action7365636f6e64617279427574746f6e2e6f6e436c69636bid",
+      "action7465727469617279427574746f6e2e6f6e436c69636bkind",
+      "action7465727469617279427574746f6e2e6f6e436c69636blink",
+      "action7465727469617279427574746f6e2e6f6e436c69636btarget",
+      "action7465727469617279427574746f6e2e6f6e436c69636bid",
+      "action616c6572742e6c696e6b2e6f6e436c69636bkind",
+      "action616c6572742e6c696e6b2e6f6e436c69636blink",
+      "action616c6572742e6c696e6b2e6f6e436c69636btarget",
+      "action616c6572742e6c696e6b2e6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-feedback-screen-item": [
+      "collection",
       "p6c6162656c",
       "p76616c7565",
       "p6f7269656e746174696f6e",
-      "itemLink"
+      "c636f6e74656e743a6368696c6472656econtentKind",
+      "c636f6e74656e743a6368696c6472656econtentBody",
+      "c636f6e74656e743a6368696c6472656econtentHeading",
+      "c636f6e74656e743a6368696c6472656econtentAsset",
+      "c636f6e74656e743a6368696c6472656econtentDescription",
+      "c636f6e74656e743a6368696c6472656econtentLabel",
+      "c636f6e74656e743a6368696c6472656econtentLink",
+      "itemLink",
+      "itemTarget"
     ],
     "ds-flag": [
+      "schemaVersion",
       "p69636f6e466c6167",
       "p636f6e74656e744465736372697074696f6e",
       "p73697a65",
@@ -449,9 +603,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-header": [
+      "schemaVersion",
       "p69735365617263684f70656e",
       "p73656172636850726f70732e6572726f72",
       "p73656172636850726f70732e6c6162656c",
@@ -527,9 +683,54 @@
       "ap636869702e6f6e436c69636b",
       "ap6176617461722e6f6e436c69636b",
       "ap7365676d656e746564436f6e74726f6c2e6f6e436c69636b",
-      "scrollContainerSelector"
+      "scrollContainerSelector",
+      "enable73656172636850726f7073",
+      "enable737461727449636f6e",
+      "enable6d6964646c6549636f6e",
+      "enable656e6449636f6e",
+      "enable63686970",
+      "enable617661746172",
+      "enable7365676d656e746564436f6e74726f6c",
+      "action73656172636850726f70732e6f6e48656c706572kind",
+      "action73656172636850726f70732e6f6e48656c706572link",
+      "action73656172636850726f70732e6f6e48656c706572target",
+      "action73656172636850726f70732e6f6e48656c706572id",
+      "action737461727449636f6e2e6f6e436c69636bkind",
+      "action737461727449636f6e2e6f6e436c69636blink",
+      "action737461727449636f6e2e6f6e436c69636btarget",
+      "action737461727449636f6e2e6f6e436c69636bid",
+      "action6d6964646c6549636f6e2e6f6e436c69636bkind",
+      "action6d6964646c6549636f6e2e6f6e436c69636blink",
+      "action6d6964646c6549636f6e2e6f6e436c69636btarget",
+      "action6d6964646c6549636f6e2e6f6e436c69636bid",
+      "action656e6449636f6e2e6f6e436c69636bkind",
+      "action656e6449636f6e2e6f6e436c69636blink",
+      "action656e6449636f6e2e6f6e436c69636btarget",
+      "action656e6449636f6e2e6f6e436c69636bid",
+      "action6f6e4261636b436c69636bkind",
+      "action6f6e4261636b436c69636blink",
+      "action6f6e4261636b436c69636btarget",
+      "action6f6e4261636b436c69636bid",
+      "action6f6e436c6f7365436c69636bkind",
+      "action6f6e436c6f7365436c69636blink",
+      "action6f6e436c6f7365436c69636btarget",
+      "action6f6e436c6f7365436c69636bid",
+      "action636869702e6f6e436c69636bkind",
+      "action636869702e6f6e436c69636blink",
+      "action636869702e6f6e436c69636btarget",
+      "action636869702e6f6e436c69636bid",
+      "action6176617461722e6f6e436c69636bkind",
+      "action6176617461722e6f6e436c69636blink",
+      "action6176617461722e6f6e436c69636btarget",
+      "action6176617461722e6f6e436c69636bid",
+      "action7365676d656e746564436f6e74726f6c2e6f6e436c69636bkind",
+      "action7365676d656e746564436f6e74726f6c2e6f6e436c69636blink",
+      "action7365676d656e746564436f6e74726f6c2e6f6e436c69636btarget",
+      "action7365676d656e746564436f6e74726f6c2e6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-floating-action-button": [
+      "schemaVersion",
       "p6c6162656c",
       "p69636f6e",
       "p686965726172636879",
@@ -550,9 +751,16 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "placement",
+      "editorMode"
     ],
     "ds-icon": [
+      "schemaVersion",
       "p6173736574",
       "p636f6e74656e744465736372697074696f6e",
       "p73697a65",
@@ -563,9 +771,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-image": [
+      "schemaVersion",
       "p7372632e6c6f63616c",
       "p7372632e72656d6f74652e6c69676874",
       "p7372632e72656d6f74652e6461726b",
@@ -586,9 +796,12 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable737263",
+      "editorMode"
     ],
     "ds-icon-button": [
+      "schemaVersion",
       "p73697a65",
       "p686965726172636879",
       "p76617269616e74",
@@ -609,9 +822,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-icon-chip": [
+      "schemaVersion",
       "p7374617465",
       "p76617269616e74",
       "p69636f6e",
@@ -621,9 +840,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-input-country": [
+      "schemaVersion",
       "p6c6162656c",
       "p706c616365686f6c646572",
       "p76616c7565",
@@ -649,18 +874,32 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "dataSource",
+      "dataParameter",
+      "editorMode"
     ],
     "ds-input-country-item": [
+      "collection",
       "p707265666978",
       "p70686f6e6554797065",
       "p76616c7565",
       "p6c6162656c",
       "p6465736372697074696f6e",
       "p666c6167",
-      "itemLink"
+      "c68696e7473p76616c7565",
+      "c6572726f72p76616c7565",
+      "c6665617475726564436f756e7472794974656d73p707265666978",
+      "c6665617475726564436f756e7472794974656d73p70686f6e6554797065",
+      "c6665617475726564436f756e7472794974656d73p76616c7565",
+      "c6665617475726564436f756e7472794974656d73p6c6162656c",
+      "c6665617475726564436f756e7472794974656d73p6465736372697074696f6e",
+      "c6665617475726564436f756e7472794974656d73p666c6167",
+      "itemLink",
+      "itemTarget"
     ],
     "ds-input-date": [
+      "schemaVersion",
       "p6572726f72",
       "p6c6162656c",
       "p6964",
@@ -714,9 +953,18 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable637573746f6d54616750726f7073",
+      "enable666f726365426172",
+      "enable7069636b657252616e6765",
+      "action6f6e48656c706572kind",
+      "action6f6e48656c706572link",
+      "action6f6e48656c706572target",
+      "action6f6e48656c706572id",
+      "editorMode"
     ],
     "ds-input-password": [
+      "schemaVersion",
       "p6572726f72",
       "p6c6162656c",
       "p7374617465",
@@ -767,9 +1015,18 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable637573746f6d54616750726f7073",
+      "enable666f726365426172",
+      "enable7069636b657252616e6765",
+      "action6f6e48656c706572kind",
+      "action6f6e48656c706572link",
+      "action6f6e48656c706572target",
+      "action6f6e48656c706572id",
+      "editorMode"
     ],
     "ds-input-search": [
+      "schemaVersion",
       "p6572726f72",
       "p6c6162656c",
       "p7374617465",
@@ -823,9 +1080,18 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable637573746f6d54616750726f7073",
+      "enable666f726365426172",
+      "enable7069636b657252616e6765",
+      "action6f6e48656c706572kind",
+      "action6f6e48656c706572link",
+      "action6f6e48656c706572target",
+      "action6f6e48656c706572id",
+      "editorMode"
     ],
     "ds-input-text": [
+      "schemaVersion",
       "p74797065",
       "p6572726f72",
       "p6c6162656c",
@@ -882,9 +1148,18 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable637573746f6d54616750726f7073",
+      "enable666f726365426172",
+      "enable7069636b657252616e6765",
+      "action6f6e48656c706572kind",
+      "action6f6e48656c706572link",
+      "action6f6e48656c706572target",
+      "action6f6e48656c706572id",
+      "editorMode"
     ],
     "ds-input-money": [
+      "schemaVersion",
       "p73686f77427574746f6e73",
       "p6669786564496e6372656d656e7456616c7565",
       "p666978656444656372656d656e7456616c7565",
@@ -899,9 +1174,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-link": [
+      "schemaVersion",
       "p6c6162656c",
       "p73697a65",
       "p7374617465",
@@ -918,9 +1195,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-list-item": [
+      "schemaVersion",
       "p6c656164696e67466c6167",
       "p6c656164696e67436865636b626f782e76617269616e74",
       "p6c656164696e67436865636b626f782e7374617465",
@@ -999,9 +1282,44 @@
       "ap6c656164696e674176617461722e6f6e436c69636b",
       "ap6c656164696e674176617461722e6f6e45646974",
       "ap747261696c696e67427574746f6e2e6f6e436c69636b",
-      "ap747261696c696e674e65757472616c49636f6e427574746f6e2e6f6e436c69636b"
+      "ap747261696c696e674e65757472616c49636f6e427574746f6e2e6f6e436c69636b",
+      "enable6c656164696e67436865636b626f78",
+      "enable6c656164696e67496d616765",
+      "enable6c656164696e67417661746172",
+      "enable747261696c696e67427574746f6e",
+      "enable747261696c696e67436865636b626f78",
+      "enable747261696c696e674e65757472616c49636f6e427574746f6e",
+      "enable747261696c696e67526164696f427574746f6e",
+      "enable747261696c696e6753746570706572",
+      "enable747261696c696e67537769746368",
+      "enable747261696c696e6754616743686576726f6e",
+      "enable747261696c696e6754657874",
+      "leadingChoice",
+      "trailingChoice",
+      "action6c656164696e674176617461722e6f6e436c69636bkind",
+      "action6c656164696e674176617461722e6f6e436c69636blink",
+      "action6c656164696e674176617461722e6f6e436c69636btarget",
+      "action6c656164696e674176617461722e6f6e436c69636bid",
+      "action6c656164696e674176617461722e6f6e45646974kind",
+      "action6c656164696e674176617461722e6f6e45646974link",
+      "action6c656164696e674176617461722e6f6e45646974target",
+      "action6c656164696e674176617461722e6f6e45646974id",
+      "action747261696c696e67427574746f6e2e6f6e436c69636bkind",
+      "action747261696c696e67427574746f6e2e6f6e436c69636blink",
+      "action747261696c696e67427574746f6e2e6f6e436c69636btarget",
+      "action747261696c696e67427574746f6e2e6f6e436c69636bid",
+      "action747261696c696e674e65757472616c49636f6e427574746f6e2e6f6e436c69636bkind",
+      "action747261696c696e674e65757472616c49636f6e427574746f6e2e6f6e436c69636blink",
+      "action747261696c696e674e65757472616c49636f6e427574746f6e2e6f6e436c69636btarget",
+      "action747261696c696e674e65757472616c49636f6e427574746f6e2e6f6e436c69636bid",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-list-item-control": [
+      "schemaVersion",
       "p747261696c696e6756617269616e74",
       "p747261696c696e6750726f70732e636865636b6564",
       "p747261696c696e6750726f70732e696e64657465726d696e617465",
@@ -1075,9 +1393,25 @@
       "accessibleLabel",
       "triggerLabel",
       "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636b",
-      "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974"
+      "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974",
+      "enable747261696c696e6750726f7073",
+      "enable6c656164696e6750726f7073",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bkind",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636blink",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636btarget",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bid",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974kind",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974link",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974target",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974id",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-list-item-general": [
+      "schemaVersion",
       "p6c656164696e6750726f70732e74797065",
       "p6c656164696e6750726f70732e61766174617250726f70732e636f6c6f72",
       "p6c656164696e6750726f70732e61766174617250726f70732e7374617465",
@@ -1155,9 +1489,25 @@
       "accessibleLabel",
       "triggerLabel",
       "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636b",
-      "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974"
+      "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974",
+      "enable6c656164696e6750726f7073",
+      "enable747261696c696e6750726f7073",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bkind",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636blink",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636btarget",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bid",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974kind",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974link",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974target",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974id",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-list-item-action": [
+      "schemaVersion",
       "p747261696c696e6756617269616e74",
       "p747261696c696e6750726f70732e6c6162656c",
       "p747261696c696e6750726f70732e76617269616e74",
@@ -1241,9 +1591,41 @@
       "ap747261696c696e6750726f70732e69636f6e427574746f6e5365636f6e642e6f6e436c69636b",
       "ap747261696c696e6750726f70732e6f6e436c69636b",
       "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636b",
-      "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974"
+      "ap6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974",
+      "enable747261696c696e6750726f7073",
+      "enable6c656164696e6750726f7073",
+      "action747261696c696e6750726f70732e6f6e427574746f6e436c69636bkind",
+      "action747261696c696e6750726f70732e6f6e427574746f6e436c69636blink",
+      "action747261696c696e6750726f70732e6f6e427574746f6e436c69636btarget",
+      "action747261696c696e6750726f70732e6f6e427574746f6e436c69636bid",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e2e6f6e436c69636bkind",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e2e6f6e436c69636blink",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e2e6f6e436c69636btarget",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e2e6f6e436c69636bid",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e5365636f6e642e6f6e436c69636bkind",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e5365636f6e642e6f6e436c69636blink",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e5365636f6e642e6f6e436c69636btarget",
+      "action747261696c696e6750726f70732e69636f6e427574746f6e5365636f6e642e6f6e436c69636bid",
+      "action747261696c696e6750726f70732e6f6e436c69636bkind",
+      "action747261696c696e6750726f70732e6f6e436c69636blink",
+      "action747261696c696e6750726f70732e6f6e436c69636btarget",
+      "action747261696c696e6750726f70732e6f6e436c69636bid",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bkind",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636blink",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636btarget",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e436c69636bid",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974kind",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974link",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974target",
+      "action6c656164696e6750726f70732e61766174617250726f70732e6f6e45646974id",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-list-item-view": [
+      "schemaVersion",
       "p6f7269656e746174696f6e",
       "p6c6162656c",
       "p7374617465",
@@ -1259,9 +1641,20 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable746167486965726172636879",
+      "action68656c7065724f6e436c69636bkind",
+      "action68656c7065724f6e436c69636blink",
+      "action68656c7065724f6e436c69636btarget",
+      "action68656c7065724f6e436c69636bid",
+      "action6f6e416374696f6e547261696c696e67kind",
+      "action6f6e416374696f6e547261696c696e67link",
+      "action6f6e416374696f6e547261696c696e67target",
+      "action6f6e416374696f6e547261696c696e67id",
+      "editorMode"
     ],
     "ds-menu-item": [
+      "schemaVersion",
       "p61766174617256617269616e74",
       "p737263",
       "p616c74",
@@ -1278,9 +1671,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-neutral-icon-button": [
+      "schemaVersion",
       "p69636f6e",
       "p73686f774261646765",
       "p76617269616e74",
@@ -1302,17 +1701,25 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-page-indicator": [
+      "schemaVersion",
       "p6974656d73",
       "p73656c6563746564",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-payment-methods": [
+      "schemaVersion",
       "p7061796d656e744d6574686f64",
       "p73697a65",
       "p7374617465",
@@ -1320,9 +1727,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-pin-code": [
+      "schemaVersion",
       "p6669656c6473",
       "p7374617465",
       "p68696e7473",
@@ -1333,9 +1742,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-progress-bar": [
+      "schemaVersion",
       "p7374617465",
       "p76617269616e74",
       "p7374657073",
@@ -1344,9 +1755,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-progress-circle": [
+      "schemaVersion",
       "p73697a65",
       "p76617269616e74",
       "p70726f6772657373",
@@ -1354,9 +1767,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-radio": [
+      "schemaVersion",
       "p636865636b6564",
       "p6368696c6472656e",
       "p6861734572726f72",
@@ -1368,9 +1783,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-section-title": [
+      "schemaVersion",
       "p7469746c65",
       "p73686f774465736372697074696f6e",
       "p6465736372697074696f6e",
@@ -1383,9 +1800,15 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-section-subtitle": [
+      "schemaVersion",
       "p7375627469746c65",
       "p747261696c696e674c6162656c",
       "p7374617465",
@@ -1394,22 +1817,33 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "enable747261696c696e6756616c7565",
+      "editorMode"
     ],
     "ds-segmented-control": [
+      "schemaVersion",
       "p7374617465",
       "p66696c6c696e67",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
     ],
     "ds-segmented-control-item": [
+      "collection",
       "p6c6162656c",
       "p64697361626c6564",
-      "itemLink"
+      "itemLink",
+      "itemTarget"
     ],
     "ds-select": [
+      "schemaVersion",
       "p6572726f72",
       "p6c6162656c",
       "p7374617465",
@@ -1464,9 +1898,28 @@
       "actionTarget",
       "accessibleLabel",
       "triggerLabel",
-      "selectOptions"
+      "selectOptions",
+      "enable637573746f6d54616750726f7073",
+      "enable666f726365426172",
+      "enable7069636b657252616e6765",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "action6f6e48656c706572kind",
+      "action6f6e48656c706572link",
+      "action6f6e48656c706572target",
+      "action6f6e48656c706572id",
+      "action6f6e436c69636b48656c706572kind",
+      "action6f6e436c69636b48656c706572link",
+      "action6f6e436c69636b48656c706572target",
+      "action6f6e436c69636b48656c706572id",
+      "dataSource",
+      "dataParameter",
+      "editorMode"
     ],
     "ds-spinner": [
+      "schemaVersion",
       "p73697a65",
       "p76617269616e74",
       "p70726f6772657373",
@@ -1474,26 +1927,32 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-signal": [
+      "schemaVersion",
       "p76617269616e74",
       "p73697a65",
       "p7374617465",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-switch": [
+      "schemaVersion",
       "p636865636b6564",
       "p7374617465",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-snackbar": [
+      "schemaVersion",
       "p76617269616e74",
       "p49636f6e537667",
       "p7469746c65",
@@ -1504,9 +1963,17 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636b427574746f6e536e61636b626172kind",
+      "action6f6e436c69636b427574746f6e536e61636b626172link",
+      "action6f6e436c69636b427574746f6e536e61636b626172target",
+      "action6f6e436c69636b427574746f6e536e61636b626172id",
+      "overlayId",
+      "showTrigger",
+      "editorMode"
     ],
     "ds-stepper": [
+      "schemaVersion",
       "p656e61626c65496e707574",
       "p6d6178",
       "p6d696e",
@@ -1518,25 +1985,32 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "initialValue",
+      "editorMode"
     ],
     "ds-tabs": [
+      "schemaVersion",
       "p7374617465",
       "p7363726f6c6c61626c65",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-tabs-item": [
+      "collection",
       "p6c6162656c",
       "p73656c6563746564",
       "p7374617465",
       "p62616467652e76617269616e74",
       "p62616467652e636f756e74",
-      "itemLink"
+      "itemLink",
+      "itemTarget"
     ],
     "ds-tag": [
+      "schemaVersion",
       "p636f6c6f72",
       "p686965726172636879",
       "p6c6162656c",
@@ -1546,9 +2020,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-text": [
+      "schemaVersion",
       "p6964",
       "p7374617465",
       "p6368696c6472656e",
@@ -1562,9 +2038,11 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-text-area": [
+      "schemaVersion",
       "p68696e7473",
       "p6c6162656c",
       "p73686f77436f756e746572",
@@ -1593,25 +2071,35 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e48656c706572kind",
+      "action6f6e48656c706572link",
+      "action6f6e48656c706572target",
+      "action6f6e48656c706572id",
+      "editorMode"
     ],
     "ds-timeline": [
+      "schemaVersion",
       "p7374617465",
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "editorMode"
     ],
     "ds-timeline-item": [
+      "collection",
       "p7469746c65",
       "p64617465",
       "p737461747573",
       "p7374617465",
       "p73686f774c696e65",
       "p636f6e74656e7473",
-      "itemLink"
+      "itemLink",
+      "itemTarget"
     ],
     "ds-widget": [
+      "schemaVersion",
       "p636f6c6f72",
       "p74696d6541676f",
       "p746167",
@@ -1624,7 +2112,211 @@
       "actionLink",
       "actionTarget",
       "accessibleLabel",
-      "triggerLabel"
+      "triggerLabel",
+      "action6f6e436c69636bkind",
+      "action6f6e436c69636blink",
+      "action6f6e436c69636btarget",
+      "action6f6e436c69636bid",
+      "editorMode"
+    ],
+    "ds-accordion-item": [
+      "collection",
+      "c636f6e74656e743a6368696c6472656econtentKind",
+      "c636f6e74656e743a6368696c6472656econtentBody",
+      "c636f6e74656e743a6368696c6472656econtentHeading",
+      "c636f6e74656e743a6368696c6472656econtentAsset",
+      "c636f6e74656e743a6368696c6472656econtentDescription",
+      "c636f6e74656e743a6368696c6472656econtentLabel",
+      "c636f6e74656e743a6368696c6472656econtentLink",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-banner-item": [
+      "collection",
+      "c636f6e74656e743a776562436f6e74656e74contentKind",
+      "c636f6e74656e743a776562436f6e74656e74contentBody",
+      "c636f6e74656e743a776562436f6e74656e74contentHeading",
+      "c636f6e74656e743a776562436f6e74656e74contentAsset",
+      "c636f6e74656e743a776562436f6e74656e74contentDescription",
+      "c636f6e74656e743a776562436f6e74656e74contentLabel",
+      "c636f6e74656e743a776562436f6e74656e74contentLink",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-bottom-sheet-item": [
+      "collection",
+      "c636f6e74656e743a736c6f74contentKind",
+      "c636f6e74656e743a736c6f74contentBody",
+      "c636f6e74656e743a736c6f74contentHeading",
+      "c636f6e74656e743a736c6f74contentAsset",
+      "c636f6e74656e743a736c6f74contentDescription",
+      "c636f6e74656e743a736c6f74contentLabel",
+      "c636f6e74656e743a736c6f74contentLink",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-card-item": [
+      "collection",
+      "c636f6e74656e743a6368696c6472656econtentKind",
+      "c636f6e74656e743a6368696c6472656econtentBody",
+      "c636f6e74656e743a6368696c6472656econtentHeading",
+      "c636f6e74656e743a6368696c6472656econtentAsset",
+      "c636f6e74656e743a6368696c6472656econtentDescription",
+      "c636f6e74656e743a6368696c6472656econtentLabel",
+      "c636f6e74656e743a6368696c6472656econtentLink",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-chart-bar-item": [
+      "collection",
+      "c636861727444617461chartLabel",
+      "c636861727444617461chartValue",
+      "c636861727444617461chartColor",
+      "c63617465676f72696573p76616c7565",
+      "c76616c756573p76616c7565",
+      "c76616c75654c6162656c73p76616c7565",
+      "c666f726365436f6c6f72p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-chart-donut-item": [
+      "collection",
+      "c636861727444617461chartLabel",
+      "c636861727444617461chartValue",
+      "c636861727444617461chartColor",
+      "c736c696365p76616c7565",
+      "c6c6162656cp76616c7565",
+      "c76616c7565p76616c7565",
+      "c666f726365436f6c6f72p76616c7565",
+      "c666f726365496e646578p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-chart-meter-item": [
+      "collection",
+      "c636861727444617461chartLabel",
+      "c636861727444617461chartValue",
+      "c636861727444617461chartColor",
+      "c62617273p76616c7565",
+      "c6c6567656e64p76616c7565",
+      "c76616c7565p76616c7565",
+      "c666f726365436f6c6f72p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-date-picker-item": [
+      "collection",
+      "c2464697361626c65644461746573p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-header-item": [
+      "collection",
+      "c73656172636850726f70732e6572726f72p76616c7565",
+      "c73656172636850726f70732e68696e7473p76616c7565",
+      "c7365676d656e746564436f6e74726f6c2e7365676d656e7473p6c6162656c",
+      "c7365676d656e746564436f6e74726f6c2e7365676d656e7473p64697361626c6564",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-input-date-item": [
+      "collection",
+      "c6572726f72p76616c7565",
+      "c68696e7473p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-input-password-item": [
+      "collection",
+      "c6572726f72p76616c7565",
+      "c68696e7473p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-input-search-item": [
+      "collection",
+      "c6572726f72p76616c7565",
+      "c68696e7473p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-input-text-item": [
+      "collection",
+      "c6572726f72p76616c7565",
+      "c68696e7473p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-input-money-item": [
+      "collection",
+      "c68696e74p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-list-item-item": [
+      "collection",
+      "c74616773p6c6162656c",
+      "c74616773p636f6c6f72",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-list-item-control-item": [
+      "collection",
+      "c74616773p6c6162656c",
+      "c74616773p636f6c6f72",
+      "c74616773p686965726172636879",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-list-item-general-item": [
+      "collection",
+      "c74616773p6c6162656c",
+      "c74616773p636f6c6f72",
+      "c74616773p686965726172636879",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-list-item-action-item": [
+      "collection",
+      "c74616773p6c6162656c",
+      "c74616773p636f6c6f72",
+      "c74616773p686965726172636879",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-pin-code-item": [
+      "collection",
+      "c68696e7473p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-select-item": [
+      "collection",
+      "c6572726f72p76616c7565",
+      "c68696e7473p76616c7565",
+      "c246f7074696f6e73p6c6162656c",
+      "c246f7074696f6e73p76616c7565",
+      "c246f7074696f6e73p64697361626c6564",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-text-area-item": [
+      "collection",
+      "c68696e7473p76616c7565",
+      "itemLink",
+      "itemTarget"
+    ],
+    "ds-widget-item": [
+      "collection",
+      "c636f6e74656e743a6368696c6472656econtentKind",
+      "c636f6e74656e743a6368696c6472656econtentBody",
+      "c636f6e74656e743a6368696c6472656econtentHeading",
+      "c636f6e74656e743a6368696c6472656econtentAsset",
+      "c636f6e74656e743a6368696c6472656econtentDescription",
+      "c636f6e74656e743a6368696c6472656econtentLabel",
+      "c636f6e74656e743a6368696c6472656econtentLink",
+      "itemLink",
+      "itemTarget"
     ],
     "page-metadata": [
       "jcr:title",
@@ -1643,16 +2335,20 @@
     "title": [
       "title"
     ],
-    "accordion": [],
+    "accordion": [
+      "schemaVersion"
+    ],
     "accordion-item": [
       "question",
       "answer"
     ],
     "alert-inline": [
+      "schemaVersion",
       "title",
       "message"
     ],
     "app-download": [
+      "schemaVersion",
       "title",
       "subtitle",
       "appleStoreUrl",
@@ -1662,6 +2358,7 @@
       "googlePlayUrlTarget"
     ],
     "banner": [
+      "schemaVersion",
       "icon",
       "title",
       "description",
@@ -1669,6 +2366,7 @@
       "ctaTarget"
     ],
     "breadcrumb": [
+      "schemaVersion",
       "separator"
     ],
     "breadcrumb-item": [
@@ -1676,12 +2374,15 @@
       "link",
       "linkTarget"
     ],
-    "cards": [],
+    "cards": [
+      "schemaVersion"
+    ],
     "cards-item": [
       "image",
       "content"
     ],
     "carousel": [
+      "schemaVersion",
       "interval"
     ],
     "carousel-item": [
@@ -1689,6 +2390,7 @@
       "content"
     ],
     "comparison-table": [
+      "schemaVersion",
       "title",
       "subtitle",
       "highlightColumn"
@@ -1700,6 +2402,7 @@
       "value3"
     ],
     "contact-channels": [
+      "schemaVersion",
       "title",
       "subtitle"
     ],
@@ -1709,6 +2412,7 @@
       "hours"
     ],
     "cta-banner": [
+      "schemaVersion",
       "headline",
       "description",
       "primaryCta",
@@ -1717,6 +2421,7 @@
       "secondaryCtaTarget"
     ],
     "flywheel": [
+      "schemaVersion",
       "eyebrow",
       "title",
       "description",
@@ -1729,6 +2434,7 @@
       "description"
     ],
     "footer": [
+      "schemaVersion",
       "copyright",
       "description",
       "seals",
@@ -1739,12 +2445,16 @@
       "links"
     ],
     "form": [
+      "schemaVersion",
       "title",
       "subtitle",
       "submitLabel",
       "successMessage",
       "endpoint",
-      "consent"
+      "consent",
+      "integrationId",
+      "formId",
+      "failureMessage"
     ],
     "form-item": [
       "fieldName",
@@ -1752,9 +2462,24 @@
       "kind",
       "placeholder",
       "required",
-      "options"
+      "options",
+      "defaultValue",
+      "hint",
+      "errorMessage",
+      "min",
+      "max",
+      "step",
+      "minLength",
+      "maxLength",
+      "pattern",
+      "disabled",
+      "readOnly",
+      "showWhenField",
+      "showWhenValue",
+      "showWhenOperator"
     ],
     "header": [
+      "schemaVersion",
       "logo",
       "loginUrl",
       "cta",
@@ -1770,6 +2495,7 @@
       "linkTarget"
     ],
     "hero": [
+      "schemaVersion",
       "eyebrow",
       "headline",
       "description",
@@ -1781,6 +2507,7 @@
       "secondaryCtaTarget"
     ],
     "in-page-nav": [
+      "schemaVersion",
       "title"
     ],
     "in-page-nav-item": [
@@ -1789,16 +2516,19 @@
       "linkTarget"
     ],
     "manifesto": [
+      "schemaVersion",
       "quote",
       "attribution"
     ],
     "modal": [
+      "schemaVersion",
       "modalId",
       "title",
       "content",
       "trigger"
     ],
     "moments-journey": [
+      "schemaVersion",
       "moment",
       "headline",
       "description",
@@ -1808,12 +2538,14 @@
       "ctaTarget"
     ],
     "pagination": [
+      "schemaVersion",
       "currentPage",
       "totalPages",
       "baseUrl",
       "baseUrlTarget"
     ],
     "quick-moment-rail": [
+      "schemaVersion",
       "label"
     ],
     "quick-moment-rail-item": [
@@ -1822,12 +2554,16 @@
       "linkTarget"
     ],
     "search-bar": [
+      "schemaVersion",
       "placeholder",
       "indexEndpoint",
       "label",
-      "indexEndpointTarget"
+      "searchRoot",
+      "maxResults",
+      "minChars"
     ],
     "segment-showcase": [
+      "schemaVersion",
       "title",
       "subtitle",
       "defaultSegment"
@@ -1842,6 +2578,7 @@
       "ctaTarget"
     ],
     "simulator": [
+      "schemaVersion",
       "title",
       "subtitle",
       "defaultValue",
@@ -1851,12 +2588,15 @@
       "cta",
       "ctaTarget"
     ],
-    "stats-counter": [],
+    "stats-counter": [
+      "schemaVersion"
+    ],
     "stats-counter-item": [
       "value",
       "label"
     ],
     "tabs": [
+      "schemaVersion",
       "defaultTab"
     ],
     "tabs-item": [
@@ -1864,6 +2604,7 @@
       "content"
     ],
     "teaser": [
+      "schemaVersion",
       "eyebrow",
       "title",
       "description",
@@ -1872,6 +2613,7 @@
       "ctaTarget"
     ],
     "testimonials": [
+      "schemaVersion",
       "title",
       "subtitle"
     ],
@@ -1881,32 +2623,63 @@
       "role",
       "rating"
     ],
-    "timeline": [],
+    "timeline": [
+      "schemaVersion"
+    ],
     "timeline-item": [
       "title",
       "description"
     ],
     "tooltip": [
+      "schemaVersion",
       "term",
       "definition"
     ],
     "video-player": [
+      "schemaVersion",
       "videoUrl",
       "posterImage",
       "title",
       "caption",
-      "videoUrlTarget"
+      "videoUrlTarget",
+      "ratio",
+      "videoFormat",
+      "captionsUrl",
+      "captionsLanguage",
+      "captionsLabel"
     ]
   },
   "containers": {
+    "ds-accordion": "ds-accordion-item",
+    "ds-banner": "ds-banner-item",
+    "ds-bottom-sheet": "ds-bottom-sheet-item",
     "ds-bottom-sheet-country": "ds-bottom-sheet-country-item",
+    "ds-card": "ds-card-item",
+    "ds-chart-bar": "ds-chart-bar-item",
+    "ds-chart-donut": "ds-chart-donut-item",
     "ds-chart-line": "ds-chart-line-item",
+    "ds-chart-meter": "ds-chart-meter-item",
     "ds-carousel": "ds-carousel-item",
+    "ds-date-picker": "ds-date-picker-item",
     "ds-feedback-screen": "ds-feedback-screen-item",
+    "ds-header": "ds-header-item",
     "ds-input-country": "ds-input-country-item",
+    "ds-input-date": "ds-input-date-item",
+    "ds-input-password": "ds-input-password-item",
+    "ds-input-search": "ds-input-search-item",
+    "ds-input-text": "ds-input-text-item",
+    "ds-input-money": "ds-input-money-item",
+    "ds-list-item": "ds-list-item-item",
+    "ds-list-item-control": "ds-list-item-control-item",
+    "ds-list-item-general": "ds-list-item-general-item",
+    "ds-list-item-action": "ds-list-item-action-item",
+    "ds-pin-code": "ds-pin-code-item",
     "ds-segmented-control": "ds-segmented-control-item",
+    "ds-select": "ds-select-item",
     "ds-tabs": "ds-tabs-item",
+    "ds-text-area": "ds-text-area-item",
     "ds-timeline": "ds-timeline-item",
+    "ds-widget": "ds-widget-item",
     "accordion": "accordion-item",
     "breadcrumb": "breadcrumb-item",
     "cards": "cards-item",

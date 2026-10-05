@@ -1,3 +1,4 @@
+import {initializeIntegrations} from './integration-setup.js';
 import { resolveLink } from "./links.js";
 import {
   decorateSections,
@@ -28,6 +29,7 @@ export function decorateMain(main) {
   decorateIcons(main);
 }
 async function loadPage() {
+  initializeIntegrations();
   document.documentElement.lang = document.documentElement.lang || "pt-BR";
   document.documentElement.setAttribute(
     "toranja-theme",

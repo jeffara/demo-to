@@ -27,12 +27,12 @@ function describe(t, name, depth=0, seen=new Set()) {
   if (clean.every(x=>x.flags&ts.TypeFlags.BooleanLike)) return {kind:'boolean',type};
   if (clean.every(x=>x.flags&(ts.TypeFlags.StringLiteral|ts.TypeFlags.NumberLiteral))) return {kind:'enum',values:[...new Set(clean.map(x=>x.value))],type};
   if (clean.every(x=>x.flags&ts.TypeFlags.NumberLike)) return {kind:'number',type};
-  if (clean.some(x=>x.flags&ts.TypeFlags.StringLike)) return {kind:'string',type};
   if (clean.some(x=>checker.isArrayType(x)||checker.isTupleType(x))) {
     const a=clean.find(x=>checker.isArrayType(x)||checker.isTupleType(x));
     const elem=checker.getIndexTypeOfType(a,ts.IndexKind.Number);
     return {kind:'array',type,item:elem&&depth<5?describe(elem,'item',depth+1,seen):{kind:'json'}};
   }
+  if (clean.some(x=>x.flags&ts.TypeFlags.StringLike)) return {kind:'string',type};
   if (clean.some(x=>checker.getSignaturesOfType(x,ts.SignatureKind.Call).length)) return {kind:'function',type};
   if (depth>=5||seen.has(t)) return {kind:'json',type};
   const next=new Set(seen);next.add(t);

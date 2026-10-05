@@ -8,7 +8,7 @@
 .toranja-table-scroll-hint {
   display: none;
   font-size: 0.8125rem;
-  color: var(--theme-text-muted, var(--inter-graphite, #707070));
+  color: var(--theme-text-muted, var(--inter-graphite, var(--color-link-static-black-pressed)));
   text-align: right;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -19,9 +19,9 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-lg, 24px);
-  border: 1px solid var(--theme-border, #E5E7EB);
-  background: var(--theme-surface, #FFFFFF);
-  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.04));
+  border: 1px solid var(--theme-border, var(--color-surface-disabled));
+  background: var(--theme-surface, var(--color-background-neutral-default));
+  box-shadow: var(--shadow-sm, 0 2px 8px color-mix(in srgb, var(--color-surface-static-black) 4.0%, transparent));
 }
 
 .toranja-comparison-table {
@@ -34,14 +34,14 @@
 .toranja-comparison-table th,
 .toranja-comparison-table td {
   padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--theme-border, #E5E7EB);
+  border-bottom: 1px solid var(--theme-border, var(--color-surface-disabled));
   vertical-align: middle;
   font-size: 0.9375rem;
-  color: var(--theme-text, #161616);
+  color: var(--theme-text, var(--color-background-static-black));
 }
 
 .toranja-comparison-table th {
-  background: var(--theme-surface-subtle, var(--inter-sand, #FDF8EE));
+  background: var(--theme-surface-subtle, var(--inter-sand, var(--color-background-brand-softer)));
   font-family: var(--font-heading, 'Citrina', sans-serif);
   font-size: 1.15rem;
   font-weight: 600;
@@ -56,14 +56,14 @@
 
 /* Coluna Destacada (Inter) */
 .toranja-comparison-table .col-highlight {
-  background-color: rgba(255, 102, 0, 0.04) !important;
-  border-left: 2px solid var(--inter-orange, #FF6600);
-  border-right: 2px solid var(--inter-orange, #FF6600);
+  background-color: color-mix(in srgb, var(--color-background-brand-default) 4.0%, transparent) !important;
+  border-left: 2px solid var(--inter-orange, var(--color-background-brand-default));
+  border-right: 2px solid var(--inter-orange, var(--color-background-brand-default));
 }
 
 .toranja-comparison-table th.col-highlight {
-  border-top: 4px solid var(--inter-orange, #FF6600);
-  color: var(--inter-orange, #FF6600);
+  border-top: 4px solid var(--inter-orange, var(--color-background-brand-default));
+  color: var(--inter-orange, var(--color-background-brand-default));
 }
 
 .toranja-table-badge {
@@ -73,8 +73,8 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.05em;
-  background: var(--inter-orange, #FF6600);
-  color: #FFFFFF;
+  background: var(--inter-orange, var(--color-background-brand-default));
+  color: var(--color-background-neutral-default);
   padding: 2px 8px;
   border-radius: var(--radius-full, 9999px);
   width: fit-content;
@@ -92,13 +92,13 @@
 }
 
 .icon-status.is-checked {
-  background: #E8F5E9;
-  color: #2E7D32;
+  background: var(--color-surface-disabled);
+  color: var(--color-icon-accent-mint-strong);
 }
 
 .icon-status.is-cross {
-  background: #FFEBEE;
-  color: #C62828;
+  background: var(--color-surface-feedback-error-soft);
+  color: var(--color-surface-feedback-error-default);
 }
 
 @media (max-width: 768px) {

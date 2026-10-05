@@ -4,10 +4,10 @@
 }
 
 .quick-moment-bar {
-  background: rgba(255, 255, 255, 0.9);
+  background: color-mix(in srgb, var(--color-background-neutral-default) 90.0%, transparent);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(234, 113, 0, 0.15);
+  border: 1px solid color-mix(in srgb, var(--color-background-brand-default) 15.0%, transparent);
   border-radius: var(--radius-full);
   padding: 0.6rem 0.8rem;
   display: flex;
@@ -59,7 +59,7 @@
 }
 
 .rail-item.active {
-  box-shadow: 0 4px 12px rgba(234, 113, 0, 0.3);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--color-background-brand-default) 30.0%, transparent);
 }
 
 @media (max-width: 768px) {

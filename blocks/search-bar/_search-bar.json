@@ -53,21 +53,33 @@
           "valueType": "boolean"
         },
         {
-          "component": "select",
-          "name": "indexEndpointTarget",
-          "label": "Endpoint do Índice de Busca — abrir em",
+          "name": "searchRoot",
+          "label": "Caminho público da área pesquisada",
+          "component": "text",
           "valueType": "string",
-          "value": "_self",
-          "options": [
-            {
-              "name": "Mesma aba",
-              "value": "_self"
-            },
-            {
-              "name": "Nova aba",
-              "value": "_blank"
-            }
-          ]
+          "value": "/"
+        },
+        {
+          "name": "maxResults",
+          "label": "Quantidade de resultados",
+          "component": "number",
+          "valueType": "number",
+          "value": 8,
+          "validation": {
+            "numberMin": 1,
+            "numberMax": 50
+          }
+        },
+        {
+          "name": "minChars",
+          "label": "Mínimo de caracteres",
+          "component": "number",
+          "valueType": "number",
+          "value": 2,
+          "validation": {
+            "numberMin": 1,
+            "numberMax": 10
+          }
         }
       ]
     }

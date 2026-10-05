@@ -29,26 +29,26 @@
 .seg-tab.active[data-segment="digital"] {
   background-color: var(--seg-digital);
   color: var(--inter-white);
-  box-shadow: 0 4px 16px rgba(234, 113, 0, 0.35);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--color-background-brand-default) 35.0%, transparent);
 }
 
 .seg-tab.active[data-segment="one"] {
   background-color: var(--seg-one);
   color: var(--inter-white);
-  box-shadow: 0 4px 16px rgba(122, 139, 153, 0.35);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--color-chart-sequential-silver-3) 35.0%, transparent);
 }
 
 .seg-tab.active[data-segment="prime"] {
   background-color: var(--seg-prime);
   color: var(--inter-white);
-  box-shadow: 0 4px 16px rgba(31, 35, 38, 0.35);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--color-surface-neutral-strongest) 35.0%, transparent);
 }
 
 .seg-tab.active[data-segment="win"] {
   background-color: var(--seg-win);
   color: var(--seg-win-gold);
   border-color: var(--seg-win-gold);
-  box-shadow: 0 4px 16px rgba(50, 55, 71, 0.45);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--color-background-segment-pf-win-primary) 45.0%, transparent);
 }
 
 .segment-showcase-panel {
@@ -86,25 +86,25 @@
 }
 
 .metallic-card.card-digital {
-  background: linear-gradient(135deg, #EA7100 0%, #D66300 60%, #943D15 100%);
+  background: linear-gradient(135deg, var(--color-background-brand-default) 0%, var(--color-background-brand-default) 60%, var(--color-background-brand-strong) 100%);
   color: var(--inter-white);
 }
 
 .metallic-card.card-one {
-  background: linear-gradient(135deg, #9E9E9E 0%, #7A8B99 60%, #4A5B69 100%);
+  background: linear-gradient(135deg, var(--color-chart-neutral-soft) 0%, var(--color-chart-sequential-silver-3) 60%, var(--color-chart-categorical-6) 100%);
   color: var(--inter-white);
 }
 
 .metallic-card.card-prime {
-  background: linear-gradient(135deg, #2A2A2A 0%, #161616 60%, #0A0A0A 100%);
+  background: linear-gradient(135deg, var(--color-surface-neutral-stronger) 0%, var(--color-background-static-black) 60%, var(--color-surface-static-black) 100%);
   color: var(--inter-white);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid color-mix(in srgb, var(--color-background-neutral-default) 15.0%, transparent);
 }
 
 .metallic-card.card-win {
-  background: linear-gradient(135deg, #323747 0%, #1E222B 60%, #15181F 100%);
+  background: linear-gradient(135deg, var(--color-background-segment-pf-win-primary) 0%, var(--color-surface-neutral-strongest) 60%, var(--color-background-static-black) 100%);
   color: var(--seg-win-gold);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  border: 1px solid color-mix(in srgb, var(--color-background-segment-pj-pro) 35.0%, transparent);
 }
 
 .seg-details {

@@ -1,5 +1,5 @@
 .mini-simulator {
-  background: var(--theme-surface, #FFFFFF);
+  background: var(--theme-surface, var(--color-background-neutral-default));
   border-radius: var(--radius-lg);
   padding: 2.25rem;
   border: 1px solid var(--theme-border, var(--inter-gray));
@@ -86,7 +86,7 @@
 
 .sim-badge {
   display: inline-block;
-  background: rgba(0, 177, 103, 0.15);
+  background: color-mix(in srgb, var(--color-chart-categorical-3) 15.0%, transparent);
   color: var(--inter-green);
   font-size: 0.75rem;
   font-weight: 600;

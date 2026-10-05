@@ -92,9 +92,8 @@
                   "p7469746c65": "Informação importante",
                   "p6465736372697074696f6e": "Você pode editar este aviso no Universal Editor.",
                   "p73686f774c696e6b": "true",
-                  "p6c696e6b2e6c6162656c": "Conheça os componentes",
-                  "p6c696e6b2e68726566": "/demo-toranja",
-                  "accessibleLabel": "Alert"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -115,7 +114,8 @@
                   "p73697a65": "large",
                   "p63617465676f7279": "person",
                   "p6c6162656c": "Banco Inter",
-                  "accessibleLabel": "Avatar"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -131,12 +131,13 @@
                 "template": {
                   "name": "ds-accordion",
                   "model": "ds-accordion",
+                  "filter": "ds-accordion",
                   "p7469746c65": "Como editar este componente?",
                   "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
                   "p73686f7744697669646572": "true",
-                  "p6368696c6472656e": "<p>Selecione o bloco e altere as propriedades. O conteúdo permanece no AEM.</p>",
                   "p636f6e74656e7456617269616e74": "text",
-                  "accessibleLabel": "Accordion"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -154,7 +155,8 @@
                   "model": "ds-badge",
                   "p76617269616e74": "label",
                   "p636f756e74": 8,
-                  "accessibleLabel": "Badge"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -174,8 +176,8 @@
                   "p73697a65": "large",
                   "p686965726172636879": "primary",
                   "p76617269616e74": "default",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "Button"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -191,11 +193,13 @@
                 "template": {
                   "name": "ds-banner",
                   "model": "ds-banner",
+                  "filter": "ds-banner",
                   "p76617269616e74": "image",
                   "p73697a65": "medium",
                   "p75726c": "/assets/demo/ede5e1c82aad.jpg",
                   "p616c74": "Momentos da vida",
-                  "accessibleLabel": "Banner"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -211,14 +215,14 @@
                 "template": {
                   "name": "ds-bottom-sheet",
                   "model": "ds-bottom-sheet",
+                  "filter": "ds-bottom-sheet",
                   "p7469746c65": "Mais possibilidades",
                   "p69734f70656e": "false",
                   "p6f7665726c6179": "on",
                   "p657870616e7369626c65": "off",
                   "p706f736974696f6e": "hug",
-                  "p736c6f74": "<p>Conteúdo editável do painel.</p>",
-                  "accessibleLabel": "BottomSheet",
-                  "triggerLabel": "Abrir BottomSheet"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -234,12 +238,12 @@
                 "template": {
                   "name": "ds-bottom-sheet-country",
                   "model": "ds-bottom-sheet-country",
+                  "filter": "ds-bottom-sheet-country",
                   "p73686f77536561726368": "true",
                   "p7469746c65": "Escolha o país",
                   "p69734f70656e": "false",
-                  "accessibleLabel": "BottomSheetCountry",
-                  "triggerLabel": "Abrir BottomSheetCountry",
-                  "filter": "ds-bottom-sheet-country"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -255,9 +259,10 @@
                 "template": {
                   "name": "ds-card",
                   "model": "ds-card",
-                  "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
+                  "filter": "ds-card",
                   "p7374617465": "enabled",
-                  "accessibleLabel": "Card"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -275,7 +280,8 @@
                   "model": "ds-checkbox",
                   "p7374617465": "enabled",
                   "p636865636b6564": "false",
-                  "accessibleLabel": "Checkbox"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -295,7 +301,8 @@
                   "p73656c6563746564": "false",
                   "p6c656164696e6749636f6e": "ic_piggy_bank",
                   "p76617269616e74": "default",
-                  "accessibleLabel": "Chip"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -311,12 +318,12 @@
                 "template": {
                   "name": "ds-chart-bar",
                   "model": "ds-chart-bar",
-                  "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
-                  "p76616c756573": "[25,50,75]",
+                  "filter": "ds-chart-bar",
                   "p6368617274486569676874": 220,
                   "p617269614c6162656c": "Evolução ilustrativa",
                   "p73697a65": "large",
-                  "accessibleLabel": "ChartBar"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -332,12 +339,12 @@
                 "template": {
                   "name": "ds-chart-donut",
                   "model": "ds-chart-donut",
-                  "p736c696365": "[40,35,25]",
-                  "p6c6162656c": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+                  "filter": "ds-chart-donut",
                   "p73686f7744656661756c744c6567656e64": "true",
                   "p746f74616c4c6162656c": "Total",
                   "p746f74616c56616c7565": "100%",
-                  "accessibleLabel": "ChartDonut"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -353,12 +360,12 @@
                 "template": {
                   "name": "ds-chart-line",
                   "model": "ds-chart-line",
-                  "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+                  "filter": "ds-chart-line",
                   "p6368617274486569676874": 220,
                   "p617269614c6162656c": "Evolução ilustrativa",
                   "p73697a65": "large",
-                  "accessibleLabel": "ChartLine",
-                  "filter": "ds-chart-line"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -374,13 +381,13 @@
                 "template": {
                   "name": "ds-chart-meter",
                   "model": "ds-chart-meter",
+                  "filter": "ds-chart-meter",
                   "p7469746c65": "Distribuição",
-                  "p62617273": "[40,35,25]",
                   "p746f74616c": 100,
                   "p6c656164696e6756616c7565": "100",
                   "p6c656164696e674c6162656c": "Total",
-                  "p6c6567656e64": "[\"Conta\",\"Investimentos\",\"Outros\"]",
-                  "accessibleLabel": "ChartMeter"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -398,7 +405,8 @@
                   "model": "ds-counter",
                   "p636f756e74": 23,
                   "p6d61784c656e677468": 100,
-                  "accessibleLabel": "Counter"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -417,10 +425,9 @@
                   "p6465736372697074696f6e": "Conteúdo de demonstração.",
                   "p7375627469746c65": "Conheça os produtos",
                   "p7469746c65": "Mais possibilidades",
-                  "p6c696e6b2e6c6162656c": "Ver catálogo",
-                  "p6c696e6b2e68726566": "/demo-toranja",
                   "p76617269616e74": "chevron",
-                  "accessibleLabel": "CrossSelling"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -436,11 +443,12 @@
                 "template": {
                   "name": "ds-carousel",
                   "model": "ds-carousel",
+                  "filter": "ds-carousel",
                   "p76617269616e74": "page-view",
                   "p7061676553706163696e67": 16,
                   "p74696d6572": 0,
-                  "accessibleLabel": "Carousel",
-                  "filter": "ds-carousel"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -456,11 +464,13 @@
                 "template": {
                   "name": "ds-date-picker",
                   "model": "ds-date-picker",
+                  "filter": "ds-date-picker",
                   "p73656c656374696f6e4d6f6465": "single",
                   "p6c6f63616c65": "pt-BR",
                   "p73686f77436f6e74726f6c73": "true",
                   "p73686f77427574746f6e73": "true",
-                  "accessibleLabel": "DatePicker"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -476,11 +486,11 @@
                 "template": {
                   "name": "ds-decorated-text",
                   "model": "ds-decorated-text",
-                  "p6368696c6472656e": "Seu futuro começa agora.",
                   "p636c6173735374796c65": "Type.Body.Large.Regular",
                   "p636c617373436f6c6f72": "Color.Text.Neutral.Primary",
                   "p66756c6c5769647468": "true",
-                  "accessibleLabel": "DecoratedText"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -498,7 +508,8 @@
                   "model": "ds-divider",
                   "p76617269616e74": "solid",
                   "p6f7269656e746174696f6e": "horizontal",
-                  "accessibleLabel": "Divider"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -514,13 +525,13 @@
                 "template": {
                   "name": "ds-feedback-screen",
                   "model": "ds-feedback-screen",
+                  "filter": "ds-feedback-screen",
                   "p76617269616e74": "custom",
                   "p7469746c65": "Tudo pronto!",
                   "p6465736372697074696f6e": "Esta é uma demonstração de feedback.",
                   "p7369676e616c56617269616e74": "success",
-                  "p7072696d617279427574746f6e2e6c6162656c": "Continuar",
-                  "accessibleLabel": "FeedbackScreen",
-                  "filter": "ds-feedback-screen"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -539,7 +550,8 @@
                   "p69636f6e466c6167": "ic_flag_brazil_rounded",
                   "p636f6e74656e744465736372697074696f6e": "Brasil",
                   "p73697a65": "large",
-                  "accessibleLabel": "Flag"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -555,11 +567,13 @@
                 "template": {
                   "name": "ds-header",
                   "model": "ds-header",
+                  "filter": "ds-header",
                   "p76617269616e74": "innerPages",
                   "p74797065": "title",
                   "p73697a65": "large",
                   "p7469746c65": "Mundo Inter",
-                  "accessibleLabel": "Header"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -579,8 +593,8 @@
                   "p69636f6e": "ic_add",
                   "p686965726172636879": "primary",
                   "p73697a65": "large",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "FloatingActionButton"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -599,7 +613,8 @@
                   "p6173736574": "ic_orange",
                   "p636f6e74656e744465736372697074696f6e": "Toranja",
                   "p73697a65": "large",
-                  "accessibleLabel": "Icon"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -615,13 +630,13 @@
                 "template": {
                   "name": "ds-image",
                   "model": "ds-image",
-                  "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
                   "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
                   "p636f6e74656e745363616c65": "fill",
                   "p7769647468": 480,
                   "p686569676874": 240,
                   "p726164697573": "large",
-                  "accessibleLabel": "Image"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -641,8 +656,8 @@
                   "p686965726172636879": "primary",
                   "p69636f6e": "ic_search",
                   "p617269612d6c6162656c": "Pesquisar",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "IconButton"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -664,7 +679,8 @@
                   "p73686f774261646765": "true",
                   "p73656c6563746564": "false",
                   "p636f756e74": 3,
-                  "accessibleLabel": "IconChip"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -680,12 +696,13 @@
                 "template": {
                   "name": "ds-input-country",
                   "model": "ds-input-country",
+                  "filter": "ds-input-country",
                   "p6c6162656c": "Telefone",
                   "p706c616365686f6c646572": "Digite seu telefone",
                   "p7374617465": "enabled",
                   "p73656c6563746564436f756e74727956616c7565": "BR",
-                  "accessibleLabel": "InputCountry",
-                  "filter": "ds-input-country"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -701,9 +718,11 @@
                 "template": {
                   "name": "ds-input-date",
                   "model": "ds-input-date",
+                  "filter": "ds-input-date",
                   "p6c6162656c": "Data",
                   "p706c616365686f6c646572": "DD/MM/AAAA",
-                  "accessibleLabel": "InputDate"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -719,9 +738,11 @@
                 "template": {
                   "name": "ds-input-password",
                   "model": "ds-input-password",
+                  "filter": "ds-input-password",
                   "p6c6162656c": "Senha",
                   "p706c616365686f6c646572": "Digite uma senha",
-                  "accessibleLabel": "InputPassword"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -737,9 +758,11 @@
                 "template": {
                   "name": "ds-input-search",
                   "model": "ds-input-search",
+                  "filter": "ds-input-search",
                   "p6c6162656c": "Buscar",
                   "p706c616365686f6c646572": "O que você procura?",
-                  "accessibleLabel": "InputSearch"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -755,10 +778,12 @@
                 "template": {
                   "name": "ds-input-text",
                   "model": "ds-input-text",
+                  "filter": "ds-input-text",
                   "p74797065": "text",
                   "p6c6162656c": "Nome completo",
                   "p706c616365686f6c646572": "Como podemos chamar você?",
-                  "accessibleLabel": "InputText"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -774,6 +799,7 @@
                 "template": {
                   "name": "ds-input-money",
                   "model": "ds-input-money",
+                  "filter": "ds-input-money",
                   "p73686f77427574746f6e73": "true",
                   "p6669786564496e6372656d656e7456616c7565": 100,
                   "p666978656444656372656d656e7456616c7565": 100,
@@ -781,7 +807,8 @@
                   "p6d696e56616c7565": 0,
                   "p6d617856616c7565": 100000,
                   "p64656661756c7456616c7565": 1500,
-                  "accessibleLabel": "InputMoney"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -800,7 +827,8 @@
                   "p6c6162656c": "Explorar todos os componentes",
                   "p73697a65": "medium",
                   "p68726566": "/demo-toranja",
-                  "accessibleLabel": "Link"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -816,10 +844,12 @@
                 "template": {
                   "name": "ds-list-item",
                   "model": "ds-list-item",
+                  "filter": "ds-list-item",
                   "p6c6162656c": "Conta digital",
                   "p706172616772617068": "Um item da sua lista",
                   "p73686f7744697669646572": "true",
-                  "accessibleLabel": "ListItem"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -835,11 +865,12 @@
                 "template": {
                   "name": "ds-list-item-control",
                   "model": "ds-list-item-control",
+                  "filter": "ds-list-item-control",
                   "p747261696c696e6756617269616e74": "switch",
-                  "p747261696c696e6750726f70732e636865636b6564": "false",
                   "p6c6162656c": "Receber novidades",
                   "p706172616772617068": "Você controla suas preferências",
-                  "accessibleLabel": "ListItemControl"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -855,11 +886,13 @@
                 "template": {
                   "name": "ds-list-item-general",
                   "model": "ds-list-item-general",
+                  "filter": "ds-list-item-general",
                   "p6c6162656c": "Investimentos",
                   "p706172616772617068": "Conheça as possibilidades",
                   "p747261696c696e6756617269616e74": "tagChevron",
                   "p73686f7744697669646572": "true",
-                  "accessibleLabel": "ListItemGeneral"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -875,12 +908,12 @@
                 "template": {
                   "name": "ds-list-item-action",
                   "model": "ds-list-item-action",
+                  "filter": "ds-list-item-action",
                   "p747261696c696e6756617269616e74": "button",
-                  "p747261696c696e6750726f70732e6c6162656c": "Explorar",
                   "p6c6162656c": "Saiba mais",
                   "p706172616772617068": "Explore o catálogo",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "ListItemAction"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -899,8 +932,8 @@
                   "p6f7269656e746174696f6e": "horizontal",
                   "p6c6162656c": "Saldo ilustrativo",
                   "p76616c756554797065": "text",
-                  "p76616c7565": "R$ 1.500,00",
-                  "accessibleLabel": "ListItemView"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -920,8 +953,8 @@
                   "p73697a65": "large",
                   "p6c6162656c": "Conta digital",
                   "p69636f6e": "ic_wallet",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "MenuItem"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -940,8 +973,8 @@
                   "p69636f6e": "ic_ellipsis",
                   "p73697a65": "medium",
                   "p617269612d6c6162656c": "Mais opções",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "NeutralIconButton"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -959,7 +992,8 @@
                   "model": "ds-page-indicator",
                   "p6974656d73": 4,
                   "p73656c6563746564": 1,
-                  "accessibleLabel": "PageIndicator"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -978,7 +1012,8 @@
                   "p7061796d656e744d6574686f64": "mastercard",
                   "p73697a65": "large",
                   "p636f6c6f72": "soft",
-                  "accessibleLabel": "PaymentMethods"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -994,12 +1029,13 @@
                 "template": {
                   "name": "ds-pin-code",
                   "model": "ds-pin-code",
+                  "filter": "ds-pin-code",
                   "p6669656c6473": "4",
                   "p7374617465": "enabled",
-                  "p68696e7473": "[\"Código de demonstração\"]",
                   "p74797065": "number",
                   "p706c616365686f6c646572": "0",
-                  "accessibleLabel": "PinCode"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1017,7 +1053,8 @@
                   "model": "ds-progress-bar",
                   "p76617269616e74": "default",
                   "p70726f6772657373": 60,
-                  "accessibleLabel": "ProgressBar"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1036,7 +1073,8 @@
                   "p73697a65": "large",
                   "p70726f6772657373": 65,
                   "p617269614c6162656c": "65% concluído",
-                  "accessibleLabel": "ProgressCircle"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1052,12 +1090,12 @@
                 "template": {
                   "name": "ds-radio",
                   "model": "ds-radio",
-                  "p6368696c6472656e": "Escolher esta opção",
                   "p6e616d65": "preferencia",
                   "p7374617465": "enabled",
                   "p76616c7565": "opcao-1",
                   "p76617269616e74": "default",
-                  "accessibleLabel": "Radio"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1078,8 +1116,8 @@
                   "p6465736372697074696f6e": "Um título de seção editável",
                   "p76617269616e74": "default",
                   "p73686f7749636f6e": "true",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "SectionTitle"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1097,7 +1135,8 @@
                   "model": "ds-section-subtitle",
                   "p7375627469746c65": "Escolha seu próximo passo",
                   "p747261696c696e674c6162656c": "Saiba mais",
-                  "accessibleLabel": "SectionSubtitle"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1113,9 +1152,10 @@
                 "template": {
                   "name": "ds-segmented-control",
                   "model": "ds-segmented-control",
+                  "filter": "ds-segmented-control",
                   "p7374617465": "enabled",
-                  "accessibleLabel": "SegmentedControl",
-                  "filter": "ds-segmented-control"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1131,10 +1171,11 @@
                 "template": {
                   "name": "ds-select",
                   "model": "ds-select",
+                  "filter": "ds-select",
                   "p6c6162656c": "Produto de interesse",
                   "p706c616365686f6c646572": "Escolha uma opção",
-                  "accessibleLabel": "Select",
-                  "selectOptions": "[\"Conta digital\",\"Investimentos\",\"Crédito\"]"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1152,7 +1193,8 @@
                   "model": "ds-spinner",
                   "p73697a65": "large",
                   "p617269614c6162656c": "Carregando demonstração",
-                  "accessibleLabel": "Spinner"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1171,7 +1213,8 @@
                   "p76617269616e74": "success",
                   "p73697a65": "large",
                   "p7374617465": "enabled",
-                  "accessibleLabel": "Signal"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1189,7 +1232,8 @@
                   "model": "ds-switch",
                   "p636865636b6564": "false",
                   "p7374617465": "enabled",
-                  "accessibleLabel": "Switch"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1211,8 +1255,8 @@
                   "p73686f77427574746f6e536e61636b626172": "true",
                   "p6c6162656c427574746f6e": "Entendi",
                   "p73686f77": "false",
-                  "accessibleLabel": "Snackbar",
-                  "triggerLabel": "Abrir Snackbar"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1234,7 +1278,8 @@
                   "p7374617465": "enabled",
                   "p686173426f72646572": "true",
                   "p73746570": 1,
-                  "accessibleLabel": "Stepper"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1250,10 +1295,11 @@
                 "template": {
                   "name": "ds-tabs",
                   "model": "ds-tabs",
+                  "filter": "ds-tabs",
                   "p7374617465": "enabled",
                   "p7363726f6c6c61626c65": "true",
-                  "accessibleLabel": "Tabs",
-                  "filter": "ds-tabs"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1274,7 +1320,8 @@
                   "p6c6162656c": "Novidade",
                   "p73697a65": "large",
                   "p7374617465": "enabled",
-                  "accessibleLabel": "Tag"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1290,12 +1337,12 @@
                 "template": {
                   "name": "ds-text",
                   "model": "ds-text",
-                  "p6368696c6472656e": "Em todo momento da vida, vejo você.",
                   "p7465787453697a65": "large",
                   "p74657874576569676874": "regular",
                   "p6173": "p",
                   "p7465787454797065": "body",
-                  "accessibleLabel": "Text"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1311,11 +1358,13 @@
                 "template": {
                   "name": "ds-text-area",
                   "model": "ds-text-area",
+                  "filter": "ds-text-area",
                   "p6c6162656c": "Sua mensagem",
                   "p73686f77436f756e746572": "true",
                   "p636f756e746572": 300,
                   "p706c616365686f6c646572": "Conte um pouco mais",
-                  "accessibleLabel": "TextArea"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1331,8 +1380,9 @@
                 "template": {
                   "name": "ds-timeline",
                   "model": "ds-timeline",
-                  "accessibleLabel": "Timeline",
-                  "filter": "ds-timeline"
+                  "filter": "ds-timeline",
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1348,14 +1398,14 @@
                 "template": {
                   "name": "ds-widget",
                   "model": "ds-widget",
+                  "filter": "ds-widget",
                   "p74696d6541676f": "Agora",
                   "p746167": "Novidade",
                   "p7469746c65": "Seus planos",
                   "p73686f77486561646572": "true",
-                  "p6368696c6472656e": "<p>Uma experiência completa e editável.</p>",
                   "p73697a65": "large",
-                  "actionLink": "/demo-toranja",
-                  "accessibleLabel": "Widget"
+                  "editorMode": "basic",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1378,7 +1428,8 @@
                   "name": "accordion",
                   "model": "accordion",
                   "filter": "accordion",
-                  "classes_behavior": "single-open"
+                  "classes_behavior": "single-open",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1397,7 +1448,8 @@
                   "title": "Aviso Importante de Segurança",
                   "message": "<p>O Banco Inter nunca solicita senhas, tokens i-safe ou transferências por telefone ou mensagem.</p>",
                   "classes_variant": "warning",
-                  "classes_dismissible": false
+                  "classes_dismissible": false,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1417,7 +1469,8 @@
                   "titleType": "h2",
                   "subtitle": "Aponte a câmera do seu celular para o QR Code e abra sua conta gratuita em poucos minutos.",
                   "appleStoreUrl": "https://apps.apple.com/br/app/inter/id1071477797",
-                  "googlePlayUrl": "https://play.google.com/store/apps/details?id=br.com.intermedium"
+                  "googlePlayUrl": "https://play.google.com/store/apps/details?id=br.com.intermedium",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1439,7 +1492,8 @@
                   "cta": "/loop",
                   "ctaText": "Aproveitar Oferta",
                   "classes_variant": "promo",
-                  "classes_dismissible": true
+                  "classes_dismissible": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1457,7 +1511,8 @@
                   "model": "breadcrumb",
                   "filter": "breadcrumb",
                   "separator": "/",
-                  "classes_show-home": true
+                  "classes_show-home": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1475,7 +1530,8 @@
                   "model": "cards",
                   "filter": "cards",
                   "classes_variant": "",
-                  "classes_columns": "3"
+                  "classes_columns": "3",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1495,7 +1551,8 @@
                   "interval": 5000,
                   "classes_autoplay": false,
                   "classes_show-indicators": true,
-                  "classes_show-arrows": true
+                  "classes_show-arrows": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1515,7 +1572,8 @@
                   "title": "Compare as Vantagens do Inter",
                   "titleType": "h2",
                   "subtitle": "Transparência total sem letras miúdas.",
-                  "highlightColumn": 2
+                  "highlightColumn": 2,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1534,7 +1592,8 @@
                   "filter": "contact-channels",
                   "title": "Canais Oficiais de Atendimento Inter",
                   "titleType": "h2",
-                  "subtitle": "Estamos prontos para atender você 24 horas por dia, 7 dias por semana."
+                  "subtitle": "Estamos prontos para atender você 24 horas por dia, 7 dias por semana.",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1557,7 +1616,8 @@
                   "primaryCtaText": "Abra sua conta grátis",
                   "secondaryCta": "/app",
                   "secondaryCtaText": "Baixar o Super App",
-                  "classes_theme": "dark"
+                  "classes_theme": "dark",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1578,7 +1638,8 @@
                   "title": "O Ciclo de Valor Virtuoso do Inter Loop",
                   "titleType": "h2",
                   "cta": "/inter-loop",
-                  "ctaText": "Conhecer o Inter Loop"
+                  "ctaText": "Conhecer o Inter Loop",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1596,7 +1657,8 @@
                   "model": "footer",
                   "filter": "footer",
                   "copyright": "Banco Inter S.A. CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG.",
-                  "classes_show-regulatory-seals": true
+                  "classes_show-regulatory-seals": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1617,7 +1679,8 @@
                   "titleType": "h2",
                   "subtitle": "Preencha seus dados para receber uma consultoria exclusiva sobre contas, investimentos ou crédito.",
                   "submitLabel": "Enviar Solicitação",
-                  "successMessage": "Solicitação recebida com sucesso! Entraremos em contato em breve."
+                  "successMessage": "Solicitação recebida com sucesso! Entraremos em contato em breve.",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1640,7 +1703,8 @@
                   "ctaText": "Abra sua conta",
                   "brandTag": "Super App",
                   "classes_variant": "default",
-                  "classes_show-country-selector": true
+                  "classes_show-country-selector": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1667,7 +1731,8 @@
                   "checklist": "<ul><li>Sem taxa de manutenção</li><li>Cartão de crédito sem anuidade</li><li>Global Account em dólar</li></ul>",
                   "image": "",
                   "classes_portal-variant": "asymmetric",
-                  "classes_theme": "default"
+                  "classes_theme": "default",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1686,7 +1751,8 @@
                   "filter": "in-page-nav",
                   "title": "Nesta Página",
                   "classes_sticky": true,
-                  "classes_scroll-spy": true
+                  "classes_scroll-spy": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1704,7 +1770,8 @@
                   "model": "manifesto",
                   "quote": "<p>Acreditamos que a vida financeira não precisa ser complicada, fria ou distante. Ela precisa ser humana, transparente e presente em cada momento de realização.</p>",
                   "attribution": "Manifesto Oficial do Banco Inter",
-                  "classes_align": "center"
+                  "classes_align": "center",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1722,7 +1789,8 @@
                   "model": "modal",
                   "modalId": "garantia-fgc",
                   "title": "Proteção Regulatória do FGC e FDIC",
-                  "titleType": "h2"
+                  "titleType": "h2",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1743,7 +1811,8 @@
                   "headlineType": "h2",
                   "cta": "/abra-sua-conta",
                   "ctaText": "Abra sua conta grátis",
-                  "classes_portal-variant": "asymmetric"
+                  "classes_portal-variant": "asymmetric",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1762,7 +1831,8 @@
                   "currentPage": 1,
                   "totalPages": 5,
                   "baseUrl": "?pagina=",
-                  "classes_variant": "numeric"
+                  "classes_variant": "numeric",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1780,7 +1850,8 @@
                   "model": "quick-moment-rail",
                   "filter": "quick-moment-rail",
                   "label": "Momentos de Vida",
-                  "classes_behavior": "floating"
+                  "classes_behavior": "floating",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1799,7 +1870,8 @@
                   "placeholder": "O que você procura no Inter? (ex: Pix, Cartão Black, Financiamento)",
                   "indexEndpoint": "/query-index.json",
                   "label": "Buscar no portal Inter",
-                  "classes_instant-search": true
+                  "classes_instant-search": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1819,7 +1891,8 @@
                   "title": "Uma experiência desenhada para o seu momento de vida",
                   "titleType": "h2",
                   "subtitle": "Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter.",
-                  "defaultSegment": "digital"
+                  "defaultSegment": "digital",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1843,7 +1916,8 @@
                   "maxValue": 100000,
                   "cdiRate": 10.75,
                   "cta": "/investimentos",
-                  "ctaText": "Começar a Investir"
+                  "ctaText": "Começar a Investir",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1861,7 +1935,8 @@
                   "model": "stats-counter",
                   "filter": "stats-counter",
                   "classes_variant": "default",
-                  "classes_animated": true
+                  "classes_animated": true,
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1878,7 +1953,8 @@
                   "name": "tabs",
                   "model": "tabs",
                   "filter": "tabs",
-                  "defaultTab": "1"
+                  "defaultTab": "1",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1899,7 +1975,8 @@
                   "titleType": "h2",
                   "cta": "/global",
                   "ctaText": "Conhecer a Global Account",
-                  "classes_variant": "pill"
+                  "classes_variant": "pill",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1918,7 +1995,8 @@
                   "filter": "testimonials",
                   "title": "O que nossos clientes dizem",
                   "titleType": "h2",
-                  "subtitle": "Mais de 33 milhões de pessoas confiam a sua vida financeira ao Inter."
+                  "subtitle": "Mais de 33 milhões de pessoas confiam a sua vida financeira ao Inter.",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1935,7 +2013,8 @@
                   "name": "timeline",
                   "model": "timeline",
                   "filter": "timeline",
-                  "classes_variant": "vertical"
+                  "classes_variant": "vertical",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1953,7 +2032,8 @@
                   "model": "tooltip",
                   "term": "CDI",
                   "definition": "Certificado de Depósito Interbancário: taxa de juros praticada entre os bancos, usada como referência para investimentos.",
-                  "classes_position": "top"
+                  "classes_position": "top",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1969,7 +2049,8 @@
                 "template": {
                   "name": "video-player",
                   "model": "video-player",
-                  "classes_portal-variant": "arch"
+                  "classes_portal-variant": "arch",
+                  "schemaVersion": "toranja-v3"
                 }
               }
             }
@@ -1991,9 +2072,7 @@
                 "template": {
                   "name": "ds-bottom-sheet-country-item",
                   "model": "ds-bottom-sheet-country-item",
-                  "p76616c7565": "BR",
-                  "p6c6162656c": "Brasil",
-                  "p666c6167": "ic_flag_brazil_rounded"
+                  "collection": "items"
                 }
               }
             }
@@ -2009,8 +2088,7 @@
                 "template": {
                   "name": "ds-chart-line-item",
                   "model": "ds-chart-line-item",
-                  "p6c6162656c": "Evolução",
-                  "p76616c756573": "[20,45,70]"
+                  "collection": "series"
                 }
               }
             }
@@ -2026,7 +2104,7 @@
                 "template": {
                   "name": "ds-carousel-item",
                   "model": "ds-carousel-item",
-                  "p76616c7565": "<h3>Conta digital</h3><p>Seu dia a dia.</p>"
+                  "collection": "items"
                 }
               }
             }
@@ -2041,7 +2119,8 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "ds-feedback-screen-item",
-                  "model": "ds-feedback-screen-item"
+                  "model": "ds-feedback-screen-item",
+                  "collection": "contentItems"
                 }
               }
             }
@@ -2057,10 +2136,7 @@
                 "template": {
                   "name": "ds-input-country-item",
                   "model": "ds-input-country-item",
-                  "p707265666978": "+55",
-                  "p76616c7565": "BR",
-                  "p6c6162656c": "Brasil",
-                  "p666c6167": "ic_flag_brazil_rounded"
+                  "collection": "countryItems"
                 }
               }
             }
@@ -2076,7 +2152,7 @@
                 "template": {
                   "name": "ds-segmented-control-item",
                   "model": "ds-segmented-control-item",
-                  "p6c6162656c": "Pessoal"
+                  "collection": "segments"
                 }
               }
             }
@@ -2092,8 +2168,7 @@
                 "template": {
                   "name": "ds-tabs-item",
                   "model": "ds-tabs-item",
-                  "p6c6162656c": "Conta",
-                  "p73656c6563746564": "true"
+                  "collection": "tabs"
                 }
               }
             }
@@ -2109,9 +2184,359 @@
                 "template": {
                   "name": "ds-timeline-item",
                   "model": "ds-timeline-item",
-                  "p7469746c65": "Escolha",
-                  "p64617465": "Etapa 1",
-                  "p737461747573": "success"
+                  "collection": "items"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-accordion-item",
+          "title": "Accordion — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-accordion-item",
+                  "model": "ds-accordion-item",
+                  "collection": "content:children"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-banner-item",
+          "title": "Banner — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-banner-item",
+                  "model": "ds-banner-item",
+                  "collection": "content:webContent"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-bottom-sheet-item",
+          "title": "BottomSheet — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-bottom-sheet-item",
+                  "model": "ds-bottom-sheet-item",
+                  "collection": "content:slot"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-card-item",
+          "title": "Card — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-card-item",
+                  "model": "ds-card-item",
+                  "collection": "content:children"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-chart-bar-item",
+          "title": "ChartBar — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-chart-bar-item",
+                  "model": "ds-chart-bar-item",
+                  "collection": "chartData"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-chart-donut-item",
+          "title": "ChartDonut — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-chart-donut-item",
+                  "model": "ds-chart-donut-item",
+                  "collection": "chartData"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-chart-meter-item",
+          "title": "ChartMeter — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-chart-meter-item",
+                  "model": "ds-chart-meter-item",
+                  "collection": "chartData"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-date-picker-item",
+          "title": "DatePicker — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-date-picker-item",
+                  "model": "ds-date-picker-item",
+                  "collection": "$disabledDates"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-header-item",
+          "title": "Header — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-header-item",
+                  "model": "ds-header-item",
+                  "collection": "searchProps.error"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-input-date-item",
+          "title": "InputDate — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-input-date-item",
+                  "model": "ds-input-date-item",
+                  "collection": "error"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-input-password-item",
+          "title": "InputPassword — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-input-password-item",
+                  "model": "ds-input-password-item",
+                  "collection": "error"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-input-search-item",
+          "title": "InputSearch — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-input-search-item",
+                  "model": "ds-input-search-item",
+                  "collection": "error"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-input-text-item",
+          "title": "InputText — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-input-text-item",
+                  "model": "ds-input-text-item",
+                  "collection": "error"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-input-money-item",
+          "title": "InputMoney — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-input-money-item",
+                  "model": "ds-input-money-item",
+                  "collection": "hint"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-list-item-item",
+          "title": "ListItem — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-list-item-item",
+                  "model": "ds-list-item-item",
+                  "collection": "tags"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-list-item-control-item",
+          "title": "ListItemControl — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-list-item-control-item",
+                  "model": "ds-list-item-control-item",
+                  "collection": "tags"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-list-item-general-item",
+          "title": "ListItemGeneral — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-list-item-general-item",
+                  "model": "ds-list-item-general-item",
+                  "collection": "tags"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-list-item-action-item",
+          "title": "ListItemAction — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-list-item-action-item",
+                  "model": "ds-list-item-action-item",
+                  "collection": "tags"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-pin-code-item",
+          "title": "PinCode — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-pin-code-item",
+                  "model": "ds-pin-code-item",
+                  "collection": "hints"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-select-item",
+          "title": "Select — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-select-item",
+                  "model": "ds-select-item",
+                  "collection": "error"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-text-area-item",
+          "title": "TextArea — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-text-area-item",
+                  "model": "ds-text-area-item",
+                  "collection": "hints"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "ds-widget-item",
+          "title": "Widget — item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "ds-widget-item",
+                  "model": "ds-widget-item",
+                  "collection": "content:children"
                 }
               }
             }

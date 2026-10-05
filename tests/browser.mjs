@@ -282,7 +282,7 @@ try {
             {
               title: "Resultado Toranja",
               description: "Demonstração",
-              path: "/demo-toranja",
+              path: "/produtos/toranja",
             },
           ],
         }),

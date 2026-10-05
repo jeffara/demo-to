@@ -1,5 +1,6 @@
 /** Gera modelos XWalk a partir do contrato oficial, mantendo nomes sem field-collapse. */
 import fs from 'node:fs';
+import {curate} from './curate-ds.mjs';
 const contract=JSON.parse(fs.readFileSync('docs/toranja-contract.json'));
 const samples=JSON.parse(fs.readFileSync('src/ds-samples.json'));
 const primary={Tabs:'tabs',Timeline:'items',Carousel:'items',SegmentedControl:'segments',BottomSheetCountry:'items',InputCountry:'countryItems',ChartLine:'series',FeedbackScreen:'contentItems'};
@@ -84,6 +85,7 @@ for(const c of contract.components) {
  fs.writeFileSync(`blocks/${c.block}/${c.block}.js`,`import { mountDS } from '../../scripts/ds-adapter.js';\nexport default block => mountDS(block, '${c.block}');\n`);
  fs.writeFileSync(`blocks/${c.block}/${c.block}.css`,`.${c.block} { min-width: 0; }\n`);
 }
+curate(schema,partial,sampleBlocks);
 fs.writeFileSync('models/_official-ds.json',JSON.stringify(partial,null,2));
 const compact=JSON.parse(JSON.stringify(schema,(key,value)=>['type','description','optional','inherited','values'].includes(key)?(key==='values'&&value.every(v=>typeof v==='number')?value:undefined):value));
 fs.writeFileSync('scripts/ds-schema.json',JSON.stringify(compact));

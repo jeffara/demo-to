@@ -1,3 +1,4 @@
+@import './official-tokens.css';
 /* ==========================================================================
    BANCO INTER — DESIGN SYSTEM TORANJA
    AEM Edge Delivery Services (XWalk / Crosswalk Boilerplate)
@@ -55,44 +56,44 @@
   --breakpoint-xl: 1440px;
 
   /* Cores Base Toranja (Paleta Global Imutável) */
-  --inter-orange: #EA7100;
-  --inter-orange-hover: #D66300;
-  --inter-orange-light: #FFCA96;
-  --inter-orange-clay: #943D15;
-  --inter-orange-earth: #72370E;
+  --inter-orange: var(--color-background-brand-default);
+  --inter-orange-hover: var(--color-background-brand-default);
+  --inter-orange-light: var(--color-background-brand-soft);
+  --inter-orange-clay: var(--color-background-brand-strong);
+  --inter-orange-earth: var(--color-background-brand-stronger);
   
-  --inter-sand: #FDF8EE;
-  --inter-sand-light: #FFFCF7;
-  --inter-sand-dark: #F5EEDB;
+  --inter-sand: var(--color-background-brand-softer);
+  --inter-sand-light: var(--color-background-neutral-default);
+  --inter-sand-dark: var(--color-surface-accent-brown-soft);
   
-  --inter-white: #FFFFFF;
-  --inter-black: #161616;
-  --inter-graphite: #3C3331;
-  --inter-gray-light: #F7F7F7;
-  --inter-gray: #EBEBEB;
-  --inter-gray-dark: #8C8583;
+  --inter-white: var(--color-background-neutral-default);
+  --inter-black: var(--color-background-static-black);
+  --inter-graphite: var(--color-surface-neutral-stronger);
+  --inter-gray-light: var(--color-background-neutral-strong);
+  --inter-gray: var(--color-surface-disabled);
+  --inter-gray-dark: var(--color-border-neutral-stronger);
 
   /* 4 Segmentos Oficiais */
-  --seg-digital: #EA7100;
-  --seg-one: #7A8B99;
-  --seg-prime: #1F2326;
-  --seg-win: #323747;
-  --seg-win-gold: #C5A059;
+  --seg-digital: var(--color-background-brand-default);
+  --seg-one: var(--color-chart-sequential-silver-3);
+  --seg-prime: var(--color-surface-neutral-strongest);
+  --seg-win: var(--color-background-segment-pf-win-primary);
+  --seg-win-gold: var(--color-background-segment-pj-pro);
 
   /* Cores de Acento Funcional */
-  --inter-blue: #0085FF;
-  --inter-blue-light: #66CCFB;
-  --inter-green: #00B167;
-  --inter-green-light: #80E7BD;
-  --inter-yellow: #FBFF71;
-  --inter-pink: #F8B6E6;
+  --inter-blue: var(--color-chart-cool-3);
+  --inter-blue-light: var(--color-surface-decorative-cyan);
+  --inter-green: var(--color-chart-categorical-3);
+  --inter-green-light: var(--color-surface-decorative-mint);
+  --inter-yellow: var(--color-surface-decorative-yellow);
+  --inter-pink: var(--color-surface-decorative-pink);
 
   /* Gradientes Oficiais do Toranja */
-  --gradient: linear-gradient(135deg, #EA7100 0%, #FF9E42 100%);
-  --ai-gradient: linear-gradient(135deg, #FF6A00 0%, #EE0979 50%, #7A00FF 100%);
+  --gradient: linear-gradient(135deg, var(--color-background-brand-default) 0%, var(--color-chart-sequential-orange-2) 100%);
+  --ai-gradient: linear-gradient(135deg, var(--color-background-brand-default) 0%, var(--color-surface-accent-pink-default) 50%, var(--color-icon-accent-purple-strong) 100%);
 
   /* Elevação Oficial Toranja */
-  --elevation-surface-raised: 0 4px 24px rgba(22, 22, 22, 0.08);
+  --elevation-surface-raised: 0 4px 24px color-mix(in srgb, var(--color-background-static-black) 8.0%, transparent);
 
   /* Tipografia Oficial Toranja */
   --font-display: 'Citrina', 'Sora', sans-serif;
@@ -108,15 +109,15 @@
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 36px;
-  --radius-full: 9999px;
+  
 
   /* Sombras & Efeitos */
-  --shadow-sm: 0 2px 8px rgba(22, 22, 22, 0.05);
+  --shadow-sm: 0 2px 8px color-mix(in srgb, var(--color-background-static-black) 5.0%, transparent);
   --shadow-md: var(--elevation-surface-raised);
-  --shadow-lg: 0 16px 40px rgba(22, 22, 22, 0.12);
-  --shadow-glow: 0 12px 36px rgba(234, 113, 0, 0.25);
-  --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(255, 255, 255, 0.6);
+  --shadow-lg: 0 16px 40px color-mix(in srgb, var(--color-background-static-black) 12.0%, transparent);
+  --shadow-glow: 0 12px 36px color-mix(in srgb, var(--color-background-brand-default) 25.0%, transparent);
+  --glass-bg: color-mix(in srgb, var(--color-background-neutral-default) 85.0%, transparent);
+  --glass-border: color-mix(in srgb, var(--color-background-neutral-default) 60.0%, transparent);
 
   /* Transições e Curvas (Ease) */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -136,57 +137,57 @@
 html[toranja-theme="pf-light"] {
   --theme-bg: var(--inter-sand);
   --theme-surface: var(--inter-white);
-  --theme-surface-subtle: #F5EEDB;
+  --theme-surface-subtle: var(--color-surface-accent-brown-soft);
   --theme-text: var(--inter-black);
   --theme-text-muted: var(--inter-graphite);
   --theme-border: var(--inter-gray);
   --theme-accent: var(--inter-orange);
   --theme-accent-hover: var(--inter-orange-hover);
-  --hero-bg: radial-gradient(circle at 75% 30%, rgba(234, 113, 0, 0.1) 0%, #FDF8EE 65%);
+  --hero-bg: radial-gradient(circle at 75% 30%, color-mix(in srgb, var(--color-background-brand-default) 10.0%, transparent) 0%, var(--color-background-brand-softer) 65%);
 }
 
 /* Tema PF Dark (Pessoa Física Noturno) */
 :root[toranja-theme="pf-dark"],
 html[toranja-theme="pf-dark"] {
-  --theme-bg: #121212;
-  --theme-surface: #1E1E1E;
-  --theme-surface-subtle: #2A2A2A;
-  --theme-text: #F5F5F5;
-  --theme-text-muted: #B3B3B3;
-  --theme-border: #333333;
+  --theme-bg: var(--color-background-static-black);
+  --theme-surface: var(--color-surface-neutral-strongest);
+  --theme-surface-subtle: var(--color-surface-neutral-stronger);
+  --theme-text: var(--color-link-static-white-hovered);
+  --theme-text-muted: var(--color-chart-sequential-silver-2);
+  --theme-border: var(--color-surface-neutral-stronger);
   --theme-accent: var(--inter-orange);
-  --theme-accent-hover: #FF851A;
-  --hero-bg: radial-gradient(circle at 75% 30%, rgba(234, 113, 0, 0.18) 0%, #121212 65%);
+  --theme-accent-hover: var(--color-chart-sequential-orange-2);
+  --hero-bg: radial-gradient(circle at 75% 30%, color-mix(in srgb, var(--color-background-brand-default) 18.0%, transparent) 0%, var(--color-background-static-black) 65%);
 }
 
 /* Tema PJ Light (Pessoa Jurídica) */
 :root[toranja-theme="pj-light"],
 html[toranja-theme="pj-light"] {
-  --theme-bg: #F8FAFC;
+  --theme-bg: var(--color-background-neutral-strong);
   --theme-surface: var(--inter-white);
-  --theme-surface-subtle: #F1F5F9;
-  --theme-text: #0F172A;
-  --theme-text-muted: #475569;
-  --theme-border: #E2E8F0;
-  --theme-accent: #0284C7;
-  --theme-accent-hover: #0369A1;
-  --gradient: linear-gradient(135deg, #0284C7 0%, #38BDF8 100%);
-  --hero-bg: radial-gradient(circle at 75% 30%, rgba(2, 132, 199, 0.1) 0%, #F8FAFC 65%);
+  --theme-surface-subtle: var(--color-link-static-white-hovered);
+  --theme-text: var(--color-background-static-black);
+  --theme-text-muted: var(--color-chart-categorical-6);
+  --theme-border: var(--color-surface-disabled);
+  --theme-accent: var(--color-chart-cool-3);
+  --theme-accent-hover: var(--color-surface-accent-cyan-default);
+  --gradient: linear-gradient(135deg, var(--color-chart-cool-3) 0%, var(--color-surface-decorative-cyan) 100%);
+  --hero-bg: radial-gradient(circle at 75% 30%, color-mix(in srgb, var(--color-chart-cool-3) 10.0%, transparent) 0%, var(--color-background-neutral-strong) 65%);
 }
 
 /* Tema PJ Dark (Pessoa Jurídica Noturno) */
 :root[toranja-theme="pj-dark"],
 html[toranja-theme="pj-dark"] {
-  --theme-bg: #0B0F17;
-  --theme-surface: #151D2A;
-  --theme-surface-subtle: #1E293B;
-  --theme-text: #F1F5F9;
-  --theme-text-muted: #94A3B8;
-  --theme-border: #1E293B;
-  --theme-accent: #38BDF8;
-  --theme-accent-hover: #7DD3FC;
-  --gradient: linear-gradient(135deg, #0284C7 0%, #38BDF8 100%);
-  --hero-bg: radial-gradient(circle at 75% 30%, rgba(56, 189, 248, 0.18) 0%, #0B0F17 65%);
+  --theme-bg: var(--color-background-static-black);
+  --theme-surface: var(--color-surface-neutral-strongest);
+  --theme-surface-subtle: var(--color-background-segment-pf-win-primary);
+  --theme-text: var(--color-link-static-white-hovered);
+  --theme-text-muted: var(--color-chart-sequential-silver-2);
+  --theme-border: var(--color-background-segment-pf-win-primary);
+  --theme-accent: var(--color-surface-decorative-cyan);
+  --theme-accent-hover: var(--color-surface-decorative-cyan);
+  --gradient: linear-gradient(135deg, var(--color-chart-cool-3) 0%, var(--color-surface-decorative-cyan) 100%);
+  --hero-bg: radial-gradient(circle at 75% 30%, color-mix(in srgb, var(--color-surface-decorative-cyan) 18.0%, transparent) 0%, var(--color-background-static-black) 65%);
 }
 
 /* ==========================================================================
@@ -432,8 +433,8 @@ main > .section.white-bg {
 }
 
 main > .section.dark-bg {
-  background-color: #121212 !important;
-  color: #FFFFFF !important;
+  background-color: var(--color-background-static-black) !important;
+  color: var(--color-background-neutral-default) !important;
 }
 
 main > .section.dark-bg h1,
@@ -441,7 +442,7 @@ main > .section.dark-bg h2,
 main > .section.dark-bg h3,
 main > .section.dark-bg h4,
 main > .section.dark-bg p {
-  color: #FFFFFF !important;
+  color: var(--color-background-neutral-default) !important;
 }
 
 /* --- Botões do Design System Toranja --- */
@@ -472,7 +473,7 @@ a.button.primary:any-link,
 button.button.primary,
 .btn-primary {
   background-color: var(--theme-accent, var(--inter-orange));
-  color: #FFFFFF !important;
+  color: var(--color-background-neutral-default) !important;
   border: 1px solid var(--theme-accent, var(--inter-orange));
   box-shadow: var(--shadow-sm);
 }
@@ -526,15 +527,15 @@ a.button.outline-white:any-link,
 button.button.outline-white,
 .btn-outline-white {
   background-color: transparent !important;
-  color: #FFFFFF !important;
-  border: 1px solid #FFFFFF !important;
+  color: var(--color-background-neutral-default) !important;
+  border: 1px solid var(--color-background-neutral-default) !important;
 }
 
 a.button.outline-white:hover,
 button.button.outline-white:hover,
 .btn-outline-white:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  color: #FFFFFF !important;
+  background-color: color-mix(in srgb, var(--color-background-neutral-default) 15.0%, transparent) !important;
+  color: var(--color-background-neutral-default) !important;
   transform: translateY(-2px);
 }
 
@@ -559,23 +560,23 @@ button.button.outline-white:hover,
 }
 
 .tag-orange {
-  background-color: rgba(234, 113, 0, 0.15);
+  background-color: color-mix(in srgb, var(--color-background-brand-default) 15.0%, transparent);
   color: var(--inter-orange);
 }
 
 .tag-blue {
-  background-color: rgba(0, 133, 255, 0.15);
+  background-color: color-mix(in srgb, var(--color-chart-cool-3) 15.0%, transparent);
   color: var(--inter-blue);
 }
 
 .tag-green {
-  background-color: rgba(0, 177, 103, 0.15);
+  background-color: color-mix(in srgb, var(--color-chart-categorical-3) 15.0%, transparent);
   color: var(--inter-green);
 }
 
 .tag-dark {
-  background-color: #2A2A2A;
-  color: #FFFFFF;
+  background-color: var(--color-surface-neutral-stronger);
+  color: var(--color-background-neutral-default);
 }
 
 .tag-win {
@@ -674,16 +675,16 @@ span.icon svg {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--theme-surface-subtle, rgba(234, 113, 0, 0.08));
-  border: 1px solid rgba(234, 113, 0, 0.3);
-  color: var(--inter-orange, #EA7100);
+  background: var(--theme-surface-subtle, color-mix(in srgb, var(--color-background-brand-default) 8.0%, transparent));
+  border: 1px solid color-mix(in srgb, var(--color-background-brand-default) 30.0%, transparent);
+  color: var(--inter-orange, var(--color-background-brand-default));
   font-family: var(--font-body, -apple-system, sans-serif);
   font-size: 0.78125rem;
   padding: 4px 14px;
   border-radius: var(--radius-full, 9999px);
   font-weight: 500;
   letter-spacing: 0.02em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 4px color-mix(in srgb, var(--color-surface-static-black) 4.0%, transparent);
   max-width: 90%;
   flex-wrap: wrap;
   justify-content: center;
@@ -696,29 +697,29 @@ span.icon svg {
   letter-spacing: 0.06em;
   padding: 2px 8px;
   border-radius: var(--radius-full, 9999px);
-  color: #FFFFFF;
+  color: var(--color-background-neutral-default);
 }
 
 .component-spec-badge.is-atomo .badge-type {
-  background: #0085FF;
+  background: var(--color-chart-cool-3);
 }
 
 .component-spec-badge.is-molecula .badge-type {
-  background: #00B167;
+  background: var(--color-chart-categorical-3);
 }
 
 .component-spec-badge.is-organismo .badge-type {
-  background: var(--inter-orange, #EA7100);
+  background: var(--inter-orange, var(--color-background-brand-default));
 }
 
 .component-spec-badge .badge-name {
   font-family: var(--font-mono, monospace);
   font-weight: 700;
-  color: var(--theme-text, #161616);
+  color: var(--theme-text, var(--color-background-static-black));
 }
 
 .component-spec-badge .badge-title {
-  color: var(--theme-text-muted, #707070);
+  color: var(--theme-text-muted, var(--color-link-static-black-pressed));
 }
 
 /* Integração de autoria e controles nativos — preserva tokens do pacote original. */
@@ -755,7 +756,7 @@ main .section > div { min-width: 0; }
 .segment-showcase .metallic-card { display: flex; flex-direction: column; justify-content: space-between; padding: 24px; min-height: 180px; }
 .form .form-status { display: block; margin-top: 16px; }
 .form .form-status:empty { display: none; }
-.form textarea, .form select { width: 100%; padding: 12px; border: 1px solid var(--theme-border, #ccc); border-radius: 12px; font: inherit; background: var(--theme-surface, white); color: var(--theme-text, #161616); }
+.form textarea, .form select { width: 100%; padding: 12px; border: 1px solid var(--theme-border, var(--color-chart-sequential-silver-1)); border-radius: 12px; font: inherit; background: var(--theme-surface, white); color: var(--theme-text, var(--color-background-static-black)); }
 .form .checkbox-label { grid-column: 1 / -1; display: flex; align-items: flex-start; gap: 12px; }
 .form .checkbox-label input { width: auto; }
 .form button[type=submit] { margin-top: 24px; }
@@ -778,7 +779,7 @@ main .section > div { min-width: 0; }
 .footer .footer-top { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); }
 @media (max-width: 1024px) {
  .header .main-nav { display: none; }
- .header.menu-open .main-nav { display: flex; flex-direction: column; align-items: stretch; position: absolute; top: 100%; left: 0; right: 0; padding: 24px; background: var(--theme-surface,#fff); }
+ .header.menu-open .main-nav { display: flex; flex-direction: column; align-items: stretch; position: absolute; top: 100%; left: 0; right: 0; padding: 24px; background: var(--theme-surface,var(--color-background-neutral-default)); }
  .header .mobile-toggle { display: block; }
  .header .login-btn, .header .country-selector { display: none; }
  .header .header-inner { gap: 12px; }
@@ -809,7 +810,7 @@ main > .section:is(.banner-container,.breadcrumb-container,.search-bar-container
  .pagination .toranja-pagination { gap: 4px; flex-wrap: wrap; }
  .pagination .pagination-btn { min-width: 32px; padding-inline: 8px; }
 }
-.pagination .page-link[aria-current="page"] { background: var(--inter-orange); color: white; }
+.pagination .page-link[aria-current="page"] { background: var(--inter-orange); color: var(--color-surface-static-white-default); }
 .pagination .page-link[aria-disabled="true"] { opacity: .4; cursor: default; }
 @media(max-width:600px) {
  .pagination .pagination-list { gap: 4px; flex-wrap: wrap; justify-content: center; }
@@ -823,5 +824,27 @@ main .section, main .block { scroll-margin-top: calc(var(--header-height) + 24px
 
 /* Catálogo de autoria do Design System */
 .ds-catalog-links { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; list-style:none; padding:0; }
-.ds-catalog-links a { display:block; border:1px solid #e8e3dc; border-radius:12px; padding:12px; background:white; }
-.ds-catalog-links a:hover { border-color:#ea7100; }
+.ds-catalog-links a { display:block; border:1px solid var(--color-surface-neutral-default); border-radius:12px; padding:12px; background: var(--color-surface-static-white-default); }
+.ds-catalog-links a:hover { border-color:var(--color-background-brand-default); }
+
+/* Composições EDS usam aliases semânticos; a fonte dos valores é o pacote oficial. */
+:root[toranja-theme] {
+ --inter-orange:var(--color-background-brand-default); --inter-orange-hover:var(--color-background-brand-strong); --inter-orange-light:var(--color-background-brand-soft); --inter-orange-clay:var(--color-background-brand-strong); --inter-orange-earth:var(--color-background-brand-stronger);
+ --inter-sand:var(--color-background-brand-softer); --inter-sand-light:var(--color-background-neutral-default); --inter-sand-dark:var(--color-surface-brand-soft);
+ --inter-white:var(--color-background-static-white); --inter-black:var(--color-background-static-black); --inter-graphite:var(--color-text-neutral-primary); --inter-gray:var(--color-border-neutral-default); --inter-gray-light:var(--color-surface-neutral-softer); --inter-gray-dark:var(--color-text-neutral-secondary);
+ --theme-bg:var(--color-background-neutral-default); --theme-surface:var(--color-surface-neutral-softest); --theme-surface-subtle:var(--color-surface-neutral-softer); --theme-text:var(--color-text-neutral-primary); --theme-text-muted:var(--color-text-neutral-secondary); --theme-border:var(--color-border-neutral-default); --theme-accent:var(--color-background-brand-default); --theme-accent-hover:var(--color-background-brand-strong);
+ --seg-digital:var(--color-background-segment-pf-digital); --seg-one:var(--color-background-segment-pf-one); --seg-prime:var(--color-background-segment-pf-prime); --seg-win:var(--color-background-segment-pf-win-primary); --seg-win-gold:var(--color-background-segment-pf-win-secondary);
+ --font-body:var(--type-font-default),sans-serif; --font-heading:var(--type-font-brand),sans-serif; --font-display:var(--type-font-brand),sans-serif; --font-display-text:var(--type-font-default),sans-serif; --font-mono:var(--type-font-code),monospace;
+ --radius-sm:var(--radius-small); --radius-md:var(--radius-medium); --radius-lg:var(--radius-large); --radius-xl:var(--radius-large);
+ --shadow-sm:var(--elevation-surface-raised); --shadow-md:var(--elevation-surface-raised); --shadow-lg:var(--elevation-surface-raised); --shadow-glow:var(--elevation-surface-raised);
+}
+:focus-visible { outline:2px solid var(--color-border-brand-default);outline-offset:3px; }
+.form-error,.video-error { color:var(--color-text-feedback-error); }
+.form-group { min-width:0; }
+.form-group fieldset { border:0;padding:0; }
+.form-group input,.form-group textarea { max-width:100%; }
+.video-poster-wrapper picture { position:absolute;inset:0;width:100%;height:100%; }
+.video-poster-wrapper img { width:100%;height:100%;object-fit:cover; }
+.toranja-play-btn { z-index:1; }
+.video-iframe { object-fit:contain; }
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important;}}

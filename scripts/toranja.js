@@ -1,6 +1,7 @@
 /** Utilitários EDS: preservam os nós autorados e seus atributos do Universal Editor. */
 import { resolveLink } from "./links.js";
 import { cells, containers } from "./contracts.js";
+import {cells as legacyCells,containers as legacyContainers} from "./legacy-contracts.js";
 let sequence = 0;
 export const uid = (prefix = "toranja") => `${prefix}-${++sequence}`;
 export const editing = () =>
@@ -38,15 +39,19 @@ export function read(
       );
   });
   const rows = [...block.children];
+  const first=rows[0]?.firstElementChild;
+  const v3=first?.textContent.trim()==='toranja-v3'||first?.getAttribute('data-aue-prop')==='schemaVersion';
+  const cellMap=v3||!legacyCells[name]?cells:legacyCells;
+  const containerMap=v3||!legacyCells[name]?containers:legacyContainers;
   const fields = Object.fromEntries(
-    (cells[name] || []).map((key, i) => [
+    (cellMap[name] || []).map((key, i) => [
       key,
       rows[i]?.firstElementChild || rows[i] || el("div"),
     ]),
   );
-  const itemNames = cells[containers[name]] || [];
+  const itemNames = cellMap[containerMap[name]] || [];
   const items = rows
-    .slice((cells[name] || []).length)
+    .slice((cellMap[name] || []).length)
     .map((row) => ({
       row,
       ...Object.fromEntries(

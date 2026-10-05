@@ -113,8 +113,8 @@
 }
 
 .metallic-card.card-digital {
-  background: linear-gradient(135deg, #EA7100 0%, #D66300 60%, #943D15 100%);
-  color: #FFFFFF;
+  background: linear-gradient(135deg, var(--color-background-brand-default) 0%, var(--color-background-brand-default) 60%, var(--color-background-brand-strong) 100%);
+  color: var(--color-background-neutral-default);
 }
 
 .card-top {
@@ -127,8 +127,8 @@
   width: 44px;
   height: 32px;
   border-radius: 6px;
-  background: linear-gradient(135deg, #FFE29F 0%, #FFAE34 100%);
-  box-shadow: inset 0 1px 2px rgba(255,255,255,0.4);
+  background: linear-gradient(135deg, var(--color-background-brand-soft) 0%, var(--color-surface-feedback-warning-default) 100%);
+  box-shadow: inset 0 1px 2px color-mix(in srgb, var(--color-background-neutral-default) 40.0%, transparent);
 }
 
 .card-brand-tag {

@@ -33,6 +33,12 @@ for (const [label, arr] of [
     ids.add(e.id);
   }
 }
+// Marcador explícito evita interpretar HTML publicado da V2 com a ordem da V3.
+for(const d of definitions){if(d.plugins?.xwalk?.page?.resourceType==='core/franklin/components/block/v1/block'){
+ const id=d.plugins.xwalk.page.template.model;const model=models.find(m=>m.id===id);
+ if(model&&!model.fields.some(f=>f.name==='schemaVersion'))model.fields.unshift({component:'text',name:'schemaVersion',label:'Versão do conteúdo',valueType:'string',value:'toranja-v3',hidden:true});
+ d.plugins.xwalk.page.template.schemaVersion='toranja-v3';
+}}
 const groups = [
   {
     id: "default",
@@ -95,3 +101,6 @@ fs.writeFileSync(
 console.log(
   `${definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")).length} componentes oficiais; ${models.length} modelos.`,
 );
+
+const site=JSON.parse(fs.readFileSync('content/aem-config.json'));
+fs.writeFileSync('scripts/site-config.js',`export const siteConfig = ${JSON.stringify({contentRoot:site.siteRoot,searchIndex:'/query-index.json',searchExclude:['/nav','/header','/footer','/demo-toranja','/showcase','/qa']})};\n`);

@@ -11,7 +11,7 @@
 }
 
 .accordion-item {
-  background: var(--theme-surface, #FFFFFF);
+  background: var(--theme-surface, var(--color-background-neutral-default));
   border: 1px solid var(--theme-border, var(--inter-gray));
   border-radius: var(--radius-md);
   overflow: hidden;
