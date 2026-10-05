@@ -1,0 +1,85 @@
+const n = {
+  Disabled: "Icon/Disabled",
+  Neutral: {
+    Primary: "Icon/Neutral/Primary",
+    Secondary: "Icon/Neutral/Secondary",
+    Inverse: "Icon/Neutral/Inverse"
+  },
+  Static: {
+    Black: "Icon/Static/Black",
+    Orange: "Icon/Static/Orange",
+    White: {
+      Default: "Icon/Static/White/Default",
+      Soft: "Icon/Static/White/Soft"
+    }
+  },
+  Brand: {
+    Default: "Icon/Brand/Default",
+    Strong: "Icon/Brand/Strong",
+    Stronger: "Icon/Brand/Stronger"
+  },
+  Feedback: {
+    Success: {
+      Default: "Icon/Feedback/Success/Default"
+    },
+    Error: {
+      Default: "Icon/Feedback/Error/Default"
+    },
+    Warning: {
+      Default: "Icon/Feedback/Warning/Default",
+      Strong: "Icon/Feedback/Warning/Strong"
+    },
+    Information: {
+      Default: "Icon/Feedback/Information/Default"
+    }
+  },
+  Accent: {
+    Red: {
+      Default: "Icon/Accent/Red/Default",
+      Strong: "Icon/Accent/Red/Strong"
+    },
+    Brown: {
+      Default: "Icon/Accent/Brown/Default",
+      Strong: "Icon/Accent/Brown/Strong"
+    },
+    Orange: {
+      Default: "Icon/Accent/Orange/Default",
+      Strong: "Icon/Accent/Orange/Strong"
+    },
+    Gold: {
+      Default: "Icon/Accent/Gold/Default",
+      Strong: "Icon/Accent/Gold/Strong"
+    },
+    Yellow: {
+      Default: "Icon/Accent/Yellow/Default",
+      Strong: "Icon/Accent/Yellow/Strong"
+    },
+    Green: {
+      Default: "Icon/Accent/Green/Default",
+      Strong: "Icon/Accent/Green/Strong"
+    },
+    Mint: {
+      Default: "Icon/Accent/Mint/Default",
+      Strong: "Icon/Accent/Mint/Strong"
+    },
+    Cyan: {
+      Default: "Icon/Accent/Cyan/Default",
+      Strong: "Icon/Accent/Cyan/Strong"
+    },
+    Blue: {
+      Default: "Icon/Accent/Blue/Default",
+      Strong: "Icon/Accent/Blue/Strong"
+    },
+    Purple: {
+      Default: "Icon/Accent/Purple/Default",
+      Strong: "Icon/Accent/Purple/Strong"
+    },
+    Pink: {
+      Default: "Icon/Accent/Pink/Default",
+      Strong: "Icon/Accent/Pink/Strong"
+    }
+  }
+};
+export {
+  n as IconColors
+};

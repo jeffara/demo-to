@@ -1,0 +1,23 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticNegociacaoDeDividas = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "M6 16H2V7h4l2.474-.825a2 2 0 0 1 1.067-.055l1.709.38M14 10l3.743 5.615a2 2 0 0 1-.77 2.898l-2.737 1.369A2.996 2.996 0 0 1 10.5 19M6 7v9"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "m15 9-1.906 1.906a1.887 1.887 0 0 1-2.808-2.513l1.5-1.877a2.618 2.618 0 0 1 3.017-.795L18 7h4v8.5h-4M10.147 19.315 12 19.5a3.776 3.776 0 0 0-.273-3.838l-.582-.841c-1.19-1.72-3.788-1.535-4.723.336L6 16a4.883 4.883 0 0 0 4.147 3.315ZM18 7v9"
+}));
+export default ComponenticNegociacaoDeDividas;

@@ -1,0 +1,20 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticTicket = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 72 72",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: "#EA7100",
+  d: "M47.978 33.133a.433.433 0 0 0-.346-.306l-7.772-1.186-3.476-7.39a.423.423 0 0 0-.383-.251.43.43 0 0 0-.386.251l-3.476 7.392-7.772 1.184a.435.435 0 0 0-.346.306.466.466 0 0 0 .109.463l5.624 5.752-1.328 8.126a.462.462 0 0 0 .17.44.408.408 0 0 0 .453.033L36 44.112l6.951 3.835a.414.414 0 0 0 .451-.033.464.464 0 0 0 .172-.44l-1.328-8.123 5.624-5.755c.117-.12.16-.3.107-.462Z"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 5,
+  d: "M60 12H12a6 6 0 0 0-6 6v9a9 9 0 1 1 0 18v9a6 6 0 0 0 6 6h48a6 6 0 0 0 6-6v-9a9 9 0 1 1 0-18v-9a6 6 0 0 0-6-6Z"
+}));
+export default ComponenticTicket;

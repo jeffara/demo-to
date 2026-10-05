@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const r=require("react"),s=({timer:e,itemCount:t,isDragging:l,setCurrentIndex:u})=>{r.useEffect(()=>{if(!e||e<1||l)return;const a=setInterval(()=>{u(o=>(o+1)%t)},e*1e3);return()=>{clearInterval(a)}},[e,t,l,u])};exports.useCarouselAutoplay=s;

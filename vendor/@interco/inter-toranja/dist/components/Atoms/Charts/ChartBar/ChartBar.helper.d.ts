@@ -1,0 +1,30 @@
+import { BuildBarRectsParams, ChartBarAxisLabel, ChartBarHighlight, ChartBarRect, ChartBarTooltipItem } from './types';
+import { LegendItem } from '../Legend/types';
+import { ChartPalette, ValueBuilder } from '../shared/types';
+export { buildAutoLabelIndices, CHART_HORIZONTAL_PADDING, CHART_VERTICAL_PADDING, clampTooltipAnchor, DEFAULT_LARGE_CHART_HEIGHT, DEFAULT_SMALL_CHART_HEIGHT, filterLabelsByInterval, isPointerInsideRect, MAX_AXIS_LABELS, resolveGridX, resolveGridY, } from '../shared/chart.helper';
+export declare const resolveCategoryLabelLeft: (position: number, padding?: number) => string;
+export declare const VALUE_TICK_COUNT = 4;
+export declare const BAR_SLOT_INSET_RATIO: number;
+export declare const BRAND_BAR_COLOR = "var(--color-chart-brand-default)";
+export declare const resolveValueTickDecimals: (min: number, max: number) => number;
+export declare const buildValueTickValues: (min: number, max: number, tickCount?: number) => number[];
+export declare const buildBarAnimationKey: (testId: string, value: number) => string;
+export declare const syncChartBarSeries: (categories: string[], values: number[]) => {
+    categories: string[];
+    values: number[];
+};
+export declare const getValueDomain: (values: number[], threshold?: number) => {
+    min: number;
+    max: number;
+    shouldShowThreshold: boolean;
+};
+export declare const buildCategoryAxisLabels: (labels: string[], interval?: number) => ChartBarAxisLabel[];
+export declare const buildValueTickLabels: (min: number, max: number, customLabels?: string[], labelInterval?: number, valueBuilder?: ValueBuilder, isSensitiveText?: boolean) => ChartBarAxisLabel[];
+export declare const scaleValueAxis: (value: number, min: number, max: number, size: number, padding: number, isVertical: boolean) => number;
+export declare const resolveBarColor: (index: number, forceColor?: string[], palette?: ChartPalette) => string;
+export declare const buildBarRects: ({ categories, values, width, height, domain, orientation, forceColor, palette, }: BuildBarRectsParams) => ChartBarRect[];
+export declare const buildLegendItems: (categories: string[], values: number[], forceColor?: string[], palette?: ChartPalette, valueBuilder?: ValueBuilder, isSensitiveText?: boolean) => LegendItem[];
+export declare const buildHighlight: (categoryIndex: number, categories: string[], values: number[], valueBuilder?: ValueBuilder, isSensitiveText?: boolean) => ChartBarHighlight | null;
+export declare const buildTooltipItems: (highlight: ChartBarHighlight) => ChartBarTooltipItem[];
+export declare const buildHighlightAnnouncement: (highlight: ChartBarHighlight) => string;
+export declare const resolveCategoryIndexFromClientPosition: (clientPosition: number, rectStart: number, size: number, categoriesLength: number, padding: number) => number | null;

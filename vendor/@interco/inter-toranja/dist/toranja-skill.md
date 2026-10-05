@@ -1,0 +1,1093 @@
+---
+name: toranja-variaveis-componentes
+description: Lista de componentes e tokens CSS exportados pelo @interco/inter-toranja. Gera referência para o Cursor AI.
+---
+
+# Toranja – Variáveis e Componentes
+
+## Como usar
+- Import geral: `@import '@interco/inter-toranja/dist/assets/toranja.css';`
+- Temas: atributo `toranja-theme` na tag `<html>` com valores `pf-light | pf-dark | pj-light | pj-dark`
+
+## Componentes
+
+Para implementar um componente específico, leia o skill individual antes de escrever o código.
+
+- [Accordion](components/accordion.md) — AccordionProps
+- [Alert](components/alert.md) — AlertProps
+- [Avatar](components/avatar.md) — AvatarProps
+- [Badge](components/badge.md) — BadgeProps
+- [Banner](components/banner.md) — BannerContentProps, BannerProps
+- [BottomSheet](components/bottom-sheet.md) — BottomSheetProps
+- [Button](components/button.md) — IconChipProps, NeutralIconButtonProps
+- [Card](components/card.md) — CardProps
+- [Carousel](components/carousel.md) — CarouselProps
+- [Checkbox](components/checkbox.md) — CheckboxProps
+- [Chip](components/chip.md) — ChipProps
+- [Counter](components/counter.md) — CounterProps
+- [CrossSelling](components/cross-selling.md) — CrossSellingProps
+- [Flag](components/flag.md) — FlagProps
+- [Header](components/header.md) — HeaderIconSlot, HeaderProps
+- [Hints](components/hints.md) — HintsProps
+- [Icon](components/icon.md) — IconName, IconProps
+- [Image](components/image.md) — ImageProps
+- [InputDate](components/input-date.md) — InputDateProps
+- [InputMoney](components/input-money.md) — InputMoneyProps
+- [InputPassword](components/input-password.md) — InputPasswordProps
+- [InputSearch](components/input-search.md) — InputSearchProps
+- [Link](components/link.md) — LinkProps
+- [ListItem](components/list-item.md) — ListItemProps
+- [ListItemAction](components/list-item-action.md) — ListItemActionProps
+- [ListItemControl](components/list-item-control.md) — ListItemControlProps
+- [ListItemGeneral](components/list-item-general.md) — ListItemGeneralProps
+- [ListItemView](components/list-item-view.md) — ListItemViewProps
+- [MenuItem](components/menu-item.md) — MenuItemProps
+- [PageIndicator](components/page-indicator.md) — PageIndicatorProps
+- [PaymentMethods](components/payment-methods.md) — IconPaymentProps, PaymentMethodsProps
+- [PinCode](components/pin-code.md) — PinCodeInputState, PinCodeProps
+- [ProgressBar](components/progress-bar.md) — ProgressBarProps
+- [ProgressIndicator](components/progress-indicator.md) — SpinnerProps
+- [RadioButton](components/radio-button.md) — RadioButtonProps
+- [SectionSubtitle](components/section-subtitle.md) — SectionSubtitleProps
+- [SectionTitle](components/section-title.md) — SectionTitleProps
+- [SegmentedControl](components/segmented-control.md) — SegmentedControlProps
+- [Signal](components/signal.md) — SignalProps
+- [Snackbar](components/snackbar.md) — SnackbarProps
+- [Switch](components/switch.md) — SwitchProps
+- [Tabs](components/tabs.md) — TabsProps
+- [Tag](components/tag.md) — TagProps
+- [Text](components/text.md) — TextProps
+- [Textarea](components/textarea.md) — TextareaProps
+- [Timeline](components/timeline.md) — TimelineProps
+- [Widget](components/widget.md) — WidgetProps
+
+## Componentes exportados
+Accordion, Alert, Avatar, Badge, Banner, BottomSheet, BottomSheetCountry, Button, Card, Carousel, ChartBar, ChartDonut, ChartLine, ChartMeter, Checkbox, Chip, Counter, CrossSelling, DatePicker, DecoratedText, Divider, FeedbackScreen, Flag, FloatingActionButton, Header, Icon, ICON_NAMES, IconButton, IconChip, Image, InputCountry, InputDate, InputMoney, InputPassword, InputSearch, InputText, isIconName, Link, ListItem, ListItemAction, ListItemControl, ListItemGeneral, ListItemView, MenuItem, NeutralIconButton, PageIndicator, PaymentMethods, PinCode, ProgressBar, ProgressCircle, Radio, SectionSubtitle, SectionTitle, SegmentedControl, Select, Signal, Snackbar, Spinner, Stepper, Switch, Tabs, Tag, Text, TextArea, Timeline, Widget
+
+## Tipos exportados
+AccordionProps, AlertConfig, AlertProps, AvatarProps, BadgeProps, BannerContentProps, BannerProps, BottomSheetCountryItem, BottomSheetCountryProps, BottomSheetProps, ButtonConfig, ButtonState, ButtonType, CalendarCellType, CardProps, CarouselProps, ChartColor, ChartLineHighlight, ChartLineHighlightPoint, ChartLineProps, ChartLineSeries, ChartLineSize, ChartLineState, ChartLineYAxisPosition, ChartMeterProps, ChartMeterState, ChartPalette, CheckboxProps, ChipProps, ContentItemConfig, CounterProps, CrossSellingProps, DatePickerProps, DatePickerSelectionMode, DateRange, DecoratedTextProps, FeedbackScreenProps, FlagProps, FloatingActionButtonBehavior, FloatingActionButtonHierarchy, FloatingActionButtonProps, FloatingActionButtonSize, FloatingActionButtonState, FloatingActionButtonVariant, HeaderIconSlot, HeaderProps, HintsProps, IconButtonProps, IconChipProps, IconName, IconPaymentProps, IconProps, ImageProps, InputCountryOption, InputCountryProps, InputCountryState, InputDateProps, InputModeType, InputMoneyProps, InputPasswordProps, InputProps, InputPropsBase, InputSearchProps, InputState, LinkColor, LinkProps, LinkSize, LinkTriggers, ListItemActionProps, ListItemControlProps, ListItemGeneralProps, ListItemProps, ListItemViewProps, MenuItemProps, NeutralIconButtonProps, NonDestructiveStyleType, PageIndicatorProps, PaymentMethodsProps, PinCodeInputState, PinCodeProps, ProgressBarProps, RadioButtonProps, RegularButtonProps, SectionSubtitleProps, SectionTitleProps, SegmentedControlProps, SignalProps, SnackbarProps, SpinnerProps, SwitchProps, TabsProps, TagProps, TextareaProps, TextColorToken, TextProps, TimelineProps, TypographyToken, ValueBuilder, WidgetProps
+
+## Tokens globais
+- --border-width-medium: 2px
+- --border-width-small: 1px
+- --color-base-black-default: #000000
+- --color-base-black-soft: #000000a3
+- --color-base-white-default: #ffffff
+- --color-base-white-soft: #ffffff66
+- --color-base-white-softer: #ffffff3d
+- --color-base-white-softest: #ffffff29
+- --color-dark-blue-100: #102c62
+- --color-dark-blue-200: #113171
+- --color-dark-blue-300: #1546a6
+- --color-dark-blue-400: #245dd0
+- --color-dark-blue-50: #0b162b
+- --color-dark-blue-500: #4e7fe1
+- --color-dark-blue-600: #749def
+- --color-dark-blue-700: #99b9f8
+- --color-dark-blue-75: #102040
+- --color-dark-blue-800: #bfd4fb
+- --color-dark-blue-900: #eaf0fe
+- --color-dark-brown-100: #432815
+- --color-dark-brown-200: #4e2d16
+- --color-dark-brown-300: #733f1a
+- --color-dark-brown-400: #975222
+- --color-dark-brown-50: #20140b
+- --color-dark-brown-500: #c06d32
+- --color-dark-brown-600: #d68d5b
+- --color-dark-brown-700: #eaac80
+- --color-dark-brown-75: #2f1d10
+- --color-dark-brown-800: #f5cbae
+- --color-dark-brown-900: #fbede4
+- --color-dark-ceramic-100: #2f2e2a
+- --color-dark-ceramic-200: #363530
+- --color-dark-ceramic-300: #4e4c45
+- --color-dark-ceramic-400: #66645b
+- --color-dark-ceramic-50: #171715
+- --color-dark-ceramic-500: #858276
+- --color-dark-ceramic-600: #a29f90
+- --color-dark-ceramic-700: #bdb9a8
+- --color-dark-ceramic-75: #22211e
+- --color-dark-ceramic-800: #d8d4c0
+- --color-dark-ceramic-900: #f2f0ea
+- --color-dark-cyan-100: #0d3244
+- --color-dark-cyan-200: #0d394e
+- --color-dark-cyan-300: #0d5271
+- --color-dark-cyan-400: #0d6b96
+- --color-dark-cyan-50: #071921
+- --color-dark-cyan-500: #108ac3
+- --color-dark-cyan-600: #13a8ec
+- --color-dark-cyan-700: #66ccfb
+- --color-dark-cyan-75: #0a2431
+- --color-dark-cyan-800: #97dcfc
+- --color-dark-cyan-900: #dcf3fe
+- --color-dark-gold-100: #392d0e
+- --color-dark-gold-200: #40330f
+- --color-dark-gold-300: #60490f
+- --color-dark-gold-400: #7f5f10
+- --color-dark-gold-50: #1c1607
+- --color-dark-gold-500: #a57b10
+- --color-dark-gold-600: #c89614
+- --color-dark-gold-700: #e9b020
+- --color-dark-gold-75: #29200a
+- --color-dark-gold-800: #f6ce6b
+- --color-dark-gold-900: #fdefcd
+- --color-dark-graphite-100: #342d2b
+- --color-dark-graphite-200: #3c3331
+- --color-dark-graphite-300: #524b49
+- --color-dark-graphite-400: #696361
+- --color-dark-graphite-50: #1a1615
+- --color-dark-graphite-500: #86817f
+- --color-dark-graphite-600: #a29d9c
+- --color-dark-graphite-700: #bcb8b8
+- --color-dark-graphite-75: #26201f
+- --color-dark-graphite-800: #d4d2d2
+- --color-dark-graphite-900: #f0f0f0
+- --color-dark-gray-100: #2e2e2e
+- --color-dark-gray-200: #353535
+- --color-dark-gray-300: #4c4c4c
+- --color-dark-gray-400: #616161
+- --color-dark-gray-50: #161616
+- --color-dark-gray-500: #828282
+- --color-dark-gray-600: #9e9e9e
+- --color-dark-gray-700: #b9b9b9
+- --color-dark-gray-75: #212121
+- --color-dark-gray-800: #d3d3d3
+- --color-dark-gray-900: #f0f0f0
+- --color-dark-green-100: #253311
+- --color-dark-green-200: #293a13
+- --color-dark-green-300: #395414
+- --color-dark-green-400: #496e16
+- --color-dark-green-50: #121908
+- --color-dark-green-500: #5e8f1a
+- --color-dark-green-600: #74ae21
+- --color-dark-green-700: #94c94a
+- --color-dark-green-75: #1a240c
+- --color-dark-green-800: #b3e272
+- --color-dark-green-900: #e2f8c2
+- --color-dark-mint-100: #183428
+- --color-dark-mint-200: #193b2d
+- --color-dark-mint-300: #1c563e
+- --color-dark-mint-400: #1f7150
+- --color-dark-mint-50: #0b1914
+- --color-dark-mint-500: #279367
+- --color-dark-mint-600: #2fb27d
+- --color-dark-mint-700: #57cd9d
+- --color-dark-mint-75: #11251d
+- --color-dark-mint-800: #80e7bd
+- --color-dark-mint-900: #d6f7ea
+- --color-dark-orange-100: #472616
+- --color-dark-orange-200: #532a16
+- --color-dark-orange-300: #7d3818
+- --color-dark-orange-400: #a24b16
+- --color-dark-orange-50: #21130d
+- --color-dark-orange-500: #de710c
+- --color-dark-orange-600: #e6862d
+- --color-dark-orange-700: #f3a964
+- --color-dark-orange-75: #301c12
+- --color-dark-orange-800: #ffca96
+- --color-dark-orange-900: #fdeedb
+- --color-dark-pink-100: #541442
+- --color-dark-pink-200: #60144c
+- --color-dark-pink-300: #8c176c
+- --color-dark-pink-400: #b71c8d
+- --color-dark-pink-50: #270c1f
+- --color-dark-pink-500: #d54bb0
+- --color-dark-pink-600: #e478c7
+- --color-dark-pink-700: #f19fda
+- --color-dark-pink-75: #3a122f
+- --color-dark-pink-800: #f8b6e6
+- --color-dark-pink-900: #fdebf8
+- --color-dark-purple-100: #3d0f7c
+- --color-dark-purple-200: #450f8d
+- --color-dark-purple-300: #6016c9
+- --color-dark-purple-400: #7e3cdb
+- --color-dark-purple-50: #1e0d35
+- --color-dark-purple-500: #9c65e8
+- --color-dark-purple-600: #b589f3
+- --color-dark-purple-700: #ccaafb
+- --color-dark-purple-75: #2d0f56
+- --color-dark-purple-800: #e0cafc
+- --color-dark-purple-900: #f4edfe
+- --color-dark-red-100: #521e1c
+- --color-dark-red-200: #5f201d
+- --color-dark-red-300: #8d2722
+- --color-dark-red-400: #ba3029
+- --color-dark-red-50: #231211
+- --color-dark-red-500: #d95851
+- --color-dark-red-600: #e3837f
+- --color-dark-red-700: #eba8a5
+- --color-dark-red-75: #351a19
+- --color-dark-red-800: #f3c9c7
+- --color-dark-red-900: #fbedec
+- --color-dark-silver-100: #282e3c
+- --color-dark-silver-200: #2e3445
+- --color-dark-silver-300: #474c5b
+- --color-dark-silver-400: #5f6471
+- --color-dark-silver-50: #15171f
+- --color-dark-silver-500: #7e828c
+- --color-dark-silver-600: #9b9ea6
+- --color-dark-silver-700: #b7b9bf
+- --color-dark-silver-75: #1d212b
+- --color-dark-silver-800: #d2d3d7
+- --color-dark-silver-900: #f0f0f1
+- --color-dark-yellow-100: #342f09
+- --color-dark-yellow-200: #3b350a
+- --color-dark-yellow-300: #554d0a
+- --color-dark-yellow-400: #6f6509
+- --color-dark-yellow-50: #1a1704
+- --color-dark-yellow-500: #8f8408
+- --color-dark-yellow-600: #b6af31
+- --color-dark-yellow-700: #ccc64c
+- --color-dark-yellow-75: #262206
+- --color-dark-yellow-800: #fbff71
+- --color-dark-yellow-900: #f2f2d3
+- --color-light-blue-100: #d9e5fd
+- --color-light-blue-200: #b2cbfa
+- --color-light-blue-300: #83aaf6
+- --color-light-blue-400: #5a8beb
+- --color-light-blue-50: #f1f6fe
+- --color-light-blue-500: #2e69e0
+- --color-light-blue-600: #0e50d6
+- --color-light-blue-700: #0a3da1
+- --color-light-blue-75: #e6eefe
+- --color-light-blue-800: #082d79
+- --color-light-blue-900: #041841
+- --color-light-brown-100: #f9e0ce
+- --color-light-brown-200: #f3c09c
+- --color-light-brown-300: #e49965
+- --color-light-brown-400: #d37430
+- --color-light-brown-50: #fdf5f0
+- --color-light-brown-500: #b25616
+- --color-light-brown-600: #924712
+- --color-light-brown-700: #72370e
+- --color-light-brown-75: #fbebdf
+- --color-light-brown-800: #52270a
+- --color-light-brown-900: #2c1505
+- --color-light-ceramic-100: #e7e5d8
+- --color-light-ceramic-200: #d8d4c0
+- --color-light-ceramic-300: #aeaa9a
+- --color-light-ceramic-400: #908d80
+- --color-light-ceramic-50: #f6f5f1
+- --color-light-ceramic-500: #737066
+- --color-light-ceramic-600: #5e5c54
+- --color-light-ceramic-700: #47453f
+- --color-light-ceramic-75: #efede5
+- --color-light-ceramic-800: #34332f
+- --color-light-ceramic-900: #1c1b18
+- --color-light-cyan-100: #bfeafe
+- --color-light-cyan-200: #66ccfb
+- --color-light-cyan-300: #20b5fa
+- --color-light-cyan-400: #0695d8
+- --color-light-cyan-50: #eaf8ff
+- --color-light-cyan-500: #0577ab
+- --color-light-cyan-600: #04628d
+- --color-light-cyan-700: #03496a
+- --color-light-cyan-75: #d7f2fe
+- --color-light-cyan-800: #02374f
+- --color-light-cyan-900: #011d2a
+- --color-light-gold-100: #fbe19f
+- --color-light-gold-200: #f7c342
+- --color-light-gold-300: #dc9f0a
+- --color-light-gold-400: #b68408
+- --color-light-gold-50: #fef6e2
+- --color-light-gold-500: #906906
+- --color-light-gold-600: #765705
+- --color-light-gold-700: #594104
+- --color-light-gold-75: #fcedc3
+- --color-light-gold-800: #423003
+- --color-light-gold-900: #231a01
+- --color-light-graphite-100: #e6e4e4
+- --color-light-graphite-200: #cbc9c8
+- --color-light-graphite-300: #aca9a8
+- --color-light-graphite-400: #918c8b
+- --color-light-graphite-50: #f6f6f5
+- --color-light-graphite-500: #756e6d
+- --color-light-graphite-600: #625a59
+- --color-light-graphite-700: #4c4342
+- --color-light-graphite-75: #efeeee
+- --color-light-graphite-800: #3c3331
+- --color-light-graphite-900: #1e1a19
+- --color-light-gray-100: #e3e3e3
+- --color-light-gray-200: #cacaca
+- --color-light-gray-300: #aaaaaa
+- --color-light-gray-400: #8d8d8d
+- --color-light-gray-50: #f5f5f5
+- --color-light-gray-500: #707070
+- --color-light-gray-600: #616161
+- --color-light-gray-700: #454545
+- --color-light-gray-75: #ebebeb
+- --color-light-gray-800: #333333
+- --color-light-gray-900: #161616
+- --color-light-green-100: #c7f18b
+- --color-light-green-200: #a5da5a
+- --color-light-green-300: #79bc1b
+- --color-light-green-400: #639c11
+- --color-light-green-50: #edfbd9
+- --color-light-green-500: #4e7c0e
+- --color-light-green-600: #41660b
+- --color-light-green-700: #304d08
+- --color-light-green-75: #ddf7b8
+- --color-light-green-800: #243906
+- --color-light-green-900: #131e03
+- --color-light-mint-100: #b5f1d9
+- --color-light-mint-200: #80e7bd
+- --color-light-mint-300: #24c181
+- --color-light-mint-400: #1ea16b
+- --color-light-mint-50: #e6fbf2
+- --color-light-mint-500: #188055
+- --color-light-mint-600: #146946
+- --color-light-mint-700: #0f4f35
+- --color-light-mint-75: #d0f6e7
+- --color-light-mint-800: #0b3a27
+- --color-light-mint-900: #061f15
+- --color-light-orange-100: #fedfbf
+- --color-light-orange-200: #ffca96
+- --color-light-orange-300: #f29339
+- --color-light-orange-400: #ea7100
+- --color-light-orange-50: #fdf8ee
+- --color-light-orange-500: #b7520c
+- --color-light-orange-600: #943d15
+- --color-light-orange-700: #753011
+- --color-light-orange-75: #feead4
+- --color-light-orange-800: #57240c
+- --color-light-orange-900: #2f1307
+- --color-light-pink-100: #fbdbf3
+- --color-light-pink-200: #f8b6e6
+- --color-light-pink-300: #ed88d1
+- --color-light-pink-400: #e158bc
+- --color-light-pink-50: #fef3fb
+- --color-light-pink-500: #cf149d
+- --color-light-pink-600: #ab1181
+- --color-light-pink-700: #820d62
+- --color-light-pink-75: #fde7f7
+- --color-light-pink-800: #620a4a
+- --color-light-pink-900: #37052a
+- --color-light-purple-100: #ebdefd
+- --color-light-purple-200: #d8befc
+- --color-light-purple-300: #c097f9
+- --color-light-purple-400: #a772f0
+- --color-light-purple-50: #f8f3fe
+- --color-light-purple-500: #8c49e8
+- --color-light-purple-600: #7528e0
+- --color-light-purple-700: #5609bf
+- --color-light-purple-75: #f3ebfe
+- --color-light-purple-800: #400791
+- --color-light-purple-900: #250452
+- --color-light-red-100: #f7dfdd
+- --color-light-red-200: #f0bdba
+- --color-light-red-300: #e79490
+- --color-light-red-400: #dd6a64
+- --color-light-red-50: #fcf3f2
+- --color-light-red-500: #d0352d
+- --color-light-red-600: #ac2c25
+- --color-light-red-700: #82211c
+- --color-light-red-75: #faeae9
+- --color-light-red-800: #611915
+- --color-light-red-900: #350e0b
+- --color-light-silver-100: #e2e3e5
+- --color-light-silver-200: #c9cacf
+- --color-light-silver-300: #a8aab2
+- --color-light-silver-400: #898d96
+- --color-light-silver-50: #f5f6f6
+- --color-light-silver-500: #6c707c
+- --color-light-silver-600: #575c69
+- --color-light-silver-700: #3f4554
+- --color-light-silver-75: #eeeef0
+- --color-light-silver-800: #2e3445
+- --color-light-silver-900: #171b23
+- --color-light-yellow-100: #fbff71
+- --color-light-yellow-200: #e9e739
+- --color-light-yellow-300: #c9c11c
+- --color-light-yellow-400: #9b8f00
+- --color-light-yellow-50: #f8f8dd
+- --color-light-yellow-500: #7c7100
+- --color-light-yellow-600: #665d00
+- --color-light-yellow-700: #4c4600
+- --color-light-yellow-75: #f0efcb
+- --color-light-yellow-800: #383400
+- --color-light-yellow-900: #1e1b00
+- --opacity-focused: 8
+- --opacity-hovered: 4
+- --opacity-pressed: 8
+- --radius-full: 100px
+- --radius-large: 16px
+- --radius-medium: 12px
+- --radius-small: 4px
+- --size-128: 128px
+- --size-16: 16px
+- --size-20: 20px
+- --size-24: 24px
+- --size-32: 32px
+- --size-4: 4px
+- --size-40: 40px
+- --size-48: 48px
+- --size-56: 56px
+- --size-64: 64px
+- --size-72: 72px
+- --size-8: 8px
+- --size-80: 80px
+- --spacing-12: 12px
+- --spacing-16: 16px
+- --spacing-2: 2px
+- --spacing-24: 24px
+- --spacing-32: 32px
+- --spacing-4: 4px
+- --spacing-48: 48px
+- --spacing-72: 72px
+- --spacing-8: 8px
+- --spacing-96: 96px
+- --type-font-brand: Citrina VF
+- --type-font-code: Roboto Mono
+- --type-font-default: Inter
+- --type-letter-spacing-default: 0px
+- --type-letter-spacing-tight: -0.01px
+- --type-letter-spacing-tighter: -0.02px
+- --type-paragraph-spacing-default: 0px
+- --type-paragraph-spacing-small: 8px
+- --type-weight-light: Light
+- --type-weight-medium: Medium
+- --type-weight-regular: Regular
+- --type-weight-semi-bold: Semibold
+
+## Tokens por tema (PF/PJ + light/dark)
+```
+--border-width-medium: pf-light=2px | pf-dark=2px | pj-light=2px | pj-dark=2px
+--border-width-small: pf-light=1px | pf-dark=1px | pj-light=1px | pj-dark=1px
+--color-background-brand-default: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-background-brand-soft: pf-light=#ffca96 | pf-dark=#ffca96 | pj-light=#ffca96 | pj-dark=#ffca96
+--color-background-brand-softer: pf-light=#fdf8ee | pf-dark=#fdeedb | pj-light=#fdf8ee | pj-dark=#fdeedb
+--color-background-brand-strong: pf-light=#943d15 | pf-dark=#7d3818 | pj-light=#943d15 | pj-dark=#7d3818
+--color-background-brand-stronger: pf-light=#72370e | pf-dark=#733f1a | pj-light=#72370e | pj-dark=#733f1a
+--color-background-neutral-default: pf-light=#ffffff | pf-dark=#161616 | pj-light=#ffffff | pj-dark=#161616
+--color-background-neutral-strong: pf-light=#f6f6f5 | pf-dark=#000000 | pj-light=#f6f6f5 | pj-dark=#000000
+--color-background-overlay: pf-light=#000000a3 | pf-dark=#000000a3 | pj-light=#000000a3 | pj-dark=#000000a3
+--color-background-segment-pf-digital: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-background-segment-pf-one: pf-light=#616161 | pf-dark=#9e9e9e | pj-light=#616161 | pj-dark=#9e9e9e
+--color-background-segment-pf-prime: pf-light=#161616 | pf-dark=#353535 | pj-light=#161616 | pj-dark=#353535
+--color-background-segment-pf-win-primary: pf-light=#2e3445 | pf-dark=#2e3445 | pj-light=#2e3445 | pj-dark=#2e3445
+--color-background-segment-pf-win-secondary: pf-light=#d8d4c0 | pf-dark=#bdb9a8 | pj-light=#d8d4c0 | pj-dark=#bdb9a8
+--color-background-segment-pj-corporate: pf-light=#52270a | pf-dark=#733f1a | pj-light=#52270a | pj-dark=#733f1a
+--color-background-segment-pj-digital: pf-light=#72370e | pf-dark=#975222 | pj-light=#72370e | pj-dark=#975222
+--color-background-segment-pj-enterprise: pf-light=#e49965 | pf-dark=#eaac80 | pj-light=#e49965 | pj-dark=#eaac80
+--color-background-segment-pj-middle: pf-light=#52270a | pf-dark=#733f1a | pj-light=#52270a | pj-dark=#733f1a
+--color-background-segment-pj-pro: pf-light=#e49965 | pf-dark=#eaac80 | pj-light=#e49965 | pj-dark=#eaac80
+--color-background-segment-pj-win: pf-light=#2e3445 | pf-dark=#2e3445 | pj-light=#2e3445 | pj-dark=#2e3445
+--color-background-static-black: pf-light=#161616 | pf-dark=#161616 | pj-light=#161616 | pj-dark=#161616
+--color-background-static-white: pf-light=#ffffff | pf-dark=#ffffff | pj-light=#ffffff | pj-dark=#ffffff
+--color-base-black-default: pf-light=#000000 | pf-dark=#000000 | pj-light=#000000 | pj-dark=#000000
+--color-base-black-soft: pf-light=#000000a3 | pf-dark=#000000a3 | pj-light=#000000a3 | pj-dark=#000000a3
+--color-base-white-default: pf-light=#ffffff | pf-dark=#ffffff | pj-light=#ffffff | pj-dark=#ffffff
+--color-base-white-soft: pf-light=#ffffff66 | pf-dark=#ffffff66 | pj-light=#ffffff66 | pj-dark=#ffffff66
+--color-base-white-softer: pf-light=#ffffff3d | pf-dark=#ffffff3d | pj-light=#ffffff3d | pj-dark=#ffffff3d
+--color-base-white-softest: pf-light=#ffffff29 | pf-dark=#ffffff29 | pj-light=#ffffff29 | pj-dark=#ffffff29
+--color-border-brand-default: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#72370e | pj-dark=#975222
+--color-border-brand-inverse: pf-light=#ffca96 | pf-dark=#a24b16 | pj-light=#f3c09c | pj-dark=#975222
+--color-border-brand-strong: pf-light=#943d15 | pf-dark=#f3a964 | pj-light=#924712 | pj-dark=#eaac80
+--color-border-disabled: pf-light=#ebebeb | pf-dark=#2e2e2e | pj-light=#ebebeb | pj-dark=#2e2e2e
+--color-border-feedback-error: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-border-feedback-success: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-border-neutral-default: pf-light=#e6e4e4 | pf-dark=#353535 | pj-light=#e6e4e4 | pj-dark=#353535
+--color-border-neutral-inverse: pf-light=#ffffff | pf-dark=#161616 | pj-light=#ffffff | pj-dark=#161616
+--color-border-neutral-softer: pf-light=#f6f6f5 | pf-dark=#212121 | pj-light=#f6f6f5 | pj-dark=#212121
+--color-border-neutral-strong: pf-light=#cbc9c8 | pf-dark=#616161 | pj-light=#cbc9c8 | pj-dark=#616161
+--color-border-neutral-stronger: pf-light=#918c8b | pf-dark=#9e9e9e | pj-light=#918c8b | pj-dark=#9e9e9e
+--color-border-neutral-strongest: pf-light=#1e1a19 | pf-dark=#d3d3d3 | pj-light=#1e1a19 | pj-dark=#d3d3d3
+--color-border-static-black: pf-light=#000000 | pf-dark=#000000 | pj-light=#000000 | pj-dark=#000000
+--color-border-static-white-default: pf-light=#ffffff | pf-dark=#ffffff | pj-light=#ffffff | pj-dark=#ffffff
+--color-border-static-white-softer: pf-light=#ffffff3d | pf-dark=#ffffff3d | pj-light=#ffffff3d | pj-dark=#ffffff3d
+--color-chart-brand-default: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#72370e | pj-dark=#d68d5b
+--color-chart-categorical-1: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-chart-categorical-2: pf-light=#72370e | pf-dark=#eaac80 | pj-light=#72370e | pj-dark=#eaac80
+--color-chart-categorical-3: pf-light=#1ea16b | pf-dark=#279367 | pj-light=#188055 | pj-dark=#2fb27d
+--color-chart-categorical-4: pf-light=#0e50d6 | pf-dark=#245dd0 | pj-light=#0e50d6 | pj-dark=#245dd0
+--color-chart-categorical-5: pf-light=#e158bc | pf-dark=#d54bb0 | pj-light=#e158bc | pj-dark=#d54bb0
+--color-chart-categorical-6: pf-light=#575c69 | pf-dark=#7e828c | pj-light=#575c69 | pj-dark=#7e828c
+--color-chart-cool-1: pf-light=#639c11 | pf-dark=#5e8f1a | pj-light=#639c11 | pj-dark=#5e8f1a
+--color-chart-cool-2: pf-light=#03496a | pf-dark=#97dcfc | pj-light=#03496a | pj-dark=#97dcfc
+--color-chart-cool-3: pf-light=#0695d8 | pf-dark=#108ac3 | pj-light=#0695d8 | pj-dark=#108ac3
+--color-chart-cool-4: pf-light=#41660b | pf-dark=#94c94a | pj-light=#41660b | pj-dark=#94c94a
+--color-chart-cool-5: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-chart-cool-6: pf-light=#80e7bd | pf-dark=#1c563e | pj-light=#80e7bd | pj-dark=#1c563e
+--color-chart-feedback-error: pf-light=#d0352d | pf-dark=#d95851 | pj-light=#d0352d | pj-dark=#d95851
+--color-chart-feedback-success: pf-light=#188055 | pf-dark=#279367 | pj-light=#188055 | pj-dark=#279367
+--color-chart-feedback-warning: pf-light=#f7c342 | pf-dark=#f6ce6b | pj-light=#f7c342 | pj-dark=#f6ce6b
+--color-chart-neutral-default: pf-light=#3c3331 | pf-dark=#d3d3d3 | pj-light=#3c3331 | pj-dark=#d3d3d3
+--color-chart-neutral-soft: pf-light=#aca9a8 | pf-dark=#616161 | pj-light=#aca9a8 | pj-dark=#616161
+--color-chart-sequential-blue-1: pf-light=#b2cbfa | pf-dark=#1546a6 | pj-light=#b2cbfa | pj-dark=#1546a6
+--color-chart-sequential-blue-2: pf-light=#83aaf6 | pf-dark=#245dd0 | pj-light=#83aaf6 | pj-dark=#245dd0
+--color-chart-sequential-blue-3: pf-light=#5a8beb | pf-dark=#4e7fe1 | pj-light=#5a8beb | pj-dark=#4e7fe1
+--color-chart-sequential-blue-4: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-chart-sequential-blue-5: pf-light=#0e50d6 | pf-dark=#99b9f8 | pj-light=#0e50d6 | pj-dark=#99b9f8
+--color-chart-sequential-blue-6: pf-light=#0a3da1 | pf-dark=#bfd4fb | pj-light=#0a3da1 | pj-dark=#bfd4fb
+--color-chart-sequential-orange-1: pf-light=#ffca96 | pf-dark=#7d3818 | pj-light=#ffca96 | pj-dark=#7d3818
+--color-chart-sequential-orange-2: pf-light=#f29339 | pf-dark=#a24b16 | pj-light=#f29339 | pj-dark=#a24b16
+--color-chart-sequential-orange-3: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-chart-sequential-orange-4: pf-light=#b7520c | pf-dark=#e6862d | pj-light=#b7520c | pj-dark=#e6862d
+--color-chart-sequential-orange-5: pf-light=#943d15 | pf-dark=#f3a964 | pj-light=#943d15 | pj-dark=#f3a964
+--color-chart-sequential-orange-6: pf-light=#753011 | pf-dark=#ffca96 | pj-light=#753011 | pj-dark=#ffca96
+--color-chart-sequential-pink-1: pf-light=#f8b6e6 | pf-dark=#8c176c | pj-light=#f8b6e6 | pj-dark=#8c176c
+--color-chart-sequential-pink-2: pf-light=#ed88d1 | pf-dark=#b71c8d | pj-light=#ed88d1 | pj-dark=#b71c8d
+--color-chart-sequential-pink-3: pf-light=#e158bc | pf-dark=#d54bb0 | pj-light=#e158bc | pj-dark=#d54bb0
+--color-chart-sequential-pink-4: pf-light=#cf149d | pf-dark=#e478c7 | pj-light=#cf149d | pj-dark=#e478c7
+--color-chart-sequential-pink-5: pf-light=#ab1181 | pf-dark=#f19fda | pj-light=#ab1181 | pj-dark=#f19fda
+--color-chart-sequential-pink-6: pf-light=#820d62 | pf-dark=#f8b6e6 | pj-light=#820d62 | pj-dark=#f8b6e6
+--color-chart-sequential-silver-1: pf-light=#c9cacf | pf-dark=#474c5b | pj-light=#c9cacf | pj-dark=#474c5b
+--color-chart-sequential-silver-2: pf-light=#a8aab2 | pf-dark=#5f6471 | pj-light=#a8aab2 | pj-dark=#5f6471
+--color-chart-sequential-silver-3: pf-light=#898d96 | pf-dark=#7e828c | pj-light=#898d96 | pj-dark=#7e828c
+--color-chart-sequential-silver-4: pf-light=#6c707c | pf-dark=#9b9ea6 | pj-light=#6c707c | pj-dark=#9b9ea6
+--color-chart-sequential-silver-5: pf-light=#575c69 | pf-dark=#b7b9bf | pj-light=#575c69 | pj-dark=#b7b9bf
+--color-chart-sequential-silver-6: pf-light=#3f4554 | pf-dark=#d2d3d7 | pj-light=#3f4554 | pj-dark=#d2d3d7
+--color-chart-warm-1: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-chart-warm-2: pf-light=#72370e | pf-dark=#f5cbae | pj-light=#72370e | pj-dark=#f5cbae
+--color-chart-warm-3: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-chart-warm-4: pf-light=#f7c342 | pf-dark=#60490f | pj-light=#f7c342 | pj-dark=#60490f
+--color-chart-warm-5: pf-light=#ab1181 | pf-dark=#f19fda | pj-light=#ab1181 | pj-dark=#f19fda
+--color-chart-warm-6: pf-light=#ed88d1 | pf-dark=#b71c8d | pj-light=#8c176c | pj-dark=#b71c8d
+--color-dark-blue-100: pf-light=#102c62 | pf-dark=#102c62 | pj-light=#102c62 | pj-dark=#102c62
+--color-dark-blue-200: pf-light=#113171 | pf-dark=#113171 | pj-light=#113171 | pj-dark=#113171
+--color-dark-blue-300: pf-light=#1546a6 | pf-dark=#1546a6 | pj-light=#1546a6 | pj-dark=#1546a6
+--color-dark-blue-400: pf-light=#245dd0 | pf-dark=#245dd0 | pj-light=#245dd0 | pj-dark=#245dd0
+--color-dark-blue-50: pf-light=#0b162b | pf-dark=#0b162b | pj-light=#0b162b | pj-dark=#0b162b
+--color-dark-blue-500: pf-light=#4e7fe1 | pf-dark=#4e7fe1 | pj-light=#4e7fe1 | pj-dark=#4e7fe1
+--color-dark-blue-600: pf-light=#749def | pf-dark=#749def | pj-light=#749def | pj-dark=#749def
+--color-dark-blue-700: pf-light=#99b9f8 | pf-dark=#99b9f8 | pj-light=#99b9f8 | pj-dark=#99b9f8
+--color-dark-blue-75: pf-light=#102040 | pf-dark=#102040 | pj-light=#102040 | pj-dark=#102040
+--color-dark-blue-800: pf-light=#bfd4fb | pf-dark=#bfd4fb | pj-light=#bfd4fb | pj-dark=#bfd4fb
+--color-dark-blue-900: pf-light=#eaf0fe | pf-dark=#eaf0fe | pj-light=#eaf0fe | pj-dark=#eaf0fe
+--color-dark-brown-100: pf-light=#432815 | pf-dark=#432815 | pj-light=#432815 | pj-dark=#432815
+--color-dark-brown-200: pf-light=#4e2d16 | pf-dark=#4e2d16 | pj-light=#4e2d16 | pj-dark=#4e2d16
+--color-dark-brown-300: pf-light=#733f1a | pf-dark=#733f1a | pj-light=#733f1a | pj-dark=#733f1a
+--color-dark-brown-400: pf-light=#975222 | pf-dark=#975222 | pj-light=#975222 | pj-dark=#975222
+--color-dark-brown-50: pf-light=#20140b | pf-dark=#20140b | pj-light=#20140b | pj-dark=#20140b
+--color-dark-brown-500: pf-light=#c06d32 | pf-dark=#c06d32 | pj-light=#c06d32 | pj-dark=#c06d32
+--color-dark-brown-600: pf-light=#d68d5b | pf-dark=#d68d5b | pj-light=#d68d5b | pj-dark=#d68d5b
+--color-dark-brown-700: pf-light=#eaac80 | pf-dark=#eaac80 | pj-light=#eaac80 | pj-dark=#eaac80
+--color-dark-brown-75: pf-light=#2f1d10 | pf-dark=#2f1d10 | pj-light=#2f1d10 | pj-dark=#2f1d10
+--color-dark-brown-800: pf-light=#f5cbae | pf-dark=#f5cbae | pj-light=#f5cbae | pj-dark=#f5cbae
+--color-dark-brown-900: pf-light=#fbede4 | pf-dark=#fbede4 | pj-light=#fbede4 | pj-dark=#fbede4
+--color-dark-ceramic-100: pf-light=#2f2e2a | pf-dark=#2f2e2a | pj-light=#2f2e2a | pj-dark=#2f2e2a
+--color-dark-ceramic-200: pf-light=#363530 | pf-dark=#363530 | pj-light=#363530 | pj-dark=#363530
+--color-dark-ceramic-300: pf-light=#4e4c45 | pf-dark=#4e4c45 | pj-light=#4e4c45 | pj-dark=#4e4c45
+--color-dark-ceramic-400: pf-light=#66645b | pf-dark=#66645b | pj-light=#66645b | pj-dark=#66645b
+--color-dark-ceramic-50: pf-light=#171715 | pf-dark=#171715 | pj-light=#171715 | pj-dark=#171715
+--color-dark-ceramic-500: pf-light=#858276 | pf-dark=#858276 | pj-light=#858276 | pj-dark=#858276
+--color-dark-ceramic-600: pf-light=#a29f90 | pf-dark=#a29f90 | pj-light=#a29f90 | pj-dark=#a29f90
+--color-dark-ceramic-700: pf-light=#bdb9a8 | pf-dark=#bdb9a8 | pj-light=#bdb9a8 | pj-dark=#bdb9a8
+--color-dark-ceramic-75: pf-light=#22211e | pf-dark=#22211e | pj-light=#22211e | pj-dark=#22211e
+--color-dark-ceramic-800: pf-light=#d8d4c0 | pf-dark=#d8d4c0 | pj-light=#d8d4c0 | pj-dark=#d8d4c0
+--color-dark-ceramic-900: pf-light=#f2f0ea | pf-dark=#f2f0ea | pj-light=#f2f0ea | pj-dark=#f2f0ea
+--color-dark-cyan-100: pf-light=#0d3244 | pf-dark=#0d3244 | pj-light=#0d3244 | pj-dark=#0d3244
+--color-dark-cyan-200: pf-light=#0d394e | pf-dark=#0d394e | pj-light=#0d394e | pj-dark=#0d394e
+--color-dark-cyan-300: pf-light=#0d5271 | pf-dark=#0d5271 | pj-light=#0d5271 | pj-dark=#0d5271
+--color-dark-cyan-400: pf-light=#0d6b96 | pf-dark=#0d6b96 | pj-light=#0d6b96 | pj-dark=#0d6b96
+--color-dark-cyan-50: pf-light=#071921 | pf-dark=#071921 | pj-light=#071921 | pj-dark=#071921
+--color-dark-cyan-500: pf-light=#108ac3 | pf-dark=#108ac3 | pj-light=#108ac3 | pj-dark=#108ac3
+--color-dark-cyan-600: pf-light=#13a8ec | pf-dark=#13a8ec | pj-light=#13a8ec | pj-dark=#13a8ec
+--color-dark-cyan-700: pf-light=#66ccfb | pf-dark=#66ccfb | pj-light=#66ccfb | pj-dark=#66ccfb
+--color-dark-cyan-75: pf-light=#0a2431 | pf-dark=#0a2431 | pj-light=#0a2431 | pj-dark=#0a2431
+--color-dark-cyan-800: pf-light=#97dcfc | pf-dark=#97dcfc | pj-light=#97dcfc | pj-dark=#97dcfc
+--color-dark-cyan-900: pf-light=#dcf3fe | pf-dark=#dcf3fe | pj-light=#dcf3fe | pj-dark=#dcf3fe
+--color-dark-gold-100: pf-light=#392d0e | pf-dark=#392d0e | pj-light=#392d0e | pj-dark=#392d0e
+--color-dark-gold-200: pf-light=#40330f | pf-dark=#40330f | pj-light=#40330f | pj-dark=#40330f
+--color-dark-gold-300: pf-light=#60490f | pf-dark=#60490f | pj-light=#60490f | pj-dark=#60490f
+--color-dark-gold-400: pf-light=#7f5f10 | pf-dark=#7f5f10 | pj-light=#7f5f10 | pj-dark=#7f5f10
+--color-dark-gold-50: pf-light=#1c1607 | pf-dark=#1c1607 | pj-light=#1c1607 | pj-dark=#1c1607
+--color-dark-gold-500: pf-light=#a57b10 | pf-dark=#a57b10 | pj-light=#a57b10 | pj-dark=#a57b10
+--color-dark-gold-600: pf-light=#c89614 | pf-dark=#c89614 | pj-light=#c89614 | pj-dark=#c89614
+--color-dark-gold-700: pf-light=#e9b020 | pf-dark=#e9b020 | pj-light=#e9b020 | pj-dark=#e9b020
+--color-dark-gold-75: pf-light=#29200a | pf-dark=#29200a | pj-light=#29200a | pj-dark=#29200a
+--color-dark-gold-800: pf-light=#f6ce6b | pf-dark=#f6ce6b | pj-light=#f6ce6b | pj-dark=#f6ce6b
+--color-dark-gold-900: pf-light=#fdefcd | pf-dark=#fdefcd | pj-light=#fdefcd | pj-dark=#fdefcd
+--color-dark-graphite-100: pf-light=#342d2b | pf-dark=#342d2b | pj-light=#342d2b | pj-dark=#342d2b
+--color-dark-graphite-200: pf-light=#3c3331 | pf-dark=#3c3331 | pj-light=#3c3331 | pj-dark=#3c3331
+--color-dark-graphite-300: pf-light=#524b49 | pf-dark=#524b49 | pj-light=#524b49 | pj-dark=#524b49
+--color-dark-graphite-400: pf-light=#696361 | pf-dark=#696361 | pj-light=#696361 | pj-dark=#696361
+--color-dark-graphite-50: pf-light=#1a1615 | pf-dark=#1a1615 | pj-light=#1a1615 | pj-dark=#1a1615
+--color-dark-graphite-500: pf-light=#86817f | pf-dark=#86817f | pj-light=#86817f | pj-dark=#86817f
+--color-dark-graphite-600: pf-light=#a29d9c | pf-dark=#a29d9c | pj-light=#a29d9c | pj-dark=#a29d9c
+--color-dark-graphite-700: pf-light=#bcb8b8 | pf-dark=#bcb8b8 | pj-light=#bcb8b8 | pj-dark=#bcb8b8
+--color-dark-graphite-75: pf-light=#26201f | pf-dark=#26201f | pj-light=#26201f | pj-dark=#26201f
+--color-dark-graphite-800: pf-light=#d4d2d2 | pf-dark=#d4d2d2 | pj-light=#d4d2d2 | pj-dark=#d4d2d2
+--color-dark-graphite-900: pf-light=#f0f0f0 | pf-dark=#f0f0f0 | pj-light=#f0f0f0 | pj-dark=#f0f0f0
+--color-dark-gray-100: pf-light=#2e2e2e | pf-dark=#2e2e2e | pj-light=#2e2e2e | pj-dark=#2e2e2e
+--color-dark-gray-200: pf-light=#353535 | pf-dark=#353535 | pj-light=#353535 | pj-dark=#353535
+--color-dark-gray-300: pf-light=#4c4c4c | pf-dark=#4c4c4c | pj-light=#4c4c4c | pj-dark=#4c4c4c
+--color-dark-gray-400: pf-light=#616161 | pf-dark=#616161 | pj-light=#616161 | pj-dark=#616161
+--color-dark-gray-50: pf-light=#161616 | pf-dark=#161616 | pj-light=#161616 | pj-dark=#161616
+--color-dark-gray-500: pf-light=#828282 | pf-dark=#828282 | pj-light=#828282 | pj-dark=#828282
+--color-dark-gray-600: pf-light=#9e9e9e | pf-dark=#9e9e9e | pj-light=#9e9e9e | pj-dark=#9e9e9e
+--color-dark-gray-700: pf-light=#b9b9b9 | pf-dark=#b9b9b9 | pj-light=#b9b9b9 | pj-dark=#b9b9b9
+--color-dark-gray-75: pf-light=#212121 | pf-dark=#212121 | pj-light=#212121 | pj-dark=#212121
+--color-dark-gray-800: pf-light=#d3d3d3 | pf-dark=#d3d3d3 | pj-light=#d3d3d3 | pj-dark=#d3d3d3
+--color-dark-gray-900: pf-light=#f0f0f0 | pf-dark=#f0f0f0 | pj-light=#f0f0f0 | pj-dark=#f0f0f0
+--color-dark-green-100: pf-light=#253311 | pf-dark=#253311 | pj-light=#253311 | pj-dark=#253311
+--color-dark-green-200: pf-light=#293a13 | pf-dark=#293a13 | pj-light=#293a13 | pj-dark=#293a13
+--color-dark-green-300: pf-light=#395414 | pf-dark=#395414 | pj-light=#395414 | pj-dark=#395414
+--color-dark-green-400: pf-light=#496e16 | pf-dark=#496e16 | pj-light=#496e16 | pj-dark=#496e16
+--color-dark-green-50: pf-light=#121908 | pf-dark=#121908 | pj-light=#121908 | pj-dark=#121908
+--color-dark-green-500: pf-light=#5e8f1a | pf-dark=#5e8f1a | pj-light=#5e8f1a | pj-dark=#5e8f1a
+--color-dark-green-600: pf-light=#74ae21 | pf-dark=#74ae21 | pj-light=#74ae21 | pj-dark=#74ae21
+--color-dark-green-700: pf-light=#94c94a | pf-dark=#94c94a | pj-light=#94c94a | pj-dark=#94c94a
+--color-dark-green-75: pf-light=#1a240c | pf-dark=#1a240c | pj-light=#1a240c | pj-dark=#1a240c
+--color-dark-green-800: pf-light=#b3e272 | pf-dark=#b3e272 | pj-light=#b3e272 | pj-dark=#b3e272
+--color-dark-green-900: pf-light=#e2f8c2 | pf-dark=#e2f8c2 | pj-light=#e2f8c2 | pj-dark=#e2f8c2
+--color-dark-mint-100: pf-light=#183428 | pf-dark=#183428 | pj-light=#183428 | pj-dark=#183428
+--color-dark-mint-200: pf-light=#193b2d | pf-dark=#193b2d | pj-light=#193b2d | pj-dark=#193b2d
+--color-dark-mint-300: pf-light=#1c563e | pf-dark=#1c563e | pj-light=#1c563e | pj-dark=#1c563e
+--color-dark-mint-400: pf-light=#1f7150 | pf-dark=#1f7150 | pj-light=#1f7150 | pj-dark=#1f7150
+--color-dark-mint-50: pf-light=#0b1914 | pf-dark=#0b1914 | pj-light=#0b1914 | pj-dark=#0b1914
+--color-dark-mint-500: pf-light=#279367 | pf-dark=#279367 | pj-light=#279367 | pj-dark=#279367
+--color-dark-mint-600: pf-light=#2fb27d | pf-dark=#2fb27d | pj-light=#2fb27d | pj-dark=#2fb27d
+--color-dark-mint-700: pf-light=#57cd9d | pf-dark=#57cd9d | pj-light=#57cd9d | pj-dark=#57cd9d
+--color-dark-mint-75: pf-light=#11251d | pf-dark=#11251d | pj-light=#11251d | pj-dark=#11251d
+--color-dark-mint-800: pf-light=#80e7bd | pf-dark=#80e7bd | pj-light=#80e7bd | pj-dark=#80e7bd
+--color-dark-mint-900: pf-light=#d6f7ea | pf-dark=#d6f7ea | pj-light=#d6f7ea | pj-dark=#d6f7ea
+--color-dark-orange-100: pf-light=#472616 | pf-dark=#472616 | pj-light=#472616 | pj-dark=#472616
+--color-dark-orange-200: pf-light=#532a16 | pf-dark=#532a16 | pj-light=#532a16 | pj-dark=#532a16
+--color-dark-orange-300: pf-light=#7d3818 | pf-dark=#7d3818 | pj-light=#7d3818 | pj-dark=#7d3818
+--color-dark-orange-400: pf-light=#a24b16 | pf-dark=#a24b16 | pj-light=#a24b16 | pj-dark=#a24b16
+--color-dark-orange-50: pf-light=#21130d | pf-dark=#21130d | pj-light=#21130d | pj-dark=#21130d
+--color-dark-orange-500: pf-light=#de710c | pf-dark=#de710c | pj-light=#de710c | pj-dark=#de710c
+--color-dark-orange-600: pf-light=#e6862d | pf-dark=#e6862d | pj-light=#e6862d | pj-dark=#e6862d
+--color-dark-orange-700: pf-light=#f3a964 | pf-dark=#f3a964 | pj-light=#f3a964 | pj-dark=#f3a964
+--color-dark-orange-75: pf-light=#301c12 | pf-dark=#301c12 | pj-light=#301c12 | pj-dark=#301c12
+--color-dark-orange-800: pf-light=#ffca96 | pf-dark=#ffca96 | pj-light=#ffca96 | pj-dark=#ffca96
+--color-dark-orange-900: pf-light=#fdeedb | pf-dark=#fdeedb | pj-light=#fdeedb | pj-dark=#fdeedb
+--color-dark-pink-100: pf-light=#541442 | pf-dark=#541442 | pj-light=#541442 | pj-dark=#541442
+--color-dark-pink-200: pf-light=#60144c | pf-dark=#60144c | pj-light=#60144c | pj-dark=#60144c
+--color-dark-pink-300: pf-light=#8c176c | pf-dark=#8c176c | pj-light=#8c176c | pj-dark=#8c176c
+--color-dark-pink-400: pf-light=#b71c8d | pf-dark=#b71c8d | pj-light=#b71c8d | pj-dark=#b71c8d
+--color-dark-pink-50: pf-light=#270c1f | pf-dark=#270c1f | pj-light=#270c1f | pj-dark=#270c1f
+--color-dark-pink-500: pf-light=#d54bb0 | pf-dark=#d54bb0 | pj-light=#d54bb0 | pj-dark=#d54bb0
+--color-dark-pink-600: pf-light=#e478c7 | pf-dark=#e478c7 | pj-light=#e478c7 | pj-dark=#e478c7
+--color-dark-pink-700: pf-light=#f19fda | pf-dark=#f19fda | pj-light=#f19fda | pj-dark=#f19fda
+--color-dark-pink-75: pf-light=#3a122f | pf-dark=#3a122f | pj-light=#3a122f | pj-dark=#3a122f
+--color-dark-pink-800: pf-light=#f8b6e6 | pf-dark=#f8b6e6 | pj-light=#f8b6e6 | pj-dark=#f8b6e6
+--color-dark-pink-900: pf-light=#fdebf8 | pf-dark=#fdebf8 | pj-light=#fdebf8 | pj-dark=#fdebf8
+--color-dark-purple-100: pf-light=#3d0f7c | pf-dark=#3d0f7c | pj-light=#3d0f7c | pj-dark=#3d0f7c
+--color-dark-purple-200: pf-light=#450f8d | pf-dark=#450f8d | pj-light=#450f8d | pj-dark=#450f8d
+--color-dark-purple-300: pf-light=#6016c9 | pf-dark=#6016c9 | pj-light=#6016c9 | pj-dark=#6016c9
+--color-dark-purple-400: pf-light=#7e3cdb | pf-dark=#7e3cdb | pj-light=#7e3cdb | pj-dark=#7e3cdb
+--color-dark-purple-50: pf-light=#1e0d35 | pf-dark=#1e0d35 | pj-light=#1e0d35 | pj-dark=#1e0d35
+--color-dark-purple-500: pf-light=#9c65e8 | pf-dark=#9c65e8 | pj-light=#9c65e8 | pj-dark=#9c65e8
+--color-dark-purple-600: pf-light=#b589f3 | pf-dark=#b589f3 | pj-light=#b589f3 | pj-dark=#b589f3
+--color-dark-purple-700: pf-light=#ccaafb | pf-dark=#ccaafb | pj-light=#ccaafb | pj-dark=#ccaafb
+--color-dark-purple-75: pf-light=#2d0f56 | pf-dark=#2d0f56 | pj-light=#2d0f56 | pj-dark=#2d0f56
+--color-dark-purple-800: pf-light=#e0cafc | pf-dark=#e0cafc | pj-light=#e0cafc | pj-dark=#e0cafc
+--color-dark-purple-900: pf-light=#f4edfe | pf-dark=#f4edfe | pj-light=#f4edfe | pj-dark=#f4edfe
+--color-dark-red-100: pf-light=#521e1c | pf-dark=#521e1c | pj-light=#521e1c | pj-dark=#521e1c
+--color-dark-red-200: pf-light=#5f201d | pf-dark=#5f201d | pj-light=#5f201d | pj-dark=#5f201d
+--color-dark-red-300: pf-light=#8d2722 | pf-dark=#8d2722 | pj-light=#8d2722 | pj-dark=#8d2722
+--color-dark-red-400: pf-light=#ba3029 | pf-dark=#ba3029 | pj-light=#ba3029 | pj-dark=#ba3029
+--color-dark-red-50: pf-light=#231211 | pf-dark=#231211 | pj-light=#231211 | pj-dark=#231211
+--color-dark-red-500: pf-light=#d95851 | pf-dark=#d95851 | pj-light=#d95851 | pj-dark=#d95851
+--color-dark-red-600: pf-light=#e3837f | pf-dark=#e3837f | pj-light=#e3837f | pj-dark=#e3837f
+--color-dark-red-700: pf-light=#eba8a5 | pf-dark=#eba8a5 | pj-light=#eba8a5 | pj-dark=#eba8a5
+--color-dark-red-75: pf-light=#351a19 | pf-dark=#351a19 | pj-light=#351a19 | pj-dark=#351a19
+--color-dark-red-800: pf-light=#f3c9c7 | pf-dark=#f3c9c7 | pj-light=#f3c9c7 | pj-dark=#f3c9c7
+--color-dark-red-900: pf-light=#fbedec | pf-dark=#fbedec | pj-light=#fbedec | pj-dark=#fbedec
+--color-dark-silver-100: pf-light=#282e3c | pf-dark=#282e3c | pj-light=#282e3c | pj-dark=#282e3c
+--color-dark-silver-200: pf-light=#2e3445 | pf-dark=#2e3445 | pj-light=#2e3445 | pj-dark=#2e3445
+--color-dark-silver-300: pf-light=#474c5b | pf-dark=#474c5b | pj-light=#474c5b | pj-dark=#474c5b
+--color-dark-silver-400: pf-light=#5f6471 | pf-dark=#5f6471 | pj-light=#5f6471 | pj-dark=#5f6471
+--color-dark-silver-50: pf-light=#15171f | pf-dark=#15171f | pj-light=#15171f | pj-dark=#15171f
+--color-dark-silver-500: pf-light=#7e828c | pf-dark=#7e828c | pj-light=#7e828c | pj-dark=#7e828c
+--color-dark-silver-600: pf-light=#9b9ea6 | pf-dark=#9b9ea6 | pj-light=#9b9ea6 | pj-dark=#9b9ea6
+--color-dark-silver-700: pf-light=#b7b9bf | pf-dark=#b7b9bf | pj-light=#b7b9bf | pj-dark=#b7b9bf
+--color-dark-silver-75: pf-light=#1d212b | pf-dark=#1d212b | pj-light=#1d212b | pj-dark=#1d212b
+--color-dark-silver-800: pf-light=#d2d3d7 | pf-dark=#d2d3d7 | pj-light=#d2d3d7 | pj-dark=#d2d3d7
+--color-dark-silver-900: pf-light=#f0f0f1 | pf-dark=#f0f0f1 | pj-light=#f0f0f1 | pj-dark=#f0f0f1
+--color-dark-yellow-100: pf-light=#342f09 | pf-dark=#342f09 | pj-light=#342f09 | pj-dark=#342f09
+--color-dark-yellow-200: pf-light=#3b350a | pf-dark=#3b350a | pj-light=#3b350a | pj-dark=#3b350a
+--color-dark-yellow-300: pf-light=#554d0a | pf-dark=#554d0a | pj-light=#554d0a | pj-dark=#554d0a
+--color-dark-yellow-400: pf-light=#6f6509 | pf-dark=#6f6509 | pj-light=#6f6509 | pj-dark=#6f6509
+--color-dark-yellow-50: pf-light=#1a1704 | pf-dark=#1a1704 | pj-light=#1a1704 | pj-dark=#1a1704
+--color-dark-yellow-500: pf-light=#8f8408 | pf-dark=#8f8408 | pj-light=#8f8408 | pj-dark=#8f8408
+--color-dark-yellow-600: pf-light=#b6af31 | pf-dark=#b6af31 | pj-light=#b6af31 | pj-dark=#b6af31
+--color-dark-yellow-700: pf-light=#ccc64c | pf-dark=#ccc64c | pj-light=#ccc64c | pj-dark=#ccc64c
+--color-dark-yellow-75: pf-light=#262206 | pf-dark=#262206 | pj-light=#262206 | pj-dark=#262206
+--color-dark-yellow-800: pf-light=#fbff71 | pf-dark=#fbff71 | pj-light=#fbff71 | pj-dark=#fbff71
+--color-dark-yellow-900: pf-light=#f2f2d3 | pf-dark=#f2f2d3 | pj-light=#f2f2d3 | pj-dark=#f2f2d3
+--color-deprecated-background-segment-pf-black: pf-light=#161616 | pf-dark=#353535 | pj-light=#161616 | pj-dark=#353535
+--color-deprecated-chart-neutral: pf-light=#3c3331 | pf-dark=#d3d3d3 | pj-light=#3c3331 | pj-dark=#d3d3d3
+--color-deprecated-icon-accent-blue: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-deprecated-icon-accent-brown: pf-light=#b25616 | pf-dark=#d68d5b | pj-light=#b25616 | pj-dark=#d68d5b
+--color-deprecated-icon-accent-cyan: pf-light=#0577ab | pf-dark=#13a8ec | pj-light=#0577ab | pj-dark=#13a8ec
+--color-deprecated-icon-accent-gold: pf-light=#906906 | pf-dark=#c89614 | pj-light=#906906 | pj-dark=#c89614
+--color-deprecated-icon-accent-green: pf-light=#4e7c0e | pf-dark=#74ae21 | pj-light=#4e7c0e | pj-dark=#74ae21
+--color-deprecated-icon-accent-mint: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-deprecated-icon-accent-orange: pf-light=#b7520c | pf-dark=#e6862d | pj-light=#b7520c | pj-dark=#e6862d
+--color-deprecated-icon-accent-pink: pf-light=#cf149d | pf-dark=#e478c7 | pj-light=#cf149d | pj-dark=#e478c7
+--color-deprecated-icon-accent-purple: pf-light=#8c49e8 | pf-dark=#b589f3 | pj-light=#8c49e8 | pj-dark=#b589f3
+--color-deprecated-icon-accent-red: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-deprecated-icon-accent-yellow: pf-light=#7c7100 | pf-dark=#b6af31 | pj-light=#7c7100 | pj-dark=#b6af31
+--color-deprecated-surface-segment-pf-black: pf-light=#161616 | pf-dark=#353535 | pj-light=#161616 | pj-dark=#353535
+--color-icon-accent-blue-default: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-icon-accent-blue-strong: pf-light=#0e50d6 | pf-dark=#99b9f8 | pj-light=#0e50d6 | pj-dark=#99b9f8
+--color-icon-accent-brown-default: pf-light=#b25616 | pf-dark=#d68d5b | pj-light=#b25616 | pj-dark=#d68d5b
+--color-icon-accent-brown-strong: pf-light=#924712 | pf-dark=#eaac80 | pj-light=#924712 | pj-dark=#eaac80
+--color-icon-accent-cyan-default: pf-light=#0577ab | pf-dark=#13a8ec | pj-light=#0577ab | pj-dark=#13a8ec
+--color-icon-accent-cyan-strong: pf-light=#04628d | pf-dark=#66ccfb | pj-light=#04628d | pj-dark=#66ccfb
+--color-icon-accent-gold-default: pf-light=#906906 | pf-dark=#c89614 | pj-light=#906906 | pj-dark=#c89614
+--color-icon-accent-gold-strong: pf-light=#765705 | pf-dark=#e9b020 | pj-light=#765705 | pj-dark=#e9b020
+--color-icon-accent-green-default: pf-light=#4e7c0e | pf-dark=#74ae21 | pj-light=#4e7c0e | pj-dark=#74ae21
+--color-icon-accent-green-strong: pf-light=#41660b | pf-dark=#94c94a | pj-light=#41660b | pj-dark=#94c94a
+--color-icon-accent-mint-default: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-icon-accent-mint-strong: pf-light=#146946 | pf-dark=#57cd9d | pj-light=#146946 | pj-dark=#57cd9d
+--color-icon-accent-orange-default: pf-light=#b7520c | pf-dark=#e6862d | pj-light=#b7520c | pj-dark=#e6862d
+--color-icon-accent-orange-strong: pf-light=#943d15 | pf-dark=#f3a964 | pj-light=#943d15 | pj-dark=#f3a964
+--color-icon-accent-pink-default: pf-light=#cf149d | pf-dark=#e478c7 | pj-light=#cf149d | pj-dark=#e478c7
+--color-icon-accent-pink-strong: pf-light=#ab1181 | pf-dark=#f19fda | pj-light=#ab1181 | pj-dark=#f19fda
+--color-icon-accent-purple-default: pf-light=#8c49e8 | pf-dark=#b589f3 | pj-light=#8c49e8 | pj-dark=#b589f3
+--color-icon-accent-purple-strong: pf-light=#7528e0 | pf-dark=#ccaafb | pj-light=#7528e0 | pj-dark=#ccaafb
+--color-icon-accent-red-default: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-icon-accent-red-strong: pf-light=#ac2c25 | pf-dark=#eba8a5 | pj-light=#ac2c25 | pj-dark=#eba8a5
+--color-icon-accent-yellow-default: pf-light=#7c7100 | pf-dark=#b6af31 | pj-light=#7c7100 | pj-dark=#b6af31
+--color-icon-accent-yellow-strong: pf-light=#665d00 | pf-dark=#ccc64c | pj-light=#665d00 | pj-dark=#ccc64c
+--color-icon-brand-default: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#72370e | pj-dark=#c06d32
+--color-icon-brand-strong: pf-light=#943d15 | pf-dark=#f3a964 | pj-light=#924712 | pj-dark=#eaac80
+--color-icon-brand-stronger: pf-light=#943d15 | pf-dark=#ffca96 | pj-light=#924712 | pj-dark=#f5cbae
+--color-icon-disabled: pf-light=#aaaaaa | pf-dark=#616161 | pj-light=#aaaaaa | pj-dark=#616161
+--color-icon-feedback-error-default: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-icon-feedback-information-default: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-icon-feedback-success-default: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-icon-feedback-warning-default: pf-light=#906906 | pf-dark=#e9b020 | pj-light=#906906 | pj-dark=#e9b020
+--color-icon-feedback-warning-strong: pf-light=#594104 | pf-dark=#1c1607 | pj-light=#594104 | pj-dark=#1c1607
+--color-icon-neutral-inverse: pf-light=#ffffff | pf-dark=#161616 | pj-light=#ffffff | pj-dark=#161616
+--color-icon-neutral-primary: pf-light=#1e1a19 | pf-dark=#f0f0f0 | pj-light=#1e1a19 | pj-dark=#f0f0f0
+--color-icon-neutral-secondary: pf-light=#625a59 | pf-dark=#b9b9b9 | pj-light=#625a59 | pj-dark=#b9b9b9
+--color-icon-static-black: pf-light=#161616 | pf-dark=#161616 | pj-light=#161616 | pj-dark=#161616
+--color-icon-static-orange: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-icon-static-white-default: pf-light=#ffffff | pf-dark=#ffffff | pj-light=#ffffff | pj-dark=#ffffff
+--color-icon-static-white-soft: pf-light=#ffffff66 | pf-dark=#ffffff66 | pj-light=#ffffff66 | pj-dark=#ffffff66
+--color-light-blue-100: pf-light=#d9e5fd | pf-dark=#d9e5fd | pj-light=#d9e5fd | pj-dark=#d9e5fd
+--color-light-blue-200: pf-light=#b2cbfa | pf-dark=#b2cbfa | pj-light=#b2cbfa | pj-dark=#b2cbfa
+--color-light-blue-300: pf-light=#83aaf6 | pf-dark=#83aaf6 | pj-light=#83aaf6 | pj-dark=#83aaf6
+--color-light-blue-400: pf-light=#5a8beb | pf-dark=#5a8beb | pj-light=#5a8beb | pj-dark=#5a8beb
+--color-light-blue-50: pf-light=#f1f6fe | pf-dark=#f1f6fe | pj-light=#f1f6fe | pj-dark=#f1f6fe
+--color-light-blue-500: pf-light=#2e69e0 | pf-dark=#2e69e0 | pj-light=#2e69e0 | pj-dark=#2e69e0
+--color-light-blue-600: pf-light=#0e50d6 | pf-dark=#0e50d6 | pj-light=#0e50d6 | pj-dark=#0e50d6
+--color-light-blue-700: pf-light=#0a3da1 | pf-dark=#0a3da1 | pj-light=#0a3da1 | pj-dark=#0a3da1
+--color-light-blue-75: pf-light=#e6eefe | pf-dark=#e6eefe | pj-light=#e6eefe | pj-dark=#e6eefe
+--color-light-blue-800: pf-light=#082d79 | pf-dark=#082d79 | pj-light=#082d79 | pj-dark=#082d79
+--color-light-blue-900: pf-light=#041841 | pf-dark=#041841 | pj-light=#041841 | pj-dark=#041841
+--color-light-brown-100: pf-light=#f9e0ce | pf-dark=#f9e0ce | pj-light=#f9e0ce | pj-dark=#f9e0ce
+--color-light-brown-200: pf-light=#f3c09c | pf-dark=#f3c09c | pj-light=#f3c09c | pj-dark=#f3c09c
+--color-light-brown-300: pf-light=#e49965 | pf-dark=#e49965 | pj-light=#e49965 | pj-dark=#e49965
+--color-light-brown-400: pf-light=#d37430 | pf-dark=#d37430 | pj-light=#d37430 | pj-dark=#d37430
+--color-light-brown-50: pf-light=#fdf5f0 | pf-dark=#fdf5f0 | pj-light=#fdf5f0 | pj-dark=#fdf5f0
+--color-light-brown-500: pf-light=#b25616 | pf-dark=#b25616 | pj-light=#b25616 | pj-dark=#b25616
+--color-light-brown-600: pf-light=#924712 | pf-dark=#924712 | pj-light=#924712 | pj-dark=#924712
+--color-light-brown-700: pf-light=#72370e | pf-dark=#72370e | pj-light=#72370e | pj-dark=#72370e
+--color-light-brown-75: pf-light=#fbebdf | pf-dark=#fbebdf | pj-light=#fbebdf | pj-dark=#fbebdf
+--color-light-brown-800: pf-light=#52270a | pf-dark=#52270a | pj-light=#52270a | pj-dark=#52270a
+--color-light-brown-900: pf-light=#2c1505 | pf-dark=#2c1505 | pj-light=#2c1505 | pj-dark=#2c1505
+--color-light-ceramic-100: pf-light=#e7e5d8 | pf-dark=#e7e5d8 | pj-light=#e7e5d8 | pj-dark=#e7e5d8
+--color-light-ceramic-200: pf-light=#d8d4c0 | pf-dark=#d8d4c0 | pj-light=#d8d4c0 | pj-dark=#d8d4c0
+--color-light-ceramic-300: pf-light=#aeaa9a | pf-dark=#aeaa9a | pj-light=#aeaa9a | pj-dark=#aeaa9a
+--color-light-ceramic-400: pf-light=#908d80 | pf-dark=#908d80 | pj-light=#908d80 | pj-dark=#908d80
+--color-light-ceramic-50: pf-light=#f6f5f1 | pf-dark=#f6f5f1 | pj-light=#f6f5f1 | pj-dark=#f6f5f1
+--color-light-ceramic-500: pf-light=#737066 | pf-dark=#737066 | pj-light=#737066 | pj-dark=#737066
+--color-light-ceramic-600: pf-light=#5e5c54 | pf-dark=#5e5c54 | pj-light=#5e5c54 | pj-dark=#5e5c54
+--color-light-ceramic-700: pf-light=#47453f | pf-dark=#47453f | pj-light=#47453f | pj-dark=#47453f
+--color-light-ceramic-75: pf-light=#efede5 | pf-dark=#efede5 | pj-light=#efede5 | pj-dark=#efede5
+--color-light-ceramic-800: pf-light=#34332f | pf-dark=#34332f | pj-light=#34332f | pj-dark=#34332f
+--color-light-ceramic-900: pf-light=#1c1b18 | pf-dark=#1c1b18 | pj-light=#1c1b18 | pj-dark=#1c1b18
+--color-light-cyan-100: pf-light=#bfeafe | pf-dark=#bfeafe | pj-light=#bfeafe | pj-dark=#bfeafe
+--color-light-cyan-200: pf-light=#66ccfb | pf-dark=#66ccfb | pj-light=#66ccfb | pj-dark=#66ccfb
+--color-light-cyan-300: pf-light=#20b5fa | pf-dark=#20b5fa | pj-light=#20b5fa | pj-dark=#20b5fa
+--color-light-cyan-400: pf-light=#0695d8 | pf-dark=#0695d8 | pj-light=#0695d8 | pj-dark=#0695d8
+--color-light-cyan-50: pf-light=#eaf8ff | pf-dark=#eaf8ff | pj-light=#eaf8ff | pj-dark=#eaf8ff
+--color-light-cyan-500: pf-light=#0577ab | pf-dark=#0577ab | pj-light=#0577ab | pj-dark=#0577ab
+--color-light-cyan-600: pf-light=#04628d | pf-dark=#04628d | pj-light=#04628d | pj-dark=#04628d
+--color-light-cyan-700: pf-light=#03496a | pf-dark=#03496a | pj-light=#03496a | pj-dark=#03496a
+--color-light-cyan-75: pf-light=#d7f2fe | pf-dark=#d7f2fe | pj-light=#d7f2fe | pj-dark=#d7f2fe
+--color-light-cyan-800: pf-light=#02374f | pf-dark=#02374f | pj-light=#02374f | pj-dark=#02374f
+--color-light-cyan-900: pf-light=#011d2a | pf-dark=#011d2a | pj-light=#011d2a | pj-dark=#011d2a
+--color-light-gold-100: pf-light=#fbe19f | pf-dark=#fbe19f | pj-light=#fbe19f | pj-dark=#fbe19f
+--color-light-gold-200: pf-light=#f7c342 | pf-dark=#f7c342 | pj-light=#f7c342 | pj-dark=#f7c342
+--color-light-gold-300: pf-light=#dc9f0a | pf-dark=#dc9f0a | pj-light=#dc9f0a | pj-dark=#dc9f0a
+--color-light-gold-400: pf-light=#b68408 | pf-dark=#b68408 | pj-light=#b68408 | pj-dark=#b68408
+--color-light-gold-50: pf-light=#fef6e2 | pf-dark=#fef6e2 | pj-light=#fef6e2 | pj-dark=#fef6e2
+--color-light-gold-500: pf-light=#906906 | pf-dark=#906906 | pj-light=#906906 | pj-dark=#906906
+--color-light-gold-600: pf-light=#765705 | pf-dark=#765705 | pj-light=#765705 | pj-dark=#765705
+--color-light-gold-700: pf-light=#594104 | pf-dark=#594104 | pj-light=#594104 | pj-dark=#594104
+--color-light-gold-75: pf-light=#fcedc3 | pf-dark=#fcedc3 | pj-light=#fcedc3 | pj-dark=#fcedc3
+--color-light-gold-800: pf-light=#423003 | pf-dark=#423003 | pj-light=#423003 | pj-dark=#423003
+--color-light-gold-900: pf-light=#231a01 | pf-dark=#231a01 | pj-light=#231a01 | pj-dark=#231a01
+--color-light-graphite-100: pf-light=#e6e4e4 | pf-dark=#e6e4e4 | pj-light=#e6e4e4 | pj-dark=#e6e4e4
+--color-light-graphite-200: pf-light=#cbc9c8 | pf-dark=#cbc9c8 | pj-light=#cbc9c8 | pj-dark=#cbc9c8
+--color-light-graphite-300: pf-light=#aca9a8 | pf-dark=#aca9a8 | pj-light=#aca9a8 | pj-dark=#aca9a8
+--color-light-graphite-400: pf-light=#918c8b | pf-dark=#918c8b | pj-light=#918c8b | pj-dark=#918c8b
+--color-light-graphite-50: pf-light=#f6f6f5 | pf-dark=#f6f6f5 | pj-light=#f6f6f5 | pj-dark=#f6f6f5
+--color-light-graphite-500: pf-light=#756e6d | pf-dark=#756e6d | pj-light=#756e6d | pj-dark=#756e6d
+--color-light-graphite-600: pf-light=#625a59 | pf-dark=#625a59 | pj-light=#625a59 | pj-dark=#625a59
+--color-light-graphite-700: pf-light=#4c4342 | pf-dark=#4c4342 | pj-light=#4c4342 | pj-dark=#4c4342
+--color-light-graphite-75: pf-light=#efeeee | pf-dark=#efeeee | pj-light=#efeeee | pj-dark=#efeeee
+--color-light-graphite-800: pf-light=#3c3331 | pf-dark=#3c3331 | pj-light=#3c3331 | pj-dark=#3c3331
+--color-light-graphite-900: pf-light=#1e1a19 | pf-dark=#1e1a19 | pj-light=#1e1a19 | pj-dark=#1e1a19
+--color-light-gray-100: pf-light=#e3e3e3 | pf-dark=#e3e3e3 | pj-light=#e3e3e3 | pj-dark=#e3e3e3
+--color-light-gray-200: pf-light=#cacaca | pf-dark=#cacaca | pj-light=#cacaca | pj-dark=#cacaca
+--color-light-gray-300: pf-light=#aaaaaa | pf-dark=#aaaaaa | pj-light=#aaaaaa | pj-dark=#aaaaaa
+--color-light-gray-400: pf-light=#8d8d8d | pf-dark=#8d8d8d | pj-light=#8d8d8d | pj-dark=#8d8d8d
+--color-light-gray-50: pf-light=#f5f5f5 | pf-dark=#f5f5f5 | pj-light=#f5f5f5 | pj-dark=#f5f5f5
+--color-light-gray-500: pf-light=#707070 | pf-dark=#707070 | pj-light=#707070 | pj-dark=#707070
+--color-light-gray-600: pf-light=#616161 | pf-dark=#616161 | pj-light=#616161 | pj-dark=#616161
+--color-light-gray-700: pf-light=#454545 | pf-dark=#454545 | pj-light=#454545 | pj-dark=#454545
+--color-light-gray-75: pf-light=#ebebeb | pf-dark=#ebebeb | pj-light=#ebebeb | pj-dark=#ebebeb
+--color-light-gray-800: pf-light=#333333 | pf-dark=#333333 | pj-light=#333333 | pj-dark=#333333
+--color-light-gray-900: pf-light=#161616 | pf-dark=#161616 | pj-light=#161616 | pj-dark=#161616
+--color-light-green-100: pf-light=#c7f18b | pf-dark=#c7f18b | pj-light=#c7f18b | pj-dark=#c7f18b
+--color-light-green-200: pf-light=#a5da5a | pf-dark=#a5da5a | pj-light=#a5da5a | pj-dark=#a5da5a
+--color-light-green-300: pf-light=#79bc1b | pf-dark=#79bc1b | pj-light=#79bc1b | pj-dark=#79bc1b
+--color-light-green-400: pf-light=#639c11 | pf-dark=#639c11 | pj-light=#639c11 | pj-dark=#639c11
+--color-light-green-50: pf-light=#edfbd9 | pf-dark=#edfbd9 | pj-light=#edfbd9 | pj-dark=#edfbd9
+--color-light-green-500: pf-light=#4e7c0e | pf-dark=#4e7c0e | pj-light=#4e7c0e | pj-dark=#4e7c0e
+--color-light-green-600: pf-light=#41660b | pf-dark=#41660b | pj-light=#41660b | pj-dark=#41660b
+--color-light-green-700: pf-light=#304d08 | pf-dark=#304d08 | pj-light=#304d08 | pj-dark=#304d08
+--color-light-green-75: pf-light=#ddf7b8 | pf-dark=#ddf7b8 | pj-light=#ddf7b8 | pj-dark=#ddf7b8
+--color-light-green-800: pf-light=#243906 | pf-dark=#243906 | pj-light=#243906 | pj-dark=#243906
+--color-light-green-900: pf-light=#131e03 | pf-dark=#131e03 | pj-light=#131e03 | pj-dark=#131e03
+--color-light-mint-100: pf-light=#b5f1d9 | pf-dark=#b5f1d9 | pj-light=#b5f1d9 | pj-dark=#b5f1d9
+--color-light-mint-200: pf-light=#80e7bd | pf-dark=#80e7bd | pj-light=#80e7bd | pj-dark=#80e7bd
+--color-light-mint-300: pf-light=#24c181 | pf-dark=#24c181 | pj-light=#24c181 | pj-dark=#24c181
+--color-light-mint-400: pf-light=#1ea16b | pf-dark=#1ea16b | pj-light=#1ea16b | pj-dark=#1ea16b
+--color-light-mint-50: pf-light=#e6fbf2 | pf-dark=#e6fbf2 | pj-light=#e6fbf2 | pj-dark=#e6fbf2
+--color-light-mint-500: pf-light=#188055 | pf-dark=#188055 | pj-light=#188055 | pj-dark=#188055
+--color-light-mint-600: pf-light=#146946 | pf-dark=#146946 | pj-light=#146946 | pj-dark=#146946
+--color-light-mint-700: pf-light=#0f4f35 | pf-dark=#0f4f35 | pj-light=#0f4f35 | pj-dark=#0f4f35
+--color-light-mint-75: pf-light=#d0f6e7 | pf-dark=#d0f6e7 | pj-light=#d0f6e7 | pj-dark=#d0f6e7
+--color-light-mint-800: pf-light=#0b3a27 | pf-dark=#0b3a27 | pj-light=#0b3a27 | pj-dark=#0b3a27
+--color-light-mint-900: pf-light=#061f15 | pf-dark=#061f15 | pj-light=#061f15 | pj-dark=#061f15
+--color-light-orange-100: pf-light=#fedfbf | pf-dark=#fedfbf | pj-light=#fedfbf | pj-dark=#fedfbf
+--color-light-orange-200: pf-light=#ffca96 | pf-dark=#ffca96 | pj-light=#ffca96 | pj-dark=#ffca96
+--color-light-orange-300: pf-light=#f29339 | pf-dark=#f29339 | pj-light=#f29339 | pj-dark=#f29339
+--color-light-orange-400: pf-light=#ea7100 | pf-dark=#ea7100 | pj-light=#ea7100 | pj-dark=#ea7100
+--color-light-orange-50: pf-light=#fdf8ee | pf-dark=#fdf8ee | pj-light=#fdf8ee | pj-dark=#fdf8ee
+--color-light-orange-500: pf-light=#b7520c | pf-dark=#b7520c | pj-light=#b7520c | pj-dark=#b7520c
+--color-light-orange-600: pf-light=#943d15 | pf-dark=#943d15 | pj-light=#943d15 | pj-dark=#943d15
+--color-light-orange-700: pf-light=#753011 | pf-dark=#753011 | pj-light=#753011 | pj-dark=#753011
+--color-light-orange-75: pf-light=#feead4 | pf-dark=#feead4 | pj-light=#feead4 | pj-dark=#feead4
+--color-light-orange-800: pf-light=#57240c | pf-dark=#57240c | pj-light=#57240c | pj-dark=#57240c
+--color-light-orange-900: pf-light=#2f1307 | pf-dark=#2f1307 | pj-light=#2f1307 | pj-dark=#2f1307
+--color-light-pink-100: pf-light=#fbdbf3 | pf-dark=#fbdbf3 | pj-light=#fbdbf3 | pj-dark=#fbdbf3
+--color-light-pink-200: pf-light=#f8b6e6 | pf-dark=#f8b6e6 | pj-light=#f8b6e6 | pj-dark=#f8b6e6
+--color-light-pink-300: pf-light=#ed88d1 | pf-dark=#ed88d1 | pj-light=#ed88d1 | pj-dark=#ed88d1
+--color-light-pink-400: pf-light=#e158bc | pf-dark=#e158bc | pj-light=#e158bc | pj-dark=#e158bc
+--color-light-pink-50: pf-light=#fef3fb | pf-dark=#fef3fb | pj-light=#fef3fb | pj-dark=#fef3fb
+--color-light-pink-500: pf-light=#cf149d | pf-dark=#cf149d | pj-light=#cf149d | pj-dark=#cf149d
+--color-light-pink-600: pf-light=#ab1181 | pf-dark=#ab1181 | pj-light=#ab1181 | pj-dark=#ab1181
+--color-light-pink-700: pf-light=#820d62 | pf-dark=#820d62 | pj-light=#820d62 | pj-dark=#820d62
+--color-light-pink-75: pf-light=#fde7f7 | pf-dark=#fde7f7 | pj-light=#fde7f7 | pj-dark=#fde7f7
+--color-light-pink-800: pf-light=#620a4a | pf-dark=#620a4a | pj-light=#620a4a | pj-dark=#620a4a
+--color-light-pink-900: pf-light=#37052a | pf-dark=#37052a | pj-light=#37052a | pj-dark=#37052a
+--color-light-purple-100: pf-light=#ebdefd | pf-dark=#ebdefd | pj-light=#ebdefd | pj-dark=#ebdefd
+--color-light-purple-200: pf-light=#d8befc | pf-dark=#d8befc | pj-light=#d8befc | pj-dark=#d8befc
+--color-light-purple-300: pf-light=#c097f9 | pf-dark=#c097f9 | pj-light=#c097f9 | pj-dark=#c097f9
+--color-light-purple-400: pf-light=#a772f0 | pf-dark=#a772f0 | pj-light=#a772f0 | pj-dark=#a772f0
+--color-light-purple-50: pf-light=#f8f3fe | pf-dark=#f8f3fe | pj-light=#f8f3fe | pj-dark=#f8f3fe
+--color-light-purple-500: pf-light=#8c49e8 | pf-dark=#8c49e8 | pj-light=#8c49e8 | pj-dark=#8c49e8
+--color-light-purple-600: pf-light=#7528e0 | pf-dark=#7528e0 | pj-light=#7528e0 | pj-dark=#7528e0
+--color-light-purple-700: pf-light=#5609bf | pf-dark=#5609bf | pj-light=#5609bf | pj-dark=#5609bf
+--color-light-purple-75: pf-light=#f3ebfe | pf-dark=#f3ebfe | pj-light=#f3ebfe | pj-dark=#f3ebfe
+--color-light-purple-800: pf-light=#400791 | pf-dark=#400791 | pj-light=#400791 | pj-dark=#400791
+--color-light-purple-900: pf-light=#250452 | pf-dark=#250452 | pj-light=#250452 | pj-dark=#250452
+--color-light-red-100: pf-light=#f7dfdd | pf-dark=#f7dfdd | pj-light=#f7dfdd | pj-dark=#f7dfdd
+--color-light-red-200: pf-light=#f0bdba | pf-dark=#f0bdba | pj-light=#f0bdba | pj-dark=#f0bdba
+--color-light-red-300: pf-light=#e79490 | pf-dark=#e79490 | pj-light=#e79490 | pj-dark=#e79490
+--color-light-red-400: pf-light=#dd6a64 | pf-dark=#dd6a64 | pj-light=#dd6a64 | pj-dark=#dd6a64
+--color-light-red-50: pf-light=#fcf3f2 | pf-dark=#fcf3f2 | pj-light=#fcf3f2 | pj-dark=#fcf3f2
+--color-light-red-500: pf-light=#d0352d | pf-dark=#d0352d | pj-light=#d0352d | pj-dark=#d0352d
+--color-light-red-600: pf-light=#ac2c25 | pf-dark=#ac2c25 | pj-light=#ac2c25 | pj-dark=#ac2c25
+--color-light-red-700: pf-light=#82211c | pf-dark=#82211c | pj-light=#82211c | pj-dark=#82211c
+--color-light-red-75: pf-light=#faeae9 | pf-dark=#faeae9 | pj-light=#faeae9 | pj-dark=#faeae9
+--color-light-red-800: pf-light=#611915 | pf-dark=#611915 | pj-light=#611915 | pj-dark=#611915
+--color-light-red-900: pf-light=#350e0b | pf-dark=#350e0b | pj-light=#350e0b | pj-dark=#350e0b
+--color-light-silver-100: pf-light=#e2e3e5 | pf-dark=#e2e3e5 | pj-light=#e2e3e5 | pj-dark=#e2e3e5
+--color-light-silver-200: pf-light=#c9cacf | pf-dark=#c9cacf | pj-light=#c9cacf | pj-dark=#c9cacf
+--color-light-silver-300: pf-light=#a8aab2 | pf-dark=#a8aab2 | pj-light=#a8aab2 | pj-dark=#a8aab2
+--color-light-silver-400: pf-light=#898d96 | pf-dark=#898d96 | pj-light=#898d96 | pj-dark=#898d96
+--color-light-silver-50: pf-light=#f5f6f6 | pf-dark=#f5f6f6 | pj-light=#f5f6f6 | pj-dark=#f5f6f6
+--color-light-silver-500: pf-light=#6c707c | pf-dark=#6c707c | pj-light=#6c707c | pj-dark=#6c707c
+--color-light-silver-600: pf-light=#575c69 | pf-dark=#575c69 | pj-light=#575c69 | pj-dark=#575c69
+--color-light-silver-700: pf-light=#3f4554 | pf-dark=#3f4554 | pj-light=#3f4554 | pj-dark=#3f4554
+--color-light-silver-75: pf-light=#eeeef0 | pf-dark=#eeeef0 | pj-light=#eeeef0 | pj-dark=#eeeef0
+--color-light-silver-800: pf-light=#2e3445 | pf-dark=#2e3445 | pj-light=#2e3445 | pj-dark=#2e3445
+--color-light-silver-900: pf-light=#171b23 | pf-dark=#171b23 | pj-light=#171b23 | pj-dark=#171b23
+--color-light-yellow-100: pf-light=#fbff71 | pf-dark=#fbff71 | pj-light=#fbff71 | pj-dark=#fbff71
+--color-light-yellow-200: pf-light=#e9e739 | pf-dark=#e9e739 | pj-light=#e9e739 | pj-dark=#e9e739
+--color-light-yellow-300: pf-light=#c9c11c | pf-dark=#c9c11c | pj-light=#c9c11c | pj-dark=#c9c11c
+--color-light-yellow-400: pf-light=#9b8f00 | pf-dark=#9b8f00 | pj-light=#9b8f00 | pj-dark=#9b8f00
+--color-light-yellow-50: pf-light=#f8f8dd | pf-dark=#f8f8dd | pj-light=#f8f8dd | pj-dark=#f8f8dd
+--color-light-yellow-500: pf-light=#7c7100 | pf-dark=#7c7100 | pj-light=#7c7100 | pj-dark=#7c7100
+--color-light-yellow-600: pf-light=#665d00 | pf-dark=#665d00 | pj-light=#665d00 | pj-dark=#665d00
+--color-light-yellow-700: pf-light=#4c4600 | pf-dark=#4c4600 | pj-light=#4c4600 | pj-dark=#4c4600
+--color-light-yellow-75: pf-light=#f0efcb | pf-dark=#f0efcb | pj-light=#f0efcb | pj-dark=#f0efcb
+--color-light-yellow-800: pf-light=#383400 | pf-dark=#383400 | pj-light=#383400 | pj-dark=#383400
+--color-light-yellow-900: pf-light=#1e1b00 | pf-dark=#1e1b00 | pj-light=#1e1b00 | pj-dark=#1e1b00
+--color-link-brand-default: pf-light=#943d15 | pf-dark=#f3a964 | pj-light=#924712 | pj-dark=#eaac80
+--color-link-brand-hovered: pf-light=#753011 | pf-dark=#ffca96 | pj-light=#72370e | pj-dark=#f5cbae
+--color-link-brand-pressed: pf-light=#57240c | pf-dark=#fdeedb | pj-light=#52270a | pj-dark=#fbede4
+--color-link-neutral-default: pf-light=#1e1a19 | pf-dark=#f0f0f0 | pj-light=#1e1a19 | pj-dark=#f0f0f0
+--color-link-neutral-hovered: pf-light=#4c4342 | pf-dark=#d3d3d3 | pj-light=#4c4342 | pj-dark=#d3d3d3
+--color-link-neutral-pressed: pf-light=#756e6d | pf-dark=#b9b9b9 | pj-light=#756e6d | pj-dark=#b9b9b9
+--color-link-static-black-default: pf-light=#161616 | pf-dark=#161616 | pj-light=#161616 | pj-dark=#161616
+--color-link-static-black-hovered: pf-light=#454545 | pf-dark=#4c4c4c | pj-light=#454545 | pj-dark=#4c4c4c
+--color-link-static-black-pressed: pf-light=#707070 | pf-dark=#828282 | pj-light=#707070 | pj-dark=#828282
+--color-link-static-visited: pf-light=#ab1181 | pf-dark=#b71c8d | pj-light=#ab1181 | pj-dark=#b71c8d
+--color-link-static-white-default: pf-light=#ffffff | pf-dark=#ffffff | pj-light=#ffffff | pj-dark=#ffffff
+--color-link-static-white-hovered: pf-light=#f5f5f5 | pf-dark=#f0f0f0 | pj-light=#f5f5f5 | pj-dark=#f0f0f0
+--color-link-static-white-pressed: pf-light=#e3e3e3 | pf-dark=#d3d3d3 | pj-light=#e3e3e3 | pj-dark=#d3d3d3
+--color-link-visited: pf-light=#820d62 | pf-dark=#e478c7 | pj-light=#820d62 | pj-dark=#e478c7
+--color-styles-ai-default: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-styles-ai-soft: pf-light=#f7c342 | pf-dark=#a57b10 | pj-light=#f7c342 | pj-dark=#a57b10
+--color-styles-brand-default: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#72370e | pj-dark=#c06d32
+--color-styles-brand-soft: pf-light=#ffca96 | pf-dark=#7d3818 | pj-light=#d37430 | pj-dark=#4e2d16
+--color-surface-accent-blue-default: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-surface-accent-blue-soft: pf-light=#e6eefe | pf-dark=#102c62 | pj-light=#e6eefe | pj-dark=#102c62
+--color-surface-accent-brown-default: pf-light=#924712 | pf-dark=#d68d5b | pj-light=#924712 | pj-dark=#d68d5b
+--color-surface-accent-brown-soft: pf-light=#fbebdf | pf-dark=#432815 | pj-light=#fbebdf | pj-dark=#432815
+--color-surface-accent-cyan-default: pf-light=#0577ab | pf-dark=#13a8ec | pj-light=#0577ab | pj-dark=#13a8ec
+--color-surface-accent-cyan-soft: pf-light=#d7f2fe | pf-dark=#0d3244 | pj-light=#d7f2fe | pj-dark=#0d3244
+--color-surface-accent-gold-default: pf-light=#f7c342 | pf-dark=#f6ce6b | pj-light=#f7c342 | pj-dark=#f6ce6b
+--color-surface-accent-gold-soft: pf-light=#fcedc3 | pf-dark=#392d0e | pj-light=#fcedc3 | pj-dark=#392d0e
+--color-surface-accent-green-default: pf-light=#4e7c0e | pf-dark=#74ae21 | pj-light=#4e7c0e | pj-dark=#74ae21
+--color-surface-accent-green-soft: pf-light=#ddf7b8 | pf-dark=#253311 | pj-light=#ddf7b8 | pj-dark=#253311
+--color-surface-accent-mint-default: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-surface-accent-mint-soft: pf-light=#d0f6e7 | pf-dark=#183428 | pj-light=#d0f6e7 | pj-dark=#183428
+--color-surface-accent-orange-default: pf-light=#ea7100 | pf-dark=#e6862d | pj-light=#ea7100 | pj-dark=#e6862d
+--color-surface-accent-orange-soft: pf-light=#feead4 | pf-dark=#472616 | pj-light=#feead4 | pj-dark=#472616
+--color-surface-accent-pink-default: pf-light=#cf149d | pf-dark=#e478c7 | pj-light=#cf149d | pj-dark=#e478c7
+--color-surface-accent-pink-soft: pf-light=#fde7f7 | pf-dark=#541442 | pj-light=#fde7f7 | pj-dark=#541442
+--color-surface-accent-purple-default: pf-light=#8c49e8 | pf-dark=#b589f3 | pj-light=#8c49e8 | pj-dark=#b589f3
+--color-surface-accent-purple-soft: pf-light=#f3ebfe | pf-dark=#3d0f7c | pj-light=#f3ebfe | pj-dark=#3d0f7c
+--color-surface-accent-red-default: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-surface-accent-red-soft: pf-light=#faeae9 | pf-dark=#521e1c | pj-light=#faeae9 | pj-dark=#521e1c
+--color-surface-accent-yellow-default: pf-light=#e9e739 | pf-dark=#ccc64c | pj-light=#e9e739 | pj-dark=#ccc64c
+--color-surface-accent-yellow-soft: pf-light=#f0efcb | pf-dark=#342f09 | pj-light=#f0efcb | pj-dark=#342f09
+--color-surface-brand-default: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#72370e | pj-dark=#975222
+--color-surface-brand-soft: pf-light=#feead4 | pf-dark=#472616 | pj-light=#fbebdf | pj-dark=#432815
+--color-surface-brand-softer: pf-light=#fdf8ee | pf-dark=#301c12 | pj-light=#fdf5f0 | pj-dark=#2f1d10
+--color-surface-decorative-cyan: pf-light=#66ccfb | pf-dark=#66ccfb | pj-light=#66ccfb | pj-dark=#66ccfb
+--color-surface-decorative-mint: pf-light=#80e7bd | pf-dark=#80e7bd | pj-light=#80e7bd | pj-dark=#80e7bd
+--color-surface-decorative-pink: pf-light=#f8b6e6 | pf-dark=#f8b6e6 | pj-light=#f8b6e6 | pj-dark=#f8b6e6
+--color-surface-decorative-yellow: pf-light=#fbff71 | pf-dark=#fbff71 | pj-light=#fbff71 | pj-dark=#fbff71
+--color-surface-disabled: pf-light=#ebebeb | pf-dark=#2e2e2e | pj-light=#ebebeb | pj-dark=#2e2e2e
+--color-surface-elevated-softest: pf-light=#ffffff | pf-dark=#212121 | pj-light=#ffffff | pj-dark=#212121
+--color-surface-feedback-error-default: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-surface-feedback-error-soft: pf-light=#faeae9 | pf-dark=#521e1c | pj-light=#faeae9 | pj-dark=#521e1c
+--color-surface-feedback-information-default: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-surface-feedback-information-soft: pf-light=#e6eefe | pf-dark=#102c62 | pj-light=#e6eefe | pj-dark=#102c62
+--color-surface-feedback-success-default: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-surface-feedback-success-soft: pf-light=#d0f6e7 | pf-dark=#183428 | pj-light=#d0f6e7 | pj-dark=#183428
+--color-surface-feedback-warning-default: pf-light=#f7c342 | pf-dark=#f6ce6b | pj-light=#f7c342 | pj-dark=#f6ce6b
+--color-surface-feedback-warning-soft: pf-light=#fcedc3 | pf-dark=#392d0e | pj-light=#fcedc3 | pj-dark=#392d0e
+--color-surface-neutral-default: pf-light=#e6e4e4 | pf-dark=#353535 | pj-light=#e6e4e4 | pj-dark=#353535
+--color-surface-neutral-soft: pf-light=#efeeee | pf-dark=#2e2e2e | pj-light=#efeeee | pj-dark=#2e2e2e
+--color-surface-neutral-softer: pf-light=#f6f6f5 | pf-dark=#212121 | pj-light=#f6f6f5 | pj-dark=#212121
+--color-surface-neutral-softest: pf-light=#ffffff | pf-dark=#161616 | pj-light=#ffffff | pj-dark=#161616
+--color-surface-neutral-strong: pf-light=#756e6d | pf-dark=#9e9e9e | pj-light=#756e6d | pj-dark=#9e9e9e
+--color-surface-neutral-stronger: pf-light=#3c3331 | pf-dark=#d3d3d3 | pj-light=#3c3331 | pj-dark=#d3d3d3
+--color-surface-neutral-strongest: pf-light=#1e1a19 | pf-dark=#ffffff | pj-light=#1e1a19 | pj-dark=#ffffff
+--color-surface-segment-pf-digital: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-surface-segment-pf-one: pf-light=#616161 | pf-dark=#9e9e9e | pj-light=#616161 | pj-dark=#9e9e9e
+--color-surface-segment-pf-prime: pf-light=#161616 | pf-dark=#353535 | pj-light=#161616 | pj-dark=#353535
+--color-surface-segment-pf-win-primary: pf-light=#2e3445 | pf-dark=#2e3445 | pj-light=#2e3445 | pj-dark=#2e3445
+--color-surface-segment-pf-win-secondary: pf-light=#d8d4c0 | pf-dark=#bdb9a8 | pj-light=#d8d4c0 | pj-dark=#bdb9a8
+--color-surface-segment-pj-corporate: pf-light=#52270a | pf-dark=#733f1a | pj-light=#52270a | pj-dark=#733f1a
+--color-surface-segment-pj-digital: pf-light=#72370e | pf-dark=#975222 | pj-light=#72370e | pj-dark=#975222
+--color-surface-segment-pj-enterprise: pf-light=#e49965 | pf-dark=#eaac80 | pj-light=#e49965 | pj-dark=#eaac80
+--color-surface-segment-pj-middle: pf-light=#52270a | pf-dark=#733f1a | pj-light=#52270a | pj-dark=#733f1a
+--color-surface-segment-pj-pro: pf-light=#e49965 | pf-dark=#eaac80 | pj-light=#e49965 | pj-dark=#eaac80
+--color-surface-segment-pj-win: pf-light=#2e3445 | pf-dark=#2e3445 | pj-light=#2e3445 | pj-dark=#2e3445
+--color-surface-static-black: pf-light=#000000 | pf-dark=#000000 | pj-light=#000000 | pj-dark=#000000
+--color-surface-static-graphite: pf-light=#f6f6f5 | pf-dark=#f0f0f0 | pj-light=#f6f6f5 | pj-dark=#f0f0f0
+--color-surface-static-orange: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-surface-static-white-default: pf-light=#ffffff | pf-dark=#ffffff | pj-light=#ffffff | pj-dark=#ffffff
+--color-surface-static-white-softest: pf-light=#ffffff29 | pf-dark=#ffffff29 | pj-light=#ffffff29 | pj-dark=#ffffff29
+--color-text-accent-blue-default: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-text-accent-blue-strong: pf-light=#0e50d6 | pf-dark=#99b9f8 | pj-light=#0e50d6 | pj-dark=#99b9f8
+--color-text-accent-brown-default: pf-light=#b25616 | pf-dark=#d68d5b | pj-light=#b25616 | pj-dark=#d68d5b
+--color-text-accent-brown-strong: pf-light=#924712 | pf-dark=#eaac80 | pj-light=#924712 | pj-dark=#eaac80
+--color-text-accent-cyan-default: pf-light=#0577ab | pf-dark=#13a8ec | pj-light=#0577ab | pj-dark=#13a8ec
+--color-text-accent-cyan-strong: pf-light=#04628d | pf-dark=#66ccfb | pj-light=#04628d | pj-dark=#66ccfb
+--color-text-accent-gold-default: pf-light=#906906 | pf-dark=#c89614 | pj-light=#906906 | pj-dark=#c89614
+--color-text-accent-gold-strong: pf-light=#765705 | pf-dark=#e9b020 | pj-light=#765705 | pj-dark=#e9b020
+--color-text-accent-green-default: pf-light=#4e7c0e | pf-dark=#74ae21 | pj-light=#4e7c0e | pj-dark=#74ae21
+--color-text-accent-green-strong: pf-light=#41660b | pf-dark=#94c94a | pj-light=#41660b | pj-dark=#94c94a
+--color-text-accent-mint-default: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-text-accent-mint-strong: pf-light=#146946 | pf-dark=#57cd9d | pj-light=#146946 | pj-dark=#57cd9d
+--color-text-accent-orange-default: pf-light=#b7520c | pf-dark=#e6862d | pj-light=#b7520c | pj-dark=#e6862d
+--color-text-accent-orange-strong: pf-light=#943d15 | pf-dark=#f3a964 | pj-light=#943d15 | pj-dark=#f3a964
+--color-text-accent-pink-default: pf-light=#cf149d | pf-dark=#e478c7 | pj-light=#cf149d | pj-dark=#e478c7
+--color-text-accent-pink-strong: pf-light=#ab1181 | pf-dark=#f19fda | pj-light=#ab1181 | pj-dark=#f19fda
+--color-text-accent-purple-default: pf-light=#8c49e8 | pf-dark=#b589f3 | pj-light=#8c49e8 | pj-dark=#b589f3
+--color-text-accent-purple-strong: pf-light=#7528e0 | pf-dark=#ccaafb | pj-light=#7528e0 | pj-dark=#ccaafb
+--color-text-accent-red-default: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-text-accent-red-strong: pf-light=#ac2c25 | pf-dark=#eba8a5 | pj-light=#ac2c25 | pj-dark=#eba8a5
+--color-text-accent-yellow-default: pf-light=#7c7100 | pf-dark=#b6af31 | pj-light=#7c7100 | pj-dark=#b6af31
+--color-text-accent-yellow-strong: pf-light=#665d00 | pf-dark=#ccc64c | pj-light=#665d00 | pj-dark=#ccc64c
+--color-text-brand-inverse: pf-light=#ffca96 | pf-dark=#a24b16 | pj-light=#f3c09c | pj-dark=#975222
+--color-text-brand-primary: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#72370e | pj-dark=#c06d32
+--color-text-brand-secondary: pf-light=#943d15 | pf-dark=#f3a964 | pj-light=#924712 | pj-dark=#eaac80
+--color-text-brand-tertiary: pf-light=#943d15 | pf-dark=#ffca96 | pj-light=#924712 | pj-dark=#f5cbae
+--color-text-disabled: pf-light=#aaaaaa | pf-dark=#616161 | pj-light=#aaaaaa | pj-dark=#616161
+--color-text-feedback-error-default: pf-light=#d0352d | pf-dark=#e3837f | pj-light=#d0352d | pj-dark=#e3837f
+--color-text-feedback-error-strong: pf-light=#ac2c25 | pf-dark=#eba8a5 | pj-light=#ac2c25 | pj-dark=#eba8a5
+--color-text-feedback-information-default: pf-light=#2e69e0 | pf-dark=#749def | pj-light=#2e69e0 | pj-dark=#749def
+--color-text-feedback-information-strong: pf-light=#0e50d6 | pf-dark=#99b9f8 | pj-light=#0e50d6 | pj-dark=#99b9f8
+--color-text-feedback-success-default: pf-light=#188055 | pf-dark=#2fb27d | pj-light=#188055 | pj-dark=#2fb27d
+--color-text-feedback-success-strong: pf-light=#146946 | pf-dark=#57cd9d | pj-light=#146946 | pj-dark=#57cd9d
+--color-text-feedback-warning-default: pf-light=#906906 | pf-dark=#c89614 | pj-light=#906906 | pj-dark=#c89614
+--color-text-feedback-warning-strong: pf-light=#765705 | pf-dark=#e9b020 | pj-light=#765705 | pj-dark=#e9b020
+--color-text-neutral-inverse: pf-light=#ffffff | pf-dark=#161616 | pj-light=#ffffff | pj-dark=#161616
+--color-text-neutral-primary: pf-light=#1e1a19 | pf-dark=#f0f0f0 | pj-light=#1e1a19 | pj-dark=#f0f0f0
+--color-text-neutral-secondary: pf-light=#625a59 | pf-dark=#b9b9b9 | pj-light=#625a59 | pj-dark=#b9b9b9
+--color-text-static-black: pf-light=#161616 | pf-dark=#161616 | pj-light=#161616 | pj-dark=#161616
+--color-text-static-orange: pf-light=#ea7100 | pf-dark=#de710c | pj-light=#ea7100 | pj-dark=#de710c
+--color-text-static-white-default: pf-light=#ffffff | pf-dark=#ffffff | pj-light=#ffffff | pj-dark=#ffffff
+--color-text-static-white-soft: pf-light=#ffffff66 | pf-dark=#ffffff66 | pj-light=#ffffff66 | pj-dark=#ffffff66
+--mode: pf-light=PFLight | pf-dark=PFDark | pj-light=PJLight | pj-dark=PJDark
+--opacity-focused: pf-light=8 | pf-dark=8 | pj-light=8 | pj-dark=8
+--opacity-hovered: pf-light=4 | pf-dark=4 | pj-light=4 | pj-dark=4
+--opacity-pressed: pf-light=8 | pf-dark=8 | pj-light=8 | pj-dark=8
+--radius-full: pf-light=100px | pf-dark=100px | pj-light=100px | pj-dark=100px
+--radius-large: pf-light=16px | pf-dark=16px | pj-light=16px | pj-dark=16px
+--radius-medium: pf-light=12px | pf-dark=12px | pj-light=12px | pj-dark=12px
+--radius-small: pf-light=4px | pf-dark=4px | pj-light=4px | pj-dark=4px
+--size-128: pf-light=128px | pf-dark=128px | pj-light=128px | pj-dark=128px
+--size-16: pf-light=16px | pf-dark=16px | pj-light=16px | pj-dark=16px
+--size-20: pf-light=20px | pf-dark=20px | pj-light=20px | pj-dark=20px
+--size-24: pf-light=24px | pf-dark=24px | pj-light=24px | pj-dark=24px
+--size-32: pf-light=32px | pf-dark=32px | pj-light=32px | pj-dark=32px
+--size-4: pf-light=4px | pf-dark=4px | pj-light=4px | pj-dark=4px
+--size-40: pf-light=40px | pf-dark=40px | pj-light=40px | pj-dark=40px
+--size-48: pf-light=48px | pf-dark=48px | pj-light=48px | pj-dark=48px
+--size-56: pf-light=56px | pf-dark=56px | pj-light=56px | pj-dark=56px
+--size-64: pf-light=64px | pf-dark=64px | pj-light=64px | pj-dark=64px
+--size-72: pf-light=72px | pf-dark=72px | pj-light=72px | pj-dark=72px
+--size-8: pf-light=8px | pf-dark=8px | pj-light=8px | pj-dark=8px
+--size-80: pf-light=80px | pf-dark=80px | pj-light=80px | pj-dark=80px
+--spacing-12: pf-light=12px | pf-dark=12px | pj-light=12px | pj-dark=12px
+--spacing-16: pf-light=16px | pf-dark=16px | pj-light=16px | pj-dark=16px
+--spacing-2: pf-light=2px | pf-dark=2px | pj-light=2px | pj-dark=2px
+--spacing-24: pf-light=24px | pf-dark=24px | pj-light=24px | pj-dark=24px
+--spacing-32: pf-light=32px | pf-dark=32px | pj-light=32px | pj-dark=32px
+--spacing-4: pf-light=4px | pf-dark=4px | pj-light=4px | pj-dark=4px
+--spacing-48: pf-light=48px | pf-dark=48px | pj-light=48px | pj-dark=48px
+--spacing-72: pf-light=72px | pf-dark=72px | pj-light=72px | pj-dark=72px
+--spacing-8: pf-light=8px | pf-dark=8px | pj-light=8px | pj-dark=8px
+--spacing-96: pf-light=96px | pf-dark=96px | pj-light=96px | pj-dark=96px
+--type-font-brand: pf-light=Citrina VF | pf-dark=Citrina VF | pj-light=Citrina VF | pj-dark=Citrina VF
+--type-font-code: pf-light=Roboto Mono | pf-dark=Roboto Mono | pj-light=Roboto Mono | pj-dark=Roboto Mono
+--type-font-default: pf-light=Inter | pf-dark=Inter | pj-light=Inter | pj-dark=Inter
+--type-letter-spacing-default: pf-light=0px | pf-dark=0px | pj-light=0px | pj-dark=0px
+--type-letter-spacing-tight: pf-light=-0.01px | pf-dark=-0.01px | pj-light=-0.01px | pj-dark=-0.01px
+--type-letter-spacing-tighter: pf-light=-0.02px | pf-dark=-0.02px | pj-light=-0.02px | pj-dark=-0.02px
+--type-paragraph-spacing-default: pf-light=0px | pf-dark=0px | pj-light=0px | pj-dark=0px
+--type-paragraph-spacing-small: pf-light=8px | pf-dark=8px | pj-light=8px | pj-dark=8px
+--type-weight-light: pf-light=Light | pf-dark=Light | pj-light=Light | pj-dark=Light
+--type-weight-medium: pf-light=Medium | pf-dark=Medium | pj-light=Medium | pj-dark=Medium
+--type-weight-regular: pf-light=Regular | pf-dark=Regular | pj-light=Regular | pj-dark=Regular
+--type-weight-semi-bold: pf-light=Semibold | pf-dark=Semibold | pj-light=Semibold | pj-dark=Semibold
+```

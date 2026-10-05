@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("react/jsx-runtime"),r=({count:l,maxLength:s,...e})=>t.jsxs("div",{...e,className:`${e.className} type-label-small-regular`,children:[l,"/",s]});exports.Counter=r;

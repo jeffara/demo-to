@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const r=require("react/jsx-runtime"),n=(e,i,t)=>e?r.jsx("div",{"data-testid":`${t}-slot`,className:"listItemLeading__slot",children:e.children}):null;exports.renderSlot=n;

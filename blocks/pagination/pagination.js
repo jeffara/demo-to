@@ -15,6 +15,8 @@ export default function decorate(block) {
     const li = el("li"),
       a = el("a", "page-link", label);
     a.href = safeURL(base + page);
+    a.target=f.baseUrlTarget?.textContent.trim() || "_self";
+    if(a.target==="_blank")a.rel="noopener noreferrer";
     if (disabled) {
       a.setAttribute("aria-disabled", "true");
       a.tabIndex = -1;

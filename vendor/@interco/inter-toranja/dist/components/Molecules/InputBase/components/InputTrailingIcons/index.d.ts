@@ -1,0 +1,1 @@
+export { InputTrailingIcons } from './InputTrailingIcons';

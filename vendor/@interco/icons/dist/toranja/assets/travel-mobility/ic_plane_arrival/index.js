@@ -1,0 +1,24 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticPlaneArrival = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("g", {
+  fill: "#161616"
+}, /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  d: "M18.63 3.263a2.133 2.133 0 0 0-2.137.05L9.737 7.09 3.618 4.535C2.228 3.947.705 4.686.186 6.058c-.522 1.381.089 3 1.476 3.595l16.693 7.156a2.2 2.2 0 0 0 2.505-.51l2.5-2.644a2.377 2.377 0 0 0 0-3.245c-.377-.4-.88-.7-1.514-.7-.584 0-1.107.258-1.55.566l-.01.007-1.352.962a.84.84 0 0 1-.833.097l-1.726-.973 3.385-3.46a2.144 2.144 0 0 0 .022-2.894 1.993 1.993 0 0 0-.514-.405l-.637-.347Zm-.957 1.756A.138.138 0 0 0 17.602 5a.147.147 0 0 0-.074.024 1.062 1.062 0 0 1-.041.025l-7.112 3.975c-.32.18-.707.204-1.052.06L2.84 6.378c-.272-.114-.636.001-.782.388-.17.448.055.904.393 1.05l16.701 7.159.019.008c.04.019.08.022.116.014a.229.229 0 0 0 .12-.07l2.501-2.645a.378.378 0 0 0 0-.497.551.551 0 0 0-.079-.071c-.042.01-.163.047-.387.202l-1.346.96a2.839 2.839 0 0 1-2.938.23l-2.621-1.478c-.602-.34-.77-1.07-.507-1.623.057-.121.136-.235.233-.336l4.05-4.14a.134.134 0 0 0 .021-.079.127.127 0 0 0-.025-.084l-.635-.346Z",
+  clipRule: "evenodd"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M6 19a1 1 0 1 0 0 2h12a1 1 0 0 0 0-2H6Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticPlaneArrival;

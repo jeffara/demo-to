@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const c=require("react/jsx-runtime"),o=require("../../../../../Atoms/Switch/Switch.cjs"),s=require("../../../utils/stateMapper.cjs"),r=(e,t)=>{const n=s.mapStateToSTATE(t);return c.jsx(o.Switch,{checked:e.checked,onChange:e.onChange,state:n})};exports.renderSwitch=r;

@@ -1,0 +1,39 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagAnguillaRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#0E50D6",
+  d: "M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12C0 12.003 12 .001 12 0c6.627 0 12 5.373 12 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M11.968 12H12v-.032l-.032.032Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M12 6.26V0h-.002C5.371.001 0 5.373 0 12h6.26V8.474L9.787 12h2.182l.032-.032V9.786L8.474 6.261H12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M6.071 1.565a12.057 12.057 0 0 0-4.506 4.506V12h3.13V4.696H12v-3.13H6.071Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M12 10.524 7.736 6.261H6.261L12 12v-1.476Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M20.294 13.757A2.926 2.926 0 0 0 20.87 12V6.783a2.605 2.605 0 0 1-3.652-.522 2.605 2.605 0 0 1-3.653.522V12c0 .702.23 1.282.576 1.757h6.153Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F29339",
+  d: "M19.209 11.032c.166-.405.295-.998.295-1.292 0-.474-.617-.858-.617-.858s-.618.384-.618.858c0 .294.13.887.295 1.292l-.356.805a1.796 1.796 0 0 0 1.357 0l-.356-.805ZM16.795 8.426c-.434.059-1.012.243-1.267.39-.41.237-.434.964-.434.964s.642.343 1.052.106c.255-.147.703-.555.971-.902l.876-.094a1.8 1.8 0 0 0-.68-1.175l-.518.71ZM15.745 11.82c.268.346.716.754.972.901.41.237 1.051-.106 1.051-.106s-.024-.727-.434-.963c-.255-.148-.833-.332-1.267-.39l-.519-.712a1.8 1.8 0 0 0-.678 1.175l.875.094Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#5A8BEB",
+  d: "M14.012 13.565c.974 1.564 3.205 2.087 3.205 2.087s2.232-.523 3.206-2.087h-6.411Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagAnguillaRounded;

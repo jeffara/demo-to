@@ -1,0 +1,23 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticBed = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 16 16",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M1.333 8.833a1.5 1.5 0 0 1 1.5-1.5h10.334a1.5 1.5 0 0 1 1.5 1.5V12H1.333V8.833ZM2.667 4.167a1.5 1.5 0 0 1 1.5-1.5h7.666a1.5 1.5 0 0 1 1.5 1.5v3.166H2.667V4.167ZM14.667 13.333V12M1.333 13.333V12"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M8 6.667a2 2 0 1 0-4 0M12 6.667a2 2 0 1 0-4 0"
+}));
+export default ComponenticBed;

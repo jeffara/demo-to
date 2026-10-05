@@ -1,0 +1,1 @@
+"use strict";require('../../../../assets/components/Molecules/Snackbar/SnackbarButton/SnackbarButton.modules.css');const n=require("react/jsx-runtime");;/* empty css                              */const s=({labelButton:t,onClick:e})=>n.jsx("div",{className:"button_container",children:n.jsx("button",{onClick:e,children:n.jsx("span",{children:t})})});module.exports=s;

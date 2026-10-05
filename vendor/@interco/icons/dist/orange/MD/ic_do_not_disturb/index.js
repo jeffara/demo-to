@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticDoNotDisturb = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M6 7H5a1 1 0 0 0 1 1V7Zm4 0v1a1 1 0 0 0 1-1h-1Zm4 4v1h1v-1h-1Zm-9 4v6h2v-6H5Zm3 9h8v-2H8v2Zm11-3V6h-2v15h2Zm0-15c0-1.035-.363-2.528-1.443-3.779C16.445.935 14.656 0 12 0v2c2.144 0 3.355.732 4.043 1.529.72.833.957 1.84.957 2.471h2Zm-7-6C9.274 0 7.474 1.158 6.388 2.666 5.34 4.122 5 5.84 5 7h2c0-.84.26-2.122 1.012-3.166C8.726 2.842 9.926 2 12 2V0ZM6 8h4V6H6v2Zm4-1 1 .001V7.01c0 .002 0 .002 0 0L11 6.986a1.464 1.464 0 0 1 .143-.538.758.758 0 0 1 .255-.302C11.498 6.078 11.675 6 12 6V4c-.675 0-1.248.172-1.711.48-.457.305-.75.704-.933 1.073A3.457 3.457 0 0 0 9 6.996v.003L10 7Zm2-1c.325 0 .502.078.601.145.106.07.189.17.255.302a1.464 1.464 0 0 1 .144.564c0 .001 0 .001 0 0V7L14 7l1-.001V6.978a1.834 1.834 0 0 0-.006-.135 3.453 3.453 0 0 0-.35-1.29 2.755 2.755 0 0 0-.933-1.073C13.248 4.172 12.675 4 12 4v2Zm1 1v4h2V7h-2Zm1 3h-4v2h4v-2Zm2 14a3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1v2ZM5 21a3 3 0 0 0 3 3v-2a1 1 0 0 1-1-1H5Zm2-6a3 3 0 0 1 3-3v-2a5 5 0 0 0-5 5h2Zm6 2a1 1 0 0 1-1 1v2a3 3 0 0 0 3-3h-2Zm-1 1a1 1 0 0 1-1-1H9a3 3 0 0 0 3 3v-2Zm-1-1a1 1 0 0 1 1-1v-2a3 3 0 0 0-3 3h2Zm1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3v2Z"
+}));
+export default ComponenticDoNotDisturb;

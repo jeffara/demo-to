@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=require("./Icon.cjs"),c=require("./constants/iconColors.cjs"),o=require("./constants/iconNames.cjs"),s=require("./hooks/useIcon.cjs");exports.Icon=n.Icon;exports.IconColors=c.IconColors;exports.ICON_NAMES=o.ICON_NAMES;exports.isIconName=o.isIconName;exports.useIcon=s.useIcon;

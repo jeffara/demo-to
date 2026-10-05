@@ -1,0 +1,88 @@
+import { jsxs as i, jsx as e } from "react/jsx-runtime";
+const l = () => /* @__PURE__ */ i("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 64 64", fill: "none", children: [
+  /* @__PURE__ */ e("g", { filter: "url(#pendingBaseBlur)", children: /* @__PURE__ */ e("circle", { cx: "32", cy: "32", r: "28", fill: "#6F717E", fillOpacity: "0.7" }) }),
+  /* @__PURE__ */ e("g", { filter: "url(#pendingClockInnerShadow)", children: /* @__PURE__ */ e(
+    "path",
+    {
+      d: "M27 33.735V17.1752C27 16.5353 27.5161 16.0165 28.1527 16.0165L32.5499 16C33.2057 16 33.7373 16.5188 33.7373 17.1588V31.1634C33.7373 31.4707 33.8624 31.7654 34.085 31.9828L42.6624 40.4281C43.1125 40.8807 43.1125 41.6144 42.6624 42.0669L39.0874 45.6606C38.6443 46.106 37.9284 46.114 37.4755 45.6786L28.4237 37.0845C27.5143 36.2101 27 35 27 33.735Z",
+      fill: "#FFFCF5"
+    }
+  ) }),
+  /* @__PURE__ */ i("defs", { children: [
+    /* @__PURE__ */ i(
+      "filter",
+      {
+        id: "pendingBaseBlur",
+        x: "-25.0909",
+        y: "-25.0909",
+        width: "114.1818",
+        height: "114.1818",
+        filterUnits: "userSpaceOnUse",
+        colorInterpolationFilters: "sRGB",
+        children: [
+          /* @__PURE__ */ e("feFlood", { floodOpacity: "0", result: "BackgroundImageFix" }),
+          /* @__PURE__ */ e("feBlend", { in: "SourceGraphic", in2: "BackgroundImageFix", result: "shape" }),
+          /* @__PURE__ */ e(
+            "feColorMatrix",
+            {
+              in: "SourceAlpha",
+              type: "matrix",
+              values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+              result: "hardAlpha"
+            }
+          ),
+          /* @__PURE__ */ e("feOffset", { dy: "1.45455" }),
+          /* @__PURE__ */ e("feGaussianBlur", { stdDeviation: "4.36364" }),
+          /* @__PURE__ */ e("feComposite", { in2: "hardAlpha", operator: "arithmetic", k2: "-1", k3: "1" }),
+          /* @__PURE__ */ e(
+            "feColorMatrix",
+            {
+              type: "matrix",
+              values: "0 0 0 0 0.835294 0 0 0 0 0.835294 0 0 0 0 0.835294 0 0 0 0.3 0"
+            }
+          ),
+          /* @__PURE__ */ e("feBlend", { in2: "shape", result: "effect1_innerShadow_0_pending" })
+        ]
+      }
+    ),
+    /* @__PURE__ */ i(
+      "filter",
+      {
+        id: "pendingClockInnerShadow",
+        x: "27",
+        y: "16",
+        width: "16",
+        height: "31.6615",
+        filterUnits: "userSpaceOnUse",
+        colorInterpolationFilters: "sRGB",
+        children: [
+          /* @__PURE__ */ e("feFlood", { floodOpacity: "0", result: "BackgroundImageFix" }),
+          /* @__PURE__ */ e("feBlend", { in: "SourceGraphic", in2: "BackgroundImageFix", result: "shape" }),
+          /* @__PURE__ */ e(
+            "feColorMatrix",
+            {
+              in: "SourceAlpha",
+              type: "matrix",
+              values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+              result: "hardAlpha"
+            }
+          ),
+          /* @__PURE__ */ e("feOffset", { dy: "1.66148" }),
+          /* @__PURE__ */ e("feGaussianBlur", { stdDeviation: "1.66148" }),
+          /* @__PURE__ */ e("feComposite", { in2: "hardAlpha", operator: "arithmetic", k2: "-1", k3: "1" }),
+          /* @__PURE__ */ e(
+            "feColorMatrix",
+            {
+              type: "matrix",
+              values: "0 0 0 0 0.378636 0 0 0 0 0.376137 0 0 0 0 0.361971 0 0 0 0.2 0"
+            }
+          ),
+          /* @__PURE__ */ e("feBlend", { in2: "shape", result: "effect1_innerShadow_0_93" })
+        ]
+      }
+    )
+  ] })
+] });
+export {
+  l as PendingIcon
+};

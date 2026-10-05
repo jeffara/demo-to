@@ -1,0 +1,19 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFilePdf = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M4.31 14.495h.645c.198 0 .362-.032.495-.095a.688.688 0 0 0 .304-.266.773.773 0 0 0 .103-.403.751.751 0 0 0-.103-.4.672.672 0 0 0-.304-.264 1.177 1.177 0 0 0-.495-.093H4.31v1.521ZM9.812 15.97H9.17v-2.94h.625c.31 0 .571.048.783.144a.972.972 0 0 1 .484.464c.11.213.164.5.164.86s-.055.647-.164.864a.973.973 0 0 1-.479.466c-.21.095-.466.142-.77.142Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M3 10V4.5C3 2.54 4.626 1 6.571 1h9.05a3.6 3.6 0 0 1 2.78 1.303L22.21 6.93c.51.62.791 1.395.791 2.197V19.5c0 1.96-1.626 3.5-3.571 3.5H6.57C4.626 23 3 21.46 3 19.5V19H2a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h1Zm2-5.5C5 3.698 5.677 3 6.571 3h9.05a1.6 1.6 0 0 1 1.236.574L20.664 8.2c.22.266.336.593.336.926V19.5c0 .802-.677 1.5-1.571 1.5H6.57C5.677 21 5 20.302 5 19.5V19h13a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1H5V4.5ZM3 17v-5h2.238c.406 0 .756.073 1.05.22.297.145.525.347.686.608.16.258.24.56.24.903 0 .345-.082.647-.246.906a1.605 1.605 0 0 1-.696.598c-.301.142-.66.212-1.074.212H4.31V17H3Zm4.86 0h2.002c.55 0 1.026-.1 1.426-.298.4-.2.708-.487.924-.862.217-.374.325-.822.325-1.342 0-.52-.108-.966-.325-1.338a2.144 2.144 0 0 0-.926-.86c-.399-.2-.874-.3-1.426-.3h-2v5Zm5.442 0v-5H17v.981h-2.389v1.026h2.154v.984H14.61V17h-1.31Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticFilePdf;

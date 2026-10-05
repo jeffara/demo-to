@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const i=require("../types.cjs"),o=(r,n)=>{const t=n.trim().split(" "),e=t[0].charAt(0).toUpperCase();if(r!==i.InitialCategory.Person||t.length<=1)return e;const s=t[t.length-1].charAt(0).toUpperCase();return`${e}${s}`};exports.getInitials=o;

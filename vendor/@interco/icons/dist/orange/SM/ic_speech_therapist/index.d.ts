@@ -1,0 +1,5 @@
+import { SVGProps } from "react";
+declare const ComponenticSpeechTherapist: {
+    (props: SVGProps<SVGSVGElement>): JSX.Element;
+};
+export default ComponenticSpeechTherapist;

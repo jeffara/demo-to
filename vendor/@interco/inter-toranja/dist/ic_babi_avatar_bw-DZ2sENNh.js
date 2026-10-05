@@ -1,0 +1,4 @@
+const e = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20fill='none'%20viewBox='0%200%2024%2024'%3e%3cg%3e%3cg%3e%3crect%20width='24'%20height='24'%20fill='%23B6B7BB'%20rx='12'/%3e%3cmask%20id='c'%20width='24'%20height='24'%20x='0'%20y='0'%20maskUnits='userSpaceOnUse'%3e%3ccircle%20cx='12'%20cy='12'%20r='12'%20fill='%23C4C4C4'/%3e%3c/mask%3e%3cg%20mask='url(%23c)'%3e%3cpath%20fill='url(%23d)'%20d='M-25.641-11.026H46.615V106.61500000000001H-25.641z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cpattern%20id='d'%20width='1'%20height='1'%20patternContentUnits='objectBoundingBox'%3e%3cuse%20xlink:href='%23e'%20transform='matrix(.0004%200%200%20.00024%200%200)'/%3e%3c/pattern%3e%3cclipPath%20id='a'%3e%3cpath%20fill='%23fff'%20d='M0%200H24V24H0z'/%3e%3c/clipPath%3e%3cclipPath%20id='b'%3e%3crect%20width='24'%20height='24'%20fill='%23fff'%20rx='12'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e";
+export {
+  e as default
+};

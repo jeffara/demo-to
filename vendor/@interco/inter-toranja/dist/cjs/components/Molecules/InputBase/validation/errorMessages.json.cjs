@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const i="Insira um e-mail válido.",n="Número de telefone inválido.",l="CPF inválido.",a="Data inválida.",d="CEP inválido.";exports.invalidCEP=d;exports.invalidCPF=l;exports.invalidDate=a;exports.invalidEmail=i;exports.invalidPhone=n;

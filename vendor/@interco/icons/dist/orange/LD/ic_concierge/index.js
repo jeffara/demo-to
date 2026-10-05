@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticConcierge = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M4 21.334H3a1 1 0 0 0 1 1v-1Zm24 0v1a1 1 0 0 0 1-1h-1Zm-15.333-17a1 1 0 1 0 0 2v-2Zm6.666 2a1 1 0 1 0 0-2v2ZM4 25.666a1 1 0 1 0 0 2v-2Zm24 2a1 1 0 1 0 0-2v2ZM5 21.333c0-5.23 4.81-9.666 11-9.666v-2c-7.066 0-13 5.116-13 11.667h2Zm11-9.666c6.19 0 11 4.435 11 9.667h2c0-6.551-5.934-11.667-13-11.667v2Zm12 8.667H4v2h24v-2Zm-11-9.667V5.334h-2v5.333h2Zm-4.333-4.333H16v-2h-3.333v2Zm3.333 0h3.333v-2H16v2ZM4 27.666h24v-2H4v2Z"
+}));
+export default ComponenticConcierge;

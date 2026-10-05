@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticConcierge = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 72 72",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M9 48H7.5A1.5 1.5 0 0 0 9 49.5V48Zm54 0v1.5a1.5 1.5 0 0 0 1.5-1.5H63ZM28.5 10.5a1.5 1.5 0 0 0 0 3v-3Zm15 3a1.5 1.5 0 1 0 0-3v3ZM9 58.5a1.5 1.5 0 0 0 0 3v-3Zm54 3a1.5 1.5 0 1 0 0-3v3ZM10.5 48c0-12.265 11.246-22.5 25.5-22.5v-3C20.43 22.5 7.5 33.755 7.5 48h3ZM36 25.5c14.254 0 25.5 10.235 25.5 22.5h3c0-14.245-12.93-25.5-28.5-25.5v3Zm27 21H9v3h54v-3ZM37.5 24V12h-3v12h3Zm-9-10.5H36v-3h-7.5v3Zm7.5 0h7.5v-3H36v3Zm-27 48h54v-3H9v3Z"
+}));
+export default ComponenticConcierge;

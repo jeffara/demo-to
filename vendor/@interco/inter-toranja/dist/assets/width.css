@@ -1,0 +1,6 @@
+@import './widths/style.css';
+
+/*** Widths Customs ***/
+.tds-w-auto {
+  width: auto;
+}

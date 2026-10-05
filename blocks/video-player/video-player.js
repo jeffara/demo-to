@@ -38,8 +38,8 @@ export default function decorate(block) {
       target.autoplay = true;
     } else {
       const a = link(f.videoUrl, "button secondary", "Abrir vídeo");
-      a.target = "_blank";
-      a.rel = "noopener";
+      a.target = f.videoUrlTarget?.textContent.trim() || "_blank";
+      a.rel = "noopener noreferrer";
       target = a;
     }
     frame.replaceChildren(target);

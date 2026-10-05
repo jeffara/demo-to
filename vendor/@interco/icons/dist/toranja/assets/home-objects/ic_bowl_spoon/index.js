@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticBowlSpoon = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M20.634 1.07a1 1 0 1 1 .733 1.86L13.09 6.192c.028 1.253-.668 2.476-1.896 2.96L9.042 10H22a1 1 0 0 1 .965 1.263l-1.393 5.105a1.093 1.093 0 0 1-.013.047C20.336 20.163 16.989 23 12.889 23H11.11c-4.099 0-7.446-2.838-8.669-6.585a1.025 1.025 0 0 1-.013-.047l-1.393-5.105A1 1 0 0 1 2 10h3.259L4.053 6.41a1 1 0 0 1 .58-1.25l4.513-1.776c1.236-.487 2.52-.038 3.275.922l8.213-3.236ZM3.31 12l1.04 3.817c1 3.03 3.652 5.183 6.76 5.183h1.78c3.108 0 5.76-2.152 6.76-5.183L20.69 12H3.31Zm7.717-6.125c-.2-.596-.74-.792-1.148-.631L6.25 6.674l.676 2.01 3.533-1.392c.453-.179.778-.792.567-1.417Z"
+}));
+export default ComponenticBowlSpoon;

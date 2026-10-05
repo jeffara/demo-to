@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticHighHeels = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M3.957 4a.997.997 0 0 1 .824.375l7.455 8.946c.365.35 1.059.756 1.834.963.804.214 1.46.156 1.867-.11a.997.997 0 0 1 .578-.174c1.352.002 2.726.27 3.782 1.082C21.404 15.934 22 17.257 22 19a1 1 0 0 1-1 1h-9.977a.994.994 0 0 1-.978-.704c-.757-2.25-2.73-4.397-5.045-5.075V20H3v-5.704c-.979-1.55-1.5-3.153-1.5-4.796 0-1.728.577-3.412 1.656-5.037a1 1 0 0 1 .8-.462Zm.196 2.746C3.71 7.69 3.5 8.606 3.5 9.5c0 .82.177 1.659.549 2.52 3.53.269 6.41 3.084 7.64 5.98h8.206c-.153-.645-.458-1.056-.817-1.332-.52-.4-1.3-.63-2.313-.663-1.034.544-2.238.471-3.21.212-1.074-.287-2.109-.86-2.753-1.501l-.03-.03a.995.995 0 0 1-.05-.057L4.154 6.746Z"
+}));
+export default ComponenticHighHeels;

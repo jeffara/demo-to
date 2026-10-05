@@ -911,8 +911,8 @@
               "subtitle": "Aponte a câmera do seu celular para o QR Code ao lado ou acesse sua loja de aplicativos favorita. É gratuito, seguro e rápido.",
               "appleStoreUrl": "https://apps.apple.com/br/app/inter/id1071477797",
               "googlePlayUrl": "https://play.google.com/store/apps/details?id=br.com.intermedium",
-              "qrCodeImage": "",
-              "qrCodeImageAlt": ""
+              "qrCodeImage": "/assets/demo/inter-qr.png",
+              "qrCodeImageAlt": "QR Code para acessar o site Inter"
             },
             "items": []
           }
@@ -941,7 +941,1349 @@
     ]
   },
   "demo-toranja": {
-    "title": "Showcase Banco Inter — Catálogo Vivo dos 31 Componentes Toranja & AEM EDS",
+    "title": "Toranja | Showcase completo",
+    "description": "Catálogo oficial do Design System Toranja 1.13.3 em EDS",
+    "sections": [
+      {
+        "id": "catalogo",
+        "content": [
+          {
+            "text": "<h1>Toranja: catálogo de componentes</h1><p>64 componentes oficiais para criar experiências. Abra cada exemplo para explorar estados e variantes.</p><p><a href=\"/\">Página inicial</a> · <a href=\"/composicoes\">Composições de página</a></p>"
+          },
+          {
+            "text": "<ul class=\"ds-catalog-links\"><li><a href=\"/showcase/alert\">Alert</a></li><li><a href=\"/showcase/avatar\">Avatar</a></li><li><a href=\"/showcase/accordion\">Accordion</a></li><li><a href=\"/showcase/badge\">Badge</a></li><li><a href=\"/showcase/button\">Button</a></li><li><a href=\"/showcase/banner\">Banner</a></li><li><a href=\"/showcase/bottom-sheet\">BottomSheet</a></li><li><a href=\"/showcase/bottom-sheet-country\">BottomSheetCountry</a></li><li><a href=\"/showcase/card\">Card</a></li><li><a href=\"/showcase/checkbox\">Checkbox</a></li><li><a href=\"/showcase/chip\">Chip</a></li><li><a href=\"/showcase/chart-bar\">ChartBar</a></li><li><a href=\"/showcase/chart-donut\">ChartDonut</a></li><li><a href=\"/showcase/chart-line\">ChartLine</a></li><li><a href=\"/showcase/chart-meter\">ChartMeter</a></li><li><a href=\"/showcase/counter\">Counter</a></li><li><a href=\"/showcase/cross-selling\">CrossSelling</a></li><li><a href=\"/showcase/carousel\">Carousel</a></li><li><a href=\"/showcase/date-picker\">DatePicker</a></li><li><a href=\"/showcase/decorated-text\">DecoratedText</a></li><li><a href=\"/showcase/divider\">Divider</a></li><li><a href=\"/showcase/feedback-screen\">FeedbackScreen</a></li><li><a href=\"/showcase/flag\">Flag</a></li><li><a href=\"/showcase/header\">Header</a></li><li><a href=\"/showcase/floating-action-button\">FloatingActionButton</a></li><li><a href=\"/showcase/icon\">Icon</a></li><li><a href=\"/showcase/image\">Image</a></li><li><a href=\"/showcase/icon-button\">IconButton</a></li><li><a href=\"/showcase/icon-chip\">IconChip</a></li><li><a href=\"/showcase/input-country\">InputCountry</a></li><li><a href=\"/showcase/input-date\">InputDate</a></li><li><a href=\"/showcase/input-password\">InputPassword</a></li><li><a href=\"/showcase/input-search\">InputSearch</a></li><li><a href=\"/showcase/input-text\">InputText</a></li><li><a href=\"/showcase/input-money\">InputMoney</a></li><li><a href=\"/showcase/link\">Link</a></li><li><a href=\"/showcase/list-item\">ListItem</a></li><li><a href=\"/showcase/list-item-control\">ListItemControl</a></li><li><a href=\"/showcase/list-item-general\">ListItemGeneral</a></li><li><a href=\"/showcase/list-item-action\">ListItemAction</a></li><li><a href=\"/showcase/list-item-view\">ListItemView</a></li><li><a href=\"/showcase/menu-item\">MenuItem</a></li><li><a href=\"/showcase/neutral-icon-button\">NeutralIconButton</a></li><li><a href=\"/showcase/page-indicator\">PageIndicator</a></li><li><a href=\"/showcase/payment-methods\">PaymentMethods</a></li><li><a href=\"/showcase/pin-code\">PinCode</a></li><li><a href=\"/showcase/progress-bar\">ProgressBar</a></li><li><a href=\"/showcase/progress-circle\">ProgressCircle</a></li><li><a href=\"/showcase/radio\">Radio</a></li><li><a href=\"/showcase/section-title\">SectionTitle</a></li><li><a href=\"/showcase/section-subtitle\">SectionSubtitle</a></li><li><a href=\"/showcase/segmented-control\">SegmentedControl</a></li><li><a href=\"/showcase/select\">Select</a></li><li><a href=\"/showcase/spinner\">Spinner</a></li><li><a href=\"/showcase/signal\">Signal</a></li><li><a href=\"/showcase/switch\">Switch</a></li><li><a href=\"/showcase/snackbar\">Snackbar</a></li><li><a href=\"/showcase/stepper\">Stepper</a></li><li><a href=\"/showcase/tabs\">Tabs</a></li><li><a href=\"/showcase/tag\">Tag</a></li><li><a href=\"/showcase/text\">Text</a></li><li><a href=\"/showcase/text-area\">TextArea</a></li><li><a href=\"/showcase/timeline\">Timeline</a></li><li><a href=\"/showcase/widget\">Widget</a></li></ul>"
+          }
+        ]
+      },
+      {
+        "id": "ds-alert",
+        "content": [
+          {
+            "text": "<h2>Alert</h2><p><a href=\"/showcase/alert\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-alert",
+            "properties": {
+              "p76617269616e74": "information",
+              "p7374617465": "enabled",
+              "p7469746c65": "Informação importante",
+              "p6465736372697074696f6e": "Você pode editar este aviso no Universal Editor.",
+              "p73686f774c696e6b": "true",
+              "p6c696e6b2e6c6162656c": "Conheça os componentes",
+              "p6c696e6b2e68726566": "/demo-toranja",
+              "accessibleLabel": "Alert"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-avatar",
+        "content": [
+          {
+            "text": "<h2>Avatar</h2><p><a href=\"/showcase/avatar\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-avatar",
+            "properties": {
+              "p636f6c6f72": "soft",
+              "p76617269616e74": "initial",
+              "p73697a65": "large",
+              "p63617465676f7279": "person",
+              "p6c6162656c": "Banco Inter",
+              "accessibleLabel": "Avatar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-accordion",
+        "content": [
+          {
+            "text": "<h2>Accordion</h2><p><a href=\"/showcase/accordion\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-accordion",
+            "properties": {
+              "p7469746c65": "Como editar este componente?",
+              "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
+              "p73686f7744697669646572": "true",
+              "p6368696c6472656e": "<p>Selecione o bloco e altere as propriedades. O conteúdo permanece no AEM.</p>",
+              "p636f6e74656e7456617269616e74": "text",
+              "accessibleLabel": "Accordion"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-badge",
+        "content": [
+          {
+            "text": "<h2>Badge</h2><p><a href=\"/showcase/badge\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-badge",
+            "properties": {
+              "p76617269616e74": "label",
+              "p636f756e74": 8,
+              "accessibleLabel": "Badge"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-button",
+        "content": [
+          {
+            "text": "<h2>Button</h2><p><a href=\"/showcase/button\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-button",
+            "properties": {
+              "p6c6162656c": "Conhecer o showcase",
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p76617269616e74": "default",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Button"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-banner",
+        "content": [
+          {
+            "text": "<h2>Banner</h2><p><a href=\"/showcase/banner\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-banner",
+            "properties": {
+              "p76617269616e74": "image",
+              "p73697a65": "medium",
+              "p75726c": "/assets/demo/ede5e1c82aad.jpg",
+              "p616c74": "Momentos da vida",
+              "accessibleLabel": "Banner"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-bottom-sheet",
+        "content": [
+          {
+            "text": "<h2>BottomSheet</h2><p><a href=\"/showcase/bottom-sheet\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-bottom-sheet",
+            "properties": {
+              "p7469746c65": "Mais possibilidades",
+              "p69734f70656e": "false",
+              "p6f7665726c6179": "on",
+              "p657870616e7369626c65": "off",
+              "p706f736974696f6e": "hug",
+              "p736c6f74": "<p>Conteúdo editável do painel.</p>",
+              "accessibleLabel": "BottomSheet",
+              "triggerLabel": "Abrir BottomSheet"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-bottom-sheet-country",
+        "content": [
+          {
+            "text": "<h2>BottomSheetCountry</h2><p><a href=\"/showcase/bottom-sheet-country\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-bottom-sheet-country",
+            "properties": {
+              "p73686f77536561726368": "true",
+              "p7469746c65": "Escolha o país",
+              "p69734f70656e": "false",
+              "accessibleLabel": "BottomSheetCountry",
+              "triggerLabel": "Abrir BottomSheetCountry"
+            },
+            "items": [
+              {
+                "p76616c7565": "BR",
+                "p6c6162656c": "Brasil",
+                "p666c6167": "ic_flag_brazil_rounded"
+              },
+              {
+                "p76616c7565": "US",
+                "p6c6162656c": "Estados Unidos",
+                "p666c6167": "ic_flag_united_states_rounded"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ds-card",
+        "content": [
+          {
+            "text": "<h2>Card</h2><p><a href=\"/showcase/card\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-card",
+            "properties": {
+              "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Card"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-checkbox",
+        "content": [
+          {
+            "text": "<h2>Checkbox</h2><p><a href=\"/showcase/checkbox\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-checkbox",
+            "properties": {
+              "p7374617465": "enabled",
+              "p636865636b6564": "false",
+              "accessibleLabel": "Checkbox"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-chip",
+        "content": [
+          {
+            "text": "<h2>Chip</h2><p><a href=\"/showcase/chip\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-chip",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p73656c6563746564": "false",
+              "p6c656164696e6749636f6e": "ic_piggy_bank",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Chip"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-chart-bar",
+        "content": [
+          {
+            "text": "<h2>ChartBar</h2><p><a href=\"/showcase/chart-bar\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-chart-bar",
+            "properties": {
+              "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+              "p76616c756573": "[25,50,75]",
+              "p6368617274486569676874": 220,
+              "p617269614c6162656c": "Evolução ilustrativa",
+              "p73697a65": "large",
+              "accessibleLabel": "ChartBar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-chart-donut",
+        "content": [
+          {
+            "text": "<h2>ChartDonut</h2><p><a href=\"/showcase/chart-donut\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-chart-donut",
+            "properties": {
+              "p736c696365": "[40,35,25]",
+              "p6c6162656c": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+              "p73686f7744656661756c744c6567656e64": "true",
+              "p746f74616c4c6162656c": "Total",
+              "p746f74616c56616c7565": "100%",
+              "accessibleLabel": "ChartDonut"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-chart-line",
+        "content": [
+          {
+            "text": "<h2>ChartLine</h2><p><a href=\"/showcase/chart-line\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-chart-line",
+            "properties": {
+              "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+              "p6368617274486569676874": 220,
+              "p617269614c6162656c": "Evolução ilustrativa",
+              "p73697a65": "large",
+              "accessibleLabel": "ChartLine"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Evolução",
+                "p76616c756573": "[20,45,70]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ds-chart-meter",
+        "content": [
+          {
+            "text": "<h2>ChartMeter</h2><p><a href=\"/showcase/chart-meter\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-chart-meter",
+            "properties": {
+              "p7469746c65": "Distribuição",
+              "p62617273": "[40,35,25]",
+              "p746f74616c": 100,
+              "p6c656164696e6756616c7565": "100",
+              "p6c656164696e674c6162656c": "Total",
+              "p6c6567656e64": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+              "accessibleLabel": "ChartMeter"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-counter",
+        "content": [
+          {
+            "text": "<h2>Counter</h2><p><a href=\"/showcase/counter\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-counter",
+            "properties": {
+              "p636f756e74": 23,
+              "p6d61784c656e677468": 100,
+              "accessibleLabel": "Counter"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-cross-selling",
+        "content": [
+          {
+            "text": "<h2>CrossSelling</h2><p><a href=\"/showcase/cross-selling\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-cross-selling",
+            "properties": {
+              "p6465736372697074696f6e": "Conteúdo de demonstração.",
+              "p7375627469746c65": "Conheça os produtos",
+              "p7469746c65": "Mais possibilidades",
+              "p6c696e6b2e6c6162656c": "Ver catálogo",
+              "p6c696e6b2e68726566": "/demo-toranja",
+              "p76617269616e74": "chevron",
+              "accessibleLabel": "CrossSelling"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-carousel",
+        "content": [
+          {
+            "text": "<h2>Carousel</h2><p><a href=\"/showcase/carousel\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-carousel",
+            "properties": {
+              "p76617269616e74": "page-view",
+              "p7061676553706163696e67": 16,
+              "p74696d6572": 0,
+              "accessibleLabel": "Carousel"
+            },
+            "items": [
+              {
+                "p76616c7565": "<h3>Conta digital</h3><p>Seu dia a dia.</p>"
+              },
+              {
+                "p76616c7565": "<h3>Investimentos</h3><p>Seus planos.</p>"
+              },
+              {
+                "p76616c7565": "<h3>Global Account</h3><p>Suas viagens.</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ds-date-picker",
+        "content": [
+          {
+            "text": "<h2>DatePicker</h2><p><a href=\"/showcase/date-picker\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-date-picker",
+            "properties": {
+              "p73656c656374696f6e4d6f6465": "single",
+              "p6c6f63616c65": "pt-BR",
+              "p73686f77436f6e74726f6c73": "true",
+              "p73686f77427574746f6e73": "true",
+              "accessibleLabel": "DatePicker"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-decorated-text",
+        "content": [
+          {
+            "text": "<h2>DecoratedText</h2><p><a href=\"/showcase/decorated-text\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-decorated-text",
+            "properties": {
+              "p6368696c6472656e": "Seu futuro começa agora.",
+              "p636c6173735374796c65": "Type.Body.Large.Regular",
+              "p636c617373436f6c6f72": "Color.Text.Neutral.Primary",
+              "p66756c6c5769647468": "true",
+              "accessibleLabel": "DecoratedText"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-divider",
+        "content": [
+          {
+            "text": "<h2>Divider</h2><p><a href=\"/showcase/divider\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-divider",
+            "properties": {
+              "p76617269616e74": "solid",
+              "p6f7269656e746174696f6e": "horizontal",
+              "accessibleLabel": "Divider"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-feedback-screen",
+        "content": [
+          {
+            "text": "<h2>FeedbackScreen</h2><p><a href=\"/showcase/feedback-screen\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-feedback-screen",
+            "properties": {
+              "p76617269616e74": "custom",
+              "p7469746c65": "Tudo pronto!",
+              "p6465736372697074696f6e": "Esta é uma demonstração de feedback.",
+              "p7369676e616c56617269616e74": "success",
+              "p7072696d617279427574746f6e2e6c6162656c": "Continuar",
+              "accessibleLabel": "FeedbackScreen"
+            },
+            "items": []
+          }
+        ]
+      },
+      {
+        "id": "ds-flag",
+        "content": [
+          {
+            "text": "<h2>Flag</h2><p><a href=\"/showcase/flag\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-flag",
+            "properties": {
+              "p69636f6e466c6167": "ic_flag_brazil_rounded",
+              "p636f6e74656e744465736372697074696f6e": "Brasil",
+              "p73697a65": "large",
+              "accessibleLabel": "Flag"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-header",
+        "content": [
+          {
+            "text": "<h2>Header</h2><p><a href=\"/showcase/header\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-header",
+            "properties": {
+              "p76617269616e74": "innerPages",
+              "p74797065": "title",
+              "p73697a65": "large",
+              "p7469746c65": "Mundo Inter",
+              "accessibleLabel": "Header"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-floating-action-button",
+        "content": [
+          {
+            "text": "<h2>FloatingActionButton</h2><p><a href=\"/showcase/floating-action-button\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-floating-action-button",
+            "properties": {
+              "p6c6162656c": "Explorar",
+              "p69636f6e": "ic_add",
+              "p686965726172636879": "primary",
+              "p73697a65": "large",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "FloatingActionButton"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-icon",
+        "content": [
+          {
+            "text": "<h2>Icon</h2><p><a href=\"/showcase/icon\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-icon",
+            "properties": {
+              "p6173736574": "ic_orange",
+              "p636f6e74656e744465736372697074696f6e": "Toranja",
+              "p73697a65": "large",
+              "accessibleLabel": "Icon"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-image",
+        "content": [
+          {
+            "text": "<h2>Image</h2><p><a href=\"/showcase/image\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-image",
+            "properties": {
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
+              "p636f6e74656e745363616c65": "fill",
+              "p7769647468": 480,
+              "p686569676874": 240,
+              "p726164697573": "large",
+              "accessibleLabel": "Image"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-icon-button",
+        "content": [
+          {
+            "text": "<h2>IconButton</h2><p><a href=\"/showcase/icon-button\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-icon-button",
+            "properties": {
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p69636f6e": "ic_search",
+              "p617269612d6c6162656c": "Pesquisar",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "IconButton"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-icon-chip",
+        "content": [
+          {
+            "text": "<h2>IconChip</h2><p><a href=\"/showcase/icon-chip\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-icon-chip",
+            "properties": {
+              "p7374617465": "enabled",
+              "p76617269616e74": "label",
+              "p69636f6e": "ic_heart",
+              "p73686f774261646765": "true",
+              "p73656c6563746564": "false",
+              "p636f756e74": 3,
+              "accessibleLabel": "IconChip"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-input-country",
+        "content": [
+          {
+            "text": "<h2>InputCountry</h2><p><a href=\"/showcase/input-country\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-input-country",
+            "properties": {
+              "p6c6162656c": "Telefone",
+              "p706c616365686f6c646572": "Digite seu telefone",
+              "p7374617465": "enabled",
+              "p73656c6563746564436f756e74727956616c7565": "BR",
+              "accessibleLabel": "InputCountry"
+            },
+            "items": [
+              {
+                "p707265666978": "+55",
+                "p76616c7565": "BR",
+                "p6c6162656c": "Brasil",
+                "p666c6167": "ic_flag_brazil_rounded"
+              },
+              {
+                "p707265666978": "+1",
+                "p76616c7565": "US",
+                "p6c6162656c": "Estados Unidos",
+                "p666c6167": "ic_flag_united_states_rounded"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ds-input-date",
+        "content": [
+          {
+            "text": "<h2>InputDate</h2><p><a href=\"/showcase/input-date\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-input-date",
+            "properties": {
+              "p6c6162656c": "Data",
+              "p706c616365686f6c646572": "DD/MM/AAAA",
+              "accessibleLabel": "InputDate"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-input-password",
+        "content": [
+          {
+            "text": "<h2>InputPassword</h2><p><a href=\"/showcase/input-password\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-input-password",
+            "properties": {
+              "p6c6162656c": "Senha",
+              "p706c616365686f6c646572": "Digite uma senha",
+              "accessibleLabel": "InputPassword"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-input-search",
+        "content": [
+          {
+            "text": "<h2>InputSearch</h2><p><a href=\"/showcase/input-search\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-input-search",
+            "properties": {
+              "p6c6162656c": "Buscar",
+              "p706c616365686f6c646572": "O que você procura?",
+              "accessibleLabel": "InputSearch"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-input-text",
+        "content": [
+          {
+            "text": "<h2>InputText</h2><p><a href=\"/showcase/input-text\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-input-text",
+            "properties": {
+              "p74797065": "text",
+              "p6c6162656c": "Nome completo",
+              "p706c616365686f6c646572": "Como podemos chamar você?",
+              "accessibleLabel": "InputText"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-input-money",
+        "content": [
+          {
+            "text": "<h2>InputMoney</h2><p><a href=\"/showcase/input-money\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-input-money",
+            "properties": {
+              "p73686f77427574746f6e73": "true",
+              "p6669786564496e6372656d656e7456616c7565": 100,
+              "p666978656444656372656d656e7456616c7565": 100,
+              "p63757272656e6379": "BRL",
+              "p6d696e56616c7565": 0,
+              "p6d617856616c7565": 100000,
+              "p64656661756c7456616c7565": 1500,
+              "accessibleLabel": "InputMoney"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-link",
+        "content": [
+          {
+            "text": "<h2>Link</h2><p><a href=\"/showcase/link\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-link",
+            "properties": {
+              "p6c6162656c": "Explorar todos os componentes",
+              "p73697a65": "medium",
+              "p68726566": "/demo-toranja",
+              "accessibleLabel": "Link"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-list-item",
+        "content": [
+          {
+            "text": "<h2>ListItem</h2><p><a href=\"/showcase/list-item\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-list-item",
+            "properties": {
+              "p6c6162656c": "Conta digital",
+              "p706172616772617068": "Um item da sua lista",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItem"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-list-item-control",
+        "content": [
+          {
+            "text": "<h2>ListItemControl</h2><p><a href=\"/showcase/list-item-control\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-list-item-control",
+            "properties": {
+              "p747261696c696e6756617269616e74": "switch",
+              "p747261696c696e6750726f70732e636865636b6564": "false",
+              "p6c6162656c": "Receber novidades",
+              "p706172616772617068": "Você controla suas preferências",
+              "accessibleLabel": "ListItemControl"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-list-item-general",
+        "content": [
+          {
+            "text": "<h2>ListItemGeneral</h2><p><a href=\"/showcase/list-item-general\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-list-item-general",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p706172616772617068": "Conheça as possibilidades",
+              "p747261696c696e6756617269616e74": "tagChevron",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItemGeneral"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-list-item-action",
+        "content": [
+          {
+            "text": "<h2>ListItemAction</h2><p><a href=\"/showcase/list-item-action\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-list-item-action",
+            "properties": {
+              "p747261696c696e6756617269616e74": "button",
+              "p747261696c696e6750726f70732e6c6162656c": "Explorar",
+              "p6c6162656c": "Saiba mais",
+              "p706172616772617068": "Explore o catálogo",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "ListItemAction"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-list-item-view",
+        "content": [
+          {
+            "text": "<h2>ListItemView</h2><p><a href=\"/showcase/list-item-view\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-list-item-view",
+            "properties": {
+              "p6f7269656e746174696f6e": "horizontal",
+              "p6c6162656c": "Saldo ilustrativo",
+              "p76616c756554797065": "text",
+              "p76616c7565": "R$ 1.500,00",
+              "accessibleLabel": "ListItemView"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-menu-item",
+        "content": [
+          {
+            "text": "<h2>MenuItem</h2><p><a href=\"/showcase/menu-item\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-menu-item",
+            "properties": {
+              "p76617269616e74": "icon",
+              "p73697a65": "large",
+              "p6c6162656c": "Conta digital",
+              "p69636f6e": "ic_wallet",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "MenuItem"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-neutral-icon-button",
+        "content": [
+          {
+            "text": "<h2>NeutralIconButton</h2><p><a href=\"/showcase/neutral-icon-button\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-neutral-icon-button",
+            "properties": {
+              "p69636f6e": "ic_ellipsis",
+              "p73697a65": "medium",
+              "p617269612d6c6162656c": "Mais opções",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "NeutralIconButton"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-page-indicator",
+        "content": [
+          {
+            "text": "<h2>PageIndicator</h2><p><a href=\"/showcase/page-indicator\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-page-indicator",
+            "properties": {
+              "p6974656d73": 4,
+              "p73656c6563746564": 1,
+              "accessibleLabel": "PageIndicator"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-payment-methods",
+        "content": [
+          {
+            "text": "<h2>PaymentMethods</h2><p><a href=\"/showcase/payment-methods\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-payment-methods",
+            "properties": {
+              "p7061796d656e744d6574686f64": "mastercard",
+              "p73697a65": "large",
+              "p636f6c6f72": "soft",
+              "accessibleLabel": "PaymentMethods"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-pin-code",
+        "content": [
+          {
+            "text": "<h2>PinCode</h2><p><a href=\"/showcase/pin-code\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-pin-code",
+            "properties": {
+              "p6669656c6473": "4",
+              "p7374617465": "enabled",
+              "p68696e7473": "[\"Código de demonstração\"]",
+              "p74797065": "number",
+              "p706c616365686f6c646572": "0",
+              "accessibleLabel": "PinCode"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-progress-bar",
+        "content": [
+          {
+            "text": "<h2>ProgressBar</h2><p><a href=\"/showcase/progress-bar\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-progress-bar",
+            "properties": {
+              "p76617269616e74": "default",
+              "p70726f6772657373": 60,
+              "accessibleLabel": "ProgressBar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-progress-circle",
+        "content": [
+          {
+            "text": "<h2>ProgressCircle</h2><p><a href=\"/showcase/progress-circle\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-progress-circle",
+            "properties": {
+              "p73697a65": "large",
+              "p70726f6772657373": 65,
+              "p617269614c6162656c": "65% concluído",
+              "accessibleLabel": "ProgressCircle"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-radio",
+        "content": [
+          {
+            "text": "<h2>Radio</h2><p><a href=\"/showcase/radio\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-radio",
+            "properties": {
+              "p6368696c6472656e": "Escolher esta opção",
+              "p6e616d65": "preferencia",
+              "p7374617465": "enabled",
+              "p76616c7565": "opcao-1",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Radio"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-section-title",
+        "content": [
+          {
+            "text": "<h2>SectionTitle</h2><p><a href=\"/showcase/section-title\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-section-title",
+            "properties": {
+              "p7469746c65": "Tudo para sua vida",
+              "p73686f774465736372697074696f6e": "true",
+              "p6465736372697074696f6e": "Um título de seção editável",
+              "p76617269616e74": "default",
+              "p73686f7749636f6e": "true",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "SectionTitle"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-section-subtitle",
+        "content": [
+          {
+            "text": "<h2>SectionSubtitle</h2><p><a href=\"/showcase/section-subtitle\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-section-subtitle",
+            "properties": {
+              "p7375627469746c65": "Escolha seu próximo passo",
+              "p747261696c696e674c6162656c": "Saiba mais",
+              "accessibleLabel": "SectionSubtitle"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-segmented-control",
+        "content": [
+          {
+            "text": "<h2>SegmentedControl</h2><p><a href=\"/showcase/segmented-control\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-segmented-control",
+            "properties": {
+              "p7374617465": "enabled",
+              "accessibleLabel": "SegmentedControl"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Pessoal"
+              },
+              {
+                "p6c6162656c": "Empresas"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ds-select",
+        "content": [
+          {
+            "text": "<h2>Select</h2><p><a href=\"/showcase/select\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-select",
+            "properties": {
+              "p6c6162656c": "Produto de interesse",
+              "p706c616365686f6c646572": "Escolha uma opção",
+              "accessibleLabel": "Select",
+              "selectOptions": "[\"Conta digital\",\"Investimentos\",\"Crédito\"]"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-spinner",
+        "content": [
+          {
+            "text": "<h2>Spinner</h2><p><a href=\"/showcase/spinner\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-spinner",
+            "properties": {
+              "p73697a65": "large",
+              "p617269614c6162656c": "Carregando demonstração",
+              "accessibleLabel": "Spinner"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-signal",
+        "content": [
+          {
+            "text": "<h2>Signal</h2><p><a href=\"/showcase/signal\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-signal",
+            "properties": {
+              "p76617269616e74": "success",
+              "p73697a65": "large",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Signal"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-switch",
+        "content": [
+          {
+            "text": "<h2>Switch</h2><p><a href=\"/showcase/switch\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-switch",
+            "properties": {
+              "p636865636b6564": "false",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Switch"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-snackbar",
+        "content": [
+          {
+            "text": "<h2>Snackbar</h2><p><a href=\"/showcase/snackbar\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-snackbar",
+            "properties": {
+              "p76617269616e74": "success",
+              "p7469746c65": "Pronto",
+              "p6465736372697074696f6e": "Esta é uma mensagem de demonstração.",
+              "p73686f77427574746f6e536e61636b626172": "true",
+              "p6c6162656c427574746f6e": "Entendi",
+              "p73686f77": "false",
+              "accessibleLabel": "Snackbar",
+              "triggerLabel": "Abrir Snackbar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-stepper",
+        "content": [
+          {
+            "text": "<h2>Stepper</h2><p><a href=\"/showcase/stepper\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-stepper",
+            "properties": {
+              "p656e61626c65496e707574": "true",
+              "p6d6178": 10,
+              "p6d696e": 0,
+              "p7374617465": "enabled",
+              "p686173426f72646572": "true",
+              "p73746570": 1,
+              "accessibleLabel": "Stepper"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-tabs",
+        "content": [
+          {
+            "text": "<h2>Tabs</h2><p><a href=\"/showcase/tabs\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-tabs",
+            "properties": {
+              "p7374617465": "enabled",
+              "p7363726f6c6c61626c65": "true",
+              "accessibleLabel": "Tabs"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Conta",
+                "p73656c6563746564": true
+              },
+              {
+                "p6c6162656c": "Investimentos"
+              },
+              {
+                "p6c6162656c": "Crédito"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ds-tag",
+        "content": [
+          {
+            "text": "<h2>Tag</h2><p><a href=\"/showcase/tag\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-tag",
+            "properties": {
+              "p636f6c6f72": "brand",
+              "p686965726172636879": "soft",
+              "p6c6162656c": "Novidade",
+              "p73697a65": "large",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Tag"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-text",
+        "content": [
+          {
+            "text": "<h2>Text</h2><p><a href=\"/showcase/text\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-text",
+            "properties": {
+              "p6368696c6472656e": "Em todo momento da vida, vejo você.",
+              "p7465787453697a65": "large",
+              "p74657874576569676874": "regular",
+              "p6173": "p",
+              "p7465787454797065": "body",
+              "accessibleLabel": "Text"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-text-area",
+        "content": [
+          {
+            "text": "<h2>TextArea</h2><p><a href=\"/showcase/text-area\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-text-area",
+            "properties": {
+              "p6c6162656c": "Sua mensagem",
+              "p73686f77436f756e746572": "true",
+              "p636f756e746572": 300,
+              "p706c616365686f6c646572": "Conte um pouco mais",
+              "accessibleLabel": "TextArea"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ds-timeline",
+        "content": [
+          {
+            "text": "<h2>Timeline</h2><p><a href=\"/showcase/timeline\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-timeline",
+            "properties": {
+              "accessibleLabel": "Timeline"
+            },
+            "items": [
+              {
+                "p7469746c65": "Escolha",
+                "p64617465": "Etapa 1",
+                "p737461747573": "success"
+              },
+              {
+                "p7469746c65": "Personalize",
+                "p64617465": "Etapa 2",
+                "p737461747573": "current"
+              },
+              {
+                "p7469746c65": "Publique",
+                "p64617465": "Etapa 3",
+                "p737461747573": "pending"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ds-widget",
+        "content": [
+          {
+            "text": "<h2>Widget</h2><p><a href=\"/showcase/widget\">Abrir exemplo e variantes</a></p>"
+          },
+          {
+            "block": "ds-widget",
+            "properties": {
+              "p74696d6541676f": "Agora",
+              "p746167": "Novidade",
+              "p7469746c65": "Seus planos",
+              "p73686f77486561646572": "true",
+              "p6368696c6472656e": "<p>Uma experiência completa e editável.</p>",
+              "p73697a65": "large",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Widget"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "nav": {
+    "title": "Navegação",
+    "sections": [
+      {
+        "id": "",
+        "style": "",
+        "content": [
+          {
+            "block": "header",
+            "properties": {
+              "logo": "/assets/brand/logo.svg",
+              "logoAlt": "Banco Inter",
+              "loginUrl": "https://internetbanking.bancointer.com.br",
+              "cta": "/abra-sua-conta",
+              "ctaText": "Abra sua conta",
+              "brandTag": "Super App",
+              "countries": "",
+              "classes_variant": "default",
+              "classes_show-country-selector": true
+            },
+            "items": [
+              {
+                "label": "Pra Você",
+                "link": "/#momentos",
+                "children": ""
+              },
+              {
+                "label": "Empresas",
+                "link": "#",
+                "children": "<a href=\"/empresas/conta-pj\">Conta PJ Digital</a><a href=\"/empresas/credito\">Crédito Empresarial</a><a href=\"/empresas/maquininha\">Inter Pag / Granito</a>"
+              },
+              {
+                "label": "Segmentos",
+                "link": "/#segmentos",
+                "children": ""
+              },
+              {
+                "label": "Global Account (EUA)",
+                "link": "/#global",
+                "children": ""
+              },
+              {
+                "label": "Inter Loop",
+                "link": "/#loop",
+                "children": ""
+              },
+              {
+                "label": "Design System",
+                "link": "/demo-toranja",
+                "children": "<ul><li><a href=\"/composicoes\">Composições de página</a></li></ul>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "title": "Rodapé",
+    "sections": [
+      {
+        "id": "",
+        "style": "",
+        "content": [
+          {
+            "block": "footer",
+            "properties": {
+              "copyright": "Banco Inter S.A. — CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG, CEP: 30190-131. Serviços de investimento oferecidos pela Inter DTVM Ltda. Nos EUA, contas correntes são oferecidas pelo Evolve Bank & Trust, membro FDIC. \n          Investimentos no exterior são oferecidos pela Inter Securities LLC, membro FINRA e SIPC. © 2026 Banco Inter S.A. Todos os direitos reservados.",
+              "description": "<p>\n            Inter. O Super App da sua vida financeira. Soluções completas e integradas para pessoas físicas e empresas no Brasil e no mundo.\n          </p>",
+              "seals": "<ul><li>NASDAQ: INTR</li><li>Autorizado Banco Central</li><li>Garantia FGC &amp; FDIC</li></ul>",
+              "classes_show-regulatory-seals": true,
+              "socialLinks": "<ul><li><a href=\"https://www.instagram.com/inter/\">Instagram</a></li><li><a href=\"https://www.linkedin.com/company/bancointer/\">LinkedIn</a></li></ul>"
+            },
+            "items": [
+              {
+                "title": "Pra Você",
+                "links": "<ul>\n<li><a href=\"/conta-digital\">Conta Digital Grátis</a></li>\n<li><a href=\"/cartoes\">Cartões Mastercard</a></li>\n<li><a href=\"/investimentos\">Meu Porquinho &amp; Invest</a></li>\n<li><a href=\"/credito\">Crédito &amp; Financiamento</a></li>\n<li><a href=\"/global-account\">Global Account (Dólar)</a></li>\n<li><a href=\"/inter-shop\">Inter Shop &amp; Cashback</a></li>\n<li><a href=\"/inter-loop\">Programa de Pontos Loop</a></li>\n</ul>"
+              },
+              {
+                "title": "Empresas",
+                "links": "<ul>\n<li><a href=\"/empresas/conta-pj\">Conta PJ Digital</a></li>\n<li><a href=\"/empresas/credito\">Crédito para Empresas</a></li>\n<li><a href=\"/empresas/maquininha\">Maquininha de Cartão</a></li>\n<li><a href=\"/empresas/folha\">Folha de Pagamento</a></li>\n<li><a href=\"/empresas/cambio\">Câmbio Comercial</a></li>\n</ul>"
+              },
+              {
+                "title": "Institucional",
+                "links": "<ul>\n<li><a href=\"/sobre\">Sobre o Inter</a></li>\n<li><a href=\"/ri\">Relações com Investidores</a></li>\n<li><a href=\"/carreiras\">Trabalhe Conosco</a></li>\n<li><a href=\"/imprensa\">Sala de Imprensa</a></li>\n<li><a href=\"/sustentabilidade\">Sustentabilidade &amp; ESG</a></li>\n</ul>"
+              },
+              {
+                "title": "Ajuda & Contato",
+                "links": "<ul>\n<li><a href=\"/ajuda\">Central de Ajuda</a></li>\n<li><a href=\"/ouvidoria\">Ouvidoria: 0800 940 7772</a></li>\n<li><a href=\"/telefones\">Capitais: 3003 4070</a></li>\n<li><a href=\"/seguranca\">Segurança Digital</a></li>\n<li><a href=\"/termos\">Termos &amp; Privacidade</a></li>\n</ul>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "composicoes": {
+    "title": "Composições Toranja para EDS",
     "description": "",
     "sections": [
       {
@@ -1689,8 +3031,8 @@
               "subtitle": "Aponte a câmera do seu celular para o QR Code ao lado ou acesse sua loja de aplicativos favorita. É gratuito, seguro e rápido.",
               "appleStoreUrl": "https://apps.apple.com/br/app/inter/id1071477797",
               "googlePlayUrl": "https://play.google.com/store/apps/details?id=br.com.intermedium",
-              "qrCodeImage": "",
-              "qrCodeImageAlt": ""
+              "qrCodeImage": "/assets/demo/inter-qr.png",
+              "qrCodeImageAlt": "QR Code para acessar o site Inter"
             },
             "items": []
           }
@@ -1811,51 +3153,373 @@
       }
     ]
   },
-  "nav": {
-    "title": "Navegação",
+  "showcase/alert": {
+    "title": "Alert | Toranja",
+    "description": "Exemplo editável do componente oficial Alert",
     "sections": [
       {
-        "id": "",
-        "style": "",
         "content": [
           {
-            "block": "header",
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Alert</h1>"
+          },
+          {
+            "block": "ds-alert",
             "properties": {
-              "logo": "/assets/brand/logo.svg",
-              "logoAlt": "Banco Inter",
-              "loginUrl": "https://internetbanking.bancointer.com.br",
-              "cta": "/abra-sua-conta",
-              "ctaText": "Abra sua conta",
-              "brandTag": "Super App",
-              "countries": "",
-              "classes_variant": "default",
-              "classes_show-country-selector": true
+              "p76617269616e74": "information",
+              "p7374617465": "enabled",
+              "p7469746c65": "Informação importante",
+              "p6465736372697074696f6e": "Você pode editar este aviso no Universal Editor.",
+              "p73686f774c696e6b": "true",
+              "p6c696e6b2e6c6162656c": "Conheça os componentes",
+              "p6c696e6b2e68726566": "/demo-toranja",
+              "accessibleLabel": "Alert"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-alert",
+            "properties": {
+              "p76617269616e74": "information",
+              "p7374617465": "skeleton",
+              "p7469746c65": "Informação importante",
+              "p6465736372697074696f6e": "Você pode editar este aviso no Universal Editor.",
+              "p73686f774c696e6b": "true",
+              "p6c696e6b2e6c6162656c": "Conheça os componentes",
+              "p6c696e6b2e68726566": "/demo-toranja",
+              "accessibleLabel": "Alert"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/avatar": {
+    "title": "Avatar | Toranja",
+    "description": "Exemplo editável do componente oficial Avatar",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Avatar</h1>"
+          },
+          {
+            "block": "ds-avatar",
+            "properties": {
+              "p636f6c6f72": "soft",
+              "p76617269616e74": "initial",
+              "p73697a65": "large",
+              "p63617465676f7279": "person",
+              "p6c6162656c": "Banco Inter",
+              "accessibleLabel": "Avatar"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-avatar",
+            "properties": {
+              "p636f6c6f72": "soft",
+              "p76617269616e74": "initial",
+              "p73697a65": "large",
+              "p63617465676f7279": "person",
+              "p6c6162656c": "Banco Inter",
+              "accessibleLabel": "Avatar",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-avatar",
+            "properties": {
+              "p636f6c6f72": "soft",
+              "p76617269616e74": "initial",
+              "p73697a65": "large",
+              "p63617465676f7279": "person",
+              "p6c6162656c": "Banco Inter",
+              "accessibleLabel": "Avatar",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/accordion": {
+    "title": "Accordion | Toranja",
+    "description": "Exemplo editável do componente oficial Accordion",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Accordion</h1>"
+          },
+          {
+            "block": "ds-accordion",
+            "properties": {
+              "p7469746c65": "Como editar este componente?",
+              "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
+              "p73686f7744697669646572": "true",
+              "p6368696c6472656e": "<p>Selecione o bloco e altere as propriedades. O conteúdo permanece no AEM.</p>",
+              "p636f6e74656e7456617269616e74": "text",
+              "accessibleLabel": "Accordion"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-accordion",
+            "properties": {
+              "p7469746c65": "Como editar este componente?",
+              "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
+              "p73686f7744697669646572": "true",
+              "p6368696c6472656e": "<p>Selecione o bloco e altere as propriedades. O conteúdo permanece no AEM.</p>",
+              "p636f6e74656e7456617269616e74": "text",
+              "accessibleLabel": "Accordion",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-accordion",
+            "properties": {
+              "p7469746c65": "Como editar este componente?",
+              "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
+              "p73686f7744697669646572": "true",
+              "p6368696c6472656e": "<p>Selecione o bloco e altere as propriedades. O conteúdo permanece no AEM.</p>",
+              "p636f6e74656e7456617269616e74": "text",
+              "accessibleLabel": "Accordion",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/badge": {
+    "title": "Badge | Toranja",
+    "description": "Exemplo editável do componente oficial Badge",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Badge</h1>"
+          },
+          {
+            "block": "ds-badge",
+            "properties": {
+              "p76617269616e74": "label",
+              "p636f756e74": 8,
+              "accessibleLabel": "Badge"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/button": {
+    "title": "Button | Toranja",
+    "description": "Exemplo editável do componente oficial Button",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Button</h1>"
+          },
+          {
+            "block": "ds-button",
+            "properties": {
+              "p6c6162656c": "Conhecer o showcase",
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p76617269616e74": "default",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Button"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-button",
+            "properties": {
+              "p6c6162656c": "Conhecer o showcase",
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p76617269616e74": "default",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Button",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-button",
+            "properties": {
+              "p6c6162656c": "Conhecer o showcase",
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p76617269616e74": "default",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Button",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-button",
+            "properties": {
+              "p6c6162656c": "Conhecer o showcase",
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p76617269616e74": "default",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Button",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/banner": {
+    "title": "Banner | Toranja",
+    "description": "Exemplo editável do componente oficial Banner",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Banner</h1>"
+          },
+          {
+            "block": "ds-banner",
+            "properties": {
+              "p76617269616e74": "image",
+              "p73697a65": "medium",
+              "p75726c": "/assets/demo/ede5e1c82aad.jpg",
+              "p616c74": "Momentos da vida",
+              "accessibleLabel": "Banner"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-banner",
+            "properties": {
+              "p76617269616e74": "image",
+              "p73697a65": "medium",
+              "p75726c": "/assets/demo/ede5e1c82aad.jpg",
+              "p616c74": "Momentos da vida",
+              "accessibleLabel": "Banner",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/bottom-sheet": {
+    "title": "BottomSheet | Toranja",
+    "description": "Exemplo editável do componente oficial BottomSheet",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>BottomSheet</h1>"
+          },
+          {
+            "block": "ds-bottom-sheet",
+            "properties": {
+              "p7469746c65": "Mais possibilidades",
+              "p69734f70656e": "false",
+              "p6f7665726c6179": "on",
+              "p657870616e7369626c65": "off",
+              "p706f736974696f6e": "hug",
+              "p736c6f74": "<p>Conteúdo editável do painel.</p>",
+              "accessibleLabel": "BottomSheet",
+              "triggerLabel": "Abrir BottomSheet"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/bottom-sheet-country": {
+    "title": "BottomSheetCountry | Toranja",
+    "description": "Exemplo editável do componente oficial BottomSheetCountry",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>BottomSheetCountry</h1>"
+          },
+          {
+            "block": "ds-bottom-sheet-country",
+            "properties": {
+              "p73686f77536561726368": "true",
+              "p7469746c65": "Escolha o país",
+              "p69734f70656e": "false",
+              "accessibleLabel": "BottomSheetCountry",
+              "triggerLabel": "Abrir BottomSheetCountry"
             },
             "items": [
               {
-                "label": "Pra Você",
-                "link": "/#momentos",
-                "children": ""
+                "p76616c7565": "BR",
+                "p6c6162656c": "Brasil",
+                "p666c6167": "ic_flag_brazil_rounded"
               },
               {
-                "label": "Empresas",
-                "link": "#",
-                "children": "<a href=\"/empresas/conta-pj\">Conta PJ Digital</a><a href=\"/empresas/credito\">Crédito Empresarial</a><a href=\"/empresas/maquininha\">Inter Pag / Granito</a>"
-              },
-              {
-                "label": "Segmentos",
-                "link": "/#segmentos",
-                "children": ""
-              },
-              {
-                "label": "Global Account (EUA)",
-                "link": "/#global",
-                "children": ""
-              },
-              {
-                "label": "Inter Loop",
-                "link": "/#loop",
-                "children": ""
+                "p76616c7565": "US",
+                "p6c6162656c": "Estados Unidos",
+                "p666c6167": "ic_flag_united_states_rounded"
               }
             ]
           }
@@ -1863,39 +3527,3553 @@
       }
     ]
   },
-  "footer": {
-    "title": "Rodapé",
+  "showcase/card": {
+    "title": "Card | Toranja",
+    "description": "Exemplo editável do componente oficial Card",
     "sections": [
       {
-        "id": "",
-        "style": "",
         "content": [
           {
-            "block": "footer",
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Card</h1>"
+          },
+          {
+            "block": "ds-card",
             "properties": {
-              "copyright": "Banco Inter S.A. — CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG, CEP: 30190-131. Serviços de investimento oferecidos pela Inter DTVM Ltda. Nos EUA, contas correntes são oferecidas pelo Evolve Bank & Trust, membro FDIC. \n          Investimentos no exterior são oferecidos pela Inter Securities LLC, membro FINRA e SIPC. © 2026 Banco Inter S.A. Todos os direitos reservados. Instagram LinkedIn X / Twitter YouTube",
-              "description": "<p>\n            Inter. O Super App da sua vida financeira. Soluções completas e integradas para pessoas físicas e empresas no Brasil e no mundo.\n          </p>",
-              "seals": "<span>NASDAQ: INTR</span><span>Autorizado Banco Central</span><span>Garantia FGC &amp; FDIC</span>",
-              "classes_show-regulatory-seals": true
+              "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Card"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-card",
+            "properties": {
+              "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
+              "p7374617465": "skeleton",
+              "accessibleLabel": "Card"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-card",
+            "properties": {
+              "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
+              "p7374617465": "disabled",
+              "accessibleLabel": "Card"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/checkbox": {
+    "title": "Checkbox | Toranja",
+    "description": "Exemplo editável do componente oficial Checkbox",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Checkbox</h1>"
+          },
+          {
+            "block": "ds-checkbox",
+            "properties": {
+              "p7374617465": "enabled",
+              "p636865636b6564": "false",
+              "accessibleLabel": "Checkbox"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-checkbox",
+            "properties": {
+              "p7374617465": "skeleton",
+              "p636865636b6564": "false",
+              "accessibleLabel": "Checkbox"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-checkbox",
+            "properties": {
+              "p7374617465": "disabled",
+              "p636865636b6564": "false",
+              "accessibleLabel": "Checkbox"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/chip": {
+    "title": "Chip | Toranja",
+    "description": "Exemplo editável do componente oficial Chip",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Chip</h1>"
+          },
+          {
+            "block": "ds-chip",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p73656c6563746564": "false",
+              "p6c656164696e6749636f6e": "ic_piggy_bank",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Chip"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-chip",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p73656c6563746564": "false",
+              "p6c656164696e6749636f6e": "ic_piggy_bank",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Chip",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-chip",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p73656c6563746564": "false",
+              "p6c656164696e6749636f6e": "ic_piggy_bank",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Chip",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-chip",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p73656c6563746564": "false",
+              "p6c656164696e6749636f6e": "ic_piggy_bank",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Chip",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/chart-bar": {
+    "title": "ChartBar | Toranja",
+    "description": "Exemplo editável do componente oficial ChartBar",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartBar</h1>"
+          },
+          {
+            "block": "ds-chart-bar",
+            "properties": {
+              "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+              "p76616c756573": "[25,50,75]",
+              "p6368617274486569676874": 220,
+              "p617269614c6162656c": "Evolução ilustrativa",
+              "p73697a65": "large",
+              "accessibleLabel": "ChartBar"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-chart-bar",
+            "properties": {
+              "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+              "p76616c756573": "[25,50,75]",
+              "p6368617274486569676874": 220,
+              "p617269614c6162656c": "Evolução ilustrativa",
+              "p73697a65": "large",
+              "accessibleLabel": "ChartBar",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/chart-donut": {
+    "title": "ChartDonut | Toranja",
+    "description": "Exemplo editável do componente oficial ChartDonut",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartDonut</h1>"
+          },
+          {
+            "block": "ds-chart-donut",
+            "properties": {
+              "p736c696365": "[40,35,25]",
+              "p6c6162656c": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+              "p73686f7744656661756c744c6567656e64": "true",
+              "p746f74616c4c6162656c": "Total",
+              "p746f74616c56616c7565": "100%",
+              "accessibleLabel": "ChartDonut"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-chart-donut",
+            "properties": {
+              "p736c696365": "[40,35,25]",
+              "p6c6162656c": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+              "p73686f7744656661756c744c6567656e64": "true",
+              "p746f74616c4c6162656c": "Total",
+              "p746f74616c56616c7565": "100%",
+              "accessibleLabel": "ChartDonut",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/chart-line": {
+    "title": "ChartLine | Toranja",
+    "description": "Exemplo editável do componente oficial ChartLine",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartLine</h1>"
+          },
+          {
+            "block": "ds-chart-line",
+            "properties": {
+              "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+              "p6368617274486569676874": 220,
+              "p617269614c6162656c": "Evolução ilustrativa",
+              "p73697a65": "large",
+              "accessibleLabel": "ChartLine"
             },
             "items": [
               {
-                "title": "Pra Você",
-                "links": "<ul>\n<li><a href=\"/conta-digital\">Conta Digital Grátis</a></li>\n<li><a href=\"/cartoes\">Cartões Mastercard</a></li>\n<li><a href=\"/investimentos\">Meu Porquinho &amp; Invest</a></li>\n<li><a href=\"/credito\">Crédito &amp; Financiamento</a></li>\n<li><a href=\"/global-account\">Global Account (Dólar)</a></li>\n<li><a href=\"/inter-shop\">Inter Shop &amp; Cashback</a></li>\n<li><a href=\"/inter-loop\">Programa de Pontos Loop</a></li>\n</ul>"
-              },
-              {
-                "title": "Empresas",
-                "links": "<ul>\n<li><a href=\"/empresas/conta-pj\">Conta PJ Digital</a></li>\n<li><a href=\"/empresas/credito\">Crédito para Empresas</a></li>\n<li><a href=\"/empresas/maquininha\">Maquininha de Cartão</a></li>\n<li><a href=\"/empresas/folha\">Folha de Pagamento</a></li>\n<li><a href=\"/empresas/cambio\">Câmbio Comercial</a></li>\n</ul>"
-              },
-              {
-                "title": "Institucional",
-                "links": "<ul>\n<li><a href=\"/sobre\">Sobre o Inter</a></li>\n<li><a href=\"/ri\">Relações com Investidores</a></li>\n<li><a href=\"/carreiras\">Trabalhe Conosco</a></li>\n<li><a href=\"/imprensa\">Sala de Imprensa</a></li>\n<li><a href=\"/sustentabilidade\">Sustentabilidade &amp; ESG</a></li>\n</ul>"
-              },
-              {
-                "title": "Ajuda & Contato",
-                "links": "<ul>\n<li><a href=\"/ajuda\">Central de Ajuda</a></li>\n<li><a href=\"/ouvidoria\">Ouvidoria: 0800 940 7772</a></li>\n<li><a href=\"/telefones\">Capitais: 3003 4070</a></li>\n<li><a href=\"/seguranca\">Segurança Digital</a></li>\n<li><a href=\"/termos\">Termos &amp; Privacidade</a></li>\n</ul>"
+                "p6c6162656c": "Evolução",
+                "p76616c756573": "[20,45,70]"
               }
             ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-chart-line",
+            "properties": {
+              "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+              "p6368617274486569676874": 220,
+              "p617269614c6162656c": "Evolução ilustrativa",
+              "p73697a65": "large",
+              "accessibleLabel": "ChartLine",
+              "p7374617465": "skeleton"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Evolução",
+                "p76616c756573": "[20,45,70]"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/chart-meter": {
+    "title": "ChartMeter | Toranja",
+    "description": "Exemplo editável do componente oficial ChartMeter",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartMeter</h1>"
+          },
+          {
+            "block": "ds-chart-meter",
+            "properties": {
+              "p7469746c65": "Distribuição",
+              "p62617273": "[40,35,25]",
+              "p746f74616c": 100,
+              "p6c656164696e6756616c7565": "100",
+              "p6c656164696e674c6162656c": "Total",
+              "p6c6567656e64": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+              "accessibleLabel": "ChartMeter"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-chart-meter",
+            "properties": {
+              "p7469746c65": "Distribuição",
+              "p62617273": "[40,35,25]",
+              "p746f74616c": 100,
+              "p6c656164696e6756616c7565": "100",
+              "p6c656164696e674c6162656c": "Total",
+              "p6c6567656e64": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+              "accessibleLabel": "ChartMeter",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/counter": {
+    "title": "Counter | Toranja",
+    "description": "Exemplo editável do componente oficial Counter",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Counter</h1>"
+          },
+          {
+            "block": "ds-counter",
+            "properties": {
+              "p636f756e74": 23,
+              "p6d61784c656e677468": 100,
+              "accessibleLabel": "Counter"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/cross-selling": {
+    "title": "CrossSelling | Toranja",
+    "description": "Exemplo editável do componente oficial CrossSelling",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>CrossSelling</h1>"
+          },
+          {
+            "block": "ds-cross-selling",
+            "properties": {
+              "p6465736372697074696f6e": "Conteúdo de demonstração.",
+              "p7375627469746c65": "Conheça os produtos",
+              "p7469746c65": "Mais possibilidades",
+              "p6c696e6b2e6c6162656c": "Ver catálogo",
+              "p6c696e6b2e68726566": "/demo-toranja",
+              "p76617269616e74": "chevron",
+              "accessibleLabel": "CrossSelling"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-cross-selling",
+            "properties": {
+              "p6465736372697074696f6e": "Conteúdo de demonstração.",
+              "p7375627469746c65": "Conheça os produtos",
+              "p7469746c65": "Mais possibilidades",
+              "p6c696e6b2e6c6162656c": "Ver catálogo",
+              "p6c696e6b2e68726566": "/demo-toranja",
+              "p76617269616e74": "chevron",
+              "accessibleLabel": "CrossSelling",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/carousel": {
+    "title": "Carousel | Toranja",
+    "description": "Exemplo editável do componente oficial Carousel",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Carousel</h1>"
+          },
+          {
+            "block": "ds-carousel",
+            "properties": {
+              "p76617269616e74": "page-view",
+              "p7061676553706163696e67": 16,
+              "p74696d6572": 0,
+              "accessibleLabel": "Carousel"
+            },
+            "items": [
+              {
+                "p76616c7565": "<h3>Conta digital</h3><p>Seu dia a dia.</p>"
+              },
+              {
+                "p76616c7565": "<h3>Investimentos</h3><p>Seus planos.</p>"
+              },
+              {
+                "p76616c7565": "<h3>Global Account</h3><p>Suas viagens.</p>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/date-picker": {
+    "title": "DatePicker | Toranja",
+    "description": "Exemplo editável do componente oficial DatePicker",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>DatePicker</h1>"
+          },
+          {
+            "block": "ds-date-picker",
+            "properties": {
+              "p73656c656374696f6e4d6f6465": "single",
+              "p6c6f63616c65": "pt-BR",
+              "p73686f77436f6e74726f6c73": "true",
+              "p73686f77427574746f6e73": "true",
+              "accessibleLabel": "DatePicker"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/decorated-text": {
+    "title": "DecoratedText | Toranja",
+    "description": "Exemplo editável do componente oficial DecoratedText",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>DecoratedText</h1>"
+          },
+          {
+            "block": "ds-decorated-text",
+            "properties": {
+              "p6368696c6472656e": "Seu futuro começa agora.",
+              "p636c6173735374796c65": "Type.Body.Large.Regular",
+              "p636c617373436f6c6f72": "Color.Text.Neutral.Primary",
+              "p66756c6c5769647468": "true",
+              "accessibleLabel": "DecoratedText"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-decorated-text",
+            "properties": {
+              "p6368696c6472656e": "Seu futuro começa agora.",
+              "p636c6173735374796c65": "Type.Body.Large.Regular",
+              "p636c617373436f6c6f72": "Color.Text.Neutral.Primary",
+              "p66756c6c5769647468": "true",
+              "accessibleLabel": "DecoratedText",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-decorated-text",
+            "properties": {
+              "p6368696c6472656e": "Seu futuro começa agora.",
+              "p636c6173735374796c65": "Type.Body.Large.Regular",
+              "p636c617373436f6c6f72": "Color.Text.Neutral.Primary",
+              "p66756c6c5769647468": "true",
+              "accessibleLabel": "DecoratedText",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/divider": {
+    "title": "Divider | Toranja",
+    "description": "Exemplo editável do componente oficial Divider",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Divider</h1>"
+          },
+          {
+            "block": "ds-divider",
+            "properties": {
+              "p76617269616e74": "solid",
+              "p6f7269656e746174696f6e": "horizontal",
+              "accessibleLabel": "Divider"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/feedback-screen": {
+    "title": "FeedbackScreen | Toranja",
+    "description": "Exemplo editável do componente oficial FeedbackScreen",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>FeedbackScreen</h1>"
+          },
+          {
+            "block": "ds-feedback-screen",
+            "properties": {
+              "p76617269616e74": "custom",
+              "p7469746c65": "Tudo pronto!",
+              "p6465736372697074696f6e": "Esta é uma demonstração de feedback.",
+              "p7369676e616c56617269616e74": "success",
+              "p7072696d617279427574746f6e2e6c6162656c": "Continuar",
+              "accessibleLabel": "FeedbackScreen"
+            },
+            "items": []
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-feedback-screen",
+            "properties": {
+              "p76617269616e74": "custom",
+              "p7469746c65": "Tudo pronto!",
+              "p6465736372697074696f6e": "Esta é uma demonstração de feedback.",
+              "p7369676e616c56617269616e74": "success",
+              "p7072696d617279427574746f6e2e6c6162656c": "Continuar",
+              "accessibleLabel": "FeedbackScreen",
+              "p7374617465": "skeleton"
+            },
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/flag": {
+    "title": "Flag | Toranja",
+    "description": "Exemplo editável do componente oficial Flag",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Flag</h1>"
+          },
+          {
+            "block": "ds-flag",
+            "properties": {
+              "p69636f6e466c6167": "ic_flag_brazil_rounded",
+              "p636f6e74656e744465736372697074696f6e": "Brasil",
+              "p73697a65": "large",
+              "accessibleLabel": "Flag"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-flag",
+            "properties": {
+              "p69636f6e466c6167": "ic_flag_brazil_rounded",
+              "p636f6e74656e744465736372697074696f6e": "Brasil",
+              "p73697a65": "large",
+              "accessibleLabel": "Flag",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-flag",
+            "properties": {
+              "p69636f6e466c6167": "ic_flag_brazil_rounded",
+              "p636f6e74656e744465736372697074696f6e": "Brasil",
+              "p73697a65": "large",
+              "accessibleLabel": "Flag",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/header": {
+    "title": "Header | Toranja",
+    "description": "Exemplo editável do componente oficial Header",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Header</h1>"
+          },
+          {
+            "block": "ds-header",
+            "properties": {
+              "p76617269616e74": "innerPages",
+              "p74797065": "title",
+              "p73697a65": "large",
+              "p7469746c65": "Mundo Inter",
+              "accessibleLabel": "Header"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-header",
+            "properties": {
+              "p76617269616e74": "innerPages",
+              "p74797065": "title",
+              "p73697a65": "large",
+              "p7469746c65": "Mundo Inter",
+              "accessibleLabel": "Header",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/floating-action-button": {
+    "title": "FloatingActionButton | Toranja",
+    "description": "Exemplo editável do componente oficial FloatingActionButton",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>FloatingActionButton</h1>"
+          },
+          {
+            "block": "ds-floating-action-button",
+            "properties": {
+              "p6c6162656c": "Explorar",
+              "p69636f6e": "ic_add",
+              "p686965726172636879": "primary",
+              "p73697a65": "large",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "FloatingActionButton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-floating-action-button",
+            "properties": {
+              "p6c6162656c": "Explorar",
+              "p69636f6e": "ic_add",
+              "p686965726172636879": "primary",
+              "p73697a65": "large",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "FloatingActionButton",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-floating-action-button",
+            "properties": {
+              "p6c6162656c": "Explorar",
+              "p69636f6e": "ic_add",
+              "p686965726172636879": "primary",
+              "p73697a65": "large",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "FloatingActionButton",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/icon": {
+    "title": "Icon | Toranja",
+    "description": "Exemplo editável do componente oficial Icon",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Icon</h1>"
+          },
+          {
+            "block": "ds-icon",
+            "properties": {
+              "p6173736574": "ic_orange",
+              "p636f6e74656e744465736372697074696f6e": "Toranja",
+              "p73697a65": "large",
+              "accessibleLabel": "Icon"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-icon",
+            "properties": {
+              "p6173736574": "ic_orange",
+              "p636f6e74656e744465736372697074696f6e": "Toranja",
+              "p73697a65": "large",
+              "accessibleLabel": "Icon",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-icon",
+            "properties": {
+              "p6173736574": "ic_orange",
+              "p636f6e74656e744465736372697074696f6e": "Toranja",
+              "p73697a65": "large",
+              "accessibleLabel": "Icon",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/image": {
+    "title": "Image | Toranja",
+    "description": "Exemplo editável do componente oficial Image",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Image</h1>"
+          },
+          {
+            "block": "ds-image",
+            "properties": {
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
+              "p636f6e74656e745363616c65": "fill",
+              "p7769647468": 480,
+              "p686569676874": 240,
+              "p726164697573": "large",
+              "accessibleLabel": "Image"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-image",
+            "properties": {
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
+              "p636f6e74656e745363616c65": "fill",
+              "p7769647468": 480,
+              "p686569676874": 240,
+              "p726164697573": "large",
+              "accessibleLabel": "Image",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-image",
+            "properties": {
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
+              "p636f6e74656e745363616c65": "fill",
+              "p7769647468": 480,
+              "p686569676874": 240,
+              "p726164697573": "large",
+              "accessibleLabel": "Image",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/icon-button": {
+    "title": "IconButton | Toranja",
+    "description": "Exemplo editável do componente oficial IconButton",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>IconButton</h1>"
+          },
+          {
+            "block": "ds-icon-button",
+            "properties": {
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p69636f6e": "ic_search",
+              "p617269612d6c6162656c": "Pesquisar",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "IconButton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-icon-button",
+            "properties": {
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p69636f6e": "ic_search",
+              "p617269612d6c6162656c": "Pesquisar",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "IconButton",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-icon-button",
+            "properties": {
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p69636f6e": "ic_search",
+              "p617269612d6c6162656c": "Pesquisar",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "IconButton",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-icon-button",
+            "properties": {
+              "p73697a65": "large",
+              "p686965726172636879": "primary",
+              "p69636f6e": "ic_search",
+              "p617269612d6c6162656c": "Pesquisar",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "IconButton",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/icon-chip": {
+    "title": "IconChip | Toranja",
+    "description": "Exemplo editável do componente oficial IconChip",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>IconChip</h1>"
+          },
+          {
+            "block": "ds-icon-chip",
+            "properties": {
+              "p7374617465": "enabled",
+              "p76617269616e74": "label",
+              "p69636f6e": "ic_heart",
+              "p73686f774261646765": "true",
+              "p73656c6563746564": "false",
+              "p636f756e74": 3,
+              "accessibleLabel": "IconChip"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-icon-chip",
+            "properties": {
+              "p7374617465": "skeleton",
+              "p76617269616e74": "label",
+              "p69636f6e": "ic_heart",
+              "p73686f774261646765": "true",
+              "p73656c6563746564": "false",
+              "p636f756e74": 3,
+              "accessibleLabel": "IconChip"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-icon-chip",
+            "properties": {
+              "p7374617465": "disabled",
+              "p76617269616e74": "label",
+              "p69636f6e": "ic_heart",
+              "p73686f774261646765": "true",
+              "p73656c6563746564": "false",
+              "p636f756e74": 3,
+              "accessibleLabel": "IconChip"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-icon-chip",
+            "properties": {
+              "p7374617465": "loading",
+              "p76617269616e74": "label",
+              "p69636f6e": "ic_heart",
+              "p73686f774261646765": "true",
+              "p73656c6563746564": "false",
+              "p636f756e74": 3,
+              "accessibleLabel": "IconChip"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/input-country": {
+    "title": "InputCountry | Toranja",
+    "description": "Exemplo editável do componente oficial InputCountry",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputCountry</h1>"
+          },
+          {
+            "block": "ds-input-country",
+            "properties": {
+              "p6c6162656c": "Telefone",
+              "p706c616365686f6c646572": "Digite seu telefone",
+              "p7374617465": "enabled",
+              "p73656c6563746564436f756e74727956616c7565": "BR",
+              "accessibleLabel": "InputCountry"
+            },
+            "items": [
+              {
+                "p707265666978": "+55",
+                "p76616c7565": "BR",
+                "p6c6162656c": "Brasil",
+                "p666c6167": "ic_flag_brazil_rounded"
+              },
+              {
+                "p707265666978": "+1",
+                "p76616c7565": "US",
+                "p6c6162656c": "Estados Unidos",
+                "p666c6167": "ic_flag_united_states_rounded"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-input-country",
+            "properties": {
+              "p6c6162656c": "Telefone",
+              "p706c616365686f6c646572": "Digite seu telefone",
+              "p7374617465": "skeleton",
+              "p73656c6563746564436f756e74727956616c7565": "BR",
+              "accessibleLabel": "InputCountry"
+            },
+            "items": [
+              {
+                "p707265666978": "+55",
+                "p76616c7565": "BR",
+                "p6c6162656c": "Brasil",
+                "p666c6167": "ic_flag_brazil_rounded"
+              },
+              {
+                "p707265666978": "+1",
+                "p76616c7565": "US",
+                "p6c6162656c": "Estados Unidos",
+                "p666c6167": "ic_flag_united_states_rounded"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-input-country",
+            "properties": {
+              "p6c6162656c": "Telefone",
+              "p706c616365686f6c646572": "Digite seu telefone",
+              "p7374617465": "disabled",
+              "p73656c6563746564436f756e74727956616c7565": "BR",
+              "accessibleLabel": "InputCountry"
+            },
+            "items": [
+              {
+                "p707265666978": "+55",
+                "p76616c7565": "BR",
+                "p6c6162656c": "Brasil",
+                "p666c6167": "ic_flag_brazil_rounded"
+              },
+              {
+                "p707265666978": "+1",
+                "p76616c7565": "US",
+                "p6c6162656c": "Estados Unidos",
+                "p666c6167": "ic_flag_united_states_rounded"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-input-country",
+            "properties": {
+              "p6c6162656c": "Telefone",
+              "p706c616365686f6c646572": "Digite seu telefone",
+              "p7374617465": "loading",
+              "p73656c6563746564436f756e74727956616c7565": "BR",
+              "accessibleLabel": "InputCountry"
+            },
+            "items": [
+              {
+                "p707265666978": "+55",
+                "p76616c7565": "BR",
+                "p6c6162656c": "Brasil",
+                "p666c6167": "ic_flag_brazil_rounded"
+              },
+              {
+                "p707265666978": "+1",
+                "p76616c7565": "US",
+                "p6c6162656c": "Estados Unidos",
+                "p666c6167": "ic_flag_united_states_rounded"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/input-date": {
+    "title": "InputDate | Toranja",
+    "description": "Exemplo editável do componente oficial InputDate",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputDate</h1>"
+          },
+          {
+            "block": "ds-input-date",
+            "properties": {
+              "p6c6162656c": "Data",
+              "p706c616365686f6c646572": "DD/MM/AAAA",
+              "accessibleLabel": "InputDate"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-input-date",
+            "properties": {
+              "p6c6162656c": "Data",
+              "p706c616365686f6c646572": "DD/MM/AAAA",
+              "accessibleLabel": "InputDate",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-input-date",
+            "properties": {
+              "p6c6162656c": "Data",
+              "p706c616365686f6c646572": "DD/MM/AAAA",
+              "accessibleLabel": "InputDate",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-input-date",
+            "properties": {
+              "p6c6162656c": "Data",
+              "p706c616365686f6c646572": "DD/MM/AAAA",
+              "accessibleLabel": "InputDate",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/input-password": {
+    "title": "InputPassword | Toranja",
+    "description": "Exemplo editável do componente oficial InputPassword",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputPassword</h1>"
+          },
+          {
+            "block": "ds-input-password",
+            "properties": {
+              "p6c6162656c": "Senha",
+              "p706c616365686f6c646572": "Digite uma senha",
+              "accessibleLabel": "InputPassword"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-input-password",
+            "properties": {
+              "p6c6162656c": "Senha",
+              "p706c616365686f6c646572": "Digite uma senha",
+              "accessibleLabel": "InputPassword",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-input-password",
+            "properties": {
+              "p6c6162656c": "Senha",
+              "p706c616365686f6c646572": "Digite uma senha",
+              "accessibleLabel": "InputPassword",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-input-password",
+            "properties": {
+              "p6c6162656c": "Senha",
+              "p706c616365686f6c646572": "Digite uma senha",
+              "accessibleLabel": "InputPassword",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/input-search": {
+    "title": "InputSearch | Toranja",
+    "description": "Exemplo editável do componente oficial InputSearch",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputSearch</h1>"
+          },
+          {
+            "block": "ds-input-search",
+            "properties": {
+              "p6c6162656c": "Buscar",
+              "p706c616365686f6c646572": "O que você procura?",
+              "accessibleLabel": "InputSearch"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-input-search",
+            "properties": {
+              "p6c6162656c": "Buscar",
+              "p706c616365686f6c646572": "O que você procura?",
+              "accessibleLabel": "InputSearch",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-input-search",
+            "properties": {
+              "p6c6162656c": "Buscar",
+              "p706c616365686f6c646572": "O que você procura?",
+              "accessibleLabel": "InputSearch",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-input-search",
+            "properties": {
+              "p6c6162656c": "Buscar",
+              "p706c616365686f6c646572": "O que você procura?",
+              "accessibleLabel": "InputSearch",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/input-text": {
+    "title": "InputText | Toranja",
+    "description": "Exemplo editável do componente oficial InputText",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputText</h1>"
+          },
+          {
+            "block": "ds-input-text",
+            "properties": {
+              "p74797065": "text",
+              "p6c6162656c": "Nome completo",
+              "p706c616365686f6c646572": "Como podemos chamar você?",
+              "accessibleLabel": "InputText"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-input-text",
+            "properties": {
+              "p74797065": "text",
+              "p6c6162656c": "Nome completo",
+              "p706c616365686f6c646572": "Como podemos chamar você?",
+              "accessibleLabel": "InputText",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-input-text",
+            "properties": {
+              "p74797065": "text",
+              "p6c6162656c": "Nome completo",
+              "p706c616365686f6c646572": "Como podemos chamar você?",
+              "accessibleLabel": "InputText",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-input-text",
+            "properties": {
+              "p74797065": "text",
+              "p6c6162656c": "Nome completo",
+              "p706c616365686f6c646572": "Como podemos chamar você?",
+              "accessibleLabel": "InputText",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/input-money": {
+    "title": "InputMoney | Toranja",
+    "description": "Exemplo editável do componente oficial InputMoney",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputMoney</h1>"
+          },
+          {
+            "block": "ds-input-money",
+            "properties": {
+              "p73686f77427574746f6e73": "true",
+              "p6669786564496e6372656d656e7456616c7565": 100,
+              "p666978656444656372656d656e7456616c7565": 100,
+              "p63757272656e6379": "BRL",
+              "p6d696e56616c7565": 0,
+              "p6d617856616c7565": 100000,
+              "p64656661756c7456616c7565": 1500,
+              "accessibleLabel": "InputMoney"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-input-money",
+            "properties": {
+              "p73686f77427574746f6e73": "true",
+              "p6669786564496e6372656d656e7456616c7565": 100,
+              "p666978656444656372656d656e7456616c7565": 100,
+              "p63757272656e6379": "BRL",
+              "p6d696e56616c7565": 0,
+              "p6d617856616c7565": 100000,
+              "p64656661756c7456616c7565": 1500,
+              "accessibleLabel": "InputMoney",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-input-money",
+            "properties": {
+              "p73686f77427574746f6e73": "true",
+              "p6669786564496e6372656d656e7456616c7565": 100,
+              "p666978656444656372656d656e7456616c7565": 100,
+              "p63757272656e6379": "BRL",
+              "p6d696e56616c7565": 0,
+              "p6d617856616c7565": 100000,
+              "p64656661756c7456616c7565": 1500,
+              "accessibleLabel": "InputMoney",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/link": {
+    "title": "Link | Toranja",
+    "description": "Exemplo editável do componente oficial Link",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Link</h1>"
+          },
+          {
+            "block": "ds-link",
+            "properties": {
+              "p6c6162656c": "Explorar todos os componentes",
+              "p73697a65": "medium",
+              "p68726566": "/demo-toranja",
+              "accessibleLabel": "Link"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-link",
+            "properties": {
+              "p6c6162656c": "Explorar todos os componentes",
+              "p73697a65": "medium",
+              "p68726566": "/demo-toranja",
+              "accessibleLabel": "Link",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/list-item": {
+    "title": "ListItem | Toranja",
+    "description": "Exemplo editável do componente oficial ListItem",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItem</h1>"
+          },
+          {
+            "block": "ds-list-item",
+            "properties": {
+              "p6c6162656c": "Conta digital",
+              "p706172616772617068": "Um item da sua lista",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItem"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-list-item",
+            "properties": {
+              "p6c6162656c": "Conta digital",
+              "p706172616772617068": "Um item da sua lista",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItem",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-list-item",
+            "properties": {
+              "p6c6162656c": "Conta digital",
+              "p706172616772617068": "Um item da sua lista",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItem",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/list-item-control": {
+    "title": "ListItemControl | Toranja",
+    "description": "Exemplo editável do componente oficial ListItemControl",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemControl</h1>"
+          },
+          {
+            "block": "ds-list-item-control",
+            "properties": {
+              "p747261696c696e6756617269616e74": "switch",
+              "p747261696c696e6750726f70732e636865636b6564": "false",
+              "p6c6162656c": "Receber novidades",
+              "p706172616772617068": "Você controla suas preferências",
+              "accessibleLabel": "ListItemControl"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-list-item-control",
+            "properties": {
+              "p747261696c696e6756617269616e74": "switch",
+              "p747261696c696e6750726f70732e636865636b6564": "false",
+              "p6c6162656c": "Receber novidades",
+              "p706172616772617068": "Você controla suas preferências",
+              "accessibleLabel": "ListItemControl",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-list-item-control",
+            "properties": {
+              "p747261696c696e6756617269616e74": "switch",
+              "p747261696c696e6750726f70732e636865636b6564": "false",
+              "p6c6162656c": "Receber novidades",
+              "p706172616772617068": "Você controla suas preferências",
+              "accessibleLabel": "ListItemControl",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-list-item-control",
+            "properties": {
+              "p747261696c696e6756617269616e74": "switch",
+              "p747261696c696e6750726f70732e636865636b6564": "false",
+              "p6c6162656c": "Receber novidades",
+              "p706172616772617068": "Você controla suas preferências",
+              "accessibleLabel": "ListItemControl",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/list-item-general": {
+    "title": "ListItemGeneral | Toranja",
+    "description": "Exemplo editável do componente oficial ListItemGeneral",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemGeneral</h1>"
+          },
+          {
+            "block": "ds-list-item-general",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p706172616772617068": "Conheça as possibilidades",
+              "p747261696c696e6756617269616e74": "tagChevron",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItemGeneral"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-list-item-general",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p706172616772617068": "Conheça as possibilidades",
+              "p747261696c696e6756617269616e74": "tagChevron",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItemGeneral",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-list-item-general",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p706172616772617068": "Conheça as possibilidades",
+              "p747261696c696e6756617269616e74": "tagChevron",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItemGeneral",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-list-item-general",
+            "properties": {
+              "p6c6162656c": "Investimentos",
+              "p706172616772617068": "Conheça as possibilidades",
+              "p747261696c696e6756617269616e74": "tagChevron",
+              "p73686f7744697669646572": "true",
+              "accessibleLabel": "ListItemGeneral",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/list-item-action": {
+    "title": "ListItemAction | Toranja",
+    "description": "Exemplo editável do componente oficial ListItemAction",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemAction</h1>"
+          },
+          {
+            "block": "ds-list-item-action",
+            "properties": {
+              "p747261696c696e6756617269616e74": "button",
+              "p747261696c696e6750726f70732e6c6162656c": "Explorar",
+              "p6c6162656c": "Saiba mais",
+              "p706172616772617068": "Explore o catálogo",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "ListItemAction"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-list-item-action",
+            "properties": {
+              "p747261696c696e6756617269616e74": "button",
+              "p747261696c696e6750726f70732e6c6162656c": "Explorar",
+              "p6c6162656c": "Saiba mais",
+              "p706172616772617068": "Explore o catálogo",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "ListItemAction",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-list-item-action",
+            "properties": {
+              "p747261696c696e6756617269616e74": "button",
+              "p747261696c696e6750726f70732e6c6162656c": "Explorar",
+              "p6c6162656c": "Saiba mais",
+              "p706172616772617068": "Explore o catálogo",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "ListItemAction",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-list-item-action",
+            "properties": {
+              "p747261696c696e6756617269616e74": "button",
+              "p747261696c696e6750726f70732e6c6162656c": "Explorar",
+              "p6c6162656c": "Saiba mais",
+              "p706172616772617068": "Explore o catálogo",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "ListItemAction",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/list-item-view": {
+    "title": "ListItemView | Toranja",
+    "description": "Exemplo editável do componente oficial ListItemView",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemView</h1>"
+          },
+          {
+            "block": "ds-list-item-view",
+            "properties": {
+              "p6f7269656e746174696f6e": "horizontal",
+              "p6c6162656c": "Saldo ilustrativo",
+              "p76616c756554797065": "text",
+              "p76616c7565": "R$ 1.500,00",
+              "accessibleLabel": "ListItemView"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-list-item-view",
+            "properties": {
+              "p6f7269656e746174696f6e": "horizontal",
+              "p6c6162656c": "Saldo ilustrativo",
+              "p76616c756554797065": "text",
+              "p76616c7565": "R$ 1.500,00",
+              "accessibleLabel": "ListItemView",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/menu-item": {
+    "title": "MenuItem | Toranja",
+    "description": "Exemplo editável do componente oficial MenuItem",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>MenuItem</h1>"
+          },
+          {
+            "block": "ds-menu-item",
+            "properties": {
+              "p76617269616e74": "icon",
+              "p73697a65": "large",
+              "p6c6162656c": "Conta digital",
+              "p69636f6e": "ic_wallet",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "MenuItem"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/neutral-icon-button": {
+    "title": "NeutralIconButton | Toranja",
+    "description": "Exemplo editável do componente oficial NeutralIconButton",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>NeutralIconButton</h1>"
+          },
+          {
+            "block": "ds-neutral-icon-button",
+            "properties": {
+              "p69636f6e": "ic_ellipsis",
+              "p73697a65": "medium",
+              "p617269612d6c6162656c": "Mais opções",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "NeutralIconButton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-neutral-icon-button",
+            "properties": {
+              "p69636f6e": "ic_ellipsis",
+              "p73697a65": "medium",
+              "p617269612d6c6162656c": "Mais opções",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "NeutralIconButton",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-neutral-icon-button",
+            "properties": {
+              "p69636f6e": "ic_ellipsis",
+              "p73697a65": "medium",
+              "p617269612d6c6162656c": "Mais opções",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "NeutralIconButton",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-neutral-icon-button",
+            "properties": {
+              "p69636f6e": "ic_ellipsis",
+              "p73697a65": "medium",
+              "p617269612d6c6162656c": "Mais opções",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "NeutralIconButton",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/page-indicator": {
+    "title": "PageIndicator | Toranja",
+    "description": "Exemplo editável do componente oficial PageIndicator",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>PageIndicator</h1>"
+          },
+          {
+            "block": "ds-page-indicator",
+            "properties": {
+              "p6974656d73": 4,
+              "p73656c6563746564": 1,
+              "accessibleLabel": "PageIndicator"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/payment-methods": {
+    "title": "PaymentMethods | Toranja",
+    "description": "Exemplo editável do componente oficial PaymentMethods",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>PaymentMethods</h1>"
+          },
+          {
+            "block": "ds-payment-methods",
+            "properties": {
+              "p7061796d656e744d6574686f64": "mastercard",
+              "p73697a65": "large",
+              "p636f6c6f72": "soft",
+              "accessibleLabel": "PaymentMethods"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-payment-methods",
+            "properties": {
+              "p7061796d656e744d6574686f64": "mastercard",
+              "p73697a65": "large",
+              "p636f6c6f72": "soft",
+              "accessibleLabel": "PaymentMethods",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-payment-methods",
+            "properties": {
+              "p7061796d656e744d6574686f64": "mastercard",
+              "p73697a65": "large",
+              "p636f6c6f72": "soft",
+              "accessibleLabel": "PaymentMethods",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/pin-code": {
+    "title": "PinCode | Toranja",
+    "description": "Exemplo editável do componente oficial PinCode",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>PinCode</h1>"
+          },
+          {
+            "block": "ds-pin-code",
+            "properties": {
+              "p6669656c6473": "4",
+              "p7374617465": "enabled",
+              "p68696e7473": "[\"Código de demonstração\"]",
+              "p74797065": "number",
+              "p706c616365686f6c646572": "0",
+              "accessibleLabel": "PinCode"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-pin-code",
+            "properties": {
+              "p6669656c6473": "4",
+              "p7374617465": "skeleton",
+              "p68696e7473": "[\"Código de demonstração\"]",
+              "p74797065": "number",
+              "p706c616365686f6c646572": "0",
+              "accessibleLabel": "PinCode"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-pin-code",
+            "properties": {
+              "p6669656c6473": "4",
+              "p7374617465": "disabled",
+              "p68696e7473": "[\"Código de demonstração\"]",
+              "p74797065": "number",
+              "p706c616365686f6c646572": "0",
+              "accessibleLabel": "PinCode"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/progress-bar": {
+    "title": "ProgressBar | Toranja",
+    "description": "Exemplo editável do componente oficial ProgressBar",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ProgressBar</h1>"
+          },
+          {
+            "block": "ds-progress-bar",
+            "properties": {
+              "p76617269616e74": "default",
+              "p70726f6772657373": 60,
+              "accessibleLabel": "ProgressBar"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-progress-bar",
+            "properties": {
+              "p76617269616e74": "default",
+              "p70726f6772657373": 60,
+              "accessibleLabel": "ProgressBar",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/progress-circle": {
+    "title": "ProgressCircle | Toranja",
+    "description": "Exemplo editável do componente oficial ProgressCircle",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ProgressCircle</h1>"
+          },
+          {
+            "block": "ds-progress-circle",
+            "properties": {
+              "p73697a65": "large",
+              "p70726f6772657373": 65,
+              "p617269614c6162656c": "65% concluído",
+              "accessibleLabel": "ProgressCircle"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/radio": {
+    "title": "Radio | Toranja",
+    "description": "Exemplo editável do componente oficial Radio",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Radio</h1>"
+          },
+          {
+            "block": "ds-radio",
+            "properties": {
+              "p6368696c6472656e": "Escolher esta opção",
+              "p6e616d65": "preferencia",
+              "p7374617465": "enabled",
+              "p76616c7565": "opcao-1",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Radio"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-radio",
+            "properties": {
+              "p6368696c6472656e": "Escolher esta opção",
+              "p6e616d65": "preferencia",
+              "p7374617465": "skeleton",
+              "p76616c7565": "opcao-1",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Radio"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-radio",
+            "properties": {
+              "p6368696c6472656e": "Escolher esta opção",
+              "p6e616d65": "preferencia",
+              "p7374617465": "disabled",
+              "p76616c7565": "opcao-1",
+              "p76617269616e74": "default",
+              "accessibleLabel": "Radio"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/section-title": {
+    "title": "SectionTitle | Toranja",
+    "description": "Exemplo editável do componente oficial SectionTitle",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SectionTitle</h1>"
+          },
+          {
+            "block": "ds-section-title",
+            "properties": {
+              "p7469746c65": "Tudo para sua vida",
+              "p73686f774465736372697074696f6e": "true",
+              "p6465736372697074696f6e": "Um título de seção editável",
+              "p76617269616e74": "default",
+              "p73686f7749636f6e": "true",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "SectionTitle"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-section-title",
+            "properties": {
+              "p7469746c65": "Tudo para sua vida",
+              "p73686f774465736372697074696f6e": "true",
+              "p6465736372697074696f6e": "Um título de seção editável",
+              "p76617269616e74": "default",
+              "p73686f7749636f6e": "true",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "SectionTitle",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-section-title",
+            "properties": {
+              "p7469746c65": "Tudo para sua vida",
+              "p73686f774465736372697074696f6e": "true",
+              "p6465736372697074696f6e": "Um título de seção editável",
+              "p76617269616e74": "default",
+              "p73686f7749636f6e": "true",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "SectionTitle",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/section-subtitle": {
+    "title": "SectionSubtitle | Toranja",
+    "description": "Exemplo editável do componente oficial SectionSubtitle",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SectionSubtitle</h1>"
+          },
+          {
+            "block": "ds-section-subtitle",
+            "properties": {
+              "p7375627469746c65": "Escolha seu próximo passo",
+              "p747261696c696e674c6162656c": "Saiba mais",
+              "accessibleLabel": "SectionSubtitle"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-section-subtitle",
+            "properties": {
+              "p7375627469746c65": "Escolha seu próximo passo",
+              "p747261696c696e674c6162656c": "Saiba mais",
+              "accessibleLabel": "SectionSubtitle",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/segmented-control": {
+    "title": "SegmentedControl | Toranja",
+    "description": "Exemplo editável do componente oficial SegmentedControl",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SegmentedControl</h1>"
+          },
+          {
+            "block": "ds-segmented-control",
+            "properties": {
+              "p7374617465": "enabled",
+              "accessibleLabel": "SegmentedControl"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Pessoal"
+              },
+              {
+                "p6c6162656c": "Empresas"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-segmented-control",
+            "properties": {
+              "p7374617465": "skeleton",
+              "accessibleLabel": "SegmentedControl"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Pessoal"
+              },
+              {
+                "p6c6162656c": "Empresas"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/select": {
+    "title": "Select | Toranja",
+    "description": "Exemplo editável do componente oficial Select",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Select</h1>"
+          },
+          {
+            "block": "ds-select",
+            "properties": {
+              "p6c6162656c": "Produto de interesse",
+              "p706c616365686f6c646572": "Escolha uma opção",
+              "accessibleLabel": "Select",
+              "selectOptions": "[\"Conta digital\",\"Investimentos\",\"Crédito\"]"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-select",
+            "properties": {
+              "p6c6162656c": "Produto de interesse",
+              "p706c616365686f6c646572": "Escolha uma opção",
+              "accessibleLabel": "Select",
+              "selectOptions": "[\"Conta digital\",\"Investimentos\",\"Crédito\"]",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-select",
+            "properties": {
+              "p6c6162656c": "Produto de interesse",
+              "p706c616365686f6c646572": "Escolha uma opção",
+              "accessibleLabel": "Select",
+              "selectOptions": "[\"Conta digital\",\"Investimentos\",\"Crédito\"]",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-select",
+            "properties": {
+              "p6c6162656c": "Produto de interesse",
+              "p706c616365686f6c646572": "Escolha uma opção",
+              "accessibleLabel": "Select",
+              "selectOptions": "[\"Conta digital\",\"Investimentos\",\"Crédito\"]",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/spinner": {
+    "title": "Spinner | Toranja",
+    "description": "Exemplo editável do componente oficial Spinner",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Spinner</h1>"
+          },
+          {
+            "block": "ds-spinner",
+            "properties": {
+              "p73697a65": "large",
+              "p617269614c6162656c": "Carregando demonstração",
+              "accessibleLabel": "Spinner"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/signal": {
+    "title": "Signal | Toranja",
+    "description": "Exemplo editável do componente oficial Signal",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Signal</h1>"
+          },
+          {
+            "block": "ds-signal",
+            "properties": {
+              "p76617269616e74": "success",
+              "p73697a65": "large",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Signal"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-signal",
+            "properties": {
+              "p76617269616e74": "success",
+              "p73697a65": "large",
+              "p7374617465": "skeleton",
+              "accessibleLabel": "Signal"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/switch": {
+    "title": "Switch | Toranja",
+    "description": "Exemplo editável do componente oficial Switch",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Switch</h1>"
+          },
+          {
+            "block": "ds-switch",
+            "properties": {
+              "p636865636b6564": "false",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Switch"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-switch",
+            "properties": {
+              "p636865636b6564": "false",
+              "p7374617465": "disabled",
+              "accessibleLabel": "Switch"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-switch",
+            "properties": {
+              "p636865636b6564": "false",
+              "p7374617465": "skeleton",
+              "accessibleLabel": "Switch"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/snackbar": {
+    "title": "Snackbar | Toranja",
+    "description": "Exemplo editável do componente oficial Snackbar",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Snackbar</h1>"
+          },
+          {
+            "block": "ds-snackbar",
+            "properties": {
+              "p76617269616e74": "success",
+              "p7469746c65": "Pronto",
+              "p6465736372697074696f6e": "Esta é uma mensagem de demonstração.",
+              "p73686f77427574746f6e536e61636b626172": "true",
+              "p6c6162656c427574746f6e": "Entendi",
+              "p73686f77": "false",
+              "accessibleLabel": "Snackbar",
+              "triggerLabel": "Abrir Snackbar"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/stepper": {
+    "title": "Stepper | Toranja",
+    "description": "Exemplo editável do componente oficial Stepper",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Stepper</h1>"
+          },
+          {
+            "block": "ds-stepper",
+            "properties": {
+              "p656e61626c65496e707574": "true",
+              "p6d6178": 10,
+              "p6d696e": 0,
+              "p7374617465": "enabled",
+              "p686173426f72646572": "true",
+              "p73746570": 1,
+              "accessibleLabel": "Stepper"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-stepper",
+            "properties": {
+              "p656e61626c65496e707574": "true",
+              "p6d6178": 10,
+              "p6d696e": 0,
+              "p7374617465": "skeleton",
+              "p686173426f72646572": "true",
+              "p73746570": 1,
+              "accessibleLabel": "Stepper"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-stepper",
+            "properties": {
+              "p656e61626c65496e707574": "true",
+              "p6d6178": 10,
+              "p6d696e": 0,
+              "p7374617465": "disabled",
+              "p686173426f72646572": "true",
+              "p73746570": 1,
+              "accessibleLabel": "Stepper"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/tabs": {
+    "title": "Tabs | Toranja",
+    "description": "Exemplo editável do componente oficial Tabs",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Tabs</h1>"
+          },
+          {
+            "block": "ds-tabs",
+            "properties": {
+              "p7374617465": "enabled",
+              "p7363726f6c6c61626c65": "true",
+              "accessibleLabel": "Tabs"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Conta",
+                "p73656c6563746564": true
+              },
+              {
+                "p6c6162656c": "Investimentos"
+              },
+              {
+                "p6c6162656c": "Crédito"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-tabs",
+            "properties": {
+              "p7374617465": "skeleton",
+              "p7363726f6c6c61626c65": "true",
+              "accessibleLabel": "Tabs"
+            },
+            "items": [
+              {
+                "p6c6162656c": "Conta",
+                "p73656c6563746564": true
+              },
+              {
+                "p6c6162656c": "Investimentos"
+              },
+              {
+                "p6c6162656c": "Crédito"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/tag": {
+    "title": "Tag | Toranja",
+    "description": "Exemplo editável do componente oficial Tag",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Tag</h1>"
+          },
+          {
+            "block": "ds-tag",
+            "properties": {
+              "p636f6c6f72": "brand",
+              "p686965726172636879": "soft",
+              "p6c6162656c": "Novidade",
+              "p73697a65": "large",
+              "p7374617465": "enabled",
+              "accessibleLabel": "Tag"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-tag",
+            "properties": {
+              "p636f6c6f72": "brand",
+              "p686965726172636879": "soft",
+              "p6c6162656c": "Novidade",
+              "p73697a65": "large",
+              "p7374617465": "skeleton",
+              "accessibleLabel": "Tag"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-tag",
+            "properties": {
+              "p636f6c6f72": "brand",
+              "p686965726172636879": "soft",
+              "p6c6162656c": "Novidade",
+              "p73697a65": "large",
+              "p7374617465": "disabled",
+              "accessibleLabel": "Tag"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/text": {
+    "title": "Text | Toranja",
+    "description": "Exemplo editável do componente oficial Text",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Text</h1>"
+          },
+          {
+            "block": "ds-text",
+            "properties": {
+              "p6368696c6472656e": "Em todo momento da vida, vejo você.",
+              "p7465787453697a65": "large",
+              "p74657874576569676874": "regular",
+              "p6173": "p",
+              "p7465787454797065": "body",
+              "accessibleLabel": "Text"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-text",
+            "properties": {
+              "p6368696c6472656e": "Em todo momento da vida, vejo você.",
+              "p7465787453697a65": "large",
+              "p74657874576569676874": "regular",
+              "p6173": "p",
+              "p7465787454797065": "body",
+              "accessibleLabel": "Text",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-text",
+            "properties": {
+              "p6368696c6472656e": "Em todo momento da vida, vejo você.",
+              "p7465787453697a65": "large",
+              "p74657874576569676874": "regular",
+              "p6173": "p",
+              "p7465787454797065": "body",
+              "accessibleLabel": "Text",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/text-area": {
+    "title": "TextArea | Toranja",
+    "description": "Exemplo editável do componente oficial TextArea",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>TextArea</h1>"
+          },
+          {
+            "block": "ds-text-area",
+            "properties": {
+              "p6c6162656c": "Sua mensagem",
+              "p73686f77436f756e746572": "true",
+              "p636f756e746572": 300,
+              "p706c616365686f6c646572": "Conte um pouco mais",
+              "accessibleLabel": "TextArea"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-text-area",
+            "properties": {
+              "p6c6162656c": "Sua mensagem",
+              "p73686f77436f756e746572": "true",
+              "p636f756e746572": 300,
+              "p706c616365686f6c646572": "Conte um pouco mais",
+              "accessibleLabel": "TextArea",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-text-area",
+            "properties": {
+              "p6c6162656c": "Sua mensagem",
+              "p73686f77436f756e746572": "true",
+              "p636f756e746572": 300,
+              "p706c616365686f6c646572": "Conte um pouco mais",
+              "accessibleLabel": "TextArea",
+              "p7374617465": "disabled"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: loading</h2>"
+          },
+          {
+            "block": "ds-text-area",
+            "properties": {
+              "p6c6162656c": "Sua mensagem",
+              "p73686f77436f756e746572": "true",
+              "p636f756e746572": 300,
+              "p706c616365686f6c646572": "Conte um pouco mais",
+              "accessibleLabel": "TextArea",
+              "p7374617465": "loading"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/timeline": {
+    "title": "Timeline | Toranja",
+    "description": "Exemplo editável do componente oficial Timeline",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Timeline</h1>"
+          },
+          {
+            "block": "ds-timeline",
+            "properties": {
+              "accessibleLabel": "Timeline"
+            },
+            "items": [
+              {
+                "p7469746c65": "Escolha",
+                "p64617465": "Etapa 1",
+                "p737461747573": "success"
+              },
+              {
+                "p7469746c65": "Personalize",
+                "p64617465": "Etapa 2",
+                "p737461747573": "current"
+              },
+              {
+                "p7469746c65": "Publique",
+                "p64617465": "Etapa 3",
+                "p737461747573": "pending"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-timeline",
+            "properties": {
+              "accessibleLabel": "Timeline",
+              "p7374617465": "skeleton"
+            },
+            "items": [
+              {
+                "p7469746c65": "Escolha",
+                "p64617465": "Etapa 1",
+                "p737461747573": "success"
+              },
+              {
+                "p7469746c65": "Personalize",
+                "p64617465": "Etapa 2",
+                "p737461747573": "current"
+              },
+              {
+                "p7469746c65": "Publique",
+                "p64617465": "Etapa 3",
+                "p737461747573": "pending"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: disabled</h2>"
+          },
+          {
+            "block": "ds-timeline",
+            "properties": {
+              "accessibleLabel": "Timeline",
+              "p7374617465": "disabled"
+            },
+            "items": [
+              {
+                "p7469746c65": "Escolha",
+                "p64617465": "Etapa 1",
+                "p737461747573": "success"
+              },
+              {
+                "p7469746c65": "Personalize",
+                "p64617465": "Etapa 2",
+                "p737461747573": "current"
+              },
+              {
+                "p7469746c65": "Publique",
+                "p64617465": "Etapa 3",
+                "p737461747573": "pending"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/widget": {
+    "title": "Widget | Toranja",
+    "description": "Exemplo editável do componente oficial Widget",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Widget</h1>"
+          },
+          {
+            "block": "ds-widget",
+            "properties": {
+              "p74696d6541676f": "Agora",
+              "p746167": "Novidade",
+              "p7469746c65": "Seus planos",
+              "p73686f77486561646572": "true",
+              "p6368696c6472656e": "<p>Uma experiência completa e editável.</p>",
+              "p73697a65": "large",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Widget"
+            }
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "text": "<h2>Estado: skeleton</h2>"
+          },
+          {
+            "block": "ds-widget",
+            "properties": {
+              "p74696d6541676f": "Agora",
+              "p746167": "Novidade",
+              "p7469746c65": "Seus planos",
+              "p73686f77486561646572": "true",
+              "p6368696c6472656e": "<p>Uma experiência completa e editável.</p>",
+              "p73697a65": "large",
+              "actionLink": "/demo-toranja",
+              "accessibleLabel": "Widget",
+              "p7374617465": "skeleton"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "abra-sua-conta": {
+    "title": "Abra sua conta | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Abra sua conta</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "ajuda": {
+    "title": "Ajuda | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Ajuda</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "app": {
+    "title": "App | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>App</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "carreiras": {
+    "title": "Carreiras | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Carreiras</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "cartoes": {
+    "title": "Cartoes | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Cartoes</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "conta": {
+    "title": "Conta | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Conta</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "conta-digital": {
+    "title": "Conta digital | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Conta digital</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "credito": {
+    "title": "Credito | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Credito</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "empresas/cambio": {
+    "title": "Cambio | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Cambio</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "empresas/conta-pj": {
+    "title": "Conta pj | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Conta pj</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "empresas/credito": {
+    "title": "Credito | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Credito</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "empresas/folha": {
+    "title": "Folha | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Folha</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "empresas/maquininha": {
+    "title": "Maquininha | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Maquininha</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "global": {
+    "title": "Global | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Global</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "global-account": {
+    "title": "Global account | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Global account</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "imprensa": {
+    "title": "Imprensa | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Imprensa</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "inter-loop": {
+    "title": "Inter loop | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Inter loop</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "inter-shop": {
+    "title": "Inter shop | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Inter shop</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "investimentos": {
+    "title": "Investimentos | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Investimentos</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "loop": {
+    "title": "Loop | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Loop</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "ouvidoria": {
+    "title": "Ouvidoria | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Ouvidoria</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "pj": {
+    "title": "Pj | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Pj</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "pra-voce": {
+    "title": "Pra voce | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Pra voce</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "ri": {
+    "title": "Ri | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Ri</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "segmentos/one": {
+    "title": "One | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>One</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "segmentos/prime": {
+    "title": "Prime | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Prime</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "segmentos/win": {
+    "title": "Win | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Win</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "seguranca": {
+    "title": "Seguranca | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Seguranca</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "sobre": {
+    "title": "Sobre | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Sobre</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "sustentabilidade": {
+    "title": "Sustentabilidade | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Sustentabilidade</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "telefones": {
+    "title": "Telefones | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Telefones</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "termos": {
+    "title": "Termos | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Termos</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "win": {
+    "title": "Win | Demonstração",
+    "description": "Página de destino editável da demonstração Toranja",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<p><a href=\"/\">Início</a></p><h1>Win</h1><p>Página demonstrativa. Personalize este conteúdo no Universal Editor.</p><p><a href=\"/demo-toranja\">Explorar componentes</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Showcase",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<h1>Showcase</h1><p><a href=\"/demo-toranja\">Catálogo Toranja</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "empresas": {
+    "title": "Empresas",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<h1>Empresas</h1><p><a href=\"/demo-toranja\">Catálogo Toranja</a></p>"
+          }
+        ]
+      }
+    ]
+  },
+  "segmentos": {
+    "title": "Segmentos",
+    "sections": [
+      {
+        "content": [
+          {
+            "text": "<h1>Segmentos</h1><p><a href=\"/demo-toranja\">Catálogo Toranja</a></p>"
           }
         ]
       }

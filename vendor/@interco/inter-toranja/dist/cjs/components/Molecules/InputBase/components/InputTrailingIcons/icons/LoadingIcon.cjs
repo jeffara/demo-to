@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("react/jsx-runtime"),o=require("../../../../../Atoms/NeutralIconButton/NeutralIconButton.cjs"),n=()=>t.jsx(o.NeutralIconButton,{state:"loading",onClick:()=>{}});exports.LoadingIcon=n;

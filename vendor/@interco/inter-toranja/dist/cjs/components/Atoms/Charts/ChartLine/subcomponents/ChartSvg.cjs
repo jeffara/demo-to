@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=require("react/jsx-runtime"),o=({plotWidth:e,chartHeight:t,shouldLockPlotWidth:r=!1,className:s,testId:i,children:a})=>n.jsx("svg",{"data-testid":i,className:s,width:r?e:"100%",height:t,viewBox:`0 0 ${e} ${t}`,preserveAspectRatio:"none","aria-hidden":!0,children:a});exports.ChartSvg=o;

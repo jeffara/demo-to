@@ -1,0 +1,42 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagGrenadaRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#AC2C25",
+  d: "M5.237 2.087A11.943 11.943 0 0 1 12 0c2.509 0 4.838.77 6.764 2.087L12 2.609l-6.763-.522Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#0E50D6",
+  d: "m12 12-.766-.766-.203.364L12 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#41660B",
+  d: "M3.515 3.515c-4.687 4.686-4.687 12.284 0 16.97L12 12 3.515 3.515ZM20.485 3.515c4.687 4.686 4.687 12.284 0 16.97L12 12l8.485-8.485Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#AC2C25",
+  d: "M12 16.174a4.174 4.174 0 1 0 0-8.348 4.174 4.174 0 0 0 0 8.348Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "m12 7.826.935 2.88h3.029l-2.45 1.78.936 2.88-2.45-1.78-2.45 1.78.936-2.88-2.45-1.78h3.028L12 7.826ZM12 0h-.004.008H12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#AC2C25",
+  d: "M12.004 0h-.008a11.962 11.962 0 0 0-8.48 3.514h16.969A11.962 11.962 0 0 0 12.004 0ZM3.515 20.486A11.962 11.962 0 0 0 12 24c3.313 0 6.313-1.343 8.485-3.514H3.515Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "m12 1.304.194.598h.629l-.509.37.195.598L12 2.5l-.508.37.194-.598-.509-.37h.629L12 1.304ZM9.09 1.304l.194.598h.629l-.508.37.194.598-.509-.37-.508.37.194-.598-.509-.37h.629l.194-.598ZM14.91 1.304l.194.598h.629l-.509.37.194.598-.508-.37-.509.37.195-.598-.509-.37h.629l.194-.598ZM12 21.13l.194.598h.629l-.509.37.195.598-.509-.37-.508.37.194-.598-.509-.37h.629L12 21.13ZM9.09 21.13l.194.598h.629l-.508.37.194.598-.509-.37-.508.37.194-.598-.509-.37h.629l.194-.598ZM14.91 21.13l.194.598h.629l-.509.37.194.598-.508-.37-.509.37.195-.598-.509-.37h.629l.194-.598ZM3.656 11.802a1.043 1.043 0 1 1-1.763 1.116c-.558-.882-.235-2.321-.235-2.321s1.44.323 1.998 1.205Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#AC2C25",
+  d: "M3.054 13.323a.522.522 0 1 0 0-1.044.522.522 0 0 0 0 1.044Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagGrenadaRounded;

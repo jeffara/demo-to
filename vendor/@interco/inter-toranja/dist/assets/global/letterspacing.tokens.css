@@ -1,0 +1,5 @@
+:root {
+  --type-letterspacing-default: 0rem;
+  --type-letterspacing-tight: -0.000625rem;
+  --type-letterspacing-tighter: -0.00125rem;
+}

@@ -119,6 +119,23 @@
           "label": "Permitir fechar o banner",
           "value": true,
           "valueType": "boolean"
+        },
+        {
+          "component": "select",
+          "name": "ctaTarget",
+          "label": "Link da Ação — abrir em",
+          "valueType": "string",
+          "value": "_self",
+          "options": [
+            {
+              "name": "Mesma aba",
+              "value": "_self"
+            },
+            {
+              "name": "Nova aba",
+              "value": "_blank"
+            }
+          ]
         }
       ]
     }

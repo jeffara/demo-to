@@ -1,0 +1,17 @@
+const s = ({
+  isDisabled: i,
+  isFocused: o,
+  isReadOnly: e,
+  value: n
+}) => ({
+  ...(i || e) && !n ? { y: 10 } : {},
+  ...o || n ? { y: -5, scale: 0.75, x: -31 } : {
+    y: 8,
+    scale: 1,
+    x: 0
+  },
+  width: "100%"
+});
+export {
+  s as getAnimationConfig
+};

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/",
+    "status": 404,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "x-error": "[pipeline: html] Lambda: x-error: failed to load /index.md from content-bus: 404",
+      "X-Robots-Tag": "noindex, nofollow"
+    },
+    "bodySample": "404 Not Found"
+  },
+  {
+    "path": "/index.html",
+    "status": 404,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "x-error": "[pipeline: html] Lambda: x-error: failed to load /index.html from code-bus: 404",
+      "X-Robots-Tag": "noindex, nofollow"
+    },
+    "bodySample": "404 Not Found"
+  },
+  {
+    "path": "/demo-toranja",
+    "status": 404,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "x-error": "[pipeline: html] Lambda: x-error: failed to load /demo-toranja.md from content-bus: 404",
+      "X-Robots-Tag": "noindex, nofollow"
+    },
+    "bodySample": "404 Not Found"
+  },
+  {
+    "path": "/config.json",
+    "status": 404,
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "x-error": "[pipeline: json] Lambda: x-error: failed to load /config.json: 404",
+      "X-Robots-Tag": "noindex, nofollow"
+    },
+    "bodySample": ""
+  },
+  {
+    "path": "/scripts/aem.js",
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/javascript; charset=utf-8",
+      "X-Robots-Tag": "noindex, nofollow"
+    }
+  }
+]

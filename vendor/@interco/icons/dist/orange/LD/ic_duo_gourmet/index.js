@@ -1,0 +1,20 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticDuoGourmet = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "m25 19.485-.556-.832a1 1 0 0 0-.444.832h1Zm0 4.565-1-.025a1 1 0 0 0 .8 1.005l.2-.98Zm-18 0 .2.98a1 1 0 0 0 .8-1.005l-1 .025Zm0-4.12h1a1 1 0 0 0-.5-.866l-.5.866Zm6.78-14.434-.348.938a1 1 0 0 0 1.038-.215l-.69-.723Zm11.776 14.82A9.992 9.992 0 0 0 30 12h-2a7.991 7.991 0 0 1-3.556 6.653l1.112 1.663ZM26 24v-4.515h-2V24h2Zm0 .074V24h-2v.025l2 .05Zm-1.2.956A1.5 1.5 0 0 1 26 26.5h2a3.501 3.501 0 0 0-2.802-3.43l-.397 1.96ZM26 26.5a1.5 1.5 0 0 1-1.5 1.5v2a3.5 3.5 0 0 0 3.5-3.5h-2ZM24.5 28h-17v2h17v-2Zm-17 0A1.5 1.5 0 0 1 6 26.5H4A3.5 3.5 0 0 0 7.5 30v-2ZM6 26.5a1.5 1.5 0 0 1 1.2-1.47l-.398-1.96A3.501 3.501 0 0 0 4 26.5h2ZM6 24v.074l2-.049V24H6Zm0-4.07V24h2v-4.07H6ZM2 13a8.997 8.997 0 0 0 4.5 7.795l1-1.73A6.997 6.997 0 0 1 4 13H2Zm9-9a9 9 0 0 0-9 9h2a7 7 0 0 1 7-7V4Zm3.127.558A8.984 8.984 0 0 0 11 4v2c.857 0 1.676.154 2.432.434l.695-1.876ZM20 2a9.97 9.97 0 0 0-6.912 2.773l1.383 1.446A7.97 7.97 0 0 1 20 4V2Zm10 10c0-5.523-4.477-10-10-10v2a8 8 0 0 1 8 8h2Z"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "M19 20v3M13 20v3"
+}));
+export default ComponenticDuoGourmet;

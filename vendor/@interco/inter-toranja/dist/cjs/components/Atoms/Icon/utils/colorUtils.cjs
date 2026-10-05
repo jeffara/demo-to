@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=o=>`--color-${o.toLowerCase().replace(/\//g,"-")}`,n=o=>o.startsWith("Icon"),r=o=>!o||!n(o)?void 0:{fill:`var(${e(o)})`},t=()=>({fill:`var(${e("Icon/Disabled")})`});exports.convertIconColorToken=e;exports.getDisabledIconColor=t;exports.getIconColor=r;exports.isValidIconColorToken=n;

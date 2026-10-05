@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticSprayBottle = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M18 2a1 1 0 0 1 0 2h-1v.586c0 .64.254 1.254.707 1.707a1 1 0 1 1-1.414 1.414A4.414 4.414 0 0 1 15 4.586v-.493c-.118.199-.248.424-.384.657l-.125.216A3.496 3.496 0 0 0 14 6.71V7a1 1 0 0 1 .51 1.86c.398.39.69.892.822 1.465l2.077 9A3 3 0 0 1 14.486 23H8.514a3 3 0 0 1-2.923-3.675l2.077-9a2.995 2.995 0 0 1 .821-1.466A1 1 0 0 1 9 7V6H8a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h10Zm-7.41 8a1 1 0 0 0-.974.775l-2.076 9A1 1 0 0 0 8.514 21h5.972a1 1 0 0 0 .974-1.225l-2.076-9a1 1 0 0 0-.975-.775h-1.818ZM10 4a1 1 0 0 1 1 1v1h1.05c.099-.711.341-1.39.69-2H10Z"
+}));
+export default ComponenticSprayBottle;

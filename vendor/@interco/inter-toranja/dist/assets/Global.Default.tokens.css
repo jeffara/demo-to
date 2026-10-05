@@ -1,0 +1,16 @@
+/**
+ * @tokens GlobalTokens
+ * @presenter Tokens
+*/
+
+@import './global/color-base.tokens.css';
+@import './global/color-light.tokens.css';
+@import './global/color-dark.tokens.css';
+@import './global/spacing.tokens.css';
+@import './global/sizing.tokens.css';
+@import './global/typography.tokens.css';
+@import './global/border.tokens.css';
+@import './global/radius.tokens.css';
+@import './global/opacity.tokens.css';
+@import './global/gradient.tokens.css';
+@import './global/elevation.tokens.css';

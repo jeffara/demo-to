@@ -1,0 +1,174 @@
+{
+  "name": "@interco/icons",
+  "version": "7.0.3",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "repository": "git@gitlabssh.sharedservices.local:frontend/inter-frontend-svgs.git",
+  "author": "Marlon Mateus Amaral Castro <marlon.castro@inter.co>",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_TLS_REJECT_UNAUTHORIZED=0 yarn build:full",
+    "build:babel": "./node_modules/.bin/babel --verbose ./dist/ --out-dir ./dist/",
+    "build:clean": "rm -fr dist/",
+    "build:compile": "NODE_TLS_REJECT_UNAUTHORIZED=0 NODE_ENV=production ts-node --project ./tsconfig.json -r tsconfig-paths/register src/core/index.ts",
+    "build:copy": "(cp ./dist/manifest-toranja.json ./config/sample-app/static/manifest-toranja.json || echo 'manifest-toranja.json not found, using placeholder')",
+    "build:full": "yarn build:clean && yarn build:compile && yarn build:copy && yarn build:babel",
+    "build:pages": "yarn build:full && cp -R ./dist/* config/sample-app/static/ && vite build",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 NODE_ENV=development ts-node --project ./tsconfig.json -r tsconfig-paths/register src/core/index.ts  && yarn build:copy && ./node_modules/.bin/babel ./dist/ --out-dir ./dist/",
+    "dev:prepare": "mkdir -p config/sample-app/static && (cp -R ./dist/* ./config/sample-app/static/ || echo 'dist folder not found, using empty')",
+    "lint": "eslint --no-eslintrc --no-inline-config -c node_modules/@inter/eslint-config-inter-frontend/.eslintrc.json --ignore-path node_modules/@inter/eslint-config-inter-frontend/.eslintignore --ext .js,.jsx,.ts,.tsx",
+    "postpublish": "yarn build:pages",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "start": "yarn run dev:prepare && vite",
+    "test": "jest --no-cache --config=config/jest.config.ts --passWithNoTests",
+    "test:watch": "yarn run test -- --watch",
+    "yalc": "yarn build && yalc publish --push"
+  },
+  "dependencies": {
+    "@interco/lib-util": "^0.1.15",
+    "@loadable/component": "^5.15.2",
+    "path": "^0.12.7",
+    "react-color": "^2.19.3",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.2.2",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "lint-staged": {
+    "src/**/*.ts(x)": [
+      "yarn run lint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.28.3",
+    "@babel/node": "^7.16.8",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.16.7",
+    "@figma/plugin-typings": "1.43.0",
+    "@inter/eslint-config-inter-frontend": "^2.0.43",
+    "@interco/icons": "^7.0.0",
+    "@interco/inter-ui": "^4.2.35",
+    "@svgr/babel-plugin-transform-svg-component": "^6.2.0",
+    "@svgr/core": "^6.2.1",
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/loadable__component": "^5.13.4",
+    "@types/react": "^18.3.0",
+    "@types/react-color": "^3.0.6",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-syntax-highlighter": "^13.5.2",
+    "@types/styled-components": "^5.1.24",
+    "@types/svgo": "^2.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "axios": "^1.7.9",
+    "babel-jest": "^30.1.2",
+    "babel-loader": "^8.2.3",
+    "chalk": "^4.1.2",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "dotenv-flow": "^3.2.0",
+    "esbuild": "^0.21.5",
+    "eslint": "^5 || ^6 || ^7.14.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-jest-dom": "^3.6.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1 || ^2 || ^3 || ^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^12.3.7",
+    "msw": "^1.3.5",
+    "pascal-case": "^3.1.2",
+    "prettier": "^2.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "rollup": "^2.70.0",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-smart-asset": "^2.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.3",
+    "svg-jest": "^1.0.1",
+    "svgo": "^2.8.0",
+    "ts-jest": "^27.1.3",
+    "ts-loader": "^9.2.7",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^3.13.0",
+    "typescript": "^4.1.3",
+    "undici": "^7.15.0",
+    "vite": "^4.5.3",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@inter/eslint-config-inter-frontend"
+    ]
+  },
+  "resolutions": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "typesVersions": {
+    "*": {
+      "toranja/assets/*/*": [
+        "dist/toranja/assets/*/*/index.d.ts"
+      ],
+      "toranja/assets/*": [
+        "dist/toranja/assets/*/index.d.ts"
+      ],
+      "toranja/flags/*": [
+        "dist/toranja/flags/*/index.d.ts"
+      ],
+      "toranja/payment-methods/*": [
+        "dist/toranja/payment-methods/*/index.d.ts"
+      ],
+      "orange/*/*": [
+        "dist/orange/*/*/index.d.ts"
+      ],
+      "orange/*": [
+        "dist/orange/*/index.d.ts"
+      ]
+    }
+  },
+  "exports": {
+    "./toranja/*": {
+      "types": "./dist/toranja/*/index.d.ts",
+      "import": "./dist/toranja/*/index.js",
+      "require": "./dist/toranja/*/index.js"
+    },
+    "./orange/*": {
+      "types": "./dist/orange/*/index.d.ts",
+      "import": "./dist/orange/*/index.js",
+      "require": "./dist/orange/*/index.js"
+    },
+    "./manifest-toranja.json": "./dist/manifest-toranja.json",
+    "./manifest-orange.json": "./dist/manifest-orange.json",
+    "./manifest-flags.json": "./dist/manifest-flags.json",
+    "./manifest-payments.json": "./dist/manifest-payments.json"
+  }
+}

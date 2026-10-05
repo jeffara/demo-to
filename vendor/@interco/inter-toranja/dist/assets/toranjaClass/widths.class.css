@@ -1,0 +1,36 @@
+.tds-w-1 {
+  width: calc(var(--spacing-2) * 1);
+}
+.tds-w-2 {
+  width: calc(var(--spacing-2) * 2);
+}
+.tds-w-3 {
+  width: calc(var(--spacing-2) * 3);
+}
+.tds-w-4 {
+  width: calc(var(--spacing-2) * 4);
+}
+.tds-w-5 {
+  width: calc(var(--spacing-2) * 5);
+}
+.tds-w-6 {
+  width: calc(var(--spacing-2) * 6);
+}
+.tds-w-7 {
+  width: calc(var(--spacing-2) * 7);
+}
+.tds-w-8 {
+  width: calc(var(--spacing-2) * 8);
+}
+.tds-w-9 {
+  width: calc(var(--spacing-2) * 9);
+}
+.tds-w-10 {
+  width: calc(var(--spacing-2) * 10);
+}
+.tds-w-11 {
+  width: calc(var(--spacing-2) * 11);
+}
+.tds-w-12 {
+  width: calc(var(--spacing-2) * 12);
+}

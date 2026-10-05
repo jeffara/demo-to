@@ -1,0 +1,23 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticGift = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 16 16",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M3.333 8h9.334v4.5a1.5 1.5 0 0 1-1.5 1.5H4.833a1.5 1.5 0 0 1-1.5-1.5V8ZM2 5.333h12V8H2V5.333ZM8 3.667a1.667 1.667 0 1 1 1.667 1.666H8V3.667Z"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M8 3.667a1.667 1.667 0 1 0-1.667 1.666H8V3.667ZM8 5.333V14"
+}));
+export default ComponenticGift;

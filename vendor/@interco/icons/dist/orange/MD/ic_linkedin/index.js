@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticLinkedin = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M21.01 1H2.99C1.891 1 1 1.891 1 2.99v18.02C1 22.109 1.891 23 2.99 23h18.02c1.099 0 1.99-.891 1.99-1.99V2.99C23 1.891 22.109 1 21.01 1ZM7.808 19.996c0 .32-.26.58-.58.58H4.764a.58.58 0 0 1-.579-.58V9.662c0-.32.26-.58.58-.58h2.465c.32 0 .579.26.579.58v10.334ZM5.996 8.11a2.342 2.342 0 1 1 0-4.684 2.342 2.342 0 0 1 0 4.684Zm14.695 11.934a.533.533 0 0 1-.532.532h-2.646a.532.532 0 0 1-.532-.532v-4.848c0-.723.212-3.168-1.89-3.168-1.63 0-1.961 1.674-2.027 2.425v5.59a.532.532 0 0 1-.533.533H9.972a.533.533 0 0 1-.532-.532V9.615c0-.294.238-.532.532-.532h2.56c.293 0 .531.238.531.532v.902c.605-.907 1.503-1.608 3.416-1.608 4.236 0 4.212 3.958 4.212 6.132v5.002Z"
+}));
+export default ComponenticLinkedin;

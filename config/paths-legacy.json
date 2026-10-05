@@ -1,0 +1,5 @@
+{
+ "mappings": ["/content/demo-to/:/", "/content/dam/toranja-eds-demo/:/assets/"],
+ "includes": ["/content/demo-to/", "/content/dam/toranja-eds-demo/"],
+ "excludes": ["/content/demo-to/**/drafts/**"]
+}

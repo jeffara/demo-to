@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=t=>({leading:"leading--center--center",content:"content--left--center",trailing:`trailing--right--${t==="top-aligned"?"top":"center"}`});exports.getAlignmentClasses=e;

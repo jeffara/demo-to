@@ -1,0 +1,30 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagAfghanistanRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M17.217 1.19A11.953 11.953 0 0 0 12 0c-1.87 0-3.64.428-5.217 1.19L5.739 12l1.044 10.81A11.953 11.953 0 0 0 12 24c1.87 0 3.64-.428 5.217-1.19L18.261 12 17.217 1.19Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#161616",
+  d: "M6.783 1.191A12 12 0 0 0 0 12a12 12 0 0 0 6.783 10.809V1.19Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#41660B",
+  d: "M17.217 1.191V22.81A12 12 0 0 0 24 12a12 12 0 0 0-6.783-10.809Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "M12 7.826a4.174 4.174 0 1 0 0 8.348 4.174 4.174 0 0 0 0-8.348Zm0 6.783a2.609 2.609 0 1 1 0-5.218 2.609 2.609 0 0 1 0 5.218Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "M12 10.435c-.576 0-1.043.467-1.043 1.043v1.566h2.086v-1.566c0-.576-.467-1.043-1.043-1.043Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagAfghanistanRounded;

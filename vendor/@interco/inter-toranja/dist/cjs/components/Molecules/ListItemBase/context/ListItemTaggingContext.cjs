@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react/jsx-runtime"),r=require("react"),t=r.createContext(void 0),g=({value:e,children:i})=>o.jsx(t.Provider,{value:e,children:i});exports.ListItemTaggingContext=t;exports.ListItemTaggingProvider=g;

@@ -1,0 +1,16 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticDribbble = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M12 1C5.927 1 1 5.927 1 12s4.927 11 11 11c6.06 0 11-4.927 11-11S18.06 1 12 1Zm7.266 5.07a9.353 9.353 0 0 1 2.123 5.846c-.31-.06-3.412-.691-6.538-.298-.071-.155-.13-.322-.202-.489-.191-.453-.406-.919-.62-1.36 3.46-1.408 5.034-3.436 5.237-3.699ZM12 2.623c2.386 0 4.57.894 6.228 2.362-.167.238-1.587 2.135-4.928 3.388-1.539-2.827-3.245-5.142-3.507-5.5A9.554 9.554 0 0 1 12 2.623Zm-3.997.882c.25.334 1.921 2.66 3.484 5.429-4.39 1.169-8.268 1.145-8.685 1.145.608-2.91 2.577-5.333 5.201-6.574ZM2.6 12.012v-.286c.405.011 4.963.071 9.652-1.337.274.525.524 1.062.763 1.6-.12.035-.25.07-.37.106-4.844 1.563-7.42 5.835-7.635 6.192a9.374 9.374 0 0 1-2.41-6.275ZM12 21.402a9.33 9.33 0 0 1-5.762-1.981c.167-.346 2.075-4.02 7.373-5.87.023-.012.035-.012.06-.024 1.324 3.424 1.86 6.3 2.004 7.123A9.242 9.242 0 0 1 12 21.4Zm5.238-1.611c-.096-.573-.597-3.317-1.826-6.693 2.947-.466 5.524.298 5.846.405a9.315 9.315 0 0 1-4.02 6.288Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticDribbble;

@@ -820,3 +820,8 @@ main .section, main .block { scroll-margin-top: calc(var(--header-height) + 24px
 .header .nav-item { display: flex; align-items: center; gap: 6px; }
 .header .nav-dropdown-trigger { border: 0; background: transparent; padding: 4px; color: inherit; }
 .hero .hero-tags ul { list-style: none; padding: 0; }
+
+/* Catálogo de autoria do Design System */
+.ds-catalog-links { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; list-style:none; padding:0; }
+.ds-catalog-links a { display:block; border:1px solid #e8e3dc; border-radius:12px; padding:12px; background:white; }
+.ds-catalog-links a:hover { border-color:#ea7100; }

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=require("../classNames.cjs"),i=(o,a,l,n,c)=>{const r=a?s.ERROR:"",e=o?s.DISABLED:"",u=l?s.READONLY:"",C=c?s.SHOW_BUTTONS:"",t=n?s.SKELETON:"";return{disabledClass:e,showButtonClass:C,skeletonClass:t,getClassName:()=>[t,e,r,u].find(N=>N!=="")??""}};exports.useClassNames=i;

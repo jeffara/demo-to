@@ -175,6 +175,40 @@
             }
           ],
           "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "primaryCtaTarget",
+          "label": "Link do Botão Primário — abrir em",
+          "valueType": "string",
+          "value": "_self",
+          "options": [
+            {
+              "name": "Mesma aba",
+              "value": "_self"
+            },
+            {
+              "name": "Nova aba",
+              "value": "_blank"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "secondaryCtaTarget",
+          "label": "Link do Botão Secundário — abrir em",
+          "valueType": "string",
+          "value": "_self",
+          "options": [
+            {
+              "name": "Mesma aba",
+              "value": "_self"
+            },
+            {
+              "name": "Nova aba",
+              "value": "_blank"
+            }
+          ]
         }
       ]
     }

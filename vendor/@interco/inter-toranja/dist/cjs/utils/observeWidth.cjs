@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});function i(e,o){const t=new ResizeObserver(s=>{for(const r of s)if(r.target===e){const{width:n}=r.contentRect;o(n)}});return t.observe(e),t}exports.observeWidth=i;

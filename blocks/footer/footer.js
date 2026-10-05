@@ -45,6 +45,7 @@ export default async function decorate(block) {
     top.append(col);
   });
   bottom.append(plain(f.copyright, "p"));
+  if (f.socialLinks?.textContent.trim()) bottom.append(take(f.socialLinks, "footer-social-links"));
   box.append(top, bottom);
   finish(block, box);
 }

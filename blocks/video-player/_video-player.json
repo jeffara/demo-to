@@ -75,6 +75,23 @@
             }
           ],
           "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "videoUrlTarget",
+          "label": "URL do Vídeo (MP4 ou YouTube) — abrir em",
+          "valueType": "string",
+          "value": "_self",
+          "options": [
+            {
+              "name": "Mesma aba",
+              "value": "_self"
+            },
+            {
+              "name": "Nova aba",
+              "value": "_blank"
+            }
+          ]
         }
       ]
     }

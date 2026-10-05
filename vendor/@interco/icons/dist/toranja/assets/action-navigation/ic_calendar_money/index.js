@@ -1,0 +1,19 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticCalendarMoney = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v4a1 1 0 0 1-1 1H4v7a1 1 0 0 0 1 1h6a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 5v3H4V7a1 1 0 0 1 1-1h1v1a1 1 0 1 0 2 0V6h8v1a1 1 0 1 0 2 0V6h1a1 1 0 0 1 1 1Z",
+  clipRule: "evenodd"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M17 15a2 2 0 1 0 0 4h-1a1 1 0 1 0 0 2h1a1 1 0 1 0 2 0 2 2 0 1 0 0-4h1a1 1 0 1 0 0-2h-1a1 1 0 1 0-2 0Z"
+}));
+export default ComponenticCalendarMoney;

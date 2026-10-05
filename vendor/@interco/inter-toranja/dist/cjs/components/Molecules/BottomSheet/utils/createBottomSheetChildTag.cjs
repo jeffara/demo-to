@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const i="BottomSheet",n=(t,r)=>{if(t)return o=>{t(s=>{const e=o(s);return{...e,CustomParameters:{...e.CustomParameters,nested_in:i,nested_title:r}}})}};exports.createBottomSheetChildTag=n;

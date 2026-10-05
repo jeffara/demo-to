@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react/jsx-runtime"),r=require("../../../utils/stateMapper.cjs"),n=require("../../../../../Atoms/Checkbox/Checkbox.cjs"),s=(e,t)=>e?o.jsx(n.Checkbox,{...e,state:r.mapStateToSTATE(t)}):null;exports.renderCheckbox=s;

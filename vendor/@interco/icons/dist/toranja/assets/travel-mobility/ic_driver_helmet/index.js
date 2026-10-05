@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticDriverHelmet = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M12 2c3.938 0 9 1.688 9 9 0 3.2-2.155 5.54-4.767 7.157a6.436 6.436 0 0 0 2.06-1.364.999.999 0 1 1 1.414 1.414c-1.434 1.434-3.18 2.08-4.618 2.395-.723.157-1.382.236-1.902.284-.179.017-.329.03-.454.04l-.094.008c-.224.018-.357.03-.443.047a1.004 1.004 0 0 1-1.105-.563c-1.61.484-2.957.707-3.591.707-1.8 0-3.375-1.125-3.375-2.25 0-.603 1.908-1.142 3.956-1.72 1.771-.499 3.648-1.029 4.482-1.655 2.25-1.688 2.249-5.624.562-7.312-.853-.854-3.432.162-5.773 1.085C5.062 10.175 3 10.987 3 9.875 3 5.375 8.062 2 12 2Zm-.5 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+}));
+export default ComponenticDriverHelmet;

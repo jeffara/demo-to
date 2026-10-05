@@ -1,0 +1,27 @@
+import { UseTextareaHandlersProps } from '../types';
+import { ResolvedFormFieldHints } from '../../../../utils/accessibility';
+export declare function useTextareaHandlers({ propValue, state, initialHintsMensagens, counter, onTag, label, placeholder, props, showHint, showCounter, propsId, propsAriaDescribedBy, }: UseTextareaHandlersProps): {
+    textareaRef: React.RefObject<HTMLTextAreaElement>;
+    isFocused: boolean;
+    value: string | number | undefined;
+    isOverLimit: boolean;
+    isHovered: boolean;
+    currentState: typeof state;
+    isError: boolean;
+    isReadOnly: boolean;
+    isDisabled: boolean;
+    isSkeleton: boolean;
+    resolvedHints: ResolvedFormFieldHints;
+    characterCount: number;
+    isAtCharacterLimit: boolean;
+    textareaId: string;
+    hintsId: string;
+    counterId: string;
+    limitMessageId: string;
+    ariaDescribedBy?: string;
+    setIsFocused: React.Dispatch<React.SetStateAction<boolean>>;
+    handleMouseEnter: () => void;
+    handleMouseLeave: () => void;
+    handleClear: () => void;
+    handleChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+};

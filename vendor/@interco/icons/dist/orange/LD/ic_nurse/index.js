@@ -1,0 +1,26 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticNurse = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("ellipse", {
+  cx: 16,
+  cy: 13.333,
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2.5,
+  rx: 5.333,
+  ry: 5.333
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2.5,
+  d: "M25.333 28a9.333 9.333 0 1 0-18.666 0M21.333 12 24 6.667l-5.764-2.882a5 5 0 0 0-4.472 0L8 6.667 10.667 12M16 24v5.333M13.334 26.667h5.333"
+}));
+export default ComponenticNurse;

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react/jsx-runtime"),e=require("../../../Atoms/Text/types.cjs"),s=require("../../../Atoms/Text/Text.cjs"),n=t=>o.jsx(s.Text,{...t,textSize:e.TextSize.Medium,textType:e.TextType.Body,as:"p"});exports.AccordionText=n;

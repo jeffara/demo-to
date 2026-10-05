@@ -1,0 +1,33 @@
+import { KeyboardEvent, MouseEvent } from 'react';
+import { AvatarProps } from '../types';
+import { BadgeProps } from '../../../Atoms/Badge/types';
+import { FlagName } from '../../../Atoms/Flag/types';
+import { IconName } from '../../../Atoms/Icon/types';
+export declare const DEFAULT_EDIT_ICON: IconName;
+interface UseAvatarReturn {
+    variant: AvatarProps['variant'];
+    state: AvatarProps['state'];
+    iconAsset: IconName;
+    src: string | undefined;
+    alt: string | undefined;
+    onError: (() => void) | undefined;
+    badgeProps: BadgeProps | undefined;
+    isBadgeLarge: boolean;
+    editIcon: IconName;
+    flag: FlagName | undefined;
+    onEdit: (() => void) | undefined;
+    shouldShowEdit: boolean;
+    shouldShowFlag: boolean;
+    shouldShowBadge: boolean;
+    isDisabled: boolean;
+    isInteractive: boolean;
+    containerClassName: string;
+    avatarClassName: string;
+    flagClassName: string;
+    initials: string | null;
+    ariaLabel: string;
+    handleClick: (event: MouseEvent<HTMLElement>) => void;
+    handleKeyDown: (event: KeyboardEvent<HTMLElement>) => void;
+}
+export declare const useAvatar: (props: AvatarProps) => UseAvatarReturn;
+export {};

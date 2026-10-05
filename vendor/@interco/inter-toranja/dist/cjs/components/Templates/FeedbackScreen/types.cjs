@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});var t=(o=>(o.CUSTOM="custom",o.CUSTOM_DESTRUCTIVE="customDestructive",o.CUSTOM_INFORMATION="customInformation",o.GENERIC_ERROR="genericError",o.SERVICE_UNAVAILABLE="serviceUnavailable",o.NO_INTERNET_CONNECTION="noInternetConnection",o))(t||{});exports.FeedbackScreenVariant=t;

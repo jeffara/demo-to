@@ -1,4 +1,5 @@
 /** Utilitários EDS: preservam os nós autorados e seus atributos do Universal Editor. */
+import { resolveLink } from "./links.js";
 import { cells, containers } from "./contracts.js";
 let sequence = 0;
 export const uid = (prefix = "toranja") => `${prefix}-${++sequence}`;
@@ -52,6 +53,9 @@ export function read(
         itemNames.map((key, i) => [key, row.children[i] || el("div")]),
       ),
     }));
+  for (const record of [fields, ...items]) for (const key of Object.keys(record)) {
+    if (key.endsWith("Target") && record[key.slice(0,-6)]) record[key.slice(0,-6)].dataset.linkTarget = record[key]?.textContent.trim();
+  }
   return { fields, items };
 }
 export const text = (cell, fallback = "") =>
@@ -96,7 +100,8 @@ export function heading(cell, cls = "", level = "h2") {
 }
 export function link(cell, cls = "button primary", label) {
   const a = cell?.querySelector("a") || el("a");
-  a.href = href(cell);
+  a.href = resolveLink(href(cell));
+  if (cell?.dataset.linkTarget === "_blank") { a.target = "_blank"; a.rel = "noopener noreferrer"; }
   if (!a.textContent.trim()) a.textContent = label || "Saiba mais";
   if (!text(cell) && !editing()) a.hidden = true;
   a.className = cls;
@@ -108,6 +113,7 @@ export function option(block, values, fallback) {
 }
 export function finish(block, ...children) {
   block.replaceChildren(...children.filter(Boolean));
+  block.querySelectorAll("a[href]").forEach(a => {const url=resolveLink(a.getAttribute("href"));if(url)a.setAttribute("href",url);});
   block.dataset.toranjaReady = "true";
 }
 export function media(cell, cls = "portal-frame asymmetric") {

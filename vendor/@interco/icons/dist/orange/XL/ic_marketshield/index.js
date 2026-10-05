@@ -1,0 +1,27 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticMarketshield = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 72 72",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M60.5 39a2.5 2.5 0 0 0 5 0h-5ZM39 65.5a2.5 2.5 0 0 0 0-5v5ZM11.5 58V21h-5v37h5Zm49-37v18h5V21h-5ZM39 60.5H14v5h25v-5ZM6.5 58a7.5 7.5 0 0 0 7.5 7.5v-5a2.5 2.5 0 0 1-2.5-2.5h-5Z"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 5,
+  d: "M63 24V14a5 5 0 0 0-5-5H14a5 5 0 0 0-5 5v10M39 45H27v18M27 24a9 9 0 1 1-18 0M45 24a9 9 0 1 1-18 0M63 24a9 9 0 1 1-18 0"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 5,
+  d: "M48 52a1 1 0 0 1 1-1h1.986a5 5 0 0 0 2.774-.84l2.685-1.79a1 1 0 0 1 1.11 0l2.685 1.79a5 5 0 0 0 2.774.84H65a1 1 0 0 1 1 1v3.792a10 10 0 0 1-6.838 9.487L57 66l-2.162-.72A10 10 0 0 1 48 55.791V52Z"
+}));
+export default ComponenticMarketshield;

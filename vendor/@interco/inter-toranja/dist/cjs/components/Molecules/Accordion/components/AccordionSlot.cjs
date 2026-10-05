@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("react/jsx-runtime"),c=({children:o})=>t.jsx("div",{className:"accordion__slot",children:o});exports.AccordionSlot=c;

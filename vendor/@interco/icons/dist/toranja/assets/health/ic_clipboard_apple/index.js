@@ -1,0 +1,19 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticClipboardApple = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M14.83 4a3.001 3.001 0 0 0-5.66 0H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h4a1 1 0 1 0 0-2H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6h1a1 1 0 0 1 1 1v4a1 1 0 1 0 2 0V7a3 3 0 0 0-3-3h-2.17ZM14 6h-4v2h4V6Z",
+  clipRule: "evenodd"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M8 13a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1ZM9 16a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H9ZM14.847 15.783a1.403 1.403 0 0 1 1.6-.404l.735.294c.125-.507.32-.996.584-1.452l.097-.167a1 1 0 0 1 1.732 1l-.097.167a3.59 3.59 0 0 0-.12.228l.175-.07a1.403 1.403 0 0 1 1.6.404 4.21 4.21 0 0 1 .446 4.74l-.444.798a1.847 1.847 0 0 1-1.977.914l-.786-.157a2.003 2.003 0 0 0-.784 0l-.786.157a1.847 1.847 0 0 1-1.977-.914l-.444-.798a4.21 4.21 0 0 1 .446-4.74Z"
+}));
+export default ComponenticClipboardApple;

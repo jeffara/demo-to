@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=["br","img","hr"],G=/<(\/?)([a-zA-Z][\w-]*)((?:\s+[\w-]+(?:=(?:"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'))?)*)\s*\/?>/g;exports.SELF_CLOSING_TAGS=t;exports.TAG_REGEX=G;

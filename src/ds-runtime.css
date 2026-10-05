@@ -1,0 +1,22 @@
+.ds-official { width:100%; min-width:0; font-family:Inter,Arial,sans-serif; line-height:1.5; color:var(--color-text-neutral-strongest,#161616); }
+.ds-official *, .ds-official *::before, .ds-official *::after { box-sizing:border-box; }
+.ds-official button { font-family:inherit; }
+.ds-official img { max-width:100%; }
+.ds-official > :not(style) { max-width:100%; }
+.ds-official .ds-launch { background:#ea7100; border:0; border-radius:12px; color:white; padding:14px 24px; cursor:pointer; font:inherit; }
+.ds-options { list-style:none; margin:4px 0; padding:8px; border:1px solid #ddd; border-radius:12px; }
+.ds-options button { width:100%; text-align:left; padding:12px; border:0; background:transparent; cursor:pointer; }
+.ds-options button:hover { background:#fdf8ee; }
+.ds-status { display:block; min-height:1em; font-size:12px; }
+.ds-author-items { display:flex;flex-wrap:wrap;gap:8px;margin-block:12px; }
+.ds-author-item { border:1px dashed #aaa; padding:8px; max-width:250px; }
+.ds-error { color:#b00; }
+@media (prefers-reduced-motion: reduce) { .ds-official *, .ds-official *::before { animation-duration:0.01ms!important; transition-duration:0.01ms!important; } }
+/* Adaptação dos componentes full-screen à largura disponível de uma seção EDS. */
+.ds-official .banner { margin-inline:0; }
+.ds-official .feedback-screen__content { width:min(100%,393px); }
+.ds-floating-action-button .btn-fab { position:relative; inset:auto; }
+.ds-official:has(.avatar) { text-align:start; }
+.ds-empty { padding:20px; border:1px dashed #ddd; border-radius:12px; }
+
+.ds-modal-close { position:fixed; top:20px; right:20px; z-index:10002; border:0; border-radius:20px; background:#fff; color:#161616; padding:12px 20px; box-shadow:0 2px 12px #0003; cursor:pointer; }

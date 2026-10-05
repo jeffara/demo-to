@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "name": "64 exports públicos representados",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "751 propriedades próprias classificadas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Valores de exemplo pertencem às enumerações oficiais",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Hierarquia de páginas completa",
+      "pass": true,
+      "detail": "105 páginas"
+    },
+    {
+      "name": "XML do pacote válido",
+      "pass": true,
+      "detail": "130 documentos"
+    },
+    {
+      "name": "Sem alteração em /conf ou /apps",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Referências de páginas no pacote resolvem conteúdo existente",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "DAM limitado aos assets importados",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Code Bus abaixo de 500 arquivos e 10 MB",
+      "pass": true,
+      "detail": "312 arquivos / 4649217 bytes"
+    }
+  ]
+}

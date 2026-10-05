@@ -1,0 +1,16 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticPixOutline = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M9.749 22.109a.41.41 0 0 0 .29-.12l4.665-4.667a2.163 2.163 0 0 1 3.06 0l4.666 4.667a.41.41 0 0 0 .289.12h3.107l2.806-2.807a4.67 4.67 0 0 0 0-6.604L25.826 9.89h-3.107a.409.409 0 0 0-.29.12l-4.666 4.667a2.163 2.163 0 0 1-3.059 0l-4.666-4.667a.41.41 0 0 0-.29-.12H6.175l-2.806 2.806a4.67 4.67 0 0 0 0 6.605l2.806 2.807h3.575Zm-2.52-2.546-2.061-2.06a2.125 2.125 0 0 1 0-3.006l2.06-2.06h1.636L12.427 16l-3.563 3.563H7.228ZM20.04 16l3.563 3.563h1.168l2.06-2.06c.83-.83.83-2.176 0-3.006l-2.06-2.06h-1.168L20.04 16Zm-.739-12.632a4.67 4.67 0 0 0-6.604 0L8.16 7.904H9.75c.635 0 1.245.252 1.694.702l4.667 4.666c.068.069.18.069.248 0l4.666-4.666c.45-.45 1.06-.702 1.695-.702h1.12l-4.537-4.536Zm-3.068 6.428 2.948-2.948-1.68-1.68a2.125 2.125 0 0 0-3.005 0l-1.451 1.451c1.113.997 2.131 2.12 3.188 3.178Zm4.79 13.598c.45.45 1.06.702 1.695.702h1.12l-4.537 4.536a4.67 4.67 0 0 1-6.604 0L8.16 24.096H9.75c.635 0 1.245-.253 1.694-.702l4.667-4.666a.175.175 0 0 1 .248 0l4.666 4.666Zm-7.978 1.987 3.188-3.178-3.188 3.178Zm3.188-3.178 2.948 2.95-1.68 1.68c-.83.829-2.175.829-3.005 0l-1.451-1.452c-.064.064.067-.06 0 0",
+  clipRule: "evenodd"
+}));
+export default ComponenticPixOutline;

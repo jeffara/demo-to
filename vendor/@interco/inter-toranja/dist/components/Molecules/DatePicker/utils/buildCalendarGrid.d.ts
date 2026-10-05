@@ -1,0 +1,14 @@
+import { CalendarDay, DatePickerWeekStart } from '../types';
+export declare const addDays: (date: Date, amount: number) => Date;
+export declare const addMonths: (date: Date, amount: number) => Date;
+export declare const startOfMonth: (date: Date) => Date;
+export declare const isSameMonth: (left: Date, right: Date) => boolean;
+export declare const startOfWeek: (date: Date, weekStartsOn: DatePickerWeekStart) => Date;
+export declare const endOfWeek: (date: Date, weekStartsOn: DatePickerWeekStart) => Date;
+export declare const buildCalendarGrid: (month: Date, weekStartsOn: DatePickerWeekStart) => CalendarDay[][];
+export declare const getWeekdayLabels: (locale: string, weekStartsOn: DatePickerWeekStart) => string[];
+export declare const formatMonthLabel: (month: Date, locale: string) => string;
+export declare const formatYearLabel: (month: Date, locale: string) => string;
+export declare const formatDayLabel: (date: Date, locale: string) => string;
+export declare const shiftVisibleMonthToInclude: (date: Date, visibleMonth: Date) => Date;
+export declare const shiftFocusIntoMonth: (focusedDate: Date, targetMonth: Date) => Date;

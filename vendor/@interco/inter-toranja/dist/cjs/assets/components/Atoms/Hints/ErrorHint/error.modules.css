@@ -1,0 +1,1 @@
+.error{display:flex;align-items:center;gap:var(--spacing-4);color:var(--color-text-feedback-error-default)}.error svg{flex-shrink:0}.error svg path{color:var(--color-text-feedback-error-default)}

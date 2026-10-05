@@ -24,8 +24,13 @@ export default function decorate(block) {
           ? "toranja-breadcrumb-current"
           : "toranja-breadcrumb-link",
       );
-    if (a.tagName === "A") a.href = href(item.link);
-    else a.setAttribute("aria-current", "page");
+    if (a.tagName === "A") {
+      a.href = href(item.link);
+      if (item.linkTarget?.textContent.trim() === "_blank") {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      }
+    } else a.setAttribute("aria-current", "page");
     li.append(a);
     list.append(li);
   });

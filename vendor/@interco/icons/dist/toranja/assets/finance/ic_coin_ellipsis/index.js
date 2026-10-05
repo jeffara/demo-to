@@ -1,0 +1,17 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticCoinEllipsis = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M12 20.95a9 9 0 0 1-.901-17.955 1 1 0 1 0-.198-1.99C5.341 1.557 1 6.246 1 11.95c0 6.075 4.925 11 11 11 5.704 0 10.394-4.342 10.946-9.902a1 1 0 1 0-1.99-.197A9.001 9.001 0 0 1 12 20.95Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M10.5 10a.5.5 0 0 0 0 1h3a2.5 2.5 0 0 1 0 5H13v1a1 1 0 1 1-2 0v-1H9a1 1 0 1 1 0-2h4.5a.5.5 0 0 0 0-1h-3a2.5 2.5 0 0 1 0-5h.5V7a1 1 0 1 1 2 0v1h2a1 1 0 1 1 0 2h-4.5ZM16.091 6.182a1.091 1.091 0 1 0 0-2.182 1.091 1.091 0 0 0 0 2.182ZM20.092 5.091a1.091 1.091 0 1 1-2.182 0 1.091 1.091 0 0 1 2.182 0ZM21.91 6.182a1.091 1.091 0 1 0 0-2.182 1.091 1.091 0 0 0 0 2.182Z"
+}));
+export default ComponenticCoinEllipsis;

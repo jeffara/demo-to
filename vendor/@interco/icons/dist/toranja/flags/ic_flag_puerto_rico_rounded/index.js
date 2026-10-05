@@ -1,0 +1,27 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagPuertoRicoRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M12 0a11.982 11.982 0 0 0-9.6 4.8h19.2A11.981 11.981 0 0 0 12 0ZM12 24c3.926 0 7.411-1.886 9.6-4.8H2.4A11.982 11.982 0 0 0 12 24ZM0 12c0 .822.083 1.624.24 2.4h23.52a12.056 12.056 0 0 0 0-4.8H.24C.083 10.375 0 11.178 0 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#0E50D6",
+  d: "M3.515 3.515c-4.687 4.686-4.687 12.284 0 16.97L12 12 3.515 3.515Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "m4.857 8.87.777 2.39h2.514L6.114 12.74l.777 2.391-2.034-1.478-2.035 1.478.777-2.391-2.034-1.478H4.08l.777-2.391Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagPuertoRicoRounded;

@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticMedicalShield = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M11.637 2.068c.233-.09.493-.09.726 0L20 5.044v10.593c0 .852-.544 1.628-1.057 2.209-.556.63-1.295 1.271-2.06 1.872-.77.605-1.6 1.196-2.355 1.723l-.573.4c-.528.367-.992.69-1.36.962a1 1 0 0 1-1.176.01c-.335-.239-.736-.514-1.172-.814-1.008-.694-2.21-1.52-3.243-2.34-.748-.592-1.462-1.22-1.997-1.844C4.508 17.235 4 16.475 4 15.637V5.044l7.637-2.976ZM6 6.411v9.226c0 .072.076.353.524.875.413.48 1.012 1.016 1.722 1.579.98.777 2.073 1.53 3.058 2.207.236.163.467.32.688.475.263-.186.549-.384.845-.59l.545-.38a51.123 51.123 0 0 0 2.266-1.658c.73-.573 1.358-1.126 1.795-1.622.48-.544.557-.829.557-.886V6.41l-6-2.338-6 2.338ZM12 8a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2H9a1 1 0 1 1 0-2h2V9a1 1 0 0 1 1-1Z"
+}));
+export default ComponenticMedicalShield;

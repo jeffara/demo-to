@@ -1,0 +1,28 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticBanktransfer = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "M8.5 16.5v4A1.5 1.5 0 0 0 10 22h9a1.5 1.5 0 0 0 1.5-1.5v-4M3.5 15.5v4A1.5 1.5 0 0 0 5 21h.5M7 13l7.5-5 7.5 5M2 12l7.5-5"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeWidth: 2,
+  d: "M20 6a9.985 9.985 0 0 0-8-4 9.985 9.985 0 0 0-8.001 4"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "M20.5 3.5v3h-3M16.5 13.5h-3a1 1 0 1 0 0 2h2a1 1 0 1 1 0 2h-3M14.5 13.5v-1M14.5 17.5v1"
+}));
+export default ComponenticBanktransfer;

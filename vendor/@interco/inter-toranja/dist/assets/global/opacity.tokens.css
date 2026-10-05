@@ -1,0 +1,5 @@
+:root {
+  --opacity-hovered: 4%;
+  --opacity-focused: 8%;
+  --opacity-pressed: 8%;
+}

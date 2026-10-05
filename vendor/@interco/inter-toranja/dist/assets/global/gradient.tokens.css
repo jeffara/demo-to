@@ -1,0 +1,12 @@
+:root {
+  --gradient: linear-gradient(
+    180deg,
+    var(--color-styles-brand-default) 40%,
+    var(--color-styles-brand-soft) 100%
+  );
+  --ai-gradient: linear-gradient(
+    90deg,
+    var(--color-styles-ai-default) 0%,
+    var(--color-styles-ai-soft) 100%
+  );
+}

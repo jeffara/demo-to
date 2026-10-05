@@ -23,7 +23,7 @@ async function applyChanges(event) {
     || detail?.request?.to?.container?.resource; // move in sections
   if (!resource) return false;
   const updates = detail?.response?.updates;
-  if (!updates.length) return false;
+  if (!updates?.length) return false;
   const { content } = updates[0];
   if (!content) return false;
 
@@ -32,11 +32,11 @@ async function applyChanges(event) {
 
   const sanitizedContent = window.DOMPurify.sanitize(content, { USE_PROFILES: { html: true } });
   const parsedUpdate = new DOMParser().parseFromString(sanitizedContent, 'text/html');
-  const element = document.querySelector(`[data-aue-resource="${resource}"]`);
+  const element = document.querySelector(`[data-aue-resource="${CSS.escape(resource)}"]`);
 
   if (element) {
     if (element.matches('main')) {
-      const newMain = parsedUpdate.querySelector(`[data-aue-resource="${resource}"]`);
+      const newMain = parsedUpdate.querySelector(`[data-aue-resource="${CSS.escape(resource)}"]`);
       if (!newMain) return false;
       newMain.style.display = 'none';
       element.insertAdjacentElement('afterend', newMain);

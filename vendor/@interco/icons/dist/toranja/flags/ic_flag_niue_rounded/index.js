@@ -1,0 +1,39 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagNiueRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12C0 12.003 12 .001 12 0c6.627 0 12 5.373 12 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#0E50D6",
+  d: "M12 5.74v4.046L7.826 5.74H12ZM6.26 12h3.526L6.261 7.304l-.522 3.652L6.261 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M11.968 12H12v-.032l-.032.032Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M12 6.26V0h-.002C5.371.001 0 5.373 0 12h6.26V8.474L9.787 12h2.182l.032-.032V9.786L8.474 6.261H12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M12 10.524 7.736 6.261H6.261L12 12v-1.476Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M6.071 1.565c-.463.264-.906.557-1.327.878h.492l-1.301.945.497 1.53-1.302-.945-.138.1c-.54.614-1.02 1.283-1.427 1.998V12h3.13V4.696H12v-3.13H6.071Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#0E50D6",
+  d: "M5.126 2.163c-.13.091-.257.184-.382.28l-.81.945-.804.585-.14.101c-.294.335-.57.686-.827 1.052a2.217 2.217 0 0 0 2.963-2.963Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "m2.99 4.074.14-.101 1.302.945-.497-1.53 1.301-.945h-.492A12.075 12.075 0 0 0 2.99 4.074ZM8.294 2.087l.26.797h.837l-.678.493.26.797-.679-.493-.678.493.259-.797-.678-.493h.838l.26-.797ZM3.13 7.304l.26.797h.838l-.678.493.259.797L3.13 8.9l-.678.492.26-.797-.679-.493h.838l.26-.797Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagNiueRounded;

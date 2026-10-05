@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticMovies = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 72 72",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M52.5 21.5a2.5 2.5 0 0 0 0 5v-5Zm0 12a2.5 2.5 0 0 0 0 5v-5Zm0 12a2.5 2.5 0 0 0 0 5v-5ZM12 21.5a2.5 2.5 0 0 0 0 5v-5Zm0 12a2.5 2.5 0 0 0 0 5v-5Zm0 12a2.5 2.5 0 0 0 0 5v-5ZM21 9V6.5A2.5 2.5 0 0 0 18.5 9H21Zm30 0h2.5A2.5 2.5 0 0 0 51 6.5V9Zm0 54v2.5a2.5 2.5 0 0 0 2.5-2.5H51Zm-30 0h-2.5a2.5 2.5 0 0 0 2.5 2.5V63Zm-6-51.5h42v-5H15v5ZM60.5 15v42h5V15h-5ZM57 60.5H15v5h42v-5ZM11.5 57V15h-5v42h5Zm3.5 3.5a3.5 3.5 0 0 1-3.5-3.5h-5a8.5 8.5 0 0 0 8.5 8.5v-5ZM60.5 57a3.5 3.5 0 0 1-3.5 3.5v5a8.5 8.5 0 0 0 8.5-8.5h-5ZM57 11.5a3.5 3.5 0 0 1 3.5 3.5h5A8.5 8.5 0 0 0 57 6.5v5Zm-42-5A8.5 8.5 0 0 0 6.5 15h5a3.5 3.5 0 0 1 3.5-3.5v-5Zm46.5 15h-9v5h9v-5Zm0 12h-9v5h9v-5Zm0 12h-9v5h9v-5ZM21 21.5h-9v5h9v-5Zm0 12h-9v5h9v-5Zm0 12h-9v5h9v-5Zm0-34h30v-5H21v5ZM48.5 9v27h5V9h-5ZM51 33.5H21v5h30v-5ZM23.5 36V9h-5v27h5Zm25 0v27h5V36h-5ZM51 60.5H21v5h30v-5ZM23.5 63V36h-5v27h5Z"
+}));
+export default ComponenticMovies;

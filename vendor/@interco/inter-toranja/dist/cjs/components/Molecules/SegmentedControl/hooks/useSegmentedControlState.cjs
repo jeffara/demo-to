@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const u=require("react"),c=e=>{const[t,r]=u.useState(0);return u.useEffect(()=>{var d;if((d=e[t])!=null&&d.disabled){const o=e.findIndex(n=>!(n!=null&&n.disabled));r(o!==-1?o:0)}},[e,t]),[t,r]};exports.useSegmentedControlState=c;

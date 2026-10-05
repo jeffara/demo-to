@@ -1,0 +1,17 @@
+@import './PF/dark.css';
+@import './PF/light.css';
+@import './PJ/dark.css';
+@import './PJ/light.css';
+
+:root[toranja-theme],
+:root[toranja-theme] body {
+  background-color: var(--color-background-neutral-default);
+  color: var(--color-text-neutral-primary);
+}
+
+:root[toranja-theme].toranja-transparent,
+:root[toranja-theme].toranja-transparent body,
+:root[toranja-transparent],
+:root[toranja-transparent] body {
+  background-color: transparent;
+}

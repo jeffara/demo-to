@@ -6,6 +6,54 @@
     ]
   },
   {
+    "id": "ds-bottom-sheet-country",
+    "components": [
+      "ds-bottom-sheet-country-item"
+    ]
+  },
+  {
+    "id": "ds-chart-line",
+    "components": [
+      "ds-chart-line-item"
+    ]
+  },
+  {
+    "id": "ds-carousel",
+    "components": [
+      "ds-carousel-item"
+    ]
+  },
+  {
+    "id": "ds-feedback-screen",
+    "components": [
+      "ds-feedback-screen-item"
+    ]
+  },
+  {
+    "id": "ds-input-country",
+    "components": [
+      "ds-input-country-item"
+    ]
+  },
+  {
+    "id": "ds-segmented-control",
+    "components": [
+      "ds-segmented-control-item"
+    ]
+  },
+  {
+    "id": "ds-tabs",
+    "components": [
+      "ds-tabs-item"
+    ]
+  },
+  {
+    "id": "ds-timeline",
+    "components": [
+      "ds-timeline-item"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",
@@ -42,7 +90,71 @@
       "alert-inline",
       "tooltip",
       "header",
-      "footer"
+      "footer",
+      "ds-alert",
+      "ds-avatar",
+      "ds-accordion",
+      "ds-badge",
+      "ds-button",
+      "ds-banner",
+      "ds-bottom-sheet",
+      "ds-bottom-sheet-country",
+      "ds-card",
+      "ds-checkbox",
+      "ds-chip",
+      "ds-chart-bar",
+      "ds-chart-donut",
+      "ds-chart-line",
+      "ds-chart-meter",
+      "ds-counter",
+      "ds-cross-selling",
+      "ds-carousel",
+      "ds-date-picker",
+      "ds-decorated-text",
+      "ds-divider",
+      "ds-feedback-screen",
+      "ds-flag",
+      "ds-header",
+      "ds-floating-action-button",
+      "ds-icon",
+      "ds-image",
+      "ds-icon-button",
+      "ds-icon-chip",
+      "ds-input-country",
+      "ds-input-date",
+      "ds-input-password",
+      "ds-input-search",
+      "ds-input-text",
+      "ds-input-money",
+      "ds-link",
+      "ds-list-item",
+      "ds-list-item-control",
+      "ds-list-item-general",
+      "ds-list-item-action",
+      "ds-list-item-view",
+      "ds-menu-item",
+      "ds-neutral-icon-button",
+      "ds-page-indicator",
+      "ds-payment-methods",
+      "ds-pin-code",
+      "ds-progress-bar",
+      "ds-progress-circle",
+      "ds-radio",
+      "ds-section-title",
+      "ds-section-subtitle",
+      "ds-segmented-control",
+      "ds-select",
+      "ds-spinner",
+      "ds-signal",
+      "ds-switch",
+      "ds-snackbar",
+      "ds-stepper",
+      "ds-tabs",
+      "ds-tag",
+      "ds-text",
+      "ds-text-area",
+      "ds-timeline",
+      "ds-widget"
     ]
   },
   {

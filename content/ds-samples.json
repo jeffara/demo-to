@@ -1,0 +1,719 @@
+[
+  {
+    "block": "ds-alert",
+    "properties": {
+      "p76617269616e74": "information",
+      "p7374617465": "enabled",
+      "p7469746c65": "Informação importante",
+      "p6465736372697074696f6e": "Você pode editar este aviso no Universal Editor.",
+      "p73686f774c696e6b": "true",
+      "p6c696e6b2e6c6162656c": "Conheça os componentes",
+      "p6c696e6b2e68726566": "/demo-toranja",
+      "accessibleLabel": "Alert"
+    }
+  },
+  {
+    "block": "ds-avatar",
+    "properties": {
+      "p636f6c6f72": "soft",
+      "p76617269616e74": "initial",
+      "p73697a65": "large",
+      "p63617465676f7279": "person",
+      "p6c6162656c": "Banco Inter",
+      "accessibleLabel": "Avatar"
+    }
+  },
+  {
+    "block": "ds-accordion",
+    "properties": {
+      "p7469746c65": "Como editar este componente?",
+      "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
+      "p73686f7744697669646572": "true",
+      "p6368696c6472656e": "<p>Selecione o bloco e altere as propriedades. O conteúdo permanece no AEM.</p>",
+      "p636f6e74656e7456617269616e74": "text",
+      "accessibleLabel": "Accordion"
+    }
+  },
+  {
+    "block": "ds-badge",
+    "properties": {
+      "p76617269616e74": "label",
+      "p636f756e74": 8,
+      "accessibleLabel": "Badge"
+    }
+  },
+  {
+    "block": "ds-button",
+    "properties": {
+      "p6c6162656c": "Conhecer o showcase",
+      "p73697a65": "large",
+      "p686965726172636879": "primary",
+      "p76617269616e74": "default",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "Button"
+    }
+  },
+  {
+    "block": "ds-banner",
+    "properties": {
+      "p76617269616e74": "image",
+      "p73697a65": "medium",
+      "p75726c": "/assets/demo/ede5e1c82aad.jpg",
+      "p616c74": "Momentos da vida",
+      "accessibleLabel": "Banner"
+    }
+  },
+  {
+    "block": "ds-bottom-sheet",
+    "properties": {
+      "p7469746c65": "Mais possibilidades",
+      "p69734f70656e": "false",
+      "p6f7665726c6179": "on",
+      "p657870616e7369626c65": "off",
+      "p706f736974696f6e": "hug",
+      "p736c6f74": "<p>Conteúdo editável do painel.</p>",
+      "accessibleLabel": "BottomSheet",
+      "triggerLabel": "Abrir BottomSheet"
+    }
+  },
+  {
+    "block": "ds-bottom-sheet-country",
+    "properties": {
+      "p73686f77536561726368": "true",
+      "p7469746c65": "Escolha o país",
+      "p69734f70656e": "false",
+      "accessibleLabel": "BottomSheetCountry",
+      "triggerLabel": "Abrir BottomSheetCountry"
+    },
+    "items": [
+      {
+        "p76616c7565": "BR",
+        "p6c6162656c": "Brasil",
+        "p666c6167": "ic_flag_brazil_rounded"
+      },
+      {
+        "p76616c7565": "US",
+        "p6c6162656c": "Estados Unidos",
+        "p666c6167": "ic_flag_united_states_rounded"
+      }
+    ]
+  },
+  {
+    "block": "ds-card",
+    "properties": {
+      "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
+      "p7374617465": "enabled",
+      "accessibleLabel": "Card"
+    }
+  },
+  {
+    "block": "ds-checkbox",
+    "properties": {
+      "p7374617465": "enabled",
+      "p636865636b6564": "false",
+      "accessibleLabel": "Checkbox"
+    }
+  },
+  {
+    "block": "ds-chip",
+    "properties": {
+      "p6c6162656c": "Investimentos",
+      "p73656c6563746564": "false",
+      "p6c656164696e6749636f6e": "ic_piggy_bank",
+      "p76617269616e74": "default",
+      "accessibleLabel": "Chip"
+    }
+  },
+  {
+    "block": "ds-chart-bar",
+    "properties": {
+      "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+      "p76616c756573": "[25,50,75]",
+      "p6368617274486569676874": 220,
+      "p617269614c6162656c": "Evolução ilustrativa",
+      "p73697a65": "large",
+      "accessibleLabel": "ChartBar"
+    }
+  },
+  {
+    "block": "ds-chart-donut",
+    "properties": {
+      "p736c696365": "[40,35,25]",
+      "p6c6162656c": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+      "p73686f7744656661756c744c6567656e64": "true",
+      "p746f74616c4c6162656c": "Total",
+      "p746f74616c56616c7565": "100%",
+      "accessibleLabel": "ChartDonut"
+    }
+  },
+  {
+    "block": "ds-chart-line",
+    "properties": {
+      "p63617465676f72696573": "[\"Jan\",\"Fev\",\"Mar\"]",
+      "p6368617274486569676874": 220,
+      "p617269614c6162656c": "Evolução ilustrativa",
+      "p73697a65": "large",
+      "accessibleLabel": "ChartLine"
+    },
+    "items": [
+      {
+        "p6c6162656c": "Evolução",
+        "p76616c756573": "[20,45,70]"
+      }
+    ]
+  },
+  {
+    "block": "ds-chart-meter",
+    "properties": {
+      "p7469746c65": "Distribuição",
+      "p62617273": "[40,35,25]",
+      "p746f74616c": 100,
+      "p6c656164696e6756616c7565": "100",
+      "p6c656164696e674c6162656c": "Total",
+      "p6c6567656e64": "[\"Conta\",\"Investimentos\",\"Outros\"]",
+      "accessibleLabel": "ChartMeter"
+    }
+  },
+  {
+    "block": "ds-counter",
+    "properties": {
+      "p636f756e74": 23,
+      "p6d61784c656e677468": 100,
+      "accessibleLabel": "Counter"
+    }
+  },
+  {
+    "block": "ds-cross-selling",
+    "properties": {
+      "p6465736372697074696f6e": "Conteúdo de demonstração.",
+      "p7375627469746c65": "Conheça os produtos",
+      "p7469746c65": "Mais possibilidades",
+      "p6c696e6b2e6c6162656c": "Ver catálogo",
+      "p6c696e6b2e68726566": "/demo-toranja",
+      "p76617269616e74": "chevron",
+      "accessibleLabel": "CrossSelling"
+    }
+  },
+  {
+    "block": "ds-carousel",
+    "properties": {
+      "p76617269616e74": "page-view",
+      "p7061676553706163696e67": 16,
+      "p74696d6572": 0,
+      "accessibleLabel": "Carousel"
+    },
+    "items": [
+      {
+        "p76616c7565": "<h3>Conta digital</h3><p>Seu dia a dia.</p>"
+      },
+      {
+        "p76616c7565": "<h3>Investimentos</h3><p>Seus planos.</p>"
+      },
+      {
+        "p76616c7565": "<h3>Global Account</h3><p>Suas viagens.</p>"
+      }
+    ]
+  },
+  {
+    "block": "ds-date-picker",
+    "properties": {
+      "p73656c656374696f6e4d6f6465": "single",
+      "p6c6f63616c65": "pt-BR",
+      "p73686f77436f6e74726f6c73": "true",
+      "p73686f77427574746f6e73": "true",
+      "accessibleLabel": "DatePicker"
+    }
+  },
+  {
+    "block": "ds-decorated-text",
+    "properties": {
+      "p6368696c6472656e": "Seu futuro começa agora.",
+      "p636c6173735374796c65": "Type.Body.Large.Regular",
+      "p636c617373436f6c6f72": "Color.Text.Neutral.Primary",
+      "p66756c6c5769647468": "true",
+      "accessibleLabel": "DecoratedText"
+    }
+  },
+  {
+    "block": "ds-divider",
+    "properties": {
+      "p76617269616e74": "solid",
+      "p6f7269656e746174696f6e": "horizontal",
+      "accessibleLabel": "Divider"
+    }
+  },
+  {
+    "block": "ds-feedback-screen",
+    "properties": {
+      "p76617269616e74": "custom",
+      "p7469746c65": "Tudo pronto!",
+      "p6465736372697074696f6e": "Esta é uma demonstração de feedback.",
+      "p7369676e616c56617269616e74": "success",
+      "p7072696d617279427574746f6e2e6c6162656c": "Continuar",
+      "accessibleLabel": "FeedbackScreen"
+    },
+    "items": []
+  },
+  {
+    "block": "ds-flag",
+    "properties": {
+      "p69636f6e466c6167": "ic_flag_brazil_rounded",
+      "p636f6e74656e744465736372697074696f6e": "Brasil",
+      "p73697a65": "large",
+      "accessibleLabel": "Flag"
+    }
+  },
+  {
+    "block": "ds-header",
+    "properties": {
+      "p76617269616e74": "innerPages",
+      "p74797065": "title",
+      "p73697a65": "large",
+      "p7469746c65": "Mundo Inter",
+      "accessibleLabel": "Header"
+    }
+  },
+  {
+    "block": "ds-floating-action-button",
+    "properties": {
+      "p6c6162656c": "Explorar",
+      "p69636f6e": "ic_add",
+      "p686965726172636879": "primary",
+      "p73697a65": "large",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "FloatingActionButton"
+    }
+  },
+  {
+    "block": "ds-icon",
+    "properties": {
+      "p6173736574": "ic_orange",
+      "p636f6e74656e744465736372697074696f6e": "Toranja",
+      "p73697a65": "large",
+      "accessibleLabel": "Icon"
+    }
+  },
+  {
+    "block": "ds-image",
+    "properties": {
+      "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+      "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
+      "p636f6e74656e745363616c65": "fill",
+      "p7769647468": 480,
+      "p686569676874": 240,
+      "p726164697573": "large",
+      "accessibleLabel": "Image"
+    }
+  },
+  {
+    "block": "ds-icon-button",
+    "properties": {
+      "p73697a65": "large",
+      "p686965726172636879": "primary",
+      "p69636f6e": "ic_search",
+      "p617269612d6c6162656c": "Pesquisar",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "IconButton"
+    }
+  },
+  {
+    "block": "ds-icon-chip",
+    "properties": {
+      "p7374617465": "enabled",
+      "p76617269616e74": "label",
+      "p69636f6e": "ic_heart",
+      "p73686f774261646765": "true",
+      "p73656c6563746564": "false",
+      "p636f756e74": 3,
+      "accessibleLabel": "IconChip"
+    }
+  },
+  {
+    "block": "ds-input-country",
+    "properties": {
+      "p6c6162656c": "Telefone",
+      "p706c616365686f6c646572": "Digite seu telefone",
+      "p7374617465": "enabled",
+      "p73656c6563746564436f756e74727956616c7565": "BR",
+      "accessibleLabel": "InputCountry"
+    },
+    "items": [
+      {
+        "p707265666978": "+55",
+        "p76616c7565": "BR",
+        "p6c6162656c": "Brasil",
+        "p666c6167": "ic_flag_brazil_rounded"
+      },
+      {
+        "p707265666978": "+1",
+        "p76616c7565": "US",
+        "p6c6162656c": "Estados Unidos",
+        "p666c6167": "ic_flag_united_states_rounded"
+      }
+    ]
+  },
+  {
+    "block": "ds-input-date",
+    "properties": {
+      "p6c6162656c": "Data",
+      "p706c616365686f6c646572": "DD/MM/AAAA",
+      "accessibleLabel": "InputDate"
+    }
+  },
+  {
+    "block": "ds-input-password",
+    "properties": {
+      "p6c6162656c": "Senha",
+      "p706c616365686f6c646572": "Digite uma senha",
+      "accessibleLabel": "InputPassword"
+    }
+  },
+  {
+    "block": "ds-input-search",
+    "properties": {
+      "p6c6162656c": "Buscar",
+      "p706c616365686f6c646572": "O que você procura?",
+      "accessibleLabel": "InputSearch"
+    }
+  },
+  {
+    "block": "ds-input-text",
+    "properties": {
+      "p74797065": "text",
+      "p6c6162656c": "Nome completo",
+      "p706c616365686f6c646572": "Como podemos chamar você?",
+      "accessibleLabel": "InputText"
+    }
+  },
+  {
+    "block": "ds-input-money",
+    "properties": {
+      "p73686f77427574746f6e73": "true",
+      "p6669786564496e6372656d656e7456616c7565": 100,
+      "p666978656444656372656d656e7456616c7565": 100,
+      "p63757272656e6379": "BRL",
+      "p6d696e56616c7565": 0,
+      "p6d617856616c7565": 100000,
+      "p64656661756c7456616c7565": 1500,
+      "accessibleLabel": "InputMoney"
+    }
+  },
+  {
+    "block": "ds-link",
+    "properties": {
+      "p6c6162656c": "Explorar todos os componentes",
+      "p73697a65": "medium",
+      "p68726566": "/demo-toranja",
+      "accessibleLabel": "Link"
+    }
+  },
+  {
+    "block": "ds-list-item",
+    "properties": {
+      "p6c6162656c": "Conta digital",
+      "p706172616772617068": "Um item da sua lista",
+      "p73686f7744697669646572": "true",
+      "accessibleLabel": "ListItem"
+    }
+  },
+  {
+    "block": "ds-list-item-control",
+    "properties": {
+      "p747261696c696e6756617269616e74": "switch",
+      "p747261696c696e6750726f70732e636865636b6564": "false",
+      "p6c6162656c": "Receber novidades",
+      "p706172616772617068": "Você controla suas preferências",
+      "accessibleLabel": "ListItemControl"
+    }
+  },
+  {
+    "block": "ds-list-item-general",
+    "properties": {
+      "p6c6162656c": "Investimentos",
+      "p706172616772617068": "Conheça as possibilidades",
+      "p747261696c696e6756617269616e74": "tagChevron",
+      "p73686f7744697669646572": "true",
+      "accessibleLabel": "ListItemGeneral"
+    }
+  },
+  {
+    "block": "ds-list-item-action",
+    "properties": {
+      "p747261696c696e6756617269616e74": "button",
+      "p747261696c696e6750726f70732e6c6162656c": "Explorar",
+      "p6c6162656c": "Saiba mais",
+      "p706172616772617068": "Explore o catálogo",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "ListItemAction"
+    }
+  },
+  {
+    "block": "ds-list-item-view",
+    "properties": {
+      "p6f7269656e746174696f6e": "horizontal",
+      "p6c6162656c": "Saldo ilustrativo",
+      "p76616c756554797065": "text",
+      "p76616c7565": "R$ 1.500,00",
+      "accessibleLabel": "ListItemView"
+    }
+  },
+  {
+    "block": "ds-menu-item",
+    "properties": {
+      "p76617269616e74": "icon",
+      "p73697a65": "large",
+      "p6c6162656c": "Conta digital",
+      "p69636f6e": "ic_wallet",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "MenuItem"
+    }
+  },
+  {
+    "block": "ds-neutral-icon-button",
+    "properties": {
+      "p69636f6e": "ic_ellipsis",
+      "p73697a65": "medium",
+      "p617269612d6c6162656c": "Mais opções",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "NeutralIconButton"
+    }
+  },
+  {
+    "block": "ds-page-indicator",
+    "properties": {
+      "p6974656d73": 4,
+      "p73656c6563746564": 1,
+      "accessibleLabel": "PageIndicator"
+    }
+  },
+  {
+    "block": "ds-payment-methods",
+    "properties": {
+      "p7061796d656e744d6574686f64": "mastercard",
+      "p73697a65": "large",
+      "p636f6c6f72": "soft",
+      "accessibleLabel": "PaymentMethods"
+    }
+  },
+  {
+    "block": "ds-pin-code",
+    "properties": {
+      "p6669656c6473": "4",
+      "p7374617465": "enabled",
+      "p68696e7473": "[\"Código de demonstração\"]",
+      "p74797065": "number",
+      "p706c616365686f6c646572": "0",
+      "accessibleLabel": "PinCode"
+    }
+  },
+  {
+    "block": "ds-progress-bar",
+    "properties": {
+      "p76617269616e74": "default",
+      "p70726f6772657373": 60,
+      "accessibleLabel": "ProgressBar"
+    }
+  },
+  {
+    "block": "ds-progress-circle",
+    "properties": {
+      "p73697a65": "large",
+      "p70726f6772657373": 65,
+      "p617269614c6162656c": "65% concluído",
+      "accessibleLabel": "ProgressCircle"
+    }
+  },
+  {
+    "block": "ds-radio",
+    "properties": {
+      "p6368696c6472656e": "Escolher esta opção",
+      "p6e616d65": "preferencia",
+      "p7374617465": "enabled",
+      "p76616c7565": "opcao-1",
+      "p76617269616e74": "default",
+      "accessibleLabel": "Radio"
+    }
+  },
+  {
+    "block": "ds-section-title",
+    "properties": {
+      "p7469746c65": "Tudo para sua vida",
+      "p73686f774465736372697074696f6e": "true",
+      "p6465736372697074696f6e": "Um título de seção editável",
+      "p76617269616e74": "default",
+      "p73686f7749636f6e": "true",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "SectionTitle"
+    }
+  },
+  {
+    "block": "ds-section-subtitle",
+    "properties": {
+      "p7375627469746c65": "Escolha seu próximo passo",
+      "p747261696c696e674c6162656c": "Saiba mais",
+      "accessibleLabel": "SectionSubtitle"
+    }
+  },
+  {
+    "block": "ds-segmented-control",
+    "properties": {
+      "p7374617465": "enabled",
+      "accessibleLabel": "SegmentedControl"
+    },
+    "items": [
+      {
+        "p6c6162656c": "Pessoal"
+      },
+      {
+        "p6c6162656c": "Empresas"
+      }
+    ]
+  },
+  {
+    "block": "ds-select",
+    "properties": {
+      "p6c6162656c": "Produto de interesse",
+      "p706c616365686f6c646572": "Escolha uma opção",
+      "accessibleLabel": "Select",
+      "selectOptions": "[\"Conta digital\",\"Investimentos\",\"Crédito\"]"
+    }
+  },
+  {
+    "block": "ds-spinner",
+    "properties": {
+      "p73697a65": "large",
+      "p617269614c6162656c": "Carregando demonstração",
+      "accessibleLabel": "Spinner"
+    }
+  },
+  {
+    "block": "ds-signal",
+    "properties": {
+      "p76617269616e74": "success",
+      "p73697a65": "large",
+      "p7374617465": "enabled",
+      "accessibleLabel": "Signal"
+    }
+  },
+  {
+    "block": "ds-switch",
+    "properties": {
+      "p636865636b6564": "false",
+      "p7374617465": "enabled",
+      "accessibleLabel": "Switch"
+    }
+  },
+  {
+    "block": "ds-snackbar",
+    "properties": {
+      "p76617269616e74": "success",
+      "p7469746c65": "Pronto",
+      "p6465736372697074696f6e": "Esta é uma mensagem de demonstração.",
+      "p73686f77427574746f6e536e61636b626172": "true",
+      "p6c6162656c427574746f6e": "Entendi",
+      "p73686f77": "false",
+      "accessibleLabel": "Snackbar",
+      "triggerLabel": "Abrir Snackbar"
+    }
+  },
+  {
+    "block": "ds-stepper",
+    "properties": {
+      "p656e61626c65496e707574": "true",
+      "p6d6178": 10,
+      "p6d696e": 0,
+      "p7374617465": "enabled",
+      "p686173426f72646572": "true",
+      "p73746570": 1,
+      "accessibleLabel": "Stepper"
+    }
+  },
+  {
+    "block": "ds-tabs",
+    "properties": {
+      "p7374617465": "enabled",
+      "p7363726f6c6c61626c65": "true",
+      "accessibleLabel": "Tabs"
+    },
+    "items": [
+      {
+        "p6c6162656c": "Conta",
+        "p73656c6563746564": true
+      },
+      {
+        "p6c6162656c": "Investimentos"
+      },
+      {
+        "p6c6162656c": "Crédito"
+      }
+    ]
+  },
+  {
+    "block": "ds-tag",
+    "properties": {
+      "p636f6c6f72": "brand",
+      "p686965726172636879": "soft",
+      "p6c6162656c": "Novidade",
+      "p73697a65": "large",
+      "p7374617465": "enabled",
+      "accessibleLabel": "Tag"
+    }
+  },
+  {
+    "block": "ds-text",
+    "properties": {
+      "p6368696c6472656e": "Em todo momento da vida, vejo você.",
+      "p7465787453697a65": "large",
+      "p74657874576569676874": "regular",
+      "p6173": "p",
+      "p7465787454797065": "body",
+      "accessibleLabel": "Text"
+    }
+  },
+  {
+    "block": "ds-text-area",
+    "properties": {
+      "p6c6162656c": "Sua mensagem",
+      "p73686f77436f756e746572": "true",
+      "p636f756e746572": 300,
+      "p706c616365686f6c646572": "Conte um pouco mais",
+      "accessibleLabel": "TextArea"
+    }
+  },
+  {
+    "block": "ds-timeline",
+    "properties": {
+      "accessibleLabel": "Timeline"
+    },
+    "items": [
+      {
+        "p7469746c65": "Escolha",
+        "p64617465": "Etapa 1",
+        "p737461747573": "success"
+      },
+      {
+        "p7469746c65": "Personalize",
+        "p64617465": "Etapa 2",
+        "p737461747573": "current"
+      },
+      {
+        "p7469746c65": "Publique",
+        "p64617465": "Etapa 3",
+        "p737461747573": "pending"
+      }
+    ]
+  },
+  {
+    "block": "ds-widget",
+    "properties": {
+      "p74696d6541676f": "Agora",
+      "p746167": "Novidade",
+      "p7469746c65": "Seus planos",
+      "p73686f77486561646572": "true",
+      "p6368696c6472656e": "<p>Uma experiência completa e editável.</p>",
+      "p73697a65": "large",
+      "actionLink": "/demo-toranja",
+      "accessibleLabel": "Widget"
+    }
+  }
+]

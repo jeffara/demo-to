@@ -1,0 +1,26 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticRepeatAlbum = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 72 72",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: "#EA7100",
+  d: "M10.5 33a1.5 1.5 0 0 0 3 0h-3Zm44.99-11.249a1.5 1.5 0 1 0 2.598-1.502L55.49 21.75ZM7.06 28.94a1.5 1.5 0 0 0-2.12 2.122l2.12-2.122ZM12 36l-1.06 1.06a1.5 1.5 0 0 0 2.12 0L12 36Zm7.06-4.94a1.5 1.5 0 0 0-2.12-2.12l2.12 2.12ZM61.5 39a1.5 1.5 0 0 0-3 0h3ZM16.51 50.249a1.5 1.5 0 0 0-2.598 1.502l2.597-1.502Zm36.43-9.31a1.5 1.5 0 0 0 2.12 2.122l-2.12-2.122ZM60 36l1.06-1.06a1.5 1.5 0 0 0-2.12 0L60 36Zm4.94 7.06a1.5 1.5 0 0 0 2.12-2.12l-2.12 2.12ZM13.5 33c0-12.426 10.074-22.5 22.5-22.5v-3C21.917 7.5 10.5 18.917 10.5 33h3ZM36 10.5c8.326 0 15.598 4.522 19.49 11.251l2.598-1.502C53.68 12.63 45.44 7.5 36 7.5v3ZM4.94 31.06l6 6 2.12-2.12-6-6-2.12 2.12Zm8.12 6 6-6-2.12-2.12-6 6 2.12 2.12ZM58.5 39c0 12.426-10.074 22.5-22.5 22.5v3c14.083 0 25.5-11.417 25.5-25.5h-3ZM36 61.5c-8.326 0-15.598-4.522-19.49-11.251l-2.598 1.502C18.32 59.37 26.56 64.5 36 64.5v-3Zm19.06-18.44 6-6-2.12-2.12-6 6 2.12 2.12Zm3.88-6 6 6 2.12-2.12-6-6-2.12 2.12Z"
+}), /*#__PURE__*/React.createElement("rect", {
+  width: 48,
+  height: 48,
+  x: 12,
+  y: 12,
+  fill: "#F56A50",
+  rx: 24
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: "#fff",
+  strokeLinejoin: "round",
+  strokeWidth: 5,
+  d: "M28.5 25.5H36c5.799 0 10.5 4.701 10.5 10.5S41.799 46.5 36 46.5h-7.5v-21Z"
+}));
+export default ComponenticRepeatAlbum;

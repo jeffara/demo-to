@@ -1,3 +1,5 @@
+> Referência histórica da base anterior. Para a versão 2.0, siga README.md, docs/DEPLOY-V2.md e docs/REVISAO-V2.html.
+
 # Runbook Toranja EDS
 
 As instruções desta versão estão em [README.md](README.md), [migração AEM](docs/MIGRACAO-AEM.md) e [guia de autoria](authoring-guide.md).

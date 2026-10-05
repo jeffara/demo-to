@@ -43,19 +43,20 @@ const groups = [
   },
   {
     id: "toranja",
-    title: "Toranja — blocos",
+    title: "Toranja — composições de página",
     components: definitions.filter(
       (d) =>
         !["text", "title", "image", "button", "section"].includes(d.id) &&
-        !d.id.endsWith("-item"),
+        !d.plugins?.xwalk?.page?.resourceType?.endsWith("/item") && !d.id.startsWith("ds-"),
     ),
   },
   {
     id: "toranja-items",
     title: "Toranja — itens",
-    components: definitions.filter((d) => d.id.endsWith("-item")),
+    components: definitions.filter((d) => d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")),
   },
 ];
+groups.splice(1,0,{id:"toranja-official",title:"Toranja oficial — 64 componentes",components:definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item"))});
 const cells = {},
   containers = {};
 for (const m of models) {
@@ -92,5 +93,5 @@ fs.writeFileSync(
     ";\n",
 );
 console.log(
-  `${groups[1].components.length} blocos; ${groups[2].components.length} tipos de item; ${models.length} modelos.`,
+  `${definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")).length} componentes oficiais; ${models.length} modelos.`,
 );

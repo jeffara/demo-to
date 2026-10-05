@@ -82,6 +82,23 @@
           "name": "link",
           "label": "Âncora",
           "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "linkTarget",
+          "label": "Âncora — abrir em",
+          "valueType": "string",
+          "value": "_self",
+          "options": [
+            {
+              "name": "Mesma aba",
+              "value": "_self"
+            },
+            {
+              "name": "Nova aba",
+              "value": "_blank"
+            }
+          ]
         }
       ]
     }

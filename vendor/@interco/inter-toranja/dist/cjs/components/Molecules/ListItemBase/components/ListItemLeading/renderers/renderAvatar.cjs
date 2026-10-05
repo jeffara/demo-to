@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const r=require("react/jsx-runtime"),n=require("../../../utils/stateMapper.cjs"),s=require("../../../../Avatar/Avatar.cjs"),a=(e,t)=>e?r.jsx(s.Avatar,{...e,state:n.mapStateToSTATE(t)}):null;exports.renderAvatar=a;

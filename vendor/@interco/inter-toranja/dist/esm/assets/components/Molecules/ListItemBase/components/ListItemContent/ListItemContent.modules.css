@@ -1,0 +1,1 @@
+.listItemContent{display:flex;flex-direction:column;gap:var(--spacing-2)}.listItemContent__label{display:flex;align-items:center;gap:var(--spacing-8)}.listItemContent__label__icon{display:inline-flex;align-items:center;justify-content:center}.listItemContent__tags{display:flex;gap:var(--spacing-4);flex-wrap:wrap;margin-top:var(--spacing-4)}

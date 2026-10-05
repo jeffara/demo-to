@@ -1,0 +1,37 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticPaymentlink = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M12.762 16.736a1.232 1.232 0 0 0-1.758 0 1.268 1.268 0 0 0 0 1.778l1.758-1.778ZM14.43 6.621a1.268 1.268 0 0 0 0 1.778 1.232 1.232 0 0 0 1.757 0L14.43 6.621Zm8.072 5.129-4.928 4.986 1.757 1.778 4.928-4.986-1.757-1.778ZM16.188 8.4l1.502-1.52-1.758-1.778-1.501 1.52 1.757 1.777Zm1.387 8.336a3.375 3.375 0 0 1-4.813 0l-1.758 1.778a5.84 5.84 0 0 0 8.328 0l-1.757-1.778Zm4.928-9.856a3.473 3.473 0 0 1 0 4.87l1.757 1.778c2.3-2.327 2.3-6.1 0-8.426L22.503 6.88Zm1.757-1.778a5.84 5.84 0 0 0-8.328 0L17.69 6.88a3.375 3.375 0 0 1 4.813 0l1.757-1.778ZM15.534 13.931a1.232 1.232 0 0 0 1.757 0 1.268 1.268 0 0 0 0-1.778l-1.757 1.778Zm-1.669 10.115a1.268 1.268 0 0 0 0-1.778 1.232 1.232 0 0 0-1.757 0l1.757 1.778Zm-8.072-5.129 4.928-4.986-1.757-1.778-4.928 4.986 1.757 1.778Zm6.315 3.35-1.502 1.52 1.758 1.779 1.501-1.52-1.757-1.778Zm-6.315 1.52a3.473 3.473 0 0 1 0-4.87L4.036 17.14c-2.3 2.327-2.3 6.1 0 8.427l1.757-1.779Zm-1.757 1.779a5.84 5.84 0 0 0 8.328 0l-1.758-1.779a3.375 3.375 0 0 1-4.813 0l-1.757 1.779ZM10.72 13.93a3.375 3.375 0 0 1 4.813 0l1.757-1.778a5.84 5.84 0 0 0-8.327 0l1.757 1.778Z"
+}), /*#__PURE__*/React.createElement("ellipse", {
+  cx: 16.25,
+  cy: 12.89,
+  fill: props.color,
+  rx: 1.25,
+  ry: 1.25
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: 11.917,
+  cy: 17.65,
+  r: 1.25,
+  fill: props.color
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 3,
+  d: "M26.667 21.333h-4a1.333 1.333 0 0 0 0 2.667h2.667a1.333 1.333 0 1 1 0 2.667h-4"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2.5,
+  d: "M24 21.333V20M24 28v-1.333"
+}));
+export default ComponenticPaymentlink;

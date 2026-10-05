@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});var e=(r=>(r.SOLID="solid",r.DASH="dash",r))(e||{}),t=(r=>(r.HORIZONTAL="horizontal",r.VERTICAL="vertical",r))(t||{});exports.DividerOrientation=t;exports.DividerVariant=e;

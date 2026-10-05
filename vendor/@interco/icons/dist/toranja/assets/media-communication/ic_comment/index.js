@@ -1,0 +1,16 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticComment = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 1.593-.122 2.82-.853 4.22l.837 4.601a1 1 0 0 1-1.3 1.128l-3.64-1.213C15.608 21.468 13.665 22 12 22 6.477 22 2 17.523 2 12Zm10-8a8 8 0 1 0 0 16c1.447 0 3.267-.533 4.45-1.216a1 1 0 0 1 .816-.083l2.448.816-.598-3.288a1 1 0 0 1 .118-.68c.64-1.104.766-1.987.766-3.549a8 8 0 0 0-8-8Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticComment;

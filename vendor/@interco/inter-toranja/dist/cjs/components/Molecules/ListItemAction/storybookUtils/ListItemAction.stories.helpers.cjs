@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const c=t=>t.split("-").map(e=>e.charAt(0).toUpperCase()+e.slice(1)).join(" "),l=t=>Object.entries(t).reduce((e,[o])=>({...e,[o]:{label:c(o)}}),{});exports.createSelectOptions=l;exports.formatKeyToLabel=c;

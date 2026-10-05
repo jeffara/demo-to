@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const l=i=>{const e={large:"type-link-large",medium:"type-link-medium",small:"type-link-small"};return e[i]||e.medium};exports.getLinkSizeClass=l;

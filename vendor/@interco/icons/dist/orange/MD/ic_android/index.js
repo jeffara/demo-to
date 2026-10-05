@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticAndroid = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "m17.09 9.73 1.674-2.891a.577.577 0 0 0-.237-.773.58.58 0 0 0-.754.2l-1.71 2.946a10.42 10.42 0 0 0-8.127 0L6.227 6.266a.584.584 0 0 0-.79-.182.58.58 0 0 0-.2.755l1.672 2.89A9.8 9.8 0 0 0 2 17.476h20a9.8 9.8 0 0 0-4.91-7.745Zm-9.635 5.245a1.137 1.137 0 1 1 0-2.273 1.137 1.137 0 0 1 0 2.273Zm9.09 0a1.137 1.137 0 1 1 .001-2.273 1.137 1.137 0 0 1 0 2.273Z"
+}));
+export default ComponenticAndroid;

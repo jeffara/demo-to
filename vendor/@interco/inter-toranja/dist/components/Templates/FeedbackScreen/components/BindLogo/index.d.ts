@@ -1,0 +1,1 @@
+export { BindLogo } from './BindLogo';

@@ -1,0 +1,5 @@
+@media (min-width: 905px) and (max-width: 1239px) {
+  .page-width-medium {
+    width: 64rem;
+  }
+}

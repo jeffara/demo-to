@@ -1,0 +1,34 @@
+import { InputCountryOption, InputCountryProps } from '../types';
+import { FlagName } from '../../../Atoms/Flag/types';
+import { BottomSheetCountryItem } from '../../../Templates/BottomSheetCountry/types';
+import { PhoneTypeValue } from '../../InputBase/utils/inputEnums';
+export interface UseInputCountryReturn {
+    rootClasses: string;
+    fieldsClasses: string;
+    selectClasses: string;
+    inputClasses: string;
+    dataTestId: string;
+    resolvedState: NonNullable<InputCountryProps['state']>;
+    selectState: NonNullable<InputCountryProps['state']>;
+    selectable: boolean;
+    showHint: boolean;
+    isDisabled: boolean;
+    isSelectReadOnly: boolean;
+    isInputReadOnly: boolean;
+    canOpenSheet: boolean;
+    isSheetOpen: boolean;
+    closeSheet: () => void;
+    handleSelectClick: () => void;
+    handleCountrySelect: (item: BottomSheetCountryItem) => void;
+    handleChange: (value: string) => void;
+    resolvedPrefix: string | undefined;
+    resolvedFlag: FlagName | undefined;
+    resolvedPhoneType: PhoneTypeValue;
+    resolvedSelectedValue: string | undefined;
+    selectAccessibleLabel: string;
+    selectId: string;
+    inputId: string;
+    countryItems: InputCountryOption[];
+    featuredCountryItems: InputCountryOption[];
+}
+export declare const useInputCountry: (props: InputCountryProps) => UseInputCountryReturn;

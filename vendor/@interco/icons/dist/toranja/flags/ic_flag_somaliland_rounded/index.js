@@ -1,0 +1,36 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagSomalilandRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M23.254 16.174c.482-1.3.746-2.706.746-4.174 0-1.468-.264-2.874-.746-4.174L12 6.783.746 7.826A11.974 11.974 0 0 0 0 12c0 1.468.264 2.874.746 4.174L12 17.217l11.254-1.043Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M12 24c5.16 0 9.558-3.256 11.254-7.826H.746C2.442 20.744 6.84 24 12 24Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#41660B",
+  d: "M12 0C6.84 0 2.442 3.256.746 7.826h22.508C21.558 3.256 17.159 0 12 0Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#161616",
+  d: "m12 9.391.648 1.993h2.095l-1.695 1.232.647 1.993L12 13.377l-1.695 1.232.647-1.993-1.695-1.232h2.095L12 9.391Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M15.565 2.348v2.435a.696.696 0 0 1-.695.695v1.044c.959 0 1.739-.78 1.739-1.74V2.349h-1.044ZM8.087 4.783a.696.696 0 0 1-.696.695v1.044c.96 0 1.74-.78 1.74-1.74V2.349H8.086v2.435Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M14 2.348h1.043v2.435H14V2.348ZM12.435 3.739a.174.174 0 0 1-.348 0V2.348h-1.044v1.391a.174.174 0 0 1-.347 0V2.348H9.652v1.391a1.219 1.219 0 0 0 1.913.998 1.21 1.21 0 0 0 .85.21.696.696 0 0 1-.676.531v1.044c.96 0 1.74-.78 1.74-1.74V2.349h-1.044v1.391Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M9.652 5.478h1.565v1.044H9.652V5.478Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagSomalilandRounded;

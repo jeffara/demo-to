@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticSpotify = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M12 1c6.072 0 11 4.928 11 11s-4.928 11-11 11S1 18.072 1 12 5.928 1 12 1Zm4.709 14.77c-3.166-1.893-6.879-1.964-10.512-1.162-.901.192-.74 1.447.098 1.447.128 0 .354-.072.527-.117 6.567-1.345 8.904 1.246 9.644 1.247.677 0 .998-.932.243-1.414Zm1.31-3.233c-3.229-1.92-7.866-2.628-12.189-1.414-1.07.302-.81 1.778.172 1.778.2 0 .316-.058.528-.116 3.678-.998 7.81-.336 10.583 1.305.474.249.444.159.547.186a.86.86 0 0 0 .86-.865c0-.385-.142-.661-.501-.874Zm1.472-3.676C15.59 6.584 9.315 6.201 5.17 7.415c-.399.116-.772.456-.772 1.059 0 .589.448 1.047 1.034 1.047.212 0 .412-.07.572-.115 3.654-1.02 9.302-.569 12.458 1.316.2.115.341.173.572.174h.001c1.064 0 1.457-1.458.457-2.035Z"
+}));
+export default ComponenticSpotify;

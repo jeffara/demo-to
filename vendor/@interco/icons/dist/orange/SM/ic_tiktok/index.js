@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticTiktok = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 16 16",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M14.438 4.338a3.71 3.71 0 0 1-3.71-3.673H8.333V7.21l-.003 3.583a2.171 2.171 0 0 1-3.285 1.86 2.163 2.163 0 0 1-1.06-1.828 2.171 2.171 0 0 1 2.856-2.092V6.306a4.588 4.588 0 0 0-.692-.052c-1.325 0-2.565.551-3.451 1.544a4.504 4.504 0 0 0-1.134 2.711 4.489 4.489 0 0 0 1.337 3.495 4.591 4.591 0 0 0 3.248 1.331 4.62 4.62 0 0 0 3.248-1.331 4.482 4.482 0 0 0 1.346-3.19l-.012-5.355c.41.319.861.58 1.346.784.752.318 1.55.476 2.367.476V4.335c.003.003-.006.003-.006.003Z"
+}));
+export default ComponenticTiktok;

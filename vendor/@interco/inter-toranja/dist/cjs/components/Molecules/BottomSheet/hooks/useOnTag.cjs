@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=require("react"),u=require("../../../../utils/pattern.cjs"),c=({meetsCondition:e,onTagFn:t,title:o})=>{s.useEffect(()=>{e&&t(r=>({...r,name:u.TAGGING_EVENT.MODAL_VIEW,ComponentProperties:{component_name:"Bottom Sheet",title:o}}))},[e,t,o])};exports.useBottomSheetTag=c;

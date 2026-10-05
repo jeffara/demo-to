@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const a=require("../Avatar/types.cjs"),e=(t,r)=>t?t.avatarVariant===a.AvatarVariant.Initial?{variant:a.AvatarVariant.Initial,color:"soft",category:t.category??a.InitialCategory.Person,label:r}:{variant:a.AvatarVariant.Picture,color:"image",src:t.src,alt:t.alt}:null;exports.useMenuItemAvatar=e;

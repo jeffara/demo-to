@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const r=require("../../../utils/pattern.cjs");var e=(t=>(t.SLOT="slot",t.TEXT="text",t))(e||{}),A=(t=>(t[t.Icon=r.VARIANT.ICON]="Icon",t[t.Avatar=r.VARIANT.AVATAR]="Avatar",t))(A||{});exports.CONTENT_VARIANT=e;exports.LeadingVariant=A;

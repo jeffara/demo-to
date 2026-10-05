@@ -1,0 +1,27 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagPapuaNewGuineaRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#161616",
+  d: "M20.485 20.485c-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97C8.2-1.172 15.06-.434 19.747 4.253c4.687 4.686 5.425 11.546.738 16.232Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#AC2C25",
+  d: "M3.515 3.515c4.686-4.687 12.284-4.687 16.97 0 4.687 4.686 4.687 12.284 0 16.97"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "m9.17 16.174.195.598h.629l-.509.37.194.597-.508-.37-.509.37.194-.598-.508-.37h.628l.195-.597ZM7.565 10.435l.324.996h1.048l-.848.616.324.996-.848-.615-.847.615.323-.996-.847-.616h1.048l.323-.996ZM7.565 17.74l.324.996h1.048l-.848.616.324.996-.848-.616-.847.616.323-.996-.847-.616H7.24l.324-.997ZM10.629 13.044l.323.996H12l-.848.616.324.996-.848-.616-.847.616.324-.996-.848-.616h1.048l.324-.996ZM4.502 13.044l.324.996h1.047l-.847.616.323.996-.847-.616-.848.616.324-.996-.848-.616h1.048l.324-.996Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "M20.088 8.886a3.106 3.106 0 0 0-1.982-.908l2.242-1.743a4.163 4.163 0 0 0-3.257-1.211 3.116 3.116 0 0 0-.801-1.372l-.886 1.771a1.303 1.303 0 0 0-2.066-.295 1.304 1.304 0 0 0 .296 2.066l-1.771.885c.395.395.87.662 1.372.802a4.16 4.16 0 0 0 1.21 3.256l1.959-2.518a.777.777 0 0 1 .549-.225c.209 0 .405.082.553.23a.777.777 0 0 1 0 1.107l.738.737c.345-.345.535-.803.535-1.291 0-.4-.128-.779-.363-1.092a2.09 2.09 0 0 1 .934 3.49l.738.738a3.11 3.11 0 0 0 .917-2.214 3.11 3.11 0 0 0-.917-2.213Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagPapuaNewGuineaRounded;

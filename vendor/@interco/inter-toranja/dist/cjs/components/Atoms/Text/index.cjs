@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("./Text.cjs"),e=require("./types.cjs");exports.Text=t.Text;exports.TextColorScheme=e.TextColorScheme;exports.TextSize=e.TextSize;exports.TextType=e.TextType;exports.TextVariant=e.TextVariant;exports.TextWeight=e.TextWeight;

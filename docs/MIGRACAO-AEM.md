@@ -1,3 +1,5 @@
+> Histórico da versão 1.0. Para a versão 2.0, consulte ../README.md, DEPLOY-V2.md e REVISAO-V2.html.
+
 # Instalação e homologação AEM
 
 Destino desta versão: **`/content/demo-to`**. O pacote pronto está em **`content/demo-to-content.zip`**.

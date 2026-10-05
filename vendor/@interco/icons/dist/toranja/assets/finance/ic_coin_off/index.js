@@ -1,0 +1,19 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticCoinOff = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M23 12c0 2.677-.957 5.132-2.547 7.039l1.254 1.254a1 1 0 0 1-1.414 1.414l-5.88-5.88A2.493 2.493 0 0 1 13.5 16H13v1a1 1 0 1 1-2 0v-1H9a1 1 0 1 1 0-2h3.586l-1-1H10.5a2.5 2.5 0 0 1-2.328-3.414l-5.88-5.879a1 1 0 0 1 1.415-1.414l1.254 1.254A10.96 10.96 0 0 1 12 1c6.075 0 11 4.925 11 11ZM9.586 8.172 6.382 4.968A8.958 8.958 0 0 1 12 3a9 9 0 0 1 9 9 8.958 8.958 0 0 1-1.968 5.618l-3.204-3.204A2.5 2.5 0 0 0 13.5 11h-1.086l-1-1H15a1 1 0 1 0 0-2h-2V7a1 1 0 1 0-2 0v1h-.5c-.322 0-.63.061-.914.172Z",
+  clipRule: "evenodd"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M3.412 9.3a1 1 0 1 0-1.908-.6A10.996 10.996 0 0 0 1 12c0 6.075 4.925 11 11 11 1.148 0 2.257-.176 3.3-.504a1 1 0 1 0-.6-1.908A8.998 8.998 0 0 1 12 21a9 9 0 0 1-9-9c0-.942.145-1.85.412-2.7Z"
+}));
+export default ComponenticCoinOff;

@@ -1,0 +1,15 @@
+/vendor/**
+/node_modules/**
+/src/**
+/docs/**
+/tests/**
+/tools/**
+/content/**
+/drafts/**
+/models/**
+/blocks/**/_*.json
+/assets/brand/*.png
+/*.md
+/package*.json
+/vite.config.mjs
+/config/**

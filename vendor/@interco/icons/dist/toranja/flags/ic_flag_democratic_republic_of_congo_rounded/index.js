@@ -1,0 +1,27 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagDemocraticRepublicOfCongoRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "M22.668 6.498a11.994 11.994 0 0 0-2.182-2.984c-.9-.9-1.91-1.627-2.984-2.181L9.05 9.048l-7.716 8.454a11.993 11.993 0 0 0 2.181 2.984c.901.9 1.91 1.627 2.984 2.181l8.453-7.716 7.716-8.453Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M3.514 20.486c.504.503 1.04.952 1.604 1.347L21.833 5.118a12.068 12.068 0 0 0-2.951-2.951L2.167 18.882c.395.563.844 1.1 1.347 1.604Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#5A8BEB",
+  d: "M3.514 3.514C-.272 7.3-.998 12.986 1.332 17.502l16.17-16.17C12.986-.997 7.3-.27 3.514 3.515ZM20.486 20.486c3.785-3.786 4.512-9.472 2.181-13.988l-16.17 16.17c4.517 2.33 10.203 1.604 13.989-2.182Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "m6.395 3.652.648 1.993h2.095L7.443 6.876 8.09 8.87 6.395 7.638 4.7 8.869l.647-1.993-1.695-1.231h2.095l.648-1.993Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagDemocraticRepublicOfCongoRounded;

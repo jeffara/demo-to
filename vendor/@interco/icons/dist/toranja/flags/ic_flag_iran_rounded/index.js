@@ -1,0 +1,27 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagIranRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#EFEEEE",
+  d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M15.898 8.87h-1.57c.012.172.02.346.02.521 0 1.161-.29 2.286-.796 3.087-.156.247-.418.596-.77.831V8.87h-1.565v4.44c-.35-.235-.613-.584-.769-.83-.506-.802-.796-1.927-.796-3.088 0-.175.008-.349.02-.521h-1.57c-.01.171-.015.345-.015.521 0 3.219 1.719 5.74 3.913 5.74s3.913-2.521 3.913-5.74c0-.176-.005-.35-.015-.521Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#639C11",
+  d: "M4.957 5.74h1.565v1.043h1.565V5.739h1.565v1.044h1.565V5.739h1.566v1.044h1.565V5.739h1.565v1.044h1.565V5.739h1.565v1.044h3.766A12 12 0 0 0 12 0 12 12 0 0 0 1.19 6.783h3.767V5.739Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M19.044 17.217v1.044h-1.566v-1.044h-1.565v1.044h-1.565v-1.044h-1.565v1.044h-1.566v-1.044H9.652v1.044H8.087v-1.044H6.522v1.044H4.957v-1.044H1.19A12 12 0 0 0 12 24a12 12 0 0 0 10.81-6.783h-3.766Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagIranRounded;

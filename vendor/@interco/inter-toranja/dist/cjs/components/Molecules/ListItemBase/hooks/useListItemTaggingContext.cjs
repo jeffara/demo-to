@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("react"),n=require("../context/ListItemTaggingContext.cjs"),i=()=>{const t=e.useContext(n.ListItemTaggingContext);if(!t)throw new Error("useListItemTaggingContext must be used within ListItemTaggingProvider");return t};exports.useListItemTaggingContext=i;

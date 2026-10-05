@@ -1,0 +1,22 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticOfxfile = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 72 72",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 5,
+  d: "M12 32V13.5C12 9.358 15.454 6 19.714 6h27.15c2.343 0 4.56 1.036 6.024 2.815l11.422 13.88A7.371 7.371 0 0 1 66 27.382V58.5c0 4.142-3.454 7.5-7.714 7.5H19.714C15.454 66 12 62.642 12 58.5V55"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M3.5 33A2.5 2.5 0 0 1 6 30.5h48a2.5 2.5 0 0 1 2.5 2.5v21a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 54V33Zm19.82 10.5c0 1.606-.318 2.968-.953 4.085s-1.494 1.965-2.578 2.545c-1.08.58-2.29.87-3.633.87-1.348 0-2.561-.292-3.64-.877-1.08-.584-1.936-1.433-2.571-2.545C9.315 46.46 9 45.102 9 43.5c0-1.606.315-2.968.945-4.085.635-1.117 1.492-1.965 2.57-2.545 1.08-.58 2.293-.87 3.64-.87 1.344 0 2.555.29 3.634.87 1.084.58 1.943 1.428 2.578 2.545.635 1.117.952 2.479.952 4.085Zm-3.707 0c0-.95-.14-1.754-.417-2.41-.274-.656-.67-1.152-1.187-1.49-.513-.337-1.13-.506-1.853-.506-.718 0-1.335.169-1.853.506-.518.338-.916.834-1.194 1.49-.273.656-.41 1.46-.41 2.41 0 .95.137 1.754.41 2.41.278.656.676 1.152 1.194 1.49.517.337 1.135.506 1.853.506.723 0 1.34-.169 1.853-.506.518-.338.913-.834 1.187-1.49.278-.656.417-1.46.417-2.41Zm5.823 7.3V36.2h10.24v2.866h-6.614v2.994h5.962v2.873h-5.962V50.8h-3.626Zm18.474-9.988L41.17 36.2h-4.086l4.533 7.3-4.65 7.3h4.13l2.813-4.662h.117L46.84 50.8H51l-4.673-7.3 4.526-7.3h-4.057l-2.769 4.612h-.117Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticOfxfile;

@@ -1,22 +1,36 @@
 {
   "name": "aem-eds-inter-toranja",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Toranja nativo EDS com autoria AEM XWalk e Universal Editor",
+  "description": "Toranja oficial 1.13.3 em blocos EDS XWalk, com autoria Universal Editor",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.12.0"
   },
   "scripts": {
     "build:json": "node tools/build-json.mjs",
     "build:content": "node tools/render-content.mjs",
-    "build": "npm run build:json && npm run build:content",
+    "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:runtime",
     "preview": "npm run build && node tools/serve.mjs",
     "check": "node tests/contracts.mjs",
-    "test": "npm run build && npm run check && node tests/browser.mjs",
-    "export:aem": "python3 tools/export-aem.py"
+    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && node tests/browser.mjs && node tests/ds-browser.mjs && node tests/acceptance.mjs",
+    "export:aem": "python3 tools/export-aem.py",
+    "inventory:ds": "node tools/inventory-ds.mjs",
+    "build:ds-models": "node tools/build-ds.mjs",
+    "build:runtime": "vite build",
+    "test:ds": "node tests/ds-browser.mjs",
+    "test:acceptance": "node tests/acceptance.mjs",
+    "diagnose:eds": "node tools/diagnose-eds.mjs"
   },
   "devDependencies": {
-    "playwright": "1.62.1"
+    "playwright": "1.62.1",
+    "vite": "8.3.2",
+    "typescript": "5.7.2",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }

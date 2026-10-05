@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticShortTermParking = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "m20 7-.824.567.052.075.065.065L20 7ZM2.142 13.67a1 1 0 1 0 1.971-.34l-1.97.34ZM22 5a1 1 0 1 0-2 0h2Zm-1 3v1a1 1 0 0 0 1-1h-1Zm-3-1a1 1 0 1 0 0 2V7ZM4 17.19l.81-.585-.053-.075-.067-.064-.69.724Zm17.856-6.368a1 1 0 1 0-1.968.356l1.968-.356ZM2 19.095a1 1 0 1 0 2 0H2Zm1-2.857v-1a1 1 0 0 0-1 1h1Zm3 1a1 1 0 1 0 0-2v2ZM10.5 9V8a1 1 0 0 0-1 1h1Zm0 6h-1a1 1 0 0 0 1 1v-1Zm3.306 1a1 1 0 1 0 0-2v2Zm.123-6a1 1 0 1 0 0-2v2ZM10.5 11a1 1 0 1 0 0 2v-2Zm2.571 2a1 1 0 1 0 0-2v2ZM4 12c0-4.393 3.668-8 8.25-8V2C6.615 2 2 6.452 2 12h2Zm8.25-8c2.878 0 5.454 1.426 6.926 3.567l1.648-1.134C18.978 3.75 15.786 2 12.25 2v2Zm-8.137 9.33A7.823 7.823 0 0 1 4 12H2c0 .568.049 1.126.142 1.67l1.971-.34ZM20 5v3h2V5h-2Zm1 2h-3v2h3V7Zm-1 5.429C20 16.539 16.38 20 11.75 20v2C17.338 22 22 17.785 22 12.429h-2ZM11.75 20c-2.899 0-5.475-1.369-6.94-3.395l-1.62 1.171C5.043 20.344 8.234 22 11.75 22v-2Zm8.138-8.822c.074.406.112.824.112 1.25h2c0-.546-.05-1.083-.144-1.606l-1.968.356ZM4 19.095v-2.857H2v2.857h2Zm-1-1.857h3v-2H3v2ZM9.5 9v6h2V9h-2Zm1 7h3.306v-2H10.5v2Zm0-6h3.429V8H10.5v2Zm0 3h2.571v-2H10.5v2Zm8.793-5.293 1 1 1.414-1.414-1-1-1.414 1.414ZM4.69 16.467l-1-.953-1.38 1.448 1 .953 1.38-1.449Z"
+}));
+export default ComponenticShortTermParking;

@@ -1,0 +1,50 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticNutritionist = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 16 16",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M12.667 7.333v-2.5a1.5 1.5 0 0 0-1.5-1.5H4.834a1.5 1.5 0 0 0-1.5 1.5V12.5a1.5 1.5 0 0 0 1.5 1.5h2.5"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M6.083 8.583 8.584 8.583"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M6.083 11.25 7.25 11.25"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M6 3.333H10V6H6z"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "M9.333 3.333a1.333 1.333 0 1 0-2.667 0"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M9.898 10.522a.936.936 0 0 1 1.066-.27l.444.178c.38.152.804.152 1.184 0l.444-.178a.936.936 0 0 1 1.066.27c.742.89.86 2.146.297 3.16l-.296.532c-.26.468-.793.715-1.318.61l-.427-.086a1.825 1.825 0 0 0-.717 0l-.426.086a1.232 1.232 0 0 1-1.318-.61l-.296-.532a2.806 2.806 0 0 1 .297-3.16Z"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 1.5,
+  d: "m12.486 9.703-.065.111a3.039 3.039 0 0 0-.407 1.52"
+}));
+export default ComponenticNutritionist;

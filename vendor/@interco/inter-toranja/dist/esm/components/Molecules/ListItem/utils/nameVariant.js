@@ -1,0 +1,33 @@
+const i = (a) => {
+  const t = {
+    leadingAvatar: "avatar",
+    leadingFlag: "flag",
+    leadingIcon: "icon",
+    leadingImage: "picture",
+    leadingPaymentMethod: "paymentMethod",
+    leadingCheckbox: "checkbox"
+  };
+  for (const n in t)
+    if (a[n])
+      return t[n];
+  return "";
+}, e = (a) => {
+  const t = {
+    trailingButton: "button",
+    trailingCheckbox: "checkbox",
+    trailingNeutralIconButton: "NeutralIconButton",
+    trailingRadioButton: "radio_button",
+    trailingStepper: "stepper",
+    trailingSwitch: "switch",
+    trailingTagChevron: "tag_chevron",
+    trailingText: "text"
+  };
+  for (const n in t)
+    if (a[n])
+      return t[n];
+  return "";
+};
+export {
+  i as nameVariantLeading,
+  e as nameVariantTrailing
+};

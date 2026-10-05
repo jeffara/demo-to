@@ -15,7 +15,7 @@ export default function decorate(block) {
   ]) {
     const a = link(f[key], "store-badge", label);
     a.textContent = label;
-    a.target = "_blank";
+    a.target = f[key+"Target"]?.textContent.trim() || "_blank";
     a.rel = "noopener noreferrer";
     actions.append(a);
   }

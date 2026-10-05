@@ -1,0 +1,19 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticCalendarClock = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M17 13a1 1 0 1 0-2 0v3.583a1 1 0 0 0 .422.816l2 1.417a1 1 0 1 0 1.156-1.632L17 16.066V13Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M8 3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h5.708A8 8 0 0 0 22 10.708V7a3 3 0 0 0-3-3h-1V3a1 1 0 1 0-2 0v1H8V3Zm0 13c0 1.457.39 2.823 1.07 4H5a1 1 0 0 1-1-1v-7h5.07A7.963 7.963 0 0 0 8 16Zm8-8a7.97 7.97 0 0 0-5.292 2H4V7a1 1 0 0 1 1-1h1v1a1 1 0 1 0 2 0V6h8v1a1 1 0 1 0 2 0V6h1a1 1 0 0 1 1 1v2.07A7.963 7.963 0 0 0 16 8Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticCalendarClock;

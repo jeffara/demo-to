@@ -1,0 +1,14 @@
+const E = {
+  COLLAPSED: 1,
+  MIDDLE: 2,
+  EXPANDED: 3,
+  HUG: 4,
+  HIDDEN: -1,
+  VISIBLE: 0
+}, D = 50, O = 0.2, L = 1;
+export {
+  L as BOTTOM_TOLERANCE_PX,
+  O as CLOSE_THRESHOLD_PERCENTAGE,
+  D as DRAG_THRESHOLD,
+  E as POSITION_ORDER
+};

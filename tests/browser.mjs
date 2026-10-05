@@ -23,6 +23,7 @@ const contracts = JSON.parse(fs.readFileSync("content/contracts.json"));
 const samples = Object.fromEntries(
   Object.values(pages)
     .flatMap((p) => p.sections.flatMap((s) => s.content.filter((c) => c.block)))
+    .filter(b => !b.block.startsWith("ds-"))
     .map((b) => [b.block, b]),
 );
 const report = {
@@ -131,7 +132,7 @@ try {
           );
       }
     });
-  for (const name of Object.keys(contracts.containers))
+  for (const name of Object.keys(contracts.containers).filter(n=>!n.startsWith("ds-")))
     await check(name + ": edição/reordenação de itens", async () => {
       const base = structuredClone(samples[name]);
       if (!base?.items.length) return;

@@ -31,6 +31,7 @@ export default function decorate(block) {
       ),
     );
     a.href = href(item.link);
+    if (item.linkTarget?.textContent.trim() === "_blank") { a.target="_blank"; a.rel="noopener noreferrer"; }
     list.append(a);
   });
   nav.append(list);

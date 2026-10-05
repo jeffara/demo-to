@@ -1,0 +1,19 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticCrosshairs = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#161616",
+  d: "M12 0a1 1 0 0 1 1 1v1.05A10.003 10.003 0 0 1 21.95 11H23a1 1 0 1 1 0 2h-1.05A10.003 10.003 0 0 1 13 21.95V23a1 1 0 1 1-2 0v-1.05A10.003 10.003 0 0 1 2.05 13H1a1 1 0 1 1 0-2h1.05A10.003 10.003 0 0 1 11 2.05V1a1 1 0 0 1 1-1Zm1 5a1 1 0 1 1-2 0v-.938A8.005 8.005 0 0 0 4.062 11H5a1 1 0 1 1 0 2h-.938A8.005 8.005 0 0 0 11 19.939V19a1 1 0 1 1 2 0v.939A8.005 8.005 0 0 0 19.939 13H19a1 1 0 1 1 0-2h.939A8.005 8.005 0 0 0 13 4.062V5Zm-1 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticCrosshairs;

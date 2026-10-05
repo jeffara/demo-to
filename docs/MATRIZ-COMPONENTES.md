@@ -1,3 +1,5 @@
+> Histórico da versão 1.0. Para a versão 2.0, consulte ../README.md, DEPLOY-V2.md e REVISAO-V2.html.
+
 # Matriz de componentes e propriedades
 
 Gerada a partir dos contratos da versão 2.0. São 31 tipos de bloco Toranja, 17 tipos de item filho, 53 modelos totais e 220 campos (incluindo estrutura/página).

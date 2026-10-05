@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Citrina';
+  src:
+    url('./fonts/Citrina/Citrina-Medium.woff') format('woff'),
+    url('./fonts/Citrina/Citrina-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback para manter compatibilidade com 'Citrina VF' */
+@font-face {
+  font-family: 'Citrina VF';
+  src:
+    url('./fonts/Citrina/Citrina-Medium.woff') format('woff'),
+    url('./fonts/Citrina/Citrina-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

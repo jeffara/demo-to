@@ -1,0 +1,15 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticDislikeOutline = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 16 16",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinejoin: "round",
+  d: "M1.333 9.333 4 9.326V1.992L1.333 2v7.333ZM11.433 12.989c0 1.22-2.1 1.22-2.1.61.163-2.814-1.248-4.107-2.309-4.736a.71.71 0 0 1-.357-.605V3c0-.368.298-.667.666-.667h5C13 2.333 13.78 3.162 14 4c.22.838.667 3.056.667 3.667 0 .61-.067 1.659-1.267 1.659h-1.3a.666.666 0 0 0-.667.666v2.996Z"
+}));
+export default ComponenticDislikeOutline;

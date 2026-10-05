@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e="(hover: hover) and (pointer: fine)",n=()=>typeof window>"u"||typeof window.matchMedia!="function"?!1:window.matchMedia(e).matches;exports.FINE_POINTER_HOVER_QUERY=e;exports.isFinePointerHover=n;

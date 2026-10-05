@@ -1,0 +1,22 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticPaymentPaypal = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: "#002991",
+  d: "M15.528 8.76c0 1.485-1.378 3.24-3.46 3.24h-2.006l-.097.618-.47 2.982H7L8.5 6h4.043c1.36 0 2.432.756 2.824 1.807.111.297.168.618.161.953Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#60CDFF",
+  d: "M16.967 11.52a3.446 3.446 0 0 1-3.414 2.88h-1.394l-.581 3.6h-2.48l.398-2.4.469-2.982.097-.618h2.006c2.082 0 3.46-1.755 3.46-3.24h.001c1.025.526 1.622 1.59 1.438 2.76Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#000",
+  d: "M15.528 8.76h.001c0-.025 0-.026-.001 0Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#008CFF",
+  d: "M15.528 8.76a3.268 3.268 0 0 0-1.516-.36h-3.383l-.567 3.6h2.006c2.082 0 3.46-1.755 3.46-3.24Z"
+}));
+export default ComponenticPaymentPaypal;

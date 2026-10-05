@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticTicket = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M20 3a3 3 0 0 1 3 3v3a1 1 0 0 1-1 1 2 2 0 1 0 0 4 1 1 0 0 1 1 1v3a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3v-3a1 1 0 0 1 1-1 2 2 0 1 0 0-4 1 1 0 0 1-1-1V6a3 3 0 0 1 3-3h16ZM4 5a1 1 0 0 0-1 1v2.126a4.002 4.002 0 0 1 0 7.748V18a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2.126a4.002 4.002 0 0 1 0-7.748V6a1 1 0 0 0-1-1H4Zm8 3c.054 0 .104.033.128.084l1.16 2.463 2.589.395a.145.145 0 0 1 .115.103.154.154 0 0 1-.035.154l-1.875 1.918.443 2.707a.156.156 0 0 1-.057.148.138.138 0 0 1-.15.01L12 14.704l-2.317 1.278a.136.136 0 0 1-.15-.01.155.155 0 0 1-.057-.148l.442-2.708L8.043 11.2a.156.156 0 0 1-.036-.154.146.146 0 0 1 .115-.103l2.59-.394 1.16-2.464A.144.144 0 0 1 12 8Z"
+}));
+export default ComponenticTicket;

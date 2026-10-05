@@ -1,3 +1,5 @@
+> Referência histórica da base anterior. Para a versão 2.0, siga README.md, docs/DEPLOY-V2.md e docs/REVISAO-V2.html.
+
 # Guia Completo de Desenvolvimento AEM Edge Delivery Services (EDS)
 ## Da Concepção ao Deploy, Validação de Core Web Vitals e Ajustes Contínuos
 

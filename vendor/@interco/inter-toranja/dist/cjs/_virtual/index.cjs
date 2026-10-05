@@ -1,0 +1,1 @@
+"use strict";const e=require("./_commonjsHelpers.cjs"),r=require("../node_modules/@interco/icons/dist/toranja/assets/status/ic_check_circle_fill/index.cjs");var c=r.__require();const s=e.getDefaultExportFromCjs(c);module.exports=s;

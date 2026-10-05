@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticMovies = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M23.333 9.417a1.25 1.25 0 0 0 0 2.5v-2.5Zm0 5.333a1.25 1.25 0 0 0 0 2.5v-2.5Zm0 5.333a1.25 1.25 0 0 0 0 2.5v-2.5Zm-18-10.666a1.25 1.25 0 0 0 0 2.5v-2.5Zm0 5.333a1.25 1.25 0 1 0 0 2.5v-2.5Zm0 5.333a1.25 1.25 0 0 0 0 2.5v-2.5ZM9.333 4V2.75c-.69 0-1.25.56-1.25 1.25h1.25Zm13.334 0h1.25c0-.69-.56-1.25-1.25-1.25V4Zm0 24v1.25c.69 0 1.25-.56 1.25-1.25h-1.25ZM9.333 28h-1.25c0 .69.56 1.25 1.25 1.25V28ZM6.667 5.25h18.666v-2.5H6.667v2.5ZM26.75 6.667v18.666h2.5V6.667h-2.5ZM25.333 26.75H6.667v2.5h18.666v-2.5ZM5.25 25.333V6.667h-2.5v18.666h2.5Zm1.417 1.417a1.417 1.417 0 0 1-1.417-1.417h-2.5a3.917 3.917 0 0 0 3.917 3.917v-2.5Zm20.083-1.417c0 .783-.634 1.417-1.417 1.417v2.5a3.917 3.917 0 0 0 3.917-3.917h-2.5ZM25.333 5.25c.783 0 1.417.634 1.417 1.417h2.5a3.917 3.917 0 0 0-3.917-3.917v2.5ZM6.667 2.75A3.917 3.917 0 0 0 2.75 6.667h2.5c0-.783.634-1.417 1.417-1.417v-2.5Zm20.666 6.667h-4v2.5h4v-2.5Zm0 5.333h-4v2.5h4v-2.5Zm0 5.333h-4v2.5h4v-2.5Zm-18-10.666h-4v2.5h4v-2.5Zm0 5.333h-4v2.5h4v-2.5Zm0 5.333h-4v2.5h4v-2.5Zm0-14.833h13.334v-2.5H9.333v2.5ZM21.417 4v12h2.5V4h-2.5Zm1.25 10.75H9.333v2.5h13.334v-2.5ZM10.583 16V4h-2.5v12h2.5Zm10.834 0v12h2.5V16h-2.5Zm1.25 10.75H9.333v2.5h13.334v-2.5ZM10.583 28V16h-2.5v12h2.5Z"
+}));
+export default ComponenticMovies;

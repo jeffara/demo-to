@@ -1,0 +1,19 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticMotoqueiro = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M5 19.5c-2.4-1.2-2.333-6.766-2-9.6 3.833-1.5 10.969-5.4 12.969.1C17.59 14.458 8 21 5 19.5Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#EA7100",
+  fillRule: "evenodd",
+  d: "M7.5 21.125c-1.8 0-3.375-1.125-3.375-2.25 0-.603 1.908-1.142 3.956-1.72 1.771-.499 3.647-1.029 4.481-1.655 2.25-1.688 2.25-5.625.563-7.312-.853-.854-3.432.162-5.773 1.085C5.063 10.175 3 10.987 3 9.875 3 5.375 8.062 2 12 2c3.938 0 9 1.688 9 9 0 3.201-2.155 5.539-4.767 7.157a6.436 6.436 0 0 0 2.06-1.364.999.999 0 1 1 1.414 1.414c-1.434 1.434-3.179 2.08-4.618 2.395-.723.158-1.382.236-1.902.284-.227.022-.406.036-.548.048a4.304 4.304 0 0 0-.443.047 1.003 1.003 0 0 1-1.105-.563c-1.609.484-2.957.707-3.591.707Zm4-9.125a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticMotoqueiro;

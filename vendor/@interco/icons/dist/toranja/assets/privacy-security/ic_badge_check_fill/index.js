@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticBadgeCheckFill = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M12 2c1.419 0 2.664.74 3.374 1.854a3.996 3.996 0 0 1 4.772 4.771 3.996 3.996 0 0 1 0 6.749 3.995 3.995 0 0 1-4.772 4.772 3.996 3.996 0 0 1-6.749 0 3.996 3.996 0 0 1-4.771-4.772 3.997 3.997 0 0 1-.001-6.749 3.997 3.997 0 0 1 4.772-4.771A3.996 3.996 0 0 1 12 2Zm3.707 7.293a1 1 0 0 0-1.414 0l-3.317 3.316-1.293-1.207a1 1 0 0 0-1.437 1.389l.071.073 2 1.867.077.065a1 1 0 0 0 1.313-.089l4-4a1 1 0 0 0 0-1.414Z"
+}));
+export default ComponenticBadgeCheckFill;

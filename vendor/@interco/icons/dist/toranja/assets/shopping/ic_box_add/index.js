@@ -1,0 +1,14 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticBoxAdd = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M17.645 2a3 3 0 0 1 2.787 1.886l.924 2.312A9.002 9.002 0 0 1 22 9.541V11a1 1 0 1 1-2 0V9.541c0-.18-.007-.361-.02-.541H4.02c-.013.18-.02.36-.02.541V19a1 1 0 0 0 1 1h6a1 1 0 1 1 0 2H5a3 3 0 0 1-3-3V9.541c0-1.145.218-2.28.644-3.343l.924-2.312A3 3 0 0 1 6.354 2h11.291ZM18 14a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2h-2a1 1 0 1 1 0-2h2v-2a1 1 0 0 1 1-1Zm-4-3a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2h4ZM6.354 4a1 1 0 0 0-.928.629L4.5 6.94 4.478 7H11V4H6.354ZM13 7h6.523l-.024-.059-.925-2.312A1 1 0 0 0 17.645 4H13v3Z"
+}));
+export default ComponenticBoxAdd;

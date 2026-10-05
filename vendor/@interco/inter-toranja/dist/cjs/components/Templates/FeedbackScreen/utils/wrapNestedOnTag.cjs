@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const p=(e,r,d)=>{if(!(!e&&!r))return l=>{const t=i=>{const o=l(i);return{...i,...o,ComponentProperties:{...o.ComponentProperties,value:d.value},ProductProperties:{nested_in:"FeedbackScreen",nested_label:d.title}}};r==null||r(t),e==null||e(t)}};exports.wrapNestedOnTag=p;

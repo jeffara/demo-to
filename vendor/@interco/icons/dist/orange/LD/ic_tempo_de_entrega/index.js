@@ -1,0 +1,20 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticTempoDeEntrega = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "M6.667 6.667H5.334m1.333 18.666H5.334M2.667 16H1.334m16-5.333V16l3.333 3.333"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M14.666 1.667a1 1 0 1 0 0 2v-2Zm5.334 2a1 1 0 1 0 0-2v2ZM27 16c0 5.339-4.328 9.667-9.667 9.667v2C23.777 27.667 29 22.443 29 16h-2Zm-9.667 9.667c-5.339 0-9.666-4.328-9.666-9.667h-2c0 6.443 5.223 11.667 11.666 11.667v-2ZM7.667 16a9.667 9.667 0 0 1 9.666-9.667v-2C10.89 4.333 5.667 9.557 5.667 16h2Zm9.666-9.667C22.672 6.333 27 10.661 27 16h2c0-6.443-5.224-11.667-11.667-11.667v2Zm-2.666-2.666H20v-2h-5.334v2Zm1.666-1v2.666h2V2.667h-2Z"
+}));
+export default ComponenticTempoDeEntrega;

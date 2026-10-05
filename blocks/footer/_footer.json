@@ -63,6 +63,12 @@
           "label": "Exibir Selos Regulatórios (BACEN, FDIC, NASDAQ)",
           "value": true,
           "valueType": "boolean"
+        },
+        {
+          "component": "richtext",
+          "name": "socialLinks",
+          "label": "Redes sociais",
+          "valueType": "string"
         }
       ]
     },

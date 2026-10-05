@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=require("../parse-css-variables.cjs");function r(e){return s.parseCssVariableLines(e,{prefix:"--elevation-"})}exports.parseElevations=r;

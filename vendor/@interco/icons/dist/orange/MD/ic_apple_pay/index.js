@@ -1,0 +1,21 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticApplePay = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M17.364 12.744c-.023-2.496 2.034-3.71 2.129-3.768-1.165-1.708-2.97-1.942-3.605-1.96-1.515-.16-2.987.914-3.761.914-.787 0-1.976-.897-3.256-.87-1.653.025-3.196.986-4.043 2.475-1.744 3.04-.443 7.507 1.23 9.963.839 1.204 1.816 2.548 3.098 2.5 1.25-.05 1.718-.801 3.23-.801 1.499 0 1.937.802 3.244.772 1.347-.022 2.192-1.21 3-2.424.966-1.379 1.358-2.738 1.37-2.808-.03-.008-2.608-.997-2.636-3.993Z",
+  clipRule: "evenodd"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M15.979 2c-.983.047-2.21.742-2.916 1.65-.624.801-1.185 2.11-1.04 3.342 1.103.09 2.236-.609 2.941-1.52.68-.93 1.143-2.19 1.014-3.472Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticApplePay;

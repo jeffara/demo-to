@@ -67,6 +67,23 @@
             }
           ],
           "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "baseUrlTarget",
+          "label": "URL Base com Parâmetro de Página — abrir em",
+          "valueType": "string",
+          "value": "_self",
+          "options": [
+            {
+              "name": "Mesma aba",
+              "value": "_self"
+            },
+            {
+              "name": "Nova aba",
+              "value": "_blank"
+            }
+          ]
         }
       ]
     }

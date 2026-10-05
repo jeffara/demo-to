@@ -1,0 +1,20 @@
+import { HeaderLogo } from '../constants';
+import { HeaderAvatarConfig, HeaderChipConfig, HeaderIconSlot, HeaderProps, HeaderSegmentedControlConfig } from '../types';
+type DocsHeaderSlots = {
+    title?: string;
+    onBackClick?: () => void;
+    onCloseClick?: () => void;
+    avatar?: HeaderAvatarConfig;
+    chip?: HeaderChipConfig;
+    segmentedControl?: HeaderSegmentedControlConfig;
+    logo?: `${HeaderLogo}`;
+    showStartIcon?: boolean;
+    startIcon?: HeaderIconSlot;
+    showMiddleIcon?: boolean;
+    middleIcon?: HeaderIconSlot;
+    showEndIcon?: boolean;
+    endIcon?: HeaderIconSlot;
+};
+export type DocsHeaderArgs = HeaderProps & DocsHeaderSlots;
+export declare const resolveDocsHeaderArgs: (args: DocsHeaderArgs) => HeaderProps;
+export {};

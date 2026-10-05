@@ -51,6 +51,23 @@
           "label": "Busca Instantânea ao Digitar",
           "value": true,
           "valueType": "boolean"
+        },
+        {
+          "component": "select",
+          "name": "indexEndpointTarget",
+          "label": "Endpoint do Índice de Busca — abrir em",
+          "valueType": "string",
+          "value": "_self",
+          "options": [
+            {
+              "name": "Mesma aba",
+              "value": "_self"
+            },
+            {
+              "name": "Nova aba",
+              "value": "_blank"
+            }
+          ]
         }
       ]
     }

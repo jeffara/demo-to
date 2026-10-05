@@ -1,0 +1,30 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticFlagAndorraRounded = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em"
+}, props), /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("path", {
+  fill: "#F7C342",
+  d: "M6.783 22.81A11.953 11.953 0 0 0 12 24c1.87 0 3.64-.428 5.217-1.19L18.261 12 17.217 1.19A11.953 11.953 0 0 0 12 0c-1.87 0-3.64.428-5.217 1.19L5.739 12l1.044 10.81Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M17.217 22.809A12 12 0 0 0 24 12a12 12 0 0 0-6.783-10.809V22.81Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#0E50D6",
+  d: "M6.783 22.809V1.19A12 12 0 0 0 0 12a12 12 0 0 0 6.783 10.809Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#D0352D",
+  d: "M12 16.174V12h3.13v1.565c0 .272-.521 1.269-1.81 2.087-.487.31-.992.41-1.32.522ZM8.87 8.87H12V12H8.87V8.87Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: "#F29339",
+  d: "M13.565 7.826A1.043 1.043 0 0 0 12 6.923a1.043 1.043 0 0 0-1.565.903H7.826v5.217c0 1.943 1.543 3.066 2.752 3.648A1.044 1.044 0 0 0 12 18.12a1.044 1.044 0 0 0 1.422-1.429c1.21-.582 2.752-1.705 2.752-3.648V7.826h-2.609Zm1.044 5.217c0 .272 0 1.1-1.288 1.918-.488.31-.993.512-1.321.623a6.318 6.318 0 0 1-1.32-.623c-1.289-.818-1.289-1.646-1.289-1.918V9.391h5.218v3.652Z"
+})), /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "a"
+}, /*#__PURE__*/React.createElement("path", {
+  fill: "#fff",
+  d: "M0 0H24V24H0z"
+}))));
+export default ComponenticFlagAndorraRounded;

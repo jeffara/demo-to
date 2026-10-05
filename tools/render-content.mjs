@@ -67,6 +67,7 @@ for (const [name, page] of Object.entries(pages)) {
     )
     .join("\n");
   const doc = `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(page.title)}</title><meta name="description" content="${esc(page.description || "")}"><meta name="nav" content="${["nav", "footer"].includes(name) ? "none" : "/nav"}"><meta name="footer" content="${["nav", "footer"].includes(name) ? "none" : "/footer"}"><link rel="stylesheet" href="/styles/styles.css"><script type="module" src="/scripts/scripts.js"></script></head><body><header></header><main>${main}</main><footer></footer></body></html>`;
+  fs.mkdirSync(`drafts/${name.split("/").slice(0,-1).join("/")}`, { recursive:true });
   fs.writeFileSync(`drafts/${name}.html`, doc);
   fs.writeFileSync(`drafts/${name}.plain.html`, main);
 }

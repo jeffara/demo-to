@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("react/jsx-runtime"),o=require("../../../../../Atoms/NeutralIconButton/NeutralIconButton.cjs"),a=({onOpenDatePicker:t,isDisabled:n})=>e.jsx(o.NeutralIconButton,{onClick:()=>{t()},icon:"ic_calendar","data-testid":"calendar-icon",tabIndex:0,disabled:n});exports.CalendarIcon=a;

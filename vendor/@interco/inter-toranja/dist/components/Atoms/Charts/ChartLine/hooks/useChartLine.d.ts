@@ -1,0 +1,2 @@
+import { UseChartLineParams, UseChartLineReturn } from './interface';
+export declare const useChartLine: ({ size, state, series, categories, yLabels: customYLabels, xLabelInterval, yLabelInterval, showDots, showXAxis, showYAxis, yAxisPosition, showGridLines, showLegend, showTooltip, isSelectionSticky, threshold, chartWidth: chartWidthProp, chartHeight, shouldFillHeight, valueBuilder, isSensitiveText, forceColor, palette, ariaLabel, onHighlightChange, onTag, }: UseChartLineParams) => UseChartLineReturn;

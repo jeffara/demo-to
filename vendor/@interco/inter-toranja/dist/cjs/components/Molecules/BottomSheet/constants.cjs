@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const E={COLLAPSED:1,MIDDLE:2,EXPANDED:3,HUG:4,HIDDEN:-1,VISIBLE:0},O=50,D=.2,T=1;exports.BOTTOM_TOLERANCE_PX=T;exports.CLOSE_THRESHOLD_PERCENTAGE=D;exports.DRAG_THRESHOLD=O;exports.POSITION_ORDER=E;

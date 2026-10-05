@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react"),s=({ref:e,isActive:t,onClickOutside:n})=>{o.useEffect(()=>{if(!t)return;const u=r=>{e.current&&!e.current.contains(r.target)&&n()};return document.addEventListener("mousedown",u),()=>{document.removeEventListener("mousedown",u)}},[e,t,n])};exports.useClickOutside=s;

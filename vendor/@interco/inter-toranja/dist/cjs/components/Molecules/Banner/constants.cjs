@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});var r=(e=>(e.IMAGE="image",e.WEBVIEW="webview",e))(r||{}),t=(e=>(e.LOADING="loading",e.LOADED="loaded",e.ERROR="error",e))(t||{});const a={ERROR_RELOAD:"Tente carregar novamente"};exports.BANNER_TEXT=a;exports.BANNER_VARIANT=r;exports.IMG_STATE=t;

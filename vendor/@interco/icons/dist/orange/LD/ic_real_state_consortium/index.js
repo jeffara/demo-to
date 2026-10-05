@@ -1,0 +1,23 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticRealStateConsortium = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "M26.487 10.674a5.31 5.31 0 0 0-.277-.265l-7.553-6.713a4 4 0 0 0-5.314 0L5.79 10.409m0 0a5.342 5.342 0 0 0-.277.265m.277-.265-.277.265m20.697-.265.277.265m0 0A5.333 5.333 0 0 1 28 14.395v12.272a2.667 2.667 0 0 1-2.667 2.666H6.667A2.667 2.667 0 0 1 4 26.668V14.395c0-1.395.546-2.729 1.513-3.721m20.974 0 4.18 3.993M5.513 10.674l-4.18 3.993"
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "m10.667 18.667 4 4L21.333 16"
+}));
+export default ComponenticRealStateConsortium;

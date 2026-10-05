@@ -1,3 +1,4 @@
+import { resolveLink } from "./links.js";
 import {
   decorateSections,
   decorateBlocks,
@@ -10,6 +11,7 @@ import {
 } from "./aem.js";
 export { instrument as moveInstrumentation } from "./toranja.js";
 export function decorateButtons(main) {
+  main.querySelectorAll("a[href]").forEach(a => { const href=resolveLink(a.getAttribute("href")); if(href) a.setAttribute("href",href); });
   main.querySelectorAll("p a[href]").forEach((a) => {
     const strong = a.closest("strong"),
       em = a.closest("em");

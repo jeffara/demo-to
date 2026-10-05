@@ -52,6 +52,7 @@ export default async function decorate(block) {
     const node = instrument(item.row, el("div", "nav-item")),
       a = plain(item.label, "a", "nav-link");
     a.href = href(item.link);
+    if (item.linkTarget?.textContent.trim() === "_blank") { a.target="_blank"; a.rel="noopener noreferrer"; }
     node.append(a);
     if (item.children?.querySelector("a")) {
       node.classList.add("nav-dropdown");

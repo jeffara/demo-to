@@ -1,0 +1,20 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticTeamViewer = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 72 72",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M58.768 4.232a2.5 2.5 0 0 0-3.536 3.536l3.536-3.536Zm5.464 12.536a2.5 2.5 0 0 0 3.536-3.536l-3.536 3.536Zm3.536-9a2.5 2.5 0 0 0-3.536-3.536l3.536 3.536Zm-12.536 5.464a2.5 2.5 0 0 0 3.536 3.536l-3.536-3.536ZM42 38.5a2.5 2.5 0 0 0 0-5v5ZM24 36l-1.768-1.768a2.5 2.5 0 0 0 0 3.536L24 36Zm4.232 7.768a2.5 2.5 0 0 0 3.536-3.536l-3.536 3.536Zm3.536-12a2.5 2.5 0 0 0-3.536-3.536l3.536 3.536ZM30 33.5a2.5 2.5 0 0 0 0 5v-5ZM48 36l1.768 1.768a2.5 2.5 0 0 0 0-3.536L48 36Zm-4.232-7.768a2.5 2.5 0 0 0-3.536 3.536l3.536-3.536Zm-3.536 12a2.5 2.5 0 0 0 3.536 3.536l-3.536-3.536ZM45.714 8.5a2.5 2.5 0 0 0 0-5v5ZM68.5 26.77a2.5 2.5 0 0 0-5 0h5ZM55.232 7.767l4.5 4.5 3.536-3.536-4.5-4.5-3.536 3.536Zm4.5 4.5 4.5 4.5 3.536-3.536-4.5-4.5-3.536 3.536Zm4.5-8.036-4.5 4.5 3.536 3.536 4.5-4.5-3.536-3.536Zm-4.5 4.5-4.5 4.5 3.536 3.536 4.5-4.5-3.536-3.536ZM42 33.5H24v5h18v-5Zm-19.768 4.268 6 6 3.536-3.536-6-6-3.536 3.536Zm3.536 0 6-6-3.536-3.536-6 6 3.536 3.536ZM30 38.5h18v-5H30v5Zm19.768-4.268-6-6-3.536 3.536 6 6 3.536-3.536Zm-3.536 0-6 6 3.536 3.536 6-6-3.536-3.536ZM45.714 3.5H15v5h30.714v-5ZM3.5 15v42h5V15h-5ZM15 68.5h42v-5H15v5ZM68.5 57V26.77h-5V57h5ZM57 68.5c6.351 0 11.5-5.149 11.5-11.5h-5a6.5 6.5 0 0 1-6.5 6.5v5ZM3.5 57c0 6.351 5.149 11.5 11.5 11.5v-5A6.5 6.5 0 0 1 8.5 57h-5ZM15 3.5C8.65 3.5 3.5 8.649 3.5 15h5A6.5 6.5 0 0 1 15 8.5v-5Z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: 36,
+  cy: 36,
+  r: 21.5,
+  stroke: props.color,
+  strokeWidth: 5
+}));
+export default ComponenticTeamViewer;

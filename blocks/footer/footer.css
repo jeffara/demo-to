@@ -124,3 +124,6 @@
     align-items: flex-start;
   }
 }
+
+.footer-badges-list ul { display:flex; flex-direction:column; gap:10px; margin:0; padding:0; list-style:none; }
+.footer-social-links ul { display:flex; flex-wrap:wrap; gap:20px; list-style:none; padding:0; }

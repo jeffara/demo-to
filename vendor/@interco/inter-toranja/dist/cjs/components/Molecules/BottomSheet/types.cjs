@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});var r=(e=>(e.ON="on",e.OFF="off",e))(r||{}),o=(e=>(e.ON="on",e.OFF="off",e))(o||{}),t=(e=>(e.EXPANDED="expanded",e.MIDDLE="middle",e.HUG="hug",e.COLLAPSED="collapsed",e))(t||{});exports.BOTTOM_SHEET_EXPANSIBLE=o;exports.BOTTOM_SHEET_OVERLAY=r;exports.BOTTOM_SHEET_POSITION=t;

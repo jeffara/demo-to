@@ -1,0 +1,24 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticLocationMap = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M9.366 7.133a2.633 2.633 0 1 1 5.267 0 2.633 2.633 0 0 1-5.267 0ZM12 6.5a.633.633 0 1 0 0 1.267.633.633 0 0 0 0-1.267Z",
+  clipRule: "evenodd"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M7.759 2.887C8.822 1.784 10.32 1 11.999 1c1.68 0 3.178.784 4.241 1.887C17.3 3.985 18 5.475 18 7c0 1.862-1.168 3.841-2.315 5.257a12.833 12.833 0 0 1-1.815 1.849c-.29.235-.583.441-.864.595-.251.136-.613.299-1.007.299-.393 0-.755-.163-1.005-.3a5.878 5.878 0 0 1-.865-.594 12.833 12.833 0 0 1-1.815-1.849C7.167 10.842 6 8.862 6 7c0-1.525.7-3.015 1.759-4.113Zm1.44 1.388c-.761.79-1.2 1.8-1.2 2.725 0 1.145.789 2.665 1.869 3.998.52.641 1.063 1.183 1.52 1.554a3.95 3.95 0 0 0 .611.418l.05-.026a3.95 3.95 0 0 0 .562-.392c.457-.37 1-.913 1.52-1.554 1.08-1.333 1.868-2.853 1.868-3.998 0-.925-.438-1.935-1.199-2.725C14.044 3.491 13.042 3 12 3c-1.043 0-2.045.49-2.801 1.275Z",
+  clipRule: "evenodd"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M5.552 13a1 1 0 0 0-.969.752l-1.536 6A1 1 0 0 0 4.017 21h15.98a1 1 0 0 0 .968-1.25l-1.547-6a1 1 0 0 0-.968-.75 1 1 0 1 1 0-2 3 3 0 0 1 2.905 2.251l1.547 6A3 3 0 0 1 19.997 23H4.017a3 3 0 0 1-2.907-3.744l1.536-6A3 3 0 0 1 5.552 11a1 1 0 1 1 0 2Z"
+}));
+export default ComponenticLocationMap;

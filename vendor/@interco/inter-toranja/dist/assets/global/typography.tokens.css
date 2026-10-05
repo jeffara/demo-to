@@ -1,0 +1,14 @@
+:root {
+  --type-font-default: Inter;
+  --type-font-brand: Citrina VF;
+  --type-font-code: Roboto Mono;
+  --type-weight-light: Light;
+  --type-weight-regular: Regular;
+  --type-weight-medium: Medium;
+  --type-weight-semibold: Semibold;
+  --type-letterspacing-default: 0rem;
+  --type-letterspacing-tight: -0.000625rem;
+  --type-letterspacing-tighter: -0.00125rem;
+  --type-paragraphspacing-default: 0rem;
+  --type-paragraphspacing-small: 0.5rem;
+}

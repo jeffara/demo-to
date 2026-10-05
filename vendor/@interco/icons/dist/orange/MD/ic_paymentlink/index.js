@@ -1,0 +1,30 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticPaymentlink = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M9.615 12.508a.986.986 0 0 0-1.405 0 1.014 1.014 0 0 0 0 1.422l1.405-1.422ZM10.78 4.92a1.014 1.014 0 0 0 0 1.423.986.986 0 0 0 1.406 0L10.779 4.92Zm6.054 3.847-3.696 3.74 1.406 1.422 3.696-3.74-1.406-1.422Zm-4.648-2.424 1.126-1.14-1.406-1.422-1.126 1.14 1.406 1.422Zm.952 6.163a2.47 2.47 0 0 1-3.522 0L8.21 13.93a4.442 4.442 0 0 0 6.333 0l-1.406-1.422Zm3.696-7.303a2.54 2.54 0 0 1 0 3.564l1.406 1.422a4.57 4.57 0 0 0 0-6.408l-1.406 1.422Zm1.406-1.422a4.442 4.442 0 0 0-6.334 0l1.406 1.422a2.47 2.47 0 0 1 3.522 0l1.406-1.422ZM11.607 10.493a.986.986 0 0 0 1.405 0 1.014 1.014 0 0 0 0-1.423l-1.405 1.423Zm-1.164 7.586a1.014 1.014 0 0 0 0-1.422.986.986 0 0 0-1.406 0l1.406 1.422Zm-6.054-3.847 3.696-3.74L6.679 9.07l-3.696 3.74 1.406 1.422Zm4.648 2.425-1.126 1.14 1.406 1.422 1.126-1.14-1.406-1.422Zm-4.648 1.14a2.541 2.541 0 0 1 0-3.565L2.983 12.81a4.57 4.57 0 0 0 0 6.409l1.406-1.423Zm-1.406 1.422a4.442 4.442 0 0 0 6.334 0L7.91 17.796a2.47 2.47 0 0 1-3.522 0L2.983 19.22Zm5.102-8.726a2.47 2.47 0 0 1 3.522 0l1.405-1.423a4.442 4.442 0 0 0-6.333 0l1.406 1.423Z"
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: 12.25,
+  cy: 9.73,
+  r: 1,
+  fill: props.color
+}), /*#__PURE__*/React.createElement("circle", {
+  cx: 9,
+  cy: 13.3,
+  r: 1,
+  fill: props.color
+}), /*#__PURE__*/React.createElement("path", {
+  stroke: props.color,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  strokeWidth: 2,
+  d: "M20 16h-3a1 1 0 1 0 0 2h2a1 1 0 1 1 0 2h-3M18 16v-1M18 21v-1"
+}));
+export default ComponenticPaymentlink;

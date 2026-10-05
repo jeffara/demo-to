@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("./useToranjaTheme.cjs");exports.getToranjaTheme=e.getToranjaTheme;exports.setToranjaTheme=e.setToranjaTheme;exports.useToranjaTheme=e.useToranjaTheme;

@@ -1,0 +1,496 @@
+{
+  "Alert": {
+    "variant": "information",
+    "state": "enabled",
+    "title": "Informação importante",
+    "description": "Você pode editar este aviso no Universal Editor.",
+    "showLink": true,
+    "link": {
+      "label": "Conheça os componentes",
+      "href": "/demo-toranja"
+    }
+  },
+  "Avatar": {
+    "variant": "initial",
+    "category": "person",
+    "label": "Banco Inter",
+    "color": "soft",
+    "size": "large"
+  },
+  "Accordion": {
+    "title": "Como editar este componente?",
+    "description": "Conteúdo e variantes no painel lateral",
+    "children": "<p>Selecione o bloco e altere as propriedades. O conteúdo permanece no AEM.</p>",
+    "contentVariant": "text",
+    "showDivider": true
+  },
+  "Badge": {
+    "variant": "label",
+    "count": 8
+  },
+  "Button": {
+    "label": "Conhecer o showcase",
+    "hierarchy": "primary",
+    "size": "large",
+    "variant": "default"
+  },
+  "Banner": {
+    "variant": "image",
+    "url": "/assets/demo/ede5e1c82aad.jpg",
+    "alt": "Momentos da vida",
+    "size": "medium"
+  },
+  "BottomSheet": {
+    "title": "Mais possibilidades",
+    "slot": "<p>Conteúdo editável do painel.</p>",
+    "overlay": "on",
+    "expansible": "off",
+    "position": "hug",
+    "isOpen": false
+  },
+  "BottomSheetCountry": {
+    "title": "Escolha o país",
+    "items": [
+      {
+        "value": "BR",
+        "label": "Brasil",
+        "flag": "ic_flag_brazil_rounded",
+        "dialCode": "+55"
+      },
+      {
+        "value": "US",
+        "label": "Estados Unidos",
+        "flag": "ic_flag_united_states_rounded",
+        "dialCode": "+1"
+      }
+    ],
+    "isOpen": false,
+    "showSearch": true
+  },
+  "Card": {
+    "children": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
+    "state": "enabled"
+  },
+  "Checkbox": {
+    "state": "enabled",
+    "checked": false
+  },
+  "Chip": {
+    "label": "Investimentos",
+    "variant": "default",
+    "selected": false,
+    "leadingIcon": "ic_piggy_bank"
+  },
+  "ChartBar": {
+    "categories": [
+      "Jan",
+      "Fev",
+      "Mar"
+    ],
+    "values": [
+      25,
+      50,
+      75
+    ],
+    "size": "large",
+    "ariaLabel": "Evolução ilustrativa",
+    "chartHeight": 220
+  },
+  "ChartDonut": {
+    "slice": [
+      40,
+      35,
+      25
+    ],
+    "label": [
+      "Conta",
+      "Investimentos",
+      "Outros"
+    ],
+    "showDefaultLegend": true,
+    "totalLabel": "Total",
+    "totalValue": "100%"
+  },
+  "ChartLine": {
+    "categories": [
+      "Jan",
+      "Fev",
+      "Mar"
+    ],
+    "series": [
+      {
+        "label": "Evolução",
+        "values": [
+          20,
+          45,
+          70
+        ]
+      }
+    ],
+    "size": "large",
+    "chartHeight": 220,
+    "ariaLabel": "Evolução ilustrativa"
+  },
+  "ChartMeter": {
+    "title": "Distribuição",
+    "bars": [
+      40,
+      35,
+      25
+    ],
+    "total": 100,
+    "legend": [
+      "Conta",
+      "Investimentos",
+      "Outros"
+    ],
+    "leadingValue": "100",
+    "leadingLabel": "Total"
+  },
+  "Counter": {
+    "count": 23,
+    "maxLength": 100
+  },
+  "CrossSelling": {
+    "title": "Mais possibilidades",
+    "subtitle": "Conheça os produtos",
+    "description": "Conteúdo de demonstração.",
+    "variant": "chevron",
+    "link": {
+      "label": "Ver catálogo",
+      "href": "/demo-toranja"
+    }
+  },
+  "Carousel": {
+    "items": [
+      "<h3>Conta digital</h3><p>Seu dia a dia.</p>",
+      "<h3>Investimentos</h3><p>Seus planos.</p>",
+      "<h3>Global Account</h3><p>Suas viagens.</p>"
+    ],
+    "variant": "page-view",
+    "timer": 0,
+    "pageSpacing": 16
+  },
+  "DatePicker": {
+    "selectionMode": "single",
+    "locale": "pt-BR",
+    "showControls": true,
+    "showButtons": true
+  },
+  "DecoratedText": {
+    "children": "Seu futuro começa agora.",
+    "classStyle": "Type.Body.Large.Regular",
+    "classColor": "Color.Text.Neutral.Primary",
+    "fullWidth": true
+  },
+  "Divider": {
+    "variant": "solid",
+    "orientation": "horizontal"
+  },
+  "FeedbackScreen": {
+    "variant": "custom",
+    "title": "Tudo pronto!",
+    "description": "Esta é uma demonstração de feedback.",
+    "signalVariant": "success",
+    "primaryButton": {
+      "label": "Continuar"
+    }
+  },
+  "Flag": {
+    "iconFlag": "ic_flag_brazil_rounded",
+    "contentDescription": "Brasil",
+    "size": "large"
+  },
+  "Header": {
+    "variant": "innerPages",
+    "type": "title",
+    "title": "Mundo Inter",
+    "size": "large"
+  },
+  "FloatingActionButton": {
+    "label": "Explorar",
+    "icon": "ic_add",
+    "hierarchy": "primary",
+    "size": "large"
+  },
+  "Icon": {
+    "asset": "ic_orange",
+    "contentDescription": "Toranja",
+    "size": "large"
+  },
+  "Image": {
+    "src": {
+      "local": "/assets/demo/ede5e1c82aad.jpg"
+    },
+    "contentDescription": "Momentos da vida",
+    "width": 480,
+    "height": 240,
+    "contentScale": "fill",
+    "radius": "large"
+  },
+  "IconButton": {
+    "icon": "ic_search",
+    "hierarchy": "primary",
+    "size": "large",
+    "aria-label": "Pesquisar"
+  },
+  "IconChip": {
+    "icon": "ic_heart",
+    "state": "enabled",
+    "variant": "label",
+    "showBadge": true,
+    "count": 3,
+    "selected": false
+  },
+  "InputCountry": {
+    "label": "Telefone",
+    "placeholder": "Digite seu telefone",
+    "selectedCountryValue": "BR",
+    "state": "enabled",
+    "countryItems": [
+      {
+        "value": "BR",
+        "label": "Brasil",
+        "prefix": "+55",
+        "flag": "ic_flag_brazil_rounded"
+      },
+      {
+        "value": "US",
+        "label": "Estados Unidos",
+        "prefix": "+1",
+        "flag": "ic_flag_united_states_rounded"
+      }
+    ]
+  },
+  "InputDate": {
+    "label": "Data",
+    "placeholder": "DD/MM/AAAA"
+  },
+  "InputPassword": {
+    "label": "Senha",
+    "placeholder": "Digite uma senha"
+  },
+  "InputSearch": {
+    "label": "Buscar",
+    "placeholder": "O que você procura?"
+  },
+  "InputText": {
+    "label": "Nome completo",
+    "placeholder": "Como podemos chamar você?",
+    "type": "text"
+  },
+  "InputMoney": {
+    "defaultValue": 1500,
+    "currency": "BRL",
+    "minValue": 0,
+    "maxValue": 100000,
+    "showButtons": true,
+    "fixedIncrementValue": 100,
+    "fixedDecrementValue": 100
+  },
+  "Link": {
+    "label": "Explorar todos os componentes",
+    "href": "/demo-toranja",
+    "size": "medium"
+  },
+  "ListItem": {
+    "label": "Conta digital",
+    "paragraph": "Um item da sua lista",
+    "showDivider": true
+  },
+  "ListItemControl": {
+    "label": "Receber novidades",
+    "paragraph": "Você controla suas preferências",
+    "trailingVariant": "switch",
+    "trailingProps": {
+      "checked": false
+    }
+  },
+  "ListItemGeneral": {
+    "label": "Investimentos",
+    "paragraph": "Conheça as possibilidades",
+    "trailingVariant": "tagChevron",
+    "showDivider": true,
+    "trailingProps": {
+      "label": "Ver",
+      "showChevron": true
+    }
+  },
+  "ListItemAction": {
+    "label": "Saiba mais",
+    "paragraph": "Explore o catálogo",
+    "trailingVariant": "button",
+    "trailingProps": {
+      "label": "Explorar"
+    }
+  },
+  "ListItemView": {
+    "label": "Saldo ilustrativo",
+    "valueType": "text",
+    "value": "R$ 1.500,00",
+    "orientation": "horizontal"
+  },
+  "MenuItem": {
+    "label": "Conta digital",
+    "variant": "icon",
+    "icon": "ic_wallet",
+    "size": "large"
+  },
+  "NeutralIconButton": {
+    "icon": "ic_ellipsis",
+    "size": "medium",
+    "aria-label": "Mais opções"
+  },
+  "PageIndicator": {
+    "items": 4,
+    "selected": 1
+  },
+  "PaymentMethods": {
+    "paymentMethod": "mastercard",
+    "size": "large",
+    "color": "soft"
+  },
+  "PinCode": {
+    "fields": 4,
+    "state": "enabled",
+    "type": "number",
+    "placeholder": "0",
+    "hints": [
+      "Código de demonstração"
+    ]
+  },
+  "ProgressBar": {
+    "variant": "default",
+    "progress": 60
+  },
+  "ProgressCircle": {
+    "progress": 65,
+    "size": "large",
+    "ariaLabel": "65% concluído"
+  },
+  "Radio": {
+    "children": "Escolher esta opção",
+    "state": "enabled",
+    "variant": "default",
+    "value": "opcao-1",
+    "name": "preferencia"
+  },
+  "SectionTitle": {
+    "title": "Tudo para sua vida",
+    "showDescription": true,
+    "description": "Um título de seção editável",
+    "variant": "default",
+    "showIcon": true
+  },
+  "SectionSubtitle": {
+    "subtitle": "Escolha seu próximo passo",
+    "trailingLabel": "Saiba mais"
+  },
+  "SegmentedControl": {
+    "segments": [
+      {
+        "label": "Pessoal"
+      },
+      {
+        "label": "Empresas"
+      }
+    ],
+    "state": "enabled"
+  },
+  "Select": {
+    "label": "Produto de interesse",
+    "placeholder": "Escolha uma opção"
+  },
+  "Spinner": {
+    "size": "large",
+    "ariaLabel": "Carregando demonstração"
+  },
+  "Signal": {
+    "variant": "success",
+    "state": "enabled",
+    "size": "large"
+  },
+  "Switch": {
+    "checked": false,
+    "state": "enabled"
+  },
+  "Snackbar": {
+    "variant": "success",
+    "title": "Pronto",
+    "description": "Esta é uma mensagem de demonstração.",
+    "show": false,
+    "showButtonSnackbar": true,
+    "labelButton": "Entendi"
+  },
+  "Stepper": {
+    "enableInput": true,
+    "min": 0,
+    "max": 10,
+    "step": 1,
+    "state": "enabled",
+    "hasBorder": true
+  },
+  "Tabs": {
+    "tabs": [
+      {
+        "label": "Conta",
+        "selected": true
+      },
+      {
+        "label": "Investimentos"
+      },
+      {
+        "label": "Crédito"
+      }
+    ],
+    "state": "enabled",
+    "scrollable": true
+  },
+  "Tag": {
+    "label": "Novidade",
+    "color": "brand",
+    "hierarchy": "soft",
+    "size": "large",
+    "state": "enabled"
+  },
+  "Text": {
+    "children": "Em todo momento da vida, vejo você.",
+    "textType": "body",
+    "textSize": "large",
+    "textWeight": "regular",
+    "as": "p"
+  },
+  "TextArea": {
+    "label": "Sua mensagem",
+    "placeholder": "Conte um pouco mais",
+    "showCounter": true,
+    "counter": 300
+  },
+  "Timeline": {
+    "items": [
+      {
+        "title": "Escolha",
+        "date": "Etapa 1",
+        "status": "success"
+      },
+      {
+        "title": "Personalize",
+        "date": "Etapa 2",
+        "status": "current"
+      },
+      {
+        "title": "Publique",
+        "date": "Etapa 3",
+        "status": "pending"
+      }
+    ]
+  },
+  "Widget": {
+    "title": "Seus planos",
+    "tag": "Novidade",
+    "timeAgo": "Agora",
+    "showHeader": true,
+    "children": "<p>Uma experiência completa e editável.</p>",
+    "size": "large"
+  }
+}

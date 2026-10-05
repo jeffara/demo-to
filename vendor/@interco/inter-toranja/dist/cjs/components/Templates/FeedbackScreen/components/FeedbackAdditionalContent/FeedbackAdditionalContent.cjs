@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=require("react/jsx-runtime"),a=({shouldShow:t,children:e})=>!t||!e?null:n.jsx("div",{className:"feedback-screen__additional-content","data-testid":"feedback-screen-additional-content",children:e});exports.FeedbackAdditionalContent=a;

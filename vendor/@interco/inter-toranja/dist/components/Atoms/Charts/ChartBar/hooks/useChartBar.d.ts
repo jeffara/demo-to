@@ -1,0 +1,2 @@
+import { UseChartBarParams, UseChartBarReturn } from './interface';
+export declare const useChartBar: ({ size, state, orientation, categories: categoriesProp, values: valuesProp, valueLabels: customValueLabels, xLabelInterval, yLabelInterval, showXAxis, showYAxis, yAxisPosition, showGridLines, showLegend, showTooltip, isSelectionSticky, threshold, chartWidth: chartWidthProp, chartHeight, shouldFillHeight, valueBuilder, isSensitiveText, forceColor, palette, ariaLabel, onHighlightChange, onTag, }: UseChartBarParams) => UseChartBarReturn;

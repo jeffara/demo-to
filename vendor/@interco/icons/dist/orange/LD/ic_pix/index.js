@@ -1,0 +1,17 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticPix = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 32 32",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M2.766 12.54a4.893 4.893 0 0 0 0 6.92l2.94 2.94h3.745a.429.429 0 0 0 .303-.126l4.889-4.889a2.266 2.266 0 0 1 3.204 0l4.889 4.889c.08.08.19.125.303.125h3.255l2.94-2.94a4.893 4.893 0 0 0 0-6.919l-2.94-2.94h-3.255a.429.429 0 0 0-.303.126l-4.889 4.889a2.266 2.266 0 0 1-3.204 0L9.754 9.726a.429.429 0 0 0-.303-.126H5.706l-2.94 2.94Z"
+}), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  d: "M7.788 7.518h1.663a2.51 2.51 0 0 1 1.775.736l4.89 4.888a.184.184 0 0 0 .259 0l4.889-4.888a2.51 2.51 0 0 1 1.775-.736h1.173L19.46 2.766a4.893 4.893 0 0 0-6.92 0L7.788 7.518ZM24.212 24.482h-1.173a2.511 2.511 0 0 1-1.776-.736l-4.888-4.888a.184.184 0 0 0-.26 0l-4.888 4.888c-.471.47-1.11.736-1.776.736H7.788l4.752 4.752a4.893 4.893 0 0 0 6.92 0l4.752-4.753Z"
+}));
+export default ComponenticPix;

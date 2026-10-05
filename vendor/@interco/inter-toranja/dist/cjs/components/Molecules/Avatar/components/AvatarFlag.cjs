@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("react/jsx-runtime"),s=require("../../../Atoms/Flag/Flag.cjs"),a=require("../../../../utils/pattern.cjs"),i=({flag:e,className:r})=>t.jsx("div",{className:r,"data-testid":"avatar-flag",children:t.jsx(s.Flag,{iconFlag:e,size:a.SIZE.SMALL,state:a.STATE.ENABLED})});exports.AvatarFlag=i;

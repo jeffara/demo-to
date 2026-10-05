@@ -33,6 +33,9 @@ export function serve(
       res.end();
       return;
     }
+    // Aliases locais espelham as URLs públicas. No Author, .html permanece válido.
+    if (["/index", "/index.html"].includes(url)) {res.writeHead(301,{Location:"/"+new URL(req.url,"http://localhost").search});res.end();return;}
+    if (url.endsWith(".html") && !url.endsWith(".plain.html") && !url.startsWith("/drafts/") && fs.existsSync(path.join(root,"drafts",url.slice(1)))) {res.writeHead(301,{Location:url.slice(0,-5)+new URL(req.url,"http://localhost").search});res.end();return;}
     if (url === "/") url = "/index.html";
     if (!path.extname(url)) url += ".html";
     const rel = url.slice(1);

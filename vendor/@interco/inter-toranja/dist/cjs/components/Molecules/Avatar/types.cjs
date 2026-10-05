@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});var t=(e=>(e.Icon="icon",e.Initial="initial",e.Picture="picture",e))(t||{}),s=(e=>(e.Image="image",e.Soft="soft",e.Softest="softest",e))(s||{}),i=(e=>(e.Business="business",e.Person="person",e))(i||{});exports.AvatarColor=s;exports.AvatarVariant=t;exports.InitialCategory=i;

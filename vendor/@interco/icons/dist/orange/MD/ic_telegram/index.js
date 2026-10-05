@@ -1,0 +1,16 @@
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var ComponenticTelegram = props => /*#__PURE__*/React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  width: "1em",
+  height: "1em",
+  color: props.color
+}, props), /*#__PURE__*/React.createElement("path", {
+  fill: props.color,
+  fillRule: "evenodd",
+  d: "M3.375 11.318c5.369-2.399 8.949-3.98 10.74-4.744 5.114-2.182 6.177-2.561 6.87-2.574.152-.003.493.036.713.22.186.155.238.364.262.511.025.147.055.482.031.744-.277 2.987-1.476 10.235-2.086 13.58-.259 1.416-.767 1.89-1.259 1.937-1.07.1-1.881-.725-2.917-1.422-1.621-1.09-2.537-1.768-4.11-2.831-1.818-1.23-.64-1.905.396-3.009.272-.289 4.984-4.685 5.075-5.083.011-.05.022-.236-.086-.334-.108-.098-.266-.065-.381-.038-.163.038-2.752 1.793-7.768 5.266-.735.518-1.4.77-1.997.757-.658-.015-1.923-.382-2.863-.695-1.153-.385-2.07-.588-1.99-1.241.041-.34.498-.688 1.37-1.044Z",
+  clipRule: "evenodd"
+}));
+export default ComponenticTelegram;

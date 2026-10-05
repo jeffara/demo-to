@@ -82,6 +82,16 @@ def main():
             dest = dam_root + '/' + ref.split('/assets/', 1)[1]
             assets[dest] = source
             value = value.replace(ref, dest)
+        # Referências internas devem apontar para recursos existentes no AEM; o publicador faz o mapeamento EDS.
+        def internal(url):
+            clean = url.split('#')[0].split('?')[0].removesuffix('.html').strip('/')
+            if clean in pages or url == '/':
+                suffix = url[len(url.split('#')[0].split('?')[0]):]
+                return site + '/' + (clean or 'index') + suffix
+            return url
+        if value.startswith('/') and '<' not in value and '\n' not in value:
+            value = internal(value)
+        value = re.sub(r'href=([\"\'])(/[^\"\']*)\1', lambda m: 'href='+m[1]+internal(m[2])+m[1], value)
         return value
 
     def component(parent, tag, model, properties, items=None):
@@ -98,7 +108,7 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(args.output, 'w', zipfile.ZIP_DEFLATED) as archive:
         roots = []
-        for name, page in pages.items():
+        for name, page in sorted(pages.items(), key=lambda kv: (kv[0].count('/'),kv[0])):
             page_path = site + '/' + name
             roots.append(page_path)
             doc = node('jcr:root', {'jcr:primaryType': 'cq:Page'})
@@ -119,7 +129,7 @@ def main():
                         component(s, 'text_'+str(j), 'text', {'text':item.get('text','')})
             archive.writestr('jcr_root' + page_path + '/.content.xml', xml(doc))
         if assets:
-            roots.append(dam_root)
+            roots.extend(assets.keys())
             folders = {str(Path(dest).parent) for dest in assets} | {dam_root}
             for folder in sorted(folders):
                 directory = node('jcr:root', {'jcr:primaryType':'sling:OrderedFolder'})
@@ -142,7 +152,8 @@ def main():
             archive.writestr(base+'.dir/.content.xml', xml(original))
         filter_xml = ET.Element('workspaceFilter', {'version':'1.0'})
         for root_path in roots:
-            ET.SubElement(filter_xml,'filter',{'root':root_path,'mode':'replace'})
+            mode = 'merge' if any(other != root_path and other.startswith(root_path + '/') for other in roots) else 'replace'
+            ET.SubElement(filter_xml,'filter',{'root':root_path,'mode':mode})
         archive.writestr('META-INF/vault/filter.xml',xml(filter_xml))
         props = ET.Element('properties')
         for key,val in {'group':'toranja-demo','name':config['packageName'],'version':version,'packageType':'content',

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const a=require("./useToranjaSurface.cjs");exports.getToranjaSurface=a.getToranjaSurface;exports.isToranjaSurface=a.isToranjaSurface;exports.setToranjaSurface=a.setToranjaSurface;exports.useToranjaSurface=a.useToranjaSurface;

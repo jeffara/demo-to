@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=require("react/jsx-runtime"),n=require("../../../utils/stateMapper.cjs"),a=require("../../../../../Atoms/Image/Image.cjs"),o=(e,t,r)=>e?s.jsx(a.Image,{...e,state:n.mapStateToSTATE(t),"data-testid":`${r}-image`}):null;exports.renderImage=o;

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("react"),n=e.createContext(null),o=()=>{const t=e.useContext(n);if(!t)throw new Error("useInputContext must be used within InputProvider");return t},r=n.Provider;exports.InputProvider=r;exports.useInputContext=o;
