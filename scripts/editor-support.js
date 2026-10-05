@@ -1,3 +1,4 @@
+import {applySectionLayout} from './layout.js';
 import {
   decorateBlock,
   decorateBlocks,
@@ -64,6 +65,7 @@ async function applyChanges(event) {
         await loadBlock(newBlock);
         block.remove();
         newBlock.style.display = null;
+        applySectionLayout(newBlock.closest(".section"));
         return true;
       }
     } else {

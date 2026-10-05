@@ -384,6 +384,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -7766,6 +7796,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -14010,6 +14070,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -14127,6 +14217,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -17564,6 +17684,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -17847,6 +17997,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -18098,6 +18278,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -18499,6 +18709,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -20037,6 +20277,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -20185,6 +20455,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -27307,6 +27607,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -28010,6 +28340,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -28577,6 +28937,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -29272,6 +29662,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -29952,6 +30372,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -30157,6 +30607,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -30647,6 +31127,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -30841,6 +31351,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -31507,6 +32047,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -32101,6 +32671,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -32228,6 +32828,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -33317,6 +33947,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -34842,6 +35502,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -57269,6 +57959,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -60566,6 +61286,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -63747,6 +64497,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -64259,6 +65039,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -67586,6 +68396,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -70715,6 +71555,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -71188,6 +72058,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -75125,6 +76025,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -77512,6 +78442,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -80002,6 +80962,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -82570,6 +83560,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -82885,6 +83905,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -83277,6 +84327,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -100401,6 +101481,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -115792,6 +116902,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -131393,6 +132533,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -156009,6 +157179,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -156604,6 +157804,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -159818,6 +161048,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -163151,6 +164411,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -163252,6 +164542,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -163502,6 +164822,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -163753,6 +165103,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -164391,6 +165771,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -164539,6 +165949,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -164758,6 +166198,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -167934,6 +169404,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -168155,6 +169655,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -168385,6 +169915,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -171220,6 +172780,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -171367,6 +172957,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -171528,6 +173148,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -171651,6 +173301,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -171985,6 +173665,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -172242,6 +173952,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -172369,6 +174109,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -172901,6 +174671,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -173240,6 +175040,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -173869,6 +175699,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -173969,6 +175829,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -174622,6 +176512,36 @@
           }
         ],
         "value": "basic"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -177351,41 +179271,208 @@
       {
         "component": "select",
         "name": "style",
-        "label": "Estilo",
+        "label": "Layout",
         "valueType": "string",
         "value": "",
         "options": [
           {
-            "name": "Padrão",
+            "name": "Uma coluna",
             "value": ""
+          },
+          {
+            "name": "Duas colunas · 50/50",
+            "value": "columns-2"
+          },
+          {
+            "name": "Duas colunas · 33/67",
+            "value": "columns-33-67"
+          },
+          {
+            "name": "Duas colunas · 67/33",
+            "value": "columns-67-33"
+          },
+          {
+            "name": "Duas colunas · 25/75",
+            "value": "columns-25-75"
+          },
+          {
+            "name": "Duas colunas · 75/25",
+            "value": "columns-75-25"
+          },
+          {
+            "name": "Três colunas iguais",
+            "value": "columns-3"
+          },
+          {
+            "name": "Quatro colunas iguais",
+            "value": "columns-4"
+          },
+          {
+            "name": "Hero · duas colunas",
+            "value": "hero-layout"
+          },
+          {
+            "name": "Linha de ações",
+            "value": "nav-row"
           },
           {
             "name": "Destaque",
             "value": "highlight"
           },
           {
-            "name": "Duas colunas",
-            "value": "columns-2"
-          },
-          {
-            "name": "Três colunas",
-            "value": "columns-3"
-          },
-          {
-            "name": "Quatro colunas",
-            "value": "columns-4"
-          },
-          {
-            "name": "Navegação horizontal",
-            "value": "nav-row"
-          },
-          {
-            "name": "Hero",
-            "value": "hero-layout"
-          },
-          {
             "name": "Rodapé em colunas",
             "value": "footer-columns"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "layoutMode",
+        "label": "Distribuição",
+        "valueType": "string",
+        "value": "grid",
+        "options": [
+          {
+            "name": "Grade automática",
+            "value": "grid"
+          },
+          {
+            "name": "Colunas independentes",
+            "value": "columns"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "layoutWidth",
+        "label": "Largura do conteúdo",
+        "valueType": "string",
+        "value": "standard",
+        "options": [
+          {
+            "name": "Leitura · 760px",
+            "value": "reading"
+          },
+          {
+            "name": "Padrão · 1180px",
+            "value": "standard"
+          },
+          {
+            "name": "Ampla · 1440px",
+            "value": "wide"
+          },
+          {
+            "name": "Toda a largura disponível",
+            "value": "full"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "layoutGap",
+        "label": "Espaço entre elementos",
+        "valueType": "string",
+        "value": "standard",
+        "options": [
+          {
+            "name": "Compacto · 16px",
+            "value": "compact"
+          },
+          {
+            "name": "Padrão · 24px",
+            "value": "standard"
+          },
+          {
+            "name": "Amplo · 40px",
+            "value": "large"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "layoutPadding",
+        "label": "Espaçamento vertical",
+        "valueType": "string",
+        "value": "standard",
+        "options": [
+          {
+            "name": "Sem espaço",
+            "value": "none"
+          },
+          {
+            "name": "Compacto · 24px",
+            "value": "compact"
+          },
+          {
+            "name": "Padrão · 48px",
+            "value": "standard"
+          },
+          {
+            "name": "Amplo · 80px",
+            "value": "large"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "layoutAlign",
+        "label": "Alinhamento vertical",
+        "valueType": "string",
+        "value": "start",
+        "options": [
+          {
+            "name": "Topo",
+            "value": "start"
+          },
+          {
+            "name": "Centro",
+            "value": "center"
+          },
+          {
+            "name": "Base",
+            "value": "end"
+          },
+          {
+            "name": "Mesma altura",
+            "value": "stretch"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "layoutBackground",
+        "label": "Fundo da seção",
+        "valueType": "string",
+        "value": "page",
+        "options": [
+          {
+            "name": "Página",
+            "value": "page"
+          },
+          {
+            "name": "Superfície neutra",
+            "value": "neutral"
+          },
+          {
+            "name": "Marca suave",
+            "value": "brand"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "layoutMobileOrder",
+        "label": "Ordem das colunas no mobile",
+        "valueType": "string",
+        "value": "normal",
+        "options": [
+          {
+            "name": "Primeira coluna primeiro",
+            "value": "normal"
+          },
+          {
+            "name": "Última coluna primeiro",
+            "value": "reverse"
           }
         ]
       }
@@ -177487,6 +179574,36 @@
         "name": "failureMessage",
         "label": "Mensagem de falha",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -177779,6 +179896,36 @@
           "numberMin": 1,
           "numberMax": 10
         }
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -177891,6 +180038,36 @@
         "component": "text",
         "valueType": "string",
         "value": "Conhecer"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   },
@@ -178018,6 +180195,36 @@
         "component": "text",
         "valueType": "string",
         "value": "Português"
+      },
+      {
+        "component": "select",
+        "name": "classes_layoutColumn",
+        "label": "Layout — coluna na seção",
+        "valueType": "string",
+        "value": "",
+        "description": "Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.",
+        "options": [
+          {
+            "name": "Automática",
+            "value": ""
+          },
+          {
+            "name": "Coluna 1",
+            "value": "col-1"
+          },
+          {
+            "name": "Coluna 2",
+            "value": "col-2"
+          },
+          {
+            "name": "Coluna 3",
+            "value": "col-3"
+          },
+          {
+            "name": "Coluna 4",
+            "value": "col-4"
+          }
+        ]
       }
     ]
   }

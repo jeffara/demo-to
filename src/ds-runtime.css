@@ -31,3 +31,18 @@
 
 /* DS 1.13.3: measured skeleton text can exceed a narrow EDS section. */
 .ds-official .accordion--skeleton .skeleton__description,.ds-official .accordion--skeleton .skeleton__title{min-width:0;max-width:100%;}
+
+/* Content placed in the official Card slot owns its internal spacing. */
+.ds-official .ds-card-content{padding:var(--spacing-24,24px);display:grid;gap:var(--spacing-16,16px);min-width:0;overflow-wrap:anywhere;}
+.ds-official .ds-card-content>*,.ds-official .ds-card-content :is(p,h2,h3,ul,ol){margin:0;}
+.ds-official .ds-card-content h2{font-family:var(--type-font-brand);font-size:clamp(28px,3.4vw,44px);font-weight:400;line-height:1.15;letter-spacing:-.025em;}
+.ds-official .ds-card-content h3{font-family:var(--type-font-brand);font-size:24px;font-weight:400;line-height:1.25;}
+.ds-official .ds-card-content p{font-size:16px;line-height:1.55;}
+.ds-official .ds-card-content li{margin-block:8px;}
+.site-footer-content .ds-official .ds-card-content{padding:0;gap:16px;}
+.site-footer-content .ds-official [data-testid=card-component]{background:transparent;}
+.site-footer-content .ds-official .ds-card-content h3{font-size:18px;}
+.site-footer-content .ds-official .ds-card-content p{font-size:14px;}
+.section.hero-layout .ds-official [data-testid=card-component]{background:transparent;}
+.section.hero-layout .ds-official .ds-card-content{padding:0;gap:24px;}
+@media(max-width:760px){.ds-official .ds-card-content{padding:20px;}.site-footer-content .ds-official .ds-card-content,.section.hero-layout .ds-official .ds-card-content{padding:0;}}

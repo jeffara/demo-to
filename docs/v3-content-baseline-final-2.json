@@ -258,6 +258,22 @@
       "pass": true
     },
     {
+      "name": "Nova instância Custom v3-form",
+      "pass": true
+    },
+    {
+      "name": "Nova instância Custom v3-search",
+      "pass": true
+    },
+    {
+      "name": "Nova instância Custom v3-simulator",
+      "pass": true
+    },
+    {
+      "name": "Nova instância Custom v3-video",
+      "pass": true
+    },
+    {
       "name": "Showcase V3 formulario",
       "pass": true
     },
@@ -282,11 +298,11 @@
       "pass": true
     },
     {
-      "name": "Vídeo local: mídia carregada e legendas presentes",
+      "name": "Ação de botão abre o painel configurado",
       "pass": true
     },
     {
-      "name": "Ação de botão abre o painel configurado",
+      "name": "Vídeo local: mídia carregada e legendas presentes",
       "pass": true
     },
     {

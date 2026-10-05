@@ -29,7 +29,7 @@
     {
       "name": "ds-badge",
       "pass": true,
-      "html": "<div data-testid=\"badge\" class=\"badge--label\" id=\"ds-121-control\"><span data-testid=\"text\" class=\"text type-caption-medium text--e",
+      "html": "<div data-testid=\"badge\" class=\"badge--label\" id=\"ds-51-control\"><span data-testid=\"text\" class=\"text type-caption-medium text--en",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -37,7 +37,7 @@
     {
       "name": "ds-button",
       "pass": true,
-      "html": "<button type=\"button\" class=\"btn type-label-large-bold btn__primary--default  btn--large--hug\" aria-disabled=\"false\" id=\"ds-122-co",
+      "html": "<button type=\"button\" class=\"btn type-label-large-bold btn__primary--default  btn--large--hug\" aria-disabled=\"false\" id=\"ds-52-con",
       "overflow": false,
       "controls": 1,
       "errors": []
@@ -85,7 +85,7 @@
     {
       "name": "ds-chip",
       "pass": true,
-      "html": "<div class=\"chip chip--default\" aria-busy=\"false\" role=\"button\" tabindex=\"0\" id=\"ds-128-control\" aria-disabled=\"false\"><div data-t",
+      "html": "<div class=\"chip chip--default\" aria-busy=\"false\" role=\"button\" tabindex=\"0\" id=\"ds-58-control\" aria-disabled=\"false\"><div data-te",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -125,7 +125,7 @@
     {
       "name": "ds-counter",
       "pass": true,
-      "html": "<div id=\"ds-133-control\" class=\"undefined type-label-small-regular\">23/100</div><span class=\"ds-status\" aria-live=\"polite\"></span>",
+      "html": "<div id=\"ds-63-control\" class=\"undefined type-label-small-regular\">23/100</div><span class=\"ds-status\" aria-live=\"polite\"></span>",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -149,7 +149,7 @@
     {
       "name": "ds-date-picker",
       "pass": true,
-      "html": "<div id=\"ds-136-control\" class=\"date-picker\" data-testid=\"date-picker\"><div class=\"date-picker__months\"><div class=\"date-picker__m",
+      "html": "<div id=\"ds-66-control\" class=\"date-picker\" data-testid=\"date-picker\"><div class=\"date-picker__months\"><div class=\"date-picker__mo",
       "overflow": false,
       "controls": 46,
       "errors": []
@@ -157,7 +157,7 @@
     {
       "name": "ds-decorated-text",
       "pass": true,
-      "html": "<div class=\"decorated-text type-body-large-regular decorated-text--full-width\" id=\"ds-137-control\" style=\"color: var(--color-text-",
+      "html": "<div class=\"decorated-text type-body-large-regular decorated-text--full-width\" id=\"ds-67-control\" style=\"color: var(--color-text-n",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -181,7 +181,7 @@
     {
       "name": "ds-flag",
       "pass": true,
-      "html": "<div class=\"flag\" data-flag=\"ic_flag_brazil_rounded\" data-testid=\"flag-wrapper\"><div id=\"ds-140-control\" data-testid=\"data-testid-",
+      "html": "<div class=\"flag\" data-flag=\"ic_flag_brazil_rounded\" data-testid=\"flag-wrapper\"><div id=\"ds-70-control\" data-testid=\"data-testid-d",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -205,7 +205,7 @@
     {
       "name": "ds-icon",
       "pass": true,
-      "html": "<div id=\"ds-143-control\" data-testid=\"data-testid-ds-143-control\" class=\"icon icon--large icon--enabled\" role=\"img\" data-asset=\"ic",
+      "html": "<div id=\"ds-73-control\" data-testid=\"data-testid-ds-73-control\" class=\"icon icon--large icon--enabled\" role=\"img\" data-asset=\"ic_o",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -213,7 +213,7 @@
     {
       "name": "ds-image",
       "pass": true,
-      "html": "<div id=\"ds-144-control\" class=\"image image--content-scale-fill image--radius-large\" data-testid=\"image\"><img src=\"/assets/demo/ed",
+      "html": "<div id=\"ds-74-control\" class=\"image image--content-scale-fill image--radius-large\" data-testid=\"image\"><img src=\"/assets/demo/ede",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -285,7 +285,7 @@
     {
       "name": "ds-link",
       "pass": true,
-      "html": "<a data-testid=\"link\" class=\"link type-link-medium link--default\" role=\"link\" tabindex=\"0\" href=\"/demo-toranja\" id=\"ds-153-control",
+      "html": "<a data-testid=\"link\" class=\"link type-link-medium link--default\" role=\"link\" tabindex=\"0\" href=\"/demo-toranja\" id=\"ds-83-control\"",
       "overflow": false,
       "controls": 1,
       "errors": []
@@ -325,7 +325,7 @@
     {
       "name": "ds-list-item-view",
       "pass": true,
-      "html": "<div class=\"listItemView__horizontal \" data-testid=\"listItemView\" id=\"ds-158-control\"><div class=\"listItemView__horizontal__label\"",
+      "html": "<div class=\"listItemView__horizontal \" data-testid=\"listItemView\" id=\"ds-88-control\"><div class=\"listItemView__horizontal__label\" ",
       "overflow": false,
       "controls": 0,
       "errors": []
@@ -389,7 +389,7 @@
     {
       "name": "ds-radio",
       "pass": true,
-      "html": "<div><label for=\"ds-166-control\" class=\"radio__content__option--default--enabled\"><input id=\"ds-166-control\" name=\"preferencia\" ty",
+      "html": "<div><label for=\"ds-96-control\" class=\"radio__content__option--default--enabled\"><input id=\"ds-96-control\" name=\"preferencia\" type",
       "overflow": false,
       "controls": 1,
       "errors": []
@@ -485,7 +485,7 @@
     {
       "name": "ds-text",
       "pass": true,
-      "html": "<p id=\"ds-178-control\" data-testid=\"text\" class=\"text type-body-large-regular text--enabled text--color--neutral--primary\">Em todo",
+      "html": "<p id=\"ds-108-control\" data-testid=\"text\" class=\"text type-body-large-regular text--enabled text--color--neutral--primary\">Em todo",
       "overflow": false,
       "controls": 0,
       "errors": []

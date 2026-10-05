@@ -1,3 +1,4 @@
+import {applySectionLayout} from './layout.js';
 /*
  * Copyright 2026 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -509,6 +510,7 @@ function decorateSections(main) {
       });
       sectionMeta.parentNode.remove();
     }
+    applySectionLayout(section);
   });
 }
 
@@ -603,7 +605,7 @@ function decorateBlock(block) {
  * @param {Element} main The container element
  */
 function decorateBlocks(main) {
-  main.querySelectorAll('div.section > div > div').forEach(decorateBlock);
+  main.querySelectorAll('div.section > div:not(.layout-column) > div, div.section > .layout-column > div > div').forEach(decorateBlock);
 }
 
 /**

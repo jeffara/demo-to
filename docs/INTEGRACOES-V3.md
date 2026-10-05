@@ -1,5 +1,7 @@
 # Integrações, formulário e busca
 
+Os quatro blocos funcionais estão no grupo **DS Toranja Custom**, separado do catálogo oficial. Exemplos: `/showcase/custom/formulario`, `/showcase/custom/busca`, `/showcase/custom/video` e `/showcase/custom/simulador`.
+
 ## Estado desta entrega
 
 O formulário é configurável por itens no Universal Editor: texto, e-mail, telefone, CPF, senha, área de texto, seleção, checkbox, switch, radio, stepper, valor monetário, número e data. Campos têm nome, rótulo, dica, valor inicial, obrigatoriedade, limites, regex, estado e condição de exibição. Na autoria, os campos condicionais permanecem acessíveis; no site, apenas os campos visíveis e habilitados entram no payload.

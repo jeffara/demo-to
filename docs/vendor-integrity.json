@@ -1,5 +1,5 @@
 {
-  "comparedWith": "Previously supplied V3 official vendor snapshot",
   "files": 9822,
-  "changed": []
+  "changed": [],
+  "reference": "Snapshot oficial fornecido; preservado em relação à baseline anterior"
 }

@@ -1,6 +1,6 @@
 # Implantar exclusivamente a V3 baseline
 
-Entrega técnica 3.0.1 para `jeffara/demo-to`, com 64 componentes oficiais e 4 funcionalidades V3. Este procedimento substitui código e conteúdo; não recria o site e não remove a configuração de publicação ou a conta técnica existente.
+Entrega técnica 3.1.1 para `jeffara/demo-to`, com 64 componentes oficiais, quatro blocos DS Toranja Custom e layouts editoriais nas seções. Este procedimento substitui código e conteúdo; não recria o site e não remove a configuração de publicação ou a conta técnica existente.
 
 ## 1. Guardar o estado atual
 
@@ -63,7 +63,7 @@ Se `node_modules` já estava versionado, antes do commit use `git rm -r --cached
 
 ## 4. Importar o conteúdo
 
-No Package Manager da instância existente, envie **somente o ZIP interno** `content/demo-to-content.zip`, versão 3.0.1. O ZIP externo é o projeto completo e não é um pacote AEM.
+No Package Manager da instância existente, envie **somente o ZIP interno** `content/demo-to-content.zip`, versão 3.1.1. O ZIP externo é o projeto completo e não é um pacote AEM.
 
 Antes de instalar, examine os filtros:
 
@@ -77,18 +77,18 @@ O pacote remove conteúdo antigo coberto pelo filtro, inclusive nós de componen
 
 ## 5. Conferir a autoria
 
-Reabra o Universal Editor após a atualização de código e conteúdo. O catálogo esperado contém:
+Reabra o Universal Editor após a atualização de código e conteúdo. O catálogo esperado contém (64 blocos oficiais e quatro blocos Custom):
 
 - Estrutura e conteúdo.
 - Toranja — componentes oficiais.
-- V3 — funcionalidades do site.
-- Tipos de itens V3, disponíveis nos contêineres correspondentes.
+- **DS Toranja Custom**: formulário, busca, vídeo e simulador.
+- Toranja — itens dos componentes, disponíveis nos contêineres correspondentes.
 
 Não deve existir o grupo antigo com os 31 blocos nativos. Se aparecer, confira no Network do navegador qual URL está fornecendo `component-definition.json`, `component-models.json` e `component-filters.json`. Valide organização, repo e branch e reabra a sessão; não presuma que é apenas cache.
 
-Abra `/content/demo-to/index.html`, `/content/demo-to/demo-toranja.html` e `/content/demo-to/showcase/v3.html` no Author. Valide salvar/reabrir propriedades; adicionar, reordenar e remover itens; links internos e externos; abas; formulário condicional; vídeo; menu mobile e edição de nav/footer. Os testes locais simulam eventos de edição, mas não exercitam a persistência real da sua instância.
+Abra `/content/demo-to/index.html`, `/content/demo-to/demo-toranja.html` e `/content/demo-to/showcase/v3.html` no Author. Valide salvar/reabrir propriedades; adicionar, reordenar e remover itens; links internos e externos; abas; campos oficiais; formulário Custom e campos condicionais; busca; player com legendas; simulador; menu mobile e edição de nav/footer. Os testes locais simulam eventos de edição, mas não exercitam a persistência real da sua instância.
 
-## 6. Publicar as 113 páginas
+## 6. Publicar as 119 páginas
 
 Faça Preview dos conteúdos e depois publique no destino Live, incluindo todas as páginas descendentes, `nav`, `footer` e referências de assets. Se usar Manage Publication, confira explicitamente a inclusão de filhos e referências; selecionar só a raiz não é prova de que toda a árvore foi publicada.
 
@@ -98,6 +98,7 @@ Valide:
 
 - Preview: `https://main--demo-to--jeffara.aem.page/`
 - Catálogo: `https://main--demo-to--jeffara.aem.page/demo-toranja`
+- Custom: `https://main--demo-to--jeffara.aem.page/showcase/custom`
 - Showcase: `https://main--demo-to--jeffara.aem.page/showcase/v3`
 - Live: `https://main--demo-to--jeffara.aem.live/`
 - Índice: `/query-index.json`, após a configuração e indexação real do conteúdo.
@@ -106,11 +107,13 @@ A home pública é `/`; `/index.html` não é o link canônico. O Author continu
 
 A conta técnica já adicionada deve continuar com as permissões necessárias no projeto EDS. Importar conteúdo não corrige ACLs da publicação. Se o erro de permissões persistir, confira a identidade usada pela instância e as permissões no projeto `jeffara/demo-to`.
 
+Confirme também `/showcase/layouts`: alterar proporção, coluna de cada bloco, espaçamento e ordem no mobile; salvar, reabrir e publicar.
+
 ## 7. Critério de conclusão
 
 O ambiente estará somente com a baseline quando o commit estiver ativo, o pacote tiver sido instalado sem erro, os antigos componentes tiverem desaparecido do catálogo e do conteúdo, todas as páginas esperadas estiverem publicadas e as URLs retiradas tiverem sido despublicadas. Confirme também salvar/reabrir no Universal Editor e as funcionalidades no Preview/Live.
 
-O pacote entregue não executa essas operações remotamente. Integrações produtivas permanecem desativadas até o registro dos serviços em `scripts/integration-setup.js`. O simulador é demonstrativo.
+O pacote entregue não executa essas operações remotamente. Integrações produtivas permanecem desativadas. Esta versão restaura formulário, busca, vídeo e simulador no grupo DS Toranja Custom. O envio de formulário aguarda configuração técnica; a busca depende do índice EDS; o simulador usa taxas editoriais.
 
 Para retorno, reverta o commit e restaure o backup de conteúdo/configuração que corresponde à versão anterior; depois publique novamente os caminhos afetados. Não basta reverter apenas o Git.
 

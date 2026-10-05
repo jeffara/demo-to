@@ -128,7 +128,7 @@ def main():
             for i, section in enumerate(page['sections']):
                 s = node('section_' + str(i), {'jcr:primaryType': 'nt:unstructured',
                     'sling:resourceType': 'core/franklin/components/section/v1/section', 'model': 'section',
-                    'filter': 'section', 'id': section.get('id',''), 'style': section.get('style','')}, root)
+                    'filter': 'section', **{f['name']:section.get(f['name'],f.get('value','')) for f in models['section']['fields']}}, root)
                 for j, item in enumerate(section['content']):
                     if 'block' in item:
                         component(s, item['block'].replace('-','_')+'_'+str(j), item['block'], item['properties'], item.get('items'))

@@ -48,21 +48,18 @@ const groups = [
     ),
   },
   {
-    id: "v3-features",
-    title: "V3 — funcionalidades do site",
-    components: definitions.filter(
-      (d) =>
-        !["text", "title", "image", "button", "section"].includes(d.id) &&
-        !d.plugins?.xwalk?.page?.resourceType?.endsWith("/item") && !d.id.startsWith("ds-"),
-    ),
-  },
-  {
     id: "v3-items",
-    title: "V3 — itens",
+    title: "Toranja — itens dos componentes",
     components: definitions.filter((d) => d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")),
   },
 ];
 groups.splice(1,0,{id:"toranja-official",title:"Toranja — componentes oficiais",components:definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item"))});
+groups.splice(2,0,{id:'toranja-custom',title:'DS Toranja Custom',components:definitions.filter(d=>['v3-form','v3-search','v3-video','v3-simulator'].includes(d.id))});
+// Infrastructure field: placement within section columns, not a Toranja component prop.
+for(const d of definitions.filter(d=>(d.id.startsWith('ds-')||['v3-form','v3-search','v3-video','v3-simulator'].includes(d.id))&&!d.plugins.xwalk.page.resourceType.endsWith('/item'))){
+ const m=models.find(m=>m.id===d.plugins.xwalk.page.template.model);
+ m.fields.push({component:'select',name:'classes_layoutColumn',label:'Layout — coluna na seção',valueType:'string',value:'',description:'Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.',options:[{name:'Automática',value:''},...[1,2,3,4].map(n=>({name:'Coluna '+n,value:'col-'+n}))]});
+}
 const cells = {},
   containers = {};
 for (const m of models) {

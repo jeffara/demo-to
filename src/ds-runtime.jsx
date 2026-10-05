@@ -11,7 +11,7 @@ import {normalizeProps} from '../scripts/ds-values.js';
 import {Stepper, ListItemControl, ListItemCompatibility, Select} from './ds-compat.jsx';
 const h=React.createElement;
 const allowed=new Set(['P','BR','STRONG','EM','B','I','UL','OL','LI','H2','H3','H4','H5','H6','SPAN','A','IMG','BLOCKQUOTE','DIV','TABLE','THEAD','TBODY','TR','TH','TD']);
-function rich(value,key='root') {
+function rich(value,key='root',inline=false) {
  if(React.isValidElement(value))return value;
  if(value?.$compositionGroup)return h(React.Fragment,null,...value.$compositionGroup.map((v,i)=>rich(v,key+i)));
  if(value?.$composition){const v=value,body=rich(v.body||v.value||'',key+'body');
@@ -20,7 +20,7 @@ function rich(value,key='root') {
   const button=v.href?h(DS.Link,{role:'link',href:v.href,target:v.$itemTarget||'_self',rel:'noopener noreferrer',label:v.label||'Saiba mais'}):null;
   if(v.kind==='button')return button;
   const children=h(React.Fragment,null,v.title&&h(DS.Text,{as:'h3',textType:'heading'},v.title),v.src&&h(DS.Image,{src:{local:v.src},contentDescription:v.alt||''}),body,button);
-  return v.kind==='card'?h(DS.Card,{state:'enabled'},children):children;
+  return v.kind==='card'?h(DS.Card,{state:'enabled'},h('div',{className:'ds-card-content'},children)):children;
  }
 
  if(typeof value!=='string')return value==null?null:String(value);
@@ -29,6 +29,7 @@ function rich(value,key='root') {
  const convert=(n,i)=>{
   if(n.nodeType===3)return n.textContent;
   if(n.nodeType!==1||!allowed.has(n.tagName))return null;
+  if(inline&&['P','DIV','H2','H3','H4','H5','H6','UL','OL','LI','BLOCKQUOTE'].includes(n.tagName))return h(React.Fragment,{key:key+'-'+i},i>0&&h('br'),...[...n.childNodes].map(convert));
   const attrs={key:key+'-'+i};
   if(n.tagName==='A'){const url=n.getAttribute('href')||'';if(/^(https?:|mailto:|tel:|\/|#)/.test(url)&&!url.startsWith('//'))attrs.href=url;}
   if(n.tagName==='IMG'){const src=n.getAttribute('src')||'';if(/^(https?:|\/)/.test(src)&&!src.startsWith('//'))attrs.src=src;attrs.alt=n.getAttribute('alt')||'';}
@@ -93,7 +94,7 @@ function App({schema,initial,host,options}) {
    return value;
  }
  for(const d of schema.descriptors)if(['array','json'].includes(d.kind)&&at(p,d.path)!==undefined)put(p,d.path,bind(at(p,d.path),d,d.path));
- for(const d of schema.descriptors){if(d.kind==='slot'&&at(p,d.path)!==undefined){const v=at(p,d.path);put(p,d.path,d.name==='IconSvg'?()=>rich(v):rich(v));}}
+ for(const d of schema.descriptors){if(d.kind==='slot'&&at(p,d.path)!==undefined){const v=at(p,d.path);put(p,d.path,d.name==='IconSvg'?()=>rich(v):rich(v,'root',schema.name==='Text'&&d.name==='children'));}}
  for(const event of schema.events){if((event.kind==='event'||event.name==='close')&&(event.path.length===1||at(p,event.path.slice(0,-1))!=null))put(p,event.path,makeHandler(event.path));}
  for(const collection of schema.collections||[]){const values=at(p,collection.path);if(!Array.isArray(values))continue;put(p,collection.path,values.map((item,index)=>{
   if(collection.primitive)return item;
@@ -121,6 +122,7 @@ function App({schema,initial,host,options}) {
   for(const key of ['minDate','maxDate','visibleMonth'])if(typeof p[key]==='string')p[key]=new Date(p[key]+'T12:00:00');
   for(const key of ['value','defaultValue'])if(typeof p[key]==='string')p[key]=new Date(p[key]+'T12:00:00');
  }
+ if(schema.name==='Card')p.children=h('div',{className:'ds-card-content'},p.children);
  if(schema.name==='Link')p.role='link';
  if(schema.name==='Link'&&options.editing)p.onClick=e=>e.preventDefault();
  if(props.$actionLink&&schema.name==='Link'){p.href=options.resolveLink(props.$actionLink);p.target=props.$actionTarget||'_self';if(p.target==='_blank')p.rel='noopener noreferrer';}
@@ -145,5 +147,5 @@ class Boundary extends React.Component {
  render(){return this.state.error?h('p',{role:'alert'},'Não foi possível exibir este componente. Revise as propriedades.'):this.props.children;}
 }
 export function mount(host,schema,props,options){const root=createRoot(host);root.render(h(Boundary,{host},h(App,{schema,initial:props,host,options})));return()=>root.unmount();}
+export {mountMenuButton,mountSearch,mountSimulator} from './site-features.jsx';
 export {mountForm} from './ds-form.jsx';
-export {mountSearch,mountSimulator,mountMenuButton} from './site-features.jsx';

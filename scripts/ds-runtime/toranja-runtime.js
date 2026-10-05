@@ -25059,9 +25059,199 @@ function U9({ options: e = [], onChange: t, onClick: n, ...r }) {
 	});
 }
 //#endregion
+//#region scripts/search-index.js
+var W9 = _(), G9 = /* @__PURE__ */ new Map(), K9 = (e) => String(e || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
+async function Oee(e = L9.searchIndex, t) {
+	let n = new URL(e, location.href).href, r = G9.get(n);
+	if (r && Date.now() - r.time < 3e5) return r.data;
+	let i = /* @__PURE__ */ new Map(), a = 0;
+	for (let e = 0; e < 100; e++) {
+		let e = new URL(n);
+		a && (e.searchParams.set("offset", a), e.searchParams.set("limit", "500"));
+		let r = await fetch(e, { signal: t });
+		if (!r.ok) throw Error("Índice indisponível");
+		let o = await r.json(), s = o.data || [], c = i.size;
+		for (let e of s) e.path && i.set(e.path, e);
+		let l = (Number(o.offset) || a) + s.length;
+		if (!s.length || i.size === c || !o.total || l >= Number(o.total)) break;
+		a = l;
+	}
+	let o = [...i.values()];
+	return G9.set(n, {
+		time: Date.now(),
+		data: o
+	}), o;
+}
+function kee(e, t, { root: n = "/", limit: r = 8 } = {}) {
+	let i = K9(t).trim().split(/\s+/).filter(Boolean);
+	return i.length ? e.filter((e) => {
+		let t = String(e.path || "");
+		return !t.startsWith(n) || /noindex/i.test(e.robots || "") ? !1 : !L9.searchExclude.some((e) => t === e || t.startsWith(e + "/"));
+	}).map((e) => ({
+		...e,
+		score: i.reduce((t, n) => t + (K9(e.title).includes(n) ? 5 : 0) + (K9(e.description).includes(n) ? 2 : 0), 0)
+	})).filter((e) => i.every((t) => K9([
+		e.title,
+		e.description,
+		e.body
+	].join(" ")).includes(t))).sort((e, t) => t.score - e.score || String(e.title).localeCompare(String(t.title), "pt-BR")).slice(0, Math.max(1, Math.min(50, Number(r) || 8))) : [];
+}
+//#endregion
+//#region src/site-features.jsx
+function Aee({ config: e }) {
+	let [t, n] = (0, x.useState)(""), [r, i] = (0, x.useState)([]), [a, o] = (0, x.useState)(""), s = (0, x.useRef)(0), c = (0, x.useRef)();
+	(0, x.useEffect)(() => () => {
+		s.current++, c.current?.abort();
+	}, []);
+	let l = async () => {
+		let n = ++s.current;
+		if (c.current?.abort(), c.current = new AbortController(), t.trim().length < Number(e.minChars || 2)) {
+			i([]), o("Digite pelo menos " + (e.minChars || 2) + " caracteres.");
+			return;
+		}
+		o("Buscando…");
+		try {
+			let r = await Oee(e.indexEndpoint || "/query-index.json", c.current.signal);
+			if (n !== s.current) return;
+			let a = kee(r, t, {
+				root: e.searchRoot || "/",
+				limit: Number(e.maxResults || 8)
+			});
+			i(a), o(a.length ? a.length + " resultados encontrados." : "Nenhum resultado encontrado.");
+		} catch (e) {
+			e.name !== "AbortError" && n === s.current && (i([]), o("Busca indisponível no momento. Tente novamente."));
+		}
+	};
+	return (0, x.useEffect)(() => {
+		if (s.current++, i([]), o(""), !e.instantSearch || !t.trim()) return;
+		let n = setTimeout(l, 250);
+		return () => clearTimeout(n);
+	}, [t]), /* @__PURE__ */ (0, C.jsxs)("form", {
+		className: "v3-search-form",
+		onSubmit: (e) => {
+			e.preventDefault(), l();
+		},
+		children: [
+			/* @__PURE__ */ (0, C.jsx)(GQ, {
+				id: e.id,
+				label: e.label || "Buscar no site",
+				placeholder: e.placeholder || "Digite sua busca",
+				value: t,
+				onChange: (e) => n(e?.target?.value ?? e),
+				onDebouncedChange: () => {},
+				state: "enabled"
+			}),
+			/* @__PURE__ */ (0, C.jsxs)("div", {
+				className: "v3-actions",
+				children: [/* @__PURE__ */ (0, C.jsx)(KY, {
+					type: "submit",
+					label: "Buscar"
+				}), /* @__PURE__ */ (0, C.jsx)(KY, {
+					type: "button",
+					label: "Limpar",
+					hierarchy: "secondary",
+					onClick: () => {
+						s.current++, n(""), i([]), o("");
+					}
+				})]
+			}),
+			/* @__PURE__ */ (0, C.jsx)("p", {
+				role: "status",
+				children: a
+			}),
+			/* @__PURE__ */ (0, C.jsx)("ul", {
+				className: "v3-search-results",
+				children: r.map((e) => /* @__PURE__ */ (0, C.jsxs)("li", { children: [/* @__PURE__ */ (0, C.jsx)(K, {
+					label: e.title || e.path,
+					href: R9(e.path),
+					role: "link"
+				}), /* @__PURE__ */ (0, C.jsx)(G, { children: e.description || "" })] }, e.path))
+			})
+		]
+	});
+}
+function jee({ config: e }) {
+	let t = Math.max(0, Number(e.minValue) || 0), n = Math.max(t, Number(e.maxValue) || 1e5), [r, i] = (0, x.useState)(Math.max(t, Math.min(n, Number(e.defaultValue) || t))), a = Math.max(0, Number(e.annualRate) || 0) / 100, o = Math.max(0, Number(e.referenceRate) || 0) / 100, s = (e) => e.toLocaleString("pt-BR", {
+		style: "currency",
+		currency: "BRL"
+	});
+	return /* @__PURE__ */ (0, C.jsxs)("div", {
+		className: "v3-simulator-panel",
+		children: [
+			/* @__PURE__ */ (0, C.jsx)(G, {
+				as: "h2",
+				textType: "heading",
+				children: e.title
+			}),
+			/* @__PURE__ */ (0, C.jsx)(G, { children: e.subtitle }),
+			/* @__PURE__ */ (0, C.jsx)(k7, {
+				label: "Valor da simulação",
+				defaultValue: r,
+				currency: "BRL",
+				minValue: t,
+				maxValue: n,
+				onChange: (e) => i(Math.max(t, Math.min(n, Number(e) || t)))
+			}),
+			/* @__PURE__ */ (0, C.jsxs)("div", {
+				className: "v3-simulation-results",
+				"aria-live": "polite",
+				children: [/* @__PURE__ */ (0, C.jsx)(m0, { children: /* @__PURE__ */ (0, C.jsxs)("div", {
+					className: "ds-card-content",
+					children: [/* @__PURE__ */ (0, C.jsx)(G, { children: e.resultLabel || "Cenário configurado · 1 ano" }), /* @__PURE__ */ (0, C.jsx)(G, {
+						as: "strong",
+						children: s(r * (1 + a))
+					})]
+				}) }), /* @__PURE__ */ (0, C.jsx)(m0, { children: /* @__PURE__ */ (0, C.jsxs)("div", {
+					className: "ds-card-content",
+					children: [/* @__PURE__ */ (0, C.jsx)(G, { children: e.referenceLabel || "Referência configurada · 1 ano" }), /* @__PURE__ */ (0, C.jsx)(G, {
+						as: "strong",
+						children: s(r * (1 + o))
+					})]
+				}) })]
+			}),
+			/* @__PURE__ */ (0, C.jsx)(G, {
+				textSize: "small",
+				children: e.disclaimer || "Simulação ilustrativa, sem impostos. As taxas são parâmetros editoriais e não representam uma oferta."
+			}),
+			e.cta && /* @__PURE__ */ (0, C.jsx)(K, {
+				role: "link",
+				label: e.ctaText || "Saiba mais",
+				href: R9(e.cta)
+			})
+		]
+	});
+}
+function Mee({ nav: e }) {
+	let [t, n] = (0, x.useState)(!1), r = (0, x.useRef)();
+	return (0, x.useEffect)(() => {
+		e.dataset.open = String(t);
+	}, [t]), (0, x.useEffect)(() => {
+		let t = (e) => {
+			e.key === "Escape" && (n(!1), r.current?.querySelector("button")?.focus());
+		}, i = (e) => {
+			e.target.closest("a") && n(!1);
+		};
+		return document.addEventListener("keydown", t), e.addEventListener("click", i), () => {
+			document.removeEventListener("keydown", t), e.removeEventListener("click", i);
+		};
+	}, []), /* @__PURE__ */ (0, C.jsx)("div", {
+		ref: r,
+		children: /* @__PURE__ */ (0, C.jsx)(k1, {
+			icon: t ? "ic_close" : "ic_menu",
+			onClick: () => n((e) => !e),
+			"aria-label": t ? "Fechar menu" : "Abrir menu",
+			"aria-expanded": t,
+			"aria-controls": e.id
+		})
+	});
+}
+var q9 = (e, t) => {
+	let n = (0, S.createRoot)(e);
+	return (0, W9.flushSync)(() => n.render(t)), () => n.unmount();
+}, Nee = (e, t) => q9(e, /* @__PURE__ */ (0, C.jsx)(Aee, { config: t })), Pee = (e, t) => q9(e, /* @__PURE__ */ (0, C.jsx)(jee, { config: t })), Fee = (e, t) => q9(e, /* @__PURE__ */ (0, C.jsx)(Mee, { nav: t }));
+//#endregion
 //#region src/ds-form.jsx
-var W9 = _();
-function Oee(e) {
+function Iee(e) {
 	let t = String(e || "").replace(/\D/g, "");
 	if (t.length !== 11 || /^(\d)\1+$/.test(t)) return !1;
 	for (let e = 9; e < 11; e++) {
@@ -25071,13 +25261,13 @@ function Oee(e) {
 	}
 	return !0;
 }
-var G9 = (e) => e.kind === "checkbox" || e.kind === "switch" ? e.defaultValue === !0 || e.defaultValue === "true" : e.defaultValue ?? "", K9 = (e, t) => !e.showWhenField || (e.showWhenOperator === "notEquals" ? String(t[e.showWhenField]) !== e.showWhenValue : String(t[e.showWhenField]) === e.showWhenValue);
-function kee(e, t) {
+var J9 = (e) => e.kind === "checkbox" || e.kind === "switch" ? e.defaultValue === !0 || e.defaultValue === "true" : e.defaultValue ?? "", Y9 = (e, t) => !e.showWhenField || (e.showWhenOperator === "notEquals" ? String(t[e.showWhenField]) !== e.showWhenValue : String(t[e.showWhenField]) === e.showWhenValue);
+function Lee(e, t) {
 	if (e.required && (t === "" || t == null || t === !1)) return e.errorMessage || "Preencha este campo.";
 	if (t === "" || t == null || t === !1) return "";
 	let n = String(t);
 	if (e.kind === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(n)) return "Informe um e-mail válido.";
-	if (e.kind === "cpf" && !Oee(n)) return "Informe um CPF válido.";
+	if (e.kind === "cpf" && !Iee(n)) return "Informe um CPF válido.";
 	if (e.minLength && n.length < Number(e.minLength)) return "Use pelo menos " + e.minLength + " caracteres.";
 	if (e.maxLength && n.length > Number(e.maxLength)) return "Use no máximo " + e.maxLength + " caracteres.";
 	if (e.pattern) try {
@@ -25095,7 +25285,7 @@ function kee(e, t) {
 	}
 	return "";
 }
-function Aee(e) {
+function Ree(e) {
 	let t = new DOMParser().parseFromString(e || "", "text/html"), n = (e, t) => {
 		if (e.nodeType === 3) return e.textContent;
 		if (e.nodeType !== 1) return null;
@@ -25117,8 +25307,8 @@ function Aee(e) {
 	};
 	return [...t.body.childNodes].map(n);
 }
-function jee({ config: e, host: t }) {
-	let n = e.fields, r = () => Object.fromEntries(n.map((e) => [e.fieldName, G9(e)])), [i, a] = (0, x.useState)(r), [o, s] = (0, x.useState)({}), [c, l] = (0, x.useState)(""), [u, d] = (0, x.useState)(!1), [f, p] = (0, x.useState)(0), m = (0, x.useRef)();
+function zee({ config: e, host: t }) {
+	let n = e.fields, r = () => Object.fromEntries(n.map((e) => [e.fieldName, J9(e)])), [i, a] = (0, x.useState)(r), [o, s] = (0, x.useState)({}), [c, l] = (0, x.useState)(""), [u, d] = (0, x.useState)(!1), [f, p] = (0, x.useState)(0), m = (0, x.useRef)();
 	(0, x.useEffect)(() => () => m.current?.abort(), []);
 	let h = n.some((e, t) => !e.fieldName || n.findIndex((t) => t.fieldName === e.fieldName) !== t), g = (n, r) => {
 		let i = r?.target ? r.target.type === "checkbox" ? r.target.checked : r.target.value : r;
@@ -25150,7 +25340,7 @@ function jee({ config: e, host: t }) {
 				l("Revise os nomes dos campos: precisam ser preenchidos e únicos.");
 				return;
 			}
-			let c = n.filter((e) => K9(e, i) && !e.disabled), f = Object.fromEntries(c.map((e) => [e.fieldName, kee(e, i[e.fieldName])]).filter(([, e]) => e));
+			let c = n.filter((e) => Y9(e, i) && !e.disabled), f = Object.fromEntries(c.map((e) => [e.fieldName, Lee(e, i[e.fieldName])]).filter(([, e]) => e));
 			if (e.consent && !i.consent && (f.consent = "Aceite o consentimento para continuar."), s(f), Object.keys(f).length) {
 				l("Revise os campos indicados."), requestAnimationFrame(() => t.querySelector("[data-invalid=\"true\"] input,[data-invalid=\"true\"] textarea,[data-invalid=\"true\"] [tabindex=\"0\"]")?.focus());
 				return;
@@ -25189,7 +25379,7 @@ function jee({ config: e, host: t }) {
 			/* @__PURE__ */ (0, C.jsx)("div", {
 				className: "form-grid",
 				children: n.map((t, n) => {
-					if (!e.editing && !K9(t, i)) return null;
+					if (!e.editing && !Y9(t, i)) return null;
 					let r = e.id + "-field-" + n, a = o[t.fieldName], s = t.instrumentation || {}, c = {
 						id: r,
 						name: t.fieldName,
@@ -25199,7 +25389,7 @@ function jee({ config: e, host: t }) {
 						disabled: t.disabled,
 						readOnly: t.readOnly,
 						value: i[t.fieldName],
-						defaultValue: G9(t),
+						defaultValue: J9(t),
 						required: t.required,
 						"aria-label": t.label,
 						"aria-describedby": r + "-message",
@@ -25285,7 +25475,7 @@ function jee({ config: e, host: t }) {
 						})),
 						required: !0
 					}),
-					/* @__PURE__ */ (0, C.jsx)("span", { children: Aee(e.consentHTML || e.consent) }),
+					/* @__PURE__ */ (0, C.jsx)("span", { children: Ree(e.consentHTML || e.consent) }),
 					/* @__PURE__ */ (0, C.jsx)("span", {
 						role: "alert",
 						children: o.consent
@@ -25307,198 +25497,16 @@ function jee({ config: e, host: t }) {
 		]
 	});
 }
-function Mee(e, t) {
+function Bee(e, t) {
 	let n = (0, S.createRoot)(e);
-	return (0, W9.flushSync)(() => n.render(/* @__PURE__ */ (0, C.jsx)(jee, {
+	return (0, W9.flushSync)(() => n.render(/* @__PURE__ */ (0, C.jsx)(zee, {
 		config: t,
 		host: e
 	}))), () => n.unmount();
 }
 //#endregion
-//#region scripts/search-index.js
-var q9 = /* @__PURE__ */ new Map(), J9 = (e) => String(e || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
-async function Nee(e = L9.searchIndex, t) {
-	let n = new URL(e, location.href).href, r = q9.get(n);
-	if (r && Date.now() - r.time < 3e5) return r.data;
-	let i = /* @__PURE__ */ new Map(), a = 0;
-	for (let e = 0; e < 100; e++) {
-		let e = new URL(n);
-		a && (e.searchParams.set("offset", a), e.searchParams.set("limit", "500"));
-		let r = await fetch(e, { signal: t });
-		if (!r.ok) throw Error("Índice indisponível");
-		let o = await r.json(), s = o.data || [], c = i.size;
-		for (let e of s) e.path && i.set(e.path, e);
-		let l = (Number(o.offset) || a) + s.length;
-		if (!s.length || i.size === c || !o.total || l >= Number(o.total)) break;
-		a = l;
-	}
-	let o = [...i.values()];
-	return q9.set(n, {
-		time: Date.now(),
-		data: o
-	}), o;
-}
-function Pee(e, t, { root: n = "/", limit: r = 8 } = {}) {
-	let i = J9(t).trim().split(/\s+/).filter(Boolean);
-	return i.length ? e.filter((e) => {
-		let t = String(e.path || "");
-		return !t.startsWith(n) || /noindex/i.test(e.robots || "") ? !1 : !L9.searchExclude.some((e) => t === e || t.startsWith(e + "/"));
-	}).map((e) => ({
-		...e,
-		score: i.reduce((t, n) => t + (J9(e.title).includes(n) ? 5 : 0) + (J9(e.description).includes(n) ? 2 : 0), 0)
-	})).filter((e) => i.every((t) => J9([
-		e.title,
-		e.description,
-		e.body
-	].join(" ")).includes(t))).sort((e, t) => t.score - e.score || String(e.title).localeCompare(String(t.title), "pt-BR")).slice(0, Math.max(1, Math.min(50, Number(r) || 8))) : [];
-}
-//#endregion
-//#region src/site-features.jsx
-function Fee({ config: e }) {
-	let [t, n] = (0, x.useState)(""), [r, i] = (0, x.useState)([]), [a, o] = (0, x.useState)(""), s = (0, x.useRef)(0), c = (0, x.useRef)();
-	(0, x.useEffect)(() => () => {
-		s.current++, c.current?.abort();
-	}, []);
-	let l = async () => {
-		let n = ++s.current;
-		if (c.current?.abort(), c.current = new AbortController(), t.trim().length < Number(e.minChars || 2)) {
-			i([]), o("Digite pelo menos " + (e.minChars || 2) + " caracteres.");
-			return;
-		}
-		o("Buscando…");
-		try {
-			let r = await Nee(e.indexEndpoint || "/query-index.json", c.current.signal);
-			if (n !== s.current) return;
-			let a = Pee(r, t, {
-				root: e.searchRoot || "/",
-				limit: Number(e.maxResults || 8)
-			});
-			i(a), o(a.length ? a.length + " resultados encontrados." : "Nenhum resultado encontrado.");
-		} catch (e) {
-			e.name !== "AbortError" && n === s.current && (i([]), o("Busca indisponível no momento. Tente novamente."));
-		}
-	};
-	return (0, x.useEffect)(() => {
-		if (s.current++, i([]), o(""), !e.instantSearch || !t.trim()) return;
-		let n = setTimeout(l, 250);
-		return () => clearTimeout(n);
-	}, [t]), /* @__PURE__ */ (0, C.jsxs)("form", {
-		className: "v3-search-form",
-		onSubmit: (e) => {
-			e.preventDefault(), l();
-		},
-		children: [
-			/* @__PURE__ */ (0, C.jsx)(GQ, {
-				id: e.id,
-				label: e.label || "Buscar no site",
-				placeholder: e.placeholder || "Digite sua busca",
-				value: t,
-				onChange: (e) => n(e?.target?.value ?? e),
-				onDebouncedChange: () => {},
-				state: "enabled"
-			}),
-			/* @__PURE__ */ (0, C.jsxs)("div", {
-				className: "v3-actions",
-				children: [/* @__PURE__ */ (0, C.jsx)(KY, {
-					type: "submit",
-					label: "Buscar"
-				}), /* @__PURE__ */ (0, C.jsx)(KY, {
-					type: "button",
-					label: "Limpar",
-					hierarchy: "secondary",
-					onClick: () => {
-						s.current++, n(""), i([]), o("");
-					}
-				})]
-			}),
-			/* @__PURE__ */ (0, C.jsx)("p", {
-				role: "status",
-				children: a
-			}),
-			/* @__PURE__ */ (0, C.jsx)("ul", {
-				className: "v3-search-results",
-				children: r.map((e) => /* @__PURE__ */ (0, C.jsxs)("li", { children: [/* @__PURE__ */ (0, C.jsx)(K, {
-					label: e.title || e.path,
-					href: R9(e.path),
-					role: "link"
-				}), /* @__PURE__ */ (0, C.jsx)(G, { children: e.description || "" })] }, e.path))
-			})
-		]
-	});
-}
-function Iee({ config: e }) {
-	let t = Math.max(0, Number(e.minValue) || 0), n = Math.max(t, Number(e.maxValue) || 1e5), [r, i] = (0, x.useState)(Math.max(t, Math.min(n, Number(e.defaultValue) || t))), a = Math.max(0, Number(e.annualRate) || 0) / 100, o = Math.max(0, Number(e.referenceRate) || 0) / 100, s = (e) => e.toLocaleString("pt-BR", {
-		style: "currency",
-		currency: "BRL"
-	});
-	return /* @__PURE__ */ (0, C.jsxs)("div", {
-		className: "v3-simulator-panel",
-		children: [
-			/* @__PURE__ */ (0, C.jsx)(G, {
-				as: "h2",
-				textType: "heading",
-				children: e.title
-			}),
-			/* @__PURE__ */ (0, C.jsx)(G, { children: e.subtitle }),
-			/* @__PURE__ */ (0, C.jsx)(k7, {
-				label: "Valor da simulação",
-				defaultValue: r,
-				currency: "BRL",
-				minValue: t,
-				maxValue: n,
-				onChange: (e) => i(Math.max(t, Math.min(n, Number(e) || t)))
-			}),
-			/* @__PURE__ */ (0, C.jsxs)("div", {
-				className: "v3-simulation-results",
-				"aria-live": "polite",
-				children: [/* @__PURE__ */ (0, C.jsxs)(m0, { children: [/* @__PURE__ */ (0, C.jsx)(G, { children: e.resultLabel || "Cenário configurado · 1 ano" }), /* @__PURE__ */ (0, C.jsx)(G, {
-					as: "strong",
-					children: s(r * (1 + a))
-				})] }), /* @__PURE__ */ (0, C.jsxs)(m0, { children: [/* @__PURE__ */ (0, C.jsx)(G, { children: e.referenceLabel || "Referência configurada · 1 ano" }), /* @__PURE__ */ (0, C.jsx)(G, {
-					as: "strong",
-					children: s(r * (1 + o))
-				})] })]
-			}),
-			/* @__PURE__ */ (0, C.jsx)(G, {
-				textSize: "small",
-				children: e.disclaimer || "Simulação ilustrativa, sem impostos. As taxas são parâmetros editoriais e não representam uma oferta."
-			}),
-			e.cta && /* @__PURE__ */ (0, C.jsx)(K, {
-				role: "link",
-				label: e.ctaText || "Saiba mais",
-				href: R9(e.cta)
-			})
-		]
-	});
-}
-function Lee({ nav: e }) {
-	let [t, n] = (0, x.useState)(!1), r = (0, x.useRef)();
-	return (0, x.useEffect)(() => {
-		e.dataset.open = String(t);
-	}, [t]), (0, x.useEffect)(() => {
-		let t = (e) => {
-			e.key === "Escape" && (n(!1), r.current?.querySelector("button")?.focus());
-		}, i = (e) => {
-			e.target.closest("a") && n(!1);
-		};
-		return document.addEventListener("keydown", t), e.addEventListener("click", i), () => {
-			document.removeEventListener("keydown", t), e.removeEventListener("click", i);
-		};
-	}, []), /* @__PURE__ */ (0, C.jsx)("div", {
-		ref: r,
-		children: /* @__PURE__ */ (0, C.jsx)(k1, {
-			icon: t ? "ic_close" : "ic_menu",
-			onClick: () => n((e) => !e),
-			"aria-label": t ? "Fechar menu" : "Abrir menu",
-			"aria-expanded": t,
-			"aria-controls": e.id
-		})
-	});
-}
-var Y9 = (e, t) => {
-	let n = (0, S.createRoot)(e);
-	return (0, W9.flushSync)(() => n.render(t)), () => n.unmount();
-}, Ree = (e, t) => Y9(e, /* @__PURE__ */ (0, C.jsx)(Fee, { config: t })), zee = (e, t) => Y9(e, /* @__PURE__ */ (0, C.jsx)(Iee, { config: t })), Bee = (e, t) => Y9(e, /* @__PURE__ */ (0, C.jsx)(Lee, { nav: t })), X9 = x.createElement, Vee = /* @__PURE__ */ new Set([
+//#region src/ds-runtime.jsx
+var X9 = x.createElement, Vee = /* @__PURE__ */ new Set([
 	"P",
 	"BR",
 	"STRONG",
@@ -25525,7 +25533,7 @@ var Y9 = (e, t) => {
 	"TH",
 	"TD"
 ]);
-function Z9(e, t = "root") {
+function Z9(e, t = "root", n = !1) {
 	if (x.isValidElement(e)) return e;
 	if (e?.$compositionGroup) return X9(x.Fragment, null, ...e.$compositionGroup.map((e, n) => Z9(e, t + n)));
 	if (e?.$composition) {
@@ -25550,7 +25558,7 @@ function Z9(e, t = "root") {
 			src: { local: n.src },
 			contentDescription: n.alt || ""
 		}), r, i);
-		return n.kind === "card" ? X9(m0, { state: "enabled" }, a) : a;
+		return n.kind === "card" ? X9(m0, { state: "enabled" }, X9("div", { className: "ds-card-content" }, a)) : a;
 	}
 	if (typeof e != "string") return e == null ? null : String(e);
 	if (/^ic_/.test(e)) return X9(Z, {
@@ -25558,21 +25566,34 @@ function Z9(e, t = "root") {
 		size: "medium",
 		contentDescription: ""
 	});
-	let n = new DOMParser().parseFromString(e, "text/html"), r = (e, n) => {
+	let r = new DOMParser().parseFromString(e, "text/html"), i = (e, r) => {
 		if (e.nodeType === 3) return e.textContent;
 		if (e.nodeType !== 1 || !Vee.has(e.tagName)) return null;
-		let i = { key: t + "-" + n };
+		if (n && [
+			"P",
+			"DIV",
+			"H2",
+			"H3",
+			"H4",
+			"H5",
+			"H6",
+			"UL",
+			"OL",
+			"LI",
+			"BLOCKQUOTE"
+		].includes(e.tagName)) return X9(x.Fragment, { key: t + "-" + r }, r > 0 && X9("br"), ...[...e.childNodes].map(i));
+		let a = { key: t + "-" + r };
 		if (e.tagName === "A") {
 			let t = e.getAttribute("href") || "";
-			/^(https?:|mailto:|tel:|\/|#)/.test(t) && !t.startsWith("//") && (i.href = t);
+			/^(https?:|mailto:|tel:|\/|#)/.test(t) && !t.startsWith("//") && (a.href = t);
 		}
 		if (e.tagName === "IMG") {
 			let t = e.getAttribute("src") || "";
-			/^(https?:|\/)/.test(t) && !t.startsWith("//") && (i.src = t), i.alt = e.getAttribute("alt") || "";
+			/^(https?:|\/)/.test(t) && !t.startsWith("//") && (a.src = t), a.alt = e.getAttribute("alt") || "";
 		}
-		return X9(e.tagName.toLowerCase(), i, ...[...e.childNodes].map(r));
+		return X9(e.tagName.toLowerCase(), a, ...[...e.childNodes].map(i));
 	};
-	return X9(x.Fragment, null, ...[...n.body.childNodes].map(r));
+	return X9(x.Fragment, null, ...[...r.body.childNodes].map(i));
 }
 function Q9(e, t) {
 	return t.reduce((e, t) => e?.[t], e);
@@ -25729,8 +25750,8 @@ function Hee({ schema: e, initial: t, host: n, options: r }) {
 	}
 	for (let t of e.descriptors) ["array", "json"].includes(t.kind) && Q9(m, t.path) !== void 0 && $9(m, t.path, h(Q9(m, t.path), t, t.path));
 	for (let t of e.descriptors) if (t.kind === "slot" && Q9(m, t.path) !== void 0) {
-		let e = Q9(m, t.path);
-		$9(m, t.path, t.name === "IconSvg" ? () => Z9(e) : Z9(e));
+		let n = Q9(m, t.path);
+		$9(m, t.path, t.name === "IconSvg" ? () => Z9(n) : Z9(n, "root", e.name === "Text" && t.name === "children"));
 	}
 	for (let t of e.events) (t.kind === "event" || t.name === "close") && (t.path.length === 1 || Q9(m, t.path.slice(0, -1)) != null) && $9(m, t.path, p(t.path));
 	for (let t of e.collections || []) {
@@ -25789,7 +25810,7 @@ function Hee({ schema: e, initial: t, host: n, options: r }) {
 		]) typeof m[e] == "string" && (m[e] = /* @__PURE__ */ new Date(m[e] + "T12:00:00"));
 		for (let e of ["value", "defaultValue"]) typeof m[e] == "string" && (m[e] = /* @__PURE__ */ new Date(m[e] + "T12:00:00"));
 	}
-	return e.name === "Link" && (m.role = "link"), e.name === "Link" && r.editing && (m.onClick = (e) => e.preventDefault()), i.$actionLink && e.name === "Link" && (m.href = r.resolveLink(i.$actionLink), m.target = i.$actionTarget || "_self", m.target === "_blank" && (m.rel = "noopener noreferrer")), e.name === "Link" && ["disabled", "skeleton"].includes(m.state) && (m.href = void 0, m["aria-disabled"] = !0, m.tabIndex = -1, m.onClick = (e) => e.preventDefault()), e.name === "Tag" && typeof m.icon == "string" && (m.icon = Z9(m.icon)), e.name === "Select" && (m.options = i.$options || [], m.onChange = p(["onChange"])), e.name === "FloatingActionButton" && n.closest(".block")?.classList.toggle("fab-inline", i.$placement === "inline"), u === "ready" ? e.name === "ChartBar" && !m.values.length || e.name === "ChartMeter" && !m.bars.length ? X9("p", { className: "ds-empty" }, "Nenhum dado. Adicione itens a este gráfico.") : [
+	return e.name === "Card" && (m.children = X9("div", { className: "ds-card-content" }, m.children)), e.name === "Link" && (m.role = "link"), e.name === "Link" && r.editing && (m.onClick = (e) => e.preventDefault()), i.$actionLink && e.name === "Link" && (m.href = r.resolveLink(i.$actionLink), m.target = i.$actionTarget || "_self", m.target === "_blank" && (m.rel = "noopener noreferrer")), e.name === "Link" && ["disabled", "skeleton"].includes(m.state) && (m.href = void 0, m["aria-disabled"] = !0, m.tabIndex = -1, m.onClick = (e) => e.preventDefault()), e.name === "Tag" && typeof m.icon == "string" && (m.icon = Z9(m.icon)), e.name === "Select" && (m.options = i.$options || [], m.onChange = p(["onChange"])), e.name === "FloatingActionButton" && n.closest(".block")?.classList.toggle("fab-inline", i.$placement === "inline"), u === "ready" ? e.name === "ChartBar" && !m.values.length || e.name === "ChartMeter" && !m.bars.length ? X9("p", { className: "ds-empty" }, "Nenhum dado. Adicione itens a este gráfico.") : [
 		"Tabs",
 		"Carousel",
 		"SegmentedControl",
@@ -25843,4 +25864,4 @@ function Wee(e, t, n, r) {
 	}))), () => i.unmount();
 }
 //#endregion
-export { Wee as mount, Mee as mountForm, Bee as mountMenuButton, Ree as mountSearch, zee as mountSimulator };
+export { Wee as mount, Bee as mountForm, Fee as mountMenuButton, Nee as mountSearch, Pee as mountSimulator };

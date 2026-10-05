@@ -2325,7 +2325,14 @@
     "section": [
       "name",
       "id",
-      "style"
+      "style",
+      "layoutMode",
+      "layoutWidth",
+      "layoutGap",
+      "layoutPadding",
+      "layoutAlign",
+      "layoutBackground",
+      "layoutMobileOrder"
     ],
     "v3-form": [
       "schemaVersion",

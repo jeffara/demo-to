@@ -64,7 +64,7 @@ for (const [name, page] of Object.entries(pages)) {
   const main = page.sections
     .map(
       (s) =>
-        `<div${s.id ? ` id="${esc(s.id)}"` : ""}>${s.content.map((c) => (c.block ? blockHTML(c) : c.text || "")).join("\n")}${s.style ? `<div class="section-metadata"><div><div>style</div><div>${esc(s.style)}</div></div></div>` : ""}</div>`,
+        `<div${s.id ? ` id="${esc(s.id)}"` : ""}>${s.content.map((c) => (c.block ? blockHTML(c) : c.text || "")).join("\n")}${Object.entries(s).filter(([k,v])=>!["id","content"].includes(k)&&v).length ? `<div class="section-metadata">${Object.entries(s).filter(([k,v])=>!["id","content"].includes(k)&&v).map(([k,v])=>`<div><div>${esc(k.replace(/[A-Z]/g,c=>"-"+c.toLowerCase()))}</div><div>${esc(v)}</div></div>`).join("")}</div>` : ""}</div>`,
     )
     .join("\n");
   const doc = `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(page.title)}</title><meta name="description" content="${esc(page.description || "")}"><meta name="nav" content="${["nav", "footer"].includes(name) ? "none" : "/nav"}"><meta name="footer" content="${["nav", "footer"].includes(name) ? "none" : "/footer"}"><link rel="stylesheet" href="/styles/styles.css"><script type="module" src="/scripts/scripts.js"></script></head><body><header></header><main>${main}</main><footer></footer></body></html>`;

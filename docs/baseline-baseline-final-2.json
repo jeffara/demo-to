@@ -3,7 +3,7 @@
   "scope": "Baseline local; no authenticated AEM installation",
   "tests": [
     {
-      "name": "Catálogo exclusivo: 64 oficiais + 4 funcionalidades V3",
+      "name": "Catálogo: 64 oficiais + DS Toranja Custom",
       "pass": true
     },
     {
@@ -456,6 +456,30 @@
     },
     {
       "name": "Página politica-de-privacidade",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/layouts",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/formulario",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/busca",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/video",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/simulador",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom",
       "pass": true
     },
     {

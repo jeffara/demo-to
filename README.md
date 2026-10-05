@@ -1,31 +1,31 @@
-# Toranja EDS — V3 baseline
+# Toranja EDS — V3 final (3.1.1)
 
-Baseline exclusiva do projeto XWalk para AEM Author, Universal Editor e Edge Delivery Services. Versão técnica **3.0.1**; referência **@interco/inter-toranja 1.13.3**, fornecida no pacote oficial. Conteúdo em `/content/demo-to`.
+Projeto XWalk para AEM Author + Universal Editor + Edge Delivery Services, em `/content/demo-to`. Referência: **@interco/inter-toranja 1.13.3**, fornecida pelo usuário.
 
-## Conteúdo desta entrega
+## Escopo exato
 
-- **64/64 componentes públicos oficiais**, no grupo “Toranja — componentes oficiais”.
-- **751 propriedades próprias classificadas**, entre campos editoriais, coleções, ações e contratos técnicos. Funções React e referências técnicas não são código livre no editor.
-- **4 funcionalidades V3**: formulário configurável, busca, vídeo responsivo e simulador demonstrativo.
-- **113 páginas**, incluindo home, demo-toranja, exemplos individuais, composições, destinos, nav, footer e showcase V3.
-- **31 implementações antigas removidas**. Seus 67 usos nas páginas foram migrados; navegação e rodapé agora usam composições de componentes oficiais.
-- Pacote de reimportação `content/demo-to-content.zip`, com 113 páginas e 11 assets.
+O catálogo possui **64/64 componentes oficiais** e quatro blocos funcionais no grupo **DS Toranja Custom**. Seção, texto padrão e os tipos de item são infraestrutura de autoria XWalk; não são apresentados como componentes adicionais do Toranja.
 
-Comece por **`docs/DEPLOY-V3-BASELINE.md`**. O relatório está em `docs/AUDITORIA-V3-BASELINE.html`; os contratos e testes reproduzíveis também estão no projeto.
+- 751 propriedades próprias classificadas em campos, coleções, ações e contratos técnicos.
+- 101 modelos e 2.273 campos, incluindo itens e propriedades de layout.
+- 119 páginas, incluindo exemplos individuais dos 64 componentes e as galerias `/showcase/layouts` e `/showcase/custom`.
+- Conteúdo importável em `content/demo-to-content.zip`: 119 páginas e 11 assets.
+- Home, navegação do catálogo, composições, formulários demonstrativos e layouts reorganizados.
+- Snapshot oficial do vendor preservado; adaptadores ficam fora dele.
 
-**A instalação do pacote substitui os descendentes de `/content/demo-to`, inclusive removendo páginas que não existem nesta baseline. Faça backup antes da instalação.** A configuração `jcr:content` da raiz, `/conf`, outros sites e assets alheios ao pacote não fazem parte dessa substituição.
+**DS Toranja Custom:** `v3-form` (formulário configurável), `v3-search` (busca no índice público EDS), `v3-video` (player responsivo) e `v3-simulator` (simulação local com taxas editoriais). São funcionalidades próprias do projeto, separadas dos 64 exports oficiais. Galeria em `/showcase/custom` e exemplos em `/showcase/custom/formulario`, `/showcase/custom/busca`, `/showcase/custom/video` e `/showcase/custom/simulador`.
 
-A cobertura 64/64 significa que todos os exports públicos do snapshot estão representados. Não equivale a testar todas as combinações de propriedades ou certificar a persistência no Universal Editor remoto. Os testes são locais; importação, permissões, publicação e edição na instância precisam de homologação.
+O formulário está preparado para integração posterior, sem endpoint produtivo ativado. A busca depende de `/query-index.json` configurado e atualizado no EDS. O player aceita MP4/WebM e YouTube. O simulador usa parâmetros editoriais ilustrativos. Consulte `docs/INTEGRACOES-V3.md`.
 
-## Arquitetura
+O conteúdo da Jornada é uma composição de componentes oficiais, sem reintrodução do bloco customizado `moments-journey`.
 
-O EDS entrega HTML, blocos, modelos XWalk e recursos estáticos. Os blocos `ds-*` montam os componentes React oficiais em ilhas; não há SPA ou roteador React. Formulário, busca, simulador e menu também reutilizam controles oficiais. O vídeo usa mídia HTML nativa ou incorporação YouTube. Layouts de seção e estilos auxiliares usam os tokens oficiais.
+## Layout e autoria
 
-O snapshot em `vendor/` não foi modificado. `src/` contém os adaptadores e `scripts/ds-runtime/` contém o runtime compilado. `.hlxignore` exclui fontes e ferramentas da entrega pelo Code Bus. O DS inclui adaptações de integração e correções externas ao vendor; elas não são o catálogo antigo.
+Selecione uma **Section** no Universal Editor para configurar layout, largura, espaçamento, alinhamento, fundo e ordem no mobile. Consulte `docs/AUTORIA-LAYOUTS.md` e visite `/showcase/layouts`.
 
-`nav` e `footer` são páginas compartilhadas editáveis, compostas de blocos oficiais e carregadas por `scripts/site-shell.js`. Não existem blocos antigos `header`/`footer` no catálogo.
+No modo **Colunas independentes**, selecione cada componente e use **Layout — coluna na seção**. É possível colocar vários componentes na mesma coluna. A estrutura do repositório continua plana: seção → blocos. Agrupamentos de colunas são apenas apresentação no navegador.
 
-## Desenvolvimento
+## Começar
 
 Requisitos: Node 22.12+, Python 3 e Git.
 
@@ -34,37 +34,33 @@ npm ci
 npm run preview
 ```
 
-Abra `http://127.0.0.1:4173/` ou `/demo-toranja`.
+Abra `http://127.0.0.1:4173/`, `/demo-toranja`, `/composicoes` e `/showcase/layouts`.
 
 ```bash
 npm run build
-npm run export:aem
 npm run check
+npm run export:aem
+python3 tools/audit-package.py
+python3 tests/baseline-package.py
 ```
 
-`content/pages.json` é a fonte dos exemplos entregues. `build:content` regenera os showcases V3 e as fixtures de `drafts/`; a exportação produz o ZIP interno para o Package Manager. O conteúdo posteriormente editado no AEM fica no AEM: antes de reimportar, preserve alterações editoriais que deseja manter.
-
-Para executar as duas rodadas de testes de navegador:
+Para executar as duas rodadas de testes:
 
 ```bash
 npx playwright install chromium
 npm test
 ```
 
-É possível definir `PLAYWRIGHT_CHROMIUM_EXECUTABLE` para usar um Chromium existente. `npm test` reconstrói o projeto e o conteúdo antes das duas rodadas.
+Use `PLAYWRIGHT_CHROMIUM_EXECUTABLE` se quiser indicar um Chromium existente. `content/pages.json` é a fonte dos exemplos entregues; o build não sobrescreve esse conteúdo com versões anteriores. Os utilitários `curate-showcases.mjs` e `polish-catalog.mjs` registram a curadoria inicial e não fazem parte do build cotidiano.
 
-## Pontos de configuração
+## Entrega
 
-| Arquivo | Finalidade |
-|---|---|
-| `fstab.yaml` | Mountpoint do Author atual |
-| `config/public-paths.json` | Referência de mapeamento da configuração EDS; não se aplica automaticamente por Git |
-| `content/aem-config.json` | Raiz e nome do pacote de conteúdo |
-| `scripts/site-config.js` | Raiz usada pelos links e busca |
-| `helix-query.yaml` | Definição do índice de busca |
-| `scripts/integration-setup.js` | Registro posterior dos serviços |
-| `component-definition.json`, `component-models.json`, `component-filters.json` | Catálogo gerado do Universal Editor |
+Leia **`docs/DEPLOY-V3-FINAL.md`**. As evidências estão em `docs/AUDITORIA-V3-FINAL.html`. Não recrie o site. Sincronize o clone com `tools/sync-baseline.py`, revise as exclusões, faça commit/push, importe o ZIP interno e publique conteúdo, nav, footer e referências.
 
-Na entrega EDS, os links usam `/` e rotas sem `.html`. No Author, as URLs de edição continuam com `.html`. As verificações locais de rotas não são prova de configuração remota do site.
+**Faça backup antes da importação:** o pacote substitui os descendentes de `/content/demo-to`, removendo páginas ausentes da entrega e alterações editoriais anteriores. Preserva `jcr:content` da raiz e não inclui `/conf` nos filtros. O pacote não despublica automaticamente URLs antigas.
 
-Nenhum endpoint produtivo, analytics ou envio real de formulário foi ativado. Veja `docs/INTEGRACOES-V3.md`.
+`fstab.yaml`, configuração EDS remota, permissões e conta técnica precisam corresponder ao ambiente. `config/public-paths.json` é apenas referência, não aplica configuração remota via Git.
+
+A home EDS usa `/`; `.html` permanece nas URLs de edição do Author. O código entrega ilhas React do pacote oficial dentro de blocos EDS; não é uma SPA.
+
+**Limite da evidência:** cobertura 64/64 é cobertura dos exports do snapshot fornecido, não de versões futuras nem de todas as combinações de propriedades. A validação entregue é local. Persistência real no Universal Editor, instalação FileVault, permissões e publicação precisam ser homologadas no AEM.

@@ -1,15 +1,15 @@
 {
   "name": "aem-eds-inter-toranja",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "private": true,
   "type": "module",
-  "description": "Baseline V3 exclusiva: 64 componentes oficiais Toranja e funcionalidades EDS",
+  "description": "Toranja EDS V3: 64 componentes oficiais, DS Toranja Custom e layouts editoriais",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
     "build:json": "node tools/build-json.mjs",
-    "build:content": "node tools/showcase-v3.mjs && node tools/normalize-content.mjs && node tools/render-content.mjs",
+    "build:content": "node tools/normalize-content.mjs && node tools/render-content.mjs",
     "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:runtime",
     "preview": "npm run build && node tools/serve.mjs",
     "check": "node tests/contracts.mjs",

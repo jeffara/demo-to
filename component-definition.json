@@ -1374,8 +1374,8 @@
       ]
     },
     {
-      "id": "v3-features",
-      "title": "V3 — funcionalidades do site",
+      "id": "toranja-custom",
+      "title": "DS Toranja Custom",
       "components": [
         {
           "title": "Formulário configurável",
@@ -1455,7 +1455,7 @@
     },
     {
       "id": "v3-items",
-      "title": "V3 — itens",
+      "title": "Toranja — itens dos componentes",
       "components": [
         {
           "id": "ds-bottom-sheet-country-item",
