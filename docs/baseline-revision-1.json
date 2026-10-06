@@ -1,0 +1,506 @@
+{
+  "width": 1280,
+  "scope": "Baseline local; no authenticated AEM installation",
+  "tests": [
+    {
+      "name": "Catálogo: 64 oficiais + DS Toranja Custom",
+      "pass": true
+    },
+    {
+      "name": "Página index",
+      "pass": true
+    },
+    {
+      "name": "Página demo-toranja",
+      "pass": true
+    },
+    {
+      "name": "Página nav",
+      "pass": true
+    },
+    {
+      "name": "Página footer",
+      "pass": true
+    },
+    {
+      "name": "Página composicoes",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/alert",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/avatar",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/accordion",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/badge",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/button",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/banner",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/bottom-sheet",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/bottom-sheet-country",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/card",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/checkbox",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/chip",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/chart-bar",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/chart-donut",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/chart-line",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/chart-meter",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/counter",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/cross-selling",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/carousel",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/date-picker",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/decorated-text",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/divider",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/feedback-screen",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/flag",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/header",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/floating-action-button",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/icon",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/image",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/icon-button",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/icon-chip",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/input-country",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/input-date",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/input-password",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/input-search",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/input-text",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/input-money",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/link",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/list-item",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/list-item-control",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/list-item-general",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/list-item-action",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/list-item-view",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/menu-item",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/neutral-icon-button",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/page-indicator",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/payment-methods",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/pin-code",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/progress-bar",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/progress-circle",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/radio",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/section-title",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/section-subtitle",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/segmented-control",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/select",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/spinner",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/signal",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/switch",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/snackbar",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/stepper",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/tabs",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/tag",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/text",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/text-area",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/timeline",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/widget",
+      "pass": true
+    },
+    {
+      "name": "Página abra-sua-conta",
+      "pass": true
+    },
+    {
+      "name": "Página ajuda",
+      "pass": true
+    },
+    {
+      "name": "Página app",
+      "pass": true
+    },
+    {
+      "name": "Página carreiras",
+      "pass": true
+    },
+    {
+      "name": "Página cartoes",
+      "pass": true
+    },
+    {
+      "name": "Página conta",
+      "pass": true
+    },
+    {
+      "name": "Página conta-digital",
+      "pass": true
+    },
+    {
+      "name": "Página credito",
+      "pass": true
+    },
+    {
+      "name": "Página empresas/cambio",
+      "pass": true
+    },
+    {
+      "name": "Página empresas/conta-pj",
+      "pass": true
+    },
+    {
+      "name": "Página empresas/credito",
+      "pass": true
+    },
+    {
+      "name": "Página empresas/folha",
+      "pass": true
+    },
+    {
+      "name": "Página empresas/maquininha",
+      "pass": true
+    },
+    {
+      "name": "Página global",
+      "pass": true
+    },
+    {
+      "name": "Página global-account",
+      "pass": true
+    },
+    {
+      "name": "Página imprensa",
+      "pass": true
+    },
+    {
+      "name": "Página inter-loop",
+      "pass": true
+    },
+    {
+      "name": "Página inter-shop",
+      "pass": true
+    },
+    {
+      "name": "Página investimentos",
+      "pass": true
+    },
+    {
+      "name": "Página loop",
+      "pass": true
+    },
+    {
+      "name": "Página ouvidoria",
+      "pass": true
+    },
+    {
+      "name": "Página pj",
+      "pass": true
+    },
+    {
+      "name": "Página pra-voce",
+      "pass": true
+    },
+    {
+      "name": "Página ri",
+      "pass": true
+    },
+    {
+      "name": "Página segmentos/one",
+      "pass": true
+    },
+    {
+      "name": "Página segmentos/prime",
+      "pass": true
+    },
+    {
+      "name": "Página segmentos/win",
+      "pass": true
+    },
+    {
+      "name": "Página seguranca",
+      "pass": true
+    },
+    {
+      "name": "Página sobre",
+      "pass": true
+    },
+    {
+      "name": "Página sustentabilidade",
+      "pass": true
+    },
+    {
+      "name": "Página telefones",
+      "pass": true
+    },
+    {
+      "name": "Página termos",
+      "pass": true
+    },
+    {
+      "name": "Página win",
+      "pass": true
+    },
+    {
+      "name": "Página showcase",
+      "pass": true
+    },
+    {
+      "name": "Página empresas",
+      "pass": true
+    },
+    {
+      "name": "Página segmentos",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/v3",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/v3/formulario",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/v3/controles",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/v3/composicao",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/v3/dados",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/v3/acoes",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/v3/video",
+      "pass": true
+    },
+    {
+      "name": "Página politica-de-privacidade",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/layouts",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/formulario",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/busca",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/video",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom/simulador",
+      "pass": true
+    },
+    {
+      "name": "Página showcase/custom",
+      "pass": true
+    },
+    {
+      "name": "Abas oficiais preservam painéis migrados",
+      "pass": true
+    },
+    {
+      "name": "Busca V3 usa índice e exibe resultados",
+      "pass": true
+    },
+    {
+      "name": "Simulador V3 atualiza o cenário com controle oficial",
+      "pass": true
+    },
+    {
+      "name": "Form V3 mantém todos os itens selecionáveis na autoria",
+      "pass": true
+    },
+    {
+      "name": "Menu mobile abre e fecha por teclado",
+      "pass": true
+    }
+  ]
+}

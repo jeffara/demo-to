@@ -1,0 +1,9 @@
+{
+  "scope": "Mapeamento estático, incluindo campos aninhados e coleções. Não é homologação de todas as combinações de propriedades.",
+  "descriptors": 1971,
+  "enumFields": 689,
+  "enumValues": 35096,
+  "missingFields": [],
+  "missingEnumOptions": [],
+  "pass": true
+}

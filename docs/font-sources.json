@@ -1,0 +1,32 @@
+[
+  {
+    "file": "fonts/inter-latin-ext.woff2",
+    "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2",
+    "bytes": 85068,
+    "sha256": "34b9c504cab7a73e37b746343a449132e56cf7b5481af2cb81dc74dcff25c956"
+  },
+  {
+    "file": "fonts/inter-latin.woff2",
+    "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+    "bytes": 48256,
+    "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+  },
+  {
+    "file": "fonts/roboto-mono-latin-ext.woff2",
+    "url": "https://fonts.gstatic.com/s/robotomono/v31/L0x5DF4xlVMF-BfR8bXMIjhFq3-OXg.woff2",
+    "bytes": 22916,
+    "sha256": "4cc0d52e0fa37c28084e0cbce3589a8ab32dd21e6ea619489c5f7c6e8c43b922"
+  },
+  {
+    "file": "fonts/roboto-mono-latin.woff2",
+    "url": "https://fonts.gstatic.com/s/robotomono/v31/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2",
+    "bytes": 32796,
+    "sha256": "b81cd55177300649be8f95b3b747d721ce607e8ed2856e25bd0c630cfd631faf"
+  },
+  {
+    "file": "fonts/citrina-regular.woff2",
+    "url": "https://static.bancointer.com.br/fonts/Citrina-Regular.woff2",
+    "bytes": 30116,
+    "sha256": "9b143779d5fbfc1dcffc843a5bfa8f2ade646ecec60edf2734b4ed7eed65e771"
+  }
+]

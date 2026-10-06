@@ -1,6 +1,6 @@
 {
   "name": "aem-eds-inter-toranja",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "private": true,
   "type": "module",
   "description": "Toranja EDS V3: 64 componentes oficiais, DS Toranja Custom e layouts editoriais",
@@ -13,7 +13,7 @@
     "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:runtime",
     "preview": "npm run build && node tools/serve.mjs",
     "check": "node tests/contracts.mjs",
-    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && python3 tests/baseline-package.py && node tools/validate-v3.mjs",
+    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && python3 tests/baseline-package.py && python3 tests/property-models.py && node tools/validate-v3.mjs",
     "export:aem": "python3 tools/export-aem.py",
     "inventory:ds": "node tools/inventory-ds.mjs",
     "build:ds-models": "node tools/build-ds.mjs",

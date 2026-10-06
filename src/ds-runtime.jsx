@@ -8,6 +8,7 @@ import './ds-runtime.css';
 import {runAction, tagPayload} from '../scripts/actions.js';
 import {runIntegration} from '../scripts/integrations.js';
 import {normalizeProps} from '../scripts/ds-values.js';
+import {anchorNativeDatePicker} from './native-date-anchor.js';
 import {Stepper, ListItemControl, ListItemCompatibility, Select} from './ds-compat.jsx';
 const h=React.createElement;
 const allowed=new Set(['P','BR','STRONG','EM','B','I','UL','OL','LI','H2','H3','H4','H5','H6','SPAN','A','IMG','BLOCKQUOTE','DIV','TABLE','THEAD','TBODY','TR','TH','TD']);
@@ -146,6 +147,6 @@ class Boundary extends React.Component {
  componentDidCatch(error){(this.props.host.closest('.block')||this.props.host).dataset.dsError=error.message;}
  render(){return this.state.error?h('p',{role:'alert'},'Não foi possível exibir este componente. Revise as propriedades.'):this.props.children;}
 }
-export function mount(host,schema,props,options){const root=createRoot(host);root.render(h(Boundary,{host},h(App,{schema,initial:props,host,options})));return()=>root.unmount();}
+export function mount(host,schema,props,options){const root=createRoot(host);const disposeDateAnchor=anchorNativeDatePicker(host);root.render(h(Boundary,{host},h(App,{schema,initial:props,host,options})));return()=>{disposeDateAnchor();root.unmount();};}
 export {mountMenuButton,mountSearch,mountSimulator} from './site-features.jsx';
 export {mountForm} from './ds-form.jsx';

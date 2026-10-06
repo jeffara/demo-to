@@ -5,7 +5,7 @@ import argparse,hashlib,shutil,json
 p=argparse.ArgumentParser(description=__doc__);p.add_argument('--target',type=Path,required=True);p.add_argument('--apply',action='store_true');args=p.parse_args();source=Path(__file__).resolve().parents[1];target=args.target.resolve()
 if target==source or source in target.parents or target in source.parents:p.error('O clone de destino deve estar fora da pasta extraída da baseline.')
 if not (target/'.git').exists():p.error('Destino precisa ser um clone existente com .git.')
-managed=['blocks','scripts','styles','models','src','tools','tests','docs','drafts','content','assets','icons'];skip={'node_modules','.git','__pycache__'}
+managed=['blocks','scripts','styles','fonts','models','src','tools','tests','docs','drafts','content','assets','icons'];skip={'node_modules','.git','__pycache__'}
 preserve={'fstab.yaml','.hlxignore','.gitignore'};obsoleteRoot=['config/paths-legacy.json','GUIA-DESENVOLVIMENTO-EDS.md','RUNBOOK-TORANJA-EDS.md','authoring-guide.md','index.html','demo-toranja.html','header.html','footer.html'];delete=[];copy=[]
 for directory in managed:
  base=target/directory

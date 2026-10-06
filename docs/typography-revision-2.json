@@ -1,0 +1,121 @@
+{
+  "scope": "Fontes reais via CDP; rede externa bloqueada; texto português com acentos.",
+  "tests": [
+    {
+      "name": "Inter 300",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Inter 400",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Inter 500",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Inter 600",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Inter 700",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Citrina VF 400",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Citrina",
+          "postScriptName": "Citrina-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Citrina VF 500",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Citrina Medium",
+          "postScriptName": "Citrina-Medium",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Roboto Mono 400",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Roboto Mono",
+          "postScriptName": "RobotoMono-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Roboto Mono 500",
+      "pass": true,
+      "fonts": [
+        {
+          "familyName": "Roboto Mono",
+          "postScriptName": "RobotoMono-Regular",
+          "isCustomFont": true,
+          "glyphCount": 47
+        }
+      ]
+    },
+    {
+      "name": "Corpo editorial",
+      "pass": true
+    },
+    {
+      "name": "Título editorial",
+      "pass": true
+    }
+  ]
+}

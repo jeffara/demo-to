@@ -1,3 +1,7 @@
+# Atualização V3.1.2 — calendário e tipografia
+
+Leia `docs/ATUALIZACAO-V3.1.2.md` para atualizar uma V3.1.1 existente. Esta atualização é de código/fontes; o pacote de conteúdo permanece 3.1.1 e não precisa ser reimportado. Evidências atuais: `docs/AUDITORIA-V3.1.2.html`. Relatórios com “baseline-final” referem-se à entrega anterior, salvo nova execução explícita.
+
 # Toranja EDS — V3 final (3.1.1)
 
 Projeto XWalk para AEM Author + Universal Editor + Edge Delivery Services, em `/content/demo-to`. Referência: **@interco/inter-toranja 1.13.3**, fornecida pelo usuário.

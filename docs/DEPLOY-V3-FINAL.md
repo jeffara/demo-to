@@ -1,3 +1,5 @@
+> Para atualizar a V3.1.1 para a V3.1.2, siga `ATUALIZACAO-V3.1.2.md`. As etapas abaixo documentam a instalação completa da baseline; não reimporte o conteúdo para corrigir fontes/calendário.
+
 # Implantar exclusivamente a V3 baseline
 
 Entrega técnica 3.1.1 para `jeffara/demo-to`, com 64 componentes oficiais, quatro blocos DS Toranja Custom e layouts editoriais nas seções. Este procedimento substitui código e conteúdo; não recria o site e não remove a configuração de publicação ou a conta técnica existente.

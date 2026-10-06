@@ -1,0 +1,65 @@
+{
+  "scope": "Chromium local; geometria capturada na chamada showPicker; UI nativa do SO não automatizada.",
+  "tests": [
+    {
+      "name": "Âncora antes de showPicker {\"width\":1280}",
+      "pass": true
+    },
+    {
+      "name": "Âncora antes de showPicker {\"width\":390}",
+      "pass": true
+    },
+    {
+      "name": "Âncora antes de showPicker {\"width\":1280,\"scroll\":true}",
+      "pass": true
+    },
+    {
+      "name": "Âncora antes de showPicker {\"width\":390,\"scroll\":true}",
+      "pass": true
+    },
+    {
+      "name": "Ativação por teclado",
+      "pass": true
+    },
+    {
+      "name": "Duas instâncias: segunda coluna tem âncora própria",
+      "pass": true
+    },
+    {
+      "name": "InputText com máscara date compartilha a correção",
+      "pass": true
+    },
+    {
+      "name": "BR: min/max, valor inicial e callback preservados",
+      "pass": true
+    },
+    {
+      "name": "US: formato preservado",
+      "pass": true
+    },
+    {
+      "name": "US: digitação com máscara MM/DD/YYYY",
+      "pass": true
+    },
+    {
+      "name": "Desabilitado não abre calendário",
+      "pass": true
+    },
+    {
+      "name": "Somente leitura desabilita o acionador",
+      "pass": true
+    },
+    {
+      "name": "Documento dentro de iframe mantém coordenadas locais",
+      "pass": true
+    },
+    {
+      "name": "Desmontagem remove campo temporário",
+      "pass": true
+    },
+    {
+      "name": "Input date externo não é alterado",
+      "pass": true
+    }
+  ]
+}

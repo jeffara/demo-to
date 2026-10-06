@@ -17,6 +17,7 @@ export function serve(
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".woff2": "font/woff2",
+    ".woff": "font/woff",
     ".html": "text/html",
   };
   const server = http.createServer((req, res) => {
