@@ -1,9 +1,10 @@
 {
-  "version": "3.1.4",
+  "version": "3.1.5",
   "contentVersion": "3.1.1",
   "contentReimportRequired": false,
   "contentRepublishRequired": false,
   "files": {
-    "styles/layout.css": "e7079978ba02aee85b192ba41684c1fcb518d8e9521fb08ad1095540d7eb6465"
+    "styles/layout.css": "53f38a69cedd8e10a9030c417bb66e37dcf695b720912df3230f4db978f77a21",
+    "scripts/site-shell.js": "b3b081a10c05193db803a5878a82d539bc852ed368e40aafab15e3d1ba4fd2e5"
   }
 }

@@ -68,3 +68,14 @@ main .ds-card .card{padding:24px;border-radius:var(--radius-large);height:100%}m
     min-height: 44px;
   }
 }
+
+/* V3.1.5: reserva altura real para logo e menu, com respiro até a borda. */
+.site-nav-content .site-home-link { display: inline-flex; align-items: center; min-height: 44px; }
+.site-nav-content .site-home-link:focus-visible { outline: 2px solid var(--theme-accent); outline-offset: 4px; border-radius: 4px; }
+@media (max-width: 760px) {
+  body > header { min-height: 88px; padding-block: 20px; }
+  .site-menu-toggle { top: 20px; }
+  .site-nav-content > .section > .ds-image-wrapper { min-height: 48px; display: flex; align-items: center; }
+  .site-nav-content .site-home-link { min-height: 48px; }
+  .site-menu-toggle button { width: 48px; height: 48px; }
+}

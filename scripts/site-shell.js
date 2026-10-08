@@ -12,6 +12,16 @@ export async function loadShared(target,kind){
  content.append(...(doc.querySelector('main')||doc.body).children);target.append(content);
  decorateSections(content);decorateBlocks(content);await loadSections(content);
  for(const a of content.querySelectorAll('a[href]'))a.href=resolveLink(a.getAttribute('href'));
+ // A logo da navegação compartilhada retorna à raiz, sem alterar o conteúdo AEM.
+ if(kind==='nav'){
+  const logo=content.querySelector('.ds-image-wrapper');
+  if(logo){
+   let home=logo.querySelector('a');
+   if(!home){home=document.createElement('a');home.append(...logo.childNodes);logo.append(home);}
+   home.href=resolveLink('/');home.removeAttribute('target');
+   home.classList.add('site-home-link');home.setAttribute('aria-label','Inter — página inicial');
+  }
+ }
  if(kind==='nav'){const host=document.createElement('div');host.className='site-menu-toggle ds-official';target.prepend(host);const {mountMenuButton}=await loadDSRuntime();cleanup(host,mountMenuButton(host,content));}
  target.dataset.sharedReady='true';
 }
