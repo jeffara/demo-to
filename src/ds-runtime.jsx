@@ -9,6 +9,7 @@ import {runAction, tagPayload} from '../scripts/actions.js';
 import {runIntegration} from '../scripts/integrations.js';
 import {normalizeProps} from '../scripts/ds-values.js';
 import {anchorNativeDatePicker} from './native-date-anchor.js';
+import {ResponsiveTabs} from './responsive-tabs.jsx';
 import {Stepper, ListItemControl, ListItemCompatibility, Select} from './ds-compat.jsx';
 const h=React.createElement;
 const allowed=new Set(['P','BR','STRONG','EM','B','I','UL','OL','LI','H2','H3','H4','H5','H6','SPAN','A','IMG','BLOCKQUOTE','DIV','TABLE','THEAD','TBODY','TR','TH','TD']);
@@ -107,7 +108,7 @@ function App({schema,initial,host,options}) {
  for(const k of Object.keys(p))if(k.startsWith('$'))delete p[k];
  if(props.$accessibleLabel)p['aria-label']??=props.$accessibleLabel;
  p.id ||= host.id+'-control';
- let Component=({Stepper,ListItemControl,ListItem:ListItemCompatibility,Select})[schema.name]||DS[schema.name];
+ let Component=({Stepper,ListItemControl,ListItem:ListItemCompatibility,Select,Tabs:ResponsiveTabs})[schema.name]||DS[schema.name];
  if(['BottomSheet','BottomSheetCountry'].includes(schema.name)){p.isOpen=open;p.close=makeHandler(['close']);}
  if(schema.name==='Snackbar'){p.show=open;p.onClose=makeHandler(['onClose']);}
  

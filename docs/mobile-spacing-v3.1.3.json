@@ -1,0 +1,105 @@
+{
+  "scope": "Local Chromium viewport checks; not physical iOS Safari or authenticated Universal Editor",
+  "tests": [
+    {
+      "name": "320: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "320: selected tabs are fully revealed by keyboard",
+      "pass": true
+    },
+    {
+      "name": "320: next control and click reveal Global Account",
+      "pass": true
+    },
+    {
+      "name": "320: accordion content spacing and clean internal header",
+      "pass": true
+    },
+    {
+      "name": "320: footer cards cannot clip titles",
+      "pass": true
+    },
+    {
+      "name": "390: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "390: selected tabs are fully revealed by keyboard",
+      "pass": true
+    },
+    {
+      "name": "390: next control and click reveal Global Account",
+      "pass": true
+    },
+    {
+      "name": "390: accordion content spacing and clean internal header",
+      "pass": true
+    },
+    {
+      "name": "390: footer cards cannot clip titles",
+      "pass": true
+    },
+    {
+      "name": "430: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "430: selected tabs are fully revealed by keyboard",
+      "pass": true
+    },
+    {
+      "name": "430: next control and click reveal Global Account",
+      "pass": true
+    },
+    {
+      "name": "430: accordion content spacing and clean internal header",
+      "pass": true
+    },
+    {
+      "name": "430: footer cards cannot clip titles",
+      "pass": true
+    },
+    {
+      "name": "768: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "768: selected tabs are fully revealed by keyboard",
+      "pass": true
+    },
+    {
+      "name": "768: accordion content spacing and clean internal header",
+      "pass": true
+    },
+    {
+      "name": "768: footer cards cannot clip titles",
+      "pass": true
+    },
+    {
+      "name": "1280: no page overflow",
+      "pass": true
+    },
+    {
+      "name": "1280: selected tabs are fully revealed by keyboard",
+      "pass": true
+    },
+    {
+      "name": "1280: accordion content spacing and clean internal header",
+      "pass": true
+    },
+    {
+      "name": "1280: footer cards cannot clip titles",
+      "pass": true
+    },
+    {
+      "name": "Resize keeps last tab visible and hides unused controls",
+      "pass": true
+    },
+    {
+      "name": "Non-scrollable authored tabs wrap with complete labels",
+      "pass": true
+    }
+  ]
+}

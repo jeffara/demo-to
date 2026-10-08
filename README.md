@@ -1,3 +1,7 @@
+# Atualização V3.1.3 — espaçamento e navegação mobile
+
+Leia `docs/ATUALIZACAO-V3.1.3.md`. Corrige os recortes do rodapé, o espaçamento dos accordions e a navegação das abas em telas estreitas. Runtime compilado incluído. Não é necessário reimportar o conteúdo. Relatórios de versões anteriores permanecem como histórico.
+
 # Atualização V3.1.2 — calendário e tipografia
 
 Leia `docs/ATUALIZACAO-V3.1.2.md` para atualizar uma V3.1.1 existente. Esta atualização é de código/fontes; o pacote de conteúdo permanece 3.1.1 e não precisa ser reimportado. Evidências atuais: `docs/AUDITORIA-V3.1.2.html`. Relatórios com “baseline-final” referem-se à entrega anterior, salvo nova execução explícita.

@@ -46,3 +46,33 @@
 .section.hero-layout .ds-official [data-testid=card-component]{background:transparent;}
 .section.hero-layout .ds-official .ds-card-content{padding:0;gap:24px;}
 @media(max-width:760px){.ds-official .ds-card-content{padding:20px;}.site-footer-content .ds-official .ds-card-content,.section.hero-layout .ds-official .ds-card-content{padding:0;}}
+
+/* Conteúdo editorial dos slots: espaçamento não é fornecido pelo componente React. */
+.ds-official .accordion__content{padding-top:var(--spacing-16,16px)}
+.ds-official .accordion__slot,.ds-tab-panel{display:flex;flex-direction:column;gap:var(--spacing-16,16px);min-width:0;overflow-wrap:anywhere}
+.ds-official .accordion__content :is(h2,h3,h4,p,ul,ol),.ds-tab-panel :is(h2,h3,h4,p,ul,ol){margin-block:0}
+.ds-official .accordion__content :is(h2,h3,h4),.ds-tab-panel :is(h2,h3,h4){line-height:1.3}
+.ds-official .accordion__content :is(ul,ol){padding-inline-start:24px}
+.ds-official .accordion__content li+li{margin-top:8px}
+.ds-tab-panel{padding:24px 0 0}
+/* Cards usados como grupos do rodapé não devem recortar texto nos cantos. */
+.site-footer-content .ds-official [data-testid=card-component]{min-height:0;border-radius:0;overflow:visible}
+.site-footer-content .ds-official [data-testid=card-component]::after{content:none!important}
+.site-footer-content .ds-official .ds-card-content{gap:12px;padding:2px}
+.site-footer-content .ds-card-content h3{line-height:1.4}
+.site-footer-content .ds-card-content li:first-child{margin-top:0}
+.site-footer-content .ds-card-content li:last-child{margin-bottom:0}
+/* Abas roláveis preservam seus rótulos e sinalizam o conteúdo fora da tela. */
+.ds-tabs-frame{min-width:0;max-width:100%}
+.ds-official .tabs-navigation--scrollable{overscroll-behavior-x:contain;scrollbar-width:thin;scroll-padding-inline:4px}
+.ds-official .tabs-navigation--scrollable .tabs-navigation__wrapper__container-tabs{padding-inline:4px}
+.ds-tabs-scroll-controls{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:4px}
+.ds-tabs-scroll-controls>span{font-size:12px;color:var(--color-text-neutral-secondary);margin-right:auto}
+.ds-tabs-scroll-controls button{min-width:44px;min-height:44px}
+@media(max-width:760px){
+ .ds-official .tabs-navigation:not(.tabs-navigation--scrollable) [data-testid=container-tabs]{flex-wrap:wrap;padding-inline:0}
+ .ds-official .tabs-navigation:not(.tabs-navigation--scrollable) [data-testid=tab]{flex:1 1 45%;height:auto;min-height:48px;padding-block:12px}
+ .ds-official .tabs-navigation:not(.tabs-navigation--scrollable) .tabs-navigation__wrapper__container-tabs__tab__label .text{white-space:normal;overflow-wrap:anywhere}
+ .ds-tab-panel{padding-top:16px}
+ .site-footer-content .ds-official .ds-card-content{padding:2px}
+}
