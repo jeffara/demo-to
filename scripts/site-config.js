@@ -1,1 +1,1 @@
-export const siteConfig = {"contentRoot":"/content/demo-to","searchIndex":"/query-index.json","searchExclude":["/nav","/header","/footer","/demo-toranja","/showcase","/qa"]};
+export const siteConfig = {"contentRoot":"/content/inter-aem-eds-showcase-toranja-react","searchIndex":"/query-index.json","searchExclude":["/nav","/header","/footer","/demo-toranja","/showcase","/qa"]};

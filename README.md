@@ -1,9 +1,19 @@
-# Inter — Showcase Toranja React Adapter · 5.1.0
+# Inter — Showcase Toranja React Adapter · 5.1.1
 
 Código: `inter-aem-eds-toranja-react`.
 Conteúdo AEM: `inter-aem-eds-showcase-toranja-react`.
 Origem: baseline `aem-eds-inter-toranja_v4.0.0.zip`, preservada separadamente.
 Design system original: `@interco/inter-toranja` 2.0.1.
+
+## Migração da raiz de conteúdo — 5.1.1
+
+O destino agora é `/content/inter-aem-eds-showcase-toranja-react`, em um site XWalk já criado com Cloud Services associado. O pacote não cria nem substitui essa associação. Nav, footer e links internos usam a nova raiz. DAM preservado em `/content/dam/toranja-eds-demo`.
+
+Atualize também o código 5.1.1: o tratamento de links utiliza a raiz de conteúdo. O sincronizador Python preserva `fstab.yaml` e arquivos existentes em `config/`; revise manualmente os valores antigos nessas configurações caso ainda sejam usados. O Content Source configurado neste ambiente é `/bin/franklin.delivery/jeffara/inter-aem-eds-toranja-react/main`. A configuração do EDS já foi criada separadamente e não é alterada por este ZIP.
+
+`config/public-paths.json` é uma referência opcional para caminhos personalizados. Não precisa ser cadastrada apenas para importar o pacote ou usar o mapeamento padrão de páginas. Não contém credenciais.
+
+A instalação substitui as 123 páginas listadas na nova raiz e os 10 assets específicos. Não move nem apaga o site antigo. Não importa `/conf`, `/apps` nem o `jcr:content` da raiz do site.
 
 ## Escopo desta versão
 
@@ -15,9 +25,11 @@ Os componentes e tokens originais em `vendor/` não foram alterados. Este pacote
 | --- | --- | --- |
 | `inter-aem-eds-toranja-react` | `ds-react-*` | Componentes oficiais via React Adapter e seu showcase |
 | `inter-aem-eds-toranja` | `ds-eds-*` | Implementação nativa EDS, independente do adapter React |
-| `inter-aem-eds-web-custom` | `c-*` | Composição dos sites e extensões consumindo uma versão definida do catálogo nativo |
+| `inter-aem-eds-web-custom` | `c-*` | Biblioteca de componentes customizados reutilizáveis em diferentes sites |
 
-Esta entrega atualiza o primeiro projeto. Não cria ou publica os outros repositórios. O `inter-aem-eds-web-custom` também compõe o código publicado do institucional: incorpora uma versão definida do Toranja nativo no seu processo de entrega. Não é necessário um quarto repositório unificador.
+| `inter-aem-eds-site-institucional` (nome sugerido) | — | Composição do institucional com versões definidas do Toranja nativo e da biblioteca Custom |
+
+Esta entrega atualiza o primeiro projeto. Não cria ou publica os outros repositórios. O institucional incorpora as bibliotecas no seu processo de entrega.
 
 O grupo de autoria dos 73 componentes é **Toranja — React Adapter**. A versão 5.1.0 contém somente blocos `ds-react-*`; remove os quatro exemplos customizados e suas cinco páginas. A entrega 5.0.0 foi preservada separadamente. A implementação institucional desses recursos pertence ao projeto Custom. Correção sobre a versão anterior: `c-video` já usava HTML/JavaScript nativo; os outros três exemplos usavam React.
 
@@ -29,11 +41,11 @@ Se instalou uma versão anterior, preserve as edições e retire de publicação
 2. Coloque o código deste ZIP no clone do repositório `inter-aem-eds-toranja-react`. Para atualizar um clone existente, rode `python3 tools/sync-baseline.py --target /caminho/do/clone` para revisar o plano e, somente após conferir o diff, execute com `--apply`. Esse utilitário remove arquivos obsoletos das pastas gerenciadas; use somente no clone dedicado ao catálogo.
 3. Preserve e revise `fstab.yaml`, `.well-known` e `config/` do seu ambiente. O nome do pacote não renomeia o site EDS, o repositório remoto, nem o mountpoint. Se criar um novo repositório remoto, configure o vínculo correspondente no EDS/Code Sync.
 4. Envie o código completo à branch de homologação, incluindo os arquivos compilados e `.hlxignore`; aguarde a sincronização pelo Code Sync.
-5. Importe `inter-aem-eds-showcase-toranja-react-5.1.0.zip` pelo Package Manager. Não importe o ZIP de código no Package Manager.
+5. Importe `inter-aem-eds-showcase-toranja-react-5.1.1.zip` pelo Package Manager. Não importe o ZIP de código no Package Manager.
 6. Execute Preview/Publish das páginas do catálogo, incluindo `/nav` e `/footer`, e dos assets. A instalação no Author não publica as páginas no EDS.
 7. Homologue edição, salvar/reabrir campos e coleções no Universal Editor; confira navegação, componentes e `/version.json` antes de promover.
 
-As raízes permanecem `/content/demo-to` e `/content/dam/toranja-eds-demo`. As URLs editoriais, como `/demo-toranja` e `/showcase/button`, permanecem. O pacote contém 123 páginas e 10 assets. Seus filtros cobrem somente as páginas listadas e seus próprios `jcr:content`, além dos assets específicos; páginas não listadas, `/conf`, `/apps` e configuração da raiz ficam fora.
+As raízes desta versão são `/content/inter-aem-eds-showcase-toranja-react` e `/content/dam/toranja-eds-demo`. As URLs editoriais, como `/demo-toranja` e `/showcase/button`, permanecem. O pacote contém 123 páginas e 10 assets. Seus filtros cobrem somente as páginas listadas e seus próprios `jcr:content`, além dos assets específicos; páginas não listadas, `/conf`, `/apps` e configuração da raiz ficam fora.
 
 **Não combine conteúdo antigo `ds-*` com código 5.1.0.** Páginas criadas ou editadas fora dos exemplos entregues precisam migrar seus identificadores `name`, `model` e `filter` conforme `docs/namespace-migration.json`. Campos e valores editoriais mantêm o contrato. Não há aliases legados ocultos. Para rollback, restaure código e conteúdo compatíveis e republique.
 
@@ -57,6 +69,6 @@ O runtime já vem compilado; o EDS não executa `npm ci`. Fontes, adapters e ger
 
 ## Verificação e limites
 
-Build e verificações estáticas desta versão estão em `docs/namespace-validation.json`, `docs/compliance-v5.1.0.json`, `docs/property-model-validation.json`, `docs/baseline-package-validation.json` e `docs/package-audit.json`.
+A migração 5.1.1 foi recompilada e validada nos relatórios de namespace, pacote e raiz de conteúdo. A evidência de compliance 5.1.0 é histórica para o catálogo inalterado. Relatórios: `docs/namespace-validation.json`, `docs/compliance-v5.1.0.json`, `docs/property-model-validation.json`, `docs/baseline-package-validation.json` e `docs/package-audit.json`.
 
 Não foi executado deploy, instalação no AEM, homologação do Universal Editor, auditoria visual ou Lighthouse desta versão. Relatórios antigos na pasta de trabalho pertencem à baseline 4.0.0; o empacotador desta release exclui essa evidência histórica para evitar confusão.

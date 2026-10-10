@@ -9,7 +9,7 @@ for file in ['namespace-validation.json','compliance-v5.1.0.json','property-mode
  report=json.loads((root/'docs'/file).read_text());assert report['pass'],file
 for file,key in [('package-audit.json','checks'),('baseline-package-validation.json','tests')]:
  assert all(x['pass'] for x in json.loads((root/'docs'/file).read_text())[key]),file
-keep_docs={'toranja-contract.json','property-mapping.json','vendor-snapshot-sha256.json','vendor-provenance-v4.0.0.json','THIRD-PARTY.md','font-sources.json','AUTORIA-LAYOUTS.md','INTEGRACOES-V3.md','baseline-conversion.json','react-scope-migration.json','namespace-migration.json','namespace-validation.json','compliance-v5.1.0.json','property-model-validation.json','package-audit.json','baseline-package-validation.json','cobertura-propriedades.csv'}
+keep_docs={'content-root-migration-validation.json','toranja-contract.json','property-mapping.json','vendor-snapshot-sha256.json','vendor-provenance-v4.0.0.json','THIRD-PARTY.md','font-sources.json','AUTORIA-LAYOUTS.md','INTEGRACOES-V3.md','baseline-conversion.json','react-scope-migration.json','namespace-migration.json','namespace-validation.json','compliance-v5.1.0.json','property-model-validation.json','package-audit.json','baseline-package-validation.json','cobertura-propriedades.csv'}
 archive=out/(package['name']+'-'+version+'.zip')
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
  for file in sorted(root.rglob('*')):

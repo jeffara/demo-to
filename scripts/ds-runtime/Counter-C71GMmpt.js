@@ -1,0 +1,1 @@
+import{z as a}from"./toranja-core-CcXhbwys.js";var s=a(),e=({count:a,maxLength:e,...r})=>(0,s.jsxs)("div",{...r,className:`${r.className} type-label-small-regular`,children:[a,"/",e]});export{e as Counter};

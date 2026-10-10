@@ -1,6 +1,6 @@
 {
   "name": "inter-aem-eds-toranja-react",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "private": true,
   "type": "module",
   "description": "Showcase Toranja React Adapter: 73 blocos ds-react-* do Toranja 2.0.1, sem blocos Custom.",
@@ -45,5 +45,5 @@
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
-  "contentVersion": "5.1.0"
+  "contentVersion": "5.1.1"
 }

@@ -10,7 +10,7 @@ def check(name,condition):
  if not condition:raise AssertionError(name)
 package=read('package.json');config=read('content/aem-config.json')
 check('Code and content package names',package['name']==migration['codePackage'] and config['packageName']==migration['contentPackage'])
-check('Version pair',package['version']==package['contentVersion']=='5.1.0')
+check('Version pair',package['version']==package['contentVersion']=='5.1.1')
 blocks={p.name for p in (root/'blocks').iterdir() if p.is_dir()}
 check('Exactly 73 React DS blocks and no custom demos',blocks==set(mapping.values()) and len([b for b in blocks if b.startswith('ds-react-')])==73)
 groups=read('component-definition.json')['groups']

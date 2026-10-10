@@ -1,0 +1,1 @@
+import{F as s,z as t}from"./toranja-core-CcXhbwys.js";import{r as a,t as o}from"./InputBase-DmH7aL61.js";var r=t(),e=t=>{let{label:e="Texto",state:p=s.ENABLED,...m}=t;return(0,r.jsx)(o,{label:e,type:a.PASSWORD,state:p,showClear:!0,customTagProps:{customProperties:{component_name:"InputPassword"}},...m})};export{e as InputPassword};

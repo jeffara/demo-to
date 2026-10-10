@@ -1,0 +1,12 @@
+{
+  "version": "5.1.1",
+  "pass": true,
+  "siteRoot": "/content/inter-aem-eds-showcase-toranja-react",
+  "damRoot": "/content/dam/toranja-eds-demo",
+  "pages": 123,
+  "assets": 10,
+  "internalReferencesChecked": 592,
+  "comparison": "ZIP entries and bytes identical to 5.1.0 after expected root and package-version substitutions; asset bytes unchanged.",
+  "protected": "Site root jcr:content, /conf, /apps, old site and unlisted pages excluded by validated filters.",
+  "limits": "Local checks only; not installed in AEM or validated in Universal Editor."
+}

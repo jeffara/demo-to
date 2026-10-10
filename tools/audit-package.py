@@ -41,11 +41,11 @@ with zipfile.ZipFile(root/'content/inter-aem-eds-showcase-toranja-react.zip') as
  ns='{http://www.jcp.org/jcr/1.0}'
  refs=[]
  for name,node in docs.items():
-  if not name.startswith('jcr_root/content/demo-to/'):continue
+  if not name.startswith('jcr_root/content/inter-aem-eds-showcase-toranja-react/'):continue
   for el in node.iter():
    for key,value in el.attrib.items():
-    if value.startswith('/content/demo-to/') and not value.startswith('/content/demo-to/showcase/') and '<' not in value:
-     ref=value.split('?')[0].split('#')[0].removesuffix('.html').removeprefix('/content/demo-to/')
+    if value.startswith('/content/inter-aem-eds-showcase-toranja-react/') and not value.startswith('/content/inter-aem-eds-showcase-toranja-react/showcase/') and '<' not in value:
+     ref=value.split('?')[0].split('#')[0].removesuffix('.html').removeprefix('/content/inter-aem-eds-showcase-toranja-react/')
      if ref not in pages:refs.append(value)
  check('Referências de páginas no pacote resolvem conteúdo existente',not refs,str(refs[:5]))
  filters=ET.fromstring(z.read('META-INF/vault/filter.xml'))

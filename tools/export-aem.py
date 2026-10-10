@@ -170,7 +170,7 @@ def main():
         archive.writestr('META-INF/vault/filter.xml',xml(filter_xml))
         props = ET.Element('properties')
         for key,val in {'group':'inter-aem-eds','name':config['packageName'],'version':version,'packageType':'content',
-                        'description':'Showcase Toranja React Adapter 5.1.0: atualiza somente as páginas listadas do catálogo em '+site+'; preserva páginas não listadas, configuração da raiz, /conf e /apps. Faça backup das páginas do catálogo editadas antes de instalar.'}.items():
+                        'description':'Showcase Toranja React Adapter '+version+': atualiza somente as páginas listadas do catálogo em '+site+'; preserva páginas não listadas, configuração da raiz, /conf e /apps. Faça backup das páginas do catálogo editadas antes de instalar.'}.items():
             ET.SubElement(props,'entry',{'key':key}).text=val
         property_xml = xml(props).replace(b'<properties>', b'<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">\n<properties>', 1)
         archive.writestr('META-INF/vault/properties.xml', property_xml)
