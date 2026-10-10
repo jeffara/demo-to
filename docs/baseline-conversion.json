@@ -36,519 +36,519 @@
     {
       "from": "banner",
       "to": [
-        "ds-alert"
+        "ds-react-alert"
       ]
     },
     {
       "from": "breadcrumb",
       "to": [
-        "ds-link",
-        "ds-link",
-        "ds-text"
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-text"
       ]
     },
     {
       "from": "search-bar",
       "to": [
-        "v3-search"
+        "c-search"
       ]
     },
     {
       "from": "alert-inline",
       "to": [
-        "ds-alert"
+        "ds-react-alert"
       ]
     },
     {
       "from": "hero",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button",
+        "ds-react-button"
       ]
     },
     {
       "from": "quick-moment-rail",
       "to": [
-        "ds-text",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link"
+        "ds-react-text",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link"
       ]
     },
     {
       "from": "stats-counter",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "in-page-nav",
       "to": [
-        "ds-text",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link"
+        "ds-react-text",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link"
       ]
     },
     {
       "from": "manifesto",
       "to": [
-        "ds-card"
+        "ds-react-card"
       ]
     },
     {
       "from": "moments-journey",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button"
       ]
     },
     {
       "from": "segment-showcase",
       "to": [
-        "ds-card",
-        "ds-accordion",
-        "ds-accordion",
-        "ds-accordion",
-        "ds-accordion"
+        "ds-react-card",
+        "ds-react-accordion",
+        "ds-react-accordion",
+        "ds-react-accordion",
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tabs",
       "to": [
-        "ds-tabs"
+        "ds-react-tabs"
       ]
     },
     {
       "from": "cards",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "carousel",
       "to": [
-        "ds-carousel"
+        "ds-react-carousel"
       ]
     },
     {
       "from": "comparison-table",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "teaser",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button"
       ]
     },
     {
       "from": "simulator",
       "to": [
-        "v3-simulator"
+        "c-simulator"
       ]
     },
     {
       "from": "video-player",
       "to": [
-        "v3-video"
+        "c-video"
       ]
     },
     {
       "from": "flywheel",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-button"
       ]
     },
     {
       "from": "timeline",
       "to": [
-        "ds-timeline"
+        "ds-react-timeline"
       ]
     },
     {
       "from": "testimonials",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "accordion",
       "to": [
-        "ds-accordion",
-        "ds-accordion",
-        "ds-accordion",
-        "ds-accordion"
+        "ds-react-accordion",
+        "ds-react-accordion",
+        "ds-react-accordion",
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tooltip",
       "to": [
-        "ds-accordion"
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tooltip",
       "to": [
-        "ds-accordion"
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tooltip",
       "to": [
-        "ds-accordion"
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tooltip",
       "to": [
-        "ds-accordion"
+        "ds-react-accordion"
       ]
     },
     {
       "from": "modal",
       "to": [
-        "ds-button",
-        "ds-bottom-sheet"
+        "ds-react-button",
+        "ds-react-bottom-sheet"
       ]
     },
     {
       "from": "form",
       "to": [
-        "v3-form"
+        "c-form"
       ]
     },
     {
       "from": "contact-channels",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "pagination",
       "to": [
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link"
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link"
       ]
     },
     {
       "from": "app-download",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button",
+        "ds-react-button"
       ]
     },
     {
       "from": "cta-banner",
       "to": [
-        "ds-card",
-        "ds-button",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-button",
+        "ds-react-button"
       ]
     },
     {
       "from": "banner",
       "to": [
-        "ds-alert"
+        "ds-react-alert"
       ]
     },
     {
       "from": "in-page-nav",
       "to": [
-        "ds-text",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link"
+        "ds-react-text",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link"
       ]
     },
     {
       "from": "breadcrumb",
       "to": [
-        "ds-link",
-        "ds-link"
+        "ds-react-link",
+        "ds-react-link"
       ]
     },
     {
       "from": "search-bar",
       "to": [
-        "v3-search"
+        "c-search"
       ]
     },
     {
       "from": "alert-inline",
       "to": [
-        "ds-alert"
+        "ds-react-alert"
       ]
     },
     {
       "from": "hero",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button",
+        "ds-react-button"
       ]
     },
     {
       "from": "quick-moment-rail",
       "to": [
-        "ds-text",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link"
+        "ds-react-text",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link"
       ]
     },
     {
       "from": "stats-counter",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "manifesto",
       "to": [
-        "ds-card"
+        "ds-react-card"
       ]
     },
     {
       "from": "moments-journey",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button"
       ]
     },
     {
       "from": "carousel",
       "to": [
-        "ds-carousel"
+        "ds-react-carousel"
       ]
     },
     {
       "from": "comparison-table",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "segment-showcase",
       "to": [
-        "ds-card",
-        "ds-accordion",
-        "ds-accordion",
-        "ds-accordion",
-        "ds-accordion"
+        "ds-react-card",
+        "ds-react-accordion",
+        "ds-react-accordion",
+        "ds-react-accordion",
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tabs",
       "to": [
-        "ds-tabs"
+        "ds-react-tabs"
       ]
     },
     {
       "from": "cards",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "teaser",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button"
       ]
     },
     {
       "from": "simulator",
       "to": [
-        "v3-simulator"
+        "c-simulator"
       ]
     },
     {
       "from": "video-player",
       "to": [
-        "v3-video"
+        "c-video"
       ]
     },
     {
       "from": "flywheel",
       "to": [
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-card",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-card",
+        "ds-react-button"
       ]
     },
     {
       "from": "timeline",
       "to": [
-        "ds-timeline",
-        "ds-text",
-        "ds-text",
-        "ds-text"
+        "ds-react-timeline",
+        "ds-react-text",
+        "ds-react-text",
+        "ds-react-text"
       ]
     },
     {
       "from": "testimonials",
       "to": [
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "accordion",
       "to": [
-        "ds-accordion",
-        "ds-accordion",
-        "ds-accordion"
+        "ds-react-accordion",
+        "ds-react-accordion",
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tooltip",
       "to": [
-        "ds-accordion"
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tooltip",
       "to": [
-        "ds-accordion"
+        "ds-react-accordion"
       ]
     },
     {
       "from": "tooltip",
       "to": [
-        "ds-accordion"
+        "ds-react-accordion"
       ]
     },
     {
       "from": "contact-channels",
       "to": [
-        "ds-card",
-        "ds-card"
+        "ds-react-card",
+        "ds-react-card"
       ]
     },
     {
       "from": "app-download",
       "to": [
-        "ds-card",
-        "ds-image",
-        "ds-button",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-image",
+        "ds-react-button",
+        "ds-react-button"
       ]
     },
     {
       "from": "modal",
       "to": [
-        "ds-button",
-        "ds-bottom-sheet"
+        "ds-react-button",
+        "ds-react-bottom-sheet"
       ]
     },
     {
       "from": "form",
       "to": [
-        "v3-form"
+        "c-form"
       ]
     },
     {
       "from": "pagination",
       "to": [
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link",
-        "ds-link"
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link",
+        "ds-react-link"
       ]
     },
     {
       "from": "cta-banner",
       "to": [
-        "ds-card",
-        "ds-button",
-        "ds-button"
+        "ds-react-card",
+        "ds-react-button",
+        "ds-react-button"
       ]
     },
     {
       "from": "form",
       "to": [
-        "v3-form"
+        "c-form"
       ]
     },
     {
       "from": "video-player",
       "to": [
-        "v3-video"
+        "c-video"
       ]
     }
   ],
@@ -562,9 +562,9 @@
   "pagesDelivered": 119,
   "newPage": "showcase/layouts",
   "restoredCustomBlockIds": [
-    "v3-form",
-    "v3-search",
-    "v3-video",
-    "v3-simulator"
+    "c-form",
+    "c-search",
+    "c-video",
+    "c-simulator"
   ]
 }

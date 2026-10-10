@@ -11,7 +11,7 @@
         "layoutPadding": "large",
         "content": [
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "TORANJA · DESIGN SYSTEM",
@@ -24,7 +24,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma experiência para cada momento.",
@@ -37,7 +37,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Explore como os componentes oficiais do Inter se combinam em páginas flexíveis, consistentes e prontas para a autoria.",
@@ -50,7 +50,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver componentes",
@@ -62,7 +62,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Conhecer os layouts",
@@ -72,7 +72,7 @@
             "items": []
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -91,7 +91,7 @@
         "layoutPadding": "compact",
         "content": [
           {
-            "block": "ds-alert",
+            "block": "ds-react-alert",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Ambiente de demonstração",
@@ -111,7 +111,7 @@
             "text": "<p>POSSIBILIDADES</p><h2>Um sistema. Muitas composições.</h2><p>Blocos oficiais que combinam identidade, clareza e autonomia.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Seu dia a dia, mais simples.</h3><p>Conta, pagamentos e organização financeira em uma experiência conectada.</p><p><a href=\"/conta-digital\">Conhecer a conta digital →</a></p>",
@@ -120,7 +120,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Espaço para novos planos.</h3><p>Conteúdos e ações organizados para ajudar cada pessoa a encontrar seu próximo passo.</p><p><a href=\"/credito\">Explorar possibilidades →</a></p>",
@@ -129,7 +129,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Uma vida sem fronteiras.</h3><p>Composições para apresentar soluções globais com imagens, textos e ações claras.</p><p><a href=\"/global-account\">Conhecer a Global Account →</a></p>",
@@ -144,7 +144,7 @@
         "style": "hero-layout",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>Momento 01</p><h2>Vejo você conquistando a sua independência.</h2><p>Começar: Autonomia e Faculdade</p><p></p>",
@@ -154,7 +154,7 @@
             "items": []
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -168,7 +168,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abra sua conta grátis",
@@ -195,7 +195,7 @@
             "text": "<p>Soluções para cada perfil</p><h2>Um Inter feito para cada momento</h2><p>Navegue pelas soluções desenhadas para pessoas físicas, empresas e patrimônios exclusivos.</p>"
           },
           {
-            "block": "ds-tabs",
+            "block": "ds-react-tabs",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7363726f6c6c61626c65": true,
@@ -241,7 +241,7 @@
             "text": "<p>Segmentos de Atendimento</p><h2>Uma experiência sob medida para cada etapa do seu patrimônio</h2><p>Da conta digital gratuita até a assessoria internacional exclusiva de wealth management.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>Uma experiência desenhada para o seu momento de vida</h2><p>Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter.</p>",
@@ -250,7 +250,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter Digital",
@@ -262,7 +262,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter One",
@@ -274,7 +274,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter Prime",
@@ -286,7 +286,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter Win",
@@ -310,7 +310,7 @@
             "text": "<p>Vitrines em Destaque</p><h2>Benefícios que multiplicam seu dinheiro</h2><p>Arraste para o lado e conheça as novidades e vantagens exclusivas do ecossistema Inter.</p>"
           },
           {
-            "block": "ds-carousel",
+            "block": "ds-react-carousel",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p73686f7750726576696577": true,
@@ -361,7 +361,7 @@
             "text": "<p>Simplicidade Extrema</p><h2>Abra sua conta em 3 passos simples</h2><p>Processo 100% digital, sem filas de agência e sem burocracia.</p>"
           },
           {
-            "block": "ds-timeline",
+            "block": "ds-react-timeline",
             "properties": {
               "schemaVersion": "toranja-v3"
             },
@@ -399,7 +399,7 @@
             "text": "<p>Transparência Total</p><h2>Dúvidas Frequentes</h2><p>Respostas rápidas sobre segurança, abertura de conta e serviços internacionais.</p>"
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "A conta digital do Inter tem tarifas de manutenção?",
@@ -410,7 +410,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Como funciona a Global Account em dólar?",
@@ -421,7 +421,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Como funciona o CDB Mais Limite de Crédito?",
@@ -432,7 +432,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Como conquistar o Cartão de Crédito Mastercard Black?",
@@ -456,7 +456,7 @@
         "layoutPadding": "large",
         "content": [
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Sua próxima página começa aqui.",
@@ -469,7 +469,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Escolha os componentes, organize as colunas e ajuste a composição no Universal Editor.",
@@ -482,7 +482,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver layouts",
@@ -494,7 +494,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abrir catálogo oficial",
@@ -508,8 +508,8 @@
     ]
   },
   "demo-toranja": {
-    "title": "Toranja | Showcase completo",
-    "description": "Catálogo oficial do Design System Toranja 2.0.1 em EDS",
+    "title": "Inter — Catálogo Toranja React Adapter",
+    "description": "Catálogo de 73 componentes Toranja 2.0.1 publicados em EDS por meio do React Adapter. Blocos ds-react-*.",
     "sections": [
       {
         "id": "catalogo",
@@ -519,7 +519,7 @@
             "text": "<p>TORANJA / CATÁLOGO OFICIAL</p><h1>Um sistema para criar possibilidades.</h1><p>Explore os 73 componentes do Toranja. Os exemplos preservam o pacote oficial e expõem suas propriedades para autoria.</p>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver layouts",
@@ -537,7 +537,7 @@
         "layoutAlign": "stretch",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Átomos</h3><p>23 componentes</p><p>Elementos essenciais para construir a interface.</p><p><a href=\"#atomos\">Explorar átomos →</a></p>",
@@ -546,7 +546,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Moléculas</h3><p>47 componentes</p><p>Combinações que resolvem interações e apresentações de conteúdo.</p><p><a href=\"#moleculas\">Explorar moléculas →</a></p>",
@@ -555,7 +555,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Templates</h3><p>2 componentes</p><p>Estruturas de apresentação disponibilizadas pelo pacote oficial.</p><p><a href=\"#templates\">Explorar templates →</a></p>",
@@ -564,9 +564,9 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
-              "p6368696c6472656e": "<h3>Organismos</h3><p>1 componente</p><p><a href=\"#ds-table\">Explorar tabela →</a></p>",
+              "p6368696c6472656e": "<h3>Organismos</h3><p>1 componente</p><p><a href=\"#ds-react-table\">Explorar tabela →</a></p>",
               "p7374617465": "enabled",
               "schemaVersion": "toranja-v3"
             },
@@ -585,13 +585,13 @@
         ]
       },
       {
-        "id": "ds-badge",
+        "id": "ds-react-badge",
         "content": [
           {
             "text": "<h2>Badge</h2><p><a href=\"/showcase/badge\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-badge",
+            "block": "ds-react-badge",
             "properties": {
               "p76617269616e74": "label",
               "p636f756e74": 8,
@@ -606,13 +606,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-card",
+        "id": "ds-react-card",
         "content": [
           {
             "text": "<h2>Card</h2><p><a href=\"/showcase/card\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
               "p7374617465": "enabled",
@@ -627,13 +627,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-checkbox",
+        "id": "ds-react-checkbox",
         "content": [
           {
             "text": "<h2>Checkbox</h2><p><a href=\"/showcase/checkbox\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-checkbox",
+            "block": "ds-react-checkbox",
             "properties": {
               "p7374617465": "enabled",
               "p636865636b6564": "false",
@@ -648,13 +648,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-chart-bar",
+        "id": "ds-react-chart-bar",
         "content": [
           {
             "text": "<h2>ChartBar</h2><p><a href=\"/showcase/chart-bar\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-chart-bar",
+            "block": "ds-react-chart-bar",
             "properties": {
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
@@ -695,13 +695,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-chart-donut",
+        "id": "ds-react-chart-donut",
         "content": [
           {
             "text": "<h2>ChartDonut</h2><p><a href=\"/showcase/chart-donut\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-chart-donut",
+            "block": "ds-react-chart-donut",
             "properties": {
               "p73686f7744656661756c744c6567656e64": "true",
               "p746f74616c4c6162656c": "Total",
@@ -742,13 +742,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-chart-line",
+        "id": "ds-react-chart-line",
         "content": [
           {
             "text": "<h2>ChartLine</h2><p><a href=\"/showcase/chart-line\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-chart-line",
+            "block": "ds-react-chart-line",
             "properties": {
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
@@ -786,13 +786,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-chart-meter",
+        "id": "ds-react-chart-meter",
         "content": [
           {
             "text": "<h2>ChartMeter</h2><p><a href=\"/showcase/chart-meter\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-chart-meter",
+            "block": "ds-react-chart-meter",
             "properties": {
               "p7469746c65": "Distribuição",
               "p746f74616c": 100,
@@ -834,13 +834,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-counter",
+        "id": "ds-react-counter",
         "content": [
           {
             "text": "<h2>Counter</h2><p><a href=\"/showcase/counter\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-counter",
+            "block": "ds-react-counter",
             "properties": {
               "p636f756e74": 23,
               "p6d61784c656e677468": 100,
@@ -855,13 +855,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-divider",
+        "id": "ds-react-divider",
         "content": [
           {
             "text": "<h2>Divider</h2><p><a href=\"/showcase/divider\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-divider",
+            "block": "ds-react-divider",
             "properties": {
               "p76617269616e74": "solid",
               "p6f7269656e746174696f6e": "horizontal",
@@ -876,13 +876,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-flag",
+        "id": "ds-react-flag",
         "content": [
           {
             "text": "<h2>Flag</h2><p><a href=\"/showcase/flag\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-flag",
+            "block": "ds-react-flag",
             "properties": {
               "p69636f6e466c6167": "ic_flag_brazil_rounded",
               "p636f6e74656e744465736372697074696f6e": "Brasil",
@@ -898,13 +898,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-icon",
+        "id": "ds-react-icon",
         "content": [
           {
             "text": "<h2>Icon</h2><p><a href=\"/showcase/icon\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-icon",
+            "block": "ds-react-icon",
             "properties": {
               "p6173736574": "ic_orange",
               "p636f6e74656e744465736372697074696f6e": "Toranja",
@@ -920,13 +920,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-image",
+        "id": "ds-react-image",
         "content": [
           {
             "text": "<h2>Image</h2><p><a href=\"/showcase/image\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
@@ -947,13 +947,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-icon-chip",
+        "id": "ds-react-icon-chip",
         "content": [
           {
             "text": "<h2>IconChip</h2><p><a href=\"/showcase/icon-chip\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-icon-chip",
+            "block": "ds-react-icon-chip",
             "properties": {
               "p7374617465": "enabled",
               "p76617269616e74": "label",
@@ -972,13 +972,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-neutral-icon-button",
+        "id": "ds-react-neutral-icon-button",
         "content": [
           {
             "text": "<h2>NeutralIconButton</h2><p><a href=\"/showcase/neutral-icon-button\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-neutral-icon-button",
+            "block": "ds-react-neutral-icon-button",
             "properties": {
               "p69636f6e": "ic_ellipsis",
               "p73697a65": "medium",
@@ -995,13 +995,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-page-indicator",
+        "id": "ds-react-page-indicator",
         "content": [
           {
             "text": "<h2>PageIndicator</h2><p><a href=\"/showcase/page-indicator\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-page-indicator",
+            "block": "ds-react-page-indicator",
             "properties": {
               "p6974656d73": 4,
               "p73656c6563746564": 1,
@@ -1016,13 +1016,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-payment-methods",
+        "id": "ds-react-payment-methods",
         "content": [
           {
             "text": "<h2>PaymentMethods</h2><p><a href=\"/showcase/payment-methods\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-payment-methods",
+            "block": "ds-react-payment-methods",
             "properties": {
               "p7061796d656e744d6574686f64": "mastercard",
               "p73697a65": "large",
@@ -1038,13 +1038,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-progress-bar",
+        "id": "ds-react-progress-bar",
         "content": [
           {
             "text": "<h2>ProgressBar</h2><p><a href=\"/showcase/progress-bar\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-progress-bar",
+            "block": "ds-react-progress-bar",
             "properties": {
               "p76617269616e74": "default",
               "p70726f6772657373": 60,
@@ -1059,13 +1059,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-progress-circle",
+        "id": "ds-react-progress-circle",
         "content": [
           {
             "text": "<h2>ProgressCircle</h2><p><a href=\"/showcase/progress-circle\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-progress-circle",
+            "block": "ds-react-progress-circle",
             "properties": {
               "p73697a65": "large",
               "p70726f6772657373": 65,
@@ -1081,13 +1081,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-spinner",
+        "id": "ds-react-spinner",
         "content": [
           {
             "text": "<h2>Spinner</h2><p><a href=\"/showcase/spinner\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-spinner",
+            "block": "ds-react-spinner",
             "properties": {
               "p73697a65": "large",
               "p617269614c6162656c": "Carregando demonstração",
@@ -1102,13 +1102,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-signal",
+        "id": "ds-react-signal",
         "content": [
           {
             "text": "<h2>Signal</h2><p><a href=\"/showcase/signal\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-signal",
+            "block": "ds-react-signal",
             "properties": {
               "p76617269616e74": "success",
               "p73697a65": "large",
@@ -1124,13 +1124,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-switch",
+        "id": "ds-react-switch",
         "content": [
           {
             "text": "<h2>Switch</h2><p><a href=\"/showcase/switch\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-switch",
+            "block": "ds-react-switch",
             "properties": {
               "p636865636b6564": "false",
               "p7374617465": "enabled",
@@ -1145,13 +1145,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-tag",
+        "id": "ds-react-tag",
         "content": [
           {
             "text": "<h2>Tag</h2><p><a href=\"/showcase/tag\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-tag",
+            "block": "ds-react-tag",
             "properties": {
               "p636f6c6f72": "brand",
               "p686965726172636879": "soft",
@@ -1169,13 +1169,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-text",
+        "id": "ds-react-text",
         "content": [
           {
             "text": "<h2>Text</h2><p><a href=\"/showcase/text\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "p6368696c6472656e": "Em todo momento da vida, vejo você.",
               "p7465787453697a65": "large",
@@ -1203,13 +1203,13 @@
         ]
       },
       {
-        "id": "ds-alert",
+        "id": "ds-react-alert",
         "content": [
           {
             "text": "<h2>Alert</h2><p><a href=\"/showcase/alert\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-alert",
+            "block": "ds-react-alert",
             "properties": {
               "p76617269616e74": "information",
               "p7374617465": "enabled",
@@ -1229,13 +1229,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-avatar",
+        "id": "ds-react-avatar",
         "content": [
           {
             "text": "<h2>Avatar</h2><p><a href=\"/showcase/avatar\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-avatar",
+            "block": "ds-react-avatar",
             "properties": {
               "p636f6c6f72": "soft",
               "p76617269616e74": "initial",
@@ -1253,13 +1253,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-accordion",
+        "id": "ds-react-accordion",
         "content": [
           {
             "text": "<h2>Accordion</h2><p><a href=\"/showcase/accordion\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "p7469746c65": "Como editar este componente?",
               "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
@@ -1277,13 +1277,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-button",
+        "id": "ds-react-button",
         "content": [
           {
             "text": "<h2>Button</h2><p><a href=\"/showcase/button\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "p6c6162656c": "Conhecer o showcase",
               "p73697a65": "large",
@@ -1301,13 +1301,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-banner",
+        "id": "ds-react-banner",
         "content": [
           {
             "text": "<h2>Banner</h2><p><a href=\"/showcase/banner\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-banner",
+            "block": "ds-react-banner",
             "properties": {
               "p76617269616e74": "image",
               "p73697a65": "medium",
@@ -1324,13 +1324,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-bottom-sheet",
+        "id": "ds-react-bottom-sheet",
         "content": [
           {
             "text": "<h2>BottomSheet</h2><p><a href=\"/showcase/bottom-sheet\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-bottom-sheet",
+            "block": "ds-react-bottom-sheet",
             "properties": {
               "p7469746c65": "Mais possibilidades",
               "p69734f70656e": "false",
@@ -1350,13 +1350,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-chip",
+        "id": "ds-react-chip",
         "content": [
           {
             "text": "<h2>Chip</h2><p><a href=\"/showcase/chip\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-chip",
+            "block": "ds-react-chip",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p73656c6563746564": "false",
@@ -1373,13 +1373,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-cross-selling",
+        "id": "ds-react-cross-selling",
         "content": [
           {
             "text": "<h2>CrossSelling</h2><p><a href=\"/showcase/cross-selling\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-cross-selling",
+            "block": "ds-react-cross-selling",
             "properties": {
               "p6465736372697074696f6e": "Conteúdo de demonstração.",
               "p7375627469746c65": "Conheça os produtos",
@@ -1398,13 +1398,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-carousel",
+        "id": "ds-react-carousel",
         "content": [
           {
             "text": "<h2>Carousel</h2><p><a href=\"/showcase/carousel\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-carousel",
+            "block": "ds-react-carousel",
             "properties": {
               "p76617269616e74": "page-view",
               "p7061676553706163696e67": 16,
@@ -1433,13 +1433,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-date-picker",
+        "id": "ds-react-date-picker",
         "content": [
           {
             "text": "<h2>DatePicker</h2><p><a href=\"/showcase/date-picker\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-date-picker",
+            "block": "ds-react-date-picker",
             "properties": {
               "p73656c656374696f6e4d6f6465": "single",
               "p6c6f63616c65": "pt-BR",
@@ -1456,13 +1456,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-decorated-text",
+        "id": "ds-react-decorated-text",
         "content": [
           {
             "text": "<h2>DecoratedText</h2><p><a href=\"/showcase/decorated-text\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-decorated-text",
+            "block": "ds-react-decorated-text",
             "properties": {
               "p6368696c6472656e": "Seu futuro começa agora.",
               "p636c6173735374796c65": "Type.Body.Large.Regular",
@@ -1479,13 +1479,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-header",
+        "id": "ds-react-header",
         "content": [
           {
             "text": "<h2>Header</h2><p><a href=\"/showcase/header\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-header",
+            "block": "ds-react-header",
             "properties": {
               "p76617269616e74": "innerPages",
               "p74797065": "title",
@@ -1502,13 +1502,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-floating-action-button",
+        "id": "ds-react-floating-action-button",
         "content": [
           {
             "text": "<h2>FloatingActionButton</h2><p><a href=\"/showcase/floating-action-button\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-floating-action-button",
+            "block": "ds-react-floating-action-button",
             "properties": {
               "p6c6162656c": "Explorar",
               "p69636f6e": "ic_add",
@@ -1526,13 +1526,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-icon-button",
+        "id": "ds-react-icon-button",
         "content": [
           {
             "text": "<h2>IconButton</h2><p><a href=\"/showcase/icon-button\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-icon-button",
+            "block": "ds-react-icon-button",
             "properties": {
               "p73697a65": "large",
               "p686965726172636879": "primary",
@@ -1550,13 +1550,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-input-country",
+        "id": "ds-react-input-country",
         "content": [
           {
             "text": "<h2>InputCountry</h2><p><a href=\"/showcase/input-country\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-input-country",
+            "block": "ds-react-input-country",
             "properties": {
               "p6c6162656c": "Telefone",
               "p706c616365686f6c646572": "Digite seu telefone",
@@ -1588,13 +1588,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-input-date",
+        "id": "ds-react-input-date",
         "content": [
           {
             "text": "<h2>InputDate</h2><p><a href=\"/showcase/input-date\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-input-date",
+            "block": "ds-react-input-date",
             "properties": {
               "p6c6162656c": "Data",
               "p706c616365686f6c646572": "DD/MM/AAAA",
@@ -1609,13 +1609,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-input-password",
+        "id": "ds-react-input-password",
         "content": [
           {
             "text": "<h2>InputPassword</h2><p><a href=\"/showcase/input-password\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-input-password",
+            "block": "ds-react-input-password",
             "properties": {
               "p6c6162656c": "Senha",
               "p706c616365686f6c646572": "Digite uma senha",
@@ -1630,13 +1630,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-input-search",
+        "id": "ds-react-input-search",
         "content": [
           {
             "text": "<h2>InputSearch</h2><p><a href=\"/showcase/input-search\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-input-search",
+            "block": "ds-react-input-search",
             "properties": {
               "p6c6162656c": "Buscar",
               "p706c616365686f6c646572": "O que você procura?",
@@ -1651,13 +1651,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-input-text",
+        "id": "ds-react-input-text",
         "content": [
           {
             "text": "<h2>InputText</h2><p><a href=\"/showcase/input-text\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "p74797065": "text",
               "p6c6162656c": "Nome completo",
@@ -1673,13 +1673,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-input-money",
+        "id": "ds-react-input-money",
         "content": [
           {
             "text": "<h2>InputMoney</h2><p><a href=\"/showcase/input-money\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-input-money",
+            "block": "ds-react-input-money",
             "properties": {
               "p73686f77427574746f6e73": "true",
               "p6669786564496e6372656d656e7456616c7565": 100,
@@ -1699,13 +1699,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-link",
+        "id": "ds-react-link",
         "content": [
           {
             "text": "<h2>Link</h2><p><a href=\"/showcase/link\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "p6c6162656c": "Explorar todos os componentes",
               "p73697a65": "medium",
@@ -1721,13 +1721,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-list-item",
+        "id": "ds-react-list-item",
         "content": [
           {
             "text": "<h2>ListItem</h2><p><a href=\"/showcase/list-item\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-list-item",
+            "block": "ds-react-list-item",
             "properties": {
               "p6c6162656c": "Conta digital",
               "p706172616772617068": "Um item da sua lista",
@@ -1743,13 +1743,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-list-item-control",
+        "id": "ds-react-list-item-control",
         "content": [
           {
             "text": "<h2>ListItemControl</h2><p><a href=\"/showcase/list-item-control\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-list-item-control",
+            "block": "ds-react-list-item-control",
             "properties": {
               "p747261696c696e6756617269616e74": "switch",
               "p747261696c696e6750726f70732e636865636b6564": "false",
@@ -1766,13 +1766,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-list-item-general",
+        "id": "ds-react-list-item-general",
         "content": [
           {
             "text": "<h2>ListItemGeneral</h2><p><a href=\"/showcase/list-item-general\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-list-item-general",
+            "block": "ds-react-list-item-general",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p706172616772617068": "Conheça as possibilidades",
@@ -1789,13 +1789,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-list-item-action",
+        "id": "ds-react-list-item-action",
         "content": [
           {
             "text": "<h2>ListItemAction</h2><p><a href=\"/showcase/list-item-action\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-list-item-action",
+            "block": "ds-react-list-item-action",
             "properties": {
               "p747261696c696e6756617269616e74": "button",
               "p747261696c696e6750726f70732e6c6162656c": "Explorar",
@@ -1813,13 +1813,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-list-item-view",
+        "id": "ds-react-list-item-view",
         "content": [
           {
             "text": "<h2>ListItemView</h2><p><a href=\"/showcase/list-item-view\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-list-item-view",
+            "block": "ds-react-list-item-view",
             "properties": {
               "p6f7269656e746174696f6e": "horizontal",
               "p6c6162656c": "Saldo ilustrativo",
@@ -1836,13 +1836,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-menu-item",
+        "id": "ds-react-menu-item",
         "content": [
           {
             "text": "<h2>MenuItem</h2><p><a href=\"/showcase/menu-item\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-menu-item",
+            "block": "ds-react-menu-item",
             "properties": {
               "p76617269616e74": "icon",
               "p73697a65": "large",
@@ -1860,13 +1860,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-pin-code",
+        "id": "ds-react-pin-code",
         "content": [
           {
             "text": "<h2>PinCode</h2><p><a href=\"/showcase/pin-code\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-pin-code",
+            "block": "ds-react-pin-code",
             "properties": {
               "p6669656c6473": "4",
               "p7374617465": "enabled",
@@ -1888,13 +1888,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-radio",
+        "id": "ds-react-radio",
         "content": [
           {
             "text": "<h2>Radio</h2><p><a href=\"/showcase/radio\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-radio",
+            "block": "ds-react-radio",
             "properties": {
               "p6368696c6472656e": "Escolher esta opção",
               "p6e616d65": "preferencia",
@@ -1912,13 +1912,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-section-title",
+        "id": "ds-react-section-title",
         "content": [
           {
             "text": "<h2>SectionTitle</h2><p><a href=\"/showcase/section-title\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-section-title",
+            "block": "ds-react-section-title",
             "properties": {
               "p7469746c65": "Tudo para sua vida",
               "p73686f774465736372697074696f6e": "true",
@@ -1937,13 +1937,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-section-subtitle",
+        "id": "ds-react-section-subtitle",
         "content": [
           {
             "text": "<h2>SectionSubtitle</h2><p><a href=\"/showcase/section-subtitle\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-section-subtitle",
+            "block": "ds-react-section-subtitle",
             "properties": {
               "p7375627469746c65": "Escolha seu próximo passo",
               "p747261696c696e674c6162656c": "Saiba mais",
@@ -1958,13 +1958,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-segmented-control",
+        "id": "ds-react-segmented-control",
         "content": [
           {
             "text": "<h2>SegmentedControl</h2><p><a href=\"/showcase/segmented-control\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-segmented-control",
+            "block": "ds-react-segmented-control",
             "properties": {
               "p7374617465": "enabled",
               "schemaVersion": "toranja-v3"
@@ -1987,13 +1987,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-select",
+        "id": "ds-react-select",
         "content": [
           {
             "text": "<h2>Select</h2><p><a href=\"/showcase/select\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "p6c6162656c": "Produto de interesse",
               "p706c616365686f6c646572": "Escolha uma opção",
@@ -2019,13 +2019,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-snackbar",
+        "id": "ds-react-snackbar",
         "content": [
           {
             "text": "<h2>Snackbar</h2><p><a href=\"/showcase/snackbar\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-snackbar",
+            "block": "ds-react-snackbar",
             "properties": {
               "p76617269616e74": "success",
               "p7469746c65": "Pronto",
@@ -2045,13 +2045,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-stepper",
+        "id": "ds-react-stepper",
         "content": [
           {
             "text": "<h2>Stepper</h2><p><a href=\"/showcase/stepper\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-stepper",
+            "block": "ds-react-stepper",
             "properties": {
               "p656e61626c65496e707574": "true",
               "p6d6178": 10,
@@ -2070,13 +2070,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-tabs",
+        "id": "ds-react-tabs",
         "content": [
           {
             "text": "<h2>Tabs</h2><p><a href=\"/showcase/tabs\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-tabs",
+            "block": "ds-react-tabs",
             "properties": {
               "p7374617465": "enabled",
               "p7363726f6c6c61626c65": "true",
@@ -2105,13 +2105,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-text-area",
+        "id": "ds-react-text-area",
         "content": [
           {
             "text": "<h2>TextArea</h2><p><a href=\"/showcase/text-area\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-text-area",
+            "block": "ds-react-text-area",
             "properties": {
               "p6c6162656c": "Sua mensagem",
               "p73686f77436f756e746572": "true",
@@ -2128,13 +2128,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-timeline",
+        "id": "ds-react-timeline",
         "content": [
           {
             "text": "<h2>Timeline</h2><p><a href=\"/showcase/timeline\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-timeline",
+            "block": "ds-react-timeline",
             "properties": {
               "schemaVersion": "toranja-v3"
             },
@@ -2166,13 +2166,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-widget",
+        "id": "ds-react-widget",
         "content": [
           {
             "text": "<h2>Widget</h2><p><a href=\"/showcase/widget\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-widget",
+            "block": "ds-react-widget",
             "properties": {
               "p74696d6541676f": "Agora",
               "p746167": "Novidade",
@@ -2202,13 +2202,13 @@
         ]
       },
       {
-        "id": "ds-bottom-sheet-country",
+        "id": "ds-react-bottom-sheet-country",
         "content": [
           {
             "text": "<h2>BottomSheetCountry</h2><p><a href=\"/showcase/bottom-sheet-country\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-bottom-sheet-country",
+            "block": "ds-react-bottom-sheet-country",
             "properties": {
               "p73686f77536561726368": "true",
               "p7469746c65": "Escolha o país",
@@ -2238,13 +2238,13 @@
         "layoutWidth": "reading"
       },
       {
-        "id": "ds-feedback-screen",
+        "id": "ds-react-feedback-screen",
         "content": [
           {
             "text": "<h2>FeedbackScreen</h2><p><a href=\"/showcase/feedback-screen\">Abrir exemplo e variantes</a></p>"
           },
           {
-            "block": "ds-feedback-screen",
+            "block": "ds-react-feedback-screen",
             "properties": {
               "p76617269616e74": "custom",
               "p7469746c65": "Tudo pronto!",
@@ -2262,26 +2262,6 @@
         "layoutWidth": "reading"
       },
       {
-        "layoutWidth": "reading",
-        "layoutBackground": "brand",
-        "content": [
-          {
-            "text": "<h2>DS Toranja Custom</h2><p>Conheça também os quatro blocos funcionais do projeto, organizados em um grupo próprio.</p>"
-          },
-          {
-            "block": "ds-button",
-            "properties": {
-              "schemaVersion": "toranja-v3",
-              "p6c6162656c": "Ver blocos Custom",
-              "action6f6e436c69636bkind": "navigate",
-              "action6f6e436c69636blink": "/showcase/custom",
-              "action6f6e436c69636btarget": "_self"
-            },
-            "items": []
-          }
-        ]
-      },
-      {
         "layoutPadding": "standard",
         "layoutWidth": "wide",
         "content": [
@@ -2289,7 +2269,7 @@
             "text": "<h2>Breadcrumb</h2><p><a href=\"/showcase/breadcrumb\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-breadcrumb",
+            "block": "ds-react-breadcrumb",
             "properties": {
               "p617269614c6162656c": "Navegação estrutural",
               "schemaVersion": "toranja-v3"
@@ -2315,7 +2295,7 @@
             ]
           }
         ],
-        "id": "ds-breadcrumb"
+        "id": "ds-react-breadcrumb"
       },
       {
         "layoutPadding": "standard",
@@ -2325,7 +2305,7 @@
             "text": "<h2>MenuPopup</h2><p><a href=\"/showcase/menu-popup\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-menu-popup",
+            "block": "ds-react-menu-popup",
             "properties": {
               "p706c6163656d656e74": "bottom-start",
               "p617269614c6162656c": "Navegação",
@@ -2350,7 +2330,7 @@
             ]
           }
         ],
-        "id": "ds-menu-popup"
+        "id": "ds-react-menu-popup"
       },
       {
         "layoutPadding": "standard",
@@ -2360,7 +2340,7 @@
             "text": "<h2>ModalDialog</h2><p><a href=\"/showcase/modal-dialog\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-modal-dialog",
+            "block": "ds-react-modal-dialog",
             "properties": {
               "p7469746c65": "Informação importante",
               "p73686f77436c6f7365427574746f6e": "true",
@@ -2371,7 +2351,7 @@
             "items": []
           }
         ],
-        "id": "ds-modal-dialog"
+        "id": "ds-react-modal-dialog"
       },
       {
         "layoutPadding": "standard",
@@ -2381,7 +2361,7 @@
             "text": "<h2>Pagination</h2><p><a href=\"/showcase/pagination\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-pagination",
+            "block": "ds-react-pagination",
             "properties": {
               "p70616765496e646578": 0,
               "p7061676553697a65": 10,
@@ -2406,7 +2386,7 @@
             ]
           }
         ],
-        "id": "ds-pagination"
+        "id": "ds-react-pagination"
       },
       {
         "layoutPadding": "standard",
@@ -2416,7 +2396,7 @@
             "text": "<h2>Panel</h2><p><a href=\"/showcase/panel\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-panel",
+            "block": "ds-react-panel",
             "properties": {
               "p74797065": "slot",
               "p6368696c6472656e": "<p>Organize informações com o componente oficial.</p>",
@@ -2427,7 +2407,7 @@
             "items": []
           }
         ],
-        "id": "ds-panel"
+        "id": "ds-react-panel"
       },
       {
         "layoutPadding": "standard",
@@ -2437,7 +2417,7 @@
             "text": "<h2>SideSheet</h2><p><a href=\"/showcase/side-sheet\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-side-sheet",
+            "block": "ds-react-side-sheet",
             "properties": {
               "p7469746c65": "Detalhes",
               "p6465736372697074696f6e": "Informações complementares",
@@ -2448,7 +2428,7 @@
             "items": []
           }
         ],
-        "id": "ds-side-sheet"
+        "id": "ds-react-side-sheet"
       },
       {
         "layoutPadding": "standard",
@@ -2458,7 +2438,7 @@
             "text": "<h2>Sidebar</h2><p><a href=\"/showcase/sidebar\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-sidebar",
+            "block": "ds-react-sidebar",
             "properties": {
               "p64656661756c74457870616e73696f6e": "expanded",
               "p6272616e64": "\"inter\"",
@@ -2484,7 +2464,7 @@
             ]
           }
         ],
-        "id": "ds-sidebar"
+        "id": "ds-react-sidebar"
       },
       {
         "layoutPadding": "standard",
@@ -2494,7 +2474,7 @@
             "text": "<h2>Table</h2><p><a href=\"/showcase/table\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-table",
+            "block": "ds-react-table",
             "properties": {
               "p746f6f6c6261722e7469746c65": "Produtos ilustrativos",
               "p73686f7744697669646572": "true",
@@ -2550,7 +2530,7 @@
             ]
           }
         ],
-        "id": "ds-table"
+        "id": "ds-react-table"
       },
       {
         "layoutPadding": "standard",
@@ -2560,7 +2540,7 @@
             "text": "<h2>TooltipDescription</h2><p><a href=\"/showcase/tooltip-description\">Abrir exemplo e propriedades</a></p>"
           },
           {
-            "block": "ds-tooltip-description",
+            "block": "ds-react-tooltip-description",
             "properties": {
               "p6465736372697074696f6e": "Informação complementar exibida pelo componente oficial.",
               "p616c69676e": "left",
@@ -2572,7 +2552,7 @@
             "items": []
           }
         ],
-        "id": "ds-tooltip-description"
+        "id": "ds-react-tooltip-description"
       }
     ]
   },
@@ -2583,7 +2563,7 @@
         "style": "nav-row",
         "content": [
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/brand/logo.svg",
@@ -2596,7 +2576,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Pra Você",
@@ -2606,7 +2586,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Empresas",
@@ -2616,7 +2596,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Segmentos",
@@ -2626,7 +2606,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Global Account",
@@ -2636,7 +2616,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Inter Loop",
@@ -2646,7 +2626,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Design System",
@@ -2656,7 +2636,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Acessar conta",
@@ -2669,7 +2649,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abra sua conta",
@@ -2694,7 +2674,7 @@
         "style": "footer-columns",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>\n            Inter. O Super App da sua vida financeira. Soluções completas e integradas para pessoas físicas e empresas no Brasil e no mundo.\n          </p>",
@@ -2703,7 +2683,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Pra Você</h3><ul>\n<li><a href=\"/conta-digital\">Conta Digital Grátis</a></li>\n<li><a href=\"/cartoes\">Cartões Mastercard</a></li>\n<li><a href=\"/investimentos\">Meu Porquinho &amp; Invest</a></li>\n<li><a href=\"/credito\">Crédito &amp; Financiamento</a></li>\n<li><a href=\"/global-account\">Global Account (Dólar)</a></li>\n<li><a href=\"/inter-shop\">Inter Shop &amp; Cashback</a></li>\n<li><a href=\"/inter-loop\">Programa de Pontos Loop</a></li>\n</ul>",
@@ -2712,7 +2692,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Empresas</h3><ul>\n<li><a href=\"/empresas/conta-pj\">Conta PJ Digital</a></li>\n<li><a href=\"/empresas/credito\">Crédito para Empresas</a></li>\n<li><a href=\"/empresas/maquininha\">Maquininha de Cartão</a></li>\n<li><a href=\"/empresas/folha\">Folha de Pagamento</a></li>\n<li><a href=\"/empresas/cambio\">Câmbio Comercial</a></li>\n</ul>",
@@ -2721,7 +2701,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Institucional</h3><ul>\n<li><a href=\"/sobre\">Sobre o Inter</a></li>\n<li><a href=\"/ri\">Relações com Investidores</a></li>\n<li><a href=\"/carreiras\">Trabalhe Conosco</a></li>\n<li><a href=\"/imprensa\">Sala de Imprensa</a></li>\n<li><a href=\"/sustentabilidade\">Sustentabilidade &amp; ESG</a></li>\n</ul>",
@@ -2730,7 +2710,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Ajuda &amp; Contato</h3><ul>\n<li><a href=\"/ajuda\">Central de Ajuda</a></li>\n<li><a href=\"/ouvidoria\">Ouvidoria: 0800 940 7772</a></li>\n<li><a href=\"/telefones\">Capitais: 3003 4070</a></li>\n<li><a href=\"/seguranca\">Segurança Digital</a></li>\n<li><a href=\"/termos\">Termos &amp; Privacidade</a></li>\n</ul>",
@@ -2746,7 +2726,7 @@
       {
         "content": [
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Banco Inter S.A. — CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG, CEP: 30190-131. Serviços de investimento oferecidos pela Inter DTVM Ltda. Nos EUA, contas correntes são oferecidas pelo Evolve Bank & Trust, membro FDIC. \n          Investimentos no exterior são oferecidos pela Inter Securities LLC, membro FINRA e SIPC. © 2026 Banco Inter S.A. Todos os direitos reservados.",
@@ -2758,7 +2738,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<ul><li><a href=\"https://www.instagram.com/inter/\">Instagram</a></li><li><a href=\"https://www.linkedin.com/company/bancointer/\">LinkedIn</a></li></ul>",
@@ -2785,7 +2765,7 @@
             "text": "<p>TORANJA / COMPOSIÇÕES</p><h1>Do componente à experiência.</h1><p>Exemplos de organização com imagem, conteúdo, controles e ações. Todos os blocos pertencem ao catálogo oficial; a seção define como eles se combinam.</p>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Explorar layouts",
@@ -2802,7 +2782,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-alert",
+            "block": "ds-react-alert",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Super App Day: Ganhe 2x pontos no Inter Loop",
@@ -2824,7 +2804,7 @@
         "style": "nav-row",
         "content": [
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Nesta Página",
@@ -2836,7 +2816,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Métricas",
@@ -2845,7 +2825,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Manifesto",
@@ -2854,7 +2834,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Jornada",
@@ -2863,7 +2843,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Segmentos",
@@ -2872,7 +2852,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Comparativo",
@@ -2881,7 +2861,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Valor monetário",
@@ -2890,7 +2870,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Inter Loop",
@@ -2899,7 +2879,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Dúvidas",
@@ -2908,7 +2888,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Contato",
@@ -2926,7 +2906,7 @@
         "style": "nav-row",
         "content": [
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Início",
@@ -2935,7 +2915,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Pra Você",
@@ -2953,7 +2933,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-input-search",
+            "block": "ds-react-input-search",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Buscar",
@@ -2963,7 +2943,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "InputSearch oficial: exemplo visual e de entrada de texto. Consulta ao conteúdo depende de integração.",
@@ -2984,7 +2964,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-alert",
+            "block": "ds-react-alert",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Aviso de Segurança:",
@@ -3003,7 +2983,7 @@
         "style": "hero-layout",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>Dossiê Estratégico · Banco Inter</p><h2>Em todo momento da vida, vejo você .</h2><p>O Super App financeiro completo que une conta gratuita, investimentos globais, cartão sem anuidade, crédito e compras com cashback direto no saldo.</p><ul>\n<li>✓ Sem taxa de manutenção</li>\n<li>✓ Cartão com cashback ou milhas</li>\n<li>✓ Global Account em dólar</li>\n</ul>",
@@ -3013,7 +2993,7 @@
             "items": []
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
@@ -3027,7 +3007,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abra sua conta grátis",
@@ -3039,7 +3019,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Conhecer o Ecossistema",
@@ -3062,7 +3042,7 @@
         "style": "nav-row",
         "content": [
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Momentos de Vida",
@@ -3074,7 +3054,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Começar",
@@ -3083,7 +3063,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Conquistar",
@@ -3092,7 +3072,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Construir",
@@ -3101,7 +3081,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Cuidar",
@@ -3110,7 +3090,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Descobrir",
@@ -3119,7 +3099,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Viver Mais",
@@ -3140,7 +3120,7 @@
             "text": "<span>Solidez &amp; Liderança</span><h2>Números que comprovam nossa dimensão</h2>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>+33M</h2><div>Clientes ativos no Brasil e nos EUA</div>",
@@ -3149,7 +3129,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>R$ 100B+</h2><div>Em ativos sob custódia global</div>",
@@ -3158,7 +3138,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>102% CDI</h2><div>Rendimento com liquidez diária</div>",
@@ -3167,7 +3147,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>R$ 0</h2><div>De anuidade no cartão e tarifa de conta</div>",
@@ -3186,7 +3166,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<blockquote>\n              \"Acreditamos que a vida financeira não precisa ser complicada, fria ou distante. Ela precisa ser <strong #ea7100);=\"\" 600;\\\"=\"\" font-weight:=\"\" var(--inter-orange,=\"\">humana, transparente e presente</strong> em cada momento de realização.\"\n            </blockquote><p></p>",
@@ -3204,7 +3184,7 @@
         "style": "hero-layout",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>Momento 01</p><h2>Vejo você conquistando a sua independência financeira.</h2><p>Toda conquista começa com o primeiro passo. No Inter, estudantes e jovens profissionais têm conta sem taxa de manutenção, cartão com limite garantido pelo Meu Porquinho e cashback em compras no Inter Shop.</p><p>*Sujeito à análise cadastral e termos de abertura de conta digital.</p>",
@@ -3214,7 +3194,7 @@
             "items": []
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -3228,7 +3208,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abra sua conta grátis",
@@ -3254,7 +3234,7 @@
             "text": "<span>Vitrines em Destaque</span><h2>Benefícios que multiplicam seu dinheiro</h2>"
           },
           {
-            "block": "ds-carousel",
+            "block": "ds-react-carousel",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p73686f7750726576696577": true,
@@ -3297,7 +3277,7 @@
             "text": "<span>Transparência Total</span><h2>Compare o Inter com os Bancos Tradicionais</h2><p>Economia real de mais de R$ 1.200 ao ano em tarifas evitadas.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p></p>",
@@ -3306,7 +3286,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Serviços e Tarifas</h3><p>Inter: Banco Inter</p><p>Comparação: Bancos Tradicionais</p>",
@@ -3315,7 +3295,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Mensalidade da Conta Corrente</h3><p>Inter: &lt;strong&gt;R$ 0,00 (Gratuita)&lt;/strong&gt;</p><p>Comparação: R$ 45,00 a R$ 90,00/mês</p>",
@@ -3324,7 +3304,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Anuidade do Cartão Internacional</h3><p>Inter: &lt;strong&gt;R$ 0,00 (Sem anuidade)&lt;/strong&gt;</p><p>Comparação: R$ 350,00 a R$ 600,00/ano</p>",
@@ -3333,7 +3313,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Transferências Pix &amp; TED</h3><p>Inter: &lt;span&gt;✓&lt;/span&gt;</p><p>Comparação: TED cobrado após limite do pacote</p>",
@@ -3342,7 +3322,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Saques na rede Banco24Horas</h3><p>Inter: &lt;span&gt;✓&lt;/span&gt;</p><p>Comparação: Cobrado após limite de saques</p>",
@@ -3351,7 +3331,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Conta em Dólar nos EUA (FDIC)</h3><p>Inter: &lt;span&gt;✓&lt;/span&gt;</p><p>Comparação: &lt;span&gt;✕&lt;/span&gt;</p>",
@@ -3373,7 +3353,7 @@
             "text": "<span>Relacionamento Sob Medida</span><h2>Showcase dos 4 Segmentos Inter</h2><p>Da conta digital gratuita à assessoria internacional de wealth management.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>Uma experiência desenhada para o seu momento de vida</h2><p>Do dia a dia descomplicado ao Family Office global. Conheça as categorias exclusivas do Inter.</p>",
@@ -3382,7 +3362,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter Digital",
@@ -3394,7 +3374,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter One",
@@ -3406,7 +3386,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter Prime",
@@ -3418,7 +3398,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Inter Win",
@@ -3442,7 +3422,7 @@
             "text": "<span>Molécula Toranja: Tabs</span><h2>Um Inter feito para cada momento</h2><p>Navegue pelas soluções desenhadas para pessoas físicas, empresas e patrimônios exclusivos.</p>"
           },
           {
-            "block": "ds-tabs",
+            "block": "ds-react-tabs",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7363726f6c6c61626c65": true,
@@ -3488,7 +3468,7 @@
             "text": "<span>Moléculas &amp; Átomos: Cards</span><h2>O ecossistema em ação</h2><p>Cards com composição de tags semânticas, botões primários e tipografia Citrina.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7374617465": "enabled"
@@ -3504,7 +3484,7 @@
             ]
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7374617465": "enabled"
@@ -3520,7 +3500,7 @@
             ]
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7374617465": "enabled"
@@ -3546,7 +3526,7 @@
         "style": "hero-layout",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>Vida Global Sem Fronteiras</p><h2>Uma só marca. Duas moedas. Zero barreiras.</h2><p>O saldo em reais é convertido em dólares comerciais com IOF reduzido em segundos, abastecendo tanto o cartão internacional para despesas de viagem quanto a custódia em Wall Street.</p><p></p>",
@@ -3556,7 +3536,7 @@
             "items": []
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/929b38390928.webp",
@@ -3570,7 +3550,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Conhecer a Global Account",
@@ -3593,7 +3573,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-input-money",
+            "block": "ds-react-input-money",
             "properties": {
               "schemaVersion": "toranja-v3",
               "accessibleLabel": "Valor de referência",
@@ -3604,7 +3584,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Controle InputMoney oficial. Este exemplo não calcula rentabilidade.",
@@ -3628,7 +3608,7 @@
             "text": "<span>Manifesto em Vídeo</span><h2>A revolução do primeiro Super App financeiro</h2>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p636f6e74656e744465736372697074696f6e": "Exemplo de imagem do conteúdo",
@@ -3640,7 +3620,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abrir arquivo de vídeo",
@@ -3649,7 +3629,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Image e Link oficiais. O pacote Toranja não exporta um componente VideoPlayer.",
@@ -3673,7 +3653,7 @@
             "text": "<span>Programa de Pontos</span><h2>O Ciclo Virtuoso do Inter Loop</h2><p>Quanto mais você usa o Super App, mais valor retorna para o seu patrimônio.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>Programa de Recompensas</p><h2>O Ciclo de Valor Virtuoso do Inter Loop</h2><p></p>",
@@ -3682,7 +3662,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>1. Use seu Cartão no Dia a Dia</h3><p>Pague compras, assine serviços e abasteça no débito ou crédito sem anuidade acumulando pontos.</p>",
@@ -3691,7 +3671,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>2. Pontos que Não Expiram</h3><p>Seus pontos Loop ficam seguros na conta pelo tempo que quiser. Sem pressa e sem pegadinhas.</p>",
@@ -3700,7 +3680,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>3. Troque por Cashback ou Milhas</h3><p>Resgate em dinheiro direto na conta, desconto na fatura ou transfira para os maiores programas aéreos.</p>",
@@ -3709,7 +3689,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>4. Reinvista e Suba de Categoria</h3><p>Aplique seu cashback no Meu Porquinho ou atinja categorias superiores (One, Prime, Win).</p>",
@@ -3718,7 +3698,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Conhecer o Inter Loop",
@@ -3741,7 +3721,7 @@
             "text": "<span>Simplicidade Extrema</span><h2>Abra sua conta em 3 etapas</h2>"
           },
           {
-            "block": "ds-timeline",
+            "block": "ds-react-timeline",
             "properties": {
               "schemaVersion": "toranja-v3"
             },
@@ -3767,7 +3747,7 @@
             ]
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<div>Faça o download gratuito na App Store ou Google Play e inicie o cadastro com seu CPF.</div>",
@@ -3779,7 +3759,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<div>Tire uma selfie para biometria facial e foto de um documento oficial (RG ou CNH).</div>",
@@ -3791,7 +3771,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<div>Sua conta é ativada em poucos minutos. Você já pode criar chaves Pix e usar seu cartão virtual.</div>",
@@ -3815,7 +3795,7 @@
             "text": "<span>Voz dos Nossos Clientes</span><h2>Mais de 33 milhões de pessoas confiam no Inter</h2>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>“O Inter transformou a forma como eu poupo. O Porquinho rendendo 102% do CDI é imbatível e a conta internacional nos EUA me salvou nas minhas viagens a trabalho.”</p><h3>Camila Silveira</h3><p>Cliente Inter One · São Paulo/SP</p><p>Avaliação demonstrativa: 5/5</p>",
@@ -3824,7 +3804,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<p>“Migrei a folha de pagamento e os recebíveis da minha empresa para o Inter Empresas. Economizei milhares de reais em taxas de boletos e TEDs.”</p><h3>Rodrigo Mendes</h3><p>Empresário PJ · Belo Horizonte/MG</p><p>Avaliação demonstrativa: 5/5</p>",
@@ -3846,7 +3826,7 @@
             "text": "<span>Molécula Toranja: Accordion</span><h2>Dúvidas Frequentes</h2><p>Gavetas expansíveis com acessibilidade nativa e chevron animado.</p>"
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "A conta digital do Inter é realmente gratuita?",
@@ -3857,7 +3837,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Como funciona a Global Account em dólar?",
@@ -3868,7 +3848,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "O que é o CDB Mais Limite de Crédito?",
@@ -3891,7 +3871,7 @@
             "text": "<span>Dicionário Financeiro</span><h2>Passe o mouse ou toque nos termos para ver a definição</h2>"
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "CDI",
@@ -3902,7 +3882,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "FDIC",
@@ -3913,7 +3893,7 @@
             "items": []
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "FGC",
@@ -3936,7 +3916,7 @@
             "text": "<span>Suporte Especializado</span><h2>Canais de Atendimento Oficiais do Inter</h2>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Capitais e Regiões Metropolitanas</h3><div>3003 4070</div><p>Atendimento humano de segunda a sábado das 8h às 20h.</p>",
@@ -3945,7 +3925,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>SAC 24 Horas</h3><div>0800 979 7099</div><p>Disponível 24 horas por dia, 7 dias por semana.</p>",
@@ -3964,7 +3944,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>Baixe o Super App do Inter</h2><p>Aponte a câmera do seu celular para o QR Code ao lado ou acesse sua loja de aplicativos favorita. É gratuito, seguro e rápido.</p>",
@@ -3973,7 +3953,7 @@
             "items": []
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/inter-qr.png",
@@ -3986,7 +3966,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Baixar para iOS",
@@ -3997,7 +3977,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Baixar para Android",
@@ -4017,7 +3997,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Saiba mais",
@@ -4027,7 +4007,7 @@
             "items": []
           },
           {
-            "block": "ds-bottom-sheet",
+            "block": "ds-react-bottom-sheet",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Proteção Regulatória do FGC e FDIC",
@@ -4049,7 +4029,7 @@
         "style": "highlight",
         "content": [
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Nome completo",
@@ -4059,7 +4039,7 @@
             "items": []
           },
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "E-mail",
@@ -4069,7 +4049,7 @@
             "items": []
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Produto de interesse"
@@ -4088,7 +4068,7 @@
             ]
           },
           {
-            "block": "ds-text-area",
+            "block": "ds-react-text-area",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Mensagem",
@@ -4098,7 +4078,7 @@
             "items": []
           },
           {
-            "block": "ds-list-item",
+            "block": "ds-react-list-item",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Concordo com o uso dos meus dados para contato.",
@@ -4110,7 +4090,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Exemplo de composição de controles oficiais. Validação e envio de formulário dependem de uma implementação de integração.",
@@ -4122,7 +4102,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Enviar solicitação",
@@ -4140,7 +4120,7 @@
         "style": "nav-row",
         "content": [
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Página 1",
@@ -4149,7 +4129,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Página 2",
@@ -4158,7 +4138,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Página 3",
@@ -4167,7 +4147,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Página 4",
@@ -4176,7 +4156,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Página 5",
@@ -4194,7 +4174,7 @@
         "style": "",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h2>Pronto para transformar sua vida financeira?</h2><p>Abra sua conta em menos de 5 minutos, sem burocracia, direto pelo celular.</p>",
@@ -4203,7 +4183,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abra sua conta grátis",
@@ -4214,7 +4194,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Baixar o Super App",
@@ -4241,7 +4221,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Alert</h1>"
           },
           {
-            "block": "ds-alert",
+            "block": "ds-react-alert",
             "properties": {
               "p76617269616e74": "information",
               "p7374617465": "enabled",
@@ -4266,7 +4246,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-alert",
+            "block": "ds-react-alert",
             "properties": {
               "p76617269616e74": "information",
               "p7374617465": "skeleton",
@@ -4297,7 +4277,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Avatar</h1>"
           },
           {
-            "block": "ds-avatar",
+            "block": "ds-react-avatar",
             "properties": {
               "p636f6c6f72": "soft",
               "p76617269616e74": "initial",
@@ -4320,7 +4300,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-avatar",
+            "block": "ds-react-avatar",
             "properties": {
               "p636f6c6f72": "soft",
               "p76617269616e74": "initial",
@@ -4344,7 +4324,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-avatar",
+            "block": "ds-react-avatar",
             "properties": {
               "p636f6c6f72": "soft",
               "p76617269616e74": "initial",
@@ -4374,7 +4354,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Accordion</h1>"
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "p7469746c65": "Como editar este componente?",
               "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
@@ -4397,7 +4377,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "p7469746c65": "Como editar este componente?",
               "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
@@ -4421,7 +4401,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-accordion",
+            "block": "ds-react-accordion",
             "properties": {
               "p7469746c65": "Como editar este componente?",
               "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
@@ -4451,7 +4431,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Badge</h1>"
           },
           {
-            "block": "ds-badge",
+            "block": "ds-react-badge",
             "properties": {
               "p76617269616e74": "label",
               "p636f756e74": 8,
@@ -4477,7 +4457,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Button</h1>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "p6c6162656c": "Conhecer o showcase",
               "p73697a65": "large",
@@ -4500,7 +4480,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "p6c6162656c": "Conhecer o showcase",
               "p73697a65": "large",
@@ -4524,7 +4504,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "p6c6162656c": "Conhecer o showcase",
               "p73697a65": "large",
@@ -4548,7 +4528,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "p6c6162656c": "Conhecer o showcase",
               "p73697a65": "large",
@@ -4578,7 +4558,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Banner</h1>"
           },
           {
-            "block": "ds-banner",
+            "block": "ds-react-banner",
             "properties": {
               "p76617269616e74": "image",
               "p73697a65": "medium",
@@ -4600,7 +4580,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-banner",
+            "block": "ds-react-banner",
             "properties": {
               "p76617269616e74": "image",
               "p73697a65": "medium",
@@ -4629,7 +4609,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>BottomSheet</h1>"
           },
           {
-            "block": "ds-bottom-sheet",
+            "block": "ds-react-bottom-sheet",
             "properties": {
               "p7469746c65": "Mais possibilidades",
               "p69734f70656e": "false",
@@ -4660,7 +4640,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>BottomSheetCountry</h1>"
           },
           {
-            "block": "ds-bottom-sheet-country",
+            "block": "ds-react-bottom-sheet-country",
             "properties": {
               "p73686f77536561726368": "true",
               "p7469746c65": "Escolha o país",
@@ -4701,7 +4681,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Card</h1>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
               "p7374617465": "enabled",
@@ -4721,7 +4701,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
               "p7374617465": "skeleton",
@@ -4741,7 +4721,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
               "p7374617465": "disabled",
@@ -4767,7 +4747,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Checkbox</h1>"
           },
           {
-            "block": "ds-checkbox",
+            "block": "ds-react-checkbox",
             "properties": {
               "p7374617465": "enabled",
               "p636865636b6564": "false",
@@ -4787,7 +4767,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-checkbox",
+            "block": "ds-react-checkbox",
             "properties": {
               "p7374617465": "skeleton",
               "p636865636b6564": "false",
@@ -4807,7 +4787,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-checkbox",
+            "block": "ds-react-checkbox",
             "properties": {
               "p7374617465": "disabled",
               "p636865636b6564": "false",
@@ -4833,7 +4813,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Chip</h1>"
           },
           {
-            "block": "ds-chip",
+            "block": "ds-react-chip",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p73656c6563746564": "false",
@@ -4855,7 +4835,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-chip",
+            "block": "ds-react-chip",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p73656c6563746564": "false",
@@ -4878,7 +4858,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-chip",
+            "block": "ds-react-chip",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p73656c6563746564": "false",
@@ -4901,7 +4881,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-chip",
+            "block": "ds-react-chip",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p73656c6563746564": "false",
@@ -4930,7 +4910,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartBar</h1>"
           },
           {
-            "block": "ds-chart-bar",
+            "block": "ds-react-chart-bar",
             "properties": {
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
@@ -4976,7 +4956,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-chart-bar",
+            "block": "ds-react-chart-bar",
             "properties": {
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
@@ -5029,7 +5009,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartDonut</h1>"
           },
           {
-            "block": "ds-chart-donut",
+            "block": "ds-react-chart-donut",
             "properties": {
               "p73686f7744656661756c744c6567656e64": "true",
               "p746f74616c4c6162656c": "Total",
@@ -5075,7 +5055,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-chart-donut",
+            "block": "ds-react-chart-donut",
             "properties": {
               "p73686f7744656661756c744c6567656e64": "true",
               "p746f74616c4c6162656c": "Total",
@@ -5128,7 +5108,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartLine</h1>"
           },
           {
-            "block": "ds-chart-line",
+            "block": "ds-react-chart-line",
             "properties": {
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
@@ -5171,7 +5151,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-chart-line",
+            "block": "ds-react-chart-line",
             "properties": {
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
@@ -5221,7 +5201,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ChartMeter</h1>"
           },
           {
-            "block": "ds-chart-meter",
+            "block": "ds-react-chart-meter",
             "properties": {
               "p7469746c65": "Distribuição",
               "p746f74616c": 100,
@@ -5268,7 +5248,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-chart-meter",
+            "block": "ds-react-chart-meter",
             "properties": {
               "p7469746c65": "Distribuição",
               "p746f74616c": 100,
@@ -5322,7 +5302,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Counter</h1>"
           },
           {
-            "block": "ds-counter",
+            "block": "ds-react-counter",
             "properties": {
               "p636f756e74": 23,
               "p6d61784c656e677468": 100,
@@ -5348,7 +5328,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>CrossSelling</h1>"
           },
           {
-            "block": "ds-cross-selling",
+            "block": "ds-react-cross-selling",
             "properties": {
               "p6465736372697074696f6e": "Conteúdo de demonstração.",
               "p7375627469746c65": "Conheça os produtos",
@@ -5372,7 +5352,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-cross-selling",
+            "block": "ds-react-cross-selling",
             "properties": {
               "p6465736372697074696f6e": "Conteúdo de demonstração.",
               "p7375627469746c65": "Conheça os produtos",
@@ -5403,7 +5383,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Carousel</h1>"
           },
           {
-            "block": "ds-carousel",
+            "block": "ds-react-carousel",
             "properties": {
               "p76617269616e74": "page-view",
               "p7061676553706163696e67": 16,
@@ -5443,7 +5423,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>DatePicker</h1>"
           },
           {
-            "block": "ds-date-picker",
+            "block": "ds-react-date-picker",
             "properties": {
               "p73656c656374696f6e4d6f6465": "single",
               "p6c6f63616c65": "pt-BR",
@@ -5471,7 +5451,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>DecoratedText</h1>"
           },
           {
-            "block": "ds-decorated-text",
+            "block": "ds-react-decorated-text",
             "properties": {
               "p6368696c6472656e": "Seu futuro começa agora.",
               "p636c6173735374796c65": "Type.Body.Large.Regular",
@@ -5493,7 +5473,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-decorated-text",
+            "block": "ds-react-decorated-text",
             "properties": {
               "p6368696c6472656e": "Seu futuro começa agora.",
               "p636c6173735374796c65": "Type.Body.Large.Regular",
@@ -5516,7 +5496,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-decorated-text",
+            "block": "ds-react-decorated-text",
             "properties": {
               "p6368696c6472656e": "Seu futuro começa agora.",
               "p636c6173735374796c65": "Type.Body.Large.Regular",
@@ -5545,7 +5525,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Divider</h1>"
           },
           {
-            "block": "ds-divider",
+            "block": "ds-react-divider",
             "properties": {
               "p76617269616e74": "solid",
               "p6f7269656e746174696f6e": "horizontal",
@@ -5571,7 +5551,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>FeedbackScreen</h1>"
           },
           {
-            "block": "ds-feedback-screen",
+            "block": "ds-react-feedback-screen",
             "properties": {
               "p76617269616e74": "custom",
               "p7469746c65": "Tudo pronto!",
@@ -5594,7 +5574,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-feedback-screen",
+            "block": "ds-react-feedback-screen",
             "properties": {
               "p76617269616e74": "custom",
               "p7469746c65": "Tudo pronto!",
@@ -5624,7 +5604,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Flag</h1>"
           },
           {
-            "block": "ds-flag",
+            "block": "ds-react-flag",
             "properties": {
               "p69636f6e466c6167": "ic_flag_brazil_rounded",
               "p636f6e74656e744465736372697074696f6e": "Brasil",
@@ -5645,7 +5625,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-flag",
+            "block": "ds-react-flag",
             "properties": {
               "p69636f6e466c6167": "ic_flag_brazil_rounded",
               "p636f6e74656e744465736372697074696f6e": "Brasil",
@@ -5667,7 +5647,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-flag",
+            "block": "ds-react-flag",
             "properties": {
               "p69636f6e466c6167": "ic_flag_brazil_rounded",
               "p636f6e74656e744465736372697074696f6e": "Brasil",
@@ -5695,7 +5675,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Header</h1>"
           },
           {
-            "block": "ds-header",
+            "block": "ds-react-header",
             "properties": {
               "p76617269616e74": "innerPages",
               "p74797065": "title",
@@ -5717,7 +5697,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-header",
+            "block": "ds-react-header",
             "properties": {
               "p76617269616e74": "innerPages",
               "p74797065": "title",
@@ -5746,7 +5726,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>FloatingActionButton</h1>"
           },
           {
-            "block": "ds-floating-action-button",
+            "block": "ds-react-floating-action-button",
             "properties": {
               "p6c6162656c": "Explorar",
               "p69636f6e": "ic_add",
@@ -5769,7 +5749,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-floating-action-button",
+            "block": "ds-react-floating-action-button",
             "properties": {
               "p6c6162656c": "Explorar",
               "p69636f6e": "ic_add",
@@ -5793,7 +5773,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-floating-action-button",
+            "block": "ds-react-floating-action-button",
             "properties": {
               "p6c6162656c": "Explorar",
               "p69636f6e": "ic_add",
@@ -5823,7 +5803,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Icon</h1>"
           },
           {
-            "block": "ds-icon",
+            "block": "ds-react-icon",
             "properties": {
               "p6173736574": "ic_orange",
               "p636f6e74656e744465736372697074696f6e": "Toranja",
@@ -5844,7 +5824,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-icon",
+            "block": "ds-react-icon",
             "properties": {
               "p6173736574": "ic_orange",
               "p636f6e74656e744465736372697074696f6e": "Toranja",
@@ -5866,7 +5846,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-icon",
+            "block": "ds-react-icon",
             "properties": {
               "p6173736574": "ic_orange",
               "p636f6e74656e744465736372697074696f6e": "Toranja",
@@ -5894,7 +5874,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Image</h1>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
@@ -5920,7 +5900,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
@@ -5947,7 +5927,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
@@ -5980,7 +5960,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>IconButton</h1>"
           },
           {
-            "block": "ds-icon-button",
+            "block": "ds-react-icon-button",
             "properties": {
               "p73697a65": "large",
               "p686965726172636879": "primary",
@@ -6003,7 +5983,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-icon-button",
+            "block": "ds-react-icon-button",
             "properties": {
               "p73697a65": "large",
               "p686965726172636879": "primary",
@@ -6027,7 +6007,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-icon-button",
+            "block": "ds-react-icon-button",
             "properties": {
               "p73697a65": "large",
               "p686965726172636879": "primary",
@@ -6051,7 +6031,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-icon-button",
+            "block": "ds-react-icon-button",
             "properties": {
               "p73697a65": "large",
               "p686965726172636879": "primary",
@@ -6081,7 +6061,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>IconChip</h1>"
           },
           {
-            "block": "ds-icon-chip",
+            "block": "ds-react-icon-chip",
             "properties": {
               "p7374617465": "enabled",
               "p76617269616e74": "label",
@@ -6105,7 +6085,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-icon-chip",
+            "block": "ds-react-icon-chip",
             "properties": {
               "p7374617465": "skeleton",
               "p76617269616e74": "label",
@@ -6129,7 +6109,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-icon-chip",
+            "block": "ds-react-icon-chip",
             "properties": {
               "p7374617465": "disabled",
               "p76617269616e74": "label",
@@ -6153,7 +6133,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-icon-chip",
+            "block": "ds-react-icon-chip",
             "properties": {
               "p7374617465": "loading",
               "p76617269616e74": "label",
@@ -6183,7 +6163,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputCountry</h1>"
           },
           {
-            "block": "ds-input-country",
+            "block": "ds-react-input-country",
             "properties": {
               "p6c6162656c": "Telefone",
               "p706c616365686f6c646572": "Digite seu telefone",
@@ -6220,7 +6200,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-input-country",
+            "block": "ds-react-input-country",
             "properties": {
               "p6c6162656c": "Telefone",
               "p706c616365686f6c646572": "Digite seu telefone",
@@ -6257,7 +6237,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-input-country",
+            "block": "ds-react-input-country",
             "properties": {
               "p6c6162656c": "Telefone",
               "p706c616365686f6c646572": "Digite seu telefone",
@@ -6294,7 +6274,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-input-country",
+            "block": "ds-react-input-country",
             "properties": {
               "p6c6162656c": "Telefone",
               "p706c616365686f6c646572": "Digite seu telefone",
@@ -6337,7 +6317,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputDate</h1>"
           },
           {
-            "block": "ds-input-date",
+            "block": "ds-react-input-date",
             "properties": {
               "p6c6162656c": "Data",
               "p706c616365686f6c646572": "DD/MM/AAAA",
@@ -6357,7 +6337,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-input-date",
+            "block": "ds-react-input-date",
             "properties": {
               "p6c6162656c": "Data",
               "p706c616365686f6c646572": "DD/MM/AAAA",
@@ -6378,7 +6358,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-input-date",
+            "block": "ds-react-input-date",
             "properties": {
               "p6c6162656c": "Data",
               "p706c616365686f6c646572": "DD/MM/AAAA",
@@ -6399,7 +6379,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-input-date",
+            "block": "ds-react-input-date",
             "properties": {
               "p6c6162656c": "Data",
               "p706c616365686f6c646572": "DD/MM/AAAA",
@@ -6426,7 +6406,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputPassword</h1>"
           },
           {
-            "block": "ds-input-password",
+            "block": "ds-react-input-password",
             "properties": {
               "p6c6162656c": "Senha",
               "p706c616365686f6c646572": "Digite uma senha",
@@ -6446,7 +6426,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-input-password",
+            "block": "ds-react-input-password",
             "properties": {
               "p6c6162656c": "Senha",
               "p706c616365686f6c646572": "Digite uma senha",
@@ -6467,7 +6447,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-input-password",
+            "block": "ds-react-input-password",
             "properties": {
               "p6c6162656c": "Senha",
               "p706c616365686f6c646572": "Digite uma senha",
@@ -6488,7 +6468,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-input-password",
+            "block": "ds-react-input-password",
             "properties": {
               "p6c6162656c": "Senha",
               "p706c616365686f6c646572": "Digite uma senha",
@@ -6515,7 +6495,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputSearch</h1>"
           },
           {
-            "block": "ds-input-search",
+            "block": "ds-react-input-search",
             "properties": {
               "p6c6162656c": "Buscar",
               "p706c616365686f6c646572": "O que você procura?",
@@ -6535,7 +6515,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-input-search",
+            "block": "ds-react-input-search",
             "properties": {
               "p6c6162656c": "Buscar",
               "p706c616365686f6c646572": "O que você procura?",
@@ -6556,7 +6536,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-input-search",
+            "block": "ds-react-input-search",
             "properties": {
               "p6c6162656c": "Buscar",
               "p706c616365686f6c646572": "O que você procura?",
@@ -6577,7 +6557,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-input-search",
+            "block": "ds-react-input-search",
             "properties": {
               "p6c6162656c": "Buscar",
               "p706c616365686f6c646572": "O que você procura?",
@@ -6604,7 +6584,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputText</h1>"
           },
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "p74797065": "text",
               "p6c6162656c": "Nome completo",
@@ -6625,7 +6605,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "p74797065": "text",
               "p6c6162656c": "Nome completo",
@@ -6647,7 +6627,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "p74797065": "text",
               "p6c6162656c": "Nome completo",
@@ -6669,7 +6649,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "p74797065": "text",
               "p6c6162656c": "Nome completo",
@@ -6697,7 +6677,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>InputMoney</h1>"
           },
           {
-            "block": "ds-input-money",
+            "block": "ds-react-input-money",
             "properties": {
               "p73686f77427574746f6e73": "true",
               "p6669786564496e6372656d656e7456616c7565": 100,
@@ -6722,7 +6702,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-input-money",
+            "block": "ds-react-input-money",
             "properties": {
               "p73686f77427574746f6e73": "true",
               "p6669786564496e6372656d656e7456616c7565": 100,
@@ -6748,7 +6728,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-input-money",
+            "block": "ds-react-input-money",
             "properties": {
               "p73686f77427574746f6e73": "true",
               "p6669786564496e6372656d656e7456616c7565": 100,
@@ -6780,7 +6760,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Link</h1>"
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "p6c6162656c": "Explorar todos os componentes",
               "p73697a65": "medium",
@@ -6801,7 +6781,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "p6c6162656c": "Explorar todos os componentes",
               "p73697a65": "medium",
@@ -6829,7 +6809,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItem</h1>"
           },
           {
-            "block": "ds-list-item",
+            "block": "ds-react-list-item",
             "properties": {
               "p6c6162656c": "Conta digital",
               "p706172616772617068": "Um item da sua lista",
@@ -6850,7 +6830,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-list-item",
+            "block": "ds-react-list-item",
             "properties": {
               "p6c6162656c": "Conta digital",
               "p706172616772617068": "Um item da sua lista",
@@ -6872,7 +6852,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-list-item",
+            "block": "ds-react-list-item",
             "properties": {
               "p6c6162656c": "Conta digital",
               "p706172616772617068": "Um item da sua lista",
@@ -6900,7 +6880,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemControl</h1>"
           },
           {
-            "block": "ds-list-item-control",
+            "block": "ds-react-list-item-control",
             "properties": {
               "p747261696c696e6756617269616e74": "switch",
               "p747261696c696e6750726f70732e636865636b6564": "false",
@@ -6922,7 +6902,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-list-item-control",
+            "block": "ds-react-list-item-control",
             "properties": {
               "p747261696c696e6756617269616e74": "switch",
               "p747261696c696e6750726f70732e636865636b6564": "false",
@@ -6945,7 +6925,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-list-item-control",
+            "block": "ds-react-list-item-control",
             "properties": {
               "p747261696c696e6756617269616e74": "switch",
               "p747261696c696e6750726f70732e636865636b6564": "false",
@@ -6968,7 +6948,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-list-item-control",
+            "block": "ds-react-list-item-control",
             "properties": {
               "p747261696c696e6756617269616e74": "switch",
               "p747261696c696e6750726f70732e636865636b6564": "false",
@@ -6997,7 +6977,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemGeneral</h1>"
           },
           {
-            "block": "ds-list-item-general",
+            "block": "ds-react-list-item-general",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p706172616772617068": "Conheça as possibilidades",
@@ -7019,7 +6999,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-list-item-general",
+            "block": "ds-react-list-item-general",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p706172616772617068": "Conheça as possibilidades",
@@ -7042,7 +7022,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-list-item-general",
+            "block": "ds-react-list-item-general",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p706172616772617068": "Conheça as possibilidades",
@@ -7065,7 +7045,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-list-item-general",
+            "block": "ds-react-list-item-general",
             "properties": {
               "p6c6162656c": "Investimentos",
               "p706172616772617068": "Conheça as possibilidades",
@@ -7094,7 +7074,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemAction</h1>"
           },
           {
-            "block": "ds-list-item-action",
+            "block": "ds-react-list-item-action",
             "properties": {
               "p747261696c696e6756617269616e74": "button",
               "p747261696c696e6750726f70732e6c6162656c": "Explorar",
@@ -7117,7 +7097,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-list-item-action",
+            "block": "ds-react-list-item-action",
             "properties": {
               "p747261696c696e6756617269616e74": "button",
               "p747261696c696e6750726f70732e6c6162656c": "Explorar",
@@ -7141,7 +7121,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-list-item-action",
+            "block": "ds-react-list-item-action",
             "properties": {
               "p747261696c696e6756617269616e74": "button",
               "p747261696c696e6750726f70732e6c6162656c": "Explorar",
@@ -7165,7 +7145,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-list-item-action",
+            "block": "ds-react-list-item-action",
             "properties": {
               "p747261696c696e6756617269616e74": "button",
               "p747261696c696e6750726f70732e6c6162656c": "Explorar",
@@ -7195,7 +7175,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ListItemView</h1>"
           },
           {
-            "block": "ds-list-item-view",
+            "block": "ds-react-list-item-view",
             "properties": {
               "p6f7269656e746174696f6e": "horizontal",
               "p6c6162656c": "Saldo ilustrativo",
@@ -7217,7 +7197,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-list-item-view",
+            "block": "ds-react-list-item-view",
             "properties": {
               "p6f7269656e746174696f6e": "horizontal",
               "p6c6162656c": "Saldo ilustrativo",
@@ -7246,7 +7226,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>MenuItem</h1>"
           },
           {
-            "block": "ds-menu-item",
+            "block": "ds-react-menu-item",
             "properties": {
               "p76617269616e74": "icon",
               "p73697a65": "large",
@@ -7275,7 +7255,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>NeutralIconButton</h1>"
           },
           {
-            "block": "ds-neutral-icon-button",
+            "block": "ds-react-neutral-icon-button",
             "properties": {
               "p69636f6e": "ic_ellipsis",
               "p73697a65": "medium",
@@ -7297,7 +7277,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-neutral-icon-button",
+            "block": "ds-react-neutral-icon-button",
             "properties": {
               "p69636f6e": "ic_ellipsis",
               "p73697a65": "medium",
@@ -7320,7 +7300,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-neutral-icon-button",
+            "block": "ds-react-neutral-icon-button",
             "properties": {
               "p69636f6e": "ic_ellipsis",
               "p73697a65": "medium",
@@ -7343,7 +7323,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-neutral-icon-button",
+            "block": "ds-react-neutral-icon-button",
             "properties": {
               "p69636f6e": "ic_ellipsis",
               "p73697a65": "medium",
@@ -7372,7 +7352,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>PageIndicator</h1>"
           },
           {
-            "block": "ds-page-indicator",
+            "block": "ds-react-page-indicator",
             "properties": {
               "p6974656d73": 4,
               "p73656c6563746564": 1,
@@ -7398,7 +7378,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>PaymentMethods</h1>"
           },
           {
-            "block": "ds-payment-methods",
+            "block": "ds-react-payment-methods",
             "properties": {
               "p7061796d656e744d6574686f64": "mastercard",
               "p73697a65": "large",
@@ -7419,7 +7399,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-payment-methods",
+            "block": "ds-react-payment-methods",
             "properties": {
               "p7061796d656e744d6574686f64": "mastercard",
               "p73697a65": "large",
@@ -7441,7 +7421,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-payment-methods",
+            "block": "ds-react-payment-methods",
             "properties": {
               "p7061796d656e744d6574686f64": "mastercard",
               "p73697a65": "large",
@@ -7469,7 +7449,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>PinCode</h1>"
           },
           {
-            "block": "ds-pin-code",
+            "block": "ds-react-pin-code",
             "properties": {
               "p6669656c6473": "4",
               "p7374617465": "enabled",
@@ -7496,7 +7476,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-pin-code",
+            "block": "ds-react-pin-code",
             "properties": {
               "p6669656c6473": "4",
               "p7374617465": "skeleton",
@@ -7523,7 +7503,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-pin-code",
+            "block": "ds-react-pin-code",
             "properties": {
               "p6669656c6473": "4",
               "p7374617465": "disabled",
@@ -7556,7 +7536,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ProgressBar</h1>"
           },
           {
-            "block": "ds-progress-bar",
+            "block": "ds-react-progress-bar",
             "properties": {
               "p76617269616e74": "default",
               "p70726f6772657373": 60,
@@ -7576,7 +7556,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-progress-bar",
+            "block": "ds-react-progress-bar",
             "properties": {
               "p76617269616e74": "default",
               "p70726f6772657373": 60,
@@ -7603,7 +7583,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ProgressCircle</h1>"
           },
           {
-            "block": "ds-progress-circle",
+            "block": "ds-react-progress-circle",
             "properties": {
               "p73697a65": "large",
               "p70726f6772657373": 65,
@@ -7630,7 +7610,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Radio</h1>"
           },
           {
-            "block": "ds-radio",
+            "block": "ds-react-radio",
             "properties": {
               "p6368696c6472656e": "Escolher esta opção",
               "p6e616d65": "preferencia",
@@ -7653,7 +7633,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-radio",
+            "block": "ds-react-radio",
             "properties": {
               "p6368696c6472656e": "Escolher esta opção",
               "p6e616d65": "preferencia",
@@ -7676,7 +7656,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-radio",
+            "block": "ds-react-radio",
             "properties": {
               "p6368696c6472656e": "Escolher esta opção",
               "p6e616d65": "preferencia",
@@ -7705,7 +7685,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SectionTitle</h1>"
           },
           {
-            "block": "ds-section-title",
+            "block": "ds-react-section-title",
             "properties": {
               "p7469746c65": "Tudo para sua vida",
               "p73686f774465736372697074696f6e": "true",
@@ -7729,7 +7709,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-section-title",
+            "block": "ds-react-section-title",
             "properties": {
               "p7469746c65": "Tudo para sua vida",
               "p73686f774465736372697074696f6e": "true",
@@ -7754,7 +7734,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-section-title",
+            "block": "ds-react-section-title",
             "properties": {
               "p7469746c65": "Tudo para sua vida",
               "p73686f774465736372697074696f6e": "true",
@@ -7785,7 +7765,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SectionSubtitle</h1>"
           },
           {
-            "block": "ds-section-subtitle",
+            "block": "ds-react-section-subtitle",
             "properties": {
               "p7375627469746c65": "Escolha seu próximo passo",
               "p747261696c696e674c6162656c": "Saiba mais",
@@ -7805,7 +7785,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-section-subtitle",
+            "block": "ds-react-section-subtitle",
             "properties": {
               "p7375627469746c65": "Escolha seu próximo passo",
               "p747261696c696e674c6162656c": "Saiba mais",
@@ -7832,7 +7812,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SegmentedControl</h1>"
           },
           {
-            "block": "ds-segmented-control",
+            "block": "ds-react-segmented-control",
             "properties": {
               "p7374617465": "enabled",
               "schemaVersion": "toranja-v3"
@@ -7860,7 +7840,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-segmented-control",
+            "block": "ds-react-segmented-control",
             "properties": {
               "p7374617465": "skeleton",
               "schemaVersion": "toranja-v3"
@@ -7894,7 +7874,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Select</h1>"
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "p6c6162656c": "Produto de interesse",
               "p706c616365686f6c646572": "Escolha uma opção",
@@ -7925,7 +7905,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "p6c6162656c": "Produto de interesse",
               "p706c616365686f6c646572": "Escolha uma opção",
@@ -7957,7 +7937,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "p6c6162656c": "Produto de interesse",
               "p706c616365686f6c646572": "Escolha uma opção",
@@ -7989,7 +7969,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "p6c6162656c": "Produto de interesse",
               "p706c616365686f6c646572": "Escolha uma opção",
@@ -8027,7 +8007,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Spinner</h1>"
           },
           {
-            "block": "ds-spinner",
+            "block": "ds-react-spinner",
             "properties": {
               "p73697a65": "large",
               "p617269614c6162656c": "Carregando demonstração",
@@ -8053,7 +8033,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Signal</h1>"
           },
           {
-            "block": "ds-signal",
+            "block": "ds-react-signal",
             "properties": {
               "p76617269616e74": "success",
               "p73697a65": "large",
@@ -8074,7 +8054,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-signal",
+            "block": "ds-react-signal",
             "properties": {
               "p76617269616e74": "success",
               "p73697a65": "large",
@@ -8101,7 +8081,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Switch</h1>"
           },
           {
-            "block": "ds-switch",
+            "block": "ds-react-switch",
             "properties": {
               "p636865636b6564": "false",
               "p7374617465": "enabled",
@@ -8121,7 +8101,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-switch",
+            "block": "ds-react-switch",
             "properties": {
               "p636865636b6564": "false",
               "p7374617465": "disabled",
@@ -8141,7 +8121,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-switch",
+            "block": "ds-react-switch",
             "properties": {
               "p636865636b6564": "false",
               "p7374617465": "skeleton",
@@ -8167,7 +8147,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Snackbar</h1>"
           },
           {
-            "block": "ds-snackbar",
+            "block": "ds-react-snackbar",
             "properties": {
               "p76617269616e74": "success",
               "p7469746c65": "Pronto",
@@ -8198,7 +8178,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Stepper</h1>"
           },
           {
-            "block": "ds-stepper",
+            "block": "ds-react-stepper",
             "properties": {
               "p656e61626c65496e707574": "true",
               "p6d6178": 10,
@@ -8222,7 +8202,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-stepper",
+            "block": "ds-react-stepper",
             "properties": {
               "p656e61626c65496e707574": "true",
               "p6d6178": 10,
@@ -8246,7 +8226,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-stepper",
+            "block": "ds-react-stepper",
             "properties": {
               "p656e61626c65496e707574": "true",
               "p6d6178": 10,
@@ -8276,7 +8256,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Tabs</h1>"
           },
           {
-            "block": "ds-tabs",
+            "block": "ds-react-tabs",
             "properties": {
               "p7374617465": "enabled",
               "p7363726f6c6c61626c65": "true",
@@ -8310,7 +8290,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-tabs",
+            "block": "ds-react-tabs",
             "properties": {
               "p7374617465": "skeleton",
               "p7363726f6c6c61626c65": "true",
@@ -8350,7 +8330,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Tag</h1>"
           },
           {
-            "block": "ds-tag",
+            "block": "ds-react-tag",
             "properties": {
               "p636f6c6f72": "brand",
               "p686965726172636879": "soft",
@@ -8373,7 +8353,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-tag",
+            "block": "ds-react-tag",
             "properties": {
               "p636f6c6f72": "brand",
               "p686965726172636879": "soft",
@@ -8396,7 +8376,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-tag",
+            "block": "ds-react-tag",
             "properties": {
               "p636f6c6f72": "brand",
               "p686965726172636879": "soft",
@@ -8425,7 +8405,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Text</h1>"
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "p6368696c6472656e": "Em todo momento da vida, vejo você.",
               "p7465787453697a65": "large",
@@ -8448,7 +8428,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "p6368696c6472656e": "Em todo momento da vida, vejo você.",
               "p7465787453697a65": "large",
@@ -8472,7 +8452,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "p6368696c6472656e": "Em todo momento da vida, vejo você.",
               "p7465787453697a65": "large",
@@ -8502,7 +8482,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>TextArea</h1>"
           },
           {
-            "block": "ds-text-area",
+            "block": "ds-react-text-area",
             "properties": {
               "p6c6162656c": "Sua mensagem",
               "p73686f77436f756e746572": "true",
@@ -8524,7 +8504,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-text-area",
+            "block": "ds-react-text-area",
             "properties": {
               "p6c6162656c": "Sua mensagem",
               "p73686f77436f756e746572": "true",
@@ -8547,7 +8527,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-text-area",
+            "block": "ds-react-text-area",
             "properties": {
               "p6c6162656c": "Sua mensagem",
               "p73686f77436f756e746572": "true",
@@ -8570,7 +8550,7 @@
             "text": "<h2>Estado: loading</h2>"
           },
           {
-            "block": "ds-text-area",
+            "block": "ds-react-text-area",
             "properties": {
               "p6c6162656c": "Sua mensagem",
               "p73686f77436f756e746572": "true",
@@ -8599,7 +8579,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Timeline</h1>"
           },
           {
-            "block": "ds-timeline",
+            "block": "ds-react-timeline",
             "properties": {
               "schemaVersion": "toranja-v3"
             },
@@ -8636,7 +8616,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-timeline",
+            "block": "ds-react-timeline",
             "properties": {
               "p7374617465": "skeleton",
               "schemaVersion": "toranja-v3"
@@ -8674,7 +8654,7 @@
             "text": "<h2>Estado: disabled</h2>"
           },
           {
-            "block": "ds-timeline",
+            "block": "ds-react-timeline",
             "properties": {
               "p7374617465": "disabled",
               "schemaVersion": "toranja-v3"
@@ -8718,7 +8698,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Widget</h1>"
           },
           {
-            "block": "ds-widget",
+            "block": "ds-react-widget",
             "properties": {
               "p74696d6541676f": "Agora",
               "p746167": "Novidade",
@@ -8743,7 +8723,7 @@
             "text": "<h2>Estado: skeleton</h2>"
           },
           {
-            "block": "ds-widget",
+            "block": "ds-react-widget",
             "properties": {
               "p74696d6541676f": "Agora",
               "p746167": "Novidade",
@@ -9389,7 +9369,7 @@
         "style": "columns-3",
         "content": [
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Controles de formulário</h3><p>Um exemplo editável dos componentes oficiais.</p><p><a href=\"/showcase/v3/formulario\">Explorar composição →</a></p>",
@@ -9398,7 +9378,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Controles e listas</h3><p>Um exemplo editável dos componentes oficiais.</p><p><a href=\"/showcase/v3/controles\">Explorar composição →</a></p>",
@@ -9407,7 +9387,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Cards e carrosséis</h3><p>Um exemplo editável dos componentes oficiais.</p><p><a href=\"/showcase/v3/composicao\">Explorar composição →</a></p>",
@@ -9416,7 +9396,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Dados e gráficos</h3><p>Um exemplo editável dos componentes oficiais.</p><p><a href=\"/showcase/v3/dados\">Explorar composição →</a></p>",
@@ -9425,7 +9405,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Ações e painéis</h3><p>Um exemplo editável dos componentes oficiais.</p><p><a href=\"/showcase/v3/acoes\">Explorar composição →</a></p>",
@@ -9434,7 +9414,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Imagem e mídia</h3><p>Um exemplo editável dos componentes oficiais.</p><p><a href=\"/showcase/v3/video\">Explorar composição →</a></p>",
@@ -9447,32 +9427,12 @@
       {
         "content": [
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver layouts disponíveis",
               "action6f6e436c69636bkind": "navigate",
               "action6f6e436c69636blink": "/showcase/layouts",
-              "action6f6e436c69636btarget": "_self"
-            },
-            "items": []
-          }
-        ]
-      },
-      {
-        "layoutWidth": "reading",
-        "layoutBackground": "brand",
-        "content": [
-          {
-            "text": "<h2>DS Toranja Custom</h2><p>Conheça também os quatro blocos funcionais do projeto, organizados em um grupo próprio.</p>"
-          },
-          {
-            "block": "ds-button",
-            "properties": {
-              "schemaVersion": "toranja-v3",
-              "p6c6162656c": "Ver blocos Custom",
-              "action6f6e436c69636bkind": "navigate",
-              "action6f6e436c69636blink": "/showcase/custom",
               "action6f6e436c69636btarget": "_self"
             },
             "items": []
@@ -9498,7 +9458,7 @@
         "layoutBackground": "neutral",
         "content": [
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Nome completo",
@@ -9508,7 +9468,7 @@
             "items": []
           },
           {
-            "block": "ds-input-text",
+            "block": "ds-react-input-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "E-mail",
@@ -9518,7 +9478,7 @@
             "items": []
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Produto de interesse"
@@ -9537,7 +9497,7 @@
             ]
           },
           {
-            "block": "ds-text-area",
+            "block": "ds-react-text-area",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Mensagem",
@@ -9547,7 +9507,7 @@
             "items": []
           },
           {
-            "block": "ds-list-item",
+            "block": "ds-react-list-item",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Concordo com o uso dos meus dados para contato.",
@@ -9559,7 +9519,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Exemplo de composição de controles oficiais. Validação e envio de formulário dependem de uma implementação de integração.",
@@ -9571,7 +9531,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Enviar solicitação",
@@ -9593,7 +9553,7 @@
             "text": "<h1>Controles e listas</h1><p>Os valores iniciais e as variantes podem ser alterados no painel.</p><p><a href=\"/showcase/v3\">Voltar às novidades V3</a></p>"
           },
           {
-            "block": "ds-list-item",
+            "block": "ds-react-list-item",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Receber novidades",
@@ -9605,7 +9565,7 @@
             "items": []
           },
           {
-            "block": "ds-list-item-control",
+            "block": "ds-react-list-item-control",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Quantidade",
@@ -9619,7 +9579,7 @@
             "items": []
           },
           {
-            "block": "ds-select",
+            "block": "ds-react-select",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Escolha um produto"
@@ -9654,7 +9614,7 @@
             "text": "<h1>Composição de conteúdo</h1><p>Adicione itens de texto, imagem, ação ou cartão e reorganize a sequência.</p><p><a href=\"/showcase/v3\">Voltar às novidades V3</a></p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7374617465": "enabled"
@@ -9675,7 +9635,7 @@
             ]
           },
           {
-            "block": "ds-carousel",
+            "block": "ds-react-carousel",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p73686f7750726576696577": true,
@@ -9717,7 +9677,7 @@
             "text": "<h1>Dados estruturados</h1><p>Cada item mantém categoria e valor juntos. Uma fonte de dados cadastrada pode substituir os dados editoriais.</p><p><a href=\"/showcase/v3\">Voltar às novidades V3</a></p>"
           },
           {
-            "block": "ds-chart-bar",
+            "block": "ds-react-chart-bar",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7374617465": "enabled",
@@ -9742,7 +9702,7 @@
             ]
           },
           {
-            "block": "ds-chart-donut",
+            "block": "ds-react-chart-donut",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7374617465": "enabled"
@@ -9782,7 +9742,7 @@
             "text": "<h1>Ações independentes</h1><p>Um botão abre o painel pelo identificador configurado; outro mantém seu próprio destino.</p><p><a href=\"/showcase/v3\">Voltar às novidades V3</a></p>"
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abrir detalhes",
@@ -9792,7 +9752,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abrir catálogo",
@@ -9803,7 +9763,7 @@
             "items": []
           },
           {
-            "block": "ds-bottom-sheet",
+            "block": "ds-react-bottom-sheet",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7469746c65": "Detalhes",
@@ -9840,7 +9800,7 @@
         "layoutAlign": "center",
         "content": [
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/ec9cc3472288.webp",
@@ -9854,7 +9814,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Conteúdo em diferentes formatos",
@@ -9867,7 +9827,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "A imagem apresenta o conteúdo; o link aponta para o arquivo. Nenhum player customizado foi acrescentado ao catálogo.",
@@ -9880,7 +9840,7 @@
             "items": []
           },
           {
-            "block": "ds-link",
+            "block": "ds-react-link",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Abrir vídeo demonstrativo",
@@ -9933,7 +9893,7 @@
             "text": "<p>COLUNAS INDEPENDENTES</p><h2>Duas colunas · 50/50</h2><p>Selecione a seção para ajustar o layout; selecione o componente para definir em qual coluna ele fica.</p>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -9947,7 +9907,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
@@ -9960,7 +9920,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Título, texto e botão continuam sendo componentes independentes, com as propriedades oficiais disponíveis no painel.",
@@ -9973,7 +9933,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver catálogo",
@@ -9997,7 +9957,7 @@
             "text": "<p>COLUNAS INDEPENDENTES</p><h2>Duas colunas · 33/67</h2><p>Selecione a seção para ajustar o layout; selecione o componente para definir em qual coluna ele fica.</p>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -10011,7 +9971,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
@@ -10024,7 +9984,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Título, texto e botão continuam sendo componentes independentes, com as propriedades oficiais disponíveis no painel.",
@@ -10037,7 +9997,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver catálogo",
@@ -10061,7 +10021,7 @@
             "text": "<p>COLUNAS INDEPENDENTES</p><h2>Duas colunas · 67/33</h2><p>Selecione a seção para ajustar o layout; selecione o componente para definir em qual coluna ele fica.</p>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -10075,7 +10035,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
@@ -10088,7 +10048,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Título, texto e botão continuam sendo componentes independentes, com as propriedades oficiais disponíveis no painel.",
@@ -10101,7 +10061,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver catálogo",
@@ -10125,7 +10085,7 @@
             "text": "<p>COLUNAS INDEPENDENTES</p><h2>Duas colunas · 25/75</h2><p>Selecione a seção para ajustar o layout; selecione o componente para definir em qual coluna ele fica.</p>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -10139,7 +10099,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
@@ -10152,7 +10112,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Título, texto e botão continuam sendo componentes independentes, com as propriedades oficiais disponíveis no painel.",
@@ -10165,7 +10125,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver catálogo",
@@ -10189,7 +10149,7 @@
             "text": "<p>COLUNAS INDEPENDENTES</p><h2>Duas colunas · 75/25</h2><p>Selecione a seção para ajustar o layout; selecione o componente para definir em qual coluna ele fica.</p>"
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
@@ -10203,7 +10163,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
@@ -10216,7 +10176,7 @@
             "items": []
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Título, texto e botão continuam sendo componentes independentes, com as propriedades oficiais disponíveis no painel.",
@@ -10229,7 +10189,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Ver catálogo",
@@ -10250,7 +10210,7 @@
             "text": "<p>GRADE AUTOMÁTICA</p><h2>3 colunas</h2><p>Itens distribuídos em uma grade responsiva, com espaçamento consistente.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Possibilidade 1</h3><p>Conteúdo editável com o componente Card oficial.</p>",
@@ -10259,7 +10219,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Possibilidade 2</h3><p>Conteúdo editável com o componente Card oficial.</p>",
@@ -10268,7 +10228,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Possibilidade 3</h3><p>Conteúdo editável com o componente Card oficial.</p>",
@@ -10286,7 +10246,7 @@
             "text": "<p>GRADE AUTOMÁTICA</p><h2>4 colunas</h2><p>Itens distribuídos em uma grade responsiva, com espaçamento consistente.</p>"
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Possibilidade 1</h3><p>Conteúdo editável com o componente Card oficial.</p>",
@@ -10295,7 +10255,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Possibilidade 2</h3><p>Conteúdo editável com o componente Card oficial.</p>",
@@ -10304,7 +10264,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Possibilidade 3</h3><p>Conteúdo editável com o componente Card oficial.</p>",
@@ -10313,7 +10273,7 @@
             "items": []
           },
           {
-            "block": "ds-card",
+            "block": "ds-react-card",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Possibilidade 4</h3><p>Conteúdo editável com o componente Card oficial.</p>",
@@ -10335,7 +10295,7 @@
             "text": "<p>RESPONSIVIDADE</p><h2>Imagem primeiro no mobile</h2><p>A ordem das colunas muda também no DOM para manter a leitura e a navegação por teclado coerentes.</p>"
           },
           {
-            "block": "ds-text",
+            "block": "ds-react-text",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Texto na primeira coluna desktop.",
@@ -10348,7 +10308,7 @@
             "items": []
           },
           {
-            "block": "ds-button",
+            "block": "ds-react-button",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p6c6162656c": "Explorar",
@@ -10360,7 +10320,7 @@
             "items": []
           },
           {
-            "block": "ds-image",
+            "block": "ds-react-image",
             "properties": {
               "schemaVersion": "toranja-v3",
               "p7372632e6c6f63616c": "/assets/demo/ec9cc3472288.webp",
@@ -10370,254 +10330,6 @@
               "classes_layoutColumn": "col-2",
               "p66696c6c5769647468": true,
               "p726174696f": 1.3333333333333333
-            },
-            "items": []
-          }
-        ]
-      }
-    ]
-  },
-  "showcase/custom/formulario": {
-    "title": "Formulário configurável · DS Toranja Custom",
-    "description": "Campos, condições, consentimento e validação. O envio aguarda a configuração de uma integração.",
-    "sections": [
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "compact",
-        "content": [
-          {
-            "text": "<p><a href=\"/showcase/custom\">← DS Toranja Custom</a></p><h1>Formulário configurável</h1><p>Campos, condições, consentimento e validação. O envio aguarda a configuração de uma integração.</p>"
-          }
-        ]
-      },
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "standard",
-        "layoutBackground": "neutral",
-        "content": [
-          {
-            "block": "v3-form",
-            "properties": {
-              "title": "Converse com nosso time",
-              "titleType": "h2",
-              "submitLabel": "Enviar solicitação",
-              "integrationId": "inter-lead",
-              "consent": "<p>Li e concordo com a <a href=\"/politica-de-privacidade\">política de privacidade</a>.</p>",
-              "schemaVersion": "toranja-v3"
-            },
-            "items": [
-              {
-                "fieldName": "nome",
-                "label": "Nome",
-                "kind": "text",
-                "required": true
-              },
-              {
-                "fieldName": "email",
-                "label": "E-mail",
-                "kind": "email",
-                "required": true
-              },
-              {
-                "fieldName": "interesse",
-                "label": "Tenho interesse em",
-                "kind": "select",
-                "options": "<ul><li>Conta | conta</li><li>Crédito | credito</li></ul>",
-                "required": true
-              },
-              {
-                "fieldName": "cpf",
-                "label": "CPF",
-                "kind": "cpf",
-                "required": true,
-                "showWhenField": "interesse",
-                "showWhenOperator": "equals",
-                "showWhenValue": "credito",
-                "hint": "Este campo aparece apenas para a opção Crédito."
-              },
-              {
-                "fieldName": "mensagem",
-                "label": "Mensagem",
-                "kind": "textarea",
-                "maxLength": 500
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "showcase/custom/busca": {
-    "title": "Busca no conteúdo · DS Toranja Custom",
-    "description": "Consulta ao índice público do conteúdo publicado em EDS. O índice deve estar configurado no ambiente.",
-    "sections": [
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "compact",
-        "content": [
-          {
-            "text": "<p><a href=\"/showcase/custom\">← DS Toranja Custom</a></p><h1>Busca no conteúdo</h1><p>Consulta ao índice público do conteúdo publicado em EDS. O índice deve estar configurado no ambiente.</p>"
-          }
-        ]
-      },
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "standard",
-        "layoutBackground": "neutral",
-        "content": [
-          {
-            "block": "v3-search",
-            "properties": {
-              "placeholder": "O que você procura no Inter? (ex: Pix, Cartão Black, Investimentos, Empréstimo)",
-              "indexEndpoint": "/query-index.json",
-              "label": "Buscar no portal Inter",
-              "classes_instant-search": true,
-              "schemaVersion": "toranja-v3"
-            },
-            "items": []
-          }
-        ]
-      }
-    ]
-  },
-  "showcase/custom/video": {
-    "title": "Vídeo responsivo · DS Toranja Custom",
-    "description": "Link de MP4, WebM ou YouTube, capa, proporção e legendas para vídeos nativos.",
-    "sections": [
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "compact",
-        "content": [
-          {
-            "text": "<p><a href=\"/showcase/custom\">← DS Toranja Custom</a></p><h1>Vídeo responsivo</h1><p>Link de MP4, WebM ou YouTube, capa, proporção e legendas para vídeos nativos.</p>"
-          }
-        ]
-      },
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "standard",
-        "layoutBackground": "neutral",
-        "content": [
-          {
-            "block": "v3-video",
-            "properties": {
-              "videoUrl": "/assets/demo/player-v3.mp4",
-              "posterImage": "/assets/demo/ec9cc3472288.webp",
-              "posterImageAlt": "Capa demonstrativa do player",
-              "title": "Demonstração técnica",
-              "caption": "Conteúdo de teste do player. Não é um vídeo institucional.",
-              "ratio": "16/9",
-              "captionsUrl": "/assets/demo/player-v3.vtt",
-              "captionsLanguage": "pt-BR",
-              "captionsLabel": "Português",
-              "schemaVersion": "toranja-v3"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "showcase/custom/simulador": {
-    "title": "Simulador ilustrativo · DS Toranja Custom",
-    "description": "Valores e taxas editoriais configuráveis, com cálculo local demonstrativo.",
-    "sections": [
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "compact",
-        "content": [
-          {
-            "text": "<p><a href=\"/showcase/custom\">← DS Toranja Custom</a></p><h1>Simulador ilustrativo</h1><p>Valores e taxas editoriais configuráveis, com cálculo local demonstrativo.</p>"
-          }
-        ]
-      },
-      {
-        "layoutWidth": "reading",
-        "layoutPadding": "standard",
-        "layoutBackground": "neutral",
-        "content": [
-          {
-            "block": "v3-simulator",
-            "properties": {
-              "title": "Simule seu Rendimento no Meu Porquinho",
-              "subtitle": "Explore um cenário ilustrativo com parâmetros editáveis.",
-              "defaultValue": 10000,
-              "minValue": 500,
-              "maxValue": 100000,
-              "annualRate": 10.965,
-              "referenceRate": 6.17,
-              "cta": "/investimentos",
-              "ctaText": "Começar a Investir",
-              "schemaVersion": "toranja-v3"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "showcase/custom": {
-    "title": "DS Toranja Custom",
-    "description": "Quatro blocos próprios para ampliar as funcionalidades do projeto.",
-    "sections": [
-      {
-        "layoutWidth": "reading",
-        "content": [
-          {
-            "text": "<p><a href=\"/demo-toranja\">← Catálogo oficial</a></p><h1>DS Toranja Custom</h1><p>Funcionalidades desenvolvidas para este projeto. Este grupo reúne formulário, busca, vídeo e simulador; o catálogo oficial mantém seus 73 componentes.</p>"
-          }
-        ]
-      },
-      {
-        "style": "columns-2",
-        "layoutGap": "large",
-        "content": [
-          {
-            "block": "ds-card",
-            "properties": {
-              "schemaVersion": "toranja-v3",
-              "p6368696c6472656e": "<h2>Formulário configurável</h2><p>Campos, condições, consentimento e validação. O envio aguarda a configuração de uma integração.</p><p><a href=\"/showcase/custom/formulario\">Explorar exemplo →</a></p>",
-              "p7374617465": "enabled"
-            },
-            "items": []
-          },
-          {
-            "block": "ds-card",
-            "properties": {
-              "schemaVersion": "toranja-v3",
-              "p6368696c6472656e": "<h2>Busca no conteúdo</h2><p>Consulta ao índice público do conteúdo publicado em EDS. O índice deve estar configurado no ambiente.</p><p><a href=\"/showcase/custom/busca\">Explorar exemplo →</a></p>",
-              "p7374617465": "enabled"
-            },
-            "items": []
-          },
-          {
-            "block": "ds-card",
-            "properties": {
-              "schemaVersion": "toranja-v3",
-              "p6368696c6472656e": "<h2>Vídeo responsivo</h2><p>Link de MP4, WebM ou YouTube, capa, proporção e legendas para vídeos nativos.</p><p><a href=\"/showcase/custom/video\">Explorar exemplo →</a></p>",
-              "p7374617465": "enabled"
-            },
-            "items": []
-          },
-          {
-            "block": "ds-card",
-            "properties": {
-              "schemaVersion": "toranja-v3",
-              "p6368696c6472656e": "<h2>Simulador ilustrativo</h2><p>Valores e taxas editoriais configuráveis, com cálculo local demonstrativo.</p><p><a href=\"/showcase/custom/simulador\">Explorar exemplo →</a></p>",
-              "p7374617465": "enabled"
-            },
-            "items": []
-          }
-        ]
-      },
-      {
-        "content": [
-          {
-            "block": "ds-button",
-            "properties": {
-              "schemaVersion": "toranja-v3",
-              "p6c6162656c": "Ver layouts",
-              "action6f6e436c69636bkind": "navigate",
-              "action6f6e436c69636blink": "/showcase/layouts",
-              "action6f6e436c69636btarget": "_self"
             },
             "items": []
           }
@@ -10637,7 +10349,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Breadcrumb</h1>"
           },
           {
-            "block": "ds-breadcrumb",
+            "block": "ds-react-breadcrumb",
             "properties": {
               "p617269614c6162656c": "Navegação estrutural",
               "schemaVersion": "toranja-v3"
@@ -10678,7 +10390,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>MenuPopup</h1>"
           },
           {
-            "block": "ds-menu-popup",
+            "block": "ds-react-menu-popup",
             "properties": {
               "p706c6163656d656e74": "bottom-start",
               "p617269614c6162656c": "Navegação",
@@ -10718,7 +10430,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ModalDialog</h1>"
           },
           {
-            "block": "ds-modal-dialog",
+            "block": "ds-react-modal-dialog",
             "properties": {
               "p7469746c65": "Informação importante",
               "p73686f77436c6f7365427574746f6e": "true",
@@ -10744,7 +10456,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Pagination</h1>"
           },
           {
-            "block": "ds-pagination",
+            "block": "ds-react-pagination",
             "properties": {
               "p70616765496e646578": 0,
               "p7061676553697a65": 10,
@@ -10784,7 +10496,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Panel</h1>"
           },
           {
-            "block": "ds-panel",
+            "block": "ds-react-panel",
             "properties": {
               "p74797065": "slot",
               "p6368696c6472656e": "<p>Organize informações com o componente oficial.</p>",
@@ -10810,7 +10522,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SideSheet</h1>"
           },
           {
-            "block": "ds-side-sheet",
+            "block": "ds-react-side-sheet",
             "properties": {
               "p7469746c65": "Detalhes",
               "p6465736372697074696f6e": "Informações complementares",
@@ -10836,7 +10548,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Sidebar</h1>"
           },
           {
-            "block": "ds-sidebar",
+            "block": "ds-react-sidebar",
             "properties": {
               "p64656661756c74457870616e73696f6e": "expanded",
               "p6272616e64": "\"inter\"",
@@ -10877,7 +10589,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Table</h1>"
           },
           {
-            "block": "ds-table",
+            "block": "ds-react-table",
             "properties": {
               "p746f6f6c6261722e7469746c65": "Produtos ilustrativos",
               "p73686f7744697669646572": "true",
@@ -10948,7 +10660,7 @@
             "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>TooltipDescription</h1>"
           },
           {
-            "block": "ds-tooltip-description",
+            "block": "ds-react-tooltip-description",
             "properties": {
               "p6465736372697074696f6e": "Informação complementar exibida pelo componente oficial.",
               "p616c69676e": "left",

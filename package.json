@@ -1,19 +1,19 @@
 {
-  "name": "aem-eds-inter-toranja",
-  "version": "4.1.0",
+  "name": "inter-aem-eds-toranja-react",
+  "version": "5.1.0",
   "private": true,
   "type": "module",
-  "description": "Toranja EDS: 73 componentes oficiais do Toranja 2.0.1, adaptador React e modelos XWalk",
+  "description": "Showcase Toranja React Adapter: 73 blocos ds-react-* do Toranja 2.0.1, sem blocos Custom.",
   "engines": {
     "node": ">=22.19.0"
   },
   "scripts": {
     "build:json": "node tools/build-json.mjs",
     "build:content": "node tools/normalize-content.mjs && node tools/render-content.mjs",
-    "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:reference && npm run build:runtime",
+    "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:runtime",
     "preview": "npm run build && node tools/serve.mjs",
     "check": "node tests/contracts.mjs",
-    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && python3 tests/baseline-package.py && python3 tests/property-models.py && node tools/validate-v3.mjs && npm run test:reference",
+    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && python3 tests/baseline-package.py && python3 tests/property-models.py && npm run test:namespace && node tools/validate-v3.mjs",
     "export:aem": "python3 tools/export-aem.py && node tools/write-version.mjs",
     "inventory:ds": "node tools/inventory-ds.mjs",
     "build:ds-models": "node tools/build-ds.mjs",
@@ -25,8 +25,8 @@
     "test:performance": "node tools/lighthouse-audit.mjs",
     "optimize:images": "node tools/optimize-images.mjs",
     "test:compliance": "node tests/ds-compliance.mjs && python3 tests/property-models.py",
-    "build:reference": "node tools/build-component-reference.mjs",
-    "test:reference": "node tests/component-reference.mjs"
+    "test:namespace": "python3 tests/namespace-migration.py",
+    "package": "python3 tools/package-release.py"
   },
   "devDependencies": {
     "@types/react": "18.3.18",
@@ -45,5 +45,5 @@
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
-  "contentVersion": "4.0.0"
+  "contentVersion": "5.1.0"
 }

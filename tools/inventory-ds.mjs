@@ -59,7 +59,7 @@ for(const exp of checker.getExportsOfModule(module)) {
   const param=sig.getParameters()[0];const props=checker.getTypeOfSymbolAtLocation(param,param.valueDeclaration);
   const own=allProps(props).filter(isLocal).map(s=>property(s));
   const inherited=allProps(props).filter(s=>!isLocal(s)).map(s=>s.name);
-  components.push({name:exp.name,block:'ds-'+exp.name.replace(/([a-z])([A-Z])/g,'$1-$2').toLowerCase(),source:path.relative(base,decl.getSourceFile().fileName),properties:own,inheritedHTML:inherited});
+  components.push({name:exp.name,block:'ds-react-'+exp.name.replace(/([a-z])([A-Z])/g,'$1-$2').toLowerCase(),source:path.relative(base,decl.getSourceFile().fileName),properties:own,inheritedHTML:inherited});
 }
 // Resolve generic Text enums from the same official declarations.
 const textTypes=program.getSourceFile(path.join(base,'components/Atoms/Text/types.d.ts'));

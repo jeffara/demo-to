@@ -1,0 +1,21 @@
+{
+  "from": "5.0.0",
+  "to": "5.1.0",
+  "removedBlocks": [
+    "c-form",
+    "c-search",
+    "c-simulator",
+    "c-video"
+  ],
+  "retiredRoutes": [
+    "showcase/custom/formulario",
+    "showcase/custom/busca",
+    "showcase/custom/video",
+    "showcase/custom/simulador",
+    "showcase/custom"
+  ],
+  "pages": 123,
+  "group": "Toranja — React Adapter",
+  "nativeVideoCorrection": "c-video was already HTML/JavaScript; the other three compositions used React.",
+  "liveContentAction": "If a previous package was installed, back up and unpublish the five retired showcase/custom routes, then remove or move their authored copies. The 5.1.0 package preserves unlisted pages and does not delete them automatically."
+}

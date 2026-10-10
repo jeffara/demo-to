@@ -34,7 +34,7 @@ check('Valores de exemplo pertencem às enumerações oficiais',not errors,', '.
 for name in pages:
  for i in range(1,len(name.split('/'))):assert '/'.join(name.split('/')[:i]) in pages,'Página pai ausente'
 check('Hierarquia de páginas completa',True,str(len(pages))+' páginas')
-with zipfile.ZipFile(root/'content/demo-to-content.zip') as z:
+with zipfile.ZipFile(root/'content/inter-aem-eds-showcase-toranja-react.zip') as z:
  docs={n:ET.fromstring(z.read(n)) for n in z.namelist() if n.endswith('.xml')}
  check('XML do pacote válido',True,str(len(docs))+' documentos')
  check('Sem alteração em /conf ou /apps',not any('/conf/' in n or '/apps/' in n for n in z.namelist()))

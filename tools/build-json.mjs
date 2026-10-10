@@ -48,15 +48,14 @@ const groups = [
     ),
   },
   {
-    id: "v3-items",
-    title: "Toranja — itens dos componentes",
+    id: "toranja-react-items",
+    title: "Toranja — React Adapter · Itens",
     components: definitions.filter((d) => d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")),
   },
 ];
-groups.splice(1,0,{id:"toranja-official",title:"Toranja — componentes oficiais",components:definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item"))});
-groups.splice(2,0,{id:'toranja-custom',title:'DS Toranja Custom',components:definitions.filter(d=>['v3-form','v3-search','v3-video','v3-simulator'].includes(d.id))});
+groups.splice(1,0,{id:"toranja-official",title:"Toranja — React Adapter",components:definitions.filter(d=>d.id.startsWith("ds-react-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item"))});
 // Infrastructure field: placement within section columns, not a Toranja component prop.
-for(const d of definitions.filter(d=>(d.id.startsWith('ds-')||['v3-form','v3-search','v3-video','v3-simulator'].includes(d.id))&&!d.plugins.xwalk.page.resourceType.endsWith('/item'))){
+for(const d of definitions.filter(d=>d.id.startsWith('ds-react-')&&!d.plugins.xwalk.page.resourceType.endsWith('/item'))){
  const m=models.find(m=>m.id===d.plugins.xwalk.page.template.model);
  m.fields.push({component:'select',name:'classes_layoutColumn',label:'Layout — coluna na seção',valueType:'string',value:'',description:'Usado no modo Colunas independentes. O conteúdo continua pertencendo à seção.',options:[{name:'Automática',value:''},...[1,2,3,4].map(n=>({name:'Coluna '+n,value:'col-'+n}))]});
 }
@@ -96,16 +95,13 @@ fs.writeFileSync(
     ";\n",
 );
 console.log(
-  `${definitions.filter(d=>d.id.startsWith("ds-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")).length} componentes oficiais; ${models.length} modelos.`,
+  `${definitions.filter(d=>d.id.startsWith("ds-react-")&&!d.plugins?.xwalk?.page?.resourceType?.endsWith("/item")).length} componentes oficiais; ${models.length} modelos.`,
 );
 
 const site=JSON.parse(fs.readFileSync('content/aem-config.json'));
 fs.writeFileSync('scripts/site-config.js',`export const siteConfig = ${JSON.stringify({contentRoot:site.siteRoot,searchIndex:'/query-index.json',searchExclude:['/nav','/header','/footer','/demo-toranja','/showcase','/qa']})};\n`);
 
-const customCells=Object.fromEntries(Object.entries(cells).filter(([id])=>id.startsWith('v3-')));
-const customContainers=Object.fromEntries(Object.entries(containers).filter(([id])=>id.startsWith('v3-')));
-fs.writeFileSync('scripts/custom-contracts.js',`export const cells=${JSON.stringify(customCells)};export const containers=${JSON.stringify(customContainers)};\n`);
-fs.writeFileSync('scripts/image-contract.js',`export const imageCells=${JSON.stringify(cells['ds-image'])};\n`);
+fs.writeFileSync('scripts/image-contract.js',`export const imageCells=${JSON.stringify(cells['ds-react-image'])};\n`);
 const schemas=JSON.parse(fs.readFileSync('scripts/ds-schema.json'));
 for(const [id,schema] of Object.entries(schemas)){
  schema.cellNames=cells[id];schema.itemCellNames=cells[containers[id]]||[];

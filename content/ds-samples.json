@@ -1,6 +1,6 @@
 [
   {
-    "block": "ds-alert",
+    "block": "ds-react-alert",
     "properties": {
       "p76617269616e74": "information",
       "p7374617465": "enabled",
@@ -14,7 +14,7 @@
     "items": []
   },
   {
-    "block": "ds-avatar",
+    "block": "ds-react-avatar",
     "properties": {
       "p636f6c6f72": "soft",
       "p76617269616e74": "initial",
@@ -26,7 +26,7 @@
     "items": []
   },
   {
-    "block": "ds-accordion",
+    "block": "ds-react-accordion",
     "properties": {
       "p7469746c65": "Como editar este componente?",
       "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
@@ -38,7 +38,7 @@
     "items": []
   },
   {
-    "block": "ds-badge",
+    "block": "ds-react-badge",
     "properties": {
       "p76617269616e74": "label",
       "p636f756e74": 8,
@@ -47,7 +47,7 @@
     "items": []
   },
   {
-    "block": "ds-button",
+    "block": "ds-react-button",
     "properties": {
       "p6c6162656c": "Conhecer o showcase",
       "p73697a65": "large",
@@ -59,7 +59,7 @@
     "items": []
   },
   {
-    "block": "ds-banner",
+    "block": "ds-react-banner",
     "properties": {
       "p76617269616e74": "image",
       "p73697a65": "medium",
@@ -70,7 +70,7 @@
     "items": []
   },
   {
-    "block": "ds-bottom-sheet",
+    "block": "ds-react-bottom-sheet",
     "properties": {
       "p7469746c65": "Mais possibilidades",
       "p69734f70656e": "false",
@@ -84,7 +84,7 @@
     "items": []
   },
   {
-    "block": "ds-bottom-sheet-country",
+    "block": "ds-react-bottom-sheet-country",
     "properties": {
       "p73686f77536561726368": "true",
       "p7469746c65": "Escolha o país",
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "block": "ds-breadcrumb",
+    "block": "ds-react-breadcrumb",
     "properties": {
       "p617269614c6162656c": "Navegação estrutural",
       "schemaVersion": "toranja-v3"
@@ -134,7 +134,7 @@
     ]
   },
   {
-    "block": "ds-card",
+    "block": "ds-react-card",
     "properties": {
       "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
       "p7374617465": "enabled",
@@ -143,7 +143,7 @@
     "items": []
   },
   {
-    "block": "ds-checkbox",
+    "block": "ds-react-checkbox",
     "properties": {
       "p7374617465": "enabled",
       "p636865636b6564": "false",
@@ -152,7 +152,7 @@
     "items": []
   },
   {
-    "block": "ds-chip",
+    "block": "ds-react-chip",
     "properties": {
       "p6c6162656c": "Investimentos",
       "p73656c6563746564": "false",
@@ -163,7 +163,7 @@
     "items": []
   },
   {
-    "block": "ds-chart-bar",
+    "block": "ds-react-chart-bar",
     "properties": {
       "p6368617274486569676874": 220,
       "p617269614c6162656c": "Evolução ilustrativa",
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "block": "ds-chart-donut",
+    "block": "ds-react-chart-donut",
     "properties": {
       "p73686f7744656661756c744c6567656e64": "true",
       "p746f74616c4c6162656c": "Total",
@@ -233,7 +233,7 @@
     ]
   },
   {
-    "block": "ds-chart-line",
+    "block": "ds-react-chart-line",
     "properties": {
       "p6368617274486569676874": 220,
       "p617269614c6162656c": "Evolução ilustrativa",
@@ -265,7 +265,7 @@
     ]
   },
   {
-    "block": "ds-chart-meter",
+    "block": "ds-react-chart-meter",
     "properties": {
       "p7469746c65": "Distribuição",
       "p746f74616c": 100,
@@ -301,7 +301,7 @@
     ]
   },
   {
-    "block": "ds-counter",
+    "block": "ds-react-counter",
     "properties": {
       "p636f756e74": 23,
       "p6d61784c656e677468": 100,
@@ -310,7 +310,7 @@
     "items": []
   },
   {
-    "block": "ds-cross-selling",
+    "block": "ds-react-cross-selling",
     "properties": {
       "p6465736372697074696f6e": "Conteúdo de demonstração.",
       "p7375627469746c65": "Conheça os produtos",
@@ -323,7 +323,7 @@
     "items": []
   },
   {
-    "block": "ds-carousel",
+    "block": "ds-react-carousel",
     "properties": {
       "p76617269616e74": "page-view",
       "p7061676553706163696e67": 16,
@@ -346,7 +346,7 @@
     ]
   },
   {
-    "block": "ds-date-picker",
+    "block": "ds-react-date-picker",
     "properties": {
       "p73656c656374696f6e4d6f6465": "single",
       "p6c6f63616c65": "pt-BR",
@@ -357,7 +357,7 @@
     "items": []
   },
   {
-    "block": "ds-decorated-text",
+    "block": "ds-react-decorated-text",
     "properties": {
       "p6368696c6472656e": "Seu futuro começa agora.",
       "p636c6173735374796c65": "Type.Body.Large.Regular",
@@ -368,7 +368,7 @@
     "items": []
   },
   {
-    "block": "ds-divider",
+    "block": "ds-react-divider",
     "properties": {
       "p76617269616e74": "solid",
       "p6f7269656e746174696f6e": "horizontal",
@@ -377,7 +377,7 @@
     "items": []
   },
   {
-    "block": "ds-feedback-screen",
+    "block": "ds-react-feedback-screen",
     "properties": {
       "p76617269616e74": "custom",
       "p7469746c65": "Tudo pronto!",
@@ -389,7 +389,7 @@
     "items": []
   },
   {
-    "block": "ds-flag",
+    "block": "ds-react-flag",
     "properties": {
       "p69636f6e466c6167": "ic_flag_brazil_rounded",
       "p636f6e74656e744465736372697074696f6e": "Brasil",
@@ -399,7 +399,7 @@
     "items": []
   },
   {
-    "block": "ds-header",
+    "block": "ds-react-header",
     "properties": {
       "p76617269616e74": "innerPages",
       "p74797065": "title",
@@ -410,7 +410,7 @@
     "items": []
   },
   {
-    "block": "ds-floating-action-button",
+    "block": "ds-react-floating-action-button",
     "properties": {
       "p6c6162656c": "Explorar",
       "p69636f6e": "ic_add",
@@ -422,7 +422,7 @@
     "items": []
   },
   {
-    "block": "ds-icon",
+    "block": "ds-react-icon",
     "properties": {
       "p6173736574": "ic_orange",
       "p636f6e74656e744465736372697074696f6e": "Toranja",
@@ -432,7 +432,7 @@
     "items": []
   },
   {
-    "block": "ds-image",
+    "block": "ds-react-image",
     "properties": {
       "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
       "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
@@ -445,7 +445,7 @@
     "items": []
   },
   {
-    "block": "ds-icon-button",
+    "block": "ds-react-icon-button",
     "properties": {
       "p73697a65": "large",
       "p686965726172636879": "primary",
@@ -457,7 +457,7 @@
     "items": []
   },
   {
-    "block": "ds-icon-chip",
+    "block": "ds-react-icon-chip",
     "properties": {
       "p7374617465": "enabled",
       "p76617269616e74": "label",
@@ -470,7 +470,7 @@
     "items": []
   },
   {
-    "block": "ds-input-country",
+    "block": "ds-react-input-country",
     "properties": {
       "p6c6162656c": "Telefone",
       "p706c616365686f6c646572": "Digite seu telefone",
@@ -496,7 +496,7 @@
     ]
   },
   {
-    "block": "ds-input-date",
+    "block": "ds-react-input-date",
     "properties": {
       "p6c6162656c": "Data",
       "p706c616365686f6c646572": "DD/MM/AAAA",
@@ -505,7 +505,7 @@
     "items": []
   },
   {
-    "block": "ds-input-password",
+    "block": "ds-react-input-password",
     "properties": {
       "p6c6162656c": "Senha",
       "p706c616365686f6c646572": "Digite uma senha",
@@ -514,7 +514,7 @@
     "items": []
   },
   {
-    "block": "ds-input-search",
+    "block": "ds-react-input-search",
     "properties": {
       "p6c6162656c": "Buscar",
       "p706c616365686f6c646572": "O que você procura?",
@@ -523,7 +523,7 @@
     "items": []
   },
   {
-    "block": "ds-input-text",
+    "block": "ds-react-input-text",
     "properties": {
       "p74797065": "text",
       "p6c6162656c": "Nome completo",
@@ -533,7 +533,7 @@
     "items": []
   },
   {
-    "block": "ds-input-money",
+    "block": "ds-react-input-money",
     "properties": {
       "p73686f77427574746f6e73": "true",
       "p6669786564496e6372656d656e7456616c7565": 100,
@@ -547,7 +547,7 @@
     "items": []
   },
   {
-    "block": "ds-link",
+    "block": "ds-react-link",
     "properties": {
       "p6c6162656c": "Explorar todos os componentes",
       "p73697a65": "medium",
@@ -557,7 +557,7 @@
     "items": []
   },
   {
-    "block": "ds-list-item",
+    "block": "ds-react-list-item",
     "properties": {
       "p6c6162656c": "Conta digital",
       "p706172616772617068": "Um item da sua lista",
@@ -567,7 +567,7 @@
     "items": []
   },
   {
-    "block": "ds-list-item-control",
+    "block": "ds-react-list-item-control",
     "properties": {
       "p747261696c696e6756617269616e74": "switch",
       "p747261696c696e6750726f70732e636865636b6564": "false",
@@ -578,7 +578,7 @@
     "items": []
   },
   {
-    "block": "ds-list-item-general",
+    "block": "ds-react-list-item-general",
     "properties": {
       "p6c6162656c": "Investimentos",
       "p706172616772617068": "Conheça as possibilidades",
@@ -589,7 +589,7 @@
     "items": []
   },
   {
-    "block": "ds-list-item-action",
+    "block": "ds-react-list-item-action",
     "properties": {
       "p747261696c696e6756617269616e74": "button",
       "p747261696c696e6750726f70732e6c6162656c": "Explorar",
@@ -601,7 +601,7 @@
     "items": []
   },
   {
-    "block": "ds-list-item-view",
+    "block": "ds-react-list-item-view",
     "properties": {
       "p6f7269656e746174696f6e": "horizontal",
       "p6c6162656c": "Saldo ilustrativo",
@@ -612,7 +612,7 @@
     "items": []
   },
   {
-    "block": "ds-menu-item",
+    "block": "ds-react-menu-item",
     "properties": {
       "p76617269616e74": "icon",
       "p73697a65": "large",
@@ -624,7 +624,7 @@
     "items": []
   },
   {
-    "block": "ds-menu-popup",
+    "block": "ds-react-menu-popup",
     "properties": {
       "p706c6163656d656e74": "bottom-start",
       "p617269614c6162656c": "Navegação",
@@ -647,7 +647,7 @@
     ]
   },
   {
-    "block": "ds-modal-dialog",
+    "block": "ds-react-modal-dialog",
     "properties": {
       "p7469746c65": "Informação importante",
       "p73686f77436c6f7365427574746f6e": "true",
@@ -658,7 +658,7 @@
     "items": []
   },
   {
-    "block": "ds-pagination",
+    "block": "ds-react-pagination",
     "properties": {
       "p70616765496e646578": 0,
       "p7061676553697a65": 10,
@@ -683,7 +683,7 @@
     ]
   },
   {
-    "block": "ds-panel",
+    "block": "ds-react-panel",
     "properties": {
       "p74797065": "slot",
       "p6368696c6472656e": "<p>Organize informações com o componente oficial.</p>",
@@ -694,7 +694,7 @@
     "items": []
   },
   {
-    "block": "ds-neutral-icon-button",
+    "block": "ds-react-neutral-icon-button",
     "properties": {
       "p69636f6e": "ic_ellipsis",
       "p73697a65": "medium",
@@ -705,7 +705,7 @@
     "items": []
   },
   {
-    "block": "ds-page-indicator",
+    "block": "ds-react-page-indicator",
     "properties": {
       "p6974656d73": 4,
       "p73656c6563746564": 1,
@@ -714,7 +714,7 @@
     "items": []
   },
   {
-    "block": "ds-payment-methods",
+    "block": "ds-react-payment-methods",
     "properties": {
       "p7061796d656e744d6574686f64": "mastercard",
       "p73697a65": "large",
@@ -724,7 +724,7 @@
     "items": []
   },
   {
-    "block": "ds-pin-code",
+    "block": "ds-react-pin-code",
     "properties": {
       "p6669656c6473": "4",
       "p7374617465": "enabled",
@@ -740,7 +740,7 @@
     ]
   },
   {
-    "block": "ds-progress-bar",
+    "block": "ds-react-progress-bar",
     "properties": {
       "p76617269616e74": "default",
       "p70726f6772657373": 60,
@@ -749,7 +749,7 @@
     "items": []
   },
   {
-    "block": "ds-progress-circle",
+    "block": "ds-react-progress-circle",
     "properties": {
       "p73697a65": "large",
       "p70726f6772657373": 65,
@@ -759,7 +759,7 @@
     "items": []
   },
   {
-    "block": "ds-radio",
+    "block": "ds-react-radio",
     "properties": {
       "p6368696c6472656e": "Escolher esta opção",
       "p6e616d65": "preferencia",
@@ -771,7 +771,7 @@
     "items": []
   },
   {
-    "block": "ds-section-title",
+    "block": "ds-react-section-title",
     "properties": {
       "p7469746c65": "Tudo para sua vida",
       "p73686f774465736372697074696f6e": "true",
@@ -784,7 +784,7 @@
     "items": []
   },
   {
-    "block": "ds-side-sheet",
+    "block": "ds-react-side-sheet",
     "properties": {
       "p7469746c65": "Detalhes",
       "p6465736372697074696f6e": "Informações complementares",
@@ -795,7 +795,7 @@
     "items": []
   },
   {
-    "block": "ds-section-subtitle",
+    "block": "ds-react-section-subtitle",
     "properties": {
       "p7375627469746c65": "Escolha seu próximo passo",
       "p747261696c696e674c6162656c": "Saiba mais",
@@ -804,7 +804,7 @@
     "items": []
   },
   {
-    "block": "ds-segmented-control",
+    "block": "ds-react-segmented-control",
     "properties": {
       "p7374617465": "enabled",
       "schemaVersion": "toranja-v3"
@@ -821,7 +821,7 @@
     ]
   },
   {
-    "block": "ds-select",
+    "block": "ds-react-select",
     "properties": {
       "p6c6162656c": "Produto de interesse",
       "p706c616365686f6c646572": "Escolha uma opção",
@@ -841,7 +841,7 @@
     ]
   },
   {
-    "block": "ds-sidebar",
+    "block": "ds-react-sidebar",
     "properties": {
       "p64656661756c74457870616e73696f6e": "expanded",
       "p6272616e64": "\"inter\"",
@@ -865,7 +865,7 @@
     ]
   },
   {
-    "block": "ds-signal",
+    "block": "ds-react-signal",
     "properties": {
       "p76617269616e74": "success",
       "p73697a65": "large",
@@ -875,7 +875,7 @@
     "items": []
   },
   {
-    "block": "ds-switch",
+    "block": "ds-react-switch",
     "properties": {
       "p636865636b6564": "false",
       "p7374617465": "enabled",
@@ -884,7 +884,7 @@
     "items": []
   },
   {
-    "block": "ds-snackbar",
+    "block": "ds-react-snackbar",
     "properties": {
       "p76617269616e74": "success",
       "p7469746c65": "Pronto",
@@ -898,7 +898,7 @@
     "items": []
   },
   {
-    "block": "ds-spinner",
+    "block": "ds-react-spinner",
     "properties": {
       "p73697a65": "large",
       "p617269614c6162656c": "Carregando demonstração",
@@ -907,7 +907,7 @@
     "items": []
   },
   {
-    "block": "ds-stepper",
+    "block": "ds-react-stepper",
     "properties": {
       "p656e61626c65496e707574": "true",
       "p6d6178": 10,
@@ -921,7 +921,7 @@
     "items": []
   },
   {
-    "block": "ds-table",
+    "block": "ds-react-table",
     "properties": {
       "p746f6f6c6261722e7469746c65": "Produtos ilustrativos",
       "p73686f7744697669646572": "true",
@@ -977,7 +977,7 @@
     ]
   },
   {
-    "block": "ds-tabs",
+    "block": "ds-react-tabs",
     "properties": {
       "p7374617465": "enabled",
       "p7363726f6c6c61626c65": "true",
@@ -1000,7 +1000,7 @@
     ]
   },
   {
-    "block": "ds-tag",
+    "block": "ds-react-tag",
     "properties": {
       "p636f6c6f72": "brand",
       "p686965726172636879": "soft",
@@ -1012,7 +1012,7 @@
     "items": []
   },
   {
-    "block": "ds-text",
+    "block": "ds-react-text",
     "properties": {
       "p6368696c6472656e": "Em todo momento da vida, vejo você.",
       "p7465787453697a65": "large",
@@ -1024,7 +1024,7 @@
     "items": []
   },
   {
-    "block": "ds-text-area",
+    "block": "ds-react-text-area",
     "properties": {
       "p6c6162656c": "Sua mensagem",
       "p73686f77436f756e746572": "true",
@@ -1035,7 +1035,7 @@
     "items": []
   },
   {
-    "block": "ds-timeline",
+    "block": "ds-react-timeline",
     "properties": {
       "schemaVersion": "toranja-v3"
     },
@@ -1061,7 +1061,7 @@
     ]
   },
   {
-    "block": "ds-tooltip-description",
+    "block": "ds-react-tooltip-description",
     "properties": {
       "p6465736372697074696f6e": "Informação complementar exibida pelo componente oficial.",
       "p616c69676e": "left",
@@ -1073,7 +1073,7 @@
     "items": []
   },
   {
-    "block": "ds-widget",
+    "block": "ds-react-widget",
     "properties": {
       "p74696d6541676f": "Agora",
       "p746167": "Novidade",

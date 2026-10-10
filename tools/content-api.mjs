@@ -8,6 +8,6 @@ export function ds(id,props={},groups={}){
  for(const [id,values] of Object.entries(groups)){const c=s.collections.find(c=>c.id===id);if(!c)throw Error('Coleção ausente '+id);for(const value of values){const row={collection:id};for(const d of c.descriptors){const v=d.path.reduce((v,k)=>v?.[k],value);if(v!==undefined)row[d.key]=v;}b.items.push(row);}}
  return b;
 }
-export const paragraph=(value,as='p')=>ds('ds-text',{children:value,as,textType:as.startsWith('h')?'heading':'body',textWeight:'regular'});
-export const card=body=>ds('ds-card',{children:body,state:'enabled'});
-export const action=(label,href,target='_self')=>ds('ds-button',{label,'$actions.onClick.kind':'navigate','$actions.onClick.link':href,'$actions.onClick.target':target});
+export const paragraph=(value,as='p')=>ds('ds-react-text',{children:value,as,textType:as.startsWith('h')?'heading':'body',textWeight:'regular'});
+export const card=body=>ds('ds-react-card',{children:body,state:'enabled'});
+export const action=(label,href,target='_self')=>ds('ds-react-button',{label,'$actions.onClick.kind':'navigate','$actions.onClick.link':href,'$actions.onClick.target':target});

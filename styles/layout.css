@@ -32,12 +32,12 @@ main .default-content-wrapper{max-width:78ch}main .default-content-wrapper h1{ma
     gap: 8px;
     padding-block: 0;
   }
-  .site-nav-content > .section > :not(.ds-image-wrapper) {
+  .site-nav-content > .section > :not(.ds-react-image-wrapper) {
     width: 100%;
     min-width: 0;
     text-align: left;
   }
-  .site-nav-content[data-open=true] > .section > .ds-image-wrapper {
+  .site-nav-content[data-open=true] > .section > .ds-react-image-wrapper {
     margin-bottom: 16px;
   }
 }
@@ -48,7 +48,7 @@ main .default-content-wrapper{max-width:78ch}main .default-content-wrapper h1{ma
 @media (max-width: 760px) {
   body > header { min-height: 88px; padding-block: 20px; }
   .site-menu-toggle { top: 20px; }
-  .site-nav-content > .section > .ds-image-wrapper { min-height: 48px; display: flex; align-items: center; }
+  .site-nav-content > .section > .ds-react-image-wrapper { min-height: 48px; display: flex; align-items: center; }
   .site-nav-content .site-home-link { min-height: 48px; }
 }
 
@@ -57,10 +57,10 @@ main .default-content-wrapper{max-width:78ch}main .default-content-wrapper h1{ma
 /* Existing strong brand token meets contrast for white normal-size button labels. */
 
 /* EDS hosts accommodate the official component's built-in margins and fixed-size content. */
-.ds-banner > .ds-official { max-width: calc(100% - 2 * var(--spacing-24)); }
-.ds-accordion-wrapper, .ds-feedback-screen-wrapper, .ds-sidebar-wrapper { overflow-x: auto; }
+.ds-react-banner > .ds-official { max-width: calc(100% - 2 * var(--spacing-24)); }
+.ds-react-accordion-wrapper, .ds-react-feedback-screen-wrapper, .ds-react-sidebar-wrapper { overflow-x: auto; }
 
-.block[data-block-name^="ds-"] { min-width: 0; }
+.block[data-block-name^="ds-react-"] { min-width: 0; }
 /* Keep the footer below the initial viewport while later EDS sections are decorated. */
 body > main { min-height: calc(100svh - 123px); }
 @media (min-width: 761px) { body > header { min-height: 123px; } }

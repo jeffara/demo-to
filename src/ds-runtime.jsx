@@ -21,7 +21,7 @@ function rich(value,key='root',inline=false) {
   const button=v.href?h(DS.Link,{role:'link',href:v.href,target:v.$itemTarget||'_self',rel:'noopener noreferrer',label:v.label||'Saiba mais'}):null;
   if(v.kind==='button')return button;
   const children=h(React.Fragment,null,v.title&&h(DS.Text,{as:'h3',textType:'title',textSize:'large'},v.title),v.src&&h(DS.Image,{src:{local:v.src},contentDescription:v.alt||''}),body,button);
-  return v.kind==='card'?h(DS.Card,{state:'enabled'},h('div',{className:'ds-card-content'},children)):children;
+  return v.kind==='card'?h(DS.Card,{state:'enabled'},h('div',{className:'ds-react-card-content'},children)):children;
  }
 
  if(typeof value!=='string')return value==null?null:String(value);
@@ -132,7 +132,7 @@ function App({schema,initial,host,options,officialComponent}) {
   for(const key of ['minDate','maxDate','visibleMonth'])if(typeof p[key]==='string')p[key]=new Date(p[key]+'T12:00:00');
   for(const key of ['value','defaultValue'])if(typeof p[key]==='string')p[key]=new Date(p[key]+'T12:00:00');
  }
- if(schema.name==='Card')p.children=h('div',{className:'ds-card-content'},p.children);
+ if(schema.name==='Card')p.children=h('div',{className:'ds-react-card-content'},p.children);
  if(schema.name==='Link')p.role='link';
  if(schema.name==='Link'&&options.editing)p.onClick=e=>e.preventDefault();
  if(props.$actionLink&&schema.name==='Link'){p.href=options.resolveLink(props.$actionLink);p.target=props.$actionTarget||'_self';if(p.target==='_blank')p.rel='noopener noreferrer';}
@@ -166,8 +166,3 @@ export async function mount(host,schema,props,options){
  return()=>root.unmount();
 }
 export const mountMenuButton=async(...args)=>(await import('./site-menu.jsx')).mountMenuButton(...args);
-export const mountSearch=async(...args)=>(await import('./site-features.jsx')).mountSearch(...args);
-export const mountSimulator=async(...args)=>(await import('./site-features.jsx')).mountSimulator(...args);
-export const mountForm=async(...args)=>(await import('./ds-form.jsx')).mountForm(...args);
-
-export const mountReferenceSearch=async(...args)=>(await import('./reference-search.jsx')).mountReferenceSearch(...args);

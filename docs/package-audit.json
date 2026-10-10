@@ -18,12 +18,12 @@
     {
       "name": "Hierarquia de páginas completa",
       "pass": true,
-      "detail": "128 páginas"
+      "detail": "123 páginas"
     },
     {
       "name": "XML do pacote válido",
       "pass": true,
-      "detail": "157 documentos"
+      "detail": "150 documentos"
     },
     {
       "name": "Sem alteração em /conf ou /apps",
@@ -43,7 +43,7 @@
     {
       "name": "Code Bus abaixo de 500 arquivos e 10 MB",
       "pass": true,
-      "detail": "427 arquivos / 8443908 bytes"
+      "detail": "411 arquivos / 7371327 bytes"
     }
   ]
 }

@@ -14,7 +14,7 @@ export async function loadShared(target,kind){
  for(const a of content.querySelectorAll('a[href]'))a.href=resolveLink(a.getAttribute('href'));
  // A logo da navegação compartilhada retorna à raiz, sem alterar o conteúdo AEM.
  if(kind==='nav'){
-  const logo=content.querySelector('.ds-image-wrapper');
+  const logo=content.querySelector('.ds-react-image-wrapper');
   if(logo){
    let home=logo.querySelector('a');
    if(!home){home=document.createElement('a');home.append(...logo.childNodes);logo.append(home);}

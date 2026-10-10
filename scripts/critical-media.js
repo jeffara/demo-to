@@ -2,7 +2,7 @@ import {imageCells} from './image-contract.js';
 /** Discover the first authored hero image before the React runtime is ready. */
 export function prioritizeHero(main){
  const section=main?.querySelector(':scope > div');
- const block=section?.querySelector('.ds-image');
+ const block=section?.querySelector('.ds-react-image');
  if(!block)return;
  const field=key=>block.children[imageCells.indexOf(key)];
  const value=cell=>cell?.querySelector('img')?.getAttribute('src')||cell?.querySelector('a')?.getAttribute('href')||cell?.textContent.trim();

@@ -1,9 +1,0 @@
-{
-  "textHeadingToTitlePages": [
-    "composicoes",
-    "index",
-    "showcase/layouts",
-    "showcase/v3/video"
-  ],
-  "reason": "heading não pertence a TextType; title é a variante oficial que aceita h1–h6."
-}

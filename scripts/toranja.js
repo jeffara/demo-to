@@ -1,6 +1,5 @@
 /** Utilitários EDS: preservam os nós autorados e seus atributos do Universal Editor. */
 import { resolveLink } from "./links.js";
-import { cells, containers } from "./custom-contracts.js";
 let sequence = 0;
 export const uid = (prefix = "toranja") => `${prefix}-${++sequence}`;
 export const editing = () =>
@@ -39,14 +38,14 @@ export function read(
       );
   });
   const rows = [...block.children];
-  const fieldNames=fieldKeys||cells[name]||[];
+  const fieldNames=fieldKeys||[];
   const fields = Object.fromEntries(
     fieldNames.map((key, i) => [
       key,
       rows[i]?.firstElementChild || rows[i] || el("div"),
     ]),
   );
-  const itemNames = itemKeys||cells[containers[name]]||[];
+  const itemNames = itemKeys||[];
   const items = rows
     .slice(fieldNames.length)
     .map((row) => ({

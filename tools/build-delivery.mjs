@@ -7,7 +7,7 @@ function flatten(file,seen=new Set()){
 }
 const css=flatten('styles/style-source.css');css.walkComments(n=>n.remove());
 fs.writeFileSync('styles/styles.css',css.toString());
-fs.mkdirSync('scripts/ds-schema',{recursive:true});const schemas=JSON.parse(fs.readFileSync('scripts/ds-schema.json'));
+fs.rmSync('scripts/ds-schema',{recursive:true,force:true});fs.mkdirSync('scripts/ds-schema',{recursive:true});const schemas=JSON.parse(fs.readFileSync('scripts/ds-schema.json'));
 for(const [id,schema] of Object.entries(schemas))fs.writeFileSync(`scripts/ds-schema/${id}.json`,JSON.stringify(schema));
 console.log('CSS imports flattened and '+Object.keys(schemas).length+' on-demand models generated.');
 

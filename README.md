@@ -1,63 +1,62 @@
-# Toranja + EDS — 4.1.0
+# Inter — Showcase Toranja React Adapter · 5.1.0
 
-Adaptador React para o pacote fornecido de `@interco/inter-toranja` **2.0.1**. São 73 componentes oficiais, quatro composições Custom e 128 páginas de demonstração. As 878 propriedades próprias estão classificadas no inventário e no mapeamento de autoria. O runtime monta os componentes oficiais; não replica manualmente seu DOM interno.
+Código: `inter-aem-eds-toranja-react`.
+Conteúdo AEM: `inter-aem-eds-showcase-toranja-react`.
+Origem: baseline `aem-eds-inter-toranja_v4.0.0.zip`, preservada separadamente.
+Design system original: `@interco/inter-toranja` 2.0.1.
 
-Os 4.230 arquivos do vendor conferem byte a byte com o ZIP recebido. Tokens, fontes completas, variantes e estados oficiais são preservados. A comparação de estilos computados cobre 88 cenários (11 componentes, quatro temas e duas larguras); não certifica todas as combinações possíveis do design system.
+## Escopo desta versão
 
-## Referência de propriedades no showcase
+Migração dos 73 blocos `ds-*` para `ds-react-*`, incluindo diretórios, arquivos, seletores, identificadores de modelos/filtros, itens de coleções, contratos, geradores, fixtures e conteúdo FileVault. Exemplo: `blocks/ds-react-button/ds-react-button.js`.
 
-As 77 páginas individuais (73 componentes oficiais e quatro composições Custom) incluem a seção **Propriedades no EDS** abaixo dos exemplos. Abra a seção e busque pelo nome no painel ou pelo efeito desejado. A referência cobre 2.326 campos dos componentes e de seus itens, com orientação de uso para power users, opções reais, condições de visibilidade, localização no painel e valores iniciais do modelo.
+Os componentes e tokens originais em `vendor/` não foram alterados. Este pacote continua usando React; não é uma conversão para EDS nativo. A versão major 5.0.0 sinaliza a quebra dos identificadores de conteúdo.
 
-Os nomes técnicos aparecem como referência secundária. Eventos e contratos de programação têm uma seção separada. A consulta utiliza o InputSearch oficial, fica fora do conteúdo autorado e só baixa seus dados quando é aberta. Home, catálogo e layouts não carregam o arquivo de referência.
+| Repositório | Prefixo | Responsabilidade |
+| --- | --- | --- |
+| `inter-aem-eds-toranja-react` | `ds-react-*` | Componentes oficiais via React Adapter e seu showcase |
+| `inter-aem-eds-toranja` | `ds-eds-*` | Implementação nativa EDS, independente do adapter React |
+| `inter-aem-eds-web-custom` | `c-*` | Composição dos sites e extensões consumindo uma versão definida do catálogo nativo |
 
-A geração usa `component-models.json`, `docs/property-mapping.json`, o contrato oficial e o texto editorial em `tools/reference-copy.mjs`. `npm run build:reference` verifica as descrições e gera os dados; o comando já faz parte de `npm run build`. Não edite o JSON gerado manualmente. Ao atualizar o DS, revise também a orientação de autoria e execute `node tests/component-reference.mjs`.
+Esta entrega atualiza o primeiro projeto. Não cria ou publica os outros repositórios. O `inter-aem-eds-web-custom` também compõe o código publicado do institucional: incorpora uma versão definida do Toranja nativo no seu processo de entrega. Não é necessário um quarto repositório unificador.
 
-## Implantação
+O grupo de autoria dos 73 componentes é **Toranja — React Adapter**. A versão 5.1.0 contém somente blocos `ds-react-*`; remove os quatro exemplos customizados e suas cinco páginas. A entrega 5.0.0 foi preservada separadamente. A implementação institucional desses recursos pertence ao projeto Custom. Correção sobre a versão anterior: `c-video` já usava HTML/JavaScript nativo; os outros três exemplos usavam React.
 
-**Código 4.1.0; conteúdo permanece 4.0.0; Toranja permanece 2.0.1.**
+Se instalou uma versão anterior, preserve as edições e retire de publicação as rotas `/showcase/custom`, `/showcase/custom/formulario`, `/showcase/custom/busca`, `/showcase/custom/video` e `/showcase/custom/simulador`; depois mova ou remova suas cópias no Author conforme o plano de migração. O pacote 5.1.0 preserva páginas não listadas e **não remove essas páginas automaticamente**. Consulte `docs/react-scope-migration.json`.
 
-Sobre a baseline 4.0.0 já instalada e publicada, basta atualizar o código: não reimporte o pacote nem republique páginas por causa da referência de propriedades.
+## Instalação coordenada de código e conteúdo
 
-1. Preserve o commit anterior e use uma branch de homologação.
-2. Revise a sincronização com `python3 tools/sync-baseline.py --target /caminho/do/clone`. Aplique com `--apply` e revise o diff.
-3. Faça commit/push do conjunto compilado, incluindo `scripts/eds-reference.json`, chunks, estilos, modelos, `.hlxignore`, `head.html` e `version.json`. Aguarde Code Sync.
-4. Confira `/version.json`: código `4.1.0`, conteúdo `4.0.0` e DS `2.0.1`.
-5. Abra `/showcase/button`, `/showcase/select`, `/showcase/table` e os exemplos Custom; valide a consulta e a busca em desktop e mobile. Homologue salvar/reabrir propriedades no Universal Editor.
+1. Preserve o commit anterior e exporte backup das páginas editadas do catálogo. O pacote substitui o conteúdo dessas páginas.
+2. Coloque o código deste ZIP no clone do repositório `inter-aem-eds-toranja-react`. Para atualizar um clone existente, rode `python3 tools/sync-baseline.py --target /caminho/do/clone` para revisar o plano e, somente após conferir o diff, execute com `--apply`. Esse utilitário remove arquivos obsoletos das pastas gerenciadas; use somente no clone dedicado ao catálogo.
+3. Preserve e revise `fstab.yaml`, `.well-known` e `config/` do seu ambiente. O nome do pacote não renomeia o site EDS, o repositório remoto, nem o mountpoint. Se criar um novo repositório remoto, configure o vínculo correspondente no EDS/Code Sync.
+4. Envie o código completo à branch de homologação, incluindo os arquivos compilados e `.hlxignore`; aguarde a sincronização pelo Code Sync.
+5. Importe `inter-aem-eds-showcase-toranja-react-5.1.0.zip` pelo Package Manager. Não importe o ZIP de código no Package Manager.
+6. Execute Preview/Publish das páginas do catálogo, incluindo `/nav` e `/footer`, e dos assets. A instalação no Author não publica as páginas no EDS.
+7. Homologue edição, salvar/reabrir campos e coleções no Universal Editor; confira navegação, componentes e `/version.json` antes de promover.
 
-Se o conteúdo ainda for anterior à 4.0.0, a migração anterior continua necessária: faça backup de `/content/demo-to` e assets, instale `demo-to-content-4.0.0.zip` sem uninstall/delete e execute Preview/Publish das 128 páginas, incluindo Home, nav e footer. O filtro replace pode sobrescrever edições e remover páginas ausentes da baseline. O ZIP interno `content/demo-to-content.zip` permanece idêntico à entrega 4.0.0.
+As raízes permanecem `/content/demo-to` e `/content/dam/toranja-eds-demo`. As URLs editoriais, como `/demo-toranja` e `/showcase/button`, permanecem. O pacote contém 123 páginas e 10 assets. Seus filtros cobrem somente as páginas listadas e seus próprios `jcr:content`, além dos assets específicos; páginas não listadas, `/conf`, `/apps` e configuração da raiz ficam fora.
 
-Rollback desta melhoria: restaure o commit de código 4.0.0. Se também tiver migrado conteúdo de uma versão mais antiga, considere o backup editorial dessa migração.
+**Não combine conteúdo antigo `ds-*` com código 5.1.0.** Páginas criadas ou editadas fora dos exemplos entregues precisam migrar seus identificadores `name`, `model` e `filter` conforme `docs/namespace-migration.json`. Campos e valores editoriais mantêm o contrato. Não há aliases legados ocultos. Para rollback, restaure código e conteúdo compatíveis e republique.
 
-## Desenvolvimento e validação
+## Desenvolvimento
 
-Use Node 24. Execute `npm ci`, `npm run build` e `npm run export:aem` para reconstruir. Não edite chunks compilados manualmente.
-
-`npm test` valida estrutura, pacote, modelos e comportamento no browser. Instale Chromium com `npx playwright install chromium` ou defina `PLAYWRIGHT_CHROMIUM_EXECUTABLE`. `npm run test:compliance` verifica a integridade do vendor, tokens e mapeamento.
-
-Para repetir a comparação direta: `node tools/build-reference.mjs` e `node tests/official-parity.mjs`. `node tests/deployment-files.mjs` confirma que o frontend não depende de arquivos excluídos pelo `.hlxignore`.
-
-Após atualizar o DS, execute `npm run inventory:ds`, revise contratos/modelos, reconstrua e valide variantes, estados e callbacks. Não são removidas variantes CSS com base apenas nos exemplos.
-
-## Lighthouse
-
-Com Chrome instalado no Mac:
+Node 24. Dependências com versões preservadas no lockfile:
 
 ```bash
-AUDIT_RUNS=3 MIN_PERFORMANCE=98 npm run test:performance -- https://seu-dominio/
+npm ci
+npm run build
+npm run export:aem
+npm run check
+npm run test:compliance
+python3 tests/baseline-package.py
+python3 tests/namespace-migration.py
+python3 tools/audit-package.py
+python3 tools/package-release.py
 ```
 
-São três execuções por perfil desktop/mobile para Home, catálogo e layouts. `CHROME_PATH` é opcional; `AUDIT_ROUTES` e `AUDIT_OUTPUT` ajustam o escopo. O comando retorna erro se alguma mediana ficar abaixo de 98 ou a medição estiver incompleta.
+O runtime já vem compilado; o EDS não executa `npm ci`. Fontes, adapters e geradores estão incluídos para reconstrução. Para atualizar o Toranja, execute `npm run inventory:ds`, revise os contratos e reconstrua; o gerador também usa `ds-react-*`.
 
-Resultados finais: `docs/performance-v4.1.0/summary.json`, com relatórios HTML/JSON individuais. A medição local usa gzip/HTTP, sem extensões, e não reproduz integralmente o CDN, a latência ou o conteúdo publicado. Confira o resultado real no guia: performance, acessibilidade, boas práticas e SEO são notas distintas. A entrega não promete uma nota que os relatórios não comprovam.
+## Verificação e limites
 
-## Design system e autoria
+Build e verificações estáticas desta versão estão em `docs/namespace-validation.json`, `docs/compliance-v5.1.0.json`, `docs/property-model-validation.json`, `docs/baseline-package-validation.json` e `docs/package-audit.json`.
 
-Novos componentes: Breadcrumb, MenuPopup, ModalDialog, Pagination, Panel, SideSheet, Sidebar, Table e TooltipDescription. Select usa `options`/`onOptionSelect`; Stepper usa `value`/`onValueChange`. Exemplos e formulário Custom foram migrados para essas APIs.
-
-Enums seguem os tipos oficiais. Objetos, coleções e slots têm campos de autoria; dados genéricos de Table e marca customizada da Sidebar aceitam JSON declarativo. Callbacks não serializáveis usam identificadores registrados por `registerDSBehavior` em `scripts/ds-behaviors.js`. Refs e contratos de DOM permanecem técnicos. Consulte `docs/toranja-contract.json` e `docs/property-mapping.json`.
-
-O contêiner do exemplo de Sidebar permite rolagem horizontal em telas estreitas, preservando sua largura oficial. A entrega compartilha e compacta recursos, antecipa fontes críticas e prioriza os blocos visíveis. Experimentos com subconjuntos de fontes foram descartados por diferença de espaçamento.
-
-Não houve deploy remoto nem homologação autenticada de persistência no Universal Editor. Os relatórios identificam limitações de acessibilidade do pacote oficial; elas não foram encobertas com alterações internas no vendor.
-
-Guia atual: `docs/EDS_AEM_Universal_Editor_Arquitetura_Deploy_4.1.0_FINAL.html`. Relatórios de versões anteriores são históricos.
+Não foi executado deploy, instalação no AEM, homologação do Universal Editor, auditoria visual ou Lighthouse desta versão. Relatórios antigos na pasta de trabalho pertencem à baseline 4.0.0; o empacotador desta release exclui essa evidência histórica para evitar confusão.

@@ -1,4 +1,3 @@
-import {prepareComponentReference} from './reference-shell.js';
 import {preloadDS} from './ds-adapter.js';
 export {mountDS,loadDSRuntime} from './ds-adapter.js';
 import {prioritizeHero} from './critical-media.js';
@@ -56,7 +55,6 @@ async function loadPage() {
   const warmup=preloadDS();warmup.catch(()=>{});
   const headerReady=header ? loadHeader(header) : Promise.resolve();
   if(main)decorateMain(main);
-  prepareComponentReference(main);
   const first=main?.querySelector('.section');
   if(first)await loadSection(first);
   document.body.classList.add('appear');

@@ -556,7 +556,7 @@ async function loadBlock(block) {
     const { blockName } = block.dataset;
     try {
       // Official block CSS contains only the host min-width reset, already in the shared stylesheet.
-      const cssLoaded = blockName.startsWith('ds-') ? Promise.resolve() : loadCSS(`${window.hlx.codeBasePath}/blocks/${blockName}/${blockName}.css`);
+      const cssLoaded = blockName.startsWith('ds-react-') ? Promise.resolve() : loadCSS(`${window.hlx.codeBasePath}/blocks/${blockName}/${blockName}.css`);
       const decorationComplete = new Promise((resolve) => {
         (async () => {
           try {

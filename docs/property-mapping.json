@@ -1,5 +1,5 @@
 {
-  "ds-alert": {
+  "ds-react-alert": {
     "name": "Alert",
     "descriptors": [
       {
@@ -257,7 +257,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-avatar": {
+  "ds-react-avatar": {
     "name": "Avatar",
     "descriptors": [
       {
@@ -2364,7 +2364,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-accordion": {
+  "ds-react-accordion": {
     "name": "Accordion",
     "descriptors": [
       {
@@ -4116,7 +4116,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-accordion-item",
+      "model": "ds-react-accordion-item",
       "property": "content:children",
       "descriptors": [
         {
@@ -4260,12 +4260,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-accordion-item"
+        "model": "ds-react-accordion-item"
       }
     ],
     "version": 3
   },
-  "ds-badge": {
+  "ds-react-badge": {
     "name": "Badge",
     "descriptors": [
       {
@@ -4349,7 +4349,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-button": {
+  "ds-react-button": {
     "name": "Button",
     "descriptors": [
       {
@@ -5446,7 +5446,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-banner": {
+  "ds-react-banner": {
     "name": "Banner",
     "descriptors": [
       {
@@ -5662,7 +5662,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-banner-item",
+      "model": "ds-react-banner-item",
       "property": "content:webContent",
       "descriptors": [
         {
@@ -5806,12 +5806,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-banner-item"
+        "model": "ds-react-banner-item"
       }
     ],
     "version": 3
   },
-  "ds-bottom-sheet": {
+  "ds-react-bottom-sheet": {
     "name": "BottomSheet",
     "descriptors": [
       {
@@ -5997,7 +5997,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-bottom-sheet-item",
+      "model": "ds-react-bottom-sheet-item",
       "property": "content:slot",
       "descriptors": [
         {
@@ -6141,12 +6141,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-bottom-sheet-item"
+        "model": "ds-react-bottom-sheet-item"
       }
     ],
     "version": 3
   },
-  "ds-bottom-sheet-country": {
+  "ds-react-bottom-sheet-country": {
     "name": "BottomSheetCountry",
     "descriptors": [
       {
@@ -6745,7 +6745,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-bottom-sheet-country-item",
+      "model": "ds-react-bottom-sheet-country-item",
       "property": "items",
       "descriptors": [
         {
@@ -7077,7 +7077,7 @@
         "path": [
           "items"
         ],
-        "model": "ds-bottom-sheet-country-item",
+        "model": "ds-react-bottom-sheet-country-item",
         "property": "items",
         "descriptors": [
           {
@@ -7733,12 +7733,12 @@
           }
         ],
         "events": [],
-        "model": "ds-bottom-sheet-country-item"
+        "model": "ds-react-bottom-sheet-country-item"
       }
     ],
     "version": 3
   },
-  "ds-breadcrumb": {
+  "ds-react-breadcrumb": {
     "name": "Breadcrumb",
     "descriptors": [
       {
@@ -7817,7 +7817,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-breadcrumb-item",
+      "model": "ds-react-breadcrumb-item",
       "property": "items",
       "descriptors": [
         {
@@ -7875,7 +7875,7 @@
         "path": [
           "items"
         ],
-        "model": "ds-breadcrumb-item",
+        "model": "ds-react-breadcrumb-item",
         "property": "items",
         "descriptors": [
           {
@@ -7931,7 +7931,7 @@
     ],
     "version": 3
   },
-  "ds-card": {
+  "ds-react-card": {
     "name": "Card",
     "descriptors": [
       {
@@ -8113,7 +8113,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-card-item",
+      "model": "ds-react-card-item",
       "property": "content:children",
       "descriptors": [
         {
@@ -8257,12 +8257,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-card-item"
+        "model": "ds-react-card-item"
       }
     ],
     "version": 3
   },
-  "ds-checkbox": {
+  "ds-react-checkbox": {
     "name": "Checkbox",
     "descriptors": [
       {
@@ -8375,7 +8375,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-chip": {
+  "ds-react-chip": {
     "name": "Chip",
     "descriptors": [
       {
@@ -10354,7 +10354,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-chart-bar": {
+  "ds-react-chart-bar": {
     "name": "ChartBar",
     "descriptors": [
       {
@@ -10789,7 +10789,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-chart-bar-item",
+      "model": "ds-react-chart-bar-item",
       "property": "chartData",
       "descriptors": [
         {
@@ -10854,7 +10854,7 @@
             "kind": "string"
           }
         ],
-        "model": "ds-chart-bar-item"
+        "model": "ds-react-chart-bar-item"
       },
       {
         "id": "categories",
@@ -10874,7 +10874,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-bar-item"
+        "model": "ds-react-chart-bar-item"
       },
       {
         "id": "values",
@@ -10894,7 +10894,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-bar-item"
+        "model": "ds-react-chart-bar-item"
       },
       {
         "id": "valueLabels",
@@ -10914,7 +10914,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-bar-item"
+        "model": "ds-react-chart-bar-item"
       },
       {
         "id": "forceColor",
@@ -10934,12 +10934,12 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-bar-item"
+        "model": "ds-react-chart-bar-item"
       }
     ],
     "version": 3
   },
-  "ds-chart-donut": {
+  "ds-react-chart-donut": {
     "name": "ChartDonut",
     "descriptors": [
       {
@@ -11297,7 +11297,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-chart-donut-item",
+      "model": "ds-react-chart-donut-item",
       "property": "chartData",
       "descriptors": [
         {
@@ -11362,7 +11362,7 @@
             "kind": "string"
           }
         ],
-        "model": "ds-chart-donut-item"
+        "model": "ds-react-chart-donut-item"
       },
       {
         "id": "slice",
@@ -11382,7 +11382,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-donut-item"
+        "model": "ds-react-chart-donut-item"
       },
       {
         "id": "label",
@@ -11402,7 +11402,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-donut-item"
+        "model": "ds-react-chart-donut-item"
       },
       {
         "id": "value",
@@ -11422,7 +11422,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-donut-item"
+        "model": "ds-react-chart-donut-item"
       },
       {
         "id": "forceColor",
@@ -11442,7 +11442,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-donut-item"
+        "model": "ds-react-chart-donut-item"
       },
       {
         "id": "forceIndex",
@@ -11462,12 +11462,12 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-donut-item"
+        "model": "ds-react-chart-donut-item"
       }
     ],
     "version": 3
   },
-  "ds-chart-line": {
+  "ds-react-chart-line": {
     "name": "ChartLine",
     "descriptors": [
       {
@@ -11883,7 +11883,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-chart-line-item",
+      "model": "ds-react-chart-line-item",
       "property": "series",
       "descriptors": [
         {
@@ -11933,7 +11933,7 @@
         "path": [
           "series"
         ],
-        "model": "ds-chart-line-item",
+        "model": "ds-react-chart-line-item",
         "property": "series",
         "descriptors": [
           {
@@ -11996,7 +11996,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-line-item"
+        "model": "ds-react-chart-line-item"
       },
       {
         "id": "yLabels",
@@ -12016,7 +12016,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-line-item"
+        "model": "ds-react-chart-line-item"
       },
       {
         "id": "forceColor",
@@ -12036,12 +12036,12 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-line-item"
+        "model": "ds-react-chart-line-item"
       }
     ],
     "version": 3
   },
-  "ds-chart-meter": {
+  "ds-react-chart-meter": {
     "name": "ChartMeter",
     "descriptors": [
       {
@@ -12364,7 +12364,7 @@
     "events": [],
     "technical": [],
     "item": {
-      "model": "ds-chart-meter-item",
+      "model": "ds-react-chart-meter-item",
       "property": "chartData",
       "descriptors": [
         {
@@ -12429,7 +12429,7 @@
             "kind": "string"
           }
         ],
-        "model": "ds-chart-meter-item"
+        "model": "ds-react-chart-meter-item"
       },
       {
         "id": "bars",
@@ -12449,7 +12449,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-meter-item"
+        "model": "ds-react-chart-meter-item"
       },
       {
         "id": "legend",
@@ -12469,7 +12469,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-meter-item"
+        "model": "ds-react-chart-meter-item"
       },
       {
         "id": "value",
@@ -12489,7 +12489,7 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-meter-item"
+        "model": "ds-react-chart-meter-item"
       },
       {
         "id": "forceColor",
@@ -12509,12 +12509,12 @@
           }
         ],
         "events": [],
-        "model": "ds-chart-meter-item"
+        "model": "ds-react-chart-meter-item"
       }
     ],
     "version": 3
   },
-  "ds-counter": {
+  "ds-react-counter": {
     "name": "Counter",
     "descriptors": [
       {
@@ -12664,7 +12664,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-cross-selling": {
+  "ds-react-cross-selling": {
     "name": "CrossSelling",
     "descriptors": [
       {
@@ -13008,7 +13008,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-carousel": {
+  "ds-react-carousel": {
     "name": "Carousel",
     "descriptors": [
       {
@@ -13146,7 +13146,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-carousel-item",
+      "model": "ds-react-carousel-item",
       "property": "items",
       "descriptors": [
         {
@@ -13221,7 +13221,7 @@
         "path": [
           "items"
         ],
-        "model": "ds-carousel-item",
+        "model": "ds-react-carousel-item",
         "property": "items",
         "descriptors": [
           {
@@ -13295,7 +13295,7 @@
     ],
     "version": 3
   },
-  "ds-date-picker": {
+  "ds-react-date-picker": {
     "name": "DatePicker",
     "descriptors": [
       {
@@ -13630,7 +13630,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-date-picker-item",
+      "model": "ds-react-date-picker-item",
       "property": "$disabledDates",
       "descriptors": [
         {
@@ -13664,12 +13664,12 @@
           }
         ],
         "events": [],
-        "model": "ds-date-picker-item"
+        "model": "ds-react-date-picker-item"
       }
     ],
     "version": 3
   },
-  "ds-decorated-text": {
+  "ds-react-decorated-text": {
     "name": "DecoratedText",
     "descriptors": [
       {
@@ -13965,7 +13965,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-divider": {
+  "ds-react-divider": {
     "name": "Divider",
     "descriptors": [
       {
@@ -14053,7 +14053,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-feedback-screen": {
+  "ds-react-feedback-screen": {
     "name": "FeedbackScreen",
     "descriptors": [
       {
@@ -14770,7 +14770,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-feedback-screen-item",
+      "model": "ds-react-feedback-screen-item",
       "property": "contentItems",
       "descriptors": [
         {
@@ -14832,7 +14832,7 @@
         "path": [
           "contentItems"
         ],
-        "model": "ds-feedback-screen-item",
+        "model": "ds-react-feedback-screen-item",
         "property": "contentItems",
         "descriptors": [
           {
@@ -14962,12 +14962,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-feedback-screen-item"
+        "model": "ds-react-feedback-screen-item"
       }
     ],
     "version": 3
   },
-  "ds-flag": {
+  "ds-react-flag": {
     "name": "Flag",
     "descriptors": [
       {
@@ -15365,7 +15365,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-header": {
+  "ds-react-header": {
     "name": "Header",
     "descriptors": [
       {
@@ -22704,7 +22704,7 @@
       }
     ],
     "item": {
-      "model": "ds-header-item",
+      "model": "ds-react-header-item",
       "property": "searchProps.error",
       "descriptors": [
         {
@@ -22739,7 +22739,7 @@
           }
         ],
         "events": [],
-        "model": "ds-header-item"
+        "model": "ds-react-header-item"
       },
       {
         "id": "searchProps.hints",
@@ -22761,7 +22761,7 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-header-item"
+        "model": "ds-react-header-item"
       },
       {
         "id": "segmentedControl.segments",
@@ -23502,12 +23502,12 @@
           }
         ],
         "events": [],
-        "model": "ds-header-item"
+        "model": "ds-react-header-item"
       }
     ],
     "version": 3
   },
-  "ds-floating-action-button": {
+  "ds-react-floating-action-button": {
     "name": "FloatingActionButton",
     "descriptors": [
       {
@@ -24535,7 +24535,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-icon": {
+  "ds-react-icon": {
     "name": "Icon",
     "descriptors": [
       {
@@ -25426,7 +25426,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-image": {
+  "ds-react-image": {
     "name": "Image",
     "descriptors": [
       {
@@ -25750,7 +25750,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-icon-button": {
+  "ds-react-icon-button": {
     "name": "IconButton",
     "descriptors": [
       {
@@ -26795,7 +26795,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-icon-chip": {
+  "ds-react-icon-chip": {
     "name": "IconChip",
     "descriptors": [
       {
@@ -27711,7 +27711,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-input-country": {
+  "ds-react-input-country": {
     "name": "InputCountry",
     "descriptors": [
       {
@@ -28443,7 +28443,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-input-country-item",
+      "model": "ds-react-input-country-item",
       "property": "countryItems",
       "descriptors": [
         {
@@ -28801,7 +28801,7 @@
         "path": [
           "countryItems"
         ],
-        "model": "ds-input-country-item",
+        "model": "ds-react-input-country-item",
         "property": "countryItems",
         "descriptors": [
           {
@@ -29173,7 +29173,7 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-input-country-item"
+        "model": "ds-react-input-country-item"
       },
       {
         "id": "error",
@@ -29193,7 +29193,7 @@
           }
         ],
         "events": [],
-        "model": "ds-input-country-item"
+        "model": "ds-react-input-country-item"
       },
       {
         "id": "featuredCountryItems",
@@ -29550,12 +29550,12 @@
           }
         ],
         "events": [],
-        "model": "ds-input-country-item"
+        "model": "ds-react-input-country-item"
       }
     ],
     "version": 3
   },
-  "ds-input-date": {
+  "ds-react-input-date": {
     "name": "InputDate",
     "descriptors": [
       {
@@ -30624,7 +30624,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-input-date-item",
+      "model": "ds-react-input-date-item",
       "property": "error",
       "descriptors": [
         {
@@ -30658,7 +30658,7 @@
           }
         ],
         "events": [],
-        "model": "ds-input-date-item"
+        "model": "ds-react-input-date-item"
       },
       {
         "id": "hints",
@@ -30679,12 +30679,12 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-input-date-item"
+        "model": "ds-react-input-date-item"
       }
     ],
     "version": 3
   },
-  "ds-input-password": {
+  "ds-react-input-password": {
     "name": "InputPassword",
     "descriptors": [
       {
@@ -31720,7 +31720,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-input-password-item",
+      "model": "ds-react-input-password-item",
       "property": "error",
       "descriptors": [
         {
@@ -31754,7 +31754,7 @@
           }
         ],
         "events": [],
-        "model": "ds-input-password-item"
+        "model": "ds-react-input-password-item"
       },
       {
         "id": "hints",
@@ -31775,12 +31775,12 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-input-password-item"
+        "model": "ds-react-input-password-item"
       }
     ],
     "version": 3
   },
-  "ds-input-search": {
+  "ds-react-input-search": {
     "name": "InputSearch",
     "descriptors": [
       {
@@ -32861,7 +32861,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-input-search-item",
+      "model": "ds-react-input-search-item",
       "property": "error",
       "descriptors": [
         {
@@ -32895,7 +32895,7 @@
           }
         ],
         "events": [],
-        "model": "ds-input-search-item"
+        "model": "ds-react-input-search-item"
       },
       {
         "id": "hints",
@@ -32916,12 +32916,12 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-input-search-item"
+        "model": "ds-react-input-search-item"
       }
     ],
     "version": 3
   },
-  "ds-input-text": {
+  "ds-react-input-text": {
     "name": "InputText",
     "descriptors": [
       {
@@ -34050,7 +34050,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-input-text-item",
+      "model": "ds-react-input-text-item",
       "property": "error",
       "descriptors": [
         {
@@ -34084,7 +34084,7 @@
           }
         ],
         "events": [],
-        "model": "ds-input-text-item"
+        "model": "ds-react-input-text-item"
       },
       {
         "id": "hints",
@@ -34105,12 +34105,12 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-input-text-item"
+        "model": "ds-react-input-text-item"
       }
     ],
     "version": 3
   },
-  "ds-input-money": {
+  "ds-react-input-money": {
     "name": "InputMoney",
     "descriptors": [
       {
@@ -34345,7 +34345,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-input-money-item",
+      "model": "ds-react-input-money-item",
       "property": "hint",
       "descriptors": [
         {
@@ -34379,12 +34379,12 @@
           }
         ],
         "events": [],
-        "model": "ds-input-money-item"
+        "model": "ds-react-input-money-item"
       }
     ],
     "version": 3
   },
-  "ds-link": {
+  "ds-react-link": {
     "name": "Link",
     "descriptors": [
       {
@@ -34666,7 +34666,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-list-item": {
+  "ds-react-list-item": {
     "name": "ListItem",
     "descriptors": [
       {
@@ -39557,7 +39557,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-list-item-item",
+      "model": "ds-react-list-item-item",
       "property": "tags",
       "descriptors": [
         {
@@ -39649,12 +39649,12 @@
           }
         ],
         "events": [],
-        "model": "ds-list-item-item"
+        "model": "ds-react-list-item-item"
       }
     ],
     "version": 3
   },
-  "ds-list-item-control": {
+  "ds-react-list-item-control": {
     "name": "ListItemControl",
     "descriptors": [
       {
@@ -44277,7 +44277,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-list-item-control-item",
+      "model": "ds-react-list-item-control-item",
       "property": "tags",
       "descriptors": [
         {
@@ -44399,12 +44399,12 @@
           }
         ],
         "events": [],
-        "model": "ds-list-item-control-item"
+        "model": "ds-react-list-item-control-item"
       }
     ],
     "version": 3
   },
-  "ds-list-item-general": {
+  "ds-react-list-item-general": {
     "name": "ListItemGeneral",
     "descriptors": [
       {
@@ -49059,7 +49059,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-list-item-general-item",
+      "model": "ds-react-list-item-general-item",
       "property": "tags",
       "descriptors": [
         {
@@ -49181,12 +49181,12 @@
           }
         ],
         "events": [],
-        "model": "ds-list-item-general-item"
+        "model": "ds-react-list-item-general-item"
       }
     ],
     "version": 3
   },
-  "ds-list-item-action": {
+  "ds-react-list-item-action": {
     "name": "ListItemAction",
     "descriptors": [
       {
@@ -56280,7 +56280,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-list-item-action-item",
+      "model": "ds-react-list-item-action-item",
       "property": "tags",
       "descriptors": [
         {
@@ -56402,12 +56402,12 @@
           }
         ],
         "events": [],
-        "model": "ds-list-item-action-item"
+        "model": "ds-react-list-item-action-item"
       }
     ],
     "version": 3
   },
-  "ds-list-item-view": {
+  "ds-react-list-item-view": {
     "name": "ListItemView",
     "descriptors": [
       {
@@ -56779,7 +56779,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-menu-item": {
+  "ds-react-menu-item": {
     "name": "MenuItem",
     "descriptors": [
       {
@@ -57779,7 +57779,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-menu-popup": {
+  "ds-react-menu-popup": {
     "name": "MenuPopup",
     "descriptors": [
       {
@@ -57982,7 +57982,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-menu-popup-item",
+      "model": "ds-react-menu-popup-item",
       "property": "items",
       "descriptors": [
         {
@@ -58768,7 +58768,7 @@
         "path": [
           "items"
         ],
-        "model": "ds-menu-popup-item",
+        "model": "ds-react-menu-popup-item",
         "property": "items",
         "descriptors": [
           {
@@ -59552,7 +59552,7 @@
     ],
     "version": 3
   },
-  "ds-modal-dialog": {
+  "ds-react-modal-dialog": {
     "name": "ModalDialog",
     "descriptors": [
       {
@@ -59739,7 +59739,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-modal-dialog-item",
+      "model": "ds-react-modal-dialog-item",
       "property": "content:slot",
       "descriptors": [
         {
@@ -59883,12 +59883,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-modal-dialog-item"
+        "model": "ds-react-modal-dialog-item"
       }
     ],
     "version": 3
   },
-  "ds-pagination": {
+  "ds-react-pagination": {
     "name": "Pagination",
     "descriptors": [
       {
@@ -60057,7 +60057,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-pagination-item",
+      "model": "ds-react-pagination-item",
       "property": "pageSizeOptions",
       "descriptors": [
         {
@@ -60091,12 +60091,12 @@
           }
         ],
         "events": [],
-        "model": "ds-pagination-item"
+        "model": "ds-react-pagination-item"
       }
     ],
     "version": 3
   },
-  "ds-panel": {
+  "ds-react-panel": {
     "name": "Panel",
     "descriptors": [
       {
@@ -60915,7 +60915,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-panel-item",
+      "model": "ds-react-panel-item",
       "property": "footer.pagination.pageSizeOptions",
       "descriptors": [
         {
@@ -60951,7 +60951,7 @@
           }
         ],
         "events": [],
-        "model": "ds-panel-item"
+        "model": "ds-react-panel-item"
       },
       {
         "id": "content:children",
@@ -61026,12 +61026,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-panel-item"
+        "model": "ds-react-panel-item"
       }
     ],
     "version": 3
   },
-  "ds-neutral-icon-button": {
+  "ds-react-neutral-icon-button": {
     "name": "NeutralIconButton",
     "descriptors": [
       {
@@ -62080,7 +62080,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-page-indicator": {
+  "ds-react-page-indicator": {
     "name": "PageIndicator",
     "descriptors": [
       {
@@ -62160,7 +62160,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-payment-methods": {
+  "ds-react-payment-methods": {
     "name": "PaymentMethods",
     "descriptors": [
       {
@@ -62296,7 +62296,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-pin-code": {
+  "ds-react-pin-code": {
     "name": "PinCode",
     "descriptors": [
       {
@@ -62506,7 +62506,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-pin-code-item",
+      "model": "ds-react-pin-code-item",
       "property": "hints",
       "descriptors": [
         {
@@ -62541,12 +62541,12 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-pin-code-item"
+        "model": "ds-react-pin-code-item"
       }
     ],
     "version": 3
   },
-  "ds-progress-bar": {
+  "ds-react-progress-bar": {
     "name": "ProgressBar",
     "descriptors": [
       {
@@ -62787,7 +62787,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-progress-circle": {
+  "ds-react-progress-circle": {
     "name": "ProgressCircle",
     "descriptors": [
       {
@@ -62895,7 +62895,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-radio": {
+  "ds-react-radio": {
     "name": "Radio",
     "descriptors": [
       {
@@ -63073,7 +63073,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-section-title": {
+  "ds-react-section-title": {
     "name": "SectionTitle",
     "descriptors": [
       {
@@ -64026,7 +64026,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-side-sheet": {
+  "ds-react-side-sheet": {
     "name": "SideSheet",
     "descriptors": [
       {
@@ -64198,7 +64198,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-side-sheet-item",
+      "model": "ds-react-side-sheet-item",
       "property": "content:slot",
       "descriptors": [
         {
@@ -64342,12 +64342,12 @@
             "kind": "link"
           }
         ],
-        "model": "ds-side-sheet-item"
+        "model": "ds-react-side-sheet-item"
       }
     ],
     "version": 3
   },
-  "ds-section-subtitle": {
+  "ds-react-section-subtitle": {
     "name": "SectionSubtitle",
     "descriptors": [
       {
@@ -64499,7 +64499,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-segmented-control": {
+  "ds-react-segmented-control": {
     "name": "SegmentedControl",
     "descriptors": [
       {
@@ -64677,7 +64677,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-segmented-control-item",
+      "model": "ds-react-segmented-control-item",
       "property": "segments",
       "descriptors": [
         {
@@ -65429,7 +65429,7 @@
         "path": [
           "segments"
         ],
-        "model": "ds-segmented-control-item",
+        "model": "ds-react-segmented-control-item",
         "property": "segments",
         "descriptors": [
           {
@@ -66179,7 +66179,7 @@
     ],
     "version": 3
   },
-  "ds-select": {
+  "ds-react-select": {
     "name": "Select",
     "descriptors": [
       {
@@ -67412,7 +67412,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-select-item",
+      "model": "ds-react-select-item",
       "property": "options",
       "descriptors": [
         {
@@ -71580,7 +71580,7 @@
         "path": [
           "options"
         ],
-        "model": "ds-select-item",
+        "model": "ds-react-select-item",
         "property": "options",
         "descriptors": [
           {
@@ -75761,7 +75761,7 @@
           }
         ],
         "events": [],
-        "model": "ds-select-item"
+        "model": "ds-react-select-item"
       },
       {
         "id": "hints",
@@ -75782,12 +75782,12 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-select-item"
+        "model": "ds-react-select-item"
       }
     ],
     "version": 3
   },
-  "ds-sidebar": {
+  "ds-react-sidebar": {
     "name": "Sidebar",
     "descriptors": [
       {
@@ -76749,7 +76749,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-sidebar-item",
+      "model": "ds-react-sidebar-item",
       "property": "items",
       "descriptors": [
         {
@@ -77562,7 +77562,7 @@
         "path": [
           "items"
         ],
-        "model": "ds-sidebar-item",
+        "model": "ds-react-sidebar-item",
         "property": "items",
         "descriptors": [
           {
@@ -78373,7 +78373,7 @@
     ],
     "version": 3
   },
-  "ds-signal": {
+  "ds-react-signal": {
     "name": "Signal",
     "descriptors": [
       {
@@ -78481,7 +78481,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-switch": {
+  "ds-react-switch": {
     "name": "Switch",
     "descriptors": [
       {
@@ -78578,7 +78578,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-snackbar": {
+  "ds-react-snackbar": {
     "name": "Snackbar",
     "descriptors": [
       {
@@ -78823,7 +78823,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-spinner": {
+  "ds-react-spinner": {
     "name": "Spinner",
     "descriptors": [
       {
@@ -78931,7 +78931,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-stepper": {
+  "ds-react-stepper": {
     "name": "Stepper",
     "descriptors": [
       {
@@ -79121,7 +79121,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-table": {
+  "ds-react-table": {
     "name": "Table",
     "descriptors": [
       {
@@ -79939,7 +79939,7 @@
       }
     ],
     "item": {
-      "model": "ds-table-item",
+      "model": "ds-react-table-item",
       "property": "columns",
       "descriptors": [
         {
@@ -80060,7 +80060,7 @@
         "path": [
           "columns"
         ],
-        "model": "ds-table-item",
+        "model": "ds-react-table-item",
         "property": "columns",
         "descriptors": [
           {
@@ -80194,7 +80194,7 @@
           }
         ],
         "events": [],
-        "model": "ds-table-item"
+        "model": "ds-react-table-item"
       },
       {
         "id": "pageSizeOptions",
@@ -80214,12 +80214,12 @@
           }
         ],
         "events": [],
-        "model": "ds-table-item"
+        "model": "ds-react-table-item"
       }
     ],
     "version": 3
   },
-  "ds-tabs": {
+  "ds-react-tabs": {
     "name": "Tabs",
     "descriptors": [
       {
@@ -80313,7 +80313,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-tabs-item",
+      "model": "ds-react-tabs-item",
       "property": "tabs",
       "descriptors": [
         {
@@ -80412,7 +80412,7 @@
         "path": [
           "tabs"
         ],
-        "model": "ds-tabs-item",
+        "model": "ds-react-tabs-item",
         "property": "tabs",
         "descriptors": [
           {
@@ -80509,7 +80509,7 @@
     ],
     "version": 3
   },
-  "ds-tag": {
+  "ds-react-tag": {
     "name": "Tag",
     "descriptors": [
       {
@@ -80672,7 +80672,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-text": {
+  "ds-react-text": {
     "name": "Text",
     "constraints": {
       "colorVariants": {
@@ -80960,7 +80960,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-text-area": {
+  "ds-react-text-area": {
     "name": "TextArea",
     "descriptors": [
       {
@@ -81369,7 +81369,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-text-area-item",
+      "model": "ds-react-text-area-item",
       "property": "hints",
       "descriptors": [
         {
@@ -81404,12 +81404,12 @@
         ],
         "events": [],
         "maxItems": 3,
-        "model": "ds-text-area-item"
+        "model": "ds-react-text-area-item"
       }
     ],
     "version": 3
   },
-  "ds-timeline": {
+  "ds-react-timeline": {
     "name": "Timeline",
     "descriptors": [
       {
@@ -81493,7 +81493,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-timeline-item",
+      "model": "ds-react-timeline-item",
       "property": "items",
       "descriptors": [
         {
@@ -81672,7 +81672,7 @@
         "path": [
           "items"
         ],
-        "model": "ds-timeline-item",
+        "model": "ds-react-timeline-item",
         "property": "items",
         "descriptors": [
           {
@@ -81849,7 +81849,7 @@
     ],
     "version": 3
   },
-  "ds-tooltip-description": {
+  "ds-react-tooltip-description": {
     "name": "TooltipDescription",
     "descriptors": [
       {
@@ -82036,7 +82036,7 @@
     "collections": [],
     "version": 3
   },
-  "ds-widget": {
+  "ds-react-widget": {
     "name": "Widget",
     "descriptors": [
       {
@@ -82292,7 +82292,7 @@
     ],
     "technical": [],
     "item": {
-      "model": "ds-widget-item",
+      "model": "ds-react-widget-item",
       "property": "content:children",
       "descriptors": [
         {
@@ -82436,7 +82436,7 @@
             "kind": "link"
           }
         ],
-        "model": "ds-widget-item"
+        "model": "ds-react-widget-item"
       }
     ],
     "version": 3

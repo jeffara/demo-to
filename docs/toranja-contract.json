@@ -4,7 +4,7 @@
   "components": [
     {
       "name": "Alert",
-      "block": "ds-alert",
+      "block": "ds-react-alert",
       "source": "components/Molecules/Alert/Alert.d.ts",
       "properties": [
         {
@@ -100,7 +100,7 @@
     },
     {
       "name": "Avatar",
-      "block": "ds-avatar",
+      "block": "ds-react-avatar",
       "source": "components/Molecules/Avatar/Avatar.d.ts",
       "properties": [
         {
@@ -1965,7 +1965,7 @@
     },
     {
       "name": "Accordion",
-      "block": "ds-accordion",
+      "block": "ds-react-accordion",
       "source": "components/Molecules/Accordion/Accordion.d.ts",
       "properties": [
         {
@@ -3574,7 +3574,7 @@
     },
     {
       "name": "Badge",
-      "block": "ds-badge",
+      "block": "ds-react-badge",
       "source": "components/Atoms/Badge/Badge.d.ts",
       "properties": [
         {
@@ -3600,7 +3600,7 @@
     },
     {
       "name": "Button",
-      "block": "ds-button",
+      "block": "ds-react-button",
       "source": "components/Molecules/Button/Button.d.ts",
       "properties": [
         {
@@ -4718,7 +4718,7 @@
     },
     {
       "name": "Banner",
-      "block": "ds-banner",
+      "block": "ds-react-banner",
       "source": "components/Molecules/Banner/Banner.d.ts",
       "properties": [
         {
@@ -4799,7 +4799,7 @@
     },
     {
       "name": "BottomSheet",
-      "block": "ds-bottom-sheet",
+      "block": "ds-react-bottom-sheet",
       "source": "components/Molecules/BottomSheet/BottomSheet.d.ts",
       "properties": [
         {
@@ -4884,7 +4884,7 @@
     },
     {
       "name": "BottomSheetCountry",
-      "block": "ds-bottom-sheet-country",
+      "block": "ds-react-bottom-sheet-country",
       "source": "components/Templates/BottomSheetCountry/BottomSheetCountry.d.ts",
       "properties": [
         {
@@ -5650,7 +5650,7 @@
     },
     {
       "name": "Breadcrumb",
-      "block": "ds-breadcrumb",
+      "block": "ds-react-breadcrumb",
       "source": "components/Molecules/Breadcrumb/Breadcrumb.d.ts",
       "properties": [
         {
@@ -5713,7 +5713,7 @@
     },
     {
       "name": "Card",
-      "block": "ds-card",
+      "block": "ds-react-card",
       "source": "components/Atoms/Card/Card.d.ts",
       "properties": [
         {
@@ -5768,7 +5768,7 @@
     },
     {
       "name": "Checkbox",
-      "block": "ds-checkbox",
+      "block": "ds-react-checkbox",
       "source": "components/Atoms/Checkbox/Checkbox.d.ts",
       "properties": [
         {
@@ -5814,7 +5814,7 @@
     },
     {
       "name": "Chip",
-      "block": "ds-chip",
+      "block": "ds-react-chip",
       "source": "components/Molecules/Chip/Chip.d.ts",
       "properties": [
         {
@@ -7846,7 +7846,7 @@
     },
     {
       "name": "ChartBar",
-      "block": "ds-chart-bar",
+      "block": "ds-react-chart-bar",
       "source": "components/Atoms/Charts/ChartBar/ChartBar.d.ts",
       "properties": [
         {
@@ -8096,7 +8096,7 @@
     },
     {
       "name": "ChartDonut",
-      "block": "ds-chart-donut",
+      "block": "ds-react-chart-donut",
       "source": "components/Atoms/Charts/ChartDonut/ChartDonut.d.ts",
       "properties": [
         {
@@ -8305,7 +8305,7 @@
     },
     {
       "name": "ChartLine",
-      "block": "ds-chart-line",
+      "block": "ds-react-chart-line",
       "source": "components/Atoms/Charts/ChartLine/ChartLine.d.ts",
       "properties": [
         {
@@ -8578,7 +8578,7 @@
     },
     {
       "name": "ChartMeter",
-      "block": "ds-chart-meter",
+      "block": "ds-react-chart-meter",
       "source": "components/Atoms/Charts/ChartMeter/ChartMeter.d.ts",
       "properties": [
         {
@@ -8761,7 +8761,7 @@
     },
     {
       "name": "Counter",
-      "block": "ds-counter",
+      "block": "ds-react-counter",
       "source": "components/Atoms/Counter/Counter.d.ts",
       "properties": [
         {
@@ -9048,7 +9048,7 @@
     },
     {
       "name": "CrossSelling",
-      "block": "ds-cross-selling",
+      "block": "ds-react-cross-selling",
       "source": "components/Molecules/CrossSelling/CrossSelling.d.ts",
       "properties": [
         {
@@ -9164,7 +9164,7 @@
     },
     {
       "name": "Carousel",
-      "block": "ds-carousel",
+      "block": "ds-react-carousel",
       "source": "components/Molecules/Carousel/Carousel.d.ts",
       "properties": [
         {
@@ -9236,7 +9236,7 @@
     },
     {
       "name": "DatePicker",
-      "block": "ds-date-picker",
+      "block": "ds-react-date-picker",
       "source": "components/Molecules/DatePicker/DatePicker.d.ts",
       "properties": [
         {
@@ -9401,7 +9401,7 @@
     },
     {
       "name": "DecoratedText",
-      "block": "ds-decorated-text",
+      "block": "ds-react-decorated-text",
       "source": "components/Molecules/DecoratedText/DecoratedText.d.ts",
       "properties": [
         {
@@ -9808,7 +9808,7 @@
     },
     {
       "name": "Divider",
-      "block": "ds-divider",
+      "block": "ds-react-divider",
       "source": "components/Atoms/Divider/Divider.d.ts",
       "properties": [
         {
@@ -9838,7 +9838,7 @@
     },
     {
       "name": "FeedbackScreen",
-      "block": "ds-feedback-screen",
+      "block": "ds-react-feedback-screen",
       "source": "components/Templates/FeedbackScreen/FeedbackScreen.d.ts",
       "properties": [
         {
@@ -10157,7 +10157,7 @@
     },
     {
       "name": "Flag",
-      "block": "ds-flag",
+      "block": "ds-react-flag",
       "source": "components/Atoms/Flag/Flag.d.ts",
       "properties": [
         {
@@ -10485,7 +10485,7 @@
     },
     {
       "name": "Header",
-      "block": "ds-header",
+      "block": "ds-react-header",
       "source": "components/Molecules/Header/Header.d.ts",
       "properties": [
         {
@@ -16785,7 +16785,7 @@
     },
     {
       "name": "FloatingActionButton",
-      "block": "ds-floating-action-button",
+      "block": "ds-react-floating-action-button",
       "source": "components/Molecules/Button/FloatingActionButton/FloatingActionButton.d.ts",
       "properties": [
         {
@@ -17856,7 +17856,7 @@
     },
     {
       "name": "Icon",
-      "block": "ds-icon",
+      "block": "ds-react-icon",
       "source": "components/Atoms/Icon/Icon.d.ts",
       "properties": [
         {
@@ -18669,7 +18669,7 @@
     },
     {
       "name": "Image",
-      "block": "ds-image",
+      "block": "ds-react-image",
       "source": "components/Atoms/Image/Image.d.ts",
       "properties": [
         {
@@ -18865,7 +18865,7 @@
     },
     {
       "name": "IconButton",
-      "block": "ds-icon-button",
+      "block": "ds-react-icon-button",
       "source": "components/Molecules/Button/IconButton/IconButton.d.ts",
       "properties": [
         {
@@ -19947,7 +19947,7 @@
     },
     {
       "name": "IconChip",
-      "block": "ds-icon-chip",
+      "block": "ds-react-icon-chip",
       "source": "components/Atoms/IconChip/IconChip.d.ts",
       "properties": [
         {
@@ -20726,7 +20726,7 @@
     },
     {
       "name": "InputCountry",
-      "block": "ds-input-country",
+      "block": "ds-react-input-country",
       "source": "components/Molecules/InputCountry/InputCountry.d.ts",
       "properties": [
         {
@@ -21615,7 +21615,7 @@
     },
     {
       "name": "InputDate",
-      "block": "ds-input-date",
+      "block": "ds-react-input-date",
       "source": "components/Molecules/InputDate/InputDate.d.ts",
       "properties": [
         {
@@ -22524,7 +22524,7 @@
     },
     {
       "name": "InputPassword",
-      "block": "ds-input-password",
+      "block": "ds-react-input-password",
       "source": "components/Molecules/InputPassword/InputPassword.d.ts",
       "properties": [
         {
@@ -23408,7 +23408,7 @@
     },
     {
       "name": "InputSearch",
-      "block": "ds-input-search",
+      "block": "ds-react-input-search",
       "source": "components/Molecules/InputSearch/InputSearch.d.ts",
       "properties": [
         {
@@ -24325,7 +24325,7 @@
     },
     {
       "name": "InputText",
-      "block": "ds-input-text",
+      "block": "ds-react-input-text",
       "source": "components/Molecules/InputText/InputText.d.ts",
       "properties": [
         {
@@ -25274,7 +25274,7 @@
     },
     {
       "name": "InputMoney",
-      "block": "ds-input-money",
+      "block": "ds-react-input-money",
       "source": "components/Molecules/InputMoney/InputMoney.d.ts",
       "properties": [
         {
@@ -25404,7 +25404,7 @@
     },
     {
       "name": "Link",
-      "block": "ds-link",
+      "block": "ds-react-link",
       "source": "components/Molecules/Link/Link.d.ts",
       "properties": [
         {
@@ -25736,7 +25736,7 @@
     },
     {
       "name": "ListItem",
-      "block": "ds-list-item",
+      "block": "ds-react-list-item",
       "source": "components/Molecules/ListItem/ListItem.d.ts",
       "properties": [
         {
@@ -29767,7 +29767,7 @@
     },
     {
       "name": "ListItemControl",
-      "block": "ds-list-item-control",
+      "block": "ds-react-list-item-control",
       "source": "components/Molecules/ListItemControl/ListItemControl.d.ts",
       "properties": [
         {
@@ -33813,7 +33813,7 @@
     },
     {
       "name": "ListItemGeneral",
-      "block": "ds-list-item-general",
+      "block": "ds-react-list-item-general",
       "source": "components/Molecules/ListItemGeneral/ListItemGeneral.d.ts",
       "properties": [
         {
@@ -37909,7 +37909,7 @@
     },
     {
       "name": "ListItemAction",
-      "block": "ds-list-item-action",
+      "block": "ds-react-list-item-action",
       "source": "components/Molecules/ListItemAction/ListItemAction.d.ts",
       "properties": [
         {
@@ -44159,7 +44159,7 @@
     },
     {
       "name": "ListItemView",
-      "block": "ds-list-item-view",
+      "block": "ds-react-list-item-view",
       "source": "components/Molecules/ListItemView/ListItemView.d.ts",
       "properties": [
         {
@@ -44306,7 +44306,7 @@
     },
     {
       "name": "MenuItem",
-      "block": "ds-menu-item",
+      "block": "ds-react-menu-item",
       "source": "components/Molecules/MenuItem/MenuItem.d.ts",
       "properties": [
         {
@@ -45141,7 +45141,7 @@
     },
     {
       "name": "MenuPopup",
-      "block": "ds-menu-popup",
+      "block": "ds-react-menu-popup",
       "source": "components/Molecules/MenuPopup/MenuPopup.d.ts",
       "properties": [
         {
@@ -46000,7 +46000,7 @@
     },
     {
       "name": "ModalDialog",
-      "block": "ds-modal-dialog",
+      "block": "ds-react-modal-dialog",
       "source": "components/Molecules/ModalDialog/ModalDialog.d.ts",
       "properties": [
         {
@@ -46082,7 +46082,7 @@
     },
     {
       "name": "Pagination",
-      "block": "ds-pagination",
+      "block": "ds-react-pagination",
       "source": "components/Molecules/Pagination/Pagination.d.ts",
       "properties": [
         {
@@ -46166,7 +46166,7 @@
     },
     {
       "name": "Panel",
-      "block": "ds-panel",
+      "block": "ds-react-panel",
       "source": "components/Molecules/Panel/Panel.d.ts",
       "properties": [
         {
@@ -46487,7 +46487,7 @@
     },
     {
       "name": "NeutralIconButton",
-      "block": "ds-neutral-icon-button",
+      "block": "ds-react-neutral-icon-button",
       "source": "components/Atoms/NeutralIconButton/NeutralIconButton.d.ts",
       "properties": [
         {
@@ -47569,7 +47569,7 @@
     },
     {
       "name": "PageIndicator",
-      "block": "ds-page-indicator",
+      "block": "ds-react-page-indicator",
       "source": "components/Atoms/PageIndicator/PageIndicator.d.ts",
       "properties": [
         {
@@ -47591,7 +47591,7 @@
     },
     {
       "name": "PaymentMethods",
-      "block": "ds-payment-methods",
+      "block": "ds-react-payment-methods",
       "source": "components/Atoms/PaymentMethods/PaymentMethods.d.ts",
       "properties": [
         {
@@ -47661,7 +47661,7 @@
     },
     {
       "name": "PinCode",
-      "block": "ds-pin-code",
+      "block": "ds-react-pin-code",
       "source": "components/Molecules/PinCode/PinCode.d.ts",
       "properties": [
         {
@@ -47774,7 +47774,7 @@
     },
     {
       "name": "ProgressBar",
-      "block": "ds-progress-bar",
+      "block": "ds-react-progress-bar",
       "source": "components/Atoms/ProgressIndicator/ProgressBar/ProgressBar.d.ts",
       "properties": [
         {
@@ -47945,7 +47945,7 @@
     },
     {
       "name": "ProgressCircle",
-      "block": "ds-progress-circle",
+      "block": "ds-react-progress-circle",
       "source": "components/Atoms/ProgressIndicator/ProgressCircle/ProgressCircle.d.ts",
       "properties": [
         {
@@ -47987,7 +47987,7 @@
     },
     {
       "name": "Radio",
-      "block": "ds-radio",
+      "block": "ds-react-radio",
       "source": "components/Molecules/RadioButton/RadioButton.d.ts",
       "properties": [
         {
@@ -48074,7 +48074,7 @@
     },
     {
       "name": "SectionTitle",
-      "block": "ds-section-title",
+      "block": "ds-react-section-title",
       "source": "components/Molecules/SectionTitle/SectionTitle.d.ts",
       "properties": [
         {
@@ -48878,7 +48878,7 @@
     },
     {
       "name": "SideSheet",
-      "block": "ds-side-sheet",
+      "block": "ds-react-side-sheet",
       "source": "components/Molecules/SideSheet/SideSheet.d.ts",
       "properties": [
         {
@@ -48949,7 +48949,7 @@
     },
     {
       "name": "SectionSubtitle",
-      "block": "ds-section-subtitle",
+      "block": "ds-react-section-subtitle",
       "source": "components/Molecules/SectionSubtitle/SectionSubtitle.d.ts",
       "properties": [
         {
@@ -49020,7 +49020,7 @@
     },
     {
       "name": "SegmentedControl",
-      "block": "ds-segmented-control",
+      "block": "ds-react-segmented-control",
       "source": "components/Molecules/SegmentedControl/SegmentedControl.d.ts",
       "properties": [
         {
@@ -49815,7 +49815,7 @@
     },
     {
       "name": "Select",
-      "block": "ds-select",
+      "block": "ds-react-select",
       "source": "components/Molecules/Select/Select.d.ts",
       "properties": [
         {
@@ -54680,7 +54680,7 @@
     },
     {
       "name": "Sidebar",
-      "block": "ds-sidebar",
+      "block": "ds-react-sidebar",
       "source": "components/Molecules/Sidebar/Sidebar.d.ts",
       "properties": [
         {
@@ -56269,7 +56269,7 @@
     },
     {
       "name": "Signal",
-      "block": "ds-signal",
+      "block": "ds-react-signal",
       "source": "components/Atoms/Signal/Signal.d.ts",
       "properties": [
         {
@@ -56315,7 +56315,7 @@
     },
     {
       "name": "Switch",
-      "block": "ds-switch",
+      "block": "ds-react-switch",
       "source": "components/Atoms/Switch/Switch.d.ts",
       "properties": [
         {
@@ -56349,7 +56349,7 @@
     },
     {
       "name": "Snackbar",
-      "block": "ds-snackbar",
+      "block": "ds-react-snackbar",
       "source": "components/Molecules/Snackbar/Snackbar.d.ts",
       "properties": [
         {
@@ -56433,7 +56433,7 @@
     },
     {
       "name": "Spinner",
-      "block": "ds-spinner",
+      "block": "ds-react-spinner",
       "source": "components/Atoms/ProgressIndicator/Spinner/Spinner.d.ts",
       "properties": [
         {
@@ -56475,7 +56475,7 @@
     },
     {
       "name": "Stepper",
-      "block": "ds-stepper",
+      "block": "ds-react-stepper",
       "source": "components/Molecules/Stepper/Stepper.d.ts",
       "properties": [
         {
@@ -56570,7 +56570,7 @@
     },
     {
       "name": "Table",
-      "block": "ds-table",
+      "block": "ds-react-table",
       "source": "components/Organisms/Table/Table.d.ts",
       "properties": [
         {
@@ -57036,7 +57036,7 @@
     },
     {
       "name": "Tabs",
-      "block": "ds-tabs",
+      "block": "ds-react-tabs",
       "source": "components/Molecules/Tabs/Tabs.d.ts",
       "properties": [
         {
@@ -57142,7 +57142,7 @@
     },
     {
       "name": "Tag",
-      "block": "ds-tag",
+      "block": "ds-react-tag",
       "source": "components/Atoms/Tag/Tag.d.ts",
       "properties": [
         {
@@ -57231,7 +57231,7 @@
     },
     {
       "name": "Text",
-      "block": "ds-text",
+      "block": "ds-react-text",
       "source": "components/Atoms/Text/Text.d.ts",
       "properties": [
         {
@@ -57429,7 +57429,7 @@
     },
     {
       "name": "TextArea",
-      "block": "ds-text-area",
+      "block": "ds-react-text-area",
       "source": "components/Molecules/Textarea/TextArea.d.ts",
       "properties": [
         {
@@ -57791,7 +57791,7 @@
     },
     {
       "name": "Timeline",
-      "block": "ds-timeline",
+      "block": "ds-react-timeline",
       "source": "components/Molecules/Timeline/Timeline.d.ts",
       "properties": [
         {
@@ -57968,7 +57968,7 @@
     },
     {
       "name": "TooltipDescription",
-      "block": "ds-tooltip-description",
+      "block": "ds-react-tooltip-description",
       "source": "components/Molecules/TooltipDescription/TooltipDescription.d.ts",
       "properties": [
         {
@@ -58052,7 +58052,7 @@
     },
     {
       "name": "Widget",
-      "block": "ds-widget",
+      "block": "ds-react-widget",
       "source": "components/Molecules/Widget/Widget.d.ts",
       "properties": [
         {

@@ -1,0 +1,13 @@
+{
+  "version": "5.1.0",
+  "officialBlocks": 73,
+  "customDemoBlocks": 0,
+  "pages": 123,
+  "serializedBlocks": 458,
+  "vendorFiles": 4230,
+  "checksPassed": 6874,
+  "staleFiles": [],
+  "missingModuleImports": [],
+  "pass": true,
+  "limits": "Static/build verification only. No browser, remote AEM, UE or Lighthouse validation."
+}

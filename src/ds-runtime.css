@@ -2,8 +2,8 @@
 .ds-official{min-width:0;font-family:var(--type-font-default),sans-serif;color:var(--color-text-neutral-primary)}
 .ds-status:empty{display:none}.ds-status{display:block;font-size:var(--type-body-small-font-size,14px)}
 .ds-author-items{display:flex;flex-wrap:wrap;gap:8px;margin-block:12px}.ds-author-item{border:1px dashed var(--color-border-neutral-default);padding:8px;max-width:250px}
-.ds-card-content{padding:var(--spacing-24,24px);display:grid;gap:var(--spacing-16,16px);min-width:0;overflow-wrap:anywhere}
-.ds-card-content :is(h1,h2,h3,h4,p,ul,ol){margin:0}.ds-card-content li+li{margin-top:var(--spacing-8,8px)}
+.ds-react-card-content{padding:var(--spacing-24,24px);display:grid;gap:var(--spacing-16,16px);min-width:0;overflow-wrap:anywhere}
+.ds-react-card-content :is(h1,h2,h3,h4,p,ul,ol){margin:0}.ds-react-card-content li+li{margin-top:var(--spacing-8,8px)}
 .ds-tab-panel{padding-top:var(--spacing-16,16px);display:grid;gap:var(--spacing-16,16px)}
 .ds-modal-close{position:fixed;right:20px;top:20px;z-index:10002}
 .ds-empty,.ds-data-status{padding:var(--spacing-16,16px)}

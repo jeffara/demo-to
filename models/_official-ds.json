@@ -1,15 +1,15 @@
 {
   "definitions": [
     {
-      "id": "ds-alert",
+      "id": "ds-react-alert",
       "title": "DS oficial: Alert",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-alert",
-              "model": "ds-alert",
+              "name": "ds-react-alert",
+              "model": "ds-react-alert",
               "p76617269616e74": "information",
               "p7374617465": "enabled",
               "p7469746c65": "Informação importante",
@@ -22,15 +22,15 @@
       }
     },
     {
-      "id": "ds-avatar",
+      "id": "ds-react-avatar",
       "title": "DS oficial: Avatar",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-avatar",
-              "model": "ds-avatar",
+              "name": "ds-react-avatar",
+              "model": "ds-react-avatar",
               "p636f6c6f72": "soft",
               "p76617269616e74": "initial",
               "p73697a65": "large",
@@ -43,16 +43,16 @@
       }
     },
     {
-      "id": "ds-accordion",
+      "id": "ds-react-accordion",
       "title": "DS oficial: Accordion",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-accordion",
-              "model": "ds-accordion",
-              "filter": "ds-accordion",
+              "name": "ds-react-accordion",
+              "model": "ds-react-accordion",
+              "filter": "ds-react-accordion",
               "p7469746c65": "Como editar este componente?",
               "p6465736372697074696f6e": "Conteúdo e variantes no painel lateral",
               "p73686f7744697669646572": "true",
@@ -64,15 +64,15 @@
       }
     },
     {
-      "id": "ds-badge",
+      "id": "ds-react-badge",
       "title": "DS oficial: Badge",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-badge",
-              "model": "ds-badge",
+              "name": "ds-react-badge",
+              "model": "ds-react-badge",
               "p76617269616e74": "label",
               "p636f756e74": 8,
               "editorMode": "basic"
@@ -82,15 +82,15 @@
       }
     },
     {
-      "id": "ds-button",
+      "id": "ds-react-button",
       "title": "DS oficial: Button",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-button",
-              "model": "ds-button",
+              "name": "ds-react-button",
+              "model": "ds-react-button",
               "p6c6162656c": "Conhecer o showcase",
               "p73697a65": "large",
               "p686965726172636879": "primary",
@@ -102,16 +102,16 @@
       }
     },
     {
-      "id": "ds-banner",
+      "id": "ds-react-banner",
       "title": "DS oficial: Banner",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-banner",
-              "model": "ds-banner",
-              "filter": "ds-banner",
+              "name": "ds-react-banner",
+              "model": "ds-react-banner",
+              "filter": "ds-react-banner",
               "p76617269616e74": "image",
               "p73697a65": "medium",
               "p75726c": "/assets/demo/ede5e1c82aad.jpg",
@@ -123,16 +123,16 @@
       }
     },
     {
-      "id": "ds-bottom-sheet",
+      "id": "ds-react-bottom-sheet",
       "title": "DS oficial: BottomSheet",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-bottom-sheet",
-              "model": "ds-bottom-sheet",
-              "filter": "ds-bottom-sheet",
+              "name": "ds-react-bottom-sheet",
+              "model": "ds-react-bottom-sheet",
+              "filter": "ds-react-bottom-sheet",
               "p7469746c65": "Mais possibilidades",
               "p69734f70656e": "false",
               "p6f7665726c6179": "on",
@@ -145,15 +145,15 @@
       }
     },
     {
-      "id": "ds-bottom-sheet-country-item",
+      "id": "ds-react-bottom-sheet-country-item",
       "title": "BottomSheetCountry — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-bottom-sheet-country-item",
-              "model": "ds-bottom-sheet-country-item",
+              "name": "ds-react-bottom-sheet-country-item",
+              "model": "ds-react-bottom-sheet-country-item",
               "collection": "items"
             }
           }
@@ -161,16 +161,16 @@
       }
     },
     {
-      "id": "ds-bottom-sheet-country",
+      "id": "ds-react-bottom-sheet-country",
       "title": "DS oficial: BottomSheetCountry",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-bottom-sheet-country",
-              "model": "ds-bottom-sheet-country",
-              "filter": "ds-bottom-sheet-country",
+              "name": "ds-react-bottom-sheet-country",
+              "model": "ds-react-bottom-sheet-country",
+              "filter": "ds-react-bottom-sheet-country",
               "p73686f77536561726368": "true",
               "p7469746c65": "Escolha o país",
               "p69734f70656e": "false",
@@ -181,15 +181,15 @@
       }
     },
     {
-      "id": "ds-breadcrumb-item",
+      "id": "ds-react-breadcrumb-item",
       "title": "Breadcrumb — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-breadcrumb-item",
-              "model": "ds-breadcrumb-item",
+              "name": "ds-react-breadcrumb-item",
+              "model": "ds-react-breadcrumb-item",
               "collection": "items"
             }
           }
@@ -197,16 +197,16 @@
       }
     },
     {
-      "id": "ds-breadcrumb",
+      "id": "ds-react-breadcrumb",
       "title": "DS oficial: Breadcrumb",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-breadcrumb",
-              "model": "ds-breadcrumb",
-              "filter": "ds-breadcrumb",
+              "name": "ds-react-breadcrumb",
+              "model": "ds-react-breadcrumb",
+              "filter": "ds-react-breadcrumb",
               "p617269614c6162656c": "Navegação estrutural",
               "editorMode": "basic"
             }
@@ -215,16 +215,16 @@
       }
     },
     {
-      "id": "ds-card",
+      "id": "ds-react-card",
       "title": "DS oficial: Card",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-card",
-              "model": "ds-card",
-              "filter": "ds-card",
+              "name": "ds-react-card",
+              "model": "ds-react-card",
+              "filter": "ds-react-card",
               "p7374617465": "enabled",
               "editorMode": "basic"
             }
@@ -233,15 +233,15 @@
       }
     },
     {
-      "id": "ds-checkbox",
+      "id": "ds-react-checkbox",
       "title": "DS oficial: Checkbox",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-checkbox",
-              "model": "ds-checkbox",
+              "name": "ds-react-checkbox",
+              "model": "ds-react-checkbox",
               "p7374617465": "enabled",
               "p636865636b6564": "false",
               "editorMode": "basic"
@@ -251,15 +251,15 @@
       }
     },
     {
-      "id": "ds-chip",
+      "id": "ds-react-chip",
       "title": "DS oficial: Chip",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-chip",
-              "model": "ds-chip",
+              "name": "ds-react-chip",
+              "model": "ds-react-chip",
               "p6c6162656c": "Investimentos",
               "p73656c6563746564": "false",
               "p6c656164696e6749636f6e": "ic_piggy_bank",
@@ -271,16 +271,16 @@
       }
     },
     {
-      "id": "ds-chart-bar",
+      "id": "ds-react-chart-bar",
       "title": "DS oficial: ChartBar",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-chart-bar",
-              "model": "ds-chart-bar",
-              "filter": "ds-chart-bar",
+              "name": "ds-react-chart-bar",
+              "model": "ds-react-chart-bar",
+              "filter": "ds-react-chart-bar",
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
               "p73697a65": "large",
@@ -291,16 +291,16 @@
       }
     },
     {
-      "id": "ds-chart-donut",
+      "id": "ds-react-chart-donut",
       "title": "DS oficial: ChartDonut",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-chart-donut",
-              "model": "ds-chart-donut",
-              "filter": "ds-chart-donut",
+              "name": "ds-react-chart-donut",
+              "model": "ds-react-chart-donut",
+              "filter": "ds-react-chart-donut",
               "p73686f7744656661756c744c6567656e64": "true",
               "p746f74616c4c6162656c": "Total",
               "p746f74616c56616c7565": "100%",
@@ -311,15 +311,15 @@
       }
     },
     {
-      "id": "ds-chart-line-item",
+      "id": "ds-react-chart-line-item",
       "title": "ChartLine — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-chart-line-item",
-              "model": "ds-chart-line-item",
+              "name": "ds-react-chart-line-item",
+              "model": "ds-react-chart-line-item",
               "collection": "series"
             }
           }
@@ -327,16 +327,16 @@
       }
     },
     {
-      "id": "ds-chart-line",
+      "id": "ds-react-chart-line",
       "title": "DS oficial: ChartLine",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-chart-line",
-              "model": "ds-chart-line",
-              "filter": "ds-chart-line",
+              "name": "ds-react-chart-line",
+              "model": "ds-react-chart-line",
+              "filter": "ds-react-chart-line",
               "p6368617274486569676874": 220,
               "p617269614c6162656c": "Evolução ilustrativa",
               "p73697a65": "large",
@@ -347,16 +347,16 @@
       }
     },
     {
-      "id": "ds-chart-meter",
+      "id": "ds-react-chart-meter",
       "title": "DS oficial: ChartMeter",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-chart-meter",
-              "model": "ds-chart-meter",
-              "filter": "ds-chart-meter",
+              "name": "ds-react-chart-meter",
+              "model": "ds-react-chart-meter",
+              "filter": "ds-react-chart-meter",
               "p7469746c65": "Distribuição",
               "p746f74616c": 100,
               "p6c656164696e6756616c7565": "100",
@@ -368,15 +368,15 @@
       }
     },
     {
-      "id": "ds-counter",
+      "id": "ds-react-counter",
       "title": "DS oficial: Counter",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-counter",
-              "model": "ds-counter",
+              "name": "ds-react-counter",
+              "model": "ds-react-counter",
               "p636f756e74": 23,
               "p6d61784c656e677468": 100,
               "editorMode": "basic"
@@ -386,15 +386,15 @@
       }
     },
     {
-      "id": "ds-cross-selling",
+      "id": "ds-react-cross-selling",
       "title": "DS oficial: CrossSelling",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-cross-selling",
-              "model": "ds-cross-selling",
+              "name": "ds-react-cross-selling",
+              "model": "ds-react-cross-selling",
               "p6465736372697074696f6e": "Conteúdo de demonstração.",
               "p7375627469746c65": "Conheça os produtos",
               "p7469746c65": "Mais possibilidades",
@@ -406,15 +406,15 @@
       }
     },
     {
-      "id": "ds-carousel-item",
+      "id": "ds-react-carousel-item",
       "title": "Carousel — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-carousel-item",
-              "model": "ds-carousel-item",
+              "name": "ds-react-carousel-item",
+              "model": "ds-react-carousel-item",
               "collection": "items"
             }
           }
@@ -422,16 +422,16 @@
       }
     },
     {
-      "id": "ds-carousel",
+      "id": "ds-react-carousel",
       "title": "DS oficial: Carousel",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-carousel",
-              "model": "ds-carousel",
-              "filter": "ds-carousel",
+              "name": "ds-react-carousel",
+              "model": "ds-react-carousel",
+              "filter": "ds-react-carousel",
               "p76617269616e74": "page-view",
               "p7061676553706163696e67": 16,
               "p74696d6572": 0,
@@ -442,16 +442,16 @@
       }
     },
     {
-      "id": "ds-date-picker",
+      "id": "ds-react-date-picker",
       "title": "DS oficial: DatePicker",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-date-picker",
-              "model": "ds-date-picker",
-              "filter": "ds-date-picker",
+              "name": "ds-react-date-picker",
+              "model": "ds-react-date-picker",
+              "filter": "ds-react-date-picker",
               "p73656c656374696f6e4d6f6465": "single",
               "p6c6f63616c65": "pt-BR",
               "p73686f77436f6e74726f6c73": "true",
@@ -463,15 +463,15 @@
       }
     },
     {
-      "id": "ds-decorated-text",
+      "id": "ds-react-decorated-text",
       "title": "DS oficial: DecoratedText",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-decorated-text",
-              "model": "ds-decorated-text",
+              "name": "ds-react-decorated-text",
+              "model": "ds-react-decorated-text",
               "p6368696c6472656e": "Seu futuro começa agora.",
               "p636c6173735374796c65": "Type.Body.Large.Regular",
               "p636c617373436f6c6f72": "Color.Text.Neutral.Primary",
@@ -483,15 +483,15 @@
       }
     },
     {
-      "id": "ds-divider",
+      "id": "ds-react-divider",
       "title": "DS oficial: Divider",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-divider",
-              "model": "ds-divider",
+              "name": "ds-react-divider",
+              "model": "ds-react-divider",
               "p76617269616e74": "solid",
               "p6f7269656e746174696f6e": "horizontal",
               "editorMode": "basic"
@@ -501,15 +501,15 @@
       }
     },
     {
-      "id": "ds-feedback-screen-item",
+      "id": "ds-react-feedback-screen-item",
       "title": "FeedbackScreen — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-feedback-screen-item",
-              "model": "ds-feedback-screen-item",
+              "name": "ds-react-feedback-screen-item",
+              "model": "ds-react-feedback-screen-item",
               "collection": "contentItems"
             }
           }
@@ -517,16 +517,16 @@
       }
     },
     {
-      "id": "ds-feedback-screen",
+      "id": "ds-react-feedback-screen",
       "title": "DS oficial: FeedbackScreen",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-feedback-screen",
-              "model": "ds-feedback-screen",
-              "filter": "ds-feedback-screen",
+              "name": "ds-react-feedback-screen",
+              "model": "ds-react-feedback-screen",
+              "filter": "ds-react-feedback-screen",
               "p76617269616e74": "custom",
               "p7469746c65": "Tudo pronto!",
               "p6465736372697074696f6e": "Esta é uma demonstração de feedback.",
@@ -538,15 +538,15 @@
       }
     },
     {
-      "id": "ds-flag",
+      "id": "ds-react-flag",
       "title": "DS oficial: Flag",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-flag",
-              "model": "ds-flag",
+              "name": "ds-react-flag",
+              "model": "ds-react-flag",
               "p69636f6e466c6167": "ic_flag_brazil_rounded",
               "p636f6e74656e744465736372697074696f6e": "Brasil",
               "p73697a65": "large",
@@ -557,16 +557,16 @@
       }
     },
     {
-      "id": "ds-header",
+      "id": "ds-react-header",
       "title": "DS oficial: Header",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-header",
-              "model": "ds-header",
-              "filter": "ds-header",
+              "name": "ds-react-header",
+              "model": "ds-react-header",
+              "filter": "ds-react-header",
               "p76617269616e74": "innerPages",
               "p74797065": "title",
               "p73697a65": "large",
@@ -578,15 +578,15 @@
       }
     },
     {
-      "id": "ds-floating-action-button",
+      "id": "ds-react-floating-action-button",
       "title": "DS oficial: FloatingActionButton",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-floating-action-button",
-              "model": "ds-floating-action-button",
+              "name": "ds-react-floating-action-button",
+              "model": "ds-react-floating-action-button",
               "p6c6162656c": "Explorar",
               "p69636f6e": "ic_add",
               "p686965726172636879": "primary",
@@ -598,15 +598,15 @@
       }
     },
     {
-      "id": "ds-icon",
+      "id": "ds-react-icon",
       "title": "DS oficial: Icon",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-icon",
-              "model": "ds-icon",
+              "name": "ds-react-icon",
+              "model": "ds-react-icon",
               "p6173736574": "ic_orange",
               "p636f6e74656e744465736372697074696f6e": "Toranja",
               "p73697a65": "large",
@@ -617,15 +617,15 @@
       }
     },
     {
-      "id": "ds-image",
+      "id": "ds-react-image",
       "title": "DS oficial: Image",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-image",
-              "model": "ds-image",
+              "name": "ds-react-image",
+              "model": "ds-react-image",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
               "p636f6e74656e745363616c65": "fill",
               "p7769647468": 480,
@@ -638,15 +638,15 @@
       }
     },
     {
-      "id": "ds-icon-button",
+      "id": "ds-react-icon-button",
       "title": "DS oficial: IconButton",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-icon-button",
-              "model": "ds-icon-button",
+              "name": "ds-react-icon-button",
+              "model": "ds-react-icon-button",
               "p73697a65": "large",
               "p686965726172636879": "primary",
               "p69636f6e": "ic_search",
@@ -658,15 +658,15 @@
       }
     },
     {
-      "id": "ds-icon-chip",
+      "id": "ds-react-icon-chip",
       "title": "DS oficial: IconChip",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-icon-chip",
-              "model": "ds-icon-chip",
+              "name": "ds-react-icon-chip",
+              "model": "ds-react-icon-chip",
               "p7374617465": "enabled",
               "p76617269616e74": "label",
               "p69636f6e": "ic_heart",
@@ -680,15 +680,15 @@
       }
     },
     {
-      "id": "ds-input-country-item",
+      "id": "ds-react-input-country-item",
       "title": "InputCountry — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-input-country-item",
-              "model": "ds-input-country-item",
+              "name": "ds-react-input-country-item",
+              "model": "ds-react-input-country-item",
               "collection": "countryItems"
             }
           }
@@ -696,16 +696,16 @@
       }
     },
     {
-      "id": "ds-input-country",
+      "id": "ds-react-input-country",
       "title": "DS oficial: InputCountry",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-input-country",
-              "model": "ds-input-country",
-              "filter": "ds-input-country",
+              "name": "ds-react-input-country",
+              "model": "ds-react-input-country",
+              "filter": "ds-react-input-country",
               "p6c6162656c": "Telefone",
               "p706c616365686f6c646572": "Digite seu telefone",
               "p7374617465": "enabled",
@@ -717,16 +717,16 @@
       }
     },
     {
-      "id": "ds-input-date",
+      "id": "ds-react-input-date",
       "title": "DS oficial: InputDate",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-input-date",
-              "model": "ds-input-date",
-              "filter": "ds-input-date",
+              "name": "ds-react-input-date",
+              "model": "ds-react-input-date",
+              "filter": "ds-react-input-date",
               "p6c6162656c": "Data",
               "p706c616365686f6c646572": "DD/MM/AAAA",
               "editorMode": "basic"
@@ -736,16 +736,16 @@
       }
     },
     {
-      "id": "ds-input-password",
+      "id": "ds-react-input-password",
       "title": "DS oficial: InputPassword",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-input-password",
-              "model": "ds-input-password",
-              "filter": "ds-input-password",
+              "name": "ds-react-input-password",
+              "model": "ds-react-input-password",
+              "filter": "ds-react-input-password",
               "p6c6162656c": "Senha",
               "p706c616365686f6c646572": "Digite uma senha",
               "editorMode": "basic"
@@ -755,16 +755,16 @@
       }
     },
     {
-      "id": "ds-input-search",
+      "id": "ds-react-input-search",
       "title": "DS oficial: InputSearch",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-input-search",
-              "model": "ds-input-search",
-              "filter": "ds-input-search",
+              "name": "ds-react-input-search",
+              "model": "ds-react-input-search",
+              "filter": "ds-react-input-search",
               "p6c6162656c": "Buscar",
               "p706c616365686f6c646572": "O que você procura?",
               "editorMode": "basic"
@@ -774,16 +774,16 @@
       }
     },
     {
-      "id": "ds-input-text",
+      "id": "ds-react-input-text",
       "title": "DS oficial: InputText",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-input-text",
-              "model": "ds-input-text",
-              "filter": "ds-input-text",
+              "name": "ds-react-input-text",
+              "model": "ds-react-input-text",
+              "filter": "ds-react-input-text",
               "p74797065": "text",
               "p6c6162656c": "Nome completo",
               "p706c616365686f6c646572": "Como podemos chamar você?",
@@ -794,16 +794,16 @@
       }
     },
     {
-      "id": "ds-input-money",
+      "id": "ds-react-input-money",
       "title": "DS oficial: InputMoney",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-input-money",
-              "model": "ds-input-money",
-              "filter": "ds-input-money",
+              "name": "ds-react-input-money",
+              "model": "ds-react-input-money",
+              "filter": "ds-react-input-money",
               "p73686f77427574746f6e73": "true",
               "p6669786564496e6372656d656e7456616c7565": 100,
               "p666978656444656372656d656e7456616c7565": 100,
@@ -818,15 +818,15 @@
       }
     },
     {
-      "id": "ds-link",
+      "id": "ds-react-link",
       "title": "DS oficial: Link",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-link",
-              "model": "ds-link",
+              "name": "ds-react-link",
+              "model": "ds-react-link",
               "p6c6162656c": "Explorar todos os componentes",
               "p73697a65": "medium",
               "p68726566": "/demo-toranja",
@@ -837,16 +837,16 @@
       }
     },
     {
-      "id": "ds-list-item",
+      "id": "ds-react-list-item",
       "title": "DS oficial: ListItem",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-list-item",
-              "model": "ds-list-item",
-              "filter": "ds-list-item",
+              "name": "ds-react-list-item",
+              "model": "ds-react-list-item",
+              "filter": "ds-react-list-item",
               "p6c6162656c": "Conta digital",
               "p706172616772617068": "Um item da sua lista",
               "p73686f7744697669646572": "true",
@@ -857,16 +857,16 @@
       }
     },
     {
-      "id": "ds-list-item-control",
+      "id": "ds-react-list-item-control",
       "title": "DS oficial: ListItemControl",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-list-item-control",
-              "model": "ds-list-item-control",
-              "filter": "ds-list-item-control",
+              "name": "ds-react-list-item-control",
+              "model": "ds-react-list-item-control",
+              "filter": "ds-react-list-item-control",
               "p747261696c696e6756617269616e74": "switch",
               "p6c6162656c": "Receber novidades",
               "p706172616772617068": "Você controla suas preferências",
@@ -877,16 +877,16 @@
       }
     },
     {
-      "id": "ds-list-item-general",
+      "id": "ds-react-list-item-general",
       "title": "DS oficial: ListItemGeneral",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-list-item-general",
-              "model": "ds-list-item-general",
-              "filter": "ds-list-item-general",
+              "name": "ds-react-list-item-general",
+              "model": "ds-react-list-item-general",
+              "filter": "ds-react-list-item-general",
               "p6c6162656c": "Investimentos",
               "p706172616772617068": "Conheça as possibilidades",
               "p747261696c696e6756617269616e74": "tagChevron",
@@ -898,16 +898,16 @@
       }
     },
     {
-      "id": "ds-list-item-action",
+      "id": "ds-react-list-item-action",
       "title": "DS oficial: ListItemAction",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-list-item-action",
-              "model": "ds-list-item-action",
-              "filter": "ds-list-item-action",
+              "name": "ds-react-list-item-action",
+              "model": "ds-react-list-item-action",
+              "filter": "ds-react-list-item-action",
               "p747261696c696e6756617269616e74": "button",
               "p6c6162656c": "Saiba mais",
               "p706172616772617068": "Explore o catálogo",
@@ -919,15 +919,15 @@
       }
     },
     {
-      "id": "ds-list-item-view",
+      "id": "ds-react-list-item-view",
       "title": "DS oficial: ListItemView",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-list-item-view",
-              "model": "ds-list-item-view",
+              "name": "ds-react-list-item-view",
+              "model": "ds-react-list-item-view",
               "p6f7269656e746174696f6e": "horizontal",
               "p6c6162656c": "Saldo ilustrativo",
               "p76616c756554797065": "text",
@@ -938,15 +938,15 @@
       }
     },
     {
-      "id": "ds-menu-item",
+      "id": "ds-react-menu-item",
       "title": "DS oficial: MenuItem",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-menu-item",
-              "model": "ds-menu-item",
+              "name": "ds-react-menu-item",
+              "model": "ds-react-menu-item",
               "p76617269616e74": "icon",
               "p73697a65": "large",
               "p6c6162656c": "Conta digital",
@@ -958,15 +958,15 @@
       }
     },
     {
-      "id": "ds-menu-popup-item",
+      "id": "ds-react-menu-popup-item",
       "title": "MenuPopup — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-menu-popup-item",
-              "model": "ds-menu-popup-item",
+              "name": "ds-react-menu-popup-item",
+              "model": "ds-react-menu-popup-item",
               "collection": "items"
             }
           }
@@ -974,16 +974,16 @@
       }
     },
     {
-      "id": "ds-menu-popup",
+      "id": "ds-react-menu-popup",
       "title": "DS oficial: MenuPopup",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-menu-popup",
-              "model": "ds-menu-popup",
-              "filter": "ds-menu-popup",
+              "name": "ds-react-menu-popup",
+              "model": "ds-react-menu-popup",
+              "filter": "ds-react-menu-popup",
               "p706c6163656d656e74": "bottom-start",
               "p617269614c6162656c": "Navegação",
               "editorMode": "basic"
@@ -993,16 +993,16 @@
       }
     },
     {
-      "id": "ds-modal-dialog",
+      "id": "ds-react-modal-dialog",
       "title": "DS oficial: ModalDialog",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-modal-dialog",
-              "model": "ds-modal-dialog",
-              "filter": "ds-modal-dialog",
+              "name": "ds-react-modal-dialog",
+              "model": "ds-react-modal-dialog",
+              "filter": "ds-react-modal-dialog",
               "p7469746c65": "Informação importante",
               "p73686f77436c6f7365427574746f6e": "true",
               "editorMode": "basic"
@@ -1012,16 +1012,16 @@
       }
     },
     {
-      "id": "ds-pagination",
+      "id": "ds-react-pagination",
       "title": "DS oficial: Pagination",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-pagination",
-              "model": "ds-pagination",
-              "filter": "ds-pagination",
+              "name": "ds-react-pagination",
+              "model": "ds-react-pagination",
+              "filter": "ds-react-pagination",
               "p70616765496e646578": 0,
               "p7061676553697a65": 10,
               "p70616765436f756e74": 5,
@@ -1035,16 +1035,16 @@
       }
     },
     {
-      "id": "ds-panel",
+      "id": "ds-react-panel",
       "title": "DS oficial: Panel",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-panel",
-              "model": "ds-panel",
-              "filter": "ds-panel",
+              "name": "ds-react-panel",
+              "model": "ds-react-panel",
+              "filter": "ds-react-panel",
               "p74797065": "slot",
               "p73697a65": "full",
               "p7469746c65": "Seu painel",
@@ -1055,15 +1055,15 @@
       }
     },
     {
-      "id": "ds-neutral-icon-button",
+      "id": "ds-react-neutral-icon-button",
       "title": "DS oficial: NeutralIconButton",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-neutral-icon-button",
-              "model": "ds-neutral-icon-button",
+              "name": "ds-react-neutral-icon-button",
+              "model": "ds-react-neutral-icon-button",
               "p69636f6e": "ic_ellipsis",
               "p73697a65": "medium",
               "p617269612d6c6162656c": "Mais opções",
@@ -1074,15 +1074,15 @@
       }
     },
     {
-      "id": "ds-page-indicator",
+      "id": "ds-react-page-indicator",
       "title": "DS oficial: PageIndicator",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-page-indicator",
-              "model": "ds-page-indicator",
+              "name": "ds-react-page-indicator",
+              "model": "ds-react-page-indicator",
               "p6974656d73": 4,
               "p73656c6563746564": 1,
               "editorMode": "basic"
@@ -1092,15 +1092,15 @@
       }
     },
     {
-      "id": "ds-payment-methods",
+      "id": "ds-react-payment-methods",
       "title": "DS oficial: PaymentMethods",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-payment-methods",
-              "model": "ds-payment-methods",
+              "name": "ds-react-payment-methods",
+              "model": "ds-react-payment-methods",
               "p7061796d656e744d6574686f64": "mastercard",
               "p73697a65": "large",
               "p636f6c6f72": "soft",
@@ -1111,16 +1111,16 @@
       }
     },
     {
-      "id": "ds-pin-code",
+      "id": "ds-react-pin-code",
       "title": "DS oficial: PinCode",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-pin-code",
-              "model": "ds-pin-code",
-              "filter": "ds-pin-code",
+              "name": "ds-react-pin-code",
+              "model": "ds-react-pin-code",
+              "filter": "ds-react-pin-code",
               "p6669656c6473": "4",
               "p7374617465": "enabled",
               "p74797065": "number",
@@ -1132,15 +1132,15 @@
       }
     },
     {
-      "id": "ds-progress-bar",
+      "id": "ds-react-progress-bar",
       "title": "DS oficial: ProgressBar",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-progress-bar",
-              "model": "ds-progress-bar",
+              "name": "ds-react-progress-bar",
+              "model": "ds-react-progress-bar",
               "p76617269616e74": "default",
               "p70726f6772657373": 60,
               "editorMode": "basic"
@@ -1150,15 +1150,15 @@
       }
     },
     {
-      "id": "ds-progress-circle",
+      "id": "ds-react-progress-circle",
       "title": "DS oficial: ProgressCircle",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-progress-circle",
-              "model": "ds-progress-circle",
+              "name": "ds-react-progress-circle",
+              "model": "ds-react-progress-circle",
               "p73697a65": "large",
               "p70726f6772657373": 65,
               "p617269614c6162656c": "65% concluído",
@@ -1169,15 +1169,15 @@
       }
     },
     {
-      "id": "ds-radio",
+      "id": "ds-react-radio",
       "title": "DS oficial: Radio",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-radio",
-              "model": "ds-radio",
+              "name": "ds-react-radio",
+              "model": "ds-react-radio",
               "p6e616d65": "preferencia",
               "p7374617465": "enabled",
               "p76616c7565": "opcao-1",
@@ -1189,15 +1189,15 @@
       }
     },
     {
-      "id": "ds-section-title",
+      "id": "ds-react-section-title",
       "title": "DS oficial: SectionTitle",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-section-title",
-              "model": "ds-section-title",
+              "name": "ds-react-section-title",
+              "model": "ds-react-section-title",
               "p7469746c65": "Tudo para sua vida",
               "p73686f774465736372697074696f6e": "true",
               "p6465736372697074696f6e": "Um título de seção editável",
@@ -1210,16 +1210,16 @@
       }
     },
     {
-      "id": "ds-side-sheet",
+      "id": "ds-react-side-sheet",
       "title": "DS oficial: SideSheet",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-side-sheet",
-              "model": "ds-side-sheet",
-              "filter": "ds-side-sheet",
+              "name": "ds-react-side-sheet",
+              "model": "ds-react-side-sheet",
+              "filter": "ds-react-side-sheet",
               "p7469746c65": "Detalhes",
               "p6465736372697074696f6e": "Informações complementares",
               "editorMode": "basic"
@@ -1229,15 +1229,15 @@
       }
     },
     {
-      "id": "ds-section-subtitle",
+      "id": "ds-react-section-subtitle",
       "title": "DS oficial: SectionSubtitle",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-section-subtitle",
-              "model": "ds-section-subtitle",
+              "name": "ds-react-section-subtitle",
+              "model": "ds-react-section-subtitle",
               "p7375627469746c65": "Escolha seu próximo passo",
               "p747261696c696e674c6162656c": "Saiba mais",
               "editorMode": "basic"
@@ -1247,15 +1247,15 @@
       }
     },
     {
-      "id": "ds-segmented-control-item",
+      "id": "ds-react-segmented-control-item",
       "title": "SegmentedControl — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-segmented-control-item",
-              "model": "ds-segmented-control-item",
+              "name": "ds-react-segmented-control-item",
+              "model": "ds-react-segmented-control-item",
               "collection": "segments"
             }
           }
@@ -1263,16 +1263,16 @@
       }
     },
     {
-      "id": "ds-segmented-control",
+      "id": "ds-react-segmented-control",
       "title": "DS oficial: SegmentedControl",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-segmented-control",
-              "model": "ds-segmented-control",
-              "filter": "ds-segmented-control",
+              "name": "ds-react-segmented-control",
+              "model": "ds-react-segmented-control",
+              "filter": "ds-react-segmented-control",
               "p7374617465": "enabled",
               "editorMode": "basic"
             }
@@ -1281,15 +1281,15 @@
       }
     },
     {
-      "id": "ds-select-item",
+      "id": "ds-react-select-item",
       "title": "Select — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-select-item",
-              "model": "ds-select-item",
+              "name": "ds-react-select-item",
+              "model": "ds-react-select-item",
               "collection": "options"
             }
           }
@@ -1297,16 +1297,16 @@
       }
     },
     {
-      "id": "ds-select",
+      "id": "ds-react-select",
       "title": "DS oficial: Select",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-select",
-              "model": "ds-select",
-              "filter": "ds-select",
+              "name": "ds-react-select",
+              "model": "ds-react-select",
+              "filter": "ds-react-select",
               "p6c6162656c": "Produto de interesse",
               "p706c616365686f6c646572": "Escolha uma opção",
               "editorMode": "basic"
@@ -1316,15 +1316,15 @@
       }
     },
     {
-      "id": "ds-sidebar-item",
+      "id": "ds-react-sidebar-item",
       "title": "Sidebar — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-sidebar-item",
-              "model": "ds-sidebar-item",
+              "name": "ds-react-sidebar-item",
+              "model": "ds-react-sidebar-item",
               "collection": "items"
             }
           }
@@ -1332,16 +1332,16 @@
       }
     },
     {
-      "id": "ds-sidebar",
+      "id": "ds-react-sidebar",
       "title": "DS oficial: Sidebar",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-sidebar",
-              "model": "ds-sidebar",
-              "filter": "ds-sidebar",
+              "name": "ds-react-sidebar",
+              "model": "ds-react-sidebar",
+              "filter": "ds-react-sidebar",
               "p64656661756c74457870616e73696f6e": "expanded",
               "p617269614c6162656c": "Navegação principal",
               "editorMode": "basic"
@@ -1351,15 +1351,15 @@
       }
     },
     {
-      "id": "ds-signal",
+      "id": "ds-react-signal",
       "title": "DS oficial: Signal",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-signal",
-              "model": "ds-signal",
+              "name": "ds-react-signal",
+              "model": "ds-react-signal",
               "p76617269616e74": "success",
               "p73697a65": "large",
               "p7374617465": "enabled",
@@ -1370,15 +1370,15 @@
       }
     },
     {
-      "id": "ds-switch",
+      "id": "ds-react-switch",
       "title": "DS oficial: Switch",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-switch",
-              "model": "ds-switch",
+              "name": "ds-react-switch",
+              "model": "ds-react-switch",
               "p636865636b6564": "false",
               "p7374617465": "enabled",
               "editorMode": "basic"
@@ -1388,15 +1388,15 @@
       }
     },
     {
-      "id": "ds-snackbar",
+      "id": "ds-react-snackbar",
       "title": "DS oficial: Snackbar",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-snackbar",
-              "model": "ds-snackbar",
+              "name": "ds-react-snackbar",
+              "model": "ds-react-snackbar",
               "p76617269616e74": "success",
               "p7469746c65": "Pronto",
               "p6465736372697074696f6e": "Esta é uma mensagem de demonstração.",
@@ -1410,15 +1410,15 @@
       }
     },
     {
-      "id": "ds-spinner",
+      "id": "ds-react-spinner",
       "title": "DS oficial: Spinner",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-spinner",
-              "model": "ds-spinner",
+              "name": "ds-react-spinner",
+              "model": "ds-react-spinner",
               "p73697a65": "large",
               "p617269614c6162656c": "Carregando demonstração",
               "editorMode": "basic"
@@ -1428,15 +1428,15 @@
       }
     },
     {
-      "id": "ds-stepper",
+      "id": "ds-react-stepper",
       "title": "DS oficial: Stepper",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-stepper",
-              "model": "ds-stepper",
+              "name": "ds-react-stepper",
+              "model": "ds-react-stepper",
               "p656e61626c65496e707574": "true",
               "p6d6178": 10,
               "p6d696e": 0,
@@ -1451,15 +1451,15 @@
       }
     },
     {
-      "id": "ds-table-item",
+      "id": "ds-react-table-item",
       "title": "Table — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-table-item",
-              "model": "ds-table-item",
+              "name": "ds-react-table-item",
+              "model": "ds-react-table-item",
               "collection": "columns"
             }
           }
@@ -1467,16 +1467,16 @@
       }
     },
     {
-      "id": "ds-table",
+      "id": "ds-react-table",
       "title": "DS oficial: Table",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-table",
-              "model": "ds-table",
-              "filter": "ds-table",
+              "name": "ds-react-table",
+              "model": "ds-react-table",
+              "filter": "ds-react-table",
               "p73686f7744697669646572": "true",
               "p706167696e6174696f6e": "true",
               "p696e697469616c5061676553697a65": 10,
@@ -1487,15 +1487,15 @@
       }
     },
     {
-      "id": "ds-tabs-item",
+      "id": "ds-react-tabs-item",
       "title": "Tabs — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-tabs-item",
-              "model": "ds-tabs-item",
+              "name": "ds-react-tabs-item",
+              "model": "ds-react-tabs-item",
               "collection": "tabs"
             }
           }
@@ -1503,16 +1503,16 @@
       }
     },
     {
-      "id": "ds-tabs",
+      "id": "ds-react-tabs",
       "title": "DS oficial: Tabs",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-tabs",
-              "model": "ds-tabs",
-              "filter": "ds-tabs",
+              "name": "ds-react-tabs",
+              "model": "ds-react-tabs",
+              "filter": "ds-react-tabs",
               "p7374617465": "enabled",
               "p7363726f6c6c61626c65": "true",
               "editorMode": "basic"
@@ -1522,15 +1522,15 @@
       }
     },
     {
-      "id": "ds-tag",
+      "id": "ds-react-tag",
       "title": "DS oficial: Tag",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-tag",
-              "model": "ds-tag",
+              "name": "ds-react-tag",
+              "model": "ds-react-tag",
               "p636f6c6f72": "brand",
               "p686965726172636879": "soft",
               "p6c6162656c": "Novidade",
@@ -1543,15 +1543,15 @@
       }
     },
     {
-      "id": "ds-text",
+      "id": "ds-react-text",
       "title": "DS oficial: Text",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-text",
-              "model": "ds-text",
+              "name": "ds-react-text",
+              "model": "ds-react-text",
               "p7465787453697a65": "large",
               "p74657874576569676874": "regular",
               "p6173": "p",
@@ -1563,16 +1563,16 @@
       }
     },
     {
-      "id": "ds-text-area",
+      "id": "ds-react-text-area",
       "title": "DS oficial: TextArea",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-text-area",
-              "model": "ds-text-area",
-              "filter": "ds-text-area",
+              "name": "ds-react-text-area",
+              "model": "ds-react-text-area",
+              "filter": "ds-react-text-area",
               "p6c6162656c": "Sua mensagem",
               "p73686f77436f756e746572": "true",
               "p636f756e746572": 300,
@@ -1584,15 +1584,15 @@
       }
     },
     {
-      "id": "ds-timeline-item",
+      "id": "ds-react-timeline-item",
       "title": "Timeline — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-timeline-item",
-              "model": "ds-timeline-item",
+              "name": "ds-react-timeline-item",
+              "model": "ds-react-timeline-item",
               "collection": "items"
             }
           }
@@ -1600,16 +1600,16 @@
       }
     },
     {
-      "id": "ds-timeline",
+      "id": "ds-react-timeline",
       "title": "DS oficial: Timeline",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-timeline",
-              "model": "ds-timeline",
-              "filter": "ds-timeline",
+              "name": "ds-react-timeline",
+              "model": "ds-react-timeline",
+              "filter": "ds-react-timeline",
               "editorMode": "basic"
             }
           }
@@ -1617,15 +1617,15 @@
       }
     },
     {
-      "id": "ds-tooltip-description",
+      "id": "ds-react-tooltip-description",
       "title": "DS oficial: TooltipDescription",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-tooltip-description",
-              "model": "ds-tooltip-description",
+              "name": "ds-react-tooltip-description",
+              "model": "ds-react-tooltip-description",
               "p6465736372697074696f6e": "Informação complementar exibida pelo componente oficial.",
               "p616c69676e": "left",
               "p706c6163656d656e74": "bottom",
@@ -1637,16 +1637,16 @@
       }
     },
     {
-      "id": "ds-widget",
+      "id": "ds-react-widget",
       "title": "DS oficial: Widget",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "ds-widget",
-              "model": "ds-widget",
-              "filter": "ds-widget",
+              "name": "ds-react-widget",
+              "model": "ds-react-widget",
+              "filter": "ds-react-widget",
               "p74696d6541676f": "Agora",
               "p746167": "Novidade",
               "p7469746c65": "Seus planos",
@@ -1659,15 +1659,15 @@
       }
     },
     {
-      "id": "ds-accordion-item",
+      "id": "ds-react-accordion-item",
       "title": "Accordion — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-accordion-item",
-              "model": "ds-accordion-item",
+              "name": "ds-react-accordion-item",
+              "model": "ds-react-accordion-item",
               "collection": "content:children"
             }
           }
@@ -1675,15 +1675,15 @@
       }
     },
     {
-      "id": "ds-banner-item",
+      "id": "ds-react-banner-item",
       "title": "Banner — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-banner-item",
-              "model": "ds-banner-item",
+              "name": "ds-react-banner-item",
+              "model": "ds-react-banner-item",
               "collection": "content:webContent"
             }
           }
@@ -1691,15 +1691,15 @@
       }
     },
     {
-      "id": "ds-bottom-sheet-item",
+      "id": "ds-react-bottom-sheet-item",
       "title": "BottomSheet — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-bottom-sheet-item",
-              "model": "ds-bottom-sheet-item",
+              "name": "ds-react-bottom-sheet-item",
+              "model": "ds-react-bottom-sheet-item",
               "collection": "content:slot"
             }
           }
@@ -1707,15 +1707,15 @@
       }
     },
     {
-      "id": "ds-card-item",
+      "id": "ds-react-card-item",
       "title": "Card — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-card-item",
-              "model": "ds-card-item",
+              "name": "ds-react-card-item",
+              "model": "ds-react-card-item",
               "collection": "content:children"
             }
           }
@@ -1723,15 +1723,15 @@
       }
     },
     {
-      "id": "ds-chart-bar-item",
+      "id": "ds-react-chart-bar-item",
       "title": "ChartBar — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-chart-bar-item",
-              "model": "ds-chart-bar-item",
+              "name": "ds-react-chart-bar-item",
+              "model": "ds-react-chart-bar-item",
               "collection": "chartData"
             }
           }
@@ -1739,15 +1739,15 @@
       }
     },
     {
-      "id": "ds-chart-donut-item",
+      "id": "ds-react-chart-donut-item",
       "title": "ChartDonut — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-chart-donut-item",
-              "model": "ds-chart-donut-item",
+              "name": "ds-react-chart-donut-item",
+              "model": "ds-react-chart-donut-item",
               "collection": "chartData"
             }
           }
@@ -1755,15 +1755,15 @@
       }
     },
     {
-      "id": "ds-chart-meter-item",
+      "id": "ds-react-chart-meter-item",
       "title": "ChartMeter — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-chart-meter-item",
-              "model": "ds-chart-meter-item",
+              "name": "ds-react-chart-meter-item",
+              "model": "ds-react-chart-meter-item",
               "collection": "chartData"
             }
           }
@@ -1771,15 +1771,15 @@
       }
     },
     {
-      "id": "ds-date-picker-item",
+      "id": "ds-react-date-picker-item",
       "title": "DatePicker — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-date-picker-item",
-              "model": "ds-date-picker-item",
+              "name": "ds-react-date-picker-item",
+              "model": "ds-react-date-picker-item",
               "collection": "$disabledDates"
             }
           }
@@ -1787,15 +1787,15 @@
       }
     },
     {
-      "id": "ds-header-item",
+      "id": "ds-react-header-item",
       "title": "Header — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-header-item",
-              "model": "ds-header-item",
+              "name": "ds-react-header-item",
+              "model": "ds-react-header-item",
               "collection": "searchProps.error"
             }
           }
@@ -1803,15 +1803,15 @@
       }
     },
     {
-      "id": "ds-input-date-item",
+      "id": "ds-react-input-date-item",
       "title": "InputDate — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-input-date-item",
-              "model": "ds-input-date-item",
+              "name": "ds-react-input-date-item",
+              "model": "ds-react-input-date-item",
               "collection": "error"
             }
           }
@@ -1819,15 +1819,15 @@
       }
     },
     {
-      "id": "ds-input-password-item",
+      "id": "ds-react-input-password-item",
       "title": "InputPassword — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-input-password-item",
-              "model": "ds-input-password-item",
+              "name": "ds-react-input-password-item",
+              "model": "ds-react-input-password-item",
               "collection": "error"
             }
           }
@@ -1835,15 +1835,15 @@
       }
     },
     {
-      "id": "ds-input-search-item",
+      "id": "ds-react-input-search-item",
       "title": "InputSearch — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-input-search-item",
-              "model": "ds-input-search-item",
+              "name": "ds-react-input-search-item",
+              "model": "ds-react-input-search-item",
               "collection": "error"
             }
           }
@@ -1851,15 +1851,15 @@
       }
     },
     {
-      "id": "ds-input-text-item",
+      "id": "ds-react-input-text-item",
       "title": "InputText — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-input-text-item",
-              "model": "ds-input-text-item",
+              "name": "ds-react-input-text-item",
+              "model": "ds-react-input-text-item",
               "collection": "error"
             }
           }
@@ -1867,15 +1867,15 @@
       }
     },
     {
-      "id": "ds-input-money-item",
+      "id": "ds-react-input-money-item",
       "title": "InputMoney — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-input-money-item",
-              "model": "ds-input-money-item",
+              "name": "ds-react-input-money-item",
+              "model": "ds-react-input-money-item",
               "collection": "hint"
             }
           }
@@ -1883,15 +1883,15 @@
       }
     },
     {
-      "id": "ds-list-item-item",
+      "id": "ds-react-list-item-item",
       "title": "ListItem — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-list-item-item",
-              "model": "ds-list-item-item",
+              "name": "ds-react-list-item-item",
+              "model": "ds-react-list-item-item",
               "collection": "tags"
             }
           }
@@ -1899,15 +1899,15 @@
       }
     },
     {
-      "id": "ds-list-item-control-item",
+      "id": "ds-react-list-item-control-item",
       "title": "ListItemControl — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-list-item-control-item",
-              "model": "ds-list-item-control-item",
+              "name": "ds-react-list-item-control-item",
+              "model": "ds-react-list-item-control-item",
               "collection": "tags"
             }
           }
@@ -1915,15 +1915,15 @@
       }
     },
     {
-      "id": "ds-list-item-general-item",
+      "id": "ds-react-list-item-general-item",
       "title": "ListItemGeneral — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-list-item-general-item",
-              "model": "ds-list-item-general-item",
+              "name": "ds-react-list-item-general-item",
+              "model": "ds-react-list-item-general-item",
               "collection": "tags"
             }
           }
@@ -1931,15 +1931,15 @@
       }
     },
     {
-      "id": "ds-list-item-action-item",
+      "id": "ds-react-list-item-action-item",
       "title": "ListItemAction — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-list-item-action-item",
-              "model": "ds-list-item-action-item",
+              "name": "ds-react-list-item-action-item",
+              "model": "ds-react-list-item-action-item",
               "collection": "tags"
             }
           }
@@ -1947,15 +1947,15 @@
       }
     },
     {
-      "id": "ds-modal-dialog-item",
+      "id": "ds-react-modal-dialog-item",
       "title": "ModalDialog — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-modal-dialog-item",
-              "model": "ds-modal-dialog-item",
+              "name": "ds-react-modal-dialog-item",
+              "model": "ds-react-modal-dialog-item",
               "collection": "content:slot"
             }
           }
@@ -1963,15 +1963,15 @@
       }
     },
     {
-      "id": "ds-pagination-item",
+      "id": "ds-react-pagination-item",
       "title": "Pagination — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-pagination-item",
-              "model": "ds-pagination-item",
+              "name": "ds-react-pagination-item",
+              "model": "ds-react-pagination-item",
               "collection": "pageSizeOptions"
             }
           }
@@ -1979,15 +1979,15 @@
       }
     },
     {
-      "id": "ds-panel-item",
+      "id": "ds-react-panel-item",
       "title": "Panel — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-panel-item",
-              "model": "ds-panel-item",
+              "name": "ds-react-panel-item",
+              "model": "ds-react-panel-item",
               "collection": "footer.pagination.pageSizeOptions"
             }
           }
@@ -1995,15 +1995,15 @@
       }
     },
     {
-      "id": "ds-pin-code-item",
+      "id": "ds-react-pin-code-item",
       "title": "PinCode — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-pin-code-item",
-              "model": "ds-pin-code-item",
+              "name": "ds-react-pin-code-item",
+              "model": "ds-react-pin-code-item",
               "collection": "hints"
             }
           }
@@ -2011,15 +2011,15 @@
       }
     },
     {
-      "id": "ds-side-sheet-item",
+      "id": "ds-react-side-sheet-item",
       "title": "SideSheet — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-side-sheet-item",
-              "model": "ds-side-sheet-item",
+              "name": "ds-react-side-sheet-item",
+              "model": "ds-react-side-sheet-item",
               "collection": "content:slot"
             }
           }
@@ -2027,15 +2027,15 @@
       }
     },
     {
-      "id": "ds-text-area-item",
+      "id": "ds-react-text-area-item",
       "title": "TextArea — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-text-area-item",
-              "model": "ds-text-area-item",
+              "name": "ds-react-text-area-item",
+              "model": "ds-react-text-area-item",
               "collection": "hints"
             }
           }
@@ -2043,15 +2043,15 @@
       }
     },
     {
-      "id": "ds-widget-item",
+      "id": "ds-react-widget-item",
       "title": "Widget — item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "ds-widget-item",
-              "model": "ds-widget-item",
+              "name": "ds-react-widget-item",
+              "model": "ds-react-widget-item",
               "collection": "content:children"
             }
           }
@@ -2061,7 +2061,7 @@
   ],
   "models": [
     {
-      "id": "ds-alert",
+      "id": "ds-react-alert",
       "fields": [
         {
           "component": "select",
@@ -2441,7 +2441,7 @@
       ]
     },
     {
-      "id": "ds-avatar",
+      "id": "ds-react-avatar",
       "fields": [
         {
           "component": "select",
@@ -9815,7 +9815,7 @@
       ]
     },
     {
-      "id": "ds-accordion",
+      "id": "ds-react-accordion",
       "fields": [
         {
           "component": "text",
@@ -16051,7 +16051,7 @@
       ]
     },
     {
-      "id": "ds-badge",
+      "id": "ds-react-badge",
       "fields": [
         {
           "component": "select",
@@ -16160,7 +16160,7 @@
       ]
     },
     {
-      "id": "ds-button",
+      "id": "ds-react-button",
       "fields": [
         {
           "component": "select",
@@ -19589,7 +19589,7 @@
       ]
     },
     {
-      "id": "ds-banner",
+      "id": "ds-react-banner",
       "fields": [
         {
           "component": "select",
@@ -19868,7 +19868,7 @@
       ]
     },
     {
-      "id": "ds-bottom-sheet",
+      "id": "ds-react-bottom-sheet",
       "fields": [
         {
           "component": "text",
@@ -20111,7 +20111,7 @@
       ]
     },
     {
-      "id": "ds-bottom-sheet-country",
+      "id": "ds-react-bottom-sheet-country",
       "fields": [
         {
           "component": "textarea",
@@ -20504,7 +20504,7 @@
       ]
     },
     {
-      "id": "ds-bottom-sheet-country-item",
+      "id": "ds-react-bottom-sheet-country-item",
       "fields": [
         {
           "name": "collection",
@@ -21809,7 +21809,7 @@
       ]
     },
     {
-      "id": "ds-breadcrumb",
+      "id": "ds-react-breadcrumb",
       "fields": [
         {
           "component": "text",
@@ -21892,7 +21892,7 @@
       ]
     },
     {
-      "id": "ds-breadcrumb-item",
+      "id": "ds-react-breadcrumb-item",
       "fields": [
         {
           "name": "collection",
@@ -22012,7 +22012,7 @@
       ]
     },
     {
-      "id": "ds-card",
+      "id": "ds-react-card",
       "fields": [
         {
           "component": "richtext",
@@ -22237,7 +22237,7 @@
       ]
     },
     {
-      "id": "ds-checkbox",
+      "id": "ds-react-checkbox",
       "fields": [
         {
           "component": "select",
@@ -22377,7 +22377,7 @@
       ]
     },
     {
-      "id": "ds-chip",
+      "id": "ds-react-chip",
       "fields": [
         {
           "component": "text",
@@ -29491,7 +29491,7 @@
       ]
     },
     {
-      "id": "ds-chart-bar",
+      "id": "ds-react-chart-bar",
       "fields": [
         {
           "component": "select",
@@ -30186,7 +30186,7 @@
       ]
     },
     {
-      "id": "ds-chart-donut",
+      "id": "ds-react-chart-donut",
       "fields": [
         {
           "component": "textarea",
@@ -30745,7 +30745,7 @@
       ]
     },
     {
-      "id": "ds-chart-line",
+      "id": "ds-react-chart-line",
       "fields": [
         {
           "component": "select",
@@ -31432,7 +31432,7 @@
       ]
     },
     {
-      "id": "ds-chart-line-item",
+      "id": "ds-react-chart-line-item",
       "fields": [
         {
           "name": "collection",
@@ -31607,7 +31607,7 @@
       ]
     },
     {
-      "id": "ds-chart-meter",
+      "id": "ds-react-chart-meter",
       "fields": [
         {
           "component": "select",
@@ -32104,7 +32104,7 @@
       ]
     },
     {
-      "id": "ds-counter",
+      "id": "ds-react-counter",
       "fields": [
         {
           "component": "number",
@@ -32301,7 +32301,7 @@
       ]
     },
     {
-      "id": "ds-cross-selling",
+      "id": "ds-react-cross-selling",
       "fields": [
         {
           "component": "text",
@@ -32783,7 +32783,7 @@
       ]
     },
     {
-      "id": "ds-carousel",
+      "id": "ds-react-carousel",
       "fields": [
         {
           "component": "select",
@@ -32983,7 +32983,7 @@
       ]
     },
     {
-      "id": "ds-carousel-item",
+      "id": "ds-react-carousel-item",
       "fields": [
         {
           "name": "collection",
@@ -33227,7 +33227,7 @@
       ]
     },
     {
-      "id": "ds-date-picker",
+      "id": "ds-react-date-picker",
       "fields": [
         {
           "component": "text",
@@ -33648,7 +33648,7 @@
       ]
     },
     {
-      "id": "ds-decorated-text",
+      "id": "ds-react-decorated-text",
       "fields": [
         {
           "component": "text",
@@ -34235,7 +34235,7 @@
       ]
     },
     {
-      "id": "ds-divider",
+      "id": "ds-react-divider",
       "fields": [
         {
           "component": "select",
@@ -34354,7 +34354,7 @@
       ]
     },
     {
-      "id": "ds-feedback-screen",
+      "id": "ds-react-feedback-screen",
       "fields": [
         {
           "component": "select",
@@ -35435,7 +35435,7 @@
       ]
     },
     {
-      "id": "ds-feedback-screen-item",
+      "id": "ds-react-feedback-screen-item",
       "fields": [
         {
           "name": "collection",
@@ -35697,7 +35697,7 @@
       ]
     },
     {
-      "id": "ds-flag",
+      "id": "ds-react-flag",
       "fields": [
         {
           "component": "select",
@@ -36952,7 +36952,7 @@
       ]
     },
     {
-      "id": "ds-header",
+      "id": "ds-react-header",
       "fields": [
         {
           "component": "select",
@@ -59486,7 +59486,7 @@
       ]
     },
     {
-      "id": "ds-floating-action-button",
+      "id": "ds-react-floating-action-button",
       "fields": [
         {
           "component": "text",
@@ -62759,7 +62759,7 @@
       ]
     },
     {
-      "id": "ds-icon",
+      "id": "ds-react-icon",
       "fields": [
         {
           "component": "select",
@@ -65932,7 +65932,7 @@
       ]
     },
     {
-      "id": "ds-image",
+      "id": "ds-react-image",
       "fields": [
         {
           "component": "reference",
@@ -66436,7 +66436,7 @@
       ]
     },
     {
-      "id": "ds-icon-button",
+      "id": "ds-react-icon-button",
       "fields": [
         {
           "component": "select",
@@ -69755,7 +69755,7 @@
       ]
     },
     {
-      "id": "ds-icon-chip",
+      "id": "ds-react-icon-chip",
       "fields": [
         {
           "component": "select",
@@ -72876,7 +72876,7 @@
       ]
     },
     {
-      "id": "ds-input-country",
+      "id": "ds-react-input-country",
       "fields": [
         {
           "component": "text",
@@ -73341,7 +73341,7 @@
       ]
     },
     {
-      "id": "ds-input-country-item",
+      "id": "ds-react-input-country-item",
       "fields": [
         {
           "name": "collection",
@@ -74792,7 +74792,7 @@
       ]
     },
     {
-      "id": "ds-input-date",
+      "id": "ds-react-input-date",
       "fields": [
         {
           "component": "textarea",
@@ -77299,7 +77299,7 @@
       ]
     },
     {
-      "id": "ds-input-password",
+      "id": "ds-react-input-password",
       "fields": [
         {
           "component": "textarea",
@@ -79736,7 +79736,7 @@
       ]
     },
     {
-      "id": "ds-input-search",
+      "id": "ds-react-input-search",
       "fields": [
         {
           "component": "textarea",
@@ -82276,7 +82276,7 @@
       ]
     },
     {
-      "id": "ds-input-text",
+      "id": "ds-react-input-text",
       "fields": [
         {
           "component": "select",
@@ -84894,7 +84894,7 @@
       ]
     },
     {
-      "id": "ds-input-money",
+      "id": "ds-react-input-money",
       "fields": [
         {
           "component": "select",
@@ -85201,7 +85201,7 @@
       ]
     },
     {
-      "id": "ds-link",
+      "id": "ds-react-link",
       "fields": [
         {
           "component": "text",
@@ -85585,7 +85585,7 @@
       ]
     },
     {
-      "id": "ds-list-item",
+      "id": "ds-react-list-item",
       "fields": [
         {
           "component": "select",
@@ -102749,7 +102749,7 @@
       ]
     },
     {
-      "id": "ds-list-item-control",
+      "id": "ds-react-list-item-control",
       "fields": [
         {
           "component": "select",
@@ -118132,7 +118132,7 @@
       ]
     },
     {
-      "id": "ds-list-item-general",
+      "id": "ds-react-list-item-general",
       "fields": [
         {
           "component": "select",
@@ -133725,7 +133725,7 @@
       ]
     },
     {
-      "id": "ds-list-item-action",
+      "id": "ds-react-list-item-action",
       "fields": [
         {
           "component": "select",
@@ -158283,7 +158283,7 @@
       ]
     },
     {
-      "id": "ds-list-item-view",
+      "id": "ds-react-list-item-view",
       "fields": [
         {
           "component": "select",
@@ -158870,7 +158870,7 @@
       ]
     },
     {
-      "id": "ds-menu-item",
+      "id": "ds-react-menu-item",
       "fields": [
         {
           "component": "select",
@@ -162076,7 +162076,7 @@
       ]
     },
     {
-      "id": "ds-menu-popup",
+      "id": "ds-react-menu-popup",
       "fields": [
         {
           "component": "richtext",
@@ -162386,7 +162386,7 @@
       ]
     },
     {
-      "id": "ds-menu-popup-item",
+      "id": "ds-react-menu-popup-item",
       "fields": [
         {
           "name": "collection",
@@ -162588,7 +162588,7 @@
       ]
     },
     {
-      "id": "ds-modal-dialog",
+      "id": "ds-react-modal-dialog",
       "fields": [
         {
           "component": "text",
@@ -162821,7 +162821,7 @@
       ]
     },
     {
-      "id": "ds-pagination",
+      "id": "ds-react-pagination",
       "fields": [
         {
           "component": "number",
@@ -163031,7 +163031,7 @@
       ]
     },
     {
-      "id": "ds-panel",
+      "id": "ds-react-panel",
       "fields": [
         {
           "component": "select",
@@ -164347,7 +164347,7 @@
       ]
     },
     {
-      "id": "ds-neutral-icon-button",
+      "id": "ds-react-neutral-icon-button",
       "fields": [
         {
           "component": "select",
@@ -167672,7 +167672,7 @@
       ]
     },
     {
-      "id": "ds-page-indicator",
+      "id": "ds-react-page-indicator",
       "fields": [
         {
           "component": "number",
@@ -167765,7 +167765,7 @@
       ]
     },
     {
-      "id": "ds-payment-methods",
+      "id": "ds-react-payment-methods",
       "fields": [
         {
           "component": "select",
@@ -168007,7 +168007,7 @@
       ]
     },
     {
-      "id": "ds-pin-code",
+      "id": "ds-react-pin-code",
       "fields": [
         {
           "component": "select",
@@ -168250,7 +168250,7 @@
       ]
     },
     {
-      "id": "ds-progress-bar",
+      "id": "ds-react-progress-bar",
       "fields": [
         {
           "component": "select",
@@ -168880,7 +168880,7 @@
       ]
     },
     {
-      "id": "ds-progress-circle",
+      "id": "ds-react-progress-circle",
       "fields": [
         {
           "component": "select",
@@ -169020,7 +169020,7 @@
       ]
     },
     {
-      "id": "ds-radio",
+      "id": "ds-react-radio",
       "fields": [
         {
           "component": "select",
@@ -169231,7 +169231,7 @@
       ]
     },
     {
-      "id": "ds-section-title",
+      "id": "ds-react-section-title",
       "fields": [
         {
           "component": "text",
@@ -172399,7 +172399,7 @@
       ]
     },
     {
-      "id": "ds-side-sheet",
+      "id": "ds-react-side-sheet",
       "fields": [
         {
           "component": "select",
@@ -172595,7 +172595,7 @@
       ]
     },
     {
-      "id": "ds-section-subtitle",
+      "id": "ds-react-section-subtitle",
       "fields": [
         {
           "component": "select",
@@ -172837,7 +172837,7 @@
       ]
     },
     {
-      "id": "ds-segmented-control",
+      "id": "ds-react-segmented-control",
       "fields": [
         {
           "component": "select",
@@ -173088,7 +173088,7 @@
       ]
     },
     {
-      "id": "ds-segmented-control-item",
+      "id": "ds-react-segmented-control-item",
       "fields": [
         {
           "name": "collection",
@@ -173222,7 +173222,7 @@
       ]
     },
     {
-      "id": "ds-select",
+      "id": "ds-react-select",
       "fields": [
         {
           "component": "textarea",
@@ -176003,7 +176003,7 @@
       ]
     },
     {
-      "id": "ds-select-item",
+      "id": "ds-react-select-item",
       "fields": [
         {
           "name": "collection",
@@ -178627,7 +178627,7 @@
       ]
     },
     {
-      "id": "ds-sidebar",
+      "id": "ds-react-sidebar",
       "fields": [
         {
           "component": "select",
@@ -181825,7 +181825,7 @@
       ]
     },
     {
-      "id": "ds-sidebar-item",
+      "id": "ds-react-sidebar-item",
       "fields": [
         {
           "name": "collection",
@@ -182014,7 +182014,7 @@
       ]
     },
     {
-      "id": "ds-signal",
+      "id": "ds-react-signal",
       "fields": [
         {
           "component": "select",
@@ -182167,7 +182167,7 @@
       ]
     },
     {
-      "id": "ds-switch",
+      "id": "ds-react-switch",
       "fields": [
         {
           "component": "select",
@@ -182282,7 +182282,7 @@
       ]
     },
     {
-      "id": "ds-snackbar",
+      "id": "ds-react-snackbar",
       "fields": [
         {
           "component": "select",
@@ -182608,7 +182608,7 @@
       ]
     },
     {
-      "id": "ds-spinner",
+      "id": "ds-react-spinner",
       "fields": [
         {
           "component": "select",
@@ -182747,7 +182747,7 @@
       ]
     },
     {
-      "id": "ds-stepper",
+      "id": "ds-react-stepper",
       "fields": [
         {
           "component": "select",
@@ -182998,7 +182998,7 @@
       ]
     },
     {
-      "id": "ds-table",
+      "id": "ds-react-table",
       "fields": [
         {
           "component": "textarea",
@@ -184276,7 +184276,7 @@
       ]
     },
     {
-      "id": "ds-table-item",
+      "id": "ds-react-table-item",
       "fields": [
         {
           "name": "collection",
@@ -184659,7 +184659,7 @@
       ]
     },
     {
-      "id": "ds-tabs",
+      "id": "ds-react-tabs",
       "fields": [
         {
           "component": "select",
@@ -184778,7 +184778,7 @@
       ]
     },
     {
-      "id": "ds-tabs-item",
+      "id": "ds-react-tabs-item",
       "fields": [
         {
           "name": "collection",
@@ -185024,7 +185024,7 @@
       ]
     },
     {
-      "id": "ds-tag",
+      "id": "ds-react-tag",
       "fields": [
         {
           "component": "select",
@@ -185302,7 +185302,7 @@
       ]
     },
     {
-      "id": "ds-text",
+      "id": "ds-react-text",
       "fields": [
         {
           "component": "text",
@@ -185779,7 +185779,7 @@
       ]
     },
     {
-      "id": "ds-text-area",
+      "id": "ds-react-text-area",
       "fields": [
         {
           "component": "textarea",
@@ -186400,7 +186400,7 @@
       ]
     },
     {
-      "id": "ds-timeline",
+      "id": "ds-react-timeline",
       "fields": [
         {
           "component": "select",
@@ -186492,7 +186492,7 @@
       ]
     },
     {
-      "id": "ds-timeline-item",
+      "id": "ds-react-timeline-item",
       "fields": [
         {
           "name": "collection",
@@ -186764,7 +186764,7 @@
       ]
     },
     {
-      "id": "ds-tooltip-description",
+      "id": "ds-react-tooltip-description",
       "fields": [
         {
           "component": "richtext",
@@ -187023,7 +187023,7 @@
       ]
     },
     {
-      "id": "ds-widget",
+      "id": "ds-react-widget",
       "fields": [
         {
           "component": "select",
@@ -187396,7 +187396,7 @@
       ]
     },
     {
-      "id": "ds-accordion-item",
+      "id": "ds-react-accordion-item",
       "fields": [
         {
           "name": "collection",
@@ -187559,7 +187559,7 @@
       ]
     },
     {
-      "id": "ds-banner-item",
+      "id": "ds-react-banner-item",
       "fields": [
         {
           "name": "collection",
@@ -187722,7 +187722,7 @@
       ]
     },
     {
-      "id": "ds-bottom-sheet-item",
+      "id": "ds-react-bottom-sheet-item",
       "fields": [
         {
           "name": "collection",
@@ -187885,7 +187885,7 @@
       ]
     },
     {
-      "id": "ds-card-item",
+      "id": "ds-react-card-item",
       "fields": [
         {
           "name": "collection",
@@ -188048,7 +188048,7 @@
       ]
     },
     {
-      "id": "ds-chart-bar-item",
+      "id": "ds-react-chart-bar-item",
       "fields": [
         {
           "name": "collection",
@@ -188203,7 +188203,7 @@
       ]
     },
     {
-      "id": "ds-chart-donut-item",
+      "id": "ds-react-chart-donut-item",
       "fields": [
         {
           "name": "collection",
@@ -188377,7 +188377,7 @@
       ]
     },
     {
-      "id": "ds-chart-meter-item",
+      "id": "ds-react-chart-meter-item",
       "fields": [
         {
           "name": "collection",
@@ -188533,7 +188533,7 @@
       ]
     },
     {
-      "id": "ds-date-picker-item",
+      "id": "ds-react-date-picker-item",
       "fields": [
         {
           "name": "collection",
@@ -188586,7 +188586,7 @@
       ]
     },
     {
-      "id": "ds-header-item",
+      "id": "ds-react-header-item",
       "fields": [
         {
           "name": "collection",
@@ -191525,7 +191525,7 @@
       ]
     },
     {
-      "id": "ds-input-date-item",
+      "id": "ds-react-input-date-item",
       "fields": [
         {
           "name": "collection",
@@ -191596,7 +191596,7 @@
       ]
     },
     {
-      "id": "ds-input-password-item",
+      "id": "ds-react-input-password-item",
       "fields": [
         {
           "name": "collection",
@@ -191667,7 +191667,7 @@
       ]
     },
     {
-      "id": "ds-input-search-item",
+      "id": "ds-react-input-search-item",
       "fields": [
         {
           "name": "collection",
@@ -191738,7 +191738,7 @@
       ]
     },
     {
-      "id": "ds-input-text-item",
+      "id": "ds-react-input-text-item",
       "fields": [
         {
           "name": "collection",
@@ -191809,7 +191809,7 @@
       ]
     },
     {
-      "id": "ds-input-money-item",
+      "id": "ds-react-input-money-item",
       "fields": [
         {
           "name": "collection",
@@ -191862,7 +191862,7 @@
       ]
     },
     {
-      "id": "ds-list-item-item",
+      "id": "ds-react-list-item-item",
       "fields": [
         {
           "name": "collection",
@@ -191987,160 +191987,7 @@
       ]
     },
     {
-      "id": "ds-list-item-control-item",
-      "fields": [
-        {
-          "name": "collection",
-          "label": "Tipo de item",
-          "component": "select",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "Tags",
-              "value": "tags"
-            }
-          ]
-        },
-        {
-          "name": "c74616773p6c6162656c",
-          "label": "Rótulo",
-          "component": "text",
-          "valueType": "string",
-          "condition": {
-            "===": [
-              {
-                "var": "collection"
-              },
-              "tags"
-            ]
-          }
-        },
-        {
-          "name": "c74616773p636f6c6f72",
-          "label": "color",
-          "component": "select",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "Padrão",
-              "value": ""
-            },
-            {
-              "name": "neutral",
-              "value": "neutral"
-            },
-            {
-              "name": "blue",
-              "value": "blue"
-            },
-            {
-              "name": "brand",
-              "value": "brand"
-            },
-            {
-              "name": "brown",
-              "value": "brown"
-            },
-            {
-              "name": "cyan",
-              "value": "cyan"
-            },
-            {
-              "name": "gold",
-              "value": "gold"
-            },
-            {
-              "name": "green",
-              "value": "green"
-            },
-            {
-              "name": "mint",
-              "value": "mint"
-            },
-            {
-              "name": "orange",
-              "value": "orange"
-            },
-            {
-              "name": "pink",
-              "value": "pink"
-            },
-            {
-              "name": "purple",
-              "value": "purple"
-            },
-            {
-              "name": "red",
-              "value": "red"
-            },
-            {
-              "name": "yellow",
-              "value": "yellow"
-            }
-          ],
-          "condition": {
-            "===": [
-              {
-                "var": "collection"
-              },
-              "tags"
-            ]
-          }
-        },
-        {
-          "name": "c74616773p686965726172636879",
-          "label": "hierarchy",
-          "component": "select",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "Padrão",
-              "value": ""
-            },
-            {
-              "name": "soft",
-              "value": "soft"
-            },
-            {
-              "name": "strong",
-              "value": "strong"
-            }
-          ],
-          "condition": {
-            "===": [
-              {
-                "var": "collection"
-              },
-              "tags"
-            ]
-          }
-        },
-        {
-          "component": "aem-content",
-          "name": "itemLink",
-          "label": "Destino da ação do item",
-          "valueType": "string"
-        },
-        {
-          "name": "itemTarget",
-          "label": "Abrir ação do item em",
-          "component": "select",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "_self",
-              "value": "_self"
-            },
-            {
-              "name": "_blank",
-              "value": "_blank"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ds-list-item-general-item",
+      "id": "ds-react-list-item-control-item",
       "fields": [
         {
           "name": "collection",
@@ -192293,7 +192140,7 @@
       ]
     },
     {
-      "id": "ds-list-item-action-item",
+      "id": "ds-react-list-item-general-item",
       "fields": [
         {
           "name": "collection",
@@ -192446,7 +192293,160 @@
       ]
     },
     {
-      "id": "ds-modal-dialog-item",
+      "id": "ds-react-list-item-action-item",
+      "fields": [
+        {
+          "name": "collection",
+          "label": "Tipo de item",
+          "component": "select",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Tags",
+              "value": "tags"
+            }
+          ]
+        },
+        {
+          "name": "c74616773p6c6162656c",
+          "label": "Rótulo",
+          "component": "text",
+          "valueType": "string",
+          "condition": {
+            "===": [
+              {
+                "var": "collection"
+              },
+              "tags"
+            ]
+          }
+        },
+        {
+          "name": "c74616773p636f6c6f72",
+          "label": "color",
+          "component": "select",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Padrão",
+              "value": ""
+            },
+            {
+              "name": "neutral",
+              "value": "neutral"
+            },
+            {
+              "name": "blue",
+              "value": "blue"
+            },
+            {
+              "name": "brand",
+              "value": "brand"
+            },
+            {
+              "name": "brown",
+              "value": "brown"
+            },
+            {
+              "name": "cyan",
+              "value": "cyan"
+            },
+            {
+              "name": "gold",
+              "value": "gold"
+            },
+            {
+              "name": "green",
+              "value": "green"
+            },
+            {
+              "name": "mint",
+              "value": "mint"
+            },
+            {
+              "name": "orange",
+              "value": "orange"
+            },
+            {
+              "name": "pink",
+              "value": "pink"
+            },
+            {
+              "name": "purple",
+              "value": "purple"
+            },
+            {
+              "name": "red",
+              "value": "red"
+            },
+            {
+              "name": "yellow",
+              "value": "yellow"
+            }
+          ],
+          "condition": {
+            "===": [
+              {
+                "var": "collection"
+              },
+              "tags"
+            ]
+          }
+        },
+        {
+          "name": "c74616773p686965726172636879",
+          "label": "hierarchy",
+          "component": "select",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Padrão",
+              "value": ""
+            },
+            {
+              "name": "soft",
+              "value": "soft"
+            },
+            {
+              "name": "strong",
+              "value": "strong"
+            }
+          ],
+          "condition": {
+            "===": [
+              {
+                "var": "collection"
+              },
+              "tags"
+            ]
+          }
+        },
+        {
+          "component": "aem-content",
+          "name": "itemLink",
+          "label": "Destino da ação do item",
+          "valueType": "string"
+        },
+        {
+          "name": "itemTarget",
+          "label": "Abrir ação do item em",
+          "component": "select",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "_self",
+              "value": "_self"
+            },
+            {
+              "name": "_blank",
+              "value": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ds-react-modal-dialog-item",
       "fields": [
         {
           "name": "collection",
@@ -192609,7 +192609,7 @@
       ]
     },
     {
-      "id": "ds-pagination-item",
+      "id": "ds-react-pagination-item",
       "fields": [
         {
           "name": "collection",
@@ -192663,7 +192663,7 @@
       ]
     },
     {
-      "id": "ds-panel-item",
+      "id": "ds-react-panel-item",
       "fields": [
         {
           "name": "collection",
@@ -192845,7 +192845,7 @@
       ]
     },
     {
-      "id": "ds-pin-code-item",
+      "id": "ds-react-pin-code-item",
       "fields": [
         {
           "name": "collection",
@@ -192898,7 +192898,7 @@
       ]
     },
     {
-      "id": "ds-side-sheet-item",
+      "id": "ds-react-side-sheet-item",
       "fields": [
         {
           "name": "collection",
@@ -193061,7 +193061,7 @@
       ]
     },
     {
-      "id": "ds-text-area-item",
+      "id": "ds-react-text-area-item",
       "fields": [
         {
           "name": "collection",
@@ -193114,7 +193114,7 @@
       ]
     },
     {
-      "id": "ds-widget-item",
+      "id": "ds-react-widget-item",
       "fields": [
         {
           "name": "collection",
@@ -193279,231 +193279,231 @@
   ],
   "filters": [
     {
-      "id": "ds-bottom-sheet-country",
+      "id": "ds-react-bottom-sheet-country",
       "components": [
-        "ds-bottom-sheet-country-item"
+        "ds-react-bottom-sheet-country-item"
       ]
     },
     {
-      "id": "ds-breadcrumb",
+      "id": "ds-react-breadcrumb",
       "components": [
-        "ds-breadcrumb-item"
+        "ds-react-breadcrumb-item"
       ]
     },
     {
-      "id": "ds-chart-line",
+      "id": "ds-react-chart-line",
       "components": [
-        "ds-chart-line-item"
+        "ds-react-chart-line-item"
       ]
     },
     {
-      "id": "ds-carousel",
+      "id": "ds-react-carousel",
       "components": [
-        "ds-carousel-item"
+        "ds-react-carousel-item"
       ]
     },
     {
-      "id": "ds-feedback-screen",
+      "id": "ds-react-feedback-screen",
       "components": [
-        "ds-feedback-screen-item"
+        "ds-react-feedback-screen-item"
       ]
     },
     {
-      "id": "ds-input-country",
+      "id": "ds-react-input-country",
       "components": [
-        "ds-input-country-item"
+        "ds-react-input-country-item"
       ]
     },
     {
-      "id": "ds-menu-popup",
+      "id": "ds-react-menu-popup",
       "components": [
-        "ds-menu-popup-item"
+        "ds-react-menu-popup-item"
       ]
     },
     {
-      "id": "ds-segmented-control",
+      "id": "ds-react-segmented-control",
       "components": [
-        "ds-segmented-control-item"
+        "ds-react-segmented-control-item"
       ]
     },
     {
-      "id": "ds-select",
+      "id": "ds-react-select",
       "components": [
-        "ds-select-item"
+        "ds-react-select-item"
       ]
     },
     {
-      "id": "ds-sidebar",
+      "id": "ds-react-sidebar",
       "components": [
-        "ds-sidebar-item"
+        "ds-react-sidebar-item"
       ]
     },
     {
-      "id": "ds-table",
+      "id": "ds-react-table",
       "components": [
-        "ds-table-item"
+        "ds-react-table-item"
       ]
     },
     {
-      "id": "ds-tabs",
+      "id": "ds-react-tabs",
       "components": [
-        "ds-tabs-item"
+        "ds-react-tabs-item"
       ]
     },
     {
-      "id": "ds-timeline",
+      "id": "ds-react-timeline",
       "components": [
-        "ds-timeline-item"
+        "ds-react-timeline-item"
       ]
     },
     {
-      "id": "ds-accordion",
+      "id": "ds-react-accordion",
       "components": [
-        "ds-accordion-item"
+        "ds-react-accordion-item"
       ]
     },
     {
-      "id": "ds-banner",
+      "id": "ds-react-banner",
       "components": [
-        "ds-banner-item"
+        "ds-react-banner-item"
       ]
     },
     {
-      "id": "ds-bottom-sheet",
+      "id": "ds-react-bottom-sheet",
       "components": [
-        "ds-bottom-sheet-item"
+        "ds-react-bottom-sheet-item"
       ]
     },
     {
-      "id": "ds-card",
+      "id": "ds-react-card",
       "components": [
-        "ds-card-item"
+        "ds-react-card-item"
       ]
     },
     {
-      "id": "ds-chart-bar",
+      "id": "ds-react-chart-bar",
       "components": [
-        "ds-chart-bar-item"
+        "ds-react-chart-bar-item"
       ]
     },
     {
-      "id": "ds-chart-donut",
+      "id": "ds-react-chart-donut",
       "components": [
-        "ds-chart-donut-item"
+        "ds-react-chart-donut-item"
       ]
     },
     {
-      "id": "ds-chart-meter",
+      "id": "ds-react-chart-meter",
       "components": [
-        "ds-chart-meter-item"
+        "ds-react-chart-meter-item"
       ]
     },
     {
-      "id": "ds-date-picker",
+      "id": "ds-react-date-picker",
       "components": [
-        "ds-date-picker-item"
+        "ds-react-date-picker-item"
       ]
     },
     {
-      "id": "ds-header",
+      "id": "ds-react-header",
       "components": [
-        "ds-header-item"
+        "ds-react-header-item"
       ]
     },
     {
-      "id": "ds-input-date",
+      "id": "ds-react-input-date",
       "components": [
-        "ds-input-date-item"
+        "ds-react-input-date-item"
       ]
     },
     {
-      "id": "ds-input-password",
+      "id": "ds-react-input-password",
       "components": [
-        "ds-input-password-item"
+        "ds-react-input-password-item"
       ]
     },
     {
-      "id": "ds-input-search",
+      "id": "ds-react-input-search",
       "components": [
-        "ds-input-search-item"
+        "ds-react-input-search-item"
       ]
     },
     {
-      "id": "ds-input-text",
+      "id": "ds-react-input-text",
       "components": [
-        "ds-input-text-item"
+        "ds-react-input-text-item"
       ]
     },
     {
-      "id": "ds-input-money",
+      "id": "ds-react-input-money",
       "components": [
-        "ds-input-money-item"
+        "ds-react-input-money-item"
       ]
     },
     {
-      "id": "ds-list-item",
+      "id": "ds-react-list-item",
       "components": [
-        "ds-list-item-item"
+        "ds-react-list-item-item"
       ]
     },
     {
-      "id": "ds-list-item-control",
+      "id": "ds-react-list-item-control",
       "components": [
-        "ds-list-item-control-item"
+        "ds-react-list-item-control-item"
       ]
     },
     {
-      "id": "ds-list-item-general",
+      "id": "ds-react-list-item-general",
       "components": [
-        "ds-list-item-general-item"
+        "ds-react-list-item-general-item"
       ]
     },
     {
-      "id": "ds-list-item-action",
+      "id": "ds-react-list-item-action",
       "components": [
-        "ds-list-item-action-item"
+        "ds-react-list-item-action-item"
       ]
     },
     {
-      "id": "ds-modal-dialog",
+      "id": "ds-react-modal-dialog",
       "components": [
-        "ds-modal-dialog-item"
+        "ds-react-modal-dialog-item"
       ]
     },
     {
-      "id": "ds-pagination",
+      "id": "ds-react-pagination",
       "components": [
-        "ds-pagination-item"
+        "ds-react-pagination-item"
       ]
     },
     {
-      "id": "ds-panel",
+      "id": "ds-react-panel",
       "components": [
-        "ds-panel-item"
+        "ds-react-panel-item"
       ]
     },
     {
-      "id": "ds-pin-code",
+      "id": "ds-react-pin-code",
       "components": [
-        "ds-pin-code-item"
+        "ds-react-pin-code-item"
       ]
     },
     {
-      "id": "ds-side-sheet",
+      "id": "ds-react-side-sheet",
       "components": [
-        "ds-side-sheet-item"
+        "ds-react-side-sheet-item"
       ]
     },
     {
-      "id": "ds-text-area",
+      "id": "ds-react-text-area",
       "components": [
-        "ds-text-area-item"
+        "ds-react-text-area-item"
       ]
     },
     {
-      "id": "ds-widget",
+      "id": "ds-react-widget",
       "components": [
-        "ds-widget-item"
+        "ds-react-widget-item"
       ]
     }
   ]

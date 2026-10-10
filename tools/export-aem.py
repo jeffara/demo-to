@@ -159,16 +159,18 @@ def main():
             archive.writestr(base, data)
             archive.writestr(base+'.dir/.content.xml', xml(original))
         filter_xml = ET.Element('workspaceFilter', {'version':'1.0'})
-        # Baseline reset: replace child pages, preserving the existing site's configuration node.
-        site_filter = ET.SubElement(filter_xml,'filter',{'root':site,'mode':'replace'})
-        ET.SubElement(site_filter,'include',{'pattern':re.escape(site)+'/.*'})
-        ET.SubElement(site_filter,'exclude',{'pattern':re.escape(site)+'/jcr:content(/.*)?'})
+        # Replace only each delivered page and its own content, preserving other pages.
+        for page_name in sorted(pages):
+            page_root = site + '/' + page_name
+            page_filter = ET.SubElement(filter_xml, 'filter', {'root':page_root, 'mode':'replace'})
+            ET.SubElement(page_filter, 'include', {'pattern':re.escape(page_root)})
+            ET.SubElement(page_filter, 'include', {'pattern':re.escape(page_root)+'/jcr:content(/.*)?'})
         for asset in sorted(assets):
             ET.SubElement(filter_xml,'filter',{'root':asset,'mode':'replace'})
         archive.writestr('META-INF/vault/filter.xml',xml(filter_xml))
         props = ET.Element('properties')
-        for key,val in {'group':'toranja-demo','name':config['packageName'],'version':version,'packageType':'content',
-                        'description':'Baseline V3: substitui as páginas abaixo de '+site+' e remove páginas ausentes; preserva jcr:content da raiz e /conf. Faça backup antes de instalar.'}.items():
+        for key,val in {'group':'inter-aem-eds','name':config['packageName'],'version':version,'packageType':'content',
+                        'description':'Showcase Toranja React Adapter 5.1.0: atualiza somente as páginas listadas do catálogo em '+site+'; preserva páginas não listadas, configuração da raiz, /conf e /apps. Faça backup das páginas do catálogo editadas antes de instalar.'}.items():
             ET.SubElement(props,'entry',{'key':key}).text=val
         property_xml = xml(props).replace(b'<properties>', b'<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">\n<properties>', 1)
         archive.writestr('META-INF/vault/properties.xml', property_xml)

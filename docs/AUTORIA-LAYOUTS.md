@@ -44,12 +44,12 @@ Entre 761 e 1000px, a grade de quatro colunas usa duas colunas. Seções de larg
 
 Use fundo suave para destacar uma seção, em vez de colocar uma caixa em cada texto. Mantenha o texto de leitura em largura menor; prefira padrão/ampla para coleções. Agrupe CTA e texto na mesma coluna. Rótulos curtos evitam truncamento nos tamanhos de botão definidos pelo DS.
 
-A nova home demonstra uma composição. `/showcase/layouts` demonstra todas as proporções, grades e inversão mobile. `/demo-toranja` organiza os exemplos por Átomos, Moléculas e Templates conforme os diretórios do snapshot oficial: 23, 39 e 2 componentes, respectivamente.
+A nova home demonstra uma composição. `/showcase/layouts` demonstra todas as proporções, grades e inversão mobile. `/demo-toranja` organiza os exemplos por Átomos, Moléculas e Templates conforme os diretórios do snapshot oficial.
 
 ## O que é técnico
 
 - `models/_section.json`: propriedades de layout no editor.
-- `classes_layoutColumn` nos modelos dos 64 blocos: classe de posicionamento, sem ser passada como prop ao React oficial.
+- `classes_layoutColumn` nos modelos dos 73 blocos: classe de posicionamento, sem ser passada como prop ao React oficial.
 - `scripts/layout.js`: agrupamento visual e ordem responsiva.
 - `styles/layout.css`: apresentação das seções.
 - `scripts/editor-support.js`: reaplicação do layout após atualização de componente pelo editor.
@@ -60,6 +60,3 @@ As verificações de autoria são simuladas localmente. Após instalar, valide s
 
 Referência: [Content modeling for AEM authoring projects](https://www.aem.live/developer/component-model-definitions#sections-and-section-metadata).
 
-## DS Toranja Custom
-
-Os quatro blocos Custom também oferecem **Layout — coluna na seção**. Use `/showcase/custom` para explorar formulário, busca, vídeo e simulador. Os controles de proporção, largura, espaçamento, alinhamento, fundo e ordem mobile continuam na seção.
