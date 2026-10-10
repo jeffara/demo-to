@@ -1,22 +1,32 @@
-# Toranja + EDS — 4.0.0
+# Toranja + EDS — 4.1.0
 
 Adaptador React para o pacote fornecido de `@interco/inter-toranja` **2.0.1**. São 73 componentes oficiais, quatro composições Custom e 128 páginas de demonstração. As 878 propriedades próprias estão classificadas no inventário e no mapeamento de autoria. O runtime monta os componentes oficiais; não replica manualmente seu DOM interno.
 
 Os 4.230 arquivos do vendor conferem byte a byte com o ZIP recebido. Tokens, fontes completas, variantes e estados oficiais são preservados. A comparação de estilos computados cobre 88 cenários (11 componentes, quatro temas e duas larguras); não certifica todas as combinações possíveis do design system.
 
+## Referência de propriedades no showcase
+
+As 77 páginas individuais (73 componentes oficiais e quatro composições Custom) incluem a seção **Propriedades no EDS** abaixo dos exemplos. Abra a seção e busque pelo nome no painel ou pelo efeito desejado. A referência cobre 2.326 campos dos componentes e de seus itens, com orientação de uso para power users, opções reais, condições de visibilidade, localização no painel e valores iniciais do modelo.
+
+Os nomes técnicos aparecem como referência secundária. Eventos e contratos de programação têm uma seção separada. A consulta utiliza o InputSearch oficial, fica fora do conteúdo autorado e só baixa seus dados quando é aberta. Home, catálogo e layouts não carregam o arquivo de referência.
+
+A geração usa `component-models.json`, `docs/property-mapping.json`, o contrato oficial e o texto editorial em `tools/reference-copy.mjs`. `npm run build:reference` verifica as descrições e gera os dados; o comando já faz parte de `npm run build`. Não edite o JSON gerado manualmente. Ao atualizar o DS, revise também a orientação de autoria e execute `node tests/component-reference.mjs`.
+
 ## Implantação
 
-**Código e conteúdo passam para 4.0.0. É necessário importar e publicar o conteúdo atualizado.** O runtime acompanha a entrega compilado.
+**Código 4.1.0; conteúdo permanece 4.0.0; Toranja permanece 2.0.1.**
 
-1. Preserve o commit anterior e exporte backup de `/content/demo-to`, dos assets envolvidos e das edições existentes.
-2. Revise a sincronização com `python3 tools/sync-baseline.py --target /caminho/do/clone`. Aplique com `--apply` e revise o diff. Preserve as configurações do ambiente.
-3. Faça commit/push em uma branch de homologação. Inclua blocos, modelos JSON, chunks, estilos, `head.html`, `.hlxignore` e `version.json`. Aguarde o Code Sync.
-4. Instale `demo-to-content-4.0.0.zip` pelo Package Manager **sem uninstall/delete**. O filtro replace dos descendentes de `/content/demo-to` pode sobrescrever edições e remover páginas ausentes da baseline. Para conteúdo de negócio, revise e migre seletivamente a partir do backup.
-5. Homologue edição, salvar/reabrir propriedades e coleções no Universal Editor. Teste Select, Stepper, Table, Sidebar, overlays, menu mobile e logo para Home.
-6. Execute Preview/Publish das 128 páginas, incluindo Home, nav e footer, e dos assets necessários. Instalar no Author não publica no EDS.
-7. Confira `/version.json` em Preview e Live: código/conteúdo `4.0.0`, DS `2.0.1`. Repita Lighthouse no domínio publicado antes de promover a versão.
+Sobre a baseline 4.0.0 já instalada e publicada, basta atualizar o código: não reimporte o pacote nem republique páginas por causa da referência de propriedades.
 
-O pacote interno `content/demo-to-content.zip` tem a mesma versão 4.0.0 do ZIP de conteúdo entregue separadamente. Em rollback, restaure código e backup editorial compatíveis e republique.
+1. Preserve o commit anterior e use uma branch de homologação.
+2. Revise a sincronização com `python3 tools/sync-baseline.py --target /caminho/do/clone`. Aplique com `--apply` e revise o diff.
+3. Faça commit/push do conjunto compilado, incluindo `scripts/eds-reference.json`, chunks, estilos, modelos, `.hlxignore`, `head.html` e `version.json`. Aguarde Code Sync.
+4. Confira `/version.json`: código `4.1.0`, conteúdo `4.0.0` e DS `2.0.1`.
+5. Abra `/showcase/button`, `/showcase/select`, `/showcase/table` e os exemplos Custom; valide a consulta e a busca em desktop e mobile. Homologue salvar/reabrir propriedades no Universal Editor.
+
+Se o conteúdo ainda for anterior à 4.0.0, a migração anterior continua necessária: faça backup de `/content/demo-to` e assets, instale `demo-to-content-4.0.0.zip` sem uninstall/delete e execute Preview/Publish das 128 páginas, incluindo Home, nav e footer. O filtro replace pode sobrescrever edições e remover páginas ausentes da baseline. O ZIP interno `content/demo-to-content.zip` permanece idêntico à entrega 4.0.0.
+
+Rollback desta melhoria: restaure o commit de código 4.0.0. Se também tiver migrado conteúdo de uma versão mais antiga, considere o backup editorial dessa migração.
 
 ## Desenvolvimento e validação
 
@@ -38,7 +48,7 @@ AUDIT_RUNS=3 MIN_PERFORMANCE=98 npm run test:performance -- https://seu-dominio/
 
 São três execuções por perfil desktop/mobile para Home, catálogo e layouts. `CHROME_PATH` é opcional; `AUDIT_ROUTES` e `AUDIT_OUTPUT` ajustam o escopo. O comando retorna erro se alguma mediana ficar abaixo de 98 ou a medição estiver incompleta.
 
-Resultados finais: `docs/performance-v4.0.0/summary.json`, com relatórios HTML/JSON individuais. A medição local usa gzip/HTTP, sem extensões, e não reproduz integralmente o CDN, a latência ou o conteúdo publicado. Confira o resultado real no guia: performance, acessibilidade, boas práticas e SEO são notas distintas. A entrega não promete uma nota que os relatórios não comprovam.
+Resultados finais: `docs/performance-v4.1.0/summary.json`, com relatórios HTML/JSON individuais. A medição local usa gzip/HTTP, sem extensões, e não reproduz integralmente o CDN, a latência ou o conteúdo publicado. Confira o resultado real no guia: performance, acessibilidade, boas práticas e SEO são notas distintas. A entrega não promete uma nota que os relatórios não comprovam.
 
 ## Design system e autoria
 
@@ -50,4 +60,4 @@ O contêiner do exemplo de Sidebar permite rolagem horizontal em telas estreitas
 
 Não houve deploy remoto nem homologação autenticada de persistência no Universal Editor. Os relatórios identificam limitações de acessibilidade do pacote oficial; elas não foram encobertas com alterações internas no vendor.
 
-Guia atual: `docs/EDS_AEM_Universal_Editor_Arquitetura_Deploy_4.0.0_FINAL.html`. Relatórios de versões anteriores são históricos.
+Guia atual: `docs/EDS_AEM_Universal_Editor_Arquitetura_Deploy_4.1.0_FINAL.html`. Relatórios de versões anteriores são históricos.

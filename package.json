@@ -1,6 +1,6 @@
 {
   "name": "aem-eds-inter-toranja",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "private": true,
   "type": "module",
   "description": "Toranja EDS: 73 componentes oficiais do Toranja 2.0.1, adaptador React e modelos XWalk",
@@ -10,10 +10,10 @@
   "scripts": {
     "build:json": "node tools/build-json.mjs",
     "build:content": "node tools/normalize-content.mjs && node tools/render-content.mjs",
-    "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:runtime",
+    "build": "npm run build:ds-models && npm run build:json && npm run build:content && npm run build:reference && npm run build:runtime",
     "preview": "npm run build && node tools/serve.mjs",
     "check": "node tests/contracts.mjs",
-    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && python3 tests/baseline-package.py && python3 tests/property-models.py && node tools/validate-v3.mjs",
+    "test": "npm run build && npm run check && npm run export:aem && python3 tools/audit-package.py && python3 tests/baseline-package.py && python3 tests/property-models.py && node tools/validate-v3.mjs && npm run test:reference",
     "export:aem": "python3 tools/export-aem.py && node tools/write-version.mjs",
     "inventory:ds": "node tools/inventory-ds.mjs",
     "build:ds-models": "node tools/build-ds.mjs",
@@ -24,7 +24,9 @@
     "test:v3": "node tests/adapter-integration.mjs && node tests/v3-content.mjs",
     "test:performance": "node tools/lighthouse-audit.mjs",
     "optimize:images": "node tools/optimize-images.mjs",
-    "test:compliance": "node tests/ds-compliance.mjs && python3 tests/property-models.py"
+    "test:compliance": "node tests/ds-compliance.mjs && python3 tests/property-models.py",
+    "build:reference": "node tools/build-component-reference.mjs",
+    "test:reference": "node tests/component-reference.mjs"
   },
   "devDependencies": {
     "@types/react": "18.3.18",

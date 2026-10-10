@@ -30,3 +30,7 @@
 /styles/layout.css
 /styles/official-tokens.css
 /styles/fonts.css
+/scripts/reference-shell.js
+/scripts/reference-routes.js
+/scripts/component-reference.js
+/styles/component-reference.css

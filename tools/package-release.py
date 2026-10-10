@@ -5,7 +5,9 @@ import json, shutil, sys, zipfile
 root = Path(__file__).resolve().parents[1]
 output = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else root.parent / 'output'
 output.mkdir(parents=True, exist_ok=True)
-version = json.loads((root / 'package.json').read_text())['version']
+package = json.loads((root / 'package.json').read_text())
+version = package['version']
+content_version = package.get('contentVersion', version)
 guide = f'EDS_AEM_Universal_Editor_Arquitetura_Deploy_{version}_FINAL.html'
 assert (root / 'docs' / guide).exists(), 'Generate the release guide first'
 assert (root / f'docs/performance-v{version}/summary.json').exists()
@@ -28,7 +30,8 @@ with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
                 if rel.parts[1] != f'performance-v{version}' and file.name != 'summary.json':
                     continue
         z.write(file, Path(root.name) / rel)
-shutil.copy2(root / 'content/demo-to-content.zip', output / f'demo-to-content-{version}.zip')
+if content_version == version:
+    shutil.copy2(root / 'content/demo-to-content.zip', output / f'demo-to-content-{content_version}.zip')
 shutil.copy2(root / 'docs' / guide, output / guide)
 with zipfile.ZipFile(archive) as z:
     assert z.testzip() is None

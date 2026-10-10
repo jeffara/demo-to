@@ -1,0 +1,11 @@
+{
+  "version": "4.1.0",
+  "components": 77,
+  "officialComponents": 73,
+  "fields": 2326,
+  "routes": 77,
+  "modelHash": "3690e490eb75c64b520576a0dd81ad01dc5982a611286dfab004f8305eaf559c",
+  "schemaHash": "c5dae7b280de8e2422eb66e3851e3ec5f99f8406877659990e112234b0174548",
+  "referenceBytes": 1029822,
+  "missingDescriptions": 0
+}

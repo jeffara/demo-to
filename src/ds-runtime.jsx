@@ -169,3 +169,5 @@ export const mountMenuButton=async(...args)=>(await import('./site-menu.jsx')).m
 export const mountSearch=async(...args)=>(await import('./site-features.jsx')).mountSearch(...args);
 export const mountSimulator=async(...args)=>(await import('./site-features.jsx')).mountSimulator(...args);
 export const mountForm=async(...args)=>(await import('./ds-form.jsx')).mountForm(...args);
+
+export const mountReferenceSearch=async(...args)=>(await import('./reference-search.jsx')).mountReferenceSearch(...args);

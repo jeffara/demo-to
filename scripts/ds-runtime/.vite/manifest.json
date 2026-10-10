@@ -939,10 +939,22 @@
       "vendor/@interco/inter-toranja/dist/components/Molecules/Widget/Widget.js",
       "src/site-menu.jsx",
       "src/site-features.jsx",
-      "src/ds-form.jsx"
+      "src/ds-form.jsx",
+      "src/reference-search.jsx"
     ],
     "css": [
       "ds-runtime.css"
+    ]
+  },
+  "src/reference-search.jsx": {
+    "file": "reference-search-Bt30S90W.js",
+    "name": "reference-search",
+    "src": "src/reference-search.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-DArdT4gl.js",
+      "_toranja-core-BeIyWOOf.js",
+      "_InputSearch-CnJ2M7b6.js"
     ]
   },
   "src/site-features.jsx": {
