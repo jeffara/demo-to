@@ -1,0 +1,32 @@
+import { KeyboardEvent, MouseEvent, RefObject } from 'react';
+import { useAnimation } from 'framer-motion';
+import { getSideSheetAnimationVariants } from '../utils/getSideSheetAnimation';
+import { SideSheetProps } from '../types';
+import { OVERLAY_VISIBILITY } from '../../../Atoms/Overlay';
+interface UseSideSheetReturn {
+    panelRef: RefObject<HTMLDivElement | null>;
+    panelClasses: string;
+    headerClasses: string;
+    middleClasses: string;
+    titleBlockClasses: string;
+    titleClasses: string;
+    descriptionClasses: string;
+    slotClasses: string;
+    footerClasses: string;
+    closeButtonClasses: string;
+    variants: ReturnType<typeof getSideSheetAnimationVariants>;
+    controls: ReturnType<typeof useAnimation>;
+    handleClose: () => void;
+    handleKeyDown: (event: KeyboardEvent<HTMLDivElement>) => void;
+    handleAnimationComplete: (definition: string) => void;
+    handleCloseButtonClick: (event: MouseEvent<HTMLButtonElement>) => void;
+    isSideSheetVisible: boolean;
+    overlayVisibility: OVERLAY_VISIBILITY;
+    hasTitle: boolean;
+    hasDescription: boolean;
+    hasFooter: boolean;
+    shouldShowDivider: boolean;
+    titleId: string;
+}
+export declare const useSideSheet: (props: Readonly<SideSheetProps>) => UseSideSheetReturn;
+export {};

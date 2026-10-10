@@ -1,83 +1,49 @@
-const e = (t, I, S, o) => o ? { name: t, path: I, status: S, issueHint: o } : { name: t, path: I, status: S }, E = [
-  {
-    title: "Shell",
-    items: [e("Sidebar", "NEW_DESKTOP_ONLY", "NEW_DESKTOP_ONLY", "#319")]
-  },
+import { ACTION_CHECKLIST_ENTRIES as i, CHART_CHECKLIST_ENTRIES as _, CONTAINER_CHECKLIST_ENTRIES as s, CONTENT_DISPLAY_CHECKLIST_ENTRIES as N, FORM_CONTROL_CHECKLIST_ENTRIES as r, ICONOGRAPHY_CHECKLIST_ENTRIES as o, NAVIGATION_CHECKLIST_ENTRIES as m, PROGRESS_INDICATOR_CHECKLIST_ENTRIES as R, STATUS_CHECKLIST_ENTRIES as l } from "./constants.js";
+const T = (e, E, C, I) => I ? { name: e, path: E, status: C, issueHint: I } : { name: e, path: E, status: C }, t = (e) => e.map(
+  ([E, C, I, S]) => T(E, C, I, S)
+), a = [
   {
     title: "Actions",
-    items: [
-      e("Button", "Molecules/Button", "EXISTS_IDENTICAL", "#324"),
-      e("Chip", "Molecules/Chip", "EXISTS_IDENTICAL", "#327"),
-      e("Icon Button", "Molecules/Button/IconButton", "EXISTS_IDENTICAL", "#328"),
-      e(
-        "Neutral Icon Button",
-        "Atoms/NeutralIconButton",
-        "EXISTS_IDENTICAL",
-        "#322"
-      )
-    ]
+    items: t(i)
   },
   {
-    title: "Containers / home content",
-    items: [
-      e("Card", "Atoms/Card", "EXISTS_NEEDS_RESPONSIVE", "#330"),
-      e("Cross Selling", "Molecules/CrossSelling", "EXISTS_IDENTICAL", "#333"),
-      e("Widget", "Molecules/Widget", "EXISTS_NEEDS_RESPONSIVE", "#332"),
-      e("Side Sheet", "Molecules/BottomSheet (paralelo)", "NEW_PARALLEL", "#335"),
-      e("Modal Dialog", "NEW_DESKTOP_ONLY", "NEW_DESKTOP_ONLY", "#336")
-    ]
+    title: "Charts",
+    items: t(_)
   },
   {
-    title: "Content display",
-    items: [
-      e("Banner", "Molecules/Banner", "EXISTS_NEEDS_RESPONSIVE", "#334"),
-      e("List Item View", "Molecules/ListItemView", "EXISTS_IDENTICAL", "#329"),
-      e(
-        "List Item General",
-        "Molecules/ListItemGeneral",
-        "EXISTS_IDENTICAL",
-        "#331"
-      )
-    ]
+    title: "Containers",
+    items: t(s)
   },
   {
-    title: "Navigation / structure",
-    items: [
-      e("Accordion", "Molecules/Accordion", "EXISTS_IDENTICAL", "#338"),
-      e("Section Title", "Molecules/SectionTitle", "EXISTS_IDENTICAL", "#321"),
-      e(
-        "Section Subtitle",
-        "Molecules/SectionSubtitle",
-        "EXISTS_IDENTICAL",
-        "#325"
-      ),
-      e("Tabs", "Molecules/Tabs", "EXISTS_IDENTICAL", "#337")
-    ]
+    title: "Content Display",
+    items: t(N)
   },
   {
-    title: "Status",
-    items: [
-      e("Badge", "Atoms/Badge", "EXISTS_IDENTICAL", "#323"),
-      e("Tag", "Atoms/Tag", "EXISTS_IDENTICAL", "#326"),
-      e("Snackbar", "Molecules/Snackbar", "EXISTS_NEEDS_RESPONSIVE", "#339")
-    ]
-  },
-  {
-    title: "Form controls",
-    items: [
-      e("Input Money", "Molecules/InputMoney", "EXISTS_IDENTICAL"),
-      e("Date Picker", "Molecules/DatePicker", "EXISTS_IDENTICAL")
-    ]
+    title: "Form Controls",
+    items: t(r)
   },
   {
     title: "Iconography",
-    items: [
-      e("Icon", "Atoms/Icon", "EXISTS_IDENTICAL"),
-      e("Flag", "Atoms/Flag", "EXISTS_IDENTICAL"),
-      e("Payment Method", "Atoms/PaymentMethods", "EXISTS_IDENTICAL")
-    ]
+    items: t(o)
+  },
+  {
+    title: "Navigation",
+    items: t(m)
+  },
+  {
+    title: "Progress Indicators",
+    items: t(R)
+  },
+  {
+    title: "Status",
+    items: t(l)
+  },
+  {
+    title: "Templates",
+    items: [T("FeedbackScreen", "Templates/FeedbackScreen", "EXISTS_IDENTICAL")]
   }
 ];
 export {
-  E as HOME_IB_CHECKLIST
+  a as HOME_IB_CHECKLIST,
+  T as createChecklistItem
 };

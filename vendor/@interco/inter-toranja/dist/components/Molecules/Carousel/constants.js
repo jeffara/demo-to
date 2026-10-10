@@ -3,6 +3,6 @@ const A = {
   PAGE_VIEW: "page-view"
 }, L = 48;
 export {
-  A as CAROUSEL_VARIANTS,
-  L as SCROLL_END_SPACING
+  L as CAROUSEL_SCROLL_END_SPACING_FALLBACK_PX,
+  A as CAROUSEL_VARIANTS
 };

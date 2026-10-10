@@ -8,6 +8,10 @@ interface UseClickOutsideProps {
      */
     ref: RefObject<HTMLElement | null>;
     /**
+     * Extra node treated as inside the watched surface (for example a trigger button)
+     */
+    extraRef?: RefObject<HTMLElement | null>;
+    /**
      * Whether the hook should be active
      */
     isActive: boolean;
@@ -25,5 +29,5 @@ interface UseClickOutsideProps {
  *
  * @param props - The configuration props
  */
-export declare const useClickOutside: ({ ref, isActive, onClickOutside }: UseClickOutsideProps) => void;
+export declare const useClickOutside: ({ ref, extraRef, isActive, onClickOutside, }: UseClickOutsideProps) => void;
 export {};

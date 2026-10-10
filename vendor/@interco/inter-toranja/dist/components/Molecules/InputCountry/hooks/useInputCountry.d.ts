@@ -1,3 +1,4 @@
+import { RefObject } from 'react';
 import { InputCountryOption, InputCountryProps } from '../types';
 import { FlagName } from '../../../Atoms/Flag/types';
 import { BottomSheetCountryItem } from '../../../Templates/BottomSheetCountry/types';
@@ -7,6 +8,7 @@ export interface UseInputCountryReturn {
     fieldsClasses: string;
     selectClasses: string;
     inputClasses: string;
+    pickerClasses: string;
     dataTestId: string;
     resolvedState: NonNullable<InputCountryProps['state']>;
     selectState: NonNullable<InputCountryProps['state']>;
@@ -16,8 +18,12 @@ export interface UseInputCountryReturn {
     isSelectReadOnly: boolean;
     isInputReadOnly: boolean;
     canOpenSheet: boolean;
-    isSheetOpen: boolean;
-    closeSheet: () => void;
+    isPickerOpen: boolean;
+    isDesktop: boolean;
+    pickerId: string;
+    closePicker: (options?: {
+        restoreFocus?: boolean;
+    }) => void;
     handleSelectClick: () => void;
     handleCountrySelect: (item: BottomSheetCountryItem) => void;
     handleChange: (value: string) => void;
@@ -30,5 +36,8 @@ export interface UseInputCountryReturn {
     inputId: string;
     countryItems: InputCountryOption[];
     featuredCountryItems: InputCountryOption[];
+    rootRef: RefObject<HTMLDivElement | null>;
+    pickerRef: RefObject<HTMLDivElement | null>;
+    selectContainerRef: RefObject<HTMLDivElement | null>;
 }
 export declare const useInputCountry: (props: InputCountryProps) => UseInputCountryReturn;

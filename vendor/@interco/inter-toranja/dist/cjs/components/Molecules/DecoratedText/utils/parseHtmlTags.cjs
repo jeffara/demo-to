@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=require("./parseHtml/parser.cjs"),c=require("./parseHtml/renderer.cjs"),l=(e,t,r)=>n.parseHtmlString(e).map((s,o)=>c.elementToReact(s,o,t,r));exports.parseDecoratedText=l;
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const l=require("./parseHtml/parser.cjs"),n=require("./parseHtml/renderer.cjs"),a=(e,t,r)=>l.parseHtmlString(e).map((s,o)=>n.default(s,o,t,r));exports.parseDecoratedText=a;

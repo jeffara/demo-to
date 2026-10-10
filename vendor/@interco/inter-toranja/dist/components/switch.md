@@ -22,7 +22,7 @@ import { Switch } from '@interco/inter-toranja'
 
 | Prop | Descrição | Valores aceitos | Padrão |
 |------|-----------|-----------------|--------|
-| state | Seleciona a variante do avatar; | — | — |
+| state | Seleciona o estado do switch | — | — |
 | checked | — | — | — |
 
 ## Definição de tipos completa

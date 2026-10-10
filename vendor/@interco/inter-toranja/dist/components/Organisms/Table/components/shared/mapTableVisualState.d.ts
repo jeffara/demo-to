@@ -1,0 +1,11 @@
+import { TableVisualState } from './types';
+import { StepperState } from '../../../../Molecules/Stepper/types';
+import { STATE } from '../../../../../utils/pattern';
+export type TableVisualStateCategory = 'disabled' | 'skeleton' | 'enabled';
+export declare const isSkeletonVisualState: (visualState: TableVisualState) => boolean;
+export declare const resolveTableVisualStateCategory: (visualState: TableVisualState) => TableVisualStateCategory;
+export declare const mapTableVisualStateToAtomState: (visualState: TableVisualState) => `${STATE.ENABLED}` | `${STATE.DISABLED}` | `${STATE.SKELETON}`;
+export declare const isTableVisualStateInteractive: (visualState: TableVisualState) => boolean;
+export declare const mapTableVisualStateToStepperState: (visualState: TableVisualState) => `${StepperState}`;
+export declare const mapTableVisualStateToTagState: (visualState: TableVisualState) => TableVisualStateCategory;
+export declare const mapTableVisualStateToSignalState: (visualState: TableVisualState) => `${STATE.ENABLED}` | `${STATE.SKELETON}`;

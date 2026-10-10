@@ -1,4 +1,4 @@
-import { MaskType as r, DateType as a, PhoneType as i } from "./inputEnums.js";
+import { MaskType as r, PhoneType as i, DateType as a } from "./inputEnums.js";
 function h(n, e, t, s) {
   if (e)
     return e;

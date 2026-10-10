@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react/jsx-runtime"),s=require("../TableFeedback/TableFeedback.cjs"),b=({variant:e,emptyMessage:t,emptyState:a,searchTerm:n})=>o.jsx(s.TableFeedback,{type:e,description:t,searchTerm:n,emptyState:a});exports.TableEmptyState=b;

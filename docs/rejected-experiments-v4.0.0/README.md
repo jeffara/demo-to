@@ -1,0 +1,1 @@
+Experimentos descartados. Subconjuntos de fontes preservaram contornos e métricas isolados, mas dividiram sequências de shaping no fallback, alterando pixels/kerning em tamanhos maiores. Nenhuma fonte subset está na entrega. Os testes e resultados nesta pasta registram a rejeição e não são gates da versão final.

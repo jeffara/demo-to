@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const l=(t,r)=>{if(!t)return r;const{paddingLeft:o,paddingRight:n}=getComputedStyle(t),e=Number.parseFloat(o)+Number.parseFloat(n);return Number.isFinite(e)&&e>0?e:r};exports.resolveCarouselScrollEndSpacing=l;

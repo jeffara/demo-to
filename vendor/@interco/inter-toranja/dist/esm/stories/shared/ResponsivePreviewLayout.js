@@ -1,4 +1,4 @@
-import { jsx as a, jsxs as n } from "react/jsx-runtime";
+import { jsxs as n, jsx as a } from "react/jsx-runtime";
 import '../../assets/stories/shared/ResponsivePreviewLayout.modules.css';/* empty css                                     */
 const s = "responsive-preview-layout", m = ({
   children: e

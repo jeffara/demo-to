@@ -8,7 +8,7 @@ def check(name,ok,detail=''):
  checks.append({'name':name,'pass':bool(ok),'detail':detail})
  print('OK' if ok else 'FAIL',name,detail)
 contract=read('docs/toranja-contract.json');schemas=read('docs/property-mapping.json');models={m['id']:m for m in read('component-models.json')};pages=read('content/pages.json')
-check('64 exports públicos representados',len(contract['components'])==64 and all(c['block'] in schemas for c in contract['components']))
+check('73 exports públicos representados',len(contract['components'])==73 and all(c['block'] in schemas for c in contract['components']))
 missing=[]
 for c in contract['components']:
  schema=schemas[c['block']]
@@ -16,7 +16,7 @@ for c in contract['components']:
  if schema.get('item'):roots.add(schema['item']['property'])
  for prop in c['properties']:
   if prop['name'] not in roots:missing.append(c['name']+'.'+prop['name'])
-check('751 propriedades próprias classificadas',not missing,', '.join(missing))
+check('878 propriedades próprias classificadas',not missing,', '.join(missing))
 def valid(props,values,path):
  errs=[]
  for prop in props:

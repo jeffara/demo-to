@@ -17,6 +17,7 @@ interface UseInputHandlersProps<M extends MaskType | string | undefined = undefi
     defaultValue: string;
     componentName?: string;
     hints: string[] | string;
+    suppressNativeDatePicker?: boolean;
 }
 interface UseInputHandlersReturn {
     inputRef: React.RefObject<HTMLInputElement | null>;
@@ -33,5 +34,5 @@ interface UseInputHandlersReturn {
     getInputMode: (type: string, maskType?: MaskType) => string;
     getInputType: (maskType?: MaskType, showPassword?: boolean, inputType?: string) => string;
 }
-export declare function useInputHandlers<M extends MaskType | undefined>({ onChange, state, hints, mask, phoneType, dateType, pickerRange, counter, defaultValue, onTag, label, placeholder, props, }: UseInputHandlersProps<M>): UseInputHandlersReturn;
+export declare function useInputHandlers<M extends MaskType | undefined>({ onChange, state, hints, mask, phoneType, dateType, pickerRange, counter, defaultValue, onTag, label, placeholder, props, suppressNativeDatePicker, }: UseInputHandlersProps<M>): UseInputHandlersReturn;
 export {};

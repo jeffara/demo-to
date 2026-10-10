@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});var e={};exports.__exports=e;
+"use strict";const r=require("./_commonjsHelpers.cjs"),e=require("../node_modules/@interco/icons/dist/toranja/assets/status/ic_close_circle_fill/index.cjs");var o=e.__require();const s=r.getDefaultExportFromCjs(o);module.exports=s;

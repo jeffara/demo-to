@@ -1,0 +1,69 @@
+{
+  "scope": "Runtime local compilado + serialização XWalk simulada. Sem sessão AEM autenticada.",
+  "tests": [
+    {
+      "name": "F03 Tagging preserva contrato e elimina texto pessoal",
+      "pass": true
+    },
+    {
+      "name": "F04 TextArea emite novo valor",
+      "pass": true
+    },
+    {
+      "name": "F02 Ações independentes e bloqueio em autoria",
+      "pass": true
+    },
+    {
+      "name": "F11 Painel abre por identificador e fecha com Escape",
+      "pass": true
+    },
+    {
+      "name": "F06 Tipos: hints com limite e validação de séries",
+      "pass": true
+    },
+    {
+      "name": "F08 Composição Card com imagem, texto e CTA",
+      "pass": true
+    },
+    {
+      "name": "F12 Contrato de integração e timeout sem rede",
+      "pass": true
+    },
+    {
+      "name": "F12 Busca no corpo, acentos e exclusões",
+      "pass": true
+    },
+    {
+      "name": "F04 Form DS configurável, condição, payload e sucesso",
+      "pass": true
+    },
+    {
+      "name": "F12 Fonte dinâmica entrega dados e informa falha",
+      "pass": true
+    },
+    {
+      "name": "F06 Datas inválidas rejeitadas e data inicial única renderizada",
+      "pass": true
+    },
+    {
+      "name": "F04 Form valida CPF e informa ausência/falha de integração",
+      "pass": true
+    },
+    {
+      "name": "Form composição oficial Select/BottomSheet seleciona e envia valor",
+      "pass": true
+    },
+    {
+      "name": "F13 Rotas com raiz configurada e home",
+      "pass": true
+    },
+    {
+      "name": "Tema oficial carregado",
+      "pass": true
+    },
+    {
+      "name": "Layout mobile sem overflow horizontal",
+      "pass": true
+    }
+  ]
+}

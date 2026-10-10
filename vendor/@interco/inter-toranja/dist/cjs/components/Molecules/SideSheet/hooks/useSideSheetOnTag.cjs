@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react"),s=require("../../../../utils/pattern.cjs"),u=({meetsCondition:e,onTagFn:t,title:r})=>{o.useEffect(()=>{e&&t(n=>({...n,name:s.TAGGING_EVENT.MODAL_VIEW,ComponentProperties:{component_name:"Side Sheet",title:r}}))},[e,t,r])};exports.useSideSheetOnTag=u;

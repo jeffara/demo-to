@@ -1,0 +1,1 @@
+import{n as i,t as a}from"./animation-NTZm93K8.js";var n={duration:i.MODERATE_01,ease:a.ENTRANCE_FUNCTIONAL},o={hidden:{opacity:0,y:-8,scale:.98,originX:0,originY:0,transition:{duration:i.FAST_02,ease:a.EXIT_FUNCTIONAL}},visible:{opacity:1,y:0,scale:1,originX:0,originY:0,transition:n}};export{o as t};

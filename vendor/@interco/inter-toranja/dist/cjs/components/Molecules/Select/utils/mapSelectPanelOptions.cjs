@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const i=(a,l)=>a.map((e,b)=>({value:b,label:e.label,isDisabled:!!e.disabled,isSelected:l!==void 0&&(e.value===l||e.label===l)}));exports.mapSelectPanelOptions=i;

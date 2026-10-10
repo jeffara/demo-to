@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const r=require("react"),l=require("../../../../utils/pattern.cjs"),s=({meetsCondition:e,onTagFn:o,title:a})=>{r.useEffect(()=>{e&&o(t=>({...t,name:l.TAGGING_EVENT.MODAL_VIEW,ComponentProperties:{component_name:"Modal Dialog",title:a}}))},[e,o,a])};exports.useModalDialogTag=s;

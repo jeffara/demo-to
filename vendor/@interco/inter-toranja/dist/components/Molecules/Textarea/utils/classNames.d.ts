@@ -14,9 +14,11 @@ export declare function getTextareaClassNames({ isDisabled, isReadOnly, isError,
     isOverLimit: boolean;
     isError: boolean;
 }): string;
-export declare function getLabelClassName({ isDisabled, isReadOnly, }: {
+export declare function getLabelClassName({ isDisabled, isReadOnly, isFocused, hasValue, }: {
     isDisabled: boolean;
     isReadOnly: boolean;
+    isFocused?: boolean;
+    hasValue?: boolean;
 }): string;
 export declare function getIconWrapperClassName({ isDisabled, isReadOnly, }: {
     isDisabled: boolean;

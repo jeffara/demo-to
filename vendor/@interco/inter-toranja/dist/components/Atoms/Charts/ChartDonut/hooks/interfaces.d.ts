@@ -32,6 +32,7 @@ export interface UseChartDonutReturn {
     centerLabel: string;
     centerValue: string;
     centerValueRef: RefObject<HTMLDivElement | null>;
+    chartRef: RefObject<HTMLDivElement | null>;
     trackColor: string;
     containerAccessibility: ChartDonutContainerAccessibility;
     chartAccessibility: ChartDonutChartAccessibility;

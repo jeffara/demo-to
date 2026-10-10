@@ -2,15 +2,14 @@
 import React, {useState, useEffect} from 'react';
 import {createRoot} from 'react-dom/client';
 import * as DS from '../vendor/@interco/inter-toranja/dist/components.js';
-import '../vendor/@interco/inter-toranja/dist/assets/toranja.css';
-import '../vendor/@interco/inter-toranja/dist/assets/fonts.css';
+
+import {loadComponent} from './component-registry.js';
+import '../vendor/@interco/inter-toranja/dist/assets/typography.css';
 import './ds-runtime.css';
 import {runAction, tagPayload} from '../scripts/actions.js';
+import {getDSBehavior} from '../scripts/ds-behaviors.js';
 import {runIntegration} from '../scripts/integrations.js';
 import {normalizeProps} from '../scripts/ds-values.js';
-import {anchorNativeDatePicker} from './native-date-anchor.js';
-import {ResponsiveTabs} from './responsive-tabs.jsx';
-import {Stepper, ListItemControl, ListItemCompatibility, Select} from './ds-compat.jsx';
 const h=React.createElement;
 const allowed=new Set(['P','BR','STRONG','EM','B','I','UL','OL','LI','H2','H3','H4','H5','H6','SPAN','A','IMG','BLOCKQUOTE','DIV','TABLE','THEAD','TBODY','TR','TH','TD']);
 function rich(value,key='root',inline=false) {
@@ -21,7 +20,7 @@ function rich(value,key='root',inline=false) {
   if(v.kind==='image')return h(DS.Image,{src:{local:v.src},contentDescription:v.alt||''});
   const button=v.href?h(DS.Link,{role:'link',href:v.href,target:v.$itemTarget||'_self',rel:'noopener noreferrer',label:v.label||'Saiba mais'}):null;
   if(v.kind==='button')return button;
-  const children=h(React.Fragment,null,v.title&&h(DS.Text,{as:'h3',textType:'heading'},v.title),v.src&&h(DS.Image,{src:{local:v.src},contentDescription:v.alt||''}),body,button);
+  const children=h(React.Fragment,null,v.title&&h(DS.Text,{as:'h3',textType:'title',textSize:'large'},v.title),v.src&&h(DS.Image,{src:{local:v.src},contentDescription:v.alt||''}),body,button);
   return v.kind==='card'?h(DS.Card,{state:'enabled'},h('div',{className:'ds-card-content'},children)):children;
  }
 
@@ -41,8 +40,8 @@ function rich(value,key='root',inline=false) {
 }
 function at(o,p){return p.reduce((v,k)=>v?.[k],o);}
 function put(o,p,v){let x=o;for(const k of p.slice(0,-1))x=x[k]??={};x[p.at(-1)]=v;}
-function App({schema,initial,host,options}) {
- const [props,setProps]=useState(()=>normalizeProps(initial,schema)),[open,setOpen]=useState(!!(initial.isOpen||initial.show));
+function App({schema,initial,host,options,officialComponent}) {
+ const [props,setProps]=useState(()=>normalizeProps(initial,schema)),[open,setOpen]=useState(!!(initial.isOpen||initial.show||initial.defaultOpen));
  const [status,setStatus]=useState(''),[dataState,setDataState]=useState(initial.$dataSource?'loading':'ready');
  useEffect(()=>{if(!initial.$dataSource)return;const controller=new AbortController();let active=true;
   const allowed={ChartBar:['categories','values','valueLabels'],ChartDonut:['slice','label','value'],ChartMeter:['bars','legend','value'],ChartLine:['series','categories','yLabels'],Select:['$options'],InputCountry:['countryItems','featuredCountryItems'],BottomSheetCountry:['items','featuredItems']}[schema.name]||[];
@@ -62,13 +61,20 @@ function App({schema,initial,host,options}) {
   if(name==='onTag'){const payload=tagPayload(args[0],schema.name);if(payload){host.dispatchEvent(new CustomEvent('toranja:tagging',{bubbles:true,detail:payload}));emit(path.join('.'),[payload]);}return;}
   const val=args[0]?.target?(['checkbox','radio'].includes(args[0].target.type)?args[0].target.checked:args[0].target.value):args[0];
   const copy=structuredClone(props);
-  if(/^(onChange|onCheckboxChange|onSwitchChange|onRadioChange|onStepperChange)$/.test(name)){
+  if(/^(onChange|onCheckboxChange|onSwitchChange|onRadioChange|onStepperChange|onValueChange)$/.test(name)){
    if(['Checkbox','Switch','Radio'].includes(schema.name)||/checkbox|switch|radio/i.test(path.join('.')))put(copy,[...prefix,'checked'],typeof val==='boolean'?val:!at(copy,[...prefix,'checked']));
    else if(schema.name==='DatePicker')put(copy,[...prefix,'value'],val);
    else if(typeof val==='string'||typeof val==='number')put(copy,[...prefix,'value'],val);
    if(schema.name==='Radio'&&props.name)document.dispatchEvent(new CustomEvent('toranja:radio',{detail:{name:props.name,host}}));
    setProps(copy);
   }
+  if(name==='onOptionSelect')setProps({...props,value:val.value});
+  if(name==='onToggle')setOpen(!!val);
+  if(name==='onExpansionChange')setProps({...props,expansion:val});
+  if(name==='onPageChange'||name==='onPageSizeChange'){put(copy,[...prefix,name==='onPageChange'?'pageIndex':'pageSize'],val);if(name==='onPageSizeChange'){put(copy,[...prefix,'pageIndex'],0);const total=at(copy,[...prefix,'totalItems']);if(total!=null)put(copy,[...prefix,'pageCount'],Math.ceil(total/val));}setProps(copy);}
+  if(name==='onSelectionChange'&&schema.name==='Table'&&props.selectedRowIds!==undefined){const ids={};for(const row of val){const index=(p.data||[]).indexOf(row);if(index>=0)ids[String(p.getRowId?.(row,index)??index)]=true;}setProps({...props,selectedRowIds:ids});}
+  if(name==='onSortChange'&&props.sortBy!==undefined)setProps({...props,sortBy:val});
+  if(name==='onPaginationChange'&&props.pageIndex!==undefined)setProps({...props,pageIndex:val.pageIndex});
   if(name==='onCheckboxChange'&&schema.name==='CrossSelling')setProps({...props,isChecked:!!val});
   if(name==='onCountryChange'||name==='onSelect'&&schema.name==='BottomSheetCountry'){setProps({...props,selectedValue:val?.value||val,selectedCountryValue:val?.value||val});setOpen(false);}
   if(name==='onVisibleMonthChange')setProps({...props,visibleMonth:val});
@@ -100,19 +106,21 @@ function App({schema,initial,host,options}) {
  for(const event of schema.events){if((event.kind==='event'||event.name==='close')&&(event.path.length===1||at(p,event.path.slice(0,-1))!=null))put(p,event.path,makeHandler(event.path));}
  for(const collection of schema.collections||[]){const values=at(p,collection.path);if(!Array.isArray(values))continue;put(p,collection.path,values.map((item,index)=>{
   if(collection.primitive)return item;
-  const obj={...item};for(const d of collection.descriptors)if(d.kind==='slot'&&at(obj,d.path)!==undefined)put(obj,d.path,rich(at(obj,d.path)));
+  const obj={...item};for(const d of collection.descriptors)if(['array','object'].includes(d.kind)&&at(obj,d.path)!==undefined)put(obj,d.path,bind(at(obj,d.path),d,[...collection.path,index,...d.path]));for(const d of collection.descriptors)if(d.kind==='slot'&&at(obj,d.path)!==undefined)put(obj,d.path,rich(at(obj,d.path)));
   for(const e of collection.events||[])if(e.path.length===1||at(obj,e.path.slice(0,-1))!=null)put(obj,e.path,makeHandler([...collection.path,index,...e.path]));
   delete obj.$resource;delete obj.$itemLink;delete obj.$itemTarget;return obj;
  }));}
+ for(const [path,name] of Object.entries(props.$behaviors||{}))if(name)put(p,path.split('.'),getDSBehavior(name));
  if(schema.name==='Carousel')p.items=(p.items||[]).map((v,i)=>rich(v,'slide'+i));
  for(const k of Object.keys(p))if(k.startsWith('$'))delete p[k];
  if(props.$accessibleLabel)p['aria-label']??=props.$accessibleLabel;
  p.id ||= host.id+'-control';
- let Component=({Stepper,ListItemControl,ListItem:ListItemCompatibility,Select,Tabs:ResponsiveTabs})[schema.name]||DS[schema.name];
- if(['BottomSheet','BottomSheetCountry'].includes(schema.name)){p.isOpen=open;p.close=makeHandler(['close']);}
+ let Component=officialComponent;
+ if(['BottomSheet','BottomSheetCountry','ModalDialog','SideSheet'].includes(schema.name)){p.isOpen=open;p.close=makeHandler(['close']);}
  if(schema.name==='Snackbar'){p.show=open;p.onClose=makeHandler(['onClose']);}
  
- if(schema.name==='Radio'){p.id||=host.id+'-radio';if(p.hasError)p.variant='error';const change=p.onChange;p.onChange=e=>{change?.(e);p.onSelect?.();p.onTag?.({name:'interaction',ComponentProperties:{component_name:'Radio',state:p.state}})};Component=DS.Radio.Option;}
+ if(schema.name==='Radio'){p.id||=host.id+'-radio';if(p.hasError)p.variant='error';const change=p.onChange;p.onChange=e=>{change?.(e);p.onSelect?.()};Component=officialComponent.Option;}
+ if(['MenuPopup','TooltipDescription'].includes(schema.name)){p.isOpen=open;p.children=h(DS.Button,{type:'button',label:props.$triggerLabel||'Abrir '+schema.name});}
  if(schema.name==='FloatingActionButton')p.onClick=makeHandler(['onClick']);
  if(schema.name==='Header'&&props.$scrollContainerSelector){try{p.scrollContainer=document.querySelector(props.$scrollContainerSelector);}catch{p.scrollContainer=null;}}
  if(schema.name==='DatePicker'){
@@ -130,16 +138,16 @@ function App({schema,initial,host,options}) {
  if(props.$actionLink&&schema.name==='Link'){p.href=options.resolveLink(props.$actionLink);p.target=props.$actionTarget||'_self';if(p.target==='_blank')p.rel='noopener noreferrer';}
  if(schema.name==='Link'&&['disabled','skeleton'].includes(p.state)){p.href=undefined;p['aria-disabled']=true;p.tabIndex=-1;p.onClick=e=>e.preventDefault();}
  if(schema.name==='Tag'&&typeof p.icon==='string')p.icon=rich(p.icon);
- if(schema.name==='Select'){p.options=props.$options||[];p.onChange=makeHandler(['onChange']);}
- if(schema.name==='FloatingActionButton')host.closest('.block')?.classList.toggle('fab-inline',props.$placement==='inline');
+ 
+ 
  if(dataState!=='ready')return h('p',{className:'ds-data-status',role:dataState==='error'?'alert':'status'},dataState==='loading'?'Carregando dados…':status);
  if((schema.name==='ChartBar'&&!p.values.length)||(schema.name==='ChartMeter'&&!p.bars.length))return h('p',{className:'ds-empty'},'Nenhum dado. Adicione itens a este gráfico.');
- if(['Tabs','Carousel','SegmentedControl','Timeline','ChartLine'].includes(schema.name)&&!p[schema.item?.property]?.length)return h('p',{className:'ds-empty'},'Nenhum item. Adicione itens a este componente.');
+ if(['Tabs','Carousel','SegmentedControl','Timeline','ChartLine','Sidebar','MenuPopup'].includes(schema.name)&&!p[schema.item?.property]?.length)return h('p',{className:'ds-empty'},'Nenhum item. Adicione itens a este componente.');
  return h(React.Fragment,null,
-  ['BottomSheet','BottomSheetCountry','Snackbar'].includes(schema.name)&&props.$showTrigger!==false&&(props.$showTrigger||props.$triggerLabel)&&h('button',{className:'ds-launch',type:'button',onClick:()=>setOpen(true)},props.$triggerLabel||'Abrir '+schema.name),
+  ['BottomSheet','BottomSheetCountry','Snackbar','ModalDialog','SideSheet','MenuPopup','TooltipDescription'].includes(schema.name)&&!['MenuPopup','TooltipDescription'].includes(schema.name)&&props.$showTrigger!==false&&(props.$showTrigger||props.$triggerLabel)&&h(DS.Button,{className:'ds-launch',type:'button',label:props.$triggerLabel||'Abrir '+schema.name,onClick:()=>setOpen(true)}),
   h(Component,p),
   schema.name==='Tabs'&&props.tabs?.some(t=>t.$panel)&&h('div',{role:'tabpanel',className:'ds-tab-panel'},rich((props.tabs.find(t=>t.selected)||props.tabs[0])?.$panel)),
-  open&&['BottomSheet','BottomSheetCountry'].includes(schema.name)&&h('button',{className:'ds-modal-close',type:'button',onClick:()=>setOpen(false),'aria-label':'Fechar painel'},'Fechar'),
+  open&&['BottomSheet','BottomSheetCountry'].includes(schema.name)&&h(DS.IconButton,{className:'ds-modal-close',icon:'ic_close',onClick:()=>setOpen(false),'aria-label':'Fechar painel'}),
   h('span',{className:'ds-status','aria-live':'polite'},status));
 }
 class Boundary extends React.Component {
@@ -148,6 +156,16 @@ class Boundary extends React.Component {
  componentDidCatch(error){(this.props.host.closest('.block')||this.props.host).dataset.dsError=error.message;}
  render(){return this.state.error?h('p',{role:'alert'},'Não foi possível exibir este componente. Revise as propriedades.'):this.props.children;}
 }
-export function mount(host,schema,props,options){const root=createRoot(host);const disposeDateAnchor=anchorNativeDatePicker(host);root.render(h(Boundary,{host},h(App,{schema,initial:props,host,options})));return()=>{disposeDateAnchor();root.unmount();};}
-export {mountMenuButton,mountSearch,mountSimulator} from './site-features.jsx';
-export {mountForm} from './ds-form.jsx';
+export async function mount(host,schema,props,options){
+ const officialComponent=await loadComponent(schema.name);
+ const root=createRoot(host);
+ await new Promise(resolve=>{
+  function Ready(){React.useLayoutEffect(resolve,[]);return null;}
+  root.render(h(React.Fragment,null,h(Boundary,{host},h(App,{schema,initial:props,host,options,officialComponent})),h(Ready)));
+ });
+ return()=>root.unmount();
+}
+export const mountMenuButton=async(...args)=>(await import('./site-menu.jsx')).mountMenuButton(...args);
+export const mountSearch=async(...args)=>(await import('./site-features.jsx')).mountSearch(...args);
+export const mountSimulator=async(...args)=>(await import('./site-features.jsx')).mountSimulator(...args);
+export const mountForm=async(...args)=>(await import('./ds-form.jsx')).mountForm(...args);

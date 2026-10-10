@@ -1,0 +1,88 @@
+const I = [
+  ["Button", "Molecules/Button", "EXISTS_IDENTICAL", "#324"],
+  ["Chip", "Molecules/Chip", "EXISTS_IDENTICAL", "#327"],
+  ["Floating Action Button", "Molecules/Button/FloatingActionButton", "EXISTS_IDENTICAL", "#425"],
+  ["Icon Button", "Molecules/Button/IconButton", "EXISTS_IDENTICAL", "#328"],
+  ["Icon Chip", "Atoms/IconChip", "EXISTS_IDENTICAL", "#426"],
+  ["Menu Item", "Molecules/MenuItem", "EXISTS_IDENTICAL", "#386"],
+  ["Neutral Icon Button", "Atoms/NeutralIconButton", "EXISTS_IDENTICAL", "#322"]
+], e = [
+  ["Chart Bar", "Atoms/Charts/ChartBar", "EXISTS_IDENTICAL", "#403"],
+  ["Chart Donut", "Atoms/Charts/ChartDonut", "EXISTS_IDENTICAL", "#404"],
+  ["Chart Line", "Atoms/Charts/ChartLine", "EXISTS_IDENTICAL", "#405"],
+  ["Chart Meter", "Atoms/Charts/ChartMeter", "EXISTS_IDENTICAL", "#406"]
+], S = [
+  ["Card", "Atoms/Card", "EXISTS_IDENTICAL", "#330"],
+  ["Carousel", "Molecules/Carousel", "EXISTS_IDENTICAL", "#420"],
+  ["Cross Selling", "Molecules/CrossSelling", "EXISTS_IDENTICAL", "#333"],
+  ["Widget", "Molecules/Widget", "EXISTS_IDENTICAL", "#332"],
+  ["Side Sheet", "Molecules/SideSheet", "NEW_DESKTOP_ONLY", "#335"],
+  ["Modal Dialog", "Molecules/ModalDialog", "NEW_DESKTOP_ONLY", "#336"],
+  ["Panel", "Molecules/Panel", "NEW_DESKTOP_ONLY", "#437"]
+], t = [
+  ["Banner", "Molecules/Banner", "EXISTS_IDENTICAL", "#334"],
+  ["Image", "Atoms/Image", "EXISTS_IDENTICAL", "#428"],
+  ["List Item View", "Molecules/ListItemView", "EXISTS_IDENTICAL", "#329"],
+  ["Text", "Atoms/Text", "EXISTS_IDENTICAL", "#417"],
+  ["DecoratedText", "Molecules/DecoratedText", "EXISTS_IDENTICAL", "#407"],
+  ["Tooltip Description", "Molecules/TooltipDescription", "NEW_DESKTOP_ONLY", "#442"],
+  ["Table", "Organisms/Table", "NEW_DESKTOP_ONLY", "#393"]
+], T = [
+  ["Checkbox", "Atoms/Checkbox", "EXISTS_IDENTICAL"],
+  ["Input Country", "Molecules/InputCountry", "EXISTS_IDENTICAL"],
+  ["Input Date", "Molecules/InputDate", "EXISTS_IDENTICAL", "#341"],
+  ["Input Money", "Molecules/InputMoney", "EXISTS_IDENTICAL"],
+  ["Input Password", "Molecules/InputPassword", "EXISTS_IDENTICAL"],
+  ["Input Pin Code", "Molecules/PinCode", "EXISTS_IDENTICAL", "#430"],
+  ["Input Search", "Molecules/InputSearch", "EXISTS_IDENTICAL"],
+  ["Input Text", "Molecules/InputText", "EXISTS_IDENTICAL"],
+  ["Radio Button", "Molecules/RadioButton", "EXISTS_IDENTICAL", "#413"],
+  ["Select", "Molecules/Select", "EXISTS_IDENTICAL"],
+  ["Stepper", "Molecules/Stepper", "EXISTS_IDENTICAL", "#435"],
+  ["Switch", "Atoms/Switch", "EXISTS_IDENTICAL", "#416"],
+  ["Text Area", "Molecules/Textarea", "EXISTS_IDENTICAL", "#418"],
+  ["Date Picker", "Molecules/DatePicker", "NEW_DESKTOP_ONLY"]
+], o = [
+  ["Icon", "Atoms/Icon", "EXISTS_IDENTICAL"],
+  ["Flag", "Atoms/Flag", "EXISTS_IDENTICAL"],
+  ["Payment Method", "Atoms/PaymentMethods", "EXISTS_IDENTICAL"]
+], E = [
+  ["Sidebar", "Molecules/Sidebar", "NEW_DESKTOP_ONLY", "#319"],
+  ["Accordion", "Molecules/Accordion", "EXISTS_IDENTICAL", "#338"],
+  ["Avatar", "Molecules/Avatar", "EXISTS_IDENTICAL", "#419"],
+  ["Divider", "Atoms/Divider", "EXISTS_IDENTICAL", "#409"],
+  ["Link", "Molecules/Link", "EXISTS_IDENTICAL", "#412"],
+  ["List Item Action", "Molecules/ListItemAction", "EXISTS_IDENTICAL"],
+  ["List Item Control", "Molecules/ListItemControl", "EXISTS_IDENTICAL", "#388"],
+  ["List Item General", "Molecules/ListItemGeneral", "EXISTS_IDENTICAL", "#331"],
+  ["Page Indicator", "Atoms/PageIndicator", "EXISTS_IDENTICAL", "#429"],
+  ["Pagination", "Molecules/Pagination", "NEW_DESKTOP_ONLY"],
+  ["Section Subtitle", "Molecules/SectionSubtitle", "EXISTS_IDENTICAL", "#325"],
+  ["Section Title", "Molecules/SectionTitle", "EXISTS_IDENTICAL", "#321"],
+  ["Segmented Control", "Molecules/SegmentedControl", "EXISTS_IDENTICAL", "#433"],
+  ["Tabs", "Molecules/Tabs", "EXISTS_IDENTICAL", "#337"],
+  ["Breadcrumb", "Molecules/Breadcrumb", "NEW_DESKTOP_ONLY", "#345"],
+  ["Menu Popup", "Molecules/MenuPopup", "NEW_DESKTOP_ONLY", "#346"]
+], l = [
+  ["Progress Bar", "Atoms/ProgressIndicator/ProgressBar", "EXISTS_IDENTICAL", "#431"],
+  ["Progress Circle", "Atoms/ProgressIndicator/ProgressCircle", "EXISTS_IDENTICAL", "#432"],
+  ["Spinner", "Atoms/ProgressIndicator/Spinner", "EXISTS_IDENTICAL", "#434"]
+], s = [
+  ["Alert", "Molecules/Alert", "EXISTS_IDENTICAL", "#402"],
+  ["Badge", "Atoms/Badge", "EXISTS_IDENTICAL", "#323"],
+  ["Snackbar", "Molecules/Snackbar", "EXISTS_IDENTICAL", "#339"],
+  ["Tag", "Atoms/Tag", "EXISTS_IDENTICAL", "#326"],
+  ["Signal", "Atoms/Signal", "EXISTS_IDENTICAL", "#415"],
+  ["Timeline", "Molecules/Timeline", "EXISTS_IDENTICAL", "#436"]
+];
+export {
+  I as ACTION_CHECKLIST_ENTRIES,
+  e as CHART_CHECKLIST_ENTRIES,
+  S as CONTAINER_CHECKLIST_ENTRIES,
+  t as CONTENT_DISPLAY_CHECKLIST_ENTRIES,
+  T as FORM_CONTROL_CHECKLIST_ENTRIES,
+  o as ICONOGRAPHY_CHECKLIST_ENTRIES,
+  E as NAVIGATION_CHECKLIST_ENTRIES,
+  l as PROGRESS_INDICATOR_CHECKLIST_ENTRIES,
+  s as STATUS_CHECKLIST_ENTRIES
+};

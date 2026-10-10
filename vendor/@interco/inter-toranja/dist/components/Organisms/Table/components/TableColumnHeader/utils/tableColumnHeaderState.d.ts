@@ -1,0 +1,15 @@
+import { TableSortDirection } from '../../shared/types';
+import { IconName } from '../../../../../Atoms/Icon/types';
+import { IconColors } from '../../../../../Atoms/Icon/constants/iconColors';
+type OrderedAriaSort = 'ascending' | 'descending';
+type TableColumnHeaderAriaSortDefined = OrderedAriaSort | 'none';
+export type TableColumnHeaderAriaSort = TableColumnHeaderAriaSortDefined | undefined;
+type NeutralSecondaryIconColor = typeof IconColors.Neutral.Secondary;
+type NeutralPrimaryIconColor = typeof IconColors.Neutral.Primary;
+type BrandIconColor = typeof IconColors.Brand.Default;
+type TableColumnHeaderIconColor = NeutralSecondaryIconColor | NeutralPrimaryIconColor;
+export declare const resolveLabelColorVariant: (isOrdered: boolean, isHoverVisual: boolean) => "primary" | "secondary";
+export declare const resolveSortIconAsset: (sortable: boolean, sortDirection: TableSortDirection | null) => IconName | null;
+export declare const resolveSortIconColor: (isOrdered: boolean, isHoverVisual: boolean) => TableColumnHeaderIconColor | BrandIconColor;
+export declare const resolveAriaSort: (sortDirection: TableSortDirection | null, sortable: boolean) => TableColumnHeaderAriaSort;
+export {};

@@ -1,6 +1,6 @@
 /** Utilitários EDS: preservam os nós autorados e seus atributos do Universal Editor. */
 import { resolveLink } from "./links.js";
-import { cells, containers } from "./contracts.js";
+import { cells, containers } from "./custom-contracts.js";
 let sequence = 0;
 export const uid = (prefix = "toranja") => `${prefix}-${++sequence}`;
 export const editing = () =>
@@ -27,6 +27,7 @@ export function instrument(from, to) {
 export function read(
   block,
   name = block.dataset.blockName || block.classList[0],
+  fieldKeys, itemKeys,
 ) {
   // Explicita o recurso proprietário antes de mover campos para outra área visual.
   block.querySelectorAll("[data-aue-prop]").forEach((node) => {
@@ -38,16 +39,16 @@ export function read(
       );
   });
   const rows = [...block.children];
-  const cellMap=cells,containerMap=containers;
+  const fieldNames=fieldKeys||cells[name]||[];
   const fields = Object.fromEntries(
-    (cellMap[name] || []).map((key, i) => [
+    fieldNames.map((key, i) => [
       key,
       rows[i]?.firstElementChild || rows[i] || el("div"),
     ]),
   );
-  const itemNames = cellMap[containerMap[name]] || [];
+  const itemNames = itemKeys||cells[containers[name]]||[];
   const items = rows
-    .slice((cellMap[name] || []).length)
+    .slice(fieldNames.length)
     .map((row) => ({
       row,
       ...Object.fromEntries(

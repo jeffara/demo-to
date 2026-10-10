@@ -1,4 +1,4 @@
-import { jsx as a, jsxs as t } from "react/jsx-runtime";
+import { jsxs as t, jsx as a } from "react/jsx-runtime";
 import '../../assets/ResponsivePreviewLayout.css';const s = "responsive-preview-layout", c = ({
   children: e
 }) => /* @__PURE__ */ a("div", { className: s, children: e }), m = ({

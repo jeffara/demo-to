@@ -1,5 +1,5 @@
 import { jsx as o } from "react/jsx-runtime";
-import { D as i } from "../../../../useAvatar-KNjZfaR7.js";
+import { D as i } from "../../../../useAvatar-DTSmcSAs.js";
 import { STATE as n, SIZE as a } from "../../../../utils/pattern.js";
 import { Icon as e } from "../../../Atoms/Icon/Icon.js";
 import { IconColors as s } from "../../../Atoms/Icon/constants/iconColors.js";

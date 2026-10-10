@@ -4,6 +4,7 @@ const get=(o,p)=>p.reduce((v,k)=>v?.[k],o);
 const labels={label:'Rótulo',title:'Título',description:'Descrição',state:'Estado',variant:'Variante',size:'Tamanho',checked:'Selecionado inicialmente',selected:'Selecionado',value:'Valor',defaultValue:'Valor inicial',children:'Conteúdo',icon:'Ícone',leadingIcon:'Ícone inicial',src:'Imagem',placeholder:'Texto de exemplo',hints:'Mensagens de ajuda',error:'Mensagens de erro',tags:'Tags',categories:'Categorias',values:'Valores',forceColor:'Cores das séries',showHelper:'Exibir ajuda',onClick:'Ação ao clicar',onBackClick:'Voltar',onCloseClick:'Fechar',onHelper:'Ajuda',helperOnClick:'Ajuda',onActionTrailing:'Ação final'};
 const title=p=>p.map(x=>labels[x]||x.replace(/([a-z])([A-Z])/g,'$1 $2')).join(' › ');
 function leaves(fields,prefix=[]){return fields.flatMap(f=>f.kind==='object'&&f.fields?leaves(f.fields,[...prefix,f.name]):[{...f,path:[...prefix,f.name],key:key([...prefix,f.name])}]).filter(f=>!['event','function','technical'].includes(f.kind));}
+function collectEvents(fields,prefix=[]){return fields.flatMap(f=>f.kind==='event'?[{...f,path:[...prefix,f.name]}]:f.kind==='object'?collectEvents(f.fields||[],[...prefix,f.name]):[]);}
 function field(d){
  const f={name:d.key,label:title(d.path),component:'text',valueType:'string'};
  if(d.kind==='number')Object.assign(f,{component:'number',valueType:'number',valueFormat:'double'});
@@ -11,6 +12,7 @@ function field(d){
  if(d.kind==='enum')Object.assign(f,{component:'select',options:[{name:'Padrão',value:''},...(d.values||[]).map(v=>({name:String(v),value:String(v)}))]});
  if(d.kind==='link')f.component='aem-content';
  if(d.kind==='slot')f.component='richtext';
+ if(d.kind==='json'){f.component='textarea';f.description='Objeto JSON declarativo; não aceita JavaScript.';}
  if(d.kind==='array'){f.component='text';f.multi=true;f.valueType='string[]';f.description='Adicione um valor por entrada. Os valores numéricos são convertidos e validados.';}
  return f;
 }
@@ -21,10 +23,10 @@ export function curate(schema,partial,samples){
   const model=partial.models.find(m=>m.id===id),def=partial.definitions.find(d=>d.id===id),tmpl=def.plugins.xwalk.page.template;
   const sample=samples.find(b=>b.block===id);s.collections=[];
   const add=(d,f)=>{s.descriptors.push(d);model.fields.push(f||field(d));};
+  for(const e of s.events.filter(e=>e.kind==='function'&&e.name!=='close')){const name='behavior'+Buffer.from(e.path.join('.')).toString('hex');add({name,path:['$behaviors',e.path.join('.')],key:name,kind:'string'},{name,label:title(e.path)+' — comportamento cadastrado',component:'text',valueType:'string',description:'Nome registrado pelo time técnico com registerDSBehavior. Não aceita JavaScript no conteúdo.'});}
   // Eventos HTML úteis são contratos do runtime, não campos de JavaScript.
   if(['TextArea'].includes(s.name)&&!s.events.some(e=>e.name==='onChange'))s.events.push({name:'onChange',kind:'event',path:['onChange']});
   if(s.name==='Link'&&!s.events.some(e=>e.name==='onClick'))s.events.push({name:'onClick',kind:'event',path:['onClick']});
-  if(s.name==='Stepper'){add({name:'value',path:['value'],key:'initialValue',kind:'number'});s.events.push({name:'onChange',kind:'event',path:['onChange']});}
   const topObjects=[...new Set(s.descriptors.filter(d=>d.path.length>1&&!d.path[0].startsWith('$')).map(d=>d.path[0]))];
   for(const object of topObjects){
    const control='enable'+Buffer.from(object).toString('hex');
@@ -55,7 +57,7 @@ export function curate(schema,partial,samples){
    if(generic.has(f.name)){
     f.label=({actionLink:'Destino padrão',actionTarget:'Abrir destino padrão em',accessibleLabel:'Nome acessível (opcional)',triggerLabel:'Texto do acionador'})[f.name];
     if(['actionLink','actionTarget'].includes(f.name)&&!actions.length&&s.name!=='Link')f.hidden=true;
-    if(f.name==='triggerLabel'&&!['BottomSheet','BottomSheetCountry','Snackbar'].includes(s.name))f.hidden=true;
+    if(f.name==='triggerLabel'&&!['BottomSheet','BottomSheetCountry','Snackbar','ModalDialog','SideSheet','MenuPopup','TooltipDescription'].includes(s.name))f.hidden=true;
    }
   }
   for(const e of actions){const code=Buffer.from(e.path.join('.')).toString('hex');
@@ -66,23 +68,22 @@ export function curate(schema,partial,samples){
     add(d,f);
    }
   }
-  if(['BottomSheet','BottomSheetCountry','Snackbar'].includes(s.name)){
+  if(['BottomSheet','BottomSheetCountry','Snackbar','ModalDialog','SideSheet','MenuPopup','TooltipDescription'].includes(s.name)){
    add({name:'overlayId',path:['$overlayId'],key:'overlayId',kind:'string'}, {component:'text',name:'overlayId',label:'Identificador do painel',valueType:'string',description:'Use o mesmo identificador na ação que abre este painel.'});
    add({name:'showTrigger',path:['$showTrigger'],key:'showTrigger',kind:'boolean'},field({key:'showTrigger',path:['Exibir botão de abertura'],kind:'boolean'}));
   }
-  if(s.name==='FloatingActionButton')add({name:'placement',path:['$placement'],key:'placement',kind:'enum',values:['floating','inline']},choice('placement','Posicionamento',['floating','inline']));
   if(s.name==='DatePicker')add({name:'defaultDate',path:['$defaultDate'],key:'defaultDate',kind:'string'},{component:'text',name:'defaultDate',label:'Data inicial única',valueType:'string',validation:{regExp:'^$|^\\d{4}-\\d{2}-\\d{2}$'},description:'AAAA-MM-DD; usada somente no modo de data única.'});
   const collections=[];
   if(s.item)collections.push({id:s.item.property,path:[s.item.property],...s.item,primary:true});
-  for(const d of s.descriptors.filter(d=>['array','json'].includes(d.kind))){
+  for(const d of s.descriptors.filter(d=>d.kind==='array')){
    let spec=d.item||{kind:'string'};
    if(d.path[0]==='$options')spec={kind:'object',fields:[{name:'label',kind:'string'},{name:'value',kind:'string'},{name:'disabled',kind:'boolean'}]};
    const descriptors=spec.kind==='object'?leaves(spec.fields||[]):[{name:'value',path:['value'],key:key(['value']),kind:spec.kind||'string'}];
-   collections.push({id:d.path.join('.'),path:d.path,property:d.path.join('.'),primitive:spec.kind!=='object',descriptors,events:[],maxItems:d.name==='hints'?3:undefined});
+   collections.push({id:d.path.join('.'),path:d.path,property:d.path.join('.'),primitive:spec.kind!=='object',descriptors,events:spec.kind==='object'?collectEvents(spec.fields||[]):[],maxItems:d.name==='hints'?3:undefined});
    const f=model.fields.find(f=>f.name===d.key);if(f){f.hidden=true;f.description='Representação interna da coleção; edite pelos itens do componente.';}
   }
   // Conteúdo composto: itens tipados, sem contêineres arbitrários incompatíveis com XWalk.
-  const slots=s.descriptors.filter(d=>['Card','Accordion','BottomSheet','Widget','FeedbackScreen','Banner'].includes(s.name)&&d.kind==='slot'&&d.path.length===1&&['children','slot','webContent'].includes(d.name));
+  const slots=s.descriptors.filter(d=>['Card','Accordion','BottomSheet','Widget','FeedbackScreen','Banner','ModalDialog','SideSheet','Panel'].includes(s.name)&&d.kind==='slot'&&d.path.length===1&&['children','slot','webContent'].includes(d.name));
   for(const d of slots){collections.push({id:'content:'+d.path.join('.'),path:d.path,composition:true,primitive:false,events:[],descriptors:[
    {name:'kind',path:['kind'],key:'contentKind',kind:'enum',values:['text','image','button','divider','card']},
    {name:'body',path:['body'],key:'contentBody',kind:'slot'},
@@ -118,7 +119,9 @@ export function curate(schema,partial,samples){
    s.collections=collections;s.item={model:modelId,property:collections[0].property||collections[0].id,descriptors:collections[0].descriptors,events:collections[0].events||[],primitive:collections[0].primitive};
   }
   for(const f of model.fields){const d=s.descriptors.find(d=>d.key===f.name);if(d?.path.length===1&&!d.path[0].startsWith('$')&&!['array','json','slot'].includes(d.kind)&&sample?.properties[f.name]!==undefined){f.value=sample.properties[f.name];tmpl[f.name]=f.value;}}
-  if(s.name.startsWith('Chart')||['Select','InputCountry','BottomSheetCountry'].includes(s.name)){
+  // Required insertion defaults follow the upstream contract, including nested button content.
+  for(const f of model.fields){const d=s.descriptors.find(d=>d.key===f.name);if(d&&((s.name==='ListItemAction'&&d.path[0]==='trailingProps')||(s.name==='Pagination'&&d.path[0]==='pageSizeOptions'))&&sample?.properties[f.name]!==undefined){f.value=sample.properties[f.name];tmpl[f.name]=f.value;}}
+  if(s.name.startsWith('Chart')||['InputCountry','BottomSheetCountry'].includes(s.name)){
    add({name:'dataSource',path:['$dataSource'],key:'dataSource',kind:'string'},{name:'dataSource',label:'Fonte de dados cadastrada (opcional)',component:'text',valueType:'string',description:'Identificador definido pelo time técnico. Em branco, utiliza os itens editáveis.'});
    add({name:'dataParameter',path:['$dataParameter'],key:'dataParameter',kind:'string'},{name:'dataParameter',label:'Parâmetro da fonte',component:'text',valueType:'string',condition:{'!!':{var:'dataSource'}}});
   }

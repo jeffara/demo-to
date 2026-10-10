@@ -13,6 +13,13 @@ type MaskToInputType = {
 };
 type ConditionalInputType<M extends MaskType | string | undefined> = M extends undefined ? InputType | string : M extends keyof MaskToInputType ? MaskToInputType[M] | string : never;
 export type InputState = `${STATE.ERROR}` | `${STATE.SKELETON}` | `${STATE.LOADING}` | `${STATE.ENABLED}` | `${STATE.DISABLED}` | `${STATE.READ_ONLY}` | `${STATE.SUCCESS}`;
+export type InputFieldScalar = string | number;
+export type InputFieldValue = InputFieldScalar | readonly string[];
+export type ResolvedInputValueProps = {
+    value: InputFieldValue;
+} | {
+    defaultValue: InputFieldValue;
+};
 export type UpTo3<T> = [] | [T] | [T, T] | [T, T, T];
 export interface PickerRange {
     start: string;
@@ -57,6 +64,8 @@ export type InputPropsBase = {
     showFlag?: boolean;
     showClear?: boolean;
     showContent?: boolean;
+    /** Uso interno do Select desktop (`hideLabelWhenFilled`); não documentar como API de formulário genérica. */
+    suppressVisualLabel?: boolean;
     showForceBar?: boolean;
     forceBar?: ForceBarProps;
     flag?: FlagName;
@@ -67,6 +76,7 @@ export type InputPropsBase = {
     phoneType?: PhoneTypeValue;
     dateType?: DateType;
     pickerRange?: PickerRange;
+    suppressNativeDatePicker?: boolean;
     onTag?: (data: TagProps) => void;
     ['data-testid']?: string;
     /**

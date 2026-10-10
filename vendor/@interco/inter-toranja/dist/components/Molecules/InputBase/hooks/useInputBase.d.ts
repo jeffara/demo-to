@@ -16,6 +16,7 @@ interface UseInputBaseResult {
     isSuccess: boolean;
     isReadOnly: boolean;
     isTypeSearch: boolean;
+    containerClassName: string;
     handleInputContainerFocusOut: (event: FocusEvent<HTMLDivElement>) => void;
 }
 export declare const useInputBase: <M extends string | undefined = undefined>(props: InputProps<M>) => UseInputBaseResult;

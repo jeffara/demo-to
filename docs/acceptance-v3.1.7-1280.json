@@ -1,0 +1,101 @@
+{
+  "scope": "Testes locais em Chromium, com eventos Universal Editor simulados. Sem validação remota autenticada.",
+  "tests": [
+    {
+      "name": "Rotas /, /index e /index.html convergem para a home local",
+      "pass": true
+    },
+    {
+      "name": "Todas as páginas importáveis têm rota local válida",
+      "pass": true
+    },
+    {
+      "name": "Links internos, externos, âncoras, downloads e URLs inseguras",
+      "pass": true
+    },
+    {
+      "name": "Checkbox alterna valor",
+      "pass": true
+    },
+    {
+      "name": "Switch alterna valor",
+      "pass": true
+    },
+    {
+      "name": "Radio seleciona opção",
+      "pass": true
+    },
+    {
+      "name": "InputText aceita edição",
+      "pass": true
+    },
+    {
+      "name": "InputMoney incrementa e respeita limite",
+      "pass": true
+    },
+    {
+      "name": "Stepper incrementa",
+      "pass": true
+    },
+    {
+      "name": "InputPassword permite digitar e alternar visibilidade",
+      "pass": true
+    },
+    {
+      "name": "Select oficial apresenta valor e dispara ação configurada",
+      "pass": true
+    },
+    {
+      "name": "Accordion expande conteúdo",
+      "pass": true
+    },
+    {
+      "name": "Tabs seleciona outra aba",
+      "pass": true
+    },
+    {
+      "name": "Tabs oficial seleciona por Enter",
+      "pass": true
+    },
+    {
+      "name": "SegmentedControl responde à seleção",
+      "pass": true
+    },
+    {
+      "name": "BottomSheet abre e fecha",
+      "pass": true
+    },
+    {
+      "name": "Snackbar abre e fecha",
+      "pass": true
+    },
+    {
+      "name": "PinCode aceita código completo",
+      "pass": true
+    },
+    {
+      "name": "Botão respeita disabled",
+      "pass": true
+    },
+    {
+      "name": "Link externo preserva destino e nova aba",
+      "pass": true
+    },
+    {
+      "name": "Link desabilitado não oferece navegação",
+      "pass": true
+    },
+    {
+      "name": "Bloco novo sem itens não quebra a página",
+      "pass": true
+    },
+    {
+      "name": "UE: alteração de propriedade redecorada sem perder recurso",
+      "pass": true
+    },
+    {
+      "name": "UE: incluir, reordenar e remover itens",
+      "pass": true
+    }
+  ]
+}

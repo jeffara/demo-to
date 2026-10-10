@@ -2,10 +2,10 @@ import React,{useState,useRef,useEffect} from 'react';
 import {createRoot} from 'react-dom/client';
 import {flushSync} from 'react-dom';
 import * as DS from '../vendor/@interco/inter-toranja/dist/components.js';
-import {Select,Stepper} from './ds-compat.jsx';
+import {Select,Stepper} from './form-controls.jsx';
 import {hasIntegration,runIntegration} from '../scripts/integrations.js';
 export function validCPF(value){const s=String(value||'').replace(/\D/g,'');if(s.length!==11||/^(\d)\1+$/.test(s))return false;for(let n=9;n<11;n++){let sum=0;for(let i=0;i<n;i++)sum+=Number(s[i])*(n+1-i);const digit=(sum*10)%11%10;if(digit!==Number(s[n]))return false;}return true;}
-const initial=f=>f.kind==='checkbox'||f.kind==='switch'?f.defaultValue===true||f.defaultValue==='true':f.defaultValue??'';
+const initial=f=>f.kind==='stepper'?Number(f.min||0):f.kind==='checkbox'||f.kind==='switch'?f.defaultValue===true||f.defaultValue==='true':f.defaultValue??'';
 const shown=(f,values)=>!f.showWhenField||(f.showWhenOperator==='notEquals'?String(values[f.showWhenField])!==f.showWhenValue:String(values[f.showWhenField])===f.showWhenValue);
 function validate(f,value){
  if(f.required&&(value===''||value==null||value===false))return f.errorMessage||'Preencha este campo.';
@@ -55,7 +55,7 @@ function Form({config,host}){
    else control=<DS.InputText {...props} type={['email','tel','number','date'].includes(f.kind)?f.kind:'text'} mask={f.kind==='cpf'?'cpf':undefined}/>;
    return <div key={f.fieldName+'-'+generation} className="form-group" data-invalid={!!error} {...attrs}>{['checkbox','switch','stepper','money'].includes(f.kind)&&<label>{f.label}</label>}{control}<small id={id+'-message'} className={error?'form-error':''} role={error?'alert':undefined}>{error||f.hint}</small></div>;
   })}</div>
-  {config.consent&&<label className="checkbox-label"><input type="checkbox" checked={!!values.consent} onChange={e=>setValues(v=>({...v,consent:e.target.checked}))} required/><span>{consentContent(config.consentHTML||config.consent)}</span><span role="alert">{errors.consent}</span></label>}
+  {config.consent&&<div className="checkbox-label"><DS.Checkbox checked={!!values.consent} onChange={checked=>setValues(v=>({...v,consent:checked}))} aria-label="Aceitar consentimento" state="enabled"/><span>{consentContent(config.consentHTML||config.consent)}</span><span role="alert">{errors.consent}</span></div>}
   <DS.Button type="submit" label={config.submitLabel||'Enviar'} state={busy?'loading':'enabled'} disabled={busy||duplicate} />
   <div className="form-status" role="status" aria-live="polite">{status}</div>
  </form>;

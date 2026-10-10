@@ -1,0 +1,77 @@
+{
+  "version": "4.0.0",
+  "scope": "Functional, package, mapping, upstream integrity and computed styles; performance recorded separately.",
+  "reports": [
+    {
+      "report": "validation-v4.0.0-393.json",
+      "checks": 73,
+      "pass": true
+    },
+    {
+      "report": "acceptance-v4.0.0-1280.json",
+      "checks": 24,
+      "pass": true
+    },
+    {
+      "report": "adapter-integration-v4.0.0-393.json",
+      "checks": 16,
+      "pass": true
+    },
+    {
+      "report": "baseline-v4.0.0-393.json",
+      "checks": 134,
+      "pass": true
+    },
+    {
+      "report": "v3-content-v4.0.0-393.json",
+      "checks": 89,
+      "pass": true
+    },
+    {
+      "report": "typography-v4.0.0-1280.json",
+      "checks": 11,
+      "pass": true
+    },
+    {
+      "report": "toranja-v2-validation-393.json",
+      "checks": 11,
+      "pass": true
+    },
+    {
+      "report": "toranja-v2-validation-1440.json",
+      "checks": 11,
+      "pass": true
+    },
+    {
+      "report": "official-parity-v4.0.0.json",
+      "checks": 88,
+      "pass": true
+    },
+    {
+      "report": "baseline-package-validation.json",
+      "checks": 6,
+      "pass": true
+    },
+    {
+      "report": "property-model-validation.json",
+      "checks": null,
+      "pass": true
+    },
+    {
+      "report": "package-audit.json",
+      "checks": 9,
+      "pass": true
+    },
+    {
+      "report": "compliance-v4.0.0.json",
+      "checks": null,
+      "pass": true
+    },
+    {
+      "report": "deployment-files-v4.0.0.json",
+      "checks": null,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

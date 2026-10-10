@@ -21,7 +21,8 @@ export declare function getInputLabelClassName({ isReadOnly, hasFlag, isFocused,
     isFocused?: boolean;
     hasValue?: boolean;
 }): string;
-export declare function getContainerClassName({ isTypeSearch }: {
+export declare function getContainerClassName({ isTypeSearch, suppressVisualLabel, }: {
     isTypeSearch: boolean;
+    suppressVisualLabel?: boolean;
 }): string;
 export declare function getFieldSetClassName(isSkeleton: boolean): string;

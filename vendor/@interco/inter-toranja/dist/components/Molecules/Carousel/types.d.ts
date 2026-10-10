@@ -22,7 +22,7 @@ interface CarouselPropsBase {
     snapToGrid?: boolean;
     /**
      * Define o espaçamento horizontal em pixels entre os slides.
-     * @default 0
+     * @default 8
      */
     pageSpacing?: number;
     /**

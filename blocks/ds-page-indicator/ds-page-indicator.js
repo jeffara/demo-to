@@ -1,2 +1,3 @@
-import { mountDS } from '../../scripts/ds-adapter.js';
-export default block => mountDS(block, 'ds-page-indicator');
+import {mountDS} from '../../scripts/page.js';
+const schema={"name":"PageIndicator","descriptors":[{"name":"items","kind":"number","path":["items"],"key":"p6974656d73"},{"name":"selected","kind":"number","path":["selected"],"key":"p73656c6563746564"},{"name":"actionLink","path":["$actionLink"],"key":"actionLink","kind":"link"},{"name":"actionTarget","path":["$actionTarget"],"key":"actionTarget","kind":"enum"},{"name":"accessibleLabel","path":["$accessibleLabel"],"key":"accessibleLabel","kind":"string"},{"name":"triggerLabel","path":["$triggerLabel"],"key":"triggerLabel","kind":"string"},{"name":"editorMode","path":["$editorMode"],"key":"editorMode","kind":"enum"}],"events":[],"technical":[],"collections":[],"version":3,"cellNames":["schemaVersion","p6974656d73","p73656c6563746564","actionLink","actionTarget","accessibleLabel","triggerLabel","editorMode"],"itemCellNames":[]};
+export default block=>mountDS(block,'ds-page-indicator',schema);

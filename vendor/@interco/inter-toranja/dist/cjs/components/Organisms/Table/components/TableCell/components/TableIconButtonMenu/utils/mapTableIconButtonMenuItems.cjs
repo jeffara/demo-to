@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=l=>{const n=l.map(e=>({id:e.id,label:e.label,icon:e.icon,disabled:e.disabled,onClick:e.onSelect}));return[n[0],...n.slice(1)]};exports.mapTableIconButtonMenuItems=o;

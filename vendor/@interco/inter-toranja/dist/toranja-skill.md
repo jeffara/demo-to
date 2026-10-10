@@ -19,6 +19,7 @@ Para implementar um componente específico, leia o skill individual antes de esc
 - [Badge](components/badge.md) — BadgeProps
 - [Banner](components/banner.md) — BannerContentProps, BannerProps
 - [BottomSheet](components/bottom-sheet.md) — BottomSheetProps
+- [Breadcrumb](components/breadcrumb.md) — BreadcrumbItem, BreadcrumbProps
 - [Button](components/button.md) — IconChipProps, NeutralIconButtonProps
 - [Card](components/card.md) — CardProps
 - [Carousel](components/carousel.md) — CarouselProps
@@ -27,7 +28,6 @@ Para implementar um componente específico, leia o skill individual antes de esc
 - [Counter](components/counter.md) — CounterProps
 - [CrossSelling](components/cross-selling.md) — CrossSellingProps
 - [Flag](components/flag.md) — FlagProps
-- [Header](components/header.md) — HeaderIconSlot, HeaderProps
 - [Hints](components/hints.md) — HintsProps
 - [Icon](components/icon.md) — IconName, IconProps
 - [Image](components/image.md) — ImageProps
@@ -42,6 +42,7 @@ Para implementar um componente específico, leia o skill individual antes de esc
 - [ListItemGeneral](components/list-item-general.md) — ListItemGeneralProps
 - [ListItemView](components/list-item-view.md) — ListItemViewProps
 - [MenuItem](components/menu-item.md) — MenuItemProps
+- [ModalDialog](components/modal-dialog.md) — ModalDialogProps
 - [PageIndicator](components/page-indicator.md) — PageIndicatorProps
 - [PaymentMethods](components/payment-methods.md) — IconPaymentProps, PaymentMethodsProps
 - [PinCode](components/pin-code.md) — PinCodeInputState, PinCodeProps
@@ -51,9 +52,11 @@ Para implementar um componente específico, leia o skill individual antes de esc
 - [SectionSubtitle](components/section-subtitle.md) — SectionSubtitleProps
 - [SectionTitle](components/section-title.md) — SectionTitleProps
 - [SegmentedControl](components/segmented-control.md) — SegmentedControlProps
+- [SideSheet](components/side-sheet.md) — SideSheetProps
 - [Signal](components/signal.md) — SignalProps
 - [Snackbar](components/snackbar.md) — SnackbarProps
 - [Switch](components/switch.md) — SwitchProps
+- [Table](components/table.md) — ColumnDef, TableProps, TableToolbarProps
 - [Tabs](components/tabs.md) — TabsProps
 - [Tag](components/tag.md) — TagProps
 - [Text](components/text.md) — TextProps
@@ -62,10 +65,10 @@ Para implementar um componente específico, leia o skill individual antes de esc
 - [Widget](components/widget.md) — WidgetProps
 
 ## Componentes exportados
-Accordion, Alert, Avatar, Badge, Banner, BottomSheet, BottomSheetCountry, Button, Card, Carousel, ChartBar, ChartDonut, ChartLine, ChartMeter, Checkbox, Chip, Counter, CrossSelling, DatePicker, DecoratedText, Divider, FeedbackScreen, Flag, FloatingActionButton, Header, Icon, ICON_NAMES, IconButton, IconChip, Image, InputCountry, InputDate, InputMoney, InputPassword, InputSearch, InputText, isIconName, Link, ListItem, ListItemAction, ListItemControl, ListItemGeneral, ListItemView, MenuItem, NeutralIconButton, PageIndicator, PaymentMethods, PinCode, ProgressBar, ProgressCircle, Radio, SectionSubtitle, SectionTitle, SegmentedControl, Select, Signal, Snackbar, Spinner, Stepper, Switch, Tabs, Tag, Text, TextArea, Timeline, Widget
+Accordion, Alert, Avatar, Badge, Banner, BottomSheet, BottomSheetCountry, Breadcrumb, Button, Card, Carousel, ChartBar, ChartDonut, ChartLine, ChartMeter, Checkbox, Chip, Counter, CrossSelling, DatePicker, DecoratedText, Divider, FeedbackScreen, Flag, FloatingActionButton, Header, Icon, ICON_NAMES, IconButton, IconChip, Image, InputCountry, InputDate, InputMoney, InputPassword, InputSearch, InputText, isIconName, Link, ListItem, ListItemAction, ListItemControl, ListItemGeneral, ListItemView, MenuItem, MenuPopup, ModalDialog, NeutralIconButton, PageIndicator, Pagination, Panel, PaymentMethods, PinCode, ProgressBar, ProgressCircle, Radio, SectionSubtitle, SectionTitle, SegmentedControl, Select, Sidebar, SideSheet, Signal, Snackbar, Spinner, Stepper, Switch, Table, Tabs, Tag, Text, TextArea, Timeline, TooltipDescription, Widget
 
 ## Tipos exportados
-AccordionProps, AlertConfig, AlertProps, AvatarProps, BadgeProps, BannerContentProps, BannerProps, BottomSheetCountryItem, BottomSheetCountryProps, BottomSheetProps, ButtonConfig, ButtonState, ButtonType, CalendarCellType, CardProps, CarouselProps, ChartColor, ChartLineHighlight, ChartLineHighlightPoint, ChartLineProps, ChartLineSeries, ChartLineSize, ChartLineState, ChartLineYAxisPosition, ChartMeterProps, ChartMeterState, ChartPalette, CheckboxProps, ChipProps, ContentItemConfig, CounterProps, CrossSellingProps, DatePickerProps, DatePickerSelectionMode, DateRange, DecoratedTextProps, FeedbackScreenProps, FlagProps, FloatingActionButtonBehavior, FloatingActionButtonHierarchy, FloatingActionButtonProps, FloatingActionButtonSize, FloatingActionButtonState, FloatingActionButtonVariant, HeaderIconSlot, HeaderProps, HintsProps, IconButtonProps, IconChipProps, IconName, IconPaymentProps, IconProps, ImageProps, InputCountryOption, InputCountryProps, InputCountryState, InputDateProps, InputModeType, InputMoneyProps, InputPasswordProps, InputProps, InputPropsBase, InputSearchProps, InputState, LinkColor, LinkProps, LinkSize, LinkTriggers, ListItemActionProps, ListItemControlProps, ListItemGeneralProps, ListItemProps, ListItemViewProps, MenuItemProps, NeutralIconButtonProps, NonDestructiveStyleType, PageIndicatorProps, PaymentMethodsProps, PinCodeInputState, PinCodeProps, ProgressBarProps, RadioButtonProps, RegularButtonProps, SectionSubtitleProps, SectionTitleProps, SegmentedControlProps, SignalProps, SnackbarProps, SpinnerProps, SwitchProps, TabsProps, TagProps, TextareaProps, TextColorToken, TextProps, TimelineProps, TypographyToken, ValueBuilder, WidgetProps
+AccordionProps, AlertConfig, AlertProps, AvatarProps, BadgeProps, BannerContentProps, BannerProps, BottomSheetCountryItem, BottomSheetCountryProps, BottomSheetProps, BreadcrumbItem, BreadcrumbProps, ButtonConfig, ButtonState, ButtonType, CalendarCellType, CardProps, CarouselProps, ChartColor, ChartLineHighlight, ChartLineHighlightPoint, ChartLineProps, ChartLineSeries, ChartLineSize, ChartLineState, ChartLineYAxisPosition, ChartMeterProps, ChartMeterState, ChartPalette, CheckboxProps, ChipProps, ColumnDef, ContentItemConfig, CounterProps, CrossSellingProps, DatePickerProps, DatePickerSelectionMode, DateRange, DecoratedTextProps, FeedbackScreenProps, FlagProps, FloatingActionButtonBehavior, FloatingActionButtonHierarchy, FloatingActionButtonProps, FloatingActionButtonSize, FloatingActionButtonState, FloatingActionButtonVariant, HeaderBackground, HeaderIconSlot, HeaderProps, HintsProps, IconButtonProps, IconChipProps, IconName, IconPaymentProps, IconProps, ImageProps, InputCountryOption, InputCountryProps, InputCountryState, InputDateProps, InputModeType, InputMoneyProps, InputPasswordProps, InputProps, InputPropsBase, InputSearchProps, InputState, LinkColor, LinkProps, LinkSize, LinkTriggers, ListItemActionProps, ListItemControlProps, ListItemGeneralProps, ListItemProps, ListItemViewProps, MenuItemProps, MenuPopupItem, MenuPopupPlacement, MenuPopupProps, MenuPopupSize, ModalDialogProps, NeutralIconButtonProps, NonDestructiveStyleType, PageIndicatorProps, PaymentMethodsProps, PinCodeInputState, PinCodeProps, ProgressBarProps, RadioButtonProps, RegularButtonProps, SectionSubtitleProps, SectionTitleProps, SegmentedControlProps, SidebarBrand, SidebarBrandPreset, SidebarChildItem, SidebarCustomBrand, SidebarExpansion, SidebarFooterAction, SidebarItem, SidebarItems, SidebarProps, SideSheetProps, SignalProps, SnackbarProps, SpinnerProps, SwitchProps, TableProps, TableToolbarProps, TabsProps, TagProps, TextareaProps, TextColorToken, TextProps, TimelineProps, TooltipDescriptionAlign, TooltipDescriptionHierarchy, TooltipDescriptionPlacement, TooltipDescriptionProps, TypographyToken, ValueBuilder, WidgetProps
 
 ## Tokens globais
 - --border-width-medium: 2px

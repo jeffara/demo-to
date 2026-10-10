@@ -1,0 +1,621 @@
+{
+  "scope": "Direct upstream 2.0.1 bundle versus EDS adapter; computed CSS for critical and changed components across 4 themes and 2 widths; not exhaustive combinations.",
+  "checks": [
+    {
+      "name": "Button",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 393,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 9
+    },
+    {
+      "name": "Button",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 393,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 9
+    },
+    {
+      "name": "Button",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 393,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 9
+    },
+    {
+      "name": "Button",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 393,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 9
+    },
+    {
+      "name": "Button",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 1440,
+      "theme": "pf-light",
+      "pass": true,
+      "nodes": 9
+    },
+    {
+      "name": "Button",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 1440,
+      "theme": "pf-dark",
+      "pass": true,
+      "nodes": 9
+    },
+    {
+      "name": "Button",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 1440,
+      "theme": "pj-light",
+      "pass": true,
+      "nodes": 9
+    },
+    {
+      "name": "Button",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 3
+    },
+    {
+      "name": "Text",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "Link",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 1
+    },
+    {
+      "name": "InputText",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "InputPassword",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Select",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 12
+    },
+    {
+      "name": "Stepper",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 14
+    },
+    {
+      "name": "SectionSubtitle",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 5
+    },
+    {
+      "name": "SegmentedControl",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 8
+    },
+    {
+      "name": "Pagination",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 29
+    },
+    {
+      "name": "Breadcrumb",
+      "width": 1440,
+      "theme": "pj-dark",
+      "pass": true,
+      "nodes": 9
+    }
+  ]
+}

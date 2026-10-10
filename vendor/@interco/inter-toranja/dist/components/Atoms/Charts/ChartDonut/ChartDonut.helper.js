@@ -1,36 +1,36 @@
-import { formatDisplayValue as I, maskValue as b, getChartPaletteColors as y, DEFAULT_CHART_PALETTE as C } from "../shared/chart.helper.js";
-const h = 16, T = 1.5, a = 6, A = 1, R = "Outros", D = 0.78, N = 216, S = N / 2, O = Math.round(S * (1 - D)), E = S - O / 2, _ = {
-  viewBoxSize: N,
-  center: S,
+import { formatDisplayValue as I, maskValue as O, getChartPaletteColors as T, DEFAULT_CHART_PALETTE as b } from "../shared/chart.helper.js";
+const _ = 16, y = 1.5, a = 6, D = 1, R = "Outros", A = 0.78, C = 216, h = C / 2, N = Math.round(h * (1 - A)), E = h - N / 2, S = {
+  viewBoxSize: C,
+  center: h,
   radius: E,
-  strokeWidth: O,
+  strokeWidth: N,
   circumference: Number((2 * Math.PI * E).toFixed(0)),
   centerTextWidth: 136,
   centerTextHeight: 40,
-  sliceStartTransform: `rotate(-90 ${S} ${S})`
-}, Z = 10, L = "R$", g = (e) => e.trimStart().startsWith(L), P = (e, r) => typeof e == "string" ? g(e) : !!(r != null && r.prefix && g(r.prefix)), M = (e) => {
+  sliceStartTransform: `rotate(-90 ${h} ${h})`
+}, Z = (e) => Math.round(e * (S.centerTextWidth / S.viewBoxSize)), V = 10, L = "R$", g = (e) => e.trimStart().startsWith(L), M = (e, r) => typeof e == "string" ? g(e) : !!(r != null && r.prefix && g(r.prefix)), P = (e) => {
   const t = e.replace(/R\$\s*/g, "").trim().replace(/\./g, "").replace(",", "."), n = Number.parseFloat(t);
   return Number.isFinite(n) ? n : null;
-}, w = (e) => e.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }).replace(/\u00a0/g, " "), V = (e, r, t, n = !1) => {
-  if (!P(e, t) || e === void 0)
+}, w = (e) => e.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }).replace(/\u00a0/g, " "), K = (e, r, t, n = !1) => {
+  if (!M(e, t) || e === void 0)
     return;
   if (typeof e == "number")
     return I(r / 100 * e, t, n);
-  const s = M(e);
+  const s = P(e);
   if (s === null)
     return;
   const c = w(r / 100 * s);
-  return n ? b(c) : c;
+  return n ? O(c) : c;
 };
-function K(e, r) {
+function Y(e, r) {
   return !e || !r || e.length !== r.length ? !1 : e.every((t, n) => t === r[n]);
 }
-const Y = (e) => e / h > T, q = () => {
+const q = (e) => e / _ > y, G = () => {
   if (typeof document > "u")
-    return h;
+    return _;
   const e = Number.parseFloat(getComputedStyle(document.documentElement).fontSize);
-  return Number.isFinite(e) ? e : h;
-}, F = (e) => `${e / 100 * _.circumference} ${_.circumference}`, z = (e) => -(e / 100 * _.circumference), U = (e, r, t) => {
+  return Number.isFinite(e) ? e : _;
+}, F = (e) => `${e / 100 * S.circumference} ${S.circumference}`, z = (e) => -(e / 100 * S.circumference), x = (e, r, t) => {
   const n = e.length > a;
   if (!n)
     return { slice: e, label: r, value: t, hasOverflow: n };
@@ -47,16 +47,16 @@ const Y = (e) => e / h > T, q = () => {
     ],
     hasOverflow: !0
   };
-}, v = (e) => e === R, $ = (e, r, t) => e === void 0 || !Number.isInteger(e) ? !1 : e >= 0 && e <= r && !t.has(e), B = (e, r) => r.slice !== e.slice ? r.slice - e.slice : e.originalIndex - r.originalIndex, H = (e, r, t) => {
+}, v = (e) => e === R, U = (e, r, t) => e === void 0 || !Number.isInteger(e) ? !1 : e >= 0 && e <= r && !t.has(e), W = (e, r) => r.slice !== e.slice ? r.slice - e.slice : e.originalIndex - r.originalIndex, $ = (e, r, t) => {
   const n = /* @__PURE__ */ new Set(), s = /* @__PURE__ */ new Map(), c = [];
   e.forEach((o) => {
     const u = r == null ? void 0 : r[o.originalIndex];
-    if (!$(u, t, n)) {
+    if (!U(u, t, n)) {
       c.push(o);
       return;
     }
     n.add(u), s.set(u, o);
-  }), c.sort(B);
+  }), c.sort(W);
   const i = [];
   let l = 0;
   return e.forEach((o, u) => {
@@ -68,12 +68,12 @@ const Y = (e) => e / h > T, q = () => {
     const p = c[l];
     p && (i.push(p), l += 1);
   }), i;
-}, W = (e, r) => ({
+}, B = (e, r) => ({
   slice: e.map((t) => t.slice),
   label: e.map((t) => t.label),
   value: e.map((t) => t.value),
   forceColor: r ? e.map((t) => r[t.originalIndex]) : void 0
-}), X = ({
+}), H = ({
   slice: e,
   label: r,
   value: t,
@@ -85,21 +85,21 @@ const Y = (e) => e / h > T, q = () => {
     slice: f,
     label: r[d] ?? "",
     value: t[d] ?? f
-  })), i = c.filter((f) => !v(f.label)), l = c.filter((f) => v(f.label)), u = e.length > a ? a - 1 : i.length, m = Math.min(i.length, u) - 1, p = H(i, n, m);
-  return W([...p, ...l], s);
-}, G = (e) => {
-  const r = X(e), t = U(r.slice, r.label, r.value);
+  })), i = c.filter((f) => !v(f.label)), l = c.filter((f) => v(f.label)), u = e.length > a ? a - 1 : i.length, m = Math.min(i.length, u) - 1, p = $(i, n, m);
+  return B([...p, ...l], s);
+}, j = (e) => {
+  const r = H(e), t = x(r.slice, r.label, r.value);
   return r.forceColor ? {
     ...t,
     forceColor: t.hasOverflow ? r.forceColor.slice(0, a - 1) : r.forceColor
   } : t;
-}, j = (e) => e.map((r) => r > 0 ? Math.max(r, A) : 0), k = ({
+}, J = (e) => e.map((r) => r > 0 ? Math.max(r, D) : 0), X = ({
   index: e,
   hasOverflow: r,
   forceColor: t,
   othersColor: n,
-  palette: s = C
-}) => r && e === a - 1 && n ? n : (t == null ? void 0 : t[e]) ?? y(s)[e] ?? "var(--color-chart-categorical-1)", J = (e, r, t = !1) => e.map((n) => I(n, r, t) ?? ""), Q = (e, r) => r ?? (e ? "vertical" : "horizontal"), ee = (e, r, t, n, s = { hasOverflow: !1 }) => e.slice(0, a).flatMap((l, o) => {
+  palette: s = b
+}) => r && e === a - 1 && n ? n : (t == null ? void 0 : t[e]) ?? T(s)[e] ?? "var(--color-chart-categorical-1)", Q = (e, r, t = !1) => e.map((n) => I(n, r, t) ?? ""), ee = (e, r) => r ?? (e ? "vertical" : "horizontal"), re = (e, r, t, n, s = { hasOverflow: !1 }) => e.slice(0, a).flatMap((l, o) => {
   if (!l)
     return [];
   const u = r.slice(0, o).reduce((f, d) => f + (d ?? 0), 0), m = r[o] ?? 0, p = o + 1;
@@ -109,7 +109,7 @@ const Y = (e) => e / h > T, q = () => {
       percentage: m,
       dashoffset: z(u),
       dasharray: F(m),
-      color: k({ ...s, index: o }),
+      color: X({ ...s, index: o }),
       label: t[o] ?? "",
       value: n[o] ?? "",
       chartClass: `progress-circle__circle progress-circle__circle--slice progress-circle__circle--chart${p}`,
@@ -117,36 +117,37 @@ const Y = (e) => e / h > T, q = () => {
       pointerEvents: "visibleStroke"
     }
   ];
-}).reverse(), re = (e) => [...e].reverse().map((r) => ({
+}).reverse(), te = (e) => [...e].reverse().map((r) => ({
   label: r.label,
   value: r.value,
   color: r.color
 }));
 export {
-  _ as CHART_GEOMETRY,
-  h as DEFAULT_ROOT_FONT_SIZE_PX,
-  T as FONT_BREAK_SCALE,
-  D as INNER_RADIUS_RATIO,
+  S as CHART_GEOMETRY,
+  _ as DEFAULT_ROOT_FONT_SIZE_PX,
+  y as FONT_BREAK_SCALE,
+  A as INNER_RADIUS_RATIO,
   R as LABEL_WHEN_MAX_SLICES_REACHED,
   a as MAX_DONUT_SLICES,
-  Z as MIN_CENTER_VALUE_FONT_SIZE_PX,
-  A as MIN_SLICE_PERCENT,
-  j as applyMinSlicePercent,
-  K as arraysAreEqual,
-  re as buildDonutLegendItems,
-  ee as buildDonutSliceItems,
+  V as MIN_CENTER_VALUE_FONT_SIZE_PX,
+  D as MIN_SLICE_PERCENT,
+  J as applyMinSlicePercent,
+  Y as arraysAreEqual,
+  te as buildDonutLegendItems,
+  re as buildDonutSliceItems,
   w as formatBrazilianCurrency,
-  J as formatDonutValues,
-  V as formatMonetarySliceValue,
-  q as getRootFontSizePx,
-  U as groupOverflowSlices,
-  P as isMonetaryValue,
-  X as orderDonutSlices,
-  M as parseBrazilianCurrency,
-  G as processDonutSlices,
-  k as resolveDonutSliceColor,
-  Q as resolveLegendOrientation,
+  Q as formatDonutValues,
+  K as formatMonetarySliceValue,
+  G as getRootFontSizePx,
+  x as groupOverflowSlices,
+  M as isMonetaryValue,
+  H as orderDonutSlices,
+  P as parseBrazilianCurrency,
+  j as processDonutSlices,
+  Z as resolveChartDonutCenterTextMaxWidth,
+  X as resolveDonutSliceColor,
+  ee as resolveLegendOrientation,
   F as resolveSliceDasharray,
   z as resolveSliceDashoffset,
-  Y as shouldBreakDonutLayout
+  q as shouldBreakDonutLayout
 };

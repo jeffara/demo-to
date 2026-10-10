@@ -1,57 +1,62 @@
-import { useRef as d, useCallback as c, useEffect as v } from "react";
+import { useRef as l, useCallback as s, useEffect as v } from "react";
 import { useClickOutside as S } from "../../BottomSheet/hooks/useClickOutside.js";
-const L = ({
-  monthTitleId: s,
-  openDropdown: t,
-  onCloseDropdown: u,
-  onMonthSelect: l,
-  onYearSelect: f
+const I = ({
+  monthTitleId: u,
+  openDropdown: r,
+  onCloseDropdown: o,
+  onMonthSelect: f,
+  onYearSelect: h
 }) => {
-  const o = d(null), a = `${s}-month`, i = `${s}-year`, R = `${s}-month-dropdown`, k = `${s}-year-dropdown`, C = t === "month", E = t === "year", h = d(null), r = d(!1), m = c(
+  const a = l(null), i = `${u}-month`, d = `${u}-year`, R = `${u}-month-dropdown`, k = `${u}-year-dropdown`, C = r === "month", E = r === "year", p = l(null), n = l(!1), m = s(
     (e) => {
-      var y;
-      const n = e === "month" ? a : i;
-      return ((y = o.current) == null ? void 0 : y.querySelector(`#${CSS.escape(n)}`)) ?? null;
+      var c;
+      const t = e === "month" ? i : d;
+      return ((c = a.current) == null ? void 0 : c.querySelector(`#${CSS.escape(t)}`)) ?? null;
     },
-    [a, i]
-  ), O = c(() => {
-    r.current = !1, u();
-  }, [u]), p = c(() => {
-    r.current = !0, u();
-  }, [u]);
+    [i, d]
+  ), O = s(() => {
+    n.current = !1, o();
+  }, [o]), y = s(() => {
+    n.current = !0, o();
+  }, [o]);
   v(() => {
-    var n;
-    const e = h.current;
-    h.current = t, e && t === null && r.current && ((n = m(e)) == null || n.focus()), r.current = !1;
-  }, [m, t]), S({
-    ref: o,
-    isActive: t !== null,
+    var t;
+    const e = p.current;
+    p.current = r, e && r === null && n.current && ((t = m(e)) == null || t.focus()), n.current = !1;
+  }, [m, r]), S({
+    ref: a,
+    isActive: r !== null,
     onClickOutside: O
   }), v(() => {
-    if (!t)
-      return;
-    const e = (n) => {
-      n.key === "Escape" && p();
+    if (!r)
+      return () => {
+      };
+    const e = a.current;
+    if (!e)
+      return () => {
+      };
+    const t = (c) => {
+      c.key === "Escape" && (c.stopPropagation(), y());
     };
-    return document.addEventListener("keydown", e), () => {
-      document.removeEventListener("keydown", e);
+    return e.addEventListener("keydown", t), () => {
+      e.removeEventListener("keydown", t);
     };
-  }, [p, t]);
-  const $ = c(
+  }, [y, r]);
+  const $ = s(
     (e) => {
-      r.current = !0, l(e);
-    },
-    [l]
-  ), F = c(
-    (e) => {
-      r.current = !0, f(e);
+      n.current = !0, f(e);
     },
     [f]
+  ), F = s(
+    (e) => {
+      n.current = !0, h(e);
+    },
+    [h]
   );
   return {
-    headerRef: o,
-    monthChipId: a,
-    yearChipId: i,
+    headerRef: a,
+    monthChipId: i,
+    yearChipId: d,
     monthDropdownId: R,
     yearDropdownId: k,
     isMonthDropdownOpen: C,
@@ -61,5 +66,5 @@ const L = ({
   };
 };
 export {
-  L as useCalendarHeader
+  I as useCalendarHeader
 };

@@ -17,6 +17,7 @@ export declare const CHART_GEOMETRY: {
     centerTextHeight: number;
     sliceStartTransform: string;
 };
+export declare const resolveChartDonutCenterTextMaxWidth: (chartWidthPx: number) => number;
 export declare const MIN_CENTER_VALUE_FONT_SIZE_PX = 10;
 export declare const isMonetaryValue: (totalValue?: string | number, valueBuilder?: ValueBuilder) => boolean;
 export declare const parseBrazilianCurrency: (value: string) => number | null;

@@ -1,0 +1,4 @@
+import {build} from 'vite';
+import fs from 'node:fs';
+await build({configFile:false,base:'./',define:{'process.env.NODE_ENV':JSON.stringify('production')},build:{outDir:'docs/reference-runtime',emptyOutDir:true,minify:false,cssMinify:false,cssCodeSplit:false,lib:{entry:'src/qa-official.jsx',formats:['es'],fileName:()=> 'reference.js',cssFileName:'reference'},rollupOptions:{output:{manualChunks(id){if(/\/dist\/ic_[^/]+\.js$/.test(id))return 'icons';}}}}});
+fs.writeFileSync('docs/reference-runtime/reference.html','<!doctype html><html toranja-theme="pf-light" toranja-surface="desktop"><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/styles/styles.css"><link rel="stylesheet" href="./reference.css"><script type="module" src="./reference.js"></script></head><body class="appear"><main></main></body></html>');

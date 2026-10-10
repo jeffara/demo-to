@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const f=require("react"),l=({isOpen:t,isRendered:u,controls:a,setIsRendered:i})=>{f.useEffect(()=>{t&&(i(!0),a.start("visible"))},[t,a,i]),f.useEffect(()=>{!t&&u&&a.start("hidden").then(()=>{i(!1)})},[t,u,a,i])};exports.useModalDialogInitialState=l;

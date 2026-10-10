@@ -1,0 +1,1 @@
+:where(.ds-official,.modal-dialog,.menu-popup__panel,.tooltip-description__panel) .payment-methods{justify-content:center;align-items:center;width:fit-content;height:fit-content;display:inline-flex}:where(.ds-official,.modal-dialog,.menu-popup__panel,.tooltip-description__panel) .payment-methods--disabled svg{filter:grayscale();opacity:.4}

@@ -4,7 +4,7 @@ import { TagProps } from '../../../types/shared';
 import { STATE, SIZE } from '../../../utils/pattern';
 export type BannerVariant = `${BANNER_VARIANT}`;
 export type BannerState = Extract<`${STATE}`, 'enabled' | 'skeleton' | 'error'>;
-export type BannerSize = `${SIZE}` | 'extraSmall';
+export type BannerSize = `${SIZE}` | 'extraSmall' | 'column4';
 export type ImgState = `${IMG_STATE}`;
 export interface BannerContentProps {
     state: BannerState;

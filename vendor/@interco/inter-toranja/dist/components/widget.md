@@ -6,7 +6,7 @@ description: Tipos e props do componente Widget do @interco/inter-toranja.
 # Widget
 
 **Categoria:** Molecules
-**Versão:** 1.1.1 (28/01/2025)
+**Versão:** 1.2.0 (04/09/2026)
 **Importação:**
 ```tsx
 import { Widget } from '@interco/inter-toranja'

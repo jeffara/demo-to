@@ -1,7 +1,7 @@
 import { getDefaultExportFromCjs as r } from "./_commonjsHelpers.js";
-import { __require as o } from "../node_modules/strip-literal/node_modules/js-tokens/index.js";
-var e = /* @__PURE__ */ o();
-const a = /* @__PURE__ */ r(e);
+import { __require as e } from "../node_modules/redent/index.js";
+var t = /* @__PURE__ */ e();
+const m = /* @__PURE__ */ r(t);
 export {
-  a as default
+  m as default
 };

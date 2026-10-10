@@ -39,7 +39,7 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 | Prop | Descrição | Valores aceitos | Padrão |
 |------|-----------|-----------------|--------|
 | state | Estado visual da Timeline | — | TimelineStateEnum.ENABLED |
-| items | Array de etapas da Timeline.\n\nCada item pode ser do tipo TimelineItemProps, contendo:\n- title (string): Título da etapa.\n- date? (string): Data/hora da etapa.\n- status (TimelineStepStatusEnum): Status da etapa (SUCCESS, ERROR, WARNING, PENDING, CURRENT, etc).\n- contents (TimelineItemContent[]): Conteúdos exibidos na etapa. Cada conteúdo pode ser:\n - { type: 'AuxiliarText', text: string }\n - { type: 'Button', label: string, onClick: () => void, ... }\n - { type: 'Tag', label: string, color?: string }\n\n - { type: 'Link', label: string, href: string }\n - { type: 'Slot', content: ReactNode }\n- showBottomLine? (boolean): Exibe linha inferior após a etapa. | — | — |
+| items | Array de etapas da Timeline.\n\nCada item pode ser do tipo TimelineItemProps, contendo:\n- title (string): Título da etapa.\n- date? (string): Data/hora da etapa.\n- status (TimelineStepStatusEnum): Status da etapa (SUCCESS, ERROR, WARNING, PENDING, CURRENT, etc).\n- contents (TimelineItemContent[]): Conteúdos exibidos na etapa. Cada conteúdo pode ser:\n - { type: 'AuxiliarText', text: string }\n - { type: 'Button', label: string, onClick: () => void, ... }\n - { type: 'Tag', label: string, color?: string }\n\n - { type: 'Link', label: string, href: string }\n - { type: 'Slot', content: ReactNode }\n- showLine? (boolean): Exibe a linha conectora após a etapa (padrão true). | — | — |
 
 ## Definição de tipos completa
 

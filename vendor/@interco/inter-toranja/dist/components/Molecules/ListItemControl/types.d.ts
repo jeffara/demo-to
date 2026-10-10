@@ -121,14 +121,8 @@ export interface ListItemControlWithSwitchProps extends ListItemControlBaseProps
     trailingVariant: 'switch';
     trailingProps?: SwitchTrailingProps;
 }
-/**
- * ListItemControl without trailing
- */
 export interface ListItemControlWithoutTrailingProps extends ListItemControlBaseProps {
     trailingVariant?: never;
     trailingProps?: never;
 }
-/**
- * ListItemControl props (discriminated union)
- */
 export type ListItemControlProps = ListItemControlWithCheckboxProps | ListItemControlWithRadioProps | ListItemControlWithStepperProps | ListItemControlWithSwitchProps | ListItemControlWithoutTrailingProps;

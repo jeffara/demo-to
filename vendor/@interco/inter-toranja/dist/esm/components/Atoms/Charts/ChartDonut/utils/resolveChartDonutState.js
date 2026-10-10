@@ -1,49 +1,49 @@
 import { formatDisplayValue as m } from "../../shared/chart.helper.js";
-import { buildDonutSliceItems as E, CHART_GEOMETRY as T, MIN_CENTER_VALUE_FONT_SIZE_PX as h, formatMonetarySliceValue as y } from "../ChartDonut.helper.js";
-import { classNamesMerge as A } from "../../../../../utils/classNamesMerge.js";
-import { SIZE as b, STATE as L } from "../../../../../utils/pattern.js";
-const S = "Gráfico de rosca", d = "var(--color-surface-neutral-default)", _ = "var(--color-surface-disabled)", V = (e, r, t) => {
-  const o = e === b.SMALL, s = r === L.SKELETON || t;
+import { resolveChartDonutCenterTextMaxWidth as E, CHART_GEOMETRY as T, MIN_CENTER_VALUE_FONT_SIZE_PX as y, buildDonutSliceItems as A, formatMonetarySliceValue as b } from "../ChartDonut.helper.js";
+import { classNamesMerge as h } from "../../../../../utils/classNamesMerge.js";
+import { SIZE as d, STATE as L } from "../../../../../utils/pattern.js";
+const C = "Gráfico de rosca", _ = "var(--color-surface-neutral-default)", v = "var(--color-surface-disabled)", p = (e, r, o) => {
+  const t = e === d.SMALL, s = r === L.SKELETON || o;
   return {
-    isSmall: o,
+    isSmall: t,
     isSkeleton: s,
     isInteractive: !s
   };
-}, p = (e, r, t, o) => (e ?? r) && !t && o > 0, N = (e, r, t, o, s, n, c) => {
-  const l = y(
+}, z = (e, r, o, t) => (e ?? r) && !o && t > 0, N = (e, r, o, t, s, n, a) => {
+  const l = b(
     s,
-    o[e] ?? 0,
+    t[e] ?? 0,
     n,
-    c
+    a
   );
   return {
     centerLabel: r[e] ?? "",
-    centerValue: l ?? t[e] ?? ""
+    centerValue: l ?? o[e] ?? ""
   };
-}, z = ({
+}, B = ({
   isSmall: e,
   isSkeleton: r,
-  highlightedIndex: t,
-  labels: o,
+  highlightedIndex: o,
+  labels: t,
   formattedValues: s,
   slices: n,
-  totalLabel: c,
+  totalLabel: a,
   totalValue: l,
   valueBuilder: i,
   isSensitiveText: u
 }) => {
-  const a = !!c, f = !e && !r && (a || l !== void 0), C = m(l, i, u) ?? "";
-  return t === null ? {
-    shouldShowCenterLabel: a,
+  const c = !!a, f = !e && !r && (c || l !== void 0), S = m(l, i, u) ?? "";
+  return o === null ? {
+    shouldShowCenterLabel: c,
     shouldShowCenterText: f,
-    centerLabel: c ?? "",
-    centerValue: C
+    centerLabel: a ?? "",
+    centerValue: S
   } : {
-    shouldShowCenterLabel: a,
+    shouldShowCenterLabel: c,
     shouldShowCenterText: f,
     ...N(
-      t,
       o,
+      t,
       s,
       n,
       l,
@@ -51,35 +51,36 @@ const S = "Gráfico de rosca", d = "var(--color-surface-neutral-default)", _ = "
       u
     )
   };
-}, B = (e) => e ? {
-  trackColor: _,
-  containerAccessibility: { "aria-busy": !0, "aria-label": S },
+}, F = (e) => e ? {
+  trackColor: v,
+  containerAccessibility: { "aria-busy": !0, "aria-label": C },
   chartAccessibility: { "aria-hidden": !0 }
 } : {
-  trackColor: d,
-  containerAccessibility: { role: "group", "aria-label": S },
+  trackColor: _,
+  containerAccessibility: { role: "group", "aria-label": C },
   chartAccessibility: {}
-}, F = (e, r, t, o, s, n) => e ? [] : E(r, t, o, s, n), H = (e, r, t) => e.map((o) => ({
-  ...o,
-  chartClass: A(o.chartClass, {
-    [t]: r !== null && r !== o.index
+}, H = (e, r, o, t, s, n) => e ? [] : A(r, o, t, s, n), K = (e, r, o) => e.map((t) => ({
+  ...t,
+  chartClass: h(t.chartClass, {
+    [o]: r !== null && r !== t.index
   })
-})), K = (e, r) => {
+})), k = (e, r, o) => {
   const t = e == null ? void 0 : e.firstElementChild;
   if (!(t instanceof HTMLElement) || !r)
     return;
+  const s = o !== void 0 && o > 0 ? E(o) : T.centerTextWidth;
   t.style.fontSize = "";
-  let o = Number.parseFloat(getComputedStyle(t).fontSize);
-  if (Number.isFinite(o))
-    for (; t.scrollWidth > T.centerTextWidth && o > h; )
-      o -= 1, t.style.fontSize = `${o}px`;
+  let n = Number.parseFloat(getComputedStyle(t).fontSize);
+  if (Number.isFinite(n))
+    for (; t.scrollWidth > s && n > y; )
+      n -= 1, t.style.fontSize = `${n}px`;
 };
 export {
-  H as applySliceHighlightClasses,
-  K as fitCenterValueFontSize,
-  F as resolveBaseSliceItems,
-  z as resolveCenterPresentation,
-  B as resolveChartDonutAccessibility,
-  V as resolveChartDonutFlags,
-  p as resolveShouldShowLegend
+  K as applySliceHighlightClasses,
+  k as fitCenterValueFontSize,
+  H as resolveBaseSliceItems,
+  B as resolveCenterPresentation,
+  F as resolveChartDonutAccessibility,
+  p as resolveChartDonutFlags,
+  z as resolveShouldShowLegend
 };

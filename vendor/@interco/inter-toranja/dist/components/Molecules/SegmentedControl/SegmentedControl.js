@@ -1,72 +1,87 @@
-import { jsxs as d, jsx as r } from "react/jsx-runtime";
-import { useId as G, useMemo as _ } from "react";
-import { TimelineFillingEnum as A, SegmentedControlClass as i } from "./enums.js";
-import { isIconOnlySegment as $, getSegmentKey as K } from "./utils/segmentHelpers.js";
-import { Icon as O } from "../../Atoms/Icon/Icon.js";
-import { TAGGING_EVENT as P } from "../../../utils/pattern.js";
-import { useSegmentedControlState as R } from "./hooks/useSegmentedControlState.js";
-import { useSegmentedControlBackground as M } from "./hooks/useSegmentedControlBackground.js";
-import { useSegmentedControlClasses as j } from "./hooks/useSegmentedControlClasses.js";
-import { useSegmentedControlProperties as w } from "./hooks/useSegmentedControlProperties.js";
-import { m as B } from "../../../proxy-BBnpZ6GV.js";
-import '../../../assets/SegmentedControl.css';const W = ({
+import { jsxs as m, jsx as s } from "react/jsx-runtime";
+import { useMemo as O } from "react";
+import { TimelineFillingEnum as P, SegmentedControlDensityEnum as K, SegmentedControlClass as g } from "./enums.js";
+import { resolveSegmentedControlDensity as M, isIconOnlySegment as R, resolveSegmentIconSize as $, getSegmentKey as w } from "./utils/segmentHelpers.js";
+import { Icon as z } from "../../Atoms/Icon/Icon.js";
+import { TAGGING_EVENT as B } from "../../../utils/pattern.js";
+import { useSegmentedControlState as j } from "./hooks/useSegmentedControlState.js";
+import { useSegmentedControlBackground as H } from "./hooks/useSegmentedControlBackground.js";
+import { useSegmentedControlClasses as V } from "./hooks/useSegmentedControlClasses.js";
+import { useSegmentedControlProperties as F } from "./hooks/useSegmentedControlProperties.js";
+import '../../../assets/SegmentedControl.css';const ee = ({
   segments: n,
-  onClick: m,
-  state: s,
-  onTag: l,
-  filling: g
+  onClick: C,
+  state: l,
+  onTag: a,
+  filling: p,
+  density: u
 }) => {
-  const C = G(), [a, p] = R(n), [u, f, I] = M(
-    a,
+  const r = M(u), [c, S] = j(n), [i, f, y] = H(
+    c,
     n.length
-  ), S = _(
-    () => n.every((e) => $(e)),
+  ), b = O(
+    () => n.every((e) => R(e)),
     [n]
-  ), b = g === A.HUG && S, { containerClass: N, getSegmentClasses: y, getTextClasses: E } = j(
-    s,
-    b
-  ), { segmentProperties: T, getSelectedSegmentProperties: v } = w(n), c = (e, t) => {
-    l && l((o) => ({
+  ), I = p === P.HUG && b, v = r === K.COMPACT, N = $(r), { containerClass: E, getSegmentClasses: T, getTextClasses: h } = V(
+    l,
+    I,
+    v
+  ), { segmentProperties: k, getSelectedSegmentProperties: A } = F(n), d = (e, t) => {
+    a && a((o) => ({
       ...o,
-      name: P.INTERACTION_CLICK,
+      name: B.INTERACTION_CLICK,
       ComponentProperties: {
         component_name: "SegmentedControl",
-        segments: T,
-        state: s,
-        ...v(e)
+        segments: k,
+        density: r,
+        state: l,
+        ...A(e)
       }
-    })), !e.disabled && (p(t), m(e, t));
-  }, h = (e, t) => (o) => {
-    (o.key === "Enter" || o.key === " ") && c(e, t);
+    })), !e.disabled && (S(t), C(e, t));
+  }, D = (e, t) => (o) => {
+    (o.key === "Enter" || o.key === " ") && d(e, t);
+  }, G = {
+    ...i,
+    position: "absolute",
+    opacity: i.width === "0px" ? 0 : 1
   };
-  return /* @__PURE__ */ d("div", { ref: f, className: N, "data-testid": "segmented-control", children: [
+  return /* @__PURE__ */ m("div", { ref: f, className: E, "data-testid": "segmented-control", children: [
+    /* @__PURE__ */ s(
+      "div",
+      {
+        className: g.SEGMENT_ACTIVE_BG,
+        "data-testid": "segmented-control-active-background",
+        style: G,
+        "aria-hidden": !0
+      }
+    ),
     n.map((e, t) => {
-      const o = a === t;
-      return /* @__PURE__ */ r(
+      const o = c === t;
+      return /* @__PURE__ */ s(
         "div",
         {
-          ref: (k) => {
-            I.current[t] = k;
+          ref: (_) => {
+            y.current[t] = _;
           },
-          className: y(o, !!e.disabled),
+          className: T(o, !!e.disabled),
           "data-testid": `segmented-control-item-${t}`,
           ...!e.disabled && {
-            onClick: () => c(e, t),
+            onClick: () => d(e, t),
             role: "button",
             tabIndex: 0,
-            onKeyDown: h(e, t)
+            onKeyDown: D(e, t)
           },
-          children: /* @__PURE__ */ d(
+          children: /* @__PURE__ */ m(
             "div",
             {
-              className: i.TEXT_CONTAINER,
+              className: g.TEXT_CONTAINER,
               "data-testid": `segmented-control-item-text-container-${t}`,
               children: [
-                "icon" in e && e.icon && /* @__PURE__ */ r("div", { "data-testid": `segmented-control-item-icon-${t}`, children: /* @__PURE__ */ r(O, { asset: e.icon, state: "enabled", size: "small" }) }),
-                "label" in e && e.label && /* @__PURE__ */ r(
+                "icon" in e && e.icon && /* @__PURE__ */ s("div", { "data-testid": `segmented-control-item-icon-${t}`, children: /* @__PURE__ */ s(z, { asset: e.icon, state: "enabled", size: N }) }),
+                "label" in e && e.label && /* @__PURE__ */ s(
                   "span",
                   {
-                    className: E(o),
+                    className: h(o),
                     "data-testid": `segmented-control-item-label-${t}`,
                     children: e.label
                   }
@@ -75,20 +90,11 @@ import '../../../assets/SegmentedControl.css';const W = ({
             }
           )
         },
-        K(e, t)
+        w(e, t)
       );
-    }),
-    /* @__PURE__ */ r(
-      B.div,
-      {
-        layoutId: `active-background-${C}`,
-        className: i.SEGMENT_ACTIVE_BG,
-        "data-testid": "segmented-control-active-background",
-        style: u
-      }
-    )
+    })
   ] });
 };
 export {
-  W as SegmentedControl
+  ee as SegmentedControl
 };

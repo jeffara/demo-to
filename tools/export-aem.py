@@ -29,7 +29,7 @@ def node(name, props=None, parent=None):
     for key, value in (props or {}).items():
         if isinstance(value, list):
             def escape_entry(v):
-                return str(v).replace('\\', '\\\\').replace(',', '\\,').replace('[', '\\[').replace(']', '\\]')
+                return (json.dumps(v,ensure_ascii=False) if isinstance(v,dict) else str(v)).replace('\\', '\\\\').replace(',', '\\,').replace('[', '\\[').replace(']', '\\]')
             value = '{String}[' + ','.join(escape_entry(v) for v in value) + ']'
         elif isinstance(value, bool):
             value = '{Boolean}' + str(value).lower()
@@ -38,7 +38,7 @@ def node(name, props=None, parent=None):
         elif isinstance(value, float):
             value = '{Double}' + str(value)
         else:
-            value = str(value)
+            value = json.dumps(value,ensure_ascii=False) if isinstance(value,dict) else str(value)
             if value.startswith(('[', '{')):
                 value = '\\' + value
         values[attr_name(key)] = value
@@ -61,7 +61,8 @@ def xml(el):
 
 def main():
     config = json.loads((ROOT / 'content/aem-config.json').read_text())
-    version = json.loads((ROOT / 'package.json').read_text())['version']
+    package = json.loads((ROOT / 'package.json').read_text())
+    version = package.get('contentVersion', package['version'])
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--site-root', default=config['siteRoot'], help='Raiz AEM; padrão definido em content/aem-config.json')
     parser.add_argument('--output', type=Path, default=ROOT / 'content' / (config['packageName'] + '.zip'))

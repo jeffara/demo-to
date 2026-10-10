@@ -1,1 +1,1 @@
-.container{display:flex;justify-content:flex-end;position:relative}.container .badge--label{position:absolute;z-index:1;top:-2px;left:25px}.container .badge--label[data-large=true]{left:20px}
+.container{display:flex;position:relative}.container .badge--label{position:absolute;z-index:1;top:-2px;left:25px}.container .badge--label[data-large=true]{left:20px}

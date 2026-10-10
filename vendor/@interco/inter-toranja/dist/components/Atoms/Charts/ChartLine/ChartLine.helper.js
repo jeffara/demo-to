@@ -1,6 +1,6 @@
-import { resolveAxisLabelLeft as M, resolveTickDecimals as $, CHART_HORIZONTAL_PADDING as h, CHART_VERTICAL_PADDING as H, filterLabelsByInterval as E, maskValue as A, buildAutoLabelIndices as D, formatValue as L, getChartPaletteColors as C } from "../shared/chart.helper.js";
+import { CHART_HORIZONTAL_PADDING as h, resolveAxisLabelLeft as M, CHART_VERTICAL_PADDING as $, formatValue as L, maskValue as A, filterLabelsByInterval as H, buildAutoLabelIndices as E, resolveTickDecimals as D, getChartPaletteColors as C } from "../shared/chart.helper.js";
 import { DEFAULT_LARGE_CHART_HEIGHT as O, DEFAULT_SMALL_CHART_HEIGHT as W, MAX_AXIS_LABELS as x, isPointerInsideRect as Z, resolveGridY as q } from "../shared/chart.helper.js";
-const G = M, _ = 4, V = (l, t) => $(l, t, _), P = (l, t, n) => `${l}-${t}-${n.map((e) => e === null ? "gap" : e).join(",")}`, b = "categorical", I = (l, t) => {
+const G = M, _ = 4, V = (l, t) => D(l, t, _), P = (l, t, n) => `${l}-${t}-${n.map((e) => e === null ? "gap" : e).join(",")}`, b = "categorical", I = (l, t) => {
   const n = l.flatMap((a) => a.values);
   if (t !== void 0 && n.push(t), n.length === 0)
     return { min: 0, max: 1 };
@@ -12,13 +12,13 @@ const G = M, _ = 4, V = (l, t) => $(l, t, _), P = (l, t, n) => `${l}-${t}-${n.ma
   return { min: e, max: o };
 }, X = (l, t, n, e, o, a = !1) => {
   if (n && n.length > 0) {
-    const r = E(n, e);
+    const r = H(n, e);
     return a ? r.map((s) => ({
       ...s,
       label: A(s.label)
     })) : r;
   }
-  const u = _, c = D(u), i = {
+  const u = _, c = E(u), i = {
     ...o,
     decimals: (o == null ? void 0 : o.decimals) ?? V(l, t)
   };
@@ -33,7 +33,7 @@ const G = M, _ = 4, V = (l, t) => $(l, t, _), P = (l, t, n) => `${l}-${t}-${n.ma
 }, v = (l, t, n, e = h) => {
   const o = Math.max(n - e * 2, 0);
   return t <= 1 ? e + o / 2 : e + l / (t - 1) * o;
-}, R = (l, t, n, e, o = H) => {
+}, R = (l, t, n, e, o = $) => {
   const a = Math.max(e - o * 2, 0);
   if (n === t)
     return o + a / 2;
@@ -122,12 +122,12 @@ const G = M, _ = 4, V = (l, t) => $(l, t, _), P = (l, t, n) => `${l}-${t}-${n.ma
 };
 export {
   h as CHART_HORIZONTAL_PADDING,
-  H as CHART_VERTICAL_PADDING,
+  $ as CHART_VERTICAL_PADDING,
   O as DEFAULT_LARGE_CHART_HEIGHT,
   W as DEFAULT_SMALL_CHART_HEIGHT,
   x as MAX_AXIS_LABELS,
   _ as Y_TICK_COUNT,
-  D as buildAutoLabelIndices,
+  E as buildAutoLabelIndices,
   y as buildHighlight,
   N as buildHighlightAnnouncement,
   d as buildLegendItems,
@@ -136,7 +136,7 @@ export {
   Y as buildSeriesPaths,
   F as buildTooltipItems,
   X as buildYTickLabels,
-  E as filterLabelsByInterval,
+  H as filterLabelsByInterval,
   I as getYDomain,
   Z as isPointerInsideRect,
   U as resolveCategoryIndexFromClientX,

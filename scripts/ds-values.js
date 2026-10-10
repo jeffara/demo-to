@@ -8,6 +8,7 @@ export function parseList(value,spec={kind:'string'}){
  return raw.split(/\r?\n|,\s*/).filter(Boolean).map(v=>scalar(v,spec));
 }
 export function scalar(value,spec){
+ if(['json','object'].includes(spec.kind)&&typeof value==='string')return JSON.parse(value);
  if(spec.kind==='number'){const n=Number(value);if(!Number.isFinite(n))throw Error('Valor numérico inválido');return n;}
  if(spec.kind==='boolean')return value===true||value==='true';
  return value;
@@ -15,7 +16,7 @@ export function scalar(value,spec){
 export function normalizeProps(raw,schema){
  const p=structuredClone(raw);
  // These official controls read required collections during their first render.
- const emptyArrays={BottomSheetCountry:['items','featuredItems'],InputCountry:['countryItems','featuredCountryItems'],ChartBar:['categories','values'],ChartMeter:['bars','legend']};
+ const emptyArrays={Breadcrumb:['items'],Table:['data','columns'],Pagination:['pageSizeOptions'],BottomSheetCountry:['items','featuredItems'],InputCountry:['countryItems','featuredCountryItems'],ChartBar:['categories','values'],ChartMeter:['bars','legend']};
  for(const key of emptyArrays[schema.name]||[])p[key]??=[];
  for(const [name,mode] of Object.entries(p.$enabled||{}))if(mode==='false')delete p[name];
  if(schema.name==='ListItem')for(const side of ['leading','trailing']){const selected=p['$'+side+'Choice'];if(selected&&selected!=='auto')for(const k of Object.keys(p))if(k.startsWith(side)&&k!==selected)delete p[k];}

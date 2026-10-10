@@ -13,7 +13,7 @@ import { ListItemActionProps } from './types';
  *   paragraph="This action cannot be undone"
  *   leadingProps={{ type: 'icon', iconProps: { icon: 'ic_delete' } }}
  *   trailingVariant="button"
- *   trailingProps={{ label: 'Delete', variant: 'danger', onButtonClick: handleDelete }}
+ *   trailingProps={{ label: 'Delete', variant: 'destructive', onButtonClick: handleDelete }}
  * />
  * ```
  */

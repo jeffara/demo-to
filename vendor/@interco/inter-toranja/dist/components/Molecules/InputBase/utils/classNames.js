@@ -1,60 +1,66 @@
 import { FieldsetInputWrapperClasses as s } from "./constants.js";
-import { classNamesMerge as a } from "../../../../utils/classNamesMerge.js";
-function f({
+import { classNamesMerge as l } from "../../../../utils/classNamesMerge.js";
+function p({
   isTypeSearch: e,
-  isError: n,
-  isSuccess: l,
-  isReadOnly: t
+  isError: t,
+  isSuccess: a,
+  isReadOnly: n
 }) {
-  const r = e ? s.SEARCH : s.BASE, _ = e ? s.SEARCH_ERROR : s.ERROR, o = e ? s.SEARCH_SUCCESS : s.SUCCESS, C = e ? s.SEARCH_READ_ONLY : s.READ_ONLY;
-  return a(
+  const r = e ? s.SEARCH : s.BASE, _ = e ? s.SEARCH_ERROR : s.ERROR, o = e ? s.SEARCH_SUCCESS : s.SUCCESS, i = e ? s.SEARCH_READ_ONLY : s.READ_ONLY;
+  return l(
     r,
-    n && _,
-    !n && l && o,
-    t && C
+    t && _,
+    !t && a && o,
+    n && i
   );
 }
 function d({
   isError: e,
-  isSuccess: n,
-  isReadOnly: l,
-  isTypeSearch: t,
+  isSuccess: t,
+  isReadOnly: a,
+  isTypeSearch: n,
   hasFlag: r = !1
 }) {
-  const _ = t ? "fieldset__input-wrapper--search__input" : "fieldset__input-wrapper__input", o = t ? s.INPUT_SEARCH_READ_ONLY : s.INPUT_READ_ONLY, C = t ? s.INPUT_SEARCH_ERROR : s.INPUT_ERROR, i = t ? s.INPUT_SEARCH_SUCCESS : s.INPUT_SUCCESS;
-  return a(
+  const _ = n ? "fieldset__input-wrapper--search__input" : "fieldset__input-wrapper__input", o = n ? s.INPUT_SEARCH_READ_ONLY : s.INPUT_READ_ONLY, i = n ? s.INPUT_SEARCH_ERROR : s.INPUT_ERROR, C = n ? s.INPUT_SEARCH_SUCCESS : s.INPUT_SUCCESS;
+  return l(
     "type-body-large-regular",
     _,
-    l && o,
-    e && C,
-    !e && n && i,
+    a && o,
+    e && i,
+    !e && t && C,
     r && "fieldset__input-wrapper__input--with-flag"
   );
 }
 function R(e) {
-  return a(
+  return l(
     "fieldset__hints__hintsMensagens",
     e && "fieldset__hints--disabled"
   );
 }
 function c({ isReadOnly: e }) {
-  return a("icons-wrapper", e && "icons-wrapper--readonly");
+  return l("icons-wrapper", e && "icons-wrapper--readonly");
 }
 function g({
   isReadOnly: e,
-  hasFlag: n,
-  isFocused: l = !1,
-  hasValue: t = !1
+  hasFlag: t,
+  isFocused: a = !1,
+  hasValue: n = !1
 }) {
-  return a(
-    l || t ? "type-body-small-regular" : "type-body-large-regular",
+  return l(
+    a || n ? "type-body-small-regular" : "type-body-large-regular",
     "fieldset__label",
     e && "fieldset__label--readonly",
-    n && "fieldset__label--with-flag"
+    t && "fieldset__label--with-flag"
   );
 }
-function E({ isTypeSearch: e }) {
-  return a(e ? "fieldset__container--search" : "fieldset__container");
+function E({
+  isTypeSearch: e,
+  suppressVisualLabel: t = !1
+}) {
+  return l(
+    e ? "fieldset__container--search" : "fieldset__container",
+    t && !e && "fieldset__container--without-visual-label"
+  );
 }
 function N(e) {
   return e ? "fieldset--skeleton" : "fieldset";
@@ -65,6 +71,6 @@ export {
   R as getHintsClassNames,
   c as getIconWrapperClassName,
   d as getInputClassNames,
-  f as getInputContainerClassNames,
+  p as getInputContainerClassNames,
   g as getInputLabelClassName
 };

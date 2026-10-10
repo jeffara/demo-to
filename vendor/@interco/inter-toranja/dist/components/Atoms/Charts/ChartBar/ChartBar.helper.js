@@ -1,6 +1,6 @@
-import { resolveAxisLabelLeft as N, resolveTickDecimals as g, filterLabelsByInterval as P, maskValue as k, formatDisplayValue as v, getChartPaletteColors as B, CHART_VERTICAL_PADDING as H, CHART_HORIZONTAL_PADDING as D } from "../shared/chart.helper.js";
+import { resolveAxisLabelLeft as N, filterLabelsByInterval as P, formatDisplayValue as v, maskValue as g, resolveTickDecimals as k, getChartPaletteColors as B, CHART_HORIZONTAL_PADDING as H, CHART_VERTICAL_PADDING as D } from "../shared/chart.helper.js";
 import { DEFAULT_LARGE_CHART_HEIGHT as ot, DEFAULT_SMALL_CHART_HEIGHT as rt, MAX_AXIS_LABELS as at, buildAutoLabelIndices as lt, clampTooltipAnchor as it, isPointerInsideRect as ct, resolveGridX as ut, resolveGridY as ht } from "../shared/chart.helper.js";
-const Y = N, $ = 4, I = 1 / 6, K = "var(--color-chart-brand-default)", U = (t, s) => g(t, s, $), X = (t, s, e = $) => {
+const Y = N, $ = 4, I = 1 / 6, K = "var(--color-chart-brand-default)", U = (t, s) => k(t, s, $), X = (t, s, e = $) => {
   if (e <= 1)
     return [s];
   if (t >= s)
@@ -48,7 +48,7 @@ const Y = N, $ = 4, I = 1 / 6, K = "var(--color-chart-brand-default)", U = (t, s
     const h = P(e, o);
     return r ? h.map((i) => ({
       ...i,
-      label: k(i.label)
+      label: g(i.label)
     })) : h;
   }
   const a = X(t, s), l = {
@@ -90,7 +90,7 @@ const Y = N, $ = 4, I = 1 / 6, K = "var(--color-chart-brand-default)", U = (t, s
   const c = y(t, s), h = c.categories.length;
   if (h === 0)
     return [];
-  const i = r === "vertical", f = i ? D : H, L = i ? H : D, p = Math.max(i ? e - f * 2 : o - f * 2, 0) / h, S = p * I, V = Math.max(p - S * 2, 0), A = E(
+  const i = r === "vertical", f = i ? H : D, L = i ? D : H, p = Math.max(i ? e - f * 2 : o - f * 2, 0) / h, S = p * I, V = Math.max(p - S * 2, 0), A = E(
     0,
     n.min,
     n.max,
@@ -171,8 +171,8 @@ const Y = N, $ = 4, I = 1 / 6, K = "var(--color-chart-brand-default)", U = (t, s
 export {
   I as BAR_SLOT_INSET_RATIO,
   K as BRAND_BAR_COLOR,
-  D as CHART_HORIZONTAL_PADDING,
-  H as CHART_VERTICAL_PADDING,
+  H as CHART_HORIZONTAL_PADDING,
+  D as CHART_VERTICAL_PADDING,
   ot as DEFAULT_LARGE_CHART_HEIGHT,
   rt as DEFAULT_SMALL_CHART_HEIGHT,
   at as MAX_AXIS_LABELS,

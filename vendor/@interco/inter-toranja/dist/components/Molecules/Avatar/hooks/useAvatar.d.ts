@@ -25,6 +25,7 @@ interface UseAvatarReturn {
     avatarClassName: string;
     flagClassName: string;
     initials: string | null;
+    initialTypographyClassName: string;
     ariaLabel: string;
     handleClick: (event: MouseEvent<HTMLElement>) => void;
     handleKeyDown: (event: KeyboardEvent<HTMLElement>) => void;

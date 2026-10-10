@@ -101,3 +101,14 @@ console.log(
 
 const site=JSON.parse(fs.readFileSync('content/aem-config.json'));
 fs.writeFileSync('scripts/site-config.js',`export const siteConfig = ${JSON.stringify({contentRoot:site.siteRoot,searchIndex:'/query-index.json',searchExclude:['/nav','/header','/footer','/demo-toranja','/showcase','/qa']})};\n`);
+
+const customCells=Object.fromEntries(Object.entries(cells).filter(([id])=>id.startsWith('v3-')));
+const customContainers=Object.fromEntries(Object.entries(containers).filter(([id])=>id.startsWith('v3-')));
+fs.writeFileSync('scripts/custom-contracts.js',`export const cells=${JSON.stringify(customCells)};export const containers=${JSON.stringify(customContainers)};\n`);
+fs.writeFileSync('scripts/image-contract.js',`export const imageCells=${JSON.stringify(cells['ds-image'])};\n`);
+const schemas=JSON.parse(fs.readFileSync('scripts/ds-schema.json'));
+for(const [id,schema] of Object.entries(schemas)){
+ schema.cellNames=cells[id];schema.itemCellNames=cells[containers[id]]||[];
+ fs.writeFileSync(`blocks/${id}/${id}.js`,`import {mountDS} from '../../scripts/page.js';\nconst schema=${JSON.stringify(schema)};\nexport default block=>mountDS(block,'${id}',schema);\n`);
+}
+fs.writeFileSync('scripts/ds-schema.json',JSON.stringify(schemas));

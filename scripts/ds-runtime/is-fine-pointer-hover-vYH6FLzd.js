@@ -1,0 +1,1 @@
+var e=()=>!(typeof window>"u"||"function"!=typeof window.matchMedia)&&window.matchMedia("(hover: hover) and (pointer: fine)").matches;export{e as t};

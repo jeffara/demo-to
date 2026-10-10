@@ -19,7 +19,7 @@ with zipfile.ZipFile(root/'content/demo-to-content.zip') as z:
  test('Replacement covers every delivered page and obsolete descendants',lambda:require(f.get('mode')=='replace' and all(included(site+'/'+p+'/jcr:content/root') for p in pages) and included(site+'/obsolete/jcr:content'),'Replacement filter incomplete'))
  test('Site configuration, site root and other sites excluded',lambda:require(not any(included(p) for p in [site,site+'/jcr:content',site+'/jcr:content/settings','/conf/demo-to','/content/other/index']) and not any(n.startswith(('jcr_root/conf/','jcr_root/apps/')) for n in names),'Protected scope is covered'))
  docs=[E.fromstring(z.read(n)) for n in names if n.startswith('jcr_root'+site+'/') and n.endswith('/.content.xml')]
- test('Exactly 119 pages; old block names absent from serialized content',lambda:require(len(docs)==119 and not [(n.tag,n.get('name')) for d in docs for n in d.iter() if n.get('name') in removed or n.get('model') in removed],'Old block or missing pages'))
+ test('All catalogue pages; old block names absent from serialized content',lambda:require(len(docs)==len(pages) and not [(n.tag,n.get('name')) for d in docs for n in d.iter() if n.get('name') in removed or n.get('model') in removed],'Old block or missing pages'))
  test('Assets scoped individually',lambda:require(len(filters)==12 and all(f.get('root').startswith('/content/dam/toranja-eds-demo/') and not list(f) for f in list(filters)[1:]),'Broad asset replacement'))
 with tempfile.TemporaryDirectory() as directory:
  tmp=Path(directory)
@@ -29,7 +29,7 @@ with tempfile.TemporaryDirectory() as directory:
    for name in ['index','obsolete','obsolete/child']:
     z.writestr('jcr_root'+site+'/'+name+'/.content.xml','<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="cq:Page"/>')
   output=tmp/'plan.json';subprocess.run(['python3',str(root/'tools/plan-content-reset.py'),'--backup',str(backup),'--output',str(output)],check=True,capture_output=True)
-  plan=json.loads(output.read_text());require(plan['removeFromAuthorAfterImport']==['obsolete','obsolete/child'] and len(plan['republishAfterImport'])==119,'Incorrect reset plan')
+  plan=json.loads(output.read_text());require(plan['removeFromAuthorAfterImport']==['obsolete','obsolete/child'] and len(plan['republishAfterImport'])==len(pages),'Incorrect reset plan')
  test('Read-only planner identifies obsolete URLs and all publication paths',planner)
  def sync():
   source=tmp/'baseline';target=tmp/'clone';(source/'tools').mkdir(parents=True);(source/'blocks/ds-button').mkdir(parents=True);(source/'blocks/ds-button/ds-button.js').write_text('new');(source/'fstab.yaml').write_text('source-config');(source/'config').mkdir();(source/'config/public-paths.json').write_text('source-paths');shutil.copy(root/'tools/sync-baseline.py',source/'tools/sync-baseline.py')

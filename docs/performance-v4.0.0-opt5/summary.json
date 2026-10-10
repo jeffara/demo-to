@@ -1,0 +1,81 @@
+{
+  "lighthouseVersion": "13.5.0",
+  "threshold": 98,
+  "results": [
+    {
+      "route": "/",
+      "profile": "mobile",
+      "runs": [
+        {
+          "scores": {
+            "performance": 96,
+            "accessibility": 87,
+            "best-practices": 96,
+            "seo": 100
+          },
+          "lcp": 2404.116,
+          "cls": 0,
+          "tbt": 0,
+          "warnings": []
+        }
+      ],
+      "scores": {
+        "performance": 96,
+        "accessibility": 87,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "passesPerformanceGoal": false
+    },
+    {
+      "route": "/demo-toranja",
+      "profile": "mobile",
+      "runs": [
+        {
+          "scores": {
+            "performance": 97,
+            "accessibility": 67,
+            "best-practices": 96,
+            "seo": 100
+          },
+          "lcp": 2253.456,
+          "cls": 0,
+          "tbt": 0,
+          "warnings": []
+        }
+      ],
+      "scores": {
+        "performance": 97,
+        "accessibility": 67,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "passesPerformanceGoal": false
+    },
+    {
+      "route": "/showcase/layouts",
+      "profile": "mobile",
+      "runs": [
+        {
+          "scores": {
+            "performance": 95,
+            "accessibility": 87,
+            "best-practices": 96,
+            "seo": 100
+          },
+          "lcp": 2716.7975,
+          "cls": 0,
+          "tbt": 0,
+          "warnings": []
+        }
+      ],
+      "scores": {
+        "performance": 95,
+        "accessibility": 87,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "passesPerformanceGoal": false
+    }
+  ]
+}

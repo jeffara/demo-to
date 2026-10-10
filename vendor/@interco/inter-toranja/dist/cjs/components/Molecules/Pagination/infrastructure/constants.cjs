@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const E=require("../../../../utils/pattern.cjs"),_={ptBR:"pt-BR",enUS:"en-US"},A=E.SIZE.MEDIUM,I="bottom-start",N=8;exports.PAGINATION_LOCALE=_;exports.PAGINATION_PAGE_SIZE_MENU_OFFSET=N;exports.PAGINATION_PAGE_SIZE_MENU_PLACEMENT=I;exports.PAGINATION_PAGE_SIZE_MENU_SIZE=A;

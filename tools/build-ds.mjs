@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {curate} from './curate-ds.mjs';
 const contract=JSON.parse(fs.readFileSync('docs/toranja-contract.json'));
 const samples=JSON.parse(fs.readFileSync('src/ds-samples.json'));
-const primary={Tabs:'tabs',Timeline:'items',Carousel:'items',SegmentedControl:'segments',BottomSheetCountry:'items',InputCountry:'countryItems',ChartLine:'series',FeedbackScreen:'contentItems'};
+const primary={Breadcrumb:'items',MenuPopup:'items',Sidebar:'items',Select:'options',Table:'columns',Tabs:'tabs',Timeline:'items',Carousel:'items',SegmentedControl:'segments',BottomSheetCountry:'items',InputCountry:'countryItems',ChartLine:'series',FeedbackScreen:'contentItems'};
 const get=(o,p)=>p.reduce((x,k)=>x?.[k],o);
 const key=p=>'p'+Buffer.from(p.join('.')).toString('hex');
 const schema={};const partial={definitions:[],models:[],filters:[]};
@@ -50,12 +50,10 @@ for(const c of contract.components) {
  for(const e of events.filter(e=>/click|action|helper|back|edit/i.test(e.name)&&e.path.length>1))extras.push({name:e.name,path:['$eventLinks',e.path.join('.')],key:'a'+key(e.path),kind:'link'});
  if(c.name==='DatePicker') extras.push({name:'dateValue',path:['$dateValue'],key:'dateValue',kind:'string',description:'Data única YYYY-MM-DD. Para intervalo, use value › start/end.'},{name:'disabledDates',path:['$disabledDates'],key:'disabledDates',kind:'array',description:'Datas bloqueadas em JSON, por exemplo ["2026-12-25"].'});
  if(c.name==='Header')extras.push({name:'scrollContainerSelector',path:['$scrollContainerSelector'],key:'scrollContainerSelector',kind:'string',description:'Seletor CSS opcional do contêiner com rolagem.'});
- if(c.name==='Select')extras.push({name:'options',path:['$options'],key:'selectOptions',kind:'array'});
  const fields=[...leaves,...extras].map(d=>field(d,sample));
  fields.find(f=>f.name==='accessibleLabel').value=c.name;
  if(['Button','FloatingActionButton','IconButton','NeutralIconButton','MenuItem','SectionTitle','ListItemAction','Widget'].includes(c.name))fields.find(f=>f.name==='actionLink').value='/demo-toranja';
- if(['BottomSheet','BottomSheetCountry','Snackbar'].includes(c.name))fields.find(f=>f.name==='triggerLabel').value='Abrir '+c.name;
- if(c.name==='Select')fields.find(f=>f.name==='selectOptions').value='["Conta digital","Investimentos","Crédito"]';
+ if(['BottomSheet','BottomSheetCountry','Snackbar','ModalDialog','SideSheet','MenuPopup','TooltipDescription'].includes(c.name))fields.find(f=>f.name==='triggerLabel').value='Abrir '+c.name;
  const template={name:c.block,model:c.block};
  for(const f of fields)if(f.value!==undefined)template[f.name]=f.value;
  const model={id:c.block,fields};partial.models.push(model);
@@ -75,7 +73,7 @@ for(const c of contract.components) {
    item={model:id,property:arrayName,descriptors,events:itemEvents,primitive:arrayProp.item?.kind!=='object'};
  }
  partial.definitions.push({id:c.block,title:'DS oficial: '+c.name,plugins:{xwalk:{page:{resourceType:'core/franklin/components/block/v1/block',template}}}});
- schema[c.block]={name:c.name,descriptors:[...leaves,...extras],events,technical,item};
+ schema[c.block]={name:c.name,constraints:c.constraints,descriptors:[...leaves,...extras],events,technical,item};
  const properties=Object.fromEntries(fields.filter(f=>f.value!==undefined).map(f=>[f.name,f.value]));
  const items=item?(sample[arrayName]||[]).map(v=>{
    const obj=item.primitive?{value:v}:v;return Object.fromEntries(item.descriptors.filter(d=>get(obj,d.path)!==undefined).map(d=>[d.key,['array','json'].includes(d.kind)?JSON.stringify(get(obj,d.path)):get(obj,d.path)]));
@@ -83,12 +81,14 @@ for(const c of contract.components) {
  sampleBlocks.push({block:c.block,properties,...(items?{items}:{})});
  fs.mkdirSync('blocks/'+c.block,{recursive:true});
  fs.writeFileSync(`blocks/${c.block}/${c.block}.js`,`import { mountDS } from '../../scripts/ds-adapter.js';\nexport default block => mountDS(block, '${c.block}');\n`);
- fs.writeFileSync(`blocks/${c.block}/${c.block}.css`,`.${c.block} { min-width: 0; }\n`);
+ // The shared EDS host rule already provides min-width; no redundant per-block CSS request.
+ fs.rmSync(`blocks/${c.block}/${c.block}.css`,{force:true});
 }
 curate(schema,partial,sampleBlocks);
 fs.writeFileSync('models/_official-ds.json',JSON.stringify(partial,null,2));
 const compact=JSON.parse(JSON.stringify(schema,(key,value)=>['type','description','optional','inherited','values'].includes(key)?(key==='values'&&value.every(v=>typeof v==='number')?value:undefined):value));
 fs.writeFileSync('scripts/ds-schema.json',JSON.stringify(compact));
+for(const [id,s] of Object.entries(compact))fs.writeFileSync(`blocks/${id}/${id}.js`,`import { mountDS } from '../../scripts/page.js';\nconst schema=${JSON.stringify(s)};\nexport default block=>mountDS(block,'${id}',schema);\n`);
 fs.writeFileSync('content/ds-samples.json',JSON.stringify(sampleBlocks,null,2));
 fs.writeFileSync('docs/property-mapping.json',JSON.stringify(schema,null,2));
 console.log(`${contract.components.length} componentes oficiais e ${Object.values(schema).reduce((n,s)=>n+s.descriptors.length+(s.item?.descriptors.length||0),0)} campos mapeados.`);

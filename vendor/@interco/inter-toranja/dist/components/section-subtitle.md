@@ -33,6 +33,7 @@ import { SectionSubtitle } from '@interco/inter-toranja'
 import type { STATE, VARIANT } from '@/utils/pattern'
 
 export interface SectionSubtitleProps {
+  as?: 'div' | 'li'
   subtitle: string
   trailingLabel?: string
   state?: `${STATE.ENABLED}` | `${STATE.SKELETON}`

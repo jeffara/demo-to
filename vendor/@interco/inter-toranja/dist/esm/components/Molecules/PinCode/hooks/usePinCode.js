@@ -1,93 +1,93 @@
-import { useState as Y, useRef as P, useCallback as f, useEffect as j } from "react";
+import { useState as Y, useRef as b, useCallback as f, useEffect as j } from "react";
 import { STATE as p } from "../../../../utils/pattern.js";
-import C from "../../../../node_modules/uuid/dist/esm-browser/v4.js";
+import h from "../../../../node_modules/uuid/dist/esm-browser/v4.js";
 const J = (n, a) => {
-  const D = /^\d$/, O = /^[a-zA-Z0-9]$/;
-  return n ? a === "number" ? D.test(n) : O.test(n) : !1;
-}, Q = (n, a, D) => {
-  const A = a === "number" ? /\d/g : /[a-zA-Z0-9]/g, E = [];
-  let s = A.exec(n);
-  for (; s !== null && E.length < D; )
-    E.push(s[0]), s = A.exec(n);
-  return E.join("");
-}, w = (n) => {
-  const a = n.findIndex((D) => D === "");
+  const I = /^\d$/, E = /^[a-zA-Z0-9]$/;
+  return n ? a === "number" ? I.test(n) : E.test(n) : !1;
+}, Q = (n, a, I) => {
+  const w = a === "number" ? /\d/g : /[a-zA-Z0-9]/g, D = [];
+  let s = w.exec(n);
+  for (; s !== null && D.length < I; )
+    D.push(s[0]), s = w.exec(n);
+  return D.join("");
+}, R = (n) => {
+  const a = n.findIndex((I) => I === "");
   return a >= 0 ? a : Math.max(n.length - 1, 0);
 };
 function er({
   fields: n = 3,
   state: a,
-  disabled: D,
-  hidden: O = !1,
-  type: v = "number",
-  onGetValue: A,
-  onComplete: E,
+  disabled: I,
+  hidden: E = !1,
+  type: y = "number",
+  onGetValue: w,
+  onComplete: D,
   onStateChange: s
 }) {
-  const [b, L] = Y(Array(n).fill("")), [g, R] = Y(null), [k, M] = Y(a), I = P([]), F = P([]), y = P(!1), i = P(b), G = P(
-    Array(n).fill("").map(() => C())
-  ), d = D ?? k === p.DISABLED, u = k === p.ERROR, B = k === p.SKELETON, m = k === p.READ_ONLY, h = O ? "password" : "text", l = f(
+  const [m, N] = Y(Array(n).fill("")), [g, B] = Y(null), [k, M] = Y(a), T = b([]), F = b([]), P = b(!1), i = b(m), G = b(
+    Array(n).fill("").map(() => h())
+  ), d = I ?? k === p.DISABLED, u = k === p.ERROR, O = k === p.SKELETON, A = k === p.READ_ONLY, q = E ? "password" : "text", l = f(
     (r) => {
-      typeof A == "function" && A(r.join(""));
+      typeof w == "function" && w(r.join(""));
     },
-    [A]
+    [w]
   ), o = f((r) => {
     var t, e;
-    R(r), (t = I.current[r]) == null || t.focus(), (e = I.current[r]) == null || e.select();
-  }, []), N = f(() => {
-    if (y.current)
+    B(r), (t = T.current[r]) == null || t.focus(), (e = T.current[r]) == null || e.select();
+  }, []), v = f(() => {
+    if (P.current)
       return;
-    y.current = !0;
+    P.current = !0;
     const r = Array(n).fill("");
-    L(r), i.current = r, M(p.ENABLED), s == null || s(p.ENABLED), l(r), o(0), queueMicrotask(() => {
-      y.current = !1;
+    N(r), i.current = r, M(p.ENABLED), s == null || s(p.ENABLED), l(r), o(0), queueMicrotask(() => {
+      P.current = !1;
     });
   }, [n, l, s, o]), V = f(
     (r) => {
       const t = r.join("");
-      R(null), l(r), E == null || E(t), queueMicrotask(() => {
-        I.current.forEach((e) => e == null ? void 0 : e.blur());
+      B(null), l(r), D == null || D(t), queueMicrotask(() => {
+        T.current.forEach((e) => e == null ? void 0 : e.blur());
       });
     },
-    [l, E]
-  ), q = f(
+    [l, D]
+  ), x = f(
     (r, t) => {
       const e = r.currentTarget.value.slice(-1);
-      if (!J(e, v)) {
+      if (!J(e, y)) {
         r.currentTarget.value = i.current[t] ?? "";
         return;
       }
       if (u) {
-        y.current = !0;
-        const T = Array(n).fill("");
-        T[0] = e, L(T), i.current = T, M(p.ENABLED), s == null || s(p.ENABLED), l(T), o(w(T)), queueMicrotask(() => {
-          y.current = !1;
+        P.current = !0;
+        const L = Array(n).fill("");
+        L[0] = e, N(L), i.current = L, M(p.ENABLED), s == null || s(p.ENABLED), l(L), o(R(L)), queueMicrotask(() => {
+          P.current = !1;
         });
         return;
       }
-      const c = w(i.current), _ = [...i.current];
-      if (_[c] = e, L(_), i.current = _, _.every((T) => T !== "")) {
+      const c = R(i.current), _ = [...i.current];
+      if (_[c] = e, N(_), i.current = _, _.every((L) => L !== "")) {
         V(_);
         return;
       }
-      l(_), o(w(_));
+      l(_), o(R(_));
     },
-    [v, u, n, l, s, V, o]
-  ), x = f(
+    [y, u, n, l, s, V, o]
+  ), z = f(
     (r) => {
       r.preventDefault();
-      const t = Q(r.clipboardData.getData("text"), v, n);
+      const t = Q(r.clipboardData.getData("text"), y, n);
       if (!t)
         return;
       const e = Array.from(t.padEnd(n, ""));
-      if (L(e), i.current = e, u && (M(p.ENABLED), s == null || s(p.ENABLED)), e.every((_) => _ !== "")) {
+      if (N(e), i.current = e, u && (M(p.ENABLED), s == null || s(p.ENABLED)), e.every((_) => _ !== "")) {
         V(e);
         return;
       }
-      l(e), o(w(e));
+      l(e), o(R(e));
     },
-    [v, n, u, s, V, l, o]
-  ), z = f(
+    [y, n, u, s, V, l, o]
+  ), H = f(
     (r, t) => {
       const { key: e } = r;
       if (e === "ArrowLeft" || e === "ArrowRight") {
@@ -95,7 +95,7 @@ function er({
         return;
       }
       if (e === "Backspace" && u) {
-        r.preventDefault(), N();
+        r.preventDefault(), v();
         return;
       }
       if (e !== "Backspace")
@@ -103,88 +103,91 @@ function er({
       r.preventDefault();
       const c = [...i.current];
       if (c[t] !== "") {
-        c[t] = "", L(c), i.current = c, l(c), o(t);
+        c[t] = "", N(c), i.current = c, l(c), o(t);
         return;
       }
-      t > 0 && (c[t - 1] = "", L(c), i.current = c, l(c), o(t - 1));
+      t > 0 && (c[t - 1] = "", N(c), i.current = c, l(c), o(t - 1));
     },
-    [u, N, l, o]
-  ), H = f(
+    [u, v, l, o]
+  ), K = f(
     (r) => {
       var e, c;
-      if (d || B)
+      if (d || O)
         return;
       if (u) {
-        N();
+        v();
         return;
       }
-      if (m) {
-        R(r), (e = I.current[r]) == null || e.select();
+      if (A) {
+        B(r), (e = T.current[r]) == null || e.select();
         return;
       }
-      const t = w(i.current);
+      const t = R(i.current);
       if (t !== r) {
         o(t);
         return;
       }
-      R(r), (c = I.current[r]) == null || c.select();
+      B(r), (c = T.current[r]) == null || c.select();
     },
-    [d, B, u, m, N, o]
-  ), K = f((r) => {
+    [d, O, u, A, v, o]
+  ), W = f((r) => {
     const t = r.relatedTarget;
-    t instanceof HTMLElement && I.current.some((c) => c === t) || R(null);
-  }, []), W = f(
+    t instanceof HTMLElement && T.current.some((c) => c === t) || B(null);
+  }, []), Z = f(
     (r) => {
-      if (!(d || B || m || r.target instanceof HTMLInputElement)) {
+      if (!(d || O || A || r.target instanceof HTMLInputElement)) {
         if (r.preventDefault(), u) {
-          N();
+          v();
           return;
         }
-        o(w(i.current));
+        o(R(i.current));
       }
     },
-    [d, B, m, u, N, o]
-  ), Z = f(
+    [d, O, A, u, v, o]
+  ), $ = f(
     (r) => [
       "fieldset__pin-code-input-wrapper",
       g === r && "fieldset__pin-code-input-wrapper--focused",
       u && "fieldset__pin-code-input-wrapper--error",
       d && "fieldset__pin-code-input-wrapper--disabled",
-      m && "fieldset__pin-code-input-wrapper--readonly"
-      /* READ_ONLY */
+      A && "fieldset__pin-code-input-wrapper--readonly",
+      E && m[r] !== "" && "fieldset__pin-code-input-wrapper--masked-value"
+      /* MASKED_VALUE */
     ].filter(Boolean).join(" "),
-    [g, u, d, m]
-  ), $ = f(
-    () => [
-      "fieldset__pin-code-input-wrapper__input type-code-extra-large",
+    [g, u, d, A, E, m]
+  ), C = f(
+    (r) => [
+      "fieldset__pin-code-input-wrapper__input",
+      "type-code-extra-large",
+      E && m[r] !== "" && "fieldset__pin-code-input-wrapper__input--hidden",
       d && "fieldset__pin-code-input-wrapper__input--disabled",
       u && "fieldset__pin-code-input-wrapper__input--error"
       /* INPUT_ERROR */
     ].filter(Boolean).join(" "),
-    [d, u]
+    [E, m, d, u]
   );
   return j(() => {
     M(a);
   }, [a]), j(() => {
-    i.current = b;
-  }, [b]), {
-    valuePinCode: b,
+    i.current = m;
+  }, [m]), {
+    valuePinCode: m,
     fieldsetKeys: G,
-    inputRefs: I,
+    inputRefs: T,
     fieldsetRefs: F,
     isDisabled: d,
     isError: u,
-    isSkeleton: B,
-    isReadOnly: m,
-    typeInput: h,
-    handleInput: q,
-    handlePaste: x,
-    handleNavigation: z,
-    handleFocus: H,
-    handleBlur: K,
-    handleContainerPointerDown: W,
-    getClassNames: Z,
-    getInputClassNames: $
+    isSkeleton: O,
+    isReadOnly: A,
+    typeInput: q,
+    handleInput: x,
+    handlePaste: z,
+    handleNavigation: H,
+    handleFocus: K,
+    handleBlur: W,
+    handleContainerPointerDown: Z,
+    getClassNames: $,
+    getInputClassNames: C
   };
 }
 export {

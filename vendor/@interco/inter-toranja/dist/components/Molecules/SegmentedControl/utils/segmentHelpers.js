@@ -1,11 +1,14 @@
-import e from "react";
-const i = (n, o) => {
-  const l = "label" in n && n.label ? n.label.replace(/\s+/g, "") : "", c = "icon" in n && e.isValidElement(n.icon) && typeof n.icon.type != "string" ? n.icon.type.name : "";
-  return `${o}-${l}${c}`;
-}, t = (n) => "icon" in n && n.icon ? n.icon : "", b = (n) => "label" in n ? n.label ?? "" : "", r = (n) => !!("icon" in n && n.icon && !("label" in n && n.label));
+import { SegmentedControlDensityEnum as e } from "../enums.js";
+import { SIZE as o } from "../../../../utils/pattern.js";
+const r = (n, l) => {
+  const c = "label" in n && n.label ? n.label.replace(/\s+/g, "") : "", i = "icon" in n && n.icon ? n.icon : "";
+  return `${l}-${c}${i}`;
+}, S = (n) => "icon" in n && n.icon ? n.icon : "", b = (n) => "label" in n ? n.label ?? "" : "", s = (n) => !!("icon" in n && n.icon && !("label" in n && n.label)), g = (n) => n === e.COMPACT ? o.MEDIUM : o.SMALL, I = (n) => n ?? e.DEFAULT;
 export {
-  t as getSegmentIconName,
-  i as getSegmentKey,
+  S as getSegmentIconName,
+  r as getSegmentKey,
   b as getSegmentLabel,
-  r as isIconOnlySegment
+  s as isIconOnlySegment,
+  g as resolveSegmentIconSize,
+  I as resolveSegmentedControlDensity
 };

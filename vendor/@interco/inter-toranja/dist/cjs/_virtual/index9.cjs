@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("../node_modules/@testing-library/jest-dom/node_modules/aria-query/lib/index.cjs");var r=e.__require();exports.libExports=r;

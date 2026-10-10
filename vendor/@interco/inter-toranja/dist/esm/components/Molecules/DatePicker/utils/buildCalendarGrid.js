@@ -1,4 +1,4 @@
-import { DAYS_IN_WEEK as a, WEEKS_IN_GRID as g } from "../constants.js";
+import { WEEKS_IN_GRID as g, DAYS_IN_WEEK as a } from "../constants.js";
 import { capitalizeFirstLetter as f } from "./capitalize-first-letter.js";
 import { startOfDay as h, toIsoDate as d } from "./dateRange.js";
 const m = (t, e) => {

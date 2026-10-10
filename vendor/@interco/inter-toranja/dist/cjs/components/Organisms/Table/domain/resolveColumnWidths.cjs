@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const l=0,n=(e,o)=>{const t=e.reduce((r,i)=>r+(i.minWidth??l),0);return{totalMinWidth:t,requiresHorizontalScroll:t>o}};exports.resolveColumnWidths=n;

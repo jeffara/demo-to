@@ -1,8 +1,8 @@
 import { scaleValueAxis as g, buildHighlightAnnouncement as m, buildTooltipItems as u } from "../ChartBar.helper.js";
-import { resolveChartFlags as d, resolveChartVisibility as v, resolveAccessibleName as b, buildContainerAccessibility as C } from "../../shared/resolveChartState.js";
+import { resolveAccessibleName as d, buildContainerAccessibility as v, resolveChartFlags as b, resolveChartVisibility as C } from "../../shared/resolveChartState.js";
 import { resolveChartAreaHeight as E, resolveChartHeight as G } from "../../shared/resolveChartState.js";
 import { CHART_VERTICAL_PADDING as f, CHART_HORIZONTAL_PADDING as p } from "../../shared/chart.helper.js";
-const N = (e, i, o, t) => d(e, i, o, t), R = ({
+const N = (e, i, o, t) => b(e, i, o, t), R = ({
   isInteractive: e,
   showXAxis: i,
   showYAxis: o,
@@ -10,7 +10,7 @@ const N = (e, i, o, t) => d(e, i, o, t), R = ({
   showLegend: r,
   showTooltip: c,
   categoriesCount: l
-}) => v({
+}) => C({
   isInteractive: e,
   showXAxis: i,
   showYAxis: o,
@@ -19,10 +19,10 @@ const N = (e, i, o, t) => d(e, i, o, t), R = ({
   showTooltip: c,
   itemsCount: l,
   defaultShowLegend: !1
-}), T = (e, i) => b(
+}), T = (e, i) => d(
   e,
   `Gráfico de barras com ${i} categoria${i === 1 ? "" : "s"}`
-), V = (e, i, o) => C({
+), V = (e, i, o) => v({
   isSkeleton: e,
   isInteractive: i,
   accessibleName: o,

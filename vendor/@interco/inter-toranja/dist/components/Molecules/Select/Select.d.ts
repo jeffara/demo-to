@@ -1,8 +1,3 @@
-import { FC, MouseEvent } from 'react';
-import { InputProps } from '../InputBase/types';
-type SelectProps = Omit<InputProps<undefined>, 'phoneType' | 'type' | 'counter' | 'showCounter'> & {
-    onClick?: (event: MouseEvent<HTMLDivElement>) => void;
-    onClickHelper?: () => void;
-};
+import { FC } from 'react';
+import { SelectProps } from './types';
 export declare const Select: FC<SelectProps>;
-export {};

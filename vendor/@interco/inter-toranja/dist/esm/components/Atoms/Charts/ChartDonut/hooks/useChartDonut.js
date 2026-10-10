@@ -1,139 +1,154 @@
-import { useRef as _, useState as g, useMemo as r, useLayoutEffect as re, useEffect as B } from "react";
-import { shouldBreakDonutLayout as O, getRootFontSizePx as F, processDonutSlices as ce, applyMinSlicePercent as ie, formatDonutValues as ae, buildDonutLegendItems as ue, arraysAreEqual as de, resolveLegendOrientation as he } from "../ChartDonut.helper.js";
-import { buildChartDonutClasses as me } from "./buildChartDonutClasses.js";
-import { resolveChartDonutFlags as fe, resolveBaseSliceItems as Se, applySliceHighlightClasses as Ee, resolveShouldShowLegend as ge, resolveCenterPresentation as Le, resolveChartDonutAccessibility as pe, fitCenterValueFontSize as Ce } from "../utils/resolveChartDonutState.js";
-import { STATE as ve, SIZE as be, TAGGING_EVENT as ye } from "../../../../../utils/pattern.js";
-const De = [0, 0, 0, 0, 0], Ie = [""], we = [""], R = (o) => {
-  var l;
-  return o instanceof Element && !!((l = o.getAttribute("data-testid")) != null && l.startsWith("circle"));
-}, _e = ({
-  slice: o = De,
-  label: l = Ie,
-  value: L = we,
-  isLoading: M = !1,
-  state: N = ve.ENABLED,
-  size: x = be.LARGE,
-  showDefaultLegend: z,
-  legendOrientation: G,
-  valueBuilder: u,
-  isSensitiveText: d = !1,
-  forceColor: p,
-  forceIndex: C,
-  othersColor: v,
-  palette: b,
-  totalLabel: H,
-  totalValue: Y,
-  onTag: y
+import { useRef as L, useState as h, useMemo as a, useLayoutEffect as M, useEffect as N } from "react";
+import { shouldBreakDonutLayout as x, getRootFontSizePx as G, processDonutSlices as me, applyMinSlicePercent as fe, formatDonutValues as Se, buildDonutLegendItems as ge, arraysAreEqual as Ee, resolveLegendOrientation as Ce } from "../ChartDonut.helper.js";
+import { buildChartDonutClasses as pe } from "./buildChartDonutClasses.js";
+import { resolveChartDonutFlags as Le, resolveBaseSliceItems as ve, applySliceHighlightClasses as we, resolveShouldShowLegend as be, resolveCenterPresentation as ye, resolveChartDonutAccessibility as Ae, fitCenterValueFontSize as Ie } from "../utils/resolveChartDonutState.js";
+import { STATE as De, SIZE as Re, TAGGING_EVENT as Te } from "../../../../../utils/pattern.js";
+const ke = [0, 0, 0, 0, 0], Oe = [""], Pe = [""], W = (s) => {
+  var c;
+  return s instanceof Element && !!((c = s.getAttribute("data-testid")) != null && c.startsWith("circle"));
+}, Me = ({
+  slice: s = ke,
+  label: c = Oe,
+  value: v = Pe,
+  isLoading: H = !1,
+  state: Y = De.ENABLED,
+  size: q = Re.LARGE,
+  showDefaultLegend: K,
+  legendOrientation: U,
+  valueBuilder: m,
+  isSensitiveText: f = !1,
+  forceColor: w,
+  forceIndex: b,
+  othersColor: y,
+  palette: A,
+  totalLabel: Z,
+  totalValue: j,
+  onTag: I
 }) => {
-  const { isSmall: c, isSkeleton: n, isInteractive: D } = fe(x, N, M), h = _(null), I = _(null), [w, i] = g(null), [K, q] = g(
-    () => O(F())
-  ), t = r(
-    () => ce({ slice: o, label: l, value: L, forceIndex: C, forceColor: p }),
-    [o, l, L, C, p]
-  ), s = r(() => ie(t.slice), [t.slice]), m = r(
-    () => ae(t.value, u, d),
-    [t.value, u, d]
-  ), [a, U] = g(() => s.map(() => 0)), A = me(c, K, n), f = r(
-    () => Se(n, s, a, t.label, m, {
+  const { isSmall: i, isSkeleton: n, isInteractive: D } = Le(q, Y, H), S = L(null), R = L(null), T = L(null), [g, J] = h(0), [k, u] = h(null), [O, Q] = h(
+    () => x(G())
+  ), t = a(
+    () => me({ slice: s, label: c, value: v, forceIndex: b, forceColor: w }),
+    [s, c, v, b, w]
+  ), r = a(() => fe(t.slice), [t.slice]), E = a(
+    () => Se(t.value, m, f),
+    [t.value, m, f]
+  ), [d, X] = h(() => r.map(() => 0)), P = pe(i, O, n), C = a(
+    () => ve(n, r, d, t.label, E, {
       hasOverflow: t.hasOverflow,
       forceColor: t.forceColor,
-      othersColor: v,
-      palette: b
+      othersColor: y,
+      palette: A
     }),
     [
       n,
-      s,
-      a,
+      r,
+      d,
       t.label,
       t.hasOverflow,
       t.forceColor,
-      m,
-      v,
-      b
+      E,
+      y,
+      A
     ]
-  ), W = Ee(
-    f,
-    w,
-    A.dimmedSlice
-  ), T = r(() => ue(f), [f]), Z = he(c, G), j = ge(
-    z,
-    c,
+  ), $ = we(
+    C,
+    k,
+    P.dimmedSlice
+  ), V = a(() => ge(C), [C]), ee = Ce(i, U), te = be(
+    K,
+    i,
     n,
-    T.length
-  ), { shouldShowCenterLabel: J, shouldShowCenterText: S, centerLabel: Q, centerValue: k } = Le({
-    isSmall: c,
+    V.length
+  ), { shouldShowCenterLabel: ne, shouldShowCenterText: p, centerLabel: oe, centerValue: B } = ye({
+    isSmall: i,
     isSkeleton: n,
-    highlightedIndex: w,
+    highlightedIndex: k,
     labels: t.label,
-    formattedValues: m,
+    formattedValues: E,
     slices: t.slice,
-    totalLabel: H,
-    totalValue: Y,
-    valueBuilder: u,
-    isSensitiveText: d
-  }), { trackColor: X, containerAccessibility: $, chartAccessibility: ee } = pe(n), P = (e) => {
-    D && i(e.index);
-  }, te = (e) => {
+    totalLabel: Z,
+    totalValue: j,
+    valueBuilder: m,
+    isSensitiveText: f
+  }), { trackColor: se, containerAccessibility: re, chartAccessibility: le } = Ae(n), F = (e) => {
+    D && u(e.index);
+  }, ce = (e) => {
     e.preventDefault();
-  }, ne = () => {
+  }, ie = () => {
     const e = document.activeElement;
-    R(e) || i(null);
-  }, oe = (e) => {
-    P(e);
-  }, se = (e) => {
-    R(e.relatedTarget) || i(null);
-  }, V = (e) => {
-    i(e.index), y && y((E) => ({
-      ...E,
-      name: ye.INTERACTION_CLICK,
+    W(e) || u(null);
+  }, ae = (e) => {
+    F(e);
+  }, ue = (e) => {
+    W(e.relatedTarget) || u(null);
+  }, _ = (e) => {
+    u(e.index), I && I((o) => ({
+      ...o,
+      name: Te.INTERACTION_CLICK,
       ComponentProperties: {
         component_name: "ChartDonut",
-        slices: o.length,
+        slices: s.length,
         slice_label: e.label,
         slice_percentage: String(e.percentage)
       }
     }));
-  }, le = (e, E) => {
-    e.key !== "Enter" && e.key !== " " || (e.preventDefault(), V(E));
+  }, de = (e, o) => {
+    e.key !== "Enter" && e.key !== " " || (e.preventDefault(), _(o));
   };
-  return re(() => {
-    Ce(I.current, S);
-  }, [k, S]), B(() => (h.current = setTimeout(() => {
-    de(s, a) || U(s);
+  return M(() => {
+    const e = R.current;
+    if (!e)
+      return;
+    const o = () => {
+      const z = e.getBoundingClientRect();
+      z.width > 0 && J(z.width);
+    };
+    o();
+    const he = requestAnimationFrame(o), l = typeof ResizeObserver > "u" ? void 0 : new ResizeObserver(o);
+    return l == null || l.observe(e), () => {
+      cancelAnimationFrame(he), l == null || l.disconnect();
+    };
+  }, [i, n, O]), M(() => {
+    const e = g > 0 ? g : void 0;
+    Ie(T.current, p, e);
+  }, [B, p, g]), N(() => (S.current = setTimeout(() => {
+    Ee(r, d) || X(r);
   }, 500), () => {
-    h.current && clearTimeout(h.current);
-  }), [s, a]), B(() => {
+    S.current && clearTimeout(S.current);
+  }), [r, d]), N(() => {
     const e = () => {
-      q(O(F()));
+      Q(x(G()));
     };
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e);
     };
   }, []), {
-    classes: A,
-    sliceItems: W,
-    legendItems: T,
-    legendOrientation: Z,
-    shouldShowLegend: j,
-    shouldShowCenterText: S,
-    shouldShowCenterLabel: J,
+    classes: P,
+    sliceItems: $,
+    legendItems: V,
+    legendOrientation: ee,
+    shouldShowLegend: te,
+    shouldShowCenterText: p,
+    shouldShowCenterLabel: ne,
     isSkeleton: n,
     isInteractive: D,
-    centerLabel: Q,
-    centerValue: k,
-    centerValueRef: I,
-    trackColor: X,
-    containerAccessibility: $,
-    chartAccessibility: ee,
-    handleSliceClick: V,
-    handleSliceHighlight: P,
-    handlePreventFocus: te,
-    handleChartPointerLeave: ne,
-    handleSliceFocus: oe,
-    handleSliceBlur: se,
-    handleSliceKeyDown: le
+    centerLabel: oe,
+    centerValue: B,
+    centerValueRef: T,
+    chartRef: R,
+    trackColor: se,
+    containerAccessibility: re,
+    chartAccessibility: le,
+    handleSliceClick: _,
+    handleSliceHighlight: F,
+    handlePreventFocus: ce,
+    handleChartPointerLeave: ie,
+    handleSliceFocus: ae,
+    handleSliceBlur: ue,
+    handleSliceKeyDown: de
   };
 };
 export {
-  _e as useChartDonut
+  Me as useChartDonut
 };

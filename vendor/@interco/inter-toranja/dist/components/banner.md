@@ -33,7 +33,7 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 |------|-----------|-----------------|--------|
 | state | Estado do banner, pode ser enabled, skeleton ou error. | enabled, skeleton, error | enabled |
 | variant | Variante do banner, pode ser image ou webview. | image, webview | image |
-| size | Tamanho do banner, determina a proporção e altura máxima. | extraSmall, small, medium, large | medium |
+| size | Tamanho do banner, determina a proporção. | extraSmall, small, medium, column4, large, extraLarge | medium |
 | url | URL da imagem a ser exibida (apenas para variant: "image"). | — | — |
 | alt | Texto alternativo para a imagem (acessibilidade). | — | — |
 | webContent | Conteúdo React a ser exibido (apenas para variant: "webview"). | — | — |
@@ -51,7 +51,7 @@ import type { STATE, SIZE } from '@/utils/pattern'
 
 export type BannerVariant = `${BANNER_VARIANT}`
 export type BannerState = Extract<`${STATE}`, 'enabled' | 'skeleton' | 'error'>
-export type BannerSize = `${SIZE}` | 'extraSmall'
+export type BannerSize = `${SIZE}` | 'extraSmall' | 'column4'
 export type ImgState = `${IMG_STATE}`
 
 export interface BannerContentProps {

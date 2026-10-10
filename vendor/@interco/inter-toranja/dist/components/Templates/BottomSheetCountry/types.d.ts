@@ -19,3 +19,21 @@ export interface BottomSheetCountryProps extends Omit<BottomSheetProps, 'slot'> 
     initialSearchTerm?: string;
     onSelect: (item: BottomSheetCountryItem) => void;
 }
+export type CountryPickerPanelVariant = 'sheet' | 'popover';
+export interface CountryPickerPanelProps {
+    items: BottomSheetCountryItem[];
+    featuredItems?: BottomSheetCountryItem[];
+    selectedValue?: string;
+    showSearch?: boolean;
+    showFeatured?: boolean;
+    featuredTitle?: string;
+    allTitle?: string;
+    searchPlaceholder?: string;
+    initialSearchTerm?: string;
+    onSelect: (item: BottomSheetCountryItem) => void;
+    close: () => void;
+    onTag?: BottomSheetCountryProps['onTag'];
+    variant?: CountryPickerPanelVariant;
+    radioGroupId?: string;
+    'data-testid'?: string;
+}

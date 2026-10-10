@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const S={SCROLL:"scroll",PAGE_VIEW:"page-view"},e=48;exports.CAROUSEL_VARIANTS=S;exports.SCROLL_END_SPACING=e;
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const A={SCROLL:"scroll",PAGE_VIEW:"page-view"},L=48;exports.CAROUSEL_SCROLL_END_SPACING_FALLBACK_PX=L;exports.CAROUSEL_VARIANTS=A;

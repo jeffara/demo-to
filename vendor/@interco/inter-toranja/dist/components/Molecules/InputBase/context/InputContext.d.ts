@@ -1,4 +1,4 @@
-import { PickerRange } from '../types';
+import { PickerRange, ResolvedInputValueProps } from '../types';
 import { MaskType, PhoneTypeValue, DateType } from '../utils/inputEnums';
 import { FlagName } from '../../../Atoms/Flag/types';
 import { TagProps } from '../../../../types/shared';
@@ -58,11 +58,7 @@ interface InputHandlers {
     onTag?: (data: TagProps) => void;
     getInputType: (maskType?: MaskType, showPassword?: boolean, inputType?: string) => string;
     getInputMode: (type: string, maskType?: MaskType) => string;
-    getInputValueProps: () => {
-        value: string | number | readonly string[];
-    } | {
-        defaultValue: string | number | readonly string[];
-    };
+    getInputValueProps: () => ResolvedInputValueProps;
 }
 export interface InputContextValue {
     state: InputState;

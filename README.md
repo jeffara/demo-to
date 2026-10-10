@@ -1,74 +1,53 @@
-# Atualização V3.1.3 — espaçamento e navegação mobile
+# Toranja + EDS — 4.0.0
 
-Leia `docs/ATUALIZACAO-V3.1.3.md`. Corrige os recortes do rodapé, o espaçamento dos accordions e a navegação das abas em telas estreitas. Runtime compilado incluído. Não é necessário reimportar o conteúdo. Relatórios de versões anteriores permanecem como histórico.
+Adaptador React para o pacote fornecido de `@interco/inter-toranja` **2.0.1**. São 73 componentes oficiais, quatro composições Custom e 128 páginas de demonstração. As 878 propriedades próprias estão classificadas no inventário e no mapeamento de autoria. O runtime monta os componentes oficiais; não replica manualmente seu DOM interno.
 
-# Atualização V3.1.2 — calendário e tipografia
+Os 4.230 arquivos do vendor conferem byte a byte com o ZIP recebido. Tokens, fontes completas, variantes e estados oficiais são preservados. A comparação de estilos computados cobre 88 cenários (11 componentes, quatro temas e duas larguras); não certifica todas as combinações possíveis do design system.
 
-Leia `docs/ATUALIZACAO-V3.1.2.md` para atualizar uma V3.1.1 existente. Esta atualização é de código/fontes; o pacote de conteúdo permanece 3.1.1 e não precisa ser reimportado. Evidências atuais: `docs/AUDITORIA-V3.1.2.html`. Relatórios com “baseline-final” referem-se à entrega anterior, salvo nova execução explícita.
+## Implantação
 
-# Toranja EDS — V3 final (3.1.1)
+**Código e conteúdo passam para 4.0.0. É necessário importar e publicar o conteúdo atualizado.** O runtime acompanha a entrega compilado.
 
-Projeto XWalk para AEM Author + Universal Editor + Edge Delivery Services, em `/content/demo-to`. Referência: **@interco/inter-toranja 1.13.3**, fornecida pelo usuário.
+1. Preserve o commit anterior e exporte backup de `/content/demo-to`, dos assets envolvidos e das edições existentes.
+2. Revise a sincronização com `python3 tools/sync-baseline.py --target /caminho/do/clone`. Aplique com `--apply` e revise o diff. Preserve as configurações do ambiente.
+3. Faça commit/push em uma branch de homologação. Inclua blocos, modelos JSON, chunks, estilos, `head.html`, `.hlxignore` e `version.json`. Aguarde o Code Sync.
+4. Instale `demo-to-content-4.0.0.zip` pelo Package Manager **sem uninstall/delete**. O filtro replace dos descendentes de `/content/demo-to` pode sobrescrever edições e remover páginas ausentes da baseline. Para conteúdo de negócio, revise e migre seletivamente a partir do backup.
+5. Homologue edição, salvar/reabrir propriedades e coleções no Universal Editor. Teste Select, Stepper, Table, Sidebar, overlays, menu mobile e logo para Home.
+6. Execute Preview/Publish das 128 páginas, incluindo Home, nav e footer, e dos assets necessários. Instalar no Author não publica no EDS.
+7. Confira `/version.json` em Preview e Live: código/conteúdo `4.0.0`, DS `2.0.1`. Repita Lighthouse no domínio publicado antes de promover a versão.
 
-## Escopo exato
+O pacote interno `content/demo-to-content.zip` tem a mesma versão 4.0.0 do ZIP de conteúdo entregue separadamente. Em rollback, restaure código e backup editorial compatíveis e republique.
 
-O catálogo possui **64/64 componentes oficiais** e quatro blocos funcionais no grupo **DS Toranja Custom**. Seção, texto padrão e os tipos de item são infraestrutura de autoria XWalk; não são apresentados como componentes adicionais do Toranja.
+## Desenvolvimento e validação
 
-- 751 propriedades próprias classificadas em campos, coleções, ações e contratos técnicos.
-- 101 modelos e 2.273 campos, incluindo itens e propriedades de layout.
-- 119 páginas, incluindo exemplos individuais dos 64 componentes e as galerias `/showcase/layouts` e `/showcase/custom`.
-- Conteúdo importável em `content/demo-to-content.zip`: 119 páginas e 11 assets.
-- Home, navegação do catálogo, composições, formulários demonstrativos e layouts reorganizados.
-- Snapshot oficial do vendor preservado; adaptadores ficam fora dele.
+Use Node 24. Execute `npm ci`, `npm run build` e `npm run export:aem` para reconstruir. Não edite chunks compilados manualmente.
 
-**DS Toranja Custom:** `v3-form` (formulário configurável), `v3-search` (busca no índice público EDS), `v3-video` (player responsivo) e `v3-simulator` (simulação local com taxas editoriais). São funcionalidades próprias do projeto, separadas dos 64 exports oficiais. Galeria em `/showcase/custom` e exemplos em `/showcase/custom/formulario`, `/showcase/custom/busca`, `/showcase/custom/video` e `/showcase/custom/simulador`.
+`npm test` valida estrutura, pacote, modelos e comportamento no browser. Instale Chromium com `npx playwright install chromium` ou defina `PLAYWRIGHT_CHROMIUM_EXECUTABLE`. `npm run test:compliance` verifica a integridade do vendor, tokens e mapeamento.
 
-O formulário está preparado para integração posterior, sem endpoint produtivo ativado. A busca depende de `/query-index.json` configurado e atualizado no EDS. O player aceita MP4/WebM e YouTube. O simulador usa parâmetros editoriais ilustrativos. Consulte `docs/INTEGRACOES-V3.md`.
+Para repetir a comparação direta: `node tools/build-reference.mjs` e `node tests/official-parity.mjs`. `node tests/deployment-files.mjs` confirma que o frontend não depende de arquivos excluídos pelo `.hlxignore`.
 
-O conteúdo da Jornada é uma composição de componentes oficiais, sem reintrodução do bloco customizado `moments-journey`.
+Após atualizar o DS, execute `npm run inventory:ds`, revise contratos/modelos, reconstrua e valide variantes, estados e callbacks. Não são removidas variantes CSS com base apenas nos exemplos.
 
-## Layout e autoria
+## Lighthouse
 
-Selecione uma **Section** no Universal Editor para configurar layout, largura, espaçamento, alinhamento, fundo e ordem no mobile. Consulte `docs/AUTORIA-LAYOUTS.md` e visite `/showcase/layouts`.
-
-No modo **Colunas independentes**, selecione cada componente e use **Layout — coluna na seção**. É possível colocar vários componentes na mesma coluna. A estrutura do repositório continua plana: seção → blocos. Agrupamentos de colunas são apenas apresentação no navegador.
-
-## Começar
-
-Requisitos: Node 22.12+, Python 3 e Git.
+Com Chrome instalado no Mac:
 
 ```bash
-npm ci
-npm run preview
+AUDIT_RUNS=3 MIN_PERFORMANCE=98 npm run test:performance -- https://seu-dominio/
 ```
 
-Abra `http://127.0.0.1:4173/`, `/demo-toranja`, `/composicoes` e `/showcase/layouts`.
+São três execuções por perfil desktop/mobile para Home, catálogo e layouts. `CHROME_PATH` é opcional; `AUDIT_ROUTES` e `AUDIT_OUTPUT` ajustam o escopo. O comando retorna erro se alguma mediana ficar abaixo de 98 ou a medição estiver incompleta.
 
-```bash
-npm run build
-npm run check
-npm run export:aem
-python3 tools/audit-package.py
-python3 tests/baseline-package.py
-```
+Resultados finais: `docs/performance-v4.0.0/summary.json`, com relatórios HTML/JSON individuais. A medição local usa gzip/HTTP, sem extensões, e não reproduz integralmente o CDN, a latência ou o conteúdo publicado. Confira o resultado real no guia: performance, acessibilidade, boas práticas e SEO são notas distintas. A entrega não promete uma nota que os relatórios não comprovam.
 
-Para executar as duas rodadas de testes:
+## Design system e autoria
 
-```bash
-npx playwright install chromium
-npm test
-```
+Novos componentes: Breadcrumb, MenuPopup, ModalDialog, Pagination, Panel, SideSheet, Sidebar, Table e TooltipDescription. Select usa `options`/`onOptionSelect`; Stepper usa `value`/`onValueChange`. Exemplos e formulário Custom foram migrados para essas APIs.
 
-Use `PLAYWRIGHT_CHROMIUM_EXECUTABLE` se quiser indicar um Chromium existente. `content/pages.json` é a fonte dos exemplos entregues; o build não sobrescreve esse conteúdo com versões anteriores. Os utilitários `curate-showcases.mjs` e `polish-catalog.mjs` registram a curadoria inicial e não fazem parte do build cotidiano.
+Enums seguem os tipos oficiais. Objetos, coleções e slots têm campos de autoria; dados genéricos de Table e marca customizada da Sidebar aceitam JSON declarativo. Callbacks não serializáveis usam identificadores registrados por `registerDSBehavior` em `scripts/ds-behaviors.js`. Refs e contratos de DOM permanecem técnicos. Consulte `docs/toranja-contract.json` e `docs/property-mapping.json`.
 
-## Entrega
+O contêiner do exemplo de Sidebar permite rolagem horizontal em telas estreitas, preservando sua largura oficial. A entrega compartilha e compacta recursos, antecipa fontes críticas e prioriza os blocos visíveis. Experimentos com subconjuntos de fontes foram descartados por diferença de espaçamento.
 
-Leia **`docs/DEPLOY-V3-FINAL.md`**. As evidências estão em `docs/AUDITORIA-V3-FINAL.html`. Não recrie o site. Sincronize o clone com `tools/sync-baseline.py`, revise as exclusões, faça commit/push, importe o ZIP interno e publique conteúdo, nav, footer e referências.
+Não houve deploy remoto nem homologação autenticada de persistência no Universal Editor. Os relatórios identificam limitações de acessibilidade do pacote oficial; elas não foram encobertas com alterações internas no vendor.
 
-**Faça backup antes da importação:** o pacote substitui os descendentes de `/content/demo-to`, removendo páginas ausentes da entrega e alterações editoriais anteriores. Preserva `jcr:content` da raiz e não inclui `/conf` nos filtros. O pacote não despublica automaticamente URLs antigas.
-
-`fstab.yaml`, configuração EDS remota, permissões e conta técnica precisam corresponder ao ambiente. `config/public-paths.json` é apenas referência, não aplica configuração remota via Git.
-
-A home EDS usa `/`; `.html` permanece nas URLs de edição do Author. O código entrega ilhas React do pacote oficial dentro de blocos EDS; não é uma SPA.
-
-**Limite da evidência:** cobertura 64/64 é cobertura dos exports do snapshot fornecido, não de versões futuras nem de todas as combinações de propriedades. A validação entregue é local. Persistência real no Universal Editor, instalação FileVault, permissões e publicação precisam ser homologadas no AEM.
+Guia atual: `docs/EDS_AEM_Universal_Editor_Arquitetura_Deploy_4.0.0_FINAL.html`. Relatórios de versões anteriores são históricos.

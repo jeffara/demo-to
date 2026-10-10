@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("../../../../utils/classNamesMerge.cjs"),s=()=>({rootClasses:e.classNamesMerge("table")});exports.useTable=s;

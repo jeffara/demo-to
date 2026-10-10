@@ -1,16 +1,21 @@
-import { classNamesMerge as t } from "../../../../utils/classNamesMerge.js";
-import { SIZE as r } from "../../../../utils/pattern.js";
-const g = () => t("avatar", "avatar__container"), l = ({
+import { classNamesMerge as e } from "../../../../utils/classNamesMerge.js";
+import { SIZE as t } from "../../../../utils/pattern.js";
+const m = {
+  [t.SMALL]: "type-label-small-bold",
+  [t.MEDIUM]: "type-label-medium-bold",
+  [t.LARGE]: "type-title-small"
+}, g = (a) => m[a], n = () => e("avatar", "avatar__container"), i = ({
   variant: a,
-  size: e,
-  state: s,
-  color: m
-}) => t("avatar", `avatar__${a}--${e}--${s}--${m}`), v = (a) => t("avatar__flag", {
-  "avatar__flag--medium": a === r.MEDIUM,
-  "avatar__flag--large": a === r.LARGE
+  size: l,
+  state: r,
+  color: s
+}) => e("avatar", `avatar__${a}--${l}--${r}--${s}`), p = (a) => e("avatar__flag", {
+  "avatar__flag--medium": a === t.MEDIUM,
+  "avatar__flag--large": a === t.LARGE
 });
 export {
-  l as getAvatarClassName,
-  g as getContainerClassName,
-  v as getFlagClassName
+  i as getAvatarClassName,
+  n as getContainerClassName,
+  p as getFlagClassName,
+  g as getInitialTypographyClassName
 };

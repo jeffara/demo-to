@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=({isDisabled:i,isFocused:o,isReadOnly:e,value:n})=>({...(i||e)&&!n?{y:10}:{},...o||n?{y:-5,scale:.75,x:-31}:{y:8,scale:1,x:0},width:"100%"});exports.getAnimationConfig=t;
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const a=({isDisabled:i,isFocused:n,isReadOnly:o,value:t})=>{const s=!!(n||t),l=(i||o)&&!t;let e;return s?e=4:l?e=10:e=8,{y:e,scale:1,x:0,width:"100%"}};exports.getAnimationConfig=a;

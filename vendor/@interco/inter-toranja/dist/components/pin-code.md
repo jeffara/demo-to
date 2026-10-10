@@ -38,7 +38,7 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 | placeholder | Define o placeholder para os campos do componente PinCode. Deve ser um único caractere. | — | 0 |
 | type | Define o tipo de entrada para os campos do componente PinCode. Pode ser "text" ou "number". | text, number | — |
 | disabled | Define se o componente PinCode está desabilitado. | — | — |
-| hidden | Quando true, mascara o valor digitado usando type password (bullet), conforme variante hidden do Figma. | — | { summary: 'false |
+| hidden | Quando true, mascara o valor digitado com um bullet. | — | { summary: 'false |
 | onChange | Callback chamado sempre que o valor do PinCode mudar. Recebe o evento de mudança como parâmetro. | — | — |
 | onGetValue | Callback chamado sempre que o valor do PinCode mudar (incluindo ao apagar). Retorna o valor completo concatenado dos campos. | — | — |
 | onComplete | Callback chamado automaticamente ao digitar o último dígito (ou colar um código completo). Use para disparar a validação do token. | — | — |
@@ -105,7 +105,7 @@ export interface UsePinCodeReturn {
   handleBlur: (e: React.FocusEvent<HTMLInputElement>) => void
   handleContainerPointerDown: (e: React.MouseEvent | React.PointerEvent) => void
   getClassNames: (index: number) => string
-  getInputClassNames: () => string
+  getInputClassNames: (index: number) => string
 }
 
 ```

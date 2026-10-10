@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const _=require("../../../../../../../utils/pattern.cjs"),T=_.SIZE.MEDIUM,E=8,N="bottom-end",A="Ações da linha";exports.TABLE_ICON_BUTTON_MENU_DEFAULT_ARIA_LABEL=A;exports.TABLE_ICON_BUTTON_MENU_DEFAULT_SIZE=T;exports.TABLE_ICON_BUTTON_MENU_OFFSET=E;exports.TABLE_ICON_BUTTON_MENU_PLACEMENT=N;

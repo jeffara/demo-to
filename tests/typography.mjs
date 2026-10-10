@@ -29,7 +29,7 @@ try{
       }catch(e){report.tests.push({name,pass:false,error:e.message});console.log('FAIL',name,e.message)}
     }
   }
-  for(const [name,selector,expected] of [['Corpo editorial','body','Inter'],['Título editorial','h1','Citrina VF']]){
+  for(const [name,selector,expected] of [['Corpo editorial','body','Inter'],['Título oficial title/large','h1','Inter']]){
     try{assert.ok((await page.locator(selector).first().evaluate(n=>getComputedStyle(n).fontFamily)).includes(expected));report.tests.push({name,pass:true})}catch(e){report.tests.push({name,pass:false,error:e.message})}
   }
 }finally{

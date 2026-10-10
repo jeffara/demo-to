@@ -1,0 +1,376 @@
+{
+  "version": "4.0.0",
+  "contentVersion": "4.0.0",
+  "designSystem": "2.0.1",
+  "components": 73,
+  "properties": 878,
+  "models": 118,
+  "fields": 2636,
+  "pages": 128,
+  "vendorIntegrity": {
+    "sourceArchive": "01-interco-toranja-1-.zip",
+    "sha256": "5bba4a23457ef75a335b7921c85c69c02f80acc9d879ea0d1d84eed21393d704",
+    "package": "@interco/inter-toranja",
+    "version": "2.0.1",
+    "files": 4230,
+    "allFileContentsMatchArchive": true,
+    "filenameDecoding": "UTF-8 bytes recovered from unflagged CP437 ZIP names; file bytes unchanged",
+    "patches": []
+  },
+  "performance": {
+    "lighthouseVersion": "13.5.0",
+    "threshold": 98,
+    "results": [
+      {
+        "route": "/",
+        "profile": "desktop",
+        "runs": [
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 586.3800000000001,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 646.2725,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 583.4839999999999,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          }
+        ],
+        "scores": {
+          "performance": 100,
+          "accessibility": 87,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "passesPerformanceGoal": true
+      },
+      {
+        "route": "/",
+        "profile": "mobile",
+        "runs": [
+          {
+            "scores": {
+              "performance": 96,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2552.4179999999997,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 95,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2704.26,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 96,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2553.268,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          }
+        ],
+        "scores": {
+          "performance": 96,
+          "accessibility": 87,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "passesPerformanceGoal": false
+      },
+      {
+        "route": "/demo-toranja",
+        "profile": "desktop",
+        "runs": [
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 67,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 602.5,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 67,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 561.81,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 67,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 522.5844999999999,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          }
+        ],
+        "scores": {
+          "performance": 100,
+          "accessibility": 67,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "passesPerformanceGoal": true
+      },
+      {
+        "route": "/demo-toranja",
+        "profile": "mobile",
+        "runs": [
+          {
+            "scores": {
+              "performance": 97,
+              "accessibility": 67,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2250.9494999999997,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 97,
+              "accessibility": 67,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2252.0535000000004,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 96,
+              "accessibility": 67,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2402.3019999999997,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          }
+        ],
+        "scores": {
+          "performance": 97,
+          "accessibility": 67,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "passesPerformanceGoal": false
+      },
+      {
+        "route": "/showcase/layouts",
+        "profile": "desktop",
+        "runs": [
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 548.433,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 647.955,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 100,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 645.5400000000001,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          }
+        ],
+        "scores": {
+          "performance": 100,
+          "accessibility": 87,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "passesPerformanceGoal": true
+      },
+      {
+        "route": "/showcase/layouts",
+        "profile": "mobile",
+        "runs": [
+          {
+            "scores": {
+              "performance": 96,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2554.2960000000003,
+            "cls": 0,
+            "tbt": 15,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 95,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2710.044,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          },
+          {
+            "scores": {
+              "performance": 95,
+              "accessibility": 87,
+              "best-practices": 96,
+              "seo": 100
+            },
+            "lcp": 2713.635,
+            "cls": 0,
+            "tbt": 0,
+            "warnings": []
+          }
+        ],
+        "scores": {
+          "performance": 95,
+          "accessibility": 87,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "passesPerformanceGoal": false
+      }
+    ]
+  },
+  "visualComparison": {
+    "pass": true,
+    "scenarios": 88,
+    "nodes": 784
+  },
+  "packageAudit": {
+    "checks": [
+      {
+        "name": "73 exports públicos representados",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "878 propriedades próprias classificadas",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "Valores de exemplo pertencem às enumerações oficiais",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "Hierarquia de páginas completa",
+        "pass": true,
+        "detail": "128 páginas"
+      },
+      {
+        "name": "XML do pacote válido",
+        "pass": true,
+        "detail": "157 documentos"
+      },
+      {
+        "name": "Sem alteração em /conf ou /apps",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "Referências de páginas no pacote resolvem conteúdo existente",
+        "pass": true,
+        "detail": "[]"
+      },
+      {
+        "name": "DAM limitado aos assets importados",
+        "pass": true,
+        "detail": ""
+      },
+      {
+        "name": "Code Bus abaixo de 500 arquivos e 10 MB",
+        "pass": true,
+        "detail": "423 arquivos / 7444119 bytes"
+      }
+    ]
+  },
+  "remoteDeployPerformed": false,
+  "remoteUEPersistenceTested": false
+}

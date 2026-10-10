@@ -1,4 +1,4 @@
-import { jsxs as O, jsx as t } from "react/jsx-runtime";
+import { jsx as t, jsxs as O } from "react/jsx-runtime";
 import '../../../assets/components/Molecules/PinCode/PinCode.modules.css';import '../../../assets/components/Molecules/InputBase/InputBase.modules.css';/* empty css                                  */
 /* empty css                     */
 import { usePinCode as S } from "./hooks/usePinCode.js";
@@ -11,10 +11,10 @@ function z({
   disabled: c,
   hints: s,
   placeholder: o,
-  hidden: m = !1,
-  onGetValue: p,
-  onComplete: u,
-  onChange: _,
+  hidden: _ = !1,
+  onGetValue: m,
+  onComplete: p,
+  onChange: u,
   onStateChange: f
 }) {
   const {
@@ -39,19 +39,19 @@ function z({
     fields: i,
     state: d,
     disabled: c,
-    hidden: m,
+    hidden: _,
     type: a,
-    onGetValue: p,
-    onComplete: u,
+    onGetValue: m,
+    onComplete: p,
     onStateChange: f
   }), E = !!(s && s.length > 0);
-  return /* @__PURE__ */ O(
+  return /* @__PURE__ */ t(
     "div",
     {
       className: "fieldset__pin-code__container",
       style: { "--pin-code-fields": i },
       onPointerDown: I,
-      children: [
+      children: /* @__PURE__ */ O("div", { className: "fieldset__pin-code__container__content", children: [
         /* @__PURE__ */ t("div", { className: "fieldset__pin-code__container__wrapper", children: Array.from({ length: i }).map((F, e) => /* @__PURE__ */ t(
           "fieldset",
           {
@@ -77,11 +77,11 @@ function z({
                 onFocus: () => B(e),
                 onBlur: D,
                 maxLength: 1,
-                className: A(),
+                className: A(e),
                 disabled: r,
                 placeholder: o == null ? void 0 : o.charAt(0),
                 readOnly: C,
-                onChange: _,
+                onChange: u,
                 "aria-invalid": l
               }
             ) }) })
@@ -100,7 +100,7 @@ function z({
             hints: s
           }
         )
-      ]
+      ] })
     }
   );
 }

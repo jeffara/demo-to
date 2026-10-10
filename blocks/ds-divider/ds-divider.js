@@ -1,2 +1,3 @@
-import { mountDS } from '../../scripts/ds-adapter.js';
-export default block => mountDS(block, 'ds-divider');
+import {mountDS} from '../../scripts/page.js';
+const schema={"name":"Divider","descriptors":[{"name":"variant","kind":"enum","path":["variant"],"key":"p76617269616e74"},{"name":"orientation","kind":"enum","path":["orientation"],"key":"p6f7269656e746174696f6e"},{"name":"actionLink","path":["$actionLink"],"key":"actionLink","kind":"link"},{"name":"actionTarget","path":["$actionTarget"],"key":"actionTarget","kind":"enum"},{"name":"accessibleLabel","path":["$accessibleLabel"],"key":"accessibleLabel","kind":"string"},{"name":"triggerLabel","path":["$triggerLabel"],"key":"triggerLabel","kind":"string"},{"name":"editorMode","path":["$editorMode"],"key":"editorMode","kind":"enum"}],"events":[],"technical":[],"collections":[],"version":3,"cellNames":["schemaVersion","p76617269616e74","p6f7269656e746174696f6e","actionLink","actionTarget","accessibleLabel","triggerLabel","editorMode"],"itemCellNames":[]};
+export default block=>mountDS(block,'ds-divider',schema);

@@ -1,78 +1,9 @@
-.ds-official { width:100%; min-width:0; font-family:var(--type-font-default),sans-serif; line-height:1.5; color:var(--color-text-neutral-primary,var(--color-background-static-black)); }
-.ds-official *, .ds-official *::before, .ds-official *::after { box-sizing:border-box; }
-.ds-official button { font-family:inherit; }
-.ds-official img { max-width:100%; }
-.ds-official > :not(style) { max-width:100%; }
-.ds-official .ds-launch { background:var(--color-background-brand-default); border:0; border-radius:12px; color: var(--color-surface-static-white-default); padding:14px 24px; cursor:pointer; font:inherit; }
-.ds-options { list-style:none; margin:4px 0; padding:8px; border:1px solid var(--color-link-static-white-pressed); border-radius:12px; }
-.ds-options button { width:100%; text-align:left; padding:12px; border:0; background:transparent; cursor:pointer; }
-.ds-options button:hover { background:var(--color-background-brand-softer); }
-.ds-status { display:block; min-height:1em; font-size:12px; }
-.ds-author-items { display:flex;flex-wrap:wrap;gap:8px;margin-block:12px; }
-.ds-author-item { border:1px dashed var(--color-icon-disabled); padding:8px; max-width:250px; }
-.ds-error { color:var(--color-icon-accent-red-strong); }
-@media (prefers-reduced-motion: reduce) { .ds-official *, .ds-official *::before { animation-duration:0.01ms!important; transition-duration:0.01ms!important; } }
-/* Adaptação dos componentes full-screen à largura disponível de uma seção EDS. */
-.ds-official .banner { margin-inline:0; }
-.ds-official .feedback-screen__content { width:min(100%,393px); }
-.ds-floating-action-button.fab-inline .btn-fab { position:relative; inset:auto; }
-.ds-official:has(.avatar) { text-align:start; }
-.ds-empty { padding:20px; border:1px dashed var(--color-link-static-white-pressed); border-radius:12px; }
-
-.ds-modal-close { position:fixed; top:20px; right:20px; z-index:10002; border:0; border-radius:20px; background:var(--color-background-neutral-default); color:var(--color-background-static-black); padding:12px 20px; box-shadow:0 2px 12px color-mix(in srgb, var(--color-surface-static-black) 20.0%, transparent); cursor:pointer; }
-
-.ds-options [role=option]{padding:var(--spacing-12);cursor:pointer;border-radius:var(--radius-small);}
-.ds-options [role=option].active{background:var(--color-surface-brand-soft);}
-.ds-options [aria-disabled=true]{opacity:.5;cursor:default;}
-.ds-select [role=combobox]{outline-offset:4px;}
-.ds-select .select-wrapper input{pointer-events:none;}
-.ds-modal-close{background:var(--color-surface-neutral-softest);color:var(--color-text-neutral-primary);border-radius:var(--radius-medium);box-shadow:var(--elevation-surface-raised);}
-.ds-launch{background:var(--color-background-brand-default)!important;color:var(--color-text-neutral-inverse)!important;border-radius:var(--radius-medium)!important;}
-
-/* DS 1.13.3: measured skeleton text can exceed a narrow EDS section. */
-.ds-official .accordion--skeleton .skeleton__description,.ds-official .accordion--skeleton .skeleton__title{min-width:0;max-width:100%;}
-
-/* Content placed in the official Card slot owns its internal spacing. */
-.ds-official .ds-card-content{padding:var(--spacing-24,24px);display:grid;gap:var(--spacing-16,16px);min-width:0;overflow-wrap:anywhere;}
-.ds-official .ds-card-content>*,.ds-official .ds-card-content :is(p,h2,h3,ul,ol){margin:0;}
-.ds-official .ds-card-content h2{font-family:var(--type-font-brand);font-size:clamp(28px,3.4vw,44px);font-weight:400;line-height:1.15;letter-spacing:-.025em;}
-.ds-official .ds-card-content h3{font-family:var(--type-font-brand);font-size:24px;font-weight:400;line-height:1.25;}
-.ds-official .ds-card-content p{font-size:16px;line-height:1.55;}
-.ds-official .ds-card-content li{margin-block:8px;}
-.site-footer-content .ds-official .ds-card-content{padding:0;gap:16px;}
-.site-footer-content .ds-official [data-testid=card-component]{background:transparent;}
-.site-footer-content .ds-official .ds-card-content h3{font-size:18px;}
-.site-footer-content .ds-official .ds-card-content p{font-size:14px;}
-.section.hero-layout .ds-official [data-testid=card-component]{background:transparent;}
-.section.hero-layout .ds-official .ds-card-content{padding:0;gap:24px;}
-@media(max-width:760px){.ds-official .ds-card-content{padding:20px;}.site-footer-content .ds-official .ds-card-content,.section.hero-layout .ds-official .ds-card-content{padding:0;}}
-
-/* Conteúdo editorial dos slots: espaçamento não é fornecido pelo componente React. */
-.ds-official .accordion__content{padding-top:var(--spacing-16,16px)}
-.ds-official .accordion__slot,.ds-tab-panel{display:flex;flex-direction:column;gap:var(--spacing-16,16px);min-width:0;overflow-wrap:anywhere}
-.ds-official .accordion__content :is(h2,h3,h4,p,ul,ol),.ds-tab-panel :is(h2,h3,h4,p,ul,ol){margin-block:0}
-.ds-official .accordion__content :is(h2,h3,h4),.ds-tab-panel :is(h2,h3,h4){line-height:1.3}
-.ds-official .accordion__content :is(ul,ol){padding-inline-start:24px}
-.ds-official .accordion__content li+li{margin-top:8px}
-.ds-tab-panel{padding:24px 0 0}
-/* Cards usados como grupos do rodapé não devem recortar texto nos cantos. */
-.site-footer-content .ds-official [data-testid=card-component]{min-height:0;border-radius:0;overflow:visible}
-.site-footer-content .ds-official [data-testid=card-component]::after{content:none!important}
-.site-footer-content .ds-official .ds-card-content{gap:12px;padding:2px}
-.site-footer-content .ds-card-content h3{line-height:1.4}
-.site-footer-content .ds-card-content li:first-child{margin-top:0}
-.site-footer-content .ds-card-content li:last-child{margin-bottom:0}
-/* Abas roláveis preservam seus rótulos e sinalizam o conteúdo fora da tela. */
-.ds-tabs-frame{min-width:0;max-width:100%}
-.ds-official .tabs-navigation--scrollable{overscroll-behavior-x:contain;scrollbar-width:thin;scroll-padding-inline:4px}
-.ds-official .tabs-navigation--scrollable .tabs-navigation__wrapper__container-tabs{padding-inline:4px}
-.ds-tabs-scroll-controls{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:4px}
-.ds-tabs-scroll-controls>span{font-size:12px;color:var(--color-text-neutral-secondary);margin-right:auto}
-.ds-tabs-scroll-controls button{min-width:44px;min-height:44px}
-@media(max-width:760px){
- .ds-official .tabs-navigation:not(.tabs-navigation--scrollable) [data-testid=container-tabs]{flex-wrap:wrap;padding-inline:0}
- .ds-official .tabs-navigation:not(.tabs-navigation--scrollable) [data-testid=tab]{flex:1 1 45%;height:auto;min-height:48px;padding-block:12px}
- .ds-official .tabs-navigation:not(.tabs-navigation--scrollable) .tabs-navigation__wrapper__container-tabs__tab__label .text{white-space:normal;overflow-wrap:anywhere}
- .ds-tab-panel{padding-top:16px}
- .site-footer-content .ds-official .ds-card-content{padding:2px}
-}
+/* EDS hosts and authored slots. The internal component styles belong to Toranja. */
+.ds-official{min-width:0;font-family:var(--type-font-default),sans-serif;color:var(--color-text-neutral-primary)}
+.ds-status:empty{display:none}.ds-status{display:block;font-size:var(--type-body-small-font-size,14px)}
+.ds-author-items{display:flex;flex-wrap:wrap;gap:8px;margin-block:12px}.ds-author-item{border:1px dashed var(--color-border-neutral-default);padding:8px;max-width:250px}
+.ds-card-content{padding:var(--spacing-24,24px);display:grid;gap:var(--spacing-16,16px);min-width:0;overflow-wrap:anywhere}
+.ds-card-content :is(h1,h2,h3,h4,p,ul,ol){margin:0}.ds-card-content li+li{margin-top:var(--spacing-8,8px)}
+.ds-tab-panel{padding-top:var(--spacing-16,16px);display:grid;gap:var(--spacing-16,16px)}
+.ds-modal-close{position:fixed;right:20px;top:20px;z-index:10002}
+.ds-empty,.ds-data-status{padding:var(--spacing-16,16px)}

@@ -1,16 +1,16 @@
 import { jsxs as o, jsx as r } from "react/jsx-runtime";
 import { CHART_GEOMETRY as t } from "./ChartDonut.helper.js";
-import { useChartDonut as E } from "./hooks/useChartDonut.js";
+import { useChartDonut as I } from "./hooks/useChartDonut.js";
 import { TextWeight as c, TextType as d, TextSize as h } from "../../Text/types.js";
-import { Legend as I } from "../Legend/Legend.js";
+import { Legend as P } from "../Legend/Legend.js";
 import { Text as u } from "../../Text/Text.js";
 import '../../../../assets/components/Atoms/Charts/ChartDonut/ChartDonut.modules.css';/* empty css                        */
-const H = (x) => {
+const K = (x) => {
   const {
     classes: a,
-    sliceItems: v,
-    legendItems: p,
-    shouldShowLegend: f,
+    sliceItems: f,
+    legendItems: v,
+    shouldShowLegend: p,
     shouldShowCenterText: g,
     shouldShowCenterLabel: m,
     isSkeleton: n,
@@ -18,25 +18,27 @@ const H = (x) => {
     centerLabel: k,
     centerValue: i,
     centerValueRef: y,
-    trackColor: T,
-    containerAccessibility: w,
-    chartAccessibility: b,
-    handleSliceClick: C,
+    chartRef: T,
+    trackColor: w,
+    containerAccessibility: b,
+    chartAccessibility: C,
+    handleSliceClick: B,
     handleSliceHighlight: s,
     handlePreventFocus: l,
-    handleChartPointerLeave: B,
-    handleSliceFocus: D,
-    handleSliceBlur: L,
-    handleSliceKeyDown: N,
-    legendOrientation: W
-  } = E(x);
-  return /* @__PURE__ */ o("div", { "data-testid": "container", className: a.container, ...w, children: [
+    handleChartPointerLeave: D,
+    handleSliceFocus: L,
+    handleSliceBlur: N,
+    handleSliceKeyDown: W,
+    legendOrientation: z
+  } = I(x);
+  return /* @__PURE__ */ o("div", { "data-testid": "container", className: a.container, ...b, children: [
     /* @__PURE__ */ o(
       "div",
       {
+        ref: T,
         "data-testid": "chart",
         className: a.chart,
-        ...b,
+        ...C,
         onMouseDown: l,
         children: [
           g && /* @__PURE__ */ o("div", { "data-testid": "text", className: a.centerText, children: [
@@ -66,7 +68,7 @@ const H = (x) => {
             {
               className: a.svg,
               viewBox: `0 0 ${t.viewBoxSize} ${t.viewBoxSize}`,
-              onPointerLeave: B,
+              onPointerLeave: D,
               children: /* @__PURE__ */ o("g", { "data-testid": "slice-group", transform: t.sliceStartTransform, children: [
                 /* @__PURE__ */ r(
                   "circle",
@@ -76,11 +78,11 @@ const H = (x) => {
                     cy: t.center,
                     r: t.radius,
                     fill: "none",
-                    stroke: T,
+                    stroke: w,
                     strokeWidth: t.strokeWidth
                   }
                 ),
-                !n && v.map((e) => /* @__PURE__ */ r(
+                !n && f.map((e) => /* @__PURE__ */ r(
                   "circle",
                   {
                     "data-testid": e.testId,
@@ -98,13 +100,13 @@ const H = (x) => {
                     tabIndex: S ? 0 : void 0,
                     role: "button",
                     "aria-label": [e.label, e.value].filter(Boolean).join(", "),
-                    onClick: () => C(e),
+                    onClick: () => B(e),
                     onPointerEnter: () => s(e),
                     onPointerDown: () => s(e),
                     onMouseDown: l,
-                    onFocus: () => D(e),
-                    onBlur: L,
-                    onKeyDown: (z) => N(z, e)
+                    onFocus: () => L(e),
+                    onBlur: N,
+                    onKeyDown: (E) => W(E, e)
                   },
                   e.index
                 ))
@@ -114,9 +116,9 @@ const H = (x) => {
         ]
       }
     ),
-    f && /* @__PURE__ */ r("div", { className: a.legend, children: /* @__PURE__ */ r(I, { orientation: W, items: p }) })
+    p && /* @__PURE__ */ r("div", { className: a.legend, children: /* @__PURE__ */ r(P, { orientation: z, items: v }) })
   ] });
 };
 export {
-  H as ChartDonut
+  K as ChartDonut
 };

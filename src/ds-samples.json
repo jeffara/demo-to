@@ -399,7 +399,17 @@
   },
   "Select": {
     "label": "Produto de interesse",
-    "placeholder": "Escolha uma opção"
+    "placeholder": "Escolha uma opção",
+    "options": [
+      {
+        "label": "Conta Digital",
+        "value": "conta"
+      },
+      {
+        "label": "Crédito",
+        "value": "credito"
+      }
+    ]
   },
   "Spinner": {
     "size": "large",
@@ -428,7 +438,8 @@
     "max": 10,
     "step": 1,
     "state": "enabled",
-    "hasBorder": true
+    "hasBorder": true,
+    "value": 0
   },
   "Tabs": {
     "tabs": [
@@ -492,5 +503,133 @@
     "showHeader": true,
     "children": "<p>Uma experiência completa e editável.</p>",
     "size": "large"
+  },
+  "Breadcrumb": {
+    "items": [
+      {
+        "id": "home",
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "id": "catalog",
+        "label": "Catálogo",
+        "href": "/demo-toranja"
+      },
+      {
+        "id": "current",
+        "label": "Breadcrumb"
+      }
+    ],
+    "ariaLabel": "Navegação estrutural"
+  },
+  "MenuPopup": {
+    "items": [
+      {
+        "id": "home",
+        "label": "Home",
+        "icon": "ic_house"
+      },
+      {
+        "id": "catalog",
+        "label": "Catálogo",
+        "icon": "ic_apps"
+      }
+    ],
+    "ariaLabel": "Navegação",
+    "placement": "bottom-start"
+  },
+  "ModalDialog": {
+    "title": "Informação importante",
+    "slot": "<p>Conteúdo editável do diálogo oficial.</p>",
+    "showCloseButton": true
+  },
+  "Pagination": {
+    "pageIndex": 0,
+    "pageSize": 10,
+    "pageCount": 5,
+    "totalItems": 50,
+    "pageSizeOptions": [
+      10,
+      25,
+      50
+    ],
+    "language": "ptBR"
+  },
+  "Panel": {
+    "title": "Seu painel",
+    "type": "slot",
+    "children": "<p>Organize informações com o componente oficial.</p>",
+    "size": "full"
+  },
+  "SideSheet": {
+    "title": "Detalhes",
+    "description": "Informações complementares",
+    "slot": "<p>Conteúdo editável do painel lateral.</p>"
+  },
+  "Sidebar": {
+    "items": [
+      {
+        "id": "home",
+        "label": "Home",
+        "icon": "ic_house",
+        "selected": true
+      },
+      {
+        "id": "catalog",
+        "label": "Catálogo",
+        "icon": "ic_apps"
+      }
+    ],
+    "defaultExpansion": "expanded",
+    "brand": "inter",
+    "ariaLabel": "Navegação principal"
+  },
+  "Table": {
+    "columns": [
+      {
+        "id": "name",
+        "accessor": "name",
+        "header": "Produto",
+        "cellType": "text",
+        "sortable": true
+      },
+      {
+        "id": "category",
+        "accessor": "category",
+        "header": "Categoria",
+        "cellType": "text",
+        "sortable": true
+      }
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "Conta Digital",
+        "category": "Conta"
+      },
+      {
+        "id": "2",
+        "name": "Cartão",
+        "category": "Crédito"
+      }
+    ],
+    "showDivider": true,
+    "pagination": true,
+    "initialPageSize": 10,
+    "pageSizeOptions": [
+      10,
+      25,
+      50
+    ],
+    "toolbar": {
+      "title": "Produtos ilustrativos"
+    }
+  },
+  "TooltipDescription": {
+    "title": "Saiba mais",
+    "description": "Informação complementar exibida pelo componente oficial.",
+    "placement": "bottom",
+    "align": "left"
   }
 }

@@ -16,6 +16,7 @@ interface AvatarContentProps {
     shouldShowFlag: boolean;
     flagClassName: string;
     initials: string | null;
+    initialTypographyClassName: string;
 }
-export declare const AvatarContent: ({ variant, state, iconAsset, src, alt, onError, editIcon, flag, onEdit, shouldShowEdit, shouldShowFlag, flagClassName, initials, }: AvatarContentProps) => ReactNode;
+export declare const AvatarContent: ({ variant, state, iconAsset, src, alt, onError, editIcon, flag, onEdit, shouldShowEdit, shouldShowFlag, flagClassName, initials, initialTypographyClassName, }: AvatarContentProps) => ReactNode;
 export {};

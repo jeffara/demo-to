@@ -21,9 +21,14 @@ for file in source.rglob('*'):
  if str(rel) in preserve and (target/rel).exists():continue
  dest=target/rel
  if not dest.exists() or hashlib.sha256(file.read_bytes()).digest()!=hashlib.sha256(dest.read_bytes()).digest():copy.append(rel)
+ignore_path=target/'.hlxignore'
+ignore_lines=ignore_path.read_text().splitlines() if ignore_path.is_file() else []
+source_ignore=source/'.hlxignore'
+append_ignore=[line for line in source_ignore.read_text().splitlines() if line.strip() and not line.startswith('#') and line not in ignore_lines] if source_ignore.is_file() and ignore_path.is_file() else []
 # Configuration files preserve the live site's owner, technical account references and mountpoint.
-print(json.dumps({'target':str(target),'mode':'apply' if args.apply else 'preview','remove':[str(x) for x in delete],'copy':[str(x) for x in copy],'preserved':['.git','existing fstab.yaml','existing config files','existing .well-known','existing .gitignore/.hlxignore']},ensure_ascii=False,indent=2))
+print(json.dumps({'target':str(target),'mode':'apply' if args.apply else 'preview','remove':[str(x) for x in delete],'copy':[str(x) for x in copy],'appendIgnore':append_ignore,'preserved':['.git','existing fstab.yaml','existing config files','existing .well-known','existing .gitignore/.hlxignore']},ensure_ascii=False,indent=2))
 if args.apply:
+ if append_ignore:ignore_path.write_text(ignore_path.read_text().rstrip()+'\n'+'\n'.join(append_ignore)+'\n')
  for rel in delete:(target/rel).unlink()
  for rel in copy:
   dest=target/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source/rel,dest)

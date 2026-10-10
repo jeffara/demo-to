@@ -1,0 +1,160 @@
+[
+  {
+    "route": "/",
+    "width": 393,
+    "errors": [],
+    "overflow": false,
+    "components": 45,
+    "dsErrors": [],
+    "images": [
+      {
+        "w": 353,
+        "h": 271
+      },
+      {
+        "w": 313,
+        "h": 241
+      }
+    ],
+    "h1": [
+      {
+        "text": "Uma experiência para cada momento.",
+        "font": "600 26px / 32px Inter, sans-serif",
+        "size": "26px"
+      }
+    ],
+    "button": [
+      {
+        "color": "rgb(234, 113, 0)",
+        "font": "600 16px / 24px Inter, sans-serif"
+      }
+    ]
+  },
+  {
+    "route": "/showcase/layouts",
+    "width": 393,
+    "errors": [],
+    "overflow": false,
+    "components": 46,
+    "dsErrors": [],
+    "images": [
+      {
+        "w": 353,
+        "h": 271
+      },
+      {
+        "w": 313,
+        "h": 241
+      }
+    ],
+    "h1": [
+      {
+        "text": "Liberdade para compor.",
+        "font": "38px / 43.7px \"Citrina VF\", sans-serif",
+        "size": "38px"
+      }
+    ],
+    "button": [
+      {
+        "color": "rgb(234, 113, 0)",
+        "font": "600 16px / 24px Inter, sans-serif"
+      }
+    ]
+  },
+  {
+    "route": "/showcase/alert",
+    "width": 393,
+    "errors": [],
+    "overflow": false,
+    "components": 18,
+    "dsErrors": [],
+    "images": [],
+    "h1": [
+      {
+        "text": "Alert",
+        "font": "38px / 43.7px \"Citrina VF\", sans-serif",
+        "size": "38px"
+      }
+    ],
+    "button": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "components": 45,
+    "dsErrors": [],
+    "images": [
+      {
+        "w": 570,
+        "h": 434
+      },
+      {
+        "w": 522,
+        "h": 398
+      }
+    ],
+    "h1": [
+      {
+        "text": "Uma experiência para cada momento.",
+        "font": "600 32px / 44px Inter, sans-serif",
+        "size": "32px"
+      }
+    ],
+    "button": [
+      {
+        "color": "rgb(234, 113, 0)",
+        "font": "600 18px / 24px Inter, sans-serif"
+      }
+    ]
+  },
+  {
+    "route": "/showcase/layouts",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "components": 46,
+    "dsErrors": [],
+    "images": [
+      {
+        "w": 570,
+        "h": 434
+      },
+      {
+        "w": 348,
+        "h": 267
+      }
+    ],
+    "h1": [
+      {
+        "text": "Liberdade para compor.",
+        "font": "64px / 73.6px \"Citrina VF\", sans-serif",
+        "size": "64px"
+      }
+    ],
+    "button": [
+      {
+        "color": "rgb(234, 113, 0)",
+        "font": "600 18px / 24px Inter, sans-serif"
+      }
+    ]
+  },
+  {
+    "route": "/showcase/alert",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "components": 18,
+    "dsErrors": [],
+    "images": [],
+    "h1": [
+      {
+        "text": "Alert",
+        "font": "64px / 73.6px \"Citrina VF\", sans-serif",
+        "size": "64px"
+      }
+    ],
+    "button": []
+  }
+]

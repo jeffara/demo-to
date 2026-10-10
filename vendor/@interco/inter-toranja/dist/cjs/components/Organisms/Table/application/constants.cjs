@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const _=10,E=[10,20,50],T=5,O="__table_selection__";exports.DEFAULT_PAGE_SIZE=_;exports.DEFAULT_PAGE_SIZE_OPTIONS=E;exports.DEFAULT_SKELETON_ROW_COUNT=T;exports.TABLE_SELECTION_COLUMN_ID=O;

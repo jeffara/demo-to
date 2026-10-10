@@ -6,7 +6,7 @@ description: Tipos e props do componente SegmentedControl do @interco/inter-tora
 # SegmentedControl
 
 **Categoria:** Molecules
-**Versão:** 1.0.3 (11/12/2024)
+**Versão:** 2.0.0 (04/12/2025)
 **Importação:**
 ```tsx
 import { SegmentedControl } from '@interco/inter-toranja'
@@ -24,6 +24,7 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 
 **Types:**
 - `SegmentItemProps`
+- `SegmentedControlDensity`
 - `BackgroundStyle`
 - `UseSegmentedControlPropertiesReturn`
 - `UseSegmentedControlClassesReturn`
@@ -39,6 +40,7 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 | segments | Regras: - label: de 2 a 4 elementos. - iconLabel: de 2 a 3 elementos. - icon: de 2 a 5 elementos. | — | — |
 | state | Estado do botão, pode ser enabled e skeleton | — | enabled |
 | filling | Somente o Segmented Control com icone pode ser usado com hug | hug, fill | fill |
+| density | Default: todas as variantes. Compact: somente ícone, 2 segmentos e filling hug (ex.: Header). | — | SegmentedControlDensityEnum.DEFAULT |
 
 ## Definição de tipos completa
 
@@ -73,13 +75,28 @@ type IconArray =
   | [IconOnlyItem, IconOnlyItem, IconOnlyItem, IconOnlyItem]
   | [IconOnlyItem, IconOnlyItem, IconOnlyItem, IconOnlyItem, IconOnlyItem]
 
-export interface SegmentedControlProps {
+type LabelOrIconLabelSegments = LabelArray | IconLabelArray
+type DefaultDensitySegments = LabelOrIconLabelSegments | IconArray
+type CompactDensitySegments = [IconOnlyItem, IconOnlyItem]
+
+export type SegmentedControlDensity = 'default' | 'compact'
+
+type SegmentedControlSharedProps = {
   onTag?: (data: TagProps) => void
   onClick: (item: SegmentItemProps, index: number) => void
-  segments: LabelArray | IconLabelArray | IconArray
   state?: 'enabled' | 'skeleton'
   filling?: TimelineFilling
 }
+
+export type SegmentedControlProps =
+  | (SegmentedControlSharedProps & {
+      density?: 'default'
+      segments: DefaultDensitySegments
+    })
+  | (SegmentedControlSharedProps & {
+      density: 'compact'
+      segments: CompactDensitySegments
+    })
 
 export interface SelectedSegmentProps {
   icon_selected: string

@@ -37,8 +37,6 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 ```typescript
 import type React from 'react'
 
-import type { TagProps } from '@/types/shared'
-
 export enum RadioVariant {
   Default = 'default',
   Error = 'error',
@@ -58,7 +56,6 @@ export type RadioButtonProps = {
   name?: string
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
   onSelect: () => void
-  onTag?: (data: TagProps) => void
   state: `${RadioState}`
   value: string
   variant: `${RadioVariant}`

@@ -1,142 +1,186 @@
-import { jsxs as i, jsx as e } from "react/jsx-runtime";
-import { useCallback as X } from "react";
-import { useInputCountry as Y } from "./hooks/useInputCountry.js";
-import { InputText as Z } from "../InputText/InputText.js";
-import { Select as ee } from "../Select/Select.js";
-import { BottomSheetCountry as te } from "../../Templates/BottomSheetCountry/BottomSheetCountry.js";
-import '../../../assets/InputCountry.css';const ie = (r) => {
+import { jsxs as k, jsx as e } from "react/jsx-runtime";
+import { useCallback as ae } from "react";
+import { useInputCountry as le } from "./hooks/useInputCountry.js";
+import { DATE_PICKER_POPOVER_VARIANTS as ne } from "../InputDate/utils/pickerAnimation.js";
+import { InputText as ie } from "../InputText/InputText.js";
+import { Select as ce } from "../Select/Select.js";
+import { BottomSheetCountry as de } from "../../Templates/BottomSheetCountry/BottomSheetCountry.js";
+import { CountryPickerPanel as ue } from "../../Templates/BottomSheetCountry/CountryPickerPanel.js";
+import { A as me } from "../../../index-CDYq4efL.js";
+import { m as pe } from "../../../proxy-BBnpZ6GV.js";
+import '../../../assets/InputCountry.css';const be = (s) => {
   const {
-    label: d,
-    placeholder: c,
-    value: u,
-    defaultValue: h,
-    hints: m,
-    error: t,
-    mask: p,
-    onDebouncedChange: y,
-    onBlur: C,
-    onFocus: f,
-    bottomSheetTitle: S,
-    showCountrySearch: g,
-    showCountryFeatured: T,
-    countryFeaturedTitle: I,
-    countryAllTitle: b,
-    countrySearchPlaceholder: v,
-    onTag: o
-  } = r, {
-    rootClasses: w,
-    fieldsClasses: P,
-    selectClasses: x,
-    inputClasses: O,
-    dataTestId: s,
-    resolvedState: F,
-    selectState: N,
-    showHint: k,
-    isDisabled: l,
-    isSelectReadOnly: A,
-    isInputReadOnly: V,
-    isSheetOpen: j,
-    closeSheet: B,
-    handleSelectClick: D,
-    handleCountrySelect: R,
-    handleChange: _,
-    resolvedPrefix: $,
-    resolvedFlag: H,
-    resolvedPhoneType: J,
-    resolvedSelectedValue: L,
-    selectAccessibleLabel: M,
-    selectId: q,
-    inputId: z,
-    countryItems: E,
-    featuredCountryItems: G
-  } = Y(r), K = X(
-    (Q) => {
-      o && o((U) => {
-        const a = Q(U), n = Array.isArray(t) ? t.filter((W) => W.trim() !== "") : [];
+    label: v,
+    placeholder: b,
+    value: g,
+    defaultValue: w,
+    hints: x,
+    error: r,
+    mask: A,
+    onDebouncedChange: O,
+    onBlur: R,
+    onFocus: F,
+    bottomSheetTitle: a,
+    showCountrySearch: l,
+    showCountryFeatured: n,
+    countryFeaturedTitle: i,
+    countryAllTitle: c,
+    countrySearchPlaceholder: d,
+    onTag: t
+  } = s, {
+    rootClasses: N,
+    fieldsClasses: D,
+    selectClasses: V,
+    inputClasses: _,
+    pickerClasses: E,
+    dataTestId: o,
+    resolvedState: j,
+    selectState: B,
+    showHint: L,
+    isDisabled: u,
+    isSelectReadOnly: $,
+    isInputReadOnly: H,
+    isPickerOpen: m,
+    isDesktop: p,
+    pickerId: J,
+    closePicker: h,
+    handleSelectClick: K,
+    handleCountrySelect: f,
+    handleChange: M,
+    resolvedPrefix: q,
+    resolvedFlag: z,
+    resolvedPhoneType: G,
+    resolvedSelectedValue: y,
+    selectAccessibleLabel: C,
+    selectId: Q,
+    inputId: U,
+    countryItems: I,
+    featuredCountryItems: P,
+    rootRef: W,
+    pickerRef: X,
+    selectContainerRef: Y
+  } = le(s), Z = ae(
+    (re) => {
+      t && t((oe) => {
+        const S = re(oe), T = Array.isArray(r) ? r.filter((se) => se.trim() !== "") : [];
         return {
-          ...a,
+          ...S,
           ComponentProperties: {
-            ...a.ComponentProperties,
+            ...S.ComponentProperties,
             component_name: "InputCountry",
-            ...n.length > 0 ? { error: JSON.stringify(n) } : {}
+            ...T.length > 0 ? { error: JSON.stringify(T) } : {}
           }
         };
       });
     },
-    [o, t]
-  );
-  return /* @__PURE__ */ i("div", { "data-testid": s, className: w, children: [
-    /* @__PURE__ */ i("div", { className: P, children: [
-      /* @__PURE__ */ e("div", { className: x, children: /* @__PURE__ */ e(
-        ee,
+    [t, r]
+  ), ee = p && m, te = a ?? C;
+  return /* @__PURE__ */ k("div", { ref: W, "data-testid": o, className: N, children: [
+    /* @__PURE__ */ k("div", { className: D, children: [
+      /* @__PURE__ */ e("div", { ref: Y, className: V, children: /* @__PURE__ */ e(
+        ce,
         {
-          id: q,
-          label: M,
-          state: N,
+          id: Q,
+          label: C,
+          state: B,
           showFlag: !0,
           showContent: !1,
-          flag: H,
-          onClick: D,
-          "data-testid": `${s}-select`,
-          ...l ? { disabled: !0 } : {},
-          ...A ? { readOnly: !0 } : {}
+          flag: z,
+          onClick: K,
+          "data-testid": `${o}-select`,
+          ...u ? { disabled: !0 } : {},
+          ...$ ? { readOnly: !0 } : {}
         }
       ) }),
-      /* @__PURE__ */ e("div", { className: O, children: /* @__PURE__ */ e(
-        Z,
+      /* @__PURE__ */ e("div", { className: _, children: /* @__PURE__ */ e(
+        ie,
         {
-          id: z,
-          label: d,
-          placeholder: c,
-          value: u,
-          defaultValue: h,
-          prefix: $,
-          state: F,
-          showHint: k,
-          hints: m,
-          error: t,
-          mask: p,
-          phoneType: J,
-          onChange: _,
-          onDebouncedChange: y,
-          onBlur: C,
-          onFocus: f,
-          onTag: K,
+          id: U,
+          label: v,
+          placeholder: b,
+          value: g,
+          defaultValue: w,
+          prefix: q,
+          state: j,
+          showHint: L,
+          hints: x,
+          error: r,
+          mask: A,
+          phoneType: G,
+          onChange: M,
+          onDebouncedChange: O,
+          onBlur: R,
+          onFocus: F,
+          onTag: Z,
           showClear: !0,
-          "data-testid": `${s}-input`,
+          "data-testid": `${o}-input`,
           customTagProps: {
             customProperties: {
               component_name: "InputCountry"
             }
           },
-          ...l ? { disabled: !0 } : {},
-          ...V ? { readOnly: !0 } : {}
+          ...u ? { disabled: !0 } : {},
+          ...H ? { readOnly: !0 } : {}
         }
       ) })
     ] }),
-    /* @__PURE__ */ e(
-      te,
+    !p && /* @__PURE__ */ e(
+      de,
       {
-        title: S,
-        isOpen: j,
-        close: B,
-        items: E,
-        featuredItems: G,
-        selectedValue: L,
-        showSearch: g ?? !1,
-        showFeatured: T,
-        featuredTitle: I,
-        allTitle: b,
-        searchPlaceholder: v,
-        onSelect: R,
-        onTag: o,
+        title: a,
+        isOpen: m,
+        close: () => h(),
+        items: I,
+        featuredItems: P,
+        selectedValue: y,
+        showSearch: l ?? !1,
+        showFeatured: n,
+        featuredTitle: i,
+        allTitle: c,
+        searchPlaceholder: d,
+        onSelect: f,
+        onTag: t,
         expansible: "on",
         position: "middle",
         overlay: "on"
       }
-    )
+    ),
+    /* @__PURE__ */ e(me, { children: ee && /* @__PURE__ */ e(
+      pe.div,
+      {
+        ref: X,
+        id: J,
+        className: E,
+        role: "dialog",
+        "aria-label": te,
+        tabIndex: -1,
+        initial: "hidden",
+        animate: "visible",
+        exit: "hidden",
+        variants: ne,
+        children: /* @__PURE__ */ e(
+          ue,
+          {
+            variant: "popover",
+            items: I,
+            featuredItems: P,
+            selectedValue: y,
+            showSearch: l ?? !1,
+            showFeatured: n,
+            featuredTitle: i,
+            allTitle: c,
+            searchPlaceholder: d,
+            onSelect: f,
+            close: () => h({ restoreFocus: !0 }),
+            onTag: t,
+            "data-testid": "InputCountry-country-picker"
+          }
+        )
+      },
+      "input-country-picker"
+    ) })
   ] });
 };
 export {
-  ie as InputCountry
+  be as InputCountry
 };

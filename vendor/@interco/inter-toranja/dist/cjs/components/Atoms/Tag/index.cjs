@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("./Tag.cjs");exports.Tag=e.Tag;
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=require("./Tag.cjs"),o=require("./constants.cjs");exports.Tag=s.Tag;exports.TAG_COLORS=o.TAG_COLORS;exports.isTagColor=o.isTagColor;exports.parseTagAccessor=o.parseTagAccessor;

@@ -1,38 +1,38 @@
-import { createElement as o } from "react";
-import { ListItemLeading as I } from "../../ListItemBase/components/ListItemLeading/ListItemLeading.js";
+import { createElement as n } from "react";
+import { ListItemLeading as d } from "../../ListItemBase/components/ListItemLeading/ListItemLeading.js";
 import { ListItemContent as u } from "../../ListItemBase/components/ListItemContent/ListItemContent.js";
-import { ListItemTrailing as d } from "../../ListItemBase/components/ListItemTrailing/ListItemTrailing.js";
-const b = (i) => {
+import { ListItemTrailing as L } from "../../ListItemBase/components/ListItemTrailing/ListItemTrailing.js";
+const k = (o) => {
   const {
-    label: l,
-    labelIcon: r,
+    label: r,
+    labelIcon: l,
     paragraph: a,
-    paragraphSupport: m,
-    tags: s,
-    leadingProps: n,
+    paragraphSupport: s,
+    tags: m,
+    leadingProps: t,
     trailingVariant: e,
-    trailingProps: t
-  } = i, c = n && n.type !== "none" ? o(I, {
-    ...n,
-    testId: "listItemAction-leading"
-  }) : null, p = o(u, {
-    label: l,
-    labelIcon: r,
-    paragraph: a,
-    paragraphSupport: m,
-    tags: s,
-    testId: "listItemAction-content"
-  }), g = e && t ? o(d, {
+    trailingProps: i
+  } = o, c = t && t.type !== "none" ? n(d, {
     ...t,
-    ...e === "button" && "onButtonClick" in t ? { onClick: t.onButtonClick } : {},
+    testId: "listItemAction-leading"
+  }) : null, p = n(u, {
+    label: r,
+    labelIcon: l,
+    paragraph: a,
+    paragraphSupport: s,
+    tags: m,
+    testId: "listItemAction-content"
+  }), g = e === "button" ? { onClick: i.onButtonClick } : {}, I = n(L, {
+    ...i,
+    ...g,
     type: e
-  }) : null;
+  });
   return {
     leadingElement: c,
     contentElement: p,
-    trailingElement: g
+    trailingElement: I
   };
 };
 export {
-  b as useListItemActionViewModel
+  k as useListItemActionViewModel
 };

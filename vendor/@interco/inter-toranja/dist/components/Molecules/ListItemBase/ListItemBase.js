@@ -5,7 +5,7 @@ import { ListItemProvider as w } from "./context/ListItemContext.js";
 import { ListItemTaggingProvider as z } from "./context/ListItemTaggingContext.js";
 import { useListItemTagging as O } from "./hooks/useListItemTagging.js";
 import { getAlignmentClasses as k } from "./utils/alignmentUtils.js";
-import { getVariantClassName as q, getContainerMainClassName as F } from "./utils/classNames.js";
+import { getContainerMainClassName as q, getVariantClassName as F } from "./utils/classNames.js";
 import { Divider as G } from "../../Atoms/Divider/Divider.js";
 import { Spinner as H } from "../../Atoms/ProgressIndicator/Spinner/Spinner.js";
 import { VARIANT as J } from "../../../utils/pattern.js";
@@ -27,7 +27,7 @@ import '../../../assets/ListItemBase.css';const se = ({
   componentName: _ = "ListItemBase",
   alignmentTrailingMode: f = "center-aligned"
 }) => {
-  const p = L && !!g, x = q(i), M = F(b, !p), V = d ? "listItemBase--selected" : "", A = `listItemBase--${a}`, D = o ? "listItemBase--interactive" : "", r = a === "loading", { handleTag: l, tagData: E, setTagData: y } = O({
+  const p = L && !!g, x = F(i), M = q(b, !p), V = d ? "listItemBase--selected" : "", A = `listItemBase--${a}`, D = o ? "listItemBase--interactive" : "", r = a === "loading", { handleTag: l, tagData: E, setTagData: y } = O({
     onTag: c,
     componentName: _,
     state: a

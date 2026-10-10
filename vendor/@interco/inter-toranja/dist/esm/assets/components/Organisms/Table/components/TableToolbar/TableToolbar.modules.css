@@ -1,0 +1,1 @@
+.table-toolbar{display:flex;align-items:center;justify-content:space-between;gap:var(--spacing-16);margin-bottom:var(--spacing-16)}.table-toolbar__title{color:var(--color-text-neutral-default)}.table-toolbar__actions{display:flex;align-items:center;gap:var(--spacing-12);-webkit-margin-start:auto;margin-inline-start:auto}

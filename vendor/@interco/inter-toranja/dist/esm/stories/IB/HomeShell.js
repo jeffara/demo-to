@@ -1,55 +1,66 @@
-import { jsx as i, jsxs as n } from "react/jsx-runtime";
-import { HOME_IB_CHECKLIST as r } from "./home-ib-checklist.js";
-import { ListItemGeneral as c } from "../../components/Molecules/ListItemGeneral/ListItemGeneral.js";
+import { jsx as i, jsxs as l } from "react/jsx-runtime";
+import { HOME_IB_CHECKLIST as c } from "./home-ib-checklist.js";
+import { ListItemGeneral as h } from "../../components/Molecules/ListItemGeneral/ListItemGeneral.js";
 import '../../assets/stories/IB/HomeShell.modules.css';/* empty css                       */
-import { Text as l } from "../../components/Atoms/Text/Text.js";
-import { TextSize as a, TextType as m } from "../../components/Atoms/Text/types.js";
-const h = "home-shell", p = "EXISTS_IDENTICAL", d = {
-  label: "Disponível em Desktop",
+import { Text as p } from "../../components/Atoms/Text/Text.js";
+import { TextSize as S, TextType as m } from "../../components/Atoms/Text/types.js";
+const d = "home-shell", f = {
+  label: "Exclusivo para Desktop",
+  color: "orange",
+  hierarchy: "soft"
+}, E = {
+  label: "Adaptado para Desktop",
   color: "green",
   hierarchy: "soft"
-}, u = {
+}, a = {
   label: "Pendente",
   color: "neutral",
   hierarchy: "soft"
-}, f = (e) => e === p, T = (e) => {
+}, u = {
+  EXISTS_IDENTICAL: { tag: E, isReady: !0 },
+  NEW_DESKTOP_ONLY: { tag: f, isReady: !0 },
+  EXISTS_NEEDS_RESPONSIVE: { tag: a, isReady: !1 },
+  EXISTS_NEEDS_VARIANT: { tag: a, isReady: !1 },
+  NEW_PARALLEL: { tag: a, isReady: !1 },
+  NEW: { tag: a, isReady: !1 }
+}, T = (e) => u[e], _ = (e) => {
   const t = e.charCodeAt(0), s = t >= 48 && t <= 57, o = t >= 97 && t <= 122;
   return s || o;
-}, S = (e) => {
+}, I = (e) => {
   const t = [];
   let s = !0;
   for (const o of e.toLowerCase())
-    T(o) ? (t.push(o), s = !1) : s || (t.push("-"), s = !0);
+    _(o) ? (t.push(o), s = !1) : s || (t.push("-"), s = !0);
   return t[t.length - 1] === "-" && t.pop(), t.join("");
-}, I = ({
+}, A = ({
   item: e,
   isLast: t
 }) => {
-  const s = f(e.status), o = e.issueHint ? ` · ${e.issueHint}` : "";
+  const { tag: s, isReady: o } = T(e.status), r = e.issueHint ? ` · ${e.issueHint}` : "", n = o ? `${e.name}, ${s.label.toLowerCase()}` : `${e.name}, pendente`;
   return /* @__PURE__ */ i(
-    c,
+    h,
     {
       interactive: !1,
       showDivider: !t,
-      testId: `home-shell-item-${S(e.name)}`,
+      testId: `home-shell-item-${I(e.name)}`,
       label: e.name,
-      paragraph: `${e.path}${o}`,
-      tags: [s ? d : u],
+      paragraph: `${e.path}${r}`,
+      tags: [s],
       leadingProps: {
         type: "icon",
         iconProps: {
-          asset: s ? "ic_check_circle" : "ic_clock",
+          asset: o ? "ic_check_circle_fill" : "ic_info_circle_fill",
           size: "medium",
-          color: "Icon/Neutral/Primary",
-          contentDescription: s ? `${e.name}, disponível em desktop` : `${e.name}, pendente`
+          color: o ? "Icon/Accent/Green/Default" : "Icon/Neutral/Secondary",
+          contentDescription: n
         }
       }
     }
   );
-}, E = () => /* @__PURE__ */ i("main", { className: h, children: r.map((e) => /* @__PURE__ */ n("div", { children: [
-  /* @__PURE__ */ i(l, { as: "h2", textType: m.Title, textSize: a.Medium, children: e.title }),
+}, x = () => /* @__PURE__ */ i("main", { className: d, children: c.map((e) => /* @__PURE__ */ l("div", { children: [
+  /* @__PURE__ */ i(p, { as: "h2", textType: m.Title, textSize: S.Medium, children: e.title }),
   e.items.map((t, s) => /* @__PURE__ */ i(
-    I,
+    A,
     {
       item: t,
       isLast: s === e.items.length - 1
@@ -58,5 +69,5 @@ const h = "home-shell", p = "EXISTS_IDENTICAL", d = {
   ))
 ] }, e.title)) });
 export {
-  E as HomeShell
+  x as HomeShell
 };

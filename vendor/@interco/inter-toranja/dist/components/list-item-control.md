@@ -49,7 +49,7 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 | paragraph | Parágrafo secundário abaixo do label | — | — |
 | paragraphSupport | Parágrafo de suporte adicional | — | — |
 | labelIcon | Ícone opcional ao lado do label | — | — |
-| trailingVariant | Tipo de elemento trailing - checkbox, radio, stepper ou switch | checkbox, radio, stepper, switch, undefined | — |
+| trailingVariant | Trailing obrigatório no Figma (checkbox, radio, stepper ou switch) e não pode ser ocultado. Se a prop for omitida, o componente usa checkbox para manter o trailing visível. | checkbox, radio, stepper, switch | — |
 | trailingProps | Props específicas do trailing | — | — |
 | onClick | Callback disparado ao clicar no ListItem | — | — |
 | onTag | Callback para envio de eventos de analytics/tagging | — | — |
@@ -205,17 +205,11 @@ export interface ListItemControlWithSwitchProps extends ListItemControlBaseProps
   trailingProps?: SwitchTrailingProps
 }
 
-/**
- * ListItemControl without trailing
- */
 export interface ListItemControlWithoutTrailingProps extends ListItemControlBaseProps {
   trailingVariant?: never
   trailingProps?: never
 }
 
-/**
- * ListItemControl props (discriminated union)
- */
 export type ListItemControlProps =
   | ListItemControlWithCheckboxProps
   | ListItemControlWithRadioProps

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const l=(t,i,n)=>{if(n<=0)return{initial:0,final:0};const a=t*i+1,e=Math.min((t+1)*i,n);return{initial:a,final:e}};exports.calculatePageOffset=l;

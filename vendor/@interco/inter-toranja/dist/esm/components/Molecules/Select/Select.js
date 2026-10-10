@@ -1,40 +1,77 @@
-import { jsx as l } from "react/jsx-runtime";
+import { jsxs as R, jsx as e } from "react/jsx-runtime";
+import { SelectOptionsPanel as O } from "./components/SelectOptionsPanel.js";
+import { useSelect as k } from "./hooks/useSelect.js";
+import { InputBase as v } from "../InputBase/InputBase.js";
+import { InputType as x } from "../InputBase/utils/inputEnums.js";
+import { DATE_PICKER_POPOVER_VARIANTS as E } from "../InputDate/utils/pickerAnimation.js";
 import '../../../assets/components/Molecules/Select/Select.modules.css';/* empty css                    */
-import { InputBase as f } from "../InputBase/InputBase.js";
-import { InputType as C } from "../InputBase/utils/inputEnums.js";
-import { STATE as n } from "../../../utils/pattern.js";
-const L = (e) => {
+import { AnimatePresence as A } from "../../../node_modules/framer-motion/dist/es/components/AnimatePresence/index.js";
+import { motion as N } from "../../../node_modules/framer-motion/dist/es/render/components/motion/proxy.js";
+const L = (i) => {
+  var r;
   const {
-    label: s = "Texto",
-    state: o = n.ENABLED,
-    hints: a,
-    onClick: r,
-    onClickHelper: i,
-    ...c
-  } = e, p = (t) => {
-    const d = e.disabled ?? o === n.DISABLED, E = e.readOnly ?? o === n.READ_ONLY, T = o === n.SKELETON;
-    !d && !E && !T && r && r(t);
-  }, m = (t) => {
-    t && t.stopPropagation(), i && i();
-  };
-  return /* @__PURE__ */ l("div", { className: "select-wrapper", onClick: p, children: /* @__PURE__ */ l(
-    f,
-    {
-      hints: a,
-      label: s,
-      onTag: e.onTag,
-      state: o,
-      type: C.SELECT,
-      readOnly: !0,
-      onHelper: m,
-      customTagProps: {
-        customProperties: {
-          component_name: "Select"
+    rootClasses: s,
+    triggerClasses: n,
+    panelClasses: l,
+    rootRef: a,
+    panelRef: p,
+    triggerRef: c,
+    isPanelOpen: m,
+    hasDesktopPicker: d,
+    panelId: f,
+    listboxId: P,
+    triggerId: g,
+    selectedValue: u,
+    options: o,
+    handleTriggerClick: h,
+    handleHelperClick: T,
+    handleOptionSelect: S,
+    inputBaseProps: t,
+    label: C
+  } = k(i), I = d && m;
+  return /* @__PURE__ */ R("div", { ref: a, className: s, "data-testid": "Select", children: [
+    /* @__PURE__ */ e("div", { ref: c, className: n, onClick: h, children: /* @__PURE__ */ e(
+      v,
+      {
+        ...t,
+        label: C,
+        type: x.SELECT,
+        readOnly: !0,
+        id: g,
+        onHelper: T,
+        customTagProps: {
+          ...t.customTagProps,
+          customProperties: {
+            ...(r = t.customTagProps) == null ? void 0 : r.customProperties,
+            component_name: "Select"
+          }
         }
+      }
+    ) }),
+    /* @__PURE__ */ e(A, { children: I && o && /* @__PURE__ */ e(
+      N.div,
+      {
+        ref: p,
+        id: f,
+        className: l,
+        initial: "hidden",
+        animate: "visible",
+        exit: "hidden",
+        variants: E,
+        children: /* @__PURE__ */ e(
+          O,
+          {
+            id: P,
+            options: o,
+            selectedValue: u,
+            onSelect: S,
+            onTag: t.onTag
+          }
+        )
       },
-      ...c
-    }
-  ) });
+      "select-options-panel"
+    ) })
+  ] });
 };
 export {
   L as Select

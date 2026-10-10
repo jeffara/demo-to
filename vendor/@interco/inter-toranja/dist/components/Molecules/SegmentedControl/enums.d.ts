@@ -2,6 +2,10 @@ export declare enum TimelineFillingEnum {
     HUG = "hug",
     FILL = "fill"
 }
+export declare enum SegmentedControlDensityEnum {
+    DEFAULT = "default",
+    COMPACT = "compact"
+}
 export declare const SegmentedControlClass: {
     readonly BASE: "segmented-control";
     readonly SKELETON: "segmented-control--skeleton";
@@ -10,6 +14,7 @@ export declare const SegmentedControlClass: {
     readonly SEGMENT_ACTIVE: "segmented-control__segments--active";
     readonly SEGMENT_DISABLED: "segmented-control__segments--disabled";
     readonly SEGMENT_HUG: "segmented-control__segments--hug";
+    readonly SEGMENT_COMPACT: "segmented-control__segments--compact";
     readonly SEGMENT_ACTIVE_BG: "segmented-control__segments--active--bg";
     readonly TEXT_CONTAINER: "segmented-control__segments__text-container";
     readonly TEXT: "segmented-control__segments__text-container__text";

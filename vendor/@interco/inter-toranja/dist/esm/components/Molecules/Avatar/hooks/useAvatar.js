@@ -1,18 +1,18 @@
-import { STATE as n, TAGGING_EVENT as u } from "../../../../utils/pattern.js";
+import { STATE as r, TAGGING_EVENT as u } from "../../../../utils/pattern.js";
 import { resolveContentProps as D } from "../utils/resolveContentProps.js";
-import { resolveSizeProps as L } from "../utils/resolveSizeProps.js";
-import { getInitials as S } from "../utils/getInitials.js";
-import { getFlagClassName as v, getAvatarClassName as w, getContainerClassName as y } from "../utils/class-names.js";
-const R = "ic_edit", G = 100, H = (r) => {
-  var p;
-  const { variant: l, state: t = n.ENABLED, size: i, color: g, onClick: c, onTag: d } = r, s = t === n.ENABLED, A = t === n.DISABLED, N = t === n.SKELETON, E = s && !N, o = D(r), a = L(r), b = !!(a.edit && a.onEdit && s), m = !!(a.canShowFlag && a.flag && s && !b), C = !!(a.hasBadge && s && a.badgeProps), h = !!((p = a.badgeProps) != null && p.count && a.badgeProps.count >= G), P = o.category && o.label ? S(o.category, o.label) : null, _ = o.label ?? o.alt ?? "", f = (e) => {
-    d && d((T) => ({
-      ...T,
+import { resolveSizeProps as y } from "../utils/resolveSizeProps.js";
+import { getInitials as L } from "../utils/getInitials.js";
+import { getInitialTypographyClassName as S, getFlagClassName as v, getAvatarClassName as w, getContainerClassName as G } from "../utils/class-names.js";
+const H = "ic_edit", O = 100, U = (l) => {
+  var f;
+  const { variant: i, state: t = r.ENABLED, size: s, color: g, onClick: c, onTag: d } = l, n = t === r.ENABLED, N = t === r.DISABLED, C = t === r.SKELETON, E = n && !C, o = D(l), a = y(l), m = !!(a.edit && a.onEdit && n), p = !!(a.canShowFlag && a.flag && n && !m), h = !!(a.hasBadge && n && a.badgeProps), A = !!((f = a.badgeProps) != null && f.count && a.badgeProps.count >= O), T = o.category && o.label ? L(o.category, o.label) : null, I = o.label ?? o.alt ?? "", b = (e) => {
+    d && d((B) => ({
+      ...B,
       name: u.INTERACTION_CLICK,
       ComponentProperties: {
         component_name: "Avatar",
-        variant: l,
-        size: i,
+        variant: i,
+        size: s,
         state: t,
         color: g,
         icon: o.iconAsset ?? "",
@@ -21,41 +21,42 @@ const R = "ic_edit", G = 100, H = (r) => {
         show_badge: a.hasBadge,
         badge_variant: a.badgeProps ? a.badgeProps.variant : !1,
         badge_label: a.badgeProps ? a.badgeProps.count : !1,
-        flag: m ? a.flag ?? "" : ""
+        flag: p ? a.flag ?? "" : ""
       }
     })), E && (c == null || c(e));
-  }, B = (e) => {
-    f(e);
-  }, I = (e) => {
-    e.key !== "Enter" && e.key !== " " || (e.key === " " && e.preventDefault(), f(e));
+  }, P = (e) => {
+    b(e);
+  }, _ = (e) => {
+    e.key !== "Enter" && e.key !== " " || (e.key === " " && e.preventDefault(), b(e));
   };
   return {
-    variant: l,
+    variant: i,
     state: t,
     iconAsset: o.iconAsset,
     src: o.src,
     alt: o.alt,
     onError: o.onError,
     badgeProps: a.badgeProps,
-    isBadgeLarge: h,
+    isBadgeLarge: A,
     editIcon: a.editIcon,
     flag: a.flag,
     onEdit: a.onEdit,
-    shouldShowEdit: b,
-    shouldShowFlag: m,
-    shouldShowBadge: C,
-    isDisabled: A,
+    shouldShowEdit: m,
+    shouldShowFlag: p,
+    shouldShowBadge: h,
+    isDisabled: N,
     isInteractive: E,
-    containerClassName: y(),
-    avatarClassName: w({ variant: l, size: i, state: t, color: g }),
-    flagClassName: v(i),
-    initials: P,
-    ariaLabel: _,
-    handleClick: B,
-    handleKeyDown: I
+    containerClassName: G(),
+    avatarClassName: w({ variant: i, size: s, state: t, color: g }),
+    flagClassName: v(s),
+    initials: T,
+    initialTypographyClassName: S(s),
+    ariaLabel: I,
+    handleClick: P,
+    handleKeyDown: _
   };
 };
 export {
-  R as DEFAULT_EDIT_ICON,
-  H as useAvatar
+  H as DEFAULT_EDIT_ICON,
+  U as useAvatar
 };

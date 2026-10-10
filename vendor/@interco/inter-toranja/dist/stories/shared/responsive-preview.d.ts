@@ -7,6 +7,9 @@ export declare const RESPONSIVE_PREVIEW_WIDTHS: readonly [{
     readonly label: "XS — 393px (webview baseline)";
     readonly width: 393;
 }, {
+    readonly label: "S — 600px (mobile)";
+    readonly width: 600;
+}, {
     readonly label: "M — 905px (cross-check)";
     readonly width: 905;
 }, {

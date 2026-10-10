@@ -5,8 +5,8 @@ import { StepComponent as z } from "./StepComponent/StepComponent.js";
 import { TextWeight as p, TextSize as d, TextType as N } from "../../../Atoms/Text/types.js";
 import { TimelineStepStatusEnum as s, TimelineStateEnum as C } from "../utils/enums.js";
 import { getTimelineClasses as G } from "../utils/getTimelineClasses.js";
-import { v as M } from "../../../../v4-CRLUkzQ6.js";
-import { TAGGING_EVENT as P } from "../../../../utils/pattern.js";
+import { v as P } from "../../../../v4-CRLUkzQ6.js";
+import { TAGGING_EVENT as U } from "../../../../utils/pattern.js";
 import { Text as f } from "../../../Atoms/Text/Text.js";
 import '../../../../assets/TimelineItem.css';const Y = ({
   title: n,
@@ -17,17 +17,17 @@ import '../../../../assets/TimelineItem.css';const Y = ({
   contents: c = [],
   onTag: l
 }) => {
-  const T = A(
-    Array(c.length).fill("").map(() => M())
+  const S = A(
+    Array(c.length).fill("").map(() => P())
   ), a = [
     s.CURRENT,
     s.INCOMPLETE,
     s.SUCCESS
-  ].includes(m), S = i !== C.SKELETON;
+  ].includes(m), T = i !== C.SKELETON;
   B(() => {
     m === s.CURRENT && i === C.ENABLED && typeof l == "function" && l((o) => ({
       ...o,
-      name: P.DISPLAY,
+      name: U.DISPLAY,
       ComponentProperties: {
         name_event: "TimelineItemCurrent",
         component_name: "Timeline",
@@ -42,8 +42,8 @@ import '../../../../assets/TimelineItem.css';const Y = ({
     containerClass: E,
     markerClass: v,
     contentClass: x,
-    itemClassName: u,
-    headerClassName: y,
+    itemClassName: y,
+    headerClassName: u,
     titleClassName: R,
     markerLineClassName: I,
     contentClassName: _
@@ -53,17 +53,17 @@ import '../../../../assets/TimelineItem.css';const Y = ({
     isSmaller: a,
     showLine: h
   });
-  return /* @__PURE__ */ e("div", { className: u, children: /* @__PURE__ */ t("div", { className: E, children: [
+  return /* @__PURE__ */ e("div", { className: y, children: /* @__PURE__ */ t("div", { className: E, children: [
     /* @__PURE__ */ t("div", { className: v, children: [
       /* @__PURE__ */ e(z, { status: m, state: i, isSmaller: a }),
       /* @__PURE__ */ e("div", { className: I })
     ] }),
-    /* @__PURE__ */ e("div", { className: y, children: /* @__PURE__ */ t("div", { className: R, children: [
+    /* @__PURE__ */ e("div", { className: u, children: /* @__PURE__ */ t("div", { className: R, children: [
       /* @__PURE__ */ e("div", { children: /* @__PURE__ */ e(
         f,
         {
           textType: N.Body,
-          textSize: d.Medium,
+          textSize: d.Small,
           textWeight: p.Bold,
           state: i,
           children: n
@@ -74,14 +74,14 @@ import '../../../../assets/TimelineItem.css';const Y = ({
         {
           as: "span",
           textType: N.Body,
-          textSize: d.Medium,
+          textSize: d.Small,
           textWeight: p.Regular,
           state: i,
           children: r
         }
       ) })
     ] }) }),
-    S && /* @__PURE__ */ e("div", { className: _, children: c.map((o, L) => /* @__PURE__ */ e("div", { className: `${x}__${o.type}`, children: /* @__PURE__ */ e(
+    T && /* @__PURE__ */ e("div", { className: _, children: c.map((o, L) => /* @__PURE__ */ e("div", { className: `${x}__${o.type}`, children: /* @__PURE__ */ e(
       g,
       {
         content: o,
@@ -91,7 +91,7 @@ import '../../../../assets/TimelineItem.css';const Y = ({
         stepStatus: m,
         onTag: l
       },
-      T.current[L]
+      S.current[L]
     ) })) })
   ] }) });
 };

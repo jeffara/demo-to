@@ -22,6 +22,6 @@ export async function loadShared(target,kind){
    home.classList.add('site-home-link');home.setAttribute('aria-label','Inter — página inicial');
   }
  }
- if(kind==='nav'){const host=document.createElement('div');host.className='site-menu-toggle ds-official';target.prepend(host);const {mountMenuButton}=await loadDSRuntime();cleanup(host,mountMenuButton(host,content));}
+ if(kind==='nav'){const host=document.createElement('div');host.className='site-menu-toggle ds-official';target.prepend(host);const {mountMenuButton}=await loadDSRuntime();cleanup(host,await mountMenuButton(host,content));}
  target.dataset.sharedReady='true';
 }

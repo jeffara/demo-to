@@ -1,0 +1,2 @@
+import {defineConfig} from 'vite';
+export default defineConfig({base:'./',build:{outDir:'scripts',emptyOutDir:false,minify:'terser',target:'es2022',lib:{entry:'scripts/scripts.js',formats:['es'],fileName:()=> 'page.js'},rollupOptions:{external:id=>id.endsWith('/ds-runtime/toranja-runtime.js')||id.endsWith('/integrations.js'),output:{chunkFileNames:'page-[name]-[hash].js',paths:id=>id.endsWith('/integrations.js')?'/scripts/integrations.js':id.endsWith('/ds-runtime/toranja-runtime.js')?'/scripts/ds-runtime/toranja-runtime.js':id}}}});

@@ -1,6 +1,6 @@
 import { jsxs as P, jsx as E } from "react/jsx-runtime";
 import { useRef as j } from "react";
-import { VARIANT as r, SIZE as p, STATE as c, HIERARCHY as d, createBEMClassNames as H, TAGGING_EVENT as w } from "../../../utils/pattern.js";
+import { VARIANT as r, SIZE as p, STATE as c, HIERARCHY as d, TAGGING_EVENT as H, createBEMClassNames as w } from "../../../utils/pattern.js";
 import { Spinner as Z } from "../../Atoms/ProgressIndicator/Spinner/Spinner.js";
 import { Icon as q } from "../../Atoms/Icon/Icon.js";
 import { resolveButtonSpinnerSize as J, resolveNeutralIconButtonIconSize as Q, resolveButtonIconSize as W } from "../../Atoms/Icon/utils/sizeUtils.js";
@@ -21,14 +21,18 @@ import '../../../assets/Button.css';const oe = (L) => {
     hug: S,
     className: h,
     ...D
-  } = L, t = H(n, m), y = j(null), a = v ?? s === c.LOADING, N = R ?? s === c.DISABLED, b = !(a || s === c.SKELETON), B = [
+  } = L, t = w(n, m), y = j(null), a = v ?? s === c.LOADING, N = R ?? s === c.DISABLED, b = !(a || s === c.SKELETON), B = [
     d.SECONDARY,
     d.SECONDARY_OUTLINED,
     d.TERTIARY
   ].includes(e), z = m === r.DESTRUCTIVE && e === d.SECONDARY, M = m === r.INVERSE && e === d.PRIMARY, O = n === "btn-neutral", $ = m === r.DEFAULT && B || z || M || O, Y = (o) => {
-    if (C && C((I) => ({
+    if (a || N || s === c.SKELETON) {
+      o.preventDefault();
+      return;
+    }
+    C && C((I) => ({
       ...I,
-      name: w.INTERACTION_CLICK,
+      name: H.INTERACTION_CLICK,
       ComponentProperties: {
         component_name: "Button",
         variant: m,
@@ -39,11 +43,7 @@ import '../../../assets/Button.css';const oe = (L) => {
         show_leading_icon: !!f,
         leading_icon: f
       }
-    })), a || N || s === c.SKELETON) {
-      o.preventDefault();
-      return;
-    }
-    T && T(o);
+    })), T && T(o);
   }, _ = (o) => {
     o.currentTarget.blur();
   }, x = () => {

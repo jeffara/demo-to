@@ -6,7 +6,7 @@ import { ListItemControlProps } from '../types';
 export interface UseListItemControlViewModelResult {
     leadingElement: ReactElement | null;
     contentElement: ReactElement;
-    trailingElement: ReactElement | null;
+    trailingElement: ReactElement;
 }
 /**
  * Hook to manage ListItemControl view logic (MVVM pattern)

@@ -1,4 +1,4 @@
-/* Fontes hospedadas no próprio EDS. Citrina Medium permanece no runtime oficial. */
+/* Fontes hospedadas no próprio EDS. Citrina Medium externa evita duplicação em base64. */
 
 @font-face {
   font-family: 'Inter';
@@ -39,3 +39,6 @@
 @font-face {font-family:'Citrina';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/citrina-regular.woff2') format('woff2');}
 
 @font-face {font-family:'Citrina VF';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/citrina-regular.woff2') format('woff2');}
+
+@font-face{font-family:'Citrina';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/citrina-medium.woff') format('woff');}
+@font-face{font-family:'Citrina VF';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/citrina-medium.woff') format('woff');}

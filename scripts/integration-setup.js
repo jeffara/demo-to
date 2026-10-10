@@ -9,3 +9,8 @@ export function initializeIntegrations(){
  // Fontes de gráficos/listas: registerIntegration('id', async (params,{signal})=>dados).
  // As propriedades da resposta permitidas estão documentadas em docs/INTEGRACOES-V3.md.
 }
+
+// Synchronous DS callback example, when required by a real integration:
+// import {registerDSBehavior} from './ds-behaviors.js';
+// registerDSBehavior('table-row-id', row => String(row.id));
+// Select table-row-id in Table → getRowId — comportamento cadastrado.

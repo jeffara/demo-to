@@ -35,5 +35,5 @@ export declare const resolveCenterPresentation: ({ isSmall, isSkeleton, highligh
 export declare const resolveChartDonutAccessibility: (isSkeleton: boolean) => ChartDonutAccessibility;
 export declare const resolveBaseSliceItems: (isSkeleton: boolean, visualSlice: number[], sliceValue: number[], labels: string[], formattedValues: string[], colorParams: Omit<ResolveDonutSliceColorParams, "index">) => ChartDonutSliceItem[];
 export declare const applySliceHighlightClasses: (items: ChartDonutSliceItem[], highlightedIndex: number | null, dimmedClass: string) => ChartDonutSliceItem[];
-export declare const fitCenterValueFontSize: (wrapper: HTMLDivElement | null, shouldShowCenterText: boolean) => void;
+export declare const fitCenterValueFontSize: (wrapper: HTMLDivElement | null, shouldShowCenterText: boolean, chartWidthPx?: number) => void;
 export {};

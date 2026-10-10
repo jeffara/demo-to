@@ -1,6 +1,6 @@
 import { jsx as s, Fragment as a, jsxs as t } from "react/jsx-runtime";
 import '../../../../assets/components/Atoms/Hints/SuccessHint/success.modules.css';/* empty css                     */
-import i from "../../../../_virtual/index.js";
+import i from "../../../../_virtual/index2.js";
 const d = ({ hints: c, showIcon: r }) => /* @__PURE__ */ s(a, { children: c.filter((e) => e.trim() !== "").map((e) => /* @__PURE__ */ t("div", { className: "success", children: [
   !r && /* @__PURE__ */ s(
     i,

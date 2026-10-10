@@ -2,9 +2,10 @@
 import { read, el, uid } from './toranja.js';
 import { resolveLink } from './links.js';
 import {parseList, scalar, normalizeProps, put as set} from './ds-values.js';
-let schemaPromise, runtimePromise;
-const schemas=()=>schemaPromise??=fetch(new URL('./ds-schema.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Modelo DS indisponível');return r.json();});
+let runtimePromise;const schemaPromises=new Map();
+const schemas=id=>{if(!schemaPromises.has(id))schemaPromises.set(id,fetch(new URL('./ds-schema/'+id+'.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Modelo DS indisponível: '+id);return r.json();}));return schemaPromises.get(id);};
 const runtime=()=>runtimePromise??=import('./ds-runtime/toranja-runtime.js');
+export function preloadDS(){return runtime();}
 function decode(cell,d) {
  const value=cell?.textContent.trim()||'';
  if(d.kind==='link'||d.path.at(-1)==='href')return resolveLink(cell?.querySelector('a')?.getAttribute('href')||value);
@@ -13,12 +14,13 @@ function decode(cell,d) {
  if(d.kind==='boolean')return value==='true';
  if(d.kind==='number')return scalar(value,d);
  if(d.kind==='enum'&&d.values?.every(v=>typeof v==='number'))return Number(value);
- if(['array','json'].includes(d.kind)){const entries=[...cell.querySelectorAll(':scope > ul > li, :scope > ol > li')];return parseList(entries.length?entries.map(n=>n.textContent.trim()):value,d.item||{kind:'string'});}
+ if(d.kind==='json')return JSON.parse(value);
+ if(d.kind==='array'){const entries=[...cell.querySelectorAll(':scope > ul > li, :scope > ol > li')];return parseList(entries.length?entries.map(n=>n.textContent.trim()):value,d.item||{kind:'string'});}
  if(d.kind==='slot'&&!/icon/i.test(d.path.at(-1)))return cell.innerHTML;
  return value;
 }
-export async function mountDS(block,id) {
- const schema=(await schemas())[id];const {fields,items}=read(block,id);let props={};
+export async function mountDS(block,id,schemaOverride) {
+ const schema=schemaOverride||await schemas(id);const {fields,items}=read(block,id,schema.cellNames,schema.itemCellNames);let props={};
  try {
  for(const d of schema.descriptors){const v=decode(fields[d.key],d);if(v!==undefined)set(props,d.path,v);}
  if(schema.collections?.length){
@@ -51,20 +53,16 @@ export async function mountDS(block,id) {
  if(document.querySelector('main[data-aue-resource]'))host.addEventListener('click',e=>{if(e.target.closest('a'))e.preventDefault()},true);
  host.append(fallback);block.dataset.toranjaReady='true';
  const {mount}=await runtime();
- const css=new URL('./ds-runtime/toranja-runtime.css',import.meta.url).href;
- if(!document.querySelector('link[data-ds-css]')){const l=document.createElement('link');l.rel='stylesheet';l.href=css;l.dataset.dsCss='true';document.head.append(l);await new Promise(resolve=>{l.onload=resolve;l.onerror=resolve;});}
- const dispose=mount(host,schema,props,{resolveLink,editing:!!document.querySelector('main[data-aue-resource]')});
+ const dispose=await mount(host,schema,props,{resolveLink,editing:!!document.querySelector('main[data-aue-resource]')});
  // SVGs oficiais podem repetir ids de filtros; isola referências por instância.
  const svgMaps=new WeakMap();let svgCount=0;
  const localIds=new Map();
  const normalizeSVG=()=>{
+  
+
   for(const a of host.querySelectorAll('a[href]')){const raw=a.getAttribute('href');const mapped=resolveLink(raw);if(mapped&&mapped!==raw)a.setAttribute('href',mapped);if(a.target==='_blank')a.rel='noopener noreferrer';}
   for(const node of host.querySelectorAll('[id]'))if(!node.closest('svg')&&!node.id.startsWith(host.id+'-')){localIds.set(node.id,host.id+'-'+node.id);node.id=host.id+'-'+node.id;}
   for(const node of host.querySelectorAll('[for],[aria-labelledby],[aria-describedby],[aria-controls]'))for(const attr of ['for','aria-labelledby','aria-describedby','aria-controls']){const raw=node.getAttribute(attr);if(raw){const next=raw.split(' ').map(id=>localIds.get(id)||id).join(' ');if(next!==raw)node.setAttribute(attr,next);}}
-  const tabs=[...host.querySelectorAll('[data-testid=tab]')];
-  if(tabs.length){host.querySelector('[data-testid=container-tabs]')?.setAttribute('role','tablist');tabs.forEach((tab,i)=>{tab.setAttribute('role','tab');tab.tabIndex=tab.getAttribute('aria-selected')==='true'?0:-1;if(!tab.dataset.dsKeys){tab.dataset.dsKeys='true';tab.addEventListener('keydown',event=>{const available=tabs.filter(t=>t.getAttribute('aria-disabled')!=='true');let index=available.indexOf(tab);if(event.key==='ArrowRight')index++;else if(event.key==='ArrowLeft')index--;else if(event.key==='Home')index=0;else if(event.key==='End')index=available.length-1;else return;event.preventDefault();const next=available[(index+available.length)%available.length];next?.click();next?.focus();});}});}
-  const select=host.querySelector('.select-wrapper:not(.ds-select .select-wrapper)');if(select&&!select.dataset.dsKeys){select.dataset.dsKeys='true';select.tabIndex=0;select.setAttribute('role','button');select.setAttribute('aria-haspopup','listbox');select.addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();select.click();}});}
-  for(const input of host.querySelectorAll('input:not([aria-label])'))if(!host.querySelector('label[for="'+CSS.escape(input.id)+'"]'))input.setAttribute('aria-label',props.$accessibleLabel||props.label||props.title||'Campo');
   for(const svg of host.querySelectorAll('svg')){
   let record=svgMaps.get(svg);if(!record){record={prefix:host.id+'-svg'+(++svgCount)+'-',ids:new Map()};svgMaps.set(svg,record);}
   for(const node of svg.querySelectorAll('[id]'))if(!node.id.startsWith(record.prefix)){const old=node.id;const next=record.prefix+old;record.ids.set(old,next);node.id=next;}
@@ -77,4 +75,4 @@ export async function mountDS(block,id) {
  observer.observe(document.body,{childList:true,subtree:true});
 }
 
-export async function loadDSRuntime(){const result=await runtime();if(!document.querySelector('link[data-ds-css]')){const l=document.createElement('link');l.rel='stylesheet';l.href=new URL('./ds-runtime/toranja-runtime.css',import.meta.url).href;l.dataset.dsCss='true';document.head.append(l);}return result;}
+export async function loadDSRuntime(){return runtime();}

@@ -1,2 +1,3 @@
-import { mountDS } from '../../scripts/ds-adapter.js';
-export default block => mountDS(block, 'ds-signal');
+import {mountDS} from '../../scripts/page.js';
+const schema={"name":"Signal","descriptors":[{"name":"variant","kind":"enum","path":["variant"],"key":"p76617269616e74"},{"name":"size","kind":"enum","path":["size"],"key":"p73697a65"},{"name":"state","kind":"enum","path":["state"],"key":"p7374617465"},{"name":"actionLink","path":["$actionLink"],"key":"actionLink","kind":"link"},{"name":"actionTarget","path":["$actionTarget"],"key":"actionTarget","kind":"enum"},{"name":"accessibleLabel","path":["$accessibleLabel"],"key":"accessibleLabel","kind":"string"},{"name":"triggerLabel","path":["$triggerLabel"],"key":"triggerLabel","kind":"string"},{"name":"editorMode","path":["$editorMode"],"key":"editorMode","kind":"enum"}],"events":[],"technical":[],"collections":[],"version":3,"cellNames":["schemaVersion","p76617269616e74","p73697a65","p7374617465","actionLink","actionTarget","accessibleLabel","triggerLabel","editorMode"],"itemCellNames":[]};
+export default block=>mountDS(block,'ds-signal',schema);

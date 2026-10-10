@@ -19,5 +19,7 @@ export type StepperProps = {
     step?: number;
     mask?: boolean;
     maskType?: StepperMask;
+    value?: number;
+    onValueChange?: (value: number) => void;
     onTag?: (data: TagProps) => void;
 };

@@ -6,7 +6,7 @@ import { ListItemActionProps } from '../types';
 export interface UseListItemActionViewModelResult {
     leadingElement: ReactElement | null;
     contentElement: ReactElement;
-    trailingElement: ReactElement | null;
+    trailingElement: ReactElement;
 }
 /**
  * Hook to manage ListItemAction view logic (MVVM pattern)

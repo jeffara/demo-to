@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("../../../../../../utils/classNamesMerge.cjs"),t=({trailing:e})=>{const s=!!e;return{rootClasses:o.classNamesMerge("table-toolbar"),showActions:s}};exports.useTableToolbar=t;

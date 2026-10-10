@@ -16,9 +16,11 @@ type HeaderSearchControlProps = {
     onSearchOpenChange?: (isOpen: boolean) => void;
     searchProps?: Omit<InputSearchProps, 'state'>;
 };
+export type HeaderBackground = 'default' | 'transparent';
 type HeaderSharedProps = HeaderSearchControlProps & {
     state?: `${STATE.ENABLED}` | `${STATE.SKELETON}`;
     stacked?: boolean;
+    background?: HeaderBackground;
     scrollContainer?: HTMLElement | null;
     onTag?: (data: TagProps) => void;
 };
@@ -50,7 +52,10 @@ export type HeaderAvatarConfig = (HeaderAvatarBase & {
     icon: IconName;
 });
 export type HeaderChipConfig = Omit<ChipProps, 'state'>;
-export type HeaderSegmentedControlConfig = Omit<SegmentedControlProps, 'state'>;
+type CompactSegmentedControlProps = Extract<SegmentedControlProps, {
+    density: 'compact';
+}>;
+export type HeaderSegmentedControlConfig = Omit<CompactSegmentedControlProps, 'state' | 'density'>;
 type TitleTopPagesProps = HeaderSharedProps & TrailingIconsProps & {
     variant: `${HeaderVariant.TopPages}`;
     type: `${HeaderType.Title}`;

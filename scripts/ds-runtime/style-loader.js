@@ -1,0 +1,1 @@
+const e=new Map;export function loadStyles(o){return Promise.all(o.map(o=>(e.has(o)||e.set(o,new Promise((t,n)=>{const r=document.createElement("link");r.rel="stylesheet",r.href=new URL(o,import.meta.url),r.onload=t,r.onerror=()=>{e.delete(o),r.remove(),n(Error("Estilo indisponível: "+o))},document.head.append(r)})),e.get(o))))}

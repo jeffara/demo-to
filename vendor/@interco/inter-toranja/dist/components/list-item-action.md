@@ -28,9 +28,9 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 - `ListItemActionWithButtonProps`
 - `ListItemActionWithIconButtonProps`
 - `ListItemActionWithNeutralIconButtonProps`
-- `ListItemActionWithoutTrailingProps`
 
 **Types:**
+- `ActionButtonHierarchy`
 - `ActionTrailingVariant`
 
 
@@ -59,10 +59,15 @@ Disponíveis no arquivo types, úteis para SDUI e cenários avançados:
 ## Definição de tipos completa
 
 ```typescript
-import type { IconButtonProps } from '../Button/types'
+import type { IconButtonProps, RegularButtonProps } from '../Button/types'
 import type { ListItemContentProps, ListItemLeadingProps } from '../ListItemBase'
 import type { ListItemSharedProps } from '../ListItemBase/types/shared'
 import type { IconName } from '@/components/Atoms/Icon/types'
+
+export type ActionButtonHierarchy = Exclude<
+  NonNullable<RegularButtonProps['hierarchy']>,
+  'tertiary'
+>
 
 /**
  * Action trailing variants
@@ -94,14 +99,9 @@ export interface ButtonTrailingProps {
   variant?: 'default' | 'destructive' | 'inverse'
 
   /**
-   * Button hierarchy (primary, secondary, secondaryOutlined, tertiary)
+   * Button hierarchy. Tertiary is not allowed on ListItemAction.
    */
-  hierarchy?: 'primary' | 'secondary' | 'secondaryOutlined' | 'tertiary'
-
-  /**
-   * Button size (small, medium, large)
-   */
-  size?: 'small' | 'medium' | 'large'
+  hierarchy?: ActionButtonHierarchy
 
   /**
    * Optional icon
@@ -258,7 +258,7 @@ export interface ListItemActionBaseProps
  */
 export interface ListItemActionWithButtonProps extends ListItemActionBaseProps {
   trailingVariant: 'button'
-  trailingProps?: ButtonTrailingProps
+  trailingProps: ButtonTrailingProps
 }
 
 /**
@@ -266,7 +266,7 @@ export interface ListItemActionWithButtonProps extends ListItemActionBaseProps {
  */
 export interface ListItemActionWithIconButtonProps extends ListItemActionBaseProps {
   trailingVariant: 'iconButton'
-  trailingProps?: IconButtonTrailingProps
+  trailingProps: IconButtonTrailingProps
 }
 
 /**
@@ -274,30 +274,21 @@ export interface ListItemActionWithIconButtonProps extends ListItemActionBasePro
  */
 export interface ListItemActionWithNeutralIconButtonProps extends ListItemActionBaseProps {
   trailingVariant: 'neutralIconButton'
-  trailingProps?: NeutralIconButtonTrailingProps
-}
-
-/**
- * ListItemAction without trailing
- */
-export interface ListItemActionWithoutTrailingProps extends ListItemActionBaseProps {
-  trailingVariant?: never
-  trailingProps?: never
+  trailingProps: NeutralIconButtonTrailingProps
 }
 
 /**
  * ListItemAction props (discriminated union)
  *
- * @important RESTRICTIONS:
- * - Only accepts trailing types: button, iconButton (1-2), or neutralIconButton
- * - Does NOT support: tagChevron, badge, text, or selected prop
- * - Use ListItemGeneral if you need selection support or other trailing variants
- * - Maximum 2 icon buttons when using iconButton trailing
+ * Trailing is required and always interactive.
+ * Only accepts trailing types: button, iconButton (1-2), or neutralIconButton.
+ * Button trailing is always small hug; tertiary hierarchy is not allowed.
+ * IconButton trailing is always small.
+ * Maximum 2 icon buttons when using iconButton trailing.
  */
 export type ListItemActionProps =
   | ListItemActionWithButtonProps
   | ListItemActionWithIconButtonProps
   | ListItemActionWithNeutralIconButtonProps
-  | ListItemActionWithoutTrailingProps
 
 ```

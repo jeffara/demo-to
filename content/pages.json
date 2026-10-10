@@ -18,7 +18,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -28,9 +29,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma experiência para cada momento.",
               "p6173": "h1",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -42,7 +44,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -72,11 +75,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Uma pessoa em seu momento de independência",
-              "p636f6e74656e745363616c65": "fit",
+              "p636f6e74656e745363616c65": "fill",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           }
@@ -152,11 +157,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Jovem Universitário",
-              "p636f6e74656e745363616c65": "fit",
+              "p636f6e74656e745363616c65": "fill",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -454,9 +461,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Sua próxima página começa aqui.",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -468,7 +476,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -500,14 +509,14 @@
   },
   "demo-toranja": {
     "title": "Toranja | Showcase completo",
-    "description": "Catálogo oficial do Design System Toranja 1.13.3 em EDS",
+    "description": "Catálogo oficial do Design System Toranja 2.0.1 em EDS",
     "sections": [
       {
         "id": "catalogo",
         "layoutPadding": "large",
         "content": [
           {
-            "text": "<p>TORANJA / CATÁLOGO OFICIAL</p><h1>Um sistema para criar possibilidades.</h1><p>Explore os 64 componentes do Toranja. Os exemplos preservam o pacote oficial e expõem suas propriedades para autoria.</p>"
+            "text": "<p>TORANJA / CATÁLOGO OFICIAL</p><h1>Um sistema para criar possibilidades.</h1><p>Explore os 73 componentes do Toranja. Os exemplos preservam o pacote oficial e expõem suas propriedades para autoria.</p>"
           },
           {
             "block": "ds-button",
@@ -540,7 +549,7 @@
             "block": "ds-card",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p6368696c6472656e": "<h3>Moléculas</h3><p>39 componentes</p><p>Combinações que resolvem interações e apresentações de conteúdo.</p><p><a href=\"#moleculas\">Explorar moléculas →</a></p>",
+              "p6368696c6472656e": "<h3>Moléculas</h3><p>47 componentes</p><p>Combinações que resolvem interações e apresentações de conteúdo.</p><p><a href=\"#moleculas\">Explorar moléculas →</a></p>",
               "p7374617465": "enabled"
             },
             "items": []
@@ -551,6 +560,15 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "<h3>Templates</h3><p>2 componentes</p><p>Estruturas de apresentação disponibilizadas pelo pacote oficial.</p><p><a href=\"#templates\">Explorar templates →</a></p>",
               "p7374617465": "enabled"
+            },
+            "items": []
+          },
+          {
+            "block": "ds-card",
+            "properties": {
+              "p6368696c6472656e": "<h3>Organismos</h3><p>1 componente</p><p><a href=\"#ds-table\">Explorar tabela →</a></p>",
+              "p7374617465": "enabled",
+              "schemaVersion": "toranja-v3"
             },
             "items": []
           }
@@ -910,13 +928,15 @@
           {
             "block": "ds-image",
             "properties": {
-              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
               "p636f6e74656e745363616c65": "fill",
               "p7769647468": 480,
               "p686569676874": 240,
               "p726164697573": "large",
-              "schemaVersion": "toranja-v3"
+              "schemaVersion": "toranja-v3",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           }
@@ -1291,7 +1311,7 @@
             "properties": {
               "p76617269616e74": "image",
               "p73697a65": "medium",
-              "p75726c": "/assets/demo/ede5e1c82aad.jpg",
+              "p75726c": "/assets/demo/ede5e1c82aad.webp",
               "p616c74": "Momentos da vida",
               "schemaVersion": "toranja-v3"
             },
@@ -1495,8 +1515,7 @@
               "p686965726172636879": "primary",
               "p73697a65": "large",
               "actionLink": "/demo-toranja",
-              "schemaVersion": "toranja-v3",
-              "placement": "inline"
+              "schemaVersion": "toranja-v3"
             },
             "items": []
           }
@@ -1982,19 +2001,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta digital",
-                "c246f7074696f6e73p76616c7565": "Conta digital"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Investimentos",
-                "c246f7074696f6e73p76616c7565": "Investimentos"
-              },
-              {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "Crédito"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           }
@@ -2266,6 +2280,299 @@
             "items": []
           }
         ]
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>Breadcrumb</h2><p><a href=\"/showcase/breadcrumb\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-breadcrumb",
+            "properties": {
+              "p617269614c6162656c": "Navegação estrutural",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "home",
+                "p6c6162656c": "Home",
+                "p68726566": "/",
+                "collection": "items"
+              },
+              {
+                "p6964": "catalog",
+                "p6c6162656c": "Catálogo",
+                "p68726566": "/demo-toranja",
+                "collection": "items"
+              },
+              {
+                "p6964": "current",
+                "p6c6162656c": "Breadcrumb",
+                "collection": "items"
+              }
+            ]
+          }
+        ],
+        "id": "ds-breadcrumb"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>MenuPopup</h2><p><a href=\"/showcase/menu-popup\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-menu-popup",
+            "properties": {
+              "p706c6163656d656e74": "bottom-start",
+              "p617269614c6162656c": "Navegação",
+              "triggerLabel": "Abrir MenuPopup",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "home",
+                "p6c6162656c": "Home",
+                "p69636f6e": "ic_house",
+                "collection": "items",
+                "itemLink": "/"
+              },
+              {
+                "p6964": "catalog",
+                "p6c6162656c": "Catálogo",
+                "p69636f6e": "ic_apps",
+                "collection": "items",
+                "itemLink": "/demo-toranja"
+              }
+            ]
+          }
+        ],
+        "id": "ds-menu-popup"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>ModalDialog</h2><p><a href=\"/showcase/modal-dialog\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-modal-dialog",
+            "properties": {
+              "p7469746c65": "Informação importante",
+              "p73686f77436c6f7365427574746f6e": "true",
+              "p736c6f74": "<p>Conteúdo editável do diálogo oficial.</p>",
+              "triggerLabel": "Abrir ModalDialog",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": []
+          }
+        ],
+        "id": "ds-modal-dialog"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>Pagination</h2><p><a href=\"/showcase/pagination\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-pagination",
+            "properties": {
+              "p70616765496e646578": 0,
+              "p7061676553697a65": 10,
+              "p70616765436f756e74": 5,
+              "p746f74616c4974656d73": 50,
+              "p6c616e6775616765": "ptBR",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 10
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 25
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 50
+              }
+            ]
+          }
+        ],
+        "id": "ds-pagination"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>Panel</h2><p><a href=\"/showcase/panel\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-panel",
+            "properties": {
+              "p74797065": "slot",
+              "p6368696c6472656e": "<p>Organize informações com o componente oficial.</p>",
+              "p73697a65": "full",
+              "p7469746c65": "Seu painel",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": []
+          }
+        ],
+        "id": "ds-panel"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>SideSheet</h2><p><a href=\"/showcase/side-sheet\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-side-sheet",
+            "properties": {
+              "p7469746c65": "Detalhes",
+              "p6465736372697074696f6e": "Informações complementares",
+              "p736c6f74": "<p>Conteúdo editável do painel lateral.</p>",
+              "triggerLabel": "Abrir SideSheet",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": []
+          }
+        ],
+        "id": "ds-side-sheet"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>Sidebar</h2><p><a href=\"/showcase/sidebar\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-sidebar",
+            "properties": {
+              "p64656661756c74457870616e73696f6e": "expanded",
+              "p6272616e64": "\"inter\"",
+              "p617269614c6162656c": "Navegação principal",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "home",
+                "p6c6162656c": "Home",
+                "p69636f6e": "ic_house",
+                "p73656c6563746564": true,
+                "collection": "items",
+                "itemLink": "/"
+              },
+              {
+                "p6964": "catalog",
+                "p6c6162656c": "Catálogo",
+                "p69636f6e": "ic_apps",
+                "collection": "items",
+                "itemLink": "/demo-toranja"
+              }
+            ]
+          }
+        ],
+        "id": "ds-sidebar"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>Table</h2><p><a href=\"/showcase/table\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-table",
+            "properties": {
+              "p746f6f6c6261722e7469746c65": "Produtos ilustrativos",
+              "p73686f7744697669646572": "true",
+              "p706167696e6174696f6e": "true",
+              "p696e697469616c5061676553697a65": 10,
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "name",
+                "p6163636573736f72": "name",
+                "p686561646572": "Produto",
+                "p63656c6c54797065": "text",
+                "p736f727461626c65": true,
+                "collection": "columns"
+              },
+              {
+                "p6964": "category",
+                "p6163636573736f72": "category",
+                "p686561646572": "Categoria",
+                "p63656c6c54797065": "text",
+                "p736f727461626c65": true,
+                "collection": "columns"
+              },
+              {
+                "collection": "data",
+                "c64617461p76616c7565": {
+                  "id": "1",
+                  "name": "Conta Digital",
+                  "category": "Conta"
+                }
+              },
+              {
+                "collection": "data",
+                "c64617461p76616c7565": {
+                  "id": "2",
+                  "name": "Cartão",
+                  "category": "Crédito"
+                }
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 10
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 25
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 50
+              }
+            ]
+          }
+        ],
+        "id": "ds-table"
+      },
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<h2>TooltipDescription</h2><p><a href=\"/showcase/tooltip-description\">Abrir exemplo e propriedades</a></p>"
+          },
+          {
+            "block": "ds-tooltip-description",
+            "properties": {
+              "p6465736372697074696f6e": "Informação complementar exibida pelo componente oficial.",
+              "p616c69676e": "left",
+              "p706c6163656d656e74": "bottom",
+              "p7469746c65": "Saiba mais",
+              "triggerLabel": "Abrir TooltipDescription",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": []
+          }
+        ],
+        "id": "ds-tooltip-description"
       }
     ]
   },
@@ -2282,7 +2589,9 @@
               "p7372632e6c6f63616c": "/assets/brand/logo.svg",
               "p636f6e74656e744465736372697074696f6e": "Banco Inter",
               "p636f6e74656e745363616c65": "fit",
-              "p726164697573": "large"
+              "p726164697573": "large",
+              "p7769647468": "100px",
+              "p686569676874": "44px"
             },
             "items": []
           },
@@ -2443,7 +2752,8 @@
               "p6368696c6472656e": "Banco Inter S.A. — CNPJ: 00.416.968/0001-01. Av. Barbacena, 1219 - Santo Agostinho, Belo Horizonte - MG, CEP: 30190-131. Serviços de investimento oferecidos pela Inter DTVM Ltda. Nos EUA, contas correntes são oferecidas pelo Evolve Bank & Trust, membro FDIC. \n          Investimentos no exterior são oferecidos pela Inter Securities LLC, membro FINRA e SIPC. © 2026 Banco Inter S.A. Todos os direitos reservados.",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -2519,8 +2829,9 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Nesta Página",
               "p6173": "h2",
-              "p7465787454797065": "heading",
-              "p74657874576569676874": "regular"
+              "p7465787454797065": "title",
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -2658,7 +2969,8 @@
               "p6368696c6472656e": "InputSearch oficial: exemplo visual e de entrada de texto. Consulta ao conteúdo depende de integração.",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           }
@@ -2704,11 +3016,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Cliente Inter utilizando o Super App",
-              "p636f6e74656e745363616c65": "fit",
+              "p636f6e74656e745363616c65": "fill",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -2753,8 +3067,9 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Momentos de Vida",
               "p6173": "h2",
-              "p7465787454797065": "heading",
-              "p74657874576569676874": "regular"
+              "p7465787454797065": "title",
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -2902,11 +3217,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Universitário Conquistando Independência",
-              "p636f6e74656e745363616c65": "fit",
+              "p636f6e74656e745363616c65": "fill",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -3181,7 +3498,7 @@
                 "collection": "content:children",
                 "c636f6e74656e743a6368696c6472656econtentKind": "card",
                 "c636f6e74656e743a6368696c6472656econtentBody": "<span>Sem Tarifas</span><h3>Conta Digital Completa</h3><p>Pix ilimitado, transferências gratuitas, recarga e pagamentos instantâneos com total segurança.</p><div>\n<a href=\"#\">Abrir Conta</a>\n</div>",
-                "c636f6e74656e743a6368696c6472656econtentAsset": "/assets/demo/27039a3ce868.jpg",
+                "c636f6e74656e743a6368696c6472656econtentAsset": "/assets/demo/27039a3ce868.webp",
                 "c636f6e74656e743a6368696c6472656econtentDescription": "Conta Digital"
               }
             ]
@@ -3197,7 +3514,7 @@
                 "collection": "content:children",
                 "c636f6e74656e743a6368696c6472656econtentKind": "card",
                 "c636f6e74656e743a6368696c6472656econtentBody": "<span>Pontos Loop</span><h3>Cartão Mastercard Black</h3><p>Pontos que nunca expiram no Inter Loop, acesso ilimitado a salas VIP LoungeKey e cashback em fatura.</p><div>\n<a href=\"#\">Pedir Cartão</a>\n</div>",
-                "c636f6e74656e743a6368696c6472656econtentAsset": "/assets/demo/c655230f9197.jpg",
+                "c636f6e74656e743a6368696c6472656econtentAsset": "/assets/demo/c655230f9197.webp",
                 "c636f6e74656e743a6368696c6472656econtentDescription": "Cartão Black"
               }
             ]
@@ -3213,7 +3530,7 @@
                 "collection": "content:children",
                 "c636f6e74656e743a6368696c6472656econtentKind": "card",
                 "c636f6e74656e743a6368696c6472656econtentBody": "<span>Global</span><h3>Investimentos nos EUA</h3><p>Ações de Wall Street, ETFs e REITs em dólar comercial direto pelo aplicativo com taxa zero.</p><div>\n<a href=\"#\">Investir em Dólar</a>\n</div>",
-                "c636f6e74656e743a6368696c6472656econtentAsset": "/assets/demo/6aa4033b9055.jpg",
+                "c636f6e74656e743a6368696c6472656econtentAsset": "/assets/demo/6aa4033b9055.webp",
                 "c636f6e74656e743a6368696c6472656econtentDescription": "Investimentos Internacionais"
               }
             ]
@@ -3242,11 +3559,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/929b38390928.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/929b38390928.webp",
               "p636f6e74656e744465736372697074696f6e": "Executivo Global",
-              "p636f6e74656e745363616c65": "fit",
+              "p636f6e74656e745363616c65": "fill",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -3291,7 +3610,8 @@
               "p6368696c6472656e": "Controle InputMoney oficial. Este exemplo não calcula rentabilidade.",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           }
@@ -3313,7 +3633,9 @@
               "schemaVersion": "toranja-v3",
               "p636f6e74656e744465736372697074696f6e": "Exemplo de imagem do conteúdo",
               "p636f6e74656e745363616c65": "fit",
-              "p726164697573": "large"
+              "p726164697573": "large",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -3333,7 +3655,8 @@
               "p6368696c6472656e": "Image e Link oficiais. O pacote Toranja não exporta um componente VideoPlayer.",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           }
@@ -3450,7 +3773,8 @@
               "p6368696c6472656e": "<div>Faça o download gratuito na App Store ou Google Play e inicie o cadastro com seu CPF.</div>",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -3461,7 +3785,8 @@
               "p6368696c6472656e": "<div>Tire uma selfie para biometria facial e foto de um documento oficial (RG ou CNH).</div>",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -3472,7 +3797,8 @@
               "p6368696c6472656e": "<div>Sua conta é ativada em poucos minutos. Você já pode criar chaves Pix e usar seu cartão virtual.</div>",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           }
@@ -3653,7 +3979,9 @@
               "p7372632e6c6f63616c": "/assets/demo/inter-qr.png",
               "p636f6e74656e744465736372697074696f6e": "QR Code para acessar o site Inter",
               "p636f6e74656e745363616c65": "fit",
-              "p726164697573": "large"
+              "p726164697573": "large",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -3748,19 +4076,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta digital",
-                "c246f7074696f6e73p76616c7565": "conta"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "credito"
-              },
-              {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Investimentos",
-                "c246f7074696f6e73p76616c7565": "investimentos"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           },
@@ -3793,7 +4116,8 @@
               "p6368696c6472656e": "Exemplo de composição de controles oficiais. Validação e envio de formulário dependem de uma implementação de integração.",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -4258,7 +4582,7 @@
             "properties": {
               "p76617269616e74": "image",
               "p73697a65": "medium",
-              "p75726c": "/assets/demo/ede5e1c82aad.jpg",
+              "p75726c": "/assets/demo/ede5e1c82aad.webp",
               "p616c74": "Momentos da vida",
               "schemaVersion": "toranja-v3"
             },
@@ -4280,7 +4604,7 @@
             "properties": {
               "p76617269616e74": "image",
               "p73697a65": "medium",
-              "p75726c": "/assets/demo/ede5e1c82aad.jpg",
+              "p75726c": "/assets/demo/ede5e1c82aad.webp",
               "p616c74": "Momentos da vida",
               "p7374617465": "skeleton",
               "schemaVersion": "toranja-v3"
@@ -5572,13 +5896,15 @@
           {
             "block": "ds-image",
             "properties": {
-              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
               "p636f6e74656e745363616c65": "fill",
               "p7769647468": 480,
               "p686569676874": 240,
               "p726164697573": "large",
-              "schemaVersion": "toranja-v3"
+              "schemaVersion": "toranja-v3",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           }
@@ -5596,14 +5922,16 @@
           {
             "block": "ds-image",
             "properties": {
-              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
               "p636f6e74656e745363616c65": "fill",
               "p7769647468": 480,
               "p686569676874": 240,
               "p726164697573": "large",
               "p7374617465": "skeleton",
-              "schemaVersion": "toranja-v3"
+              "schemaVersion": "toranja-v3",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           }
@@ -5621,14 +5949,16 @@
           {
             "block": "ds-image",
             "properties": {
-              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/ede5e1c82aad.webp",
               "p636f6e74656e744465736372697074696f6e": "Momentos da vida",
               "p636f6e74656e745363616c65": "fill",
               "p7769647468": 480,
               "p686569676874": 240,
               "p726164697573": "large",
               "p7374617465": "disabled",
-              "schemaVersion": "toranja-v3"
+              "schemaVersion": "toranja-v3",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           }
@@ -7572,19 +7902,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta digital",
-                "c246f7074696f6e73p76616c7565": "Conta digital"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Investimentos",
-                "c246f7074696f6e73p76616c7565": "Investimentos"
-              },
-              {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "Crédito"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           }
@@ -7609,19 +7934,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta digital",
-                "c246f7074696f6e73p76616c7565": "Conta digital"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Investimentos",
-                "c246f7074696f6e73p76616c7565": "Investimentos"
-              },
-              {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "Crédito"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           }
@@ -7646,19 +7966,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta digital",
-                "c246f7074696f6e73p76616c7565": "Conta digital"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Investimentos",
-                "c246f7074696f6e73p76616c7565": "Investimentos"
-              },
-              {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "Crédito"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           }
@@ -7683,19 +7998,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta digital",
-                "c246f7074696f6e73p76616c7565": "Conta digital"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Investimentos",
-                "c246f7074696f6e73p76616c7565": "Investimentos"
-              },
-              {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "Crédito"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           }
@@ -9215,19 +9525,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta digital",
-                "c246f7074696f6e73p76616c7565": "conta"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "credito"
-              },
-              {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Investimentos",
-                "c246f7074696f6e73p76616c7565": "investimentos"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           },
@@ -9260,7 +9565,8 @@
               "p6368696c6472656e": "Exemplo de composição de controles oficiais. Validação e envio de formulário dependem de uma implementação de integração.",
               "p6173": "p",
               "p7465787454797065": "body",
-              "p74657874576569676874": "regular"
+              "p74657874576569676874": "regular",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -9320,14 +9626,14 @@
             },
             "items": [
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Conta",
-                "c246f7074696f6e73p76616c7565": "conta"
+                "p76616c7565": "conta",
+                "p6c6162656c": "Conta Digital",
+                "collection": "options"
               },
               {
-                "collection": "$options",
-                "c246f7074696f6e73p6c6162656c": "Crédito",
-                "c246f7074696f6e73p76616c7565": "credito"
+                "p76616c7565": "credito",
+                "p6c6162656c": "Crédito",
+                "collection": "options"
               }
             ]
           }
@@ -9537,11 +9843,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/ec9cc3472288.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/ec9cc3472288.webp",
               "p636f6e74656e744465736372697074696f6e": "Imagem de exemplo para mídia",
               "p636f6e74656e745363616c65": "fit",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -9551,9 +9859,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Conteúdo em diferentes formatos",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -9565,7 +9874,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -9602,13 +9912,13 @@
   },
   "showcase/layouts": {
     "title": "Liberdade para compor.",
-    "description": "Layouts são propriedades da seção. O catálogo continua com exatamente os 64 componentes oficiais.",
+    "description": "Layouts são propriedades da seção. O catálogo continua com exatamente os 73 componentes oficiais.",
     "sections": [
       {
         "layoutPadding": "compact",
         "content": [
           {
-            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Liberdade para compor.</h1><p>Layouts são propriedades da seção. O catálogo continua com exatamente os 64 componentes oficiais.</p>"
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Liberdade para compor.</h1><p>Layouts são propriedades da seção. O catálogo continua com exatamente os 73 componentes oficiais.</p>"
           }
         ]
       },
@@ -9626,11 +9936,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Imagem para demonstrar a proporção das colunas",
               "p636f6e74656e745363616c65": "fit",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -9640,9 +9952,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -9654,7 +9967,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -9686,11 +10000,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Imagem para demonstrar a proporção das colunas",
               "p636f6e74656e745363616c65": "fit",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -9700,9 +10016,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -9714,7 +10031,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -9746,11 +10064,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Imagem para demonstrar a proporção das colunas",
               "p636f6e74656e745363616c65": "fit",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -9760,9 +10080,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -9774,7 +10095,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -9806,11 +10128,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Imagem para demonstrar a proporção das colunas",
               "p636f6e74656e745363616c65": "fit",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -9820,9 +10144,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -9834,7 +10159,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -9866,11 +10192,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/11fa52f4aa2b.webp",
               "p636f6e74656e744465736372697074696f6e": "Imagem para demonstrar a proporção das colunas",
               "p636f6e74656e745363616c65": "fit",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           },
@@ -9880,9 +10208,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Uma coluna, vários componentes.",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -9894,7 +10223,8 @@
               "p6173": "p",
               "p7465787454797065": "body",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p7465787453697a65": "medium"
             },
             "items": []
           },
@@ -10010,9 +10340,10 @@
               "schemaVersion": "toranja-v3",
               "p6368696c6472656e": "Texto na primeira coluna desktop.",
               "p6173": "h2",
-              "p7465787454797065": "heading",
+              "p7465787454797065": "title",
               "p74657874576569676874": "regular",
-              "classes_layoutColumn": "col-1"
+              "classes_layoutColumn": "col-1",
+              "p7465787453697a65": "large"
             },
             "items": []
           },
@@ -10032,11 +10363,13 @@
             "block": "ds-image",
             "properties": {
               "schemaVersion": "toranja-v3",
-              "p7372632e6c6f63616c": "/assets/demo/ec9cc3472288.jpg",
+              "p7372632e6c6f63616c": "/assets/demo/ec9cc3472288.webp",
               "p636f6e74656e744465736372697074696f6e": "A imagem aparece antes do texto no mobile",
               "p636f6e74656e745363616c65": "fit",
               "p726164697573": "large",
-              "classes_layoutColumn": "col-2"
+              "classes_layoutColumn": "col-2",
+              "p66696c6c5769647468": true,
+              "p726174696f": 1.3333333333333333
             },
             "items": []
           }
@@ -10169,7 +10502,7 @@
             "block": "v3-video",
             "properties": {
               "videoUrl": "/assets/demo/player-v3.mp4",
-              "posterImage": "/assets/demo/ec9cc3472288.jpg",
+              "posterImage": "/assets/demo/ec9cc3472288.webp",
               "posterImageAlt": "Capa demonstrativa do player",
               "title": "Demonstração técnica",
               "caption": "Conteúdo de teste do player. Não é um vídeo institucional.",
@@ -10229,7 +10562,7 @@
         "layoutWidth": "reading",
         "content": [
           {
-            "text": "<p><a href=\"/demo-toranja\">← Catálogo oficial</a></p><h1>DS Toranja Custom</h1><p>Funcionalidades desenvolvidas para este projeto. Este grupo reúne formulário, busca, vídeo e simulador; o catálogo oficial mantém seus 64 componentes.</p>"
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo oficial</a></p><h1>DS Toranja Custom</h1><p>Funcionalidades desenvolvidas para este projeto. Este grupo reúne formulário, busca, vídeo e simulador; o catálogo oficial mantém seus 73 componentes.</p>"
           }
         ]
       },
@@ -10285,6 +10618,344 @@
               "action6f6e436c69636bkind": "navigate",
               "action6f6e436c69636blink": "/showcase/layouts",
               "action6f6e436c69636btarget": "_self"
+            },
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/breadcrumb": {
+    "title": "Breadcrumb | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Breadcrumb</h1>"
+          },
+          {
+            "block": "ds-breadcrumb",
+            "properties": {
+              "p617269614c6162656c": "Navegação estrutural",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "home",
+                "p6c6162656c": "Home",
+                "p68726566": "/",
+                "collection": "items"
+              },
+              {
+                "p6964": "catalog",
+                "p6c6162656c": "Catálogo",
+                "p68726566": "/demo-toranja",
+                "collection": "items"
+              },
+              {
+                "p6964": "current",
+                "p6c6162656c": "Breadcrumb",
+                "collection": "items"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/menu-popup": {
+    "title": "MenuPopup | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>MenuPopup</h1>"
+          },
+          {
+            "block": "ds-menu-popup",
+            "properties": {
+              "p706c6163656d656e74": "bottom-start",
+              "p617269614c6162656c": "Navegação",
+              "triggerLabel": "Abrir MenuPopup",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "home",
+                "p6c6162656c": "Home",
+                "p69636f6e": "ic_house",
+                "collection": "items",
+                "itemLink": "/"
+              },
+              {
+                "p6964": "catalog",
+                "p6c6162656c": "Catálogo",
+                "p69636f6e": "ic_apps",
+                "collection": "items",
+                "itemLink": "/demo-toranja"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/modal-dialog": {
+    "title": "ModalDialog | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>ModalDialog</h1>"
+          },
+          {
+            "block": "ds-modal-dialog",
+            "properties": {
+              "p7469746c65": "Informação importante",
+              "p73686f77436c6f7365427574746f6e": "true",
+              "p736c6f74": "<p>Conteúdo editável do diálogo oficial.</p>",
+              "triggerLabel": "Abrir ModalDialog",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/pagination": {
+    "title": "Pagination | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Pagination</h1>"
+          },
+          {
+            "block": "ds-pagination",
+            "properties": {
+              "p70616765496e646578": 0,
+              "p7061676553697a65": 10,
+              "p70616765436f756e74": 5,
+              "p746f74616c4974656d73": 50,
+              "p6c616e6775616765": "ptBR",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 10
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 25
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 50
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/panel": {
+    "title": "Panel | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Panel</h1>"
+          },
+          {
+            "block": "ds-panel",
+            "properties": {
+              "p74797065": "slot",
+              "p6368696c6472656e": "<p>Organize informações com o componente oficial.</p>",
+              "p73697a65": "full",
+              "p7469746c65": "Seu painel",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/side-sheet": {
+    "title": "SideSheet | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>SideSheet</h1>"
+          },
+          {
+            "block": "ds-side-sheet",
+            "properties": {
+              "p7469746c65": "Detalhes",
+              "p6465736372697074696f6e": "Informações complementares",
+              "p736c6f74": "<p>Conteúdo editável do painel lateral.</p>",
+              "triggerLabel": "Abrir SideSheet",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/sidebar": {
+    "title": "Sidebar | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Sidebar</h1>"
+          },
+          {
+            "block": "ds-sidebar",
+            "properties": {
+              "p64656661756c74457870616e73696f6e": "expanded",
+              "p6272616e64": "\"inter\"",
+              "p617269614c6162656c": "Navegação principal",
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "home",
+                "p6c6162656c": "Home",
+                "p69636f6e": "ic_house",
+                "p73656c6563746564": true,
+                "collection": "items",
+                "itemLink": "/"
+              },
+              {
+                "p6964": "catalog",
+                "p6c6162656c": "Catálogo",
+                "p69636f6e": "ic_apps",
+                "collection": "items",
+                "itemLink": "/demo-toranja"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/table": {
+    "title": "Table | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>Table</h1>"
+          },
+          {
+            "block": "ds-table",
+            "properties": {
+              "p746f6f6c6261722e7469746c65": "Produtos ilustrativos",
+              "p73686f7744697669646572": "true",
+              "p706167696e6174696f6e": "true",
+              "p696e697469616c5061676553697a65": 10,
+              "schemaVersion": "toranja-v3"
+            },
+            "items": [
+              {
+                "p6964": "name",
+                "p6163636573736f72": "name",
+                "p686561646572": "Produto",
+                "p63656c6c54797065": "text",
+                "p736f727461626c65": true,
+                "collection": "columns"
+              },
+              {
+                "p6964": "category",
+                "p6163636573736f72": "category",
+                "p686561646572": "Categoria",
+                "p63656c6c54797065": "text",
+                "p736f727461626c65": true,
+                "collection": "columns"
+              },
+              {
+                "collection": "data",
+                "c64617461p76616c7565": {
+                  "id": "1",
+                  "name": "Conta Digital",
+                  "category": "Conta"
+                }
+              },
+              {
+                "collection": "data",
+                "c64617461p76616c7565": {
+                  "id": "2",
+                  "name": "Cartão",
+                  "category": "Crédito"
+                }
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 10
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 25
+              },
+              {
+                "collection": "pageSizeOptions",
+                "c7061676553697a654f7074696f6e73p76616c7565": 50
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "showcase/tooltip-description": {
+    "title": "TooltipDescription | Toranja",
+    "description": "Exemplo editável oficial Toranja 2.0.1",
+    "sections": [
+      {
+        "layoutPadding": "standard",
+        "layoutWidth": "wide",
+        "content": [
+          {
+            "text": "<p><a href=\"/demo-toranja\">← Catálogo Toranja</a></p><h1>TooltipDescription</h1>"
+          },
+          {
+            "block": "ds-tooltip-description",
+            "properties": {
+              "p6465736372697074696f6e": "Informação complementar exibida pelo componente oficial.",
+              "p616c69676e": "left",
+              "p706c6163656d656e74": "bottom",
+              "p7469746c65": "Saiba mais",
+              "triggerLabel": "Abrir TooltipDescription",
+              "schemaVersion": "toranja-v3"
             },
             "items": []
           }

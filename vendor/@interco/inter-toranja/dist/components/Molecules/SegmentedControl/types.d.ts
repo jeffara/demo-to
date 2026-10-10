@@ -21,13 +21,23 @@ export type SegmentItemProps = IconLabelItem | LabelOnlyItem | IconOnlyItem;
 type LabelArray = [LabelOnlyItem, LabelOnlyItem] | [LabelOnlyItem, LabelOnlyItem, LabelOnlyItem] | [LabelOnlyItem, LabelOnlyItem, LabelOnlyItem, LabelOnlyItem];
 type IconLabelArray = [IconLabelItem, IconLabelItem] | [IconLabelItem, IconLabelItem, IconLabelItem];
 type IconArray = [IconOnlyItem, IconOnlyItem] | [IconOnlyItem, IconOnlyItem, IconOnlyItem] | [IconOnlyItem, IconOnlyItem, IconOnlyItem, IconOnlyItem] | [IconOnlyItem, IconOnlyItem, IconOnlyItem, IconOnlyItem, IconOnlyItem];
-export interface SegmentedControlProps {
+type LabelOrIconLabelSegments = LabelArray | IconLabelArray;
+type DefaultDensitySegments = LabelOrIconLabelSegments | IconArray;
+type CompactDensitySegments = [IconOnlyItem, IconOnlyItem];
+export type SegmentedControlDensity = 'default' | 'compact';
+type SegmentedControlSharedProps = {
     onTag?: (data: TagProps) => void;
     onClick: (item: SegmentItemProps, index: number) => void;
-    segments: LabelArray | IconLabelArray | IconArray;
     state?: 'enabled' | 'skeleton';
     filling?: TimelineFilling;
-}
+};
+export type SegmentedControlProps = (SegmentedControlSharedProps & {
+    density?: 'default';
+    segments: DefaultDensitySegments;
+}) | (SegmentedControlSharedProps & {
+    density: 'compact';
+    segments: CompactDensitySegments;
+});
 export interface SelectedSegmentProps {
     icon_selected: string;
     label_selected: string | false;

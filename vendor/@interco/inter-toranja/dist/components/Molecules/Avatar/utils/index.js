@@ -1,12 +1,13 @@
-import { getInitials as o } from "./getInitials.js";
-import { resolveContentProps as a } from "./resolveContentProps.js";
-import { r as l } from "../../../../useAvatar-KNjZfaR7.js";
-import { getAvatarClassName as p, getContainerClassName as g, getFlagClassName as n } from "./class-names.js";
+import { getInitials as r } from "./getInitials.js";
+import { resolveContentProps as t } from "./resolveContentProps.js";
+import { r as l } from "../../../../useAvatar-DTSmcSAs.js";
+import { getAvatarClassName as p, getContainerClassName as g, getFlagClassName as i, getInitialTypographyClassName as n } from "./class-names.js";
 export {
   p as getAvatarClassName,
   g as getContainerClassName,
-  n as getFlagClassName,
-  o as getInitials,
-  a as resolveContentProps,
+  i as getFlagClassName,
+  n as getInitialTypographyClassName,
+  r as getInitials,
+  t as resolveContentProps,
   l as resolveSizeProps
 };

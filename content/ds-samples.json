@@ -108,6 +108,32 @@
     ]
   },
   {
+    "block": "ds-breadcrumb",
+    "properties": {
+      "p617269614c6162656c": "Navegação estrutural",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": [
+      {
+        "p6964": "home",
+        "p6c6162656c": "Home",
+        "p68726566": "/",
+        "collection": "items"
+      },
+      {
+        "p6964": "catalog",
+        "p6c6162656c": "Catálogo",
+        "p68726566": "/demo-toranja",
+        "collection": "items"
+      },
+      {
+        "p6964": "current",
+        "p6c6162656c": "Breadcrumb",
+        "collection": "items"
+      }
+    ]
+  },
+  {
     "block": "ds-card",
     "properties": {
       "p6368696c6472656e": "<h3>Um card Toranja</h3><p>Conteúdo editável para criar novas experiências.</p>",
@@ -598,6 +624,76 @@
     "items": []
   },
   {
+    "block": "ds-menu-popup",
+    "properties": {
+      "p706c6163656d656e74": "bottom-start",
+      "p617269614c6162656c": "Navegação",
+      "triggerLabel": "Abrir MenuPopup",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": [
+      {
+        "p6964": "home",
+        "p6c6162656c": "Home",
+        "p69636f6e": "ic_house",
+        "collection": "items"
+      },
+      {
+        "p6964": "catalog",
+        "p6c6162656c": "Catálogo",
+        "p69636f6e": "ic_apps",
+        "collection": "items"
+      }
+    ]
+  },
+  {
+    "block": "ds-modal-dialog",
+    "properties": {
+      "p7469746c65": "Informação importante",
+      "p73686f77436c6f7365427574746f6e": "true",
+      "p736c6f74": "<p>Conteúdo editável do diálogo oficial.</p>",
+      "triggerLabel": "Abrir ModalDialog",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": []
+  },
+  {
+    "block": "ds-pagination",
+    "properties": {
+      "p70616765496e646578": 0,
+      "p7061676553697a65": 10,
+      "p70616765436f756e74": 5,
+      "p746f74616c4974656d73": 50,
+      "p6c616e6775616765": "ptBR",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": [
+      {
+        "collection": "pageSizeOptions",
+        "c7061676553697a654f7074696f6e73p76616c7565": 10
+      },
+      {
+        "collection": "pageSizeOptions",
+        "c7061676553697a654f7074696f6e73p76616c7565": 25
+      },
+      {
+        "collection": "pageSizeOptions",
+        "c7061676553697a654f7074696f6e73p76616c7565": 50
+      }
+    ]
+  },
+  {
+    "block": "ds-panel",
+    "properties": {
+      "p74797065": "slot",
+      "p6368696c6472656e": "<p>Organize informações com o componente oficial.</p>",
+      "p73697a65": "full",
+      "p7469746c65": "Seu painel",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": []
+  },
+  {
     "block": "ds-neutral-icon-button",
     "properties": {
       "p69636f6e": "ic_ellipsis",
@@ -688,6 +784,17 @@
     "items": []
   },
   {
+    "block": "ds-side-sheet",
+    "properties": {
+      "p7469746c65": "Detalhes",
+      "p6465736372697074696f6e": "Informações complementares",
+      "p736c6f74": "<p>Conteúdo editável do painel lateral.</p>",
+      "triggerLabel": "Abrir SideSheet",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": []
+  },
+  {
     "block": "ds-section-subtitle",
     "properties": {
       "p7375627469746c65": "Escolha seu próximo passo",
@@ -722,30 +829,40 @@
     },
     "items": [
       {
-        "collection": "$options",
-        "c246f7074696f6e73p6c6162656c": "Conta digital",
-        "c246f7074696f6e73p76616c7565": "Conta digital"
+        "p76616c7565": "conta",
+        "p6c6162656c": "Conta Digital",
+        "collection": "options"
       },
       {
-        "collection": "$options",
-        "c246f7074696f6e73p6c6162656c": "Investimentos",
-        "c246f7074696f6e73p76616c7565": "Investimentos"
-      },
-      {
-        "collection": "$options",
-        "c246f7074696f6e73p6c6162656c": "Crédito",
-        "c246f7074696f6e73p76616c7565": "Crédito"
+        "p76616c7565": "credito",
+        "p6c6162656c": "Crédito",
+        "collection": "options"
       }
     ]
   },
   {
-    "block": "ds-spinner",
+    "block": "ds-sidebar",
     "properties": {
-      "p73697a65": "large",
-      "p617269614c6162656c": "Carregando demonstração",
+      "p64656661756c74457870616e73696f6e": "expanded",
+      "p6272616e64": "\"inter\"",
+      "p617269614c6162656c": "Navegação principal",
       "schemaVersion": "toranja-v3"
     },
-    "items": []
+    "items": [
+      {
+        "p6964": "home",
+        "p6c6162656c": "Home",
+        "p69636f6e": "ic_house",
+        "p73656c6563746564": true,
+        "collection": "items"
+      },
+      {
+        "p6964": "catalog",
+        "p6c6162656c": "Catálogo",
+        "p69636f6e": "ic_apps",
+        "collection": "items"
+      }
+    ]
   },
   {
     "block": "ds-signal",
@@ -781,6 +898,15 @@
     "items": []
   },
   {
+    "block": "ds-spinner",
+    "properties": {
+      "p73697a65": "large",
+      "p617269614c6162656c": "Carregando demonstração",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": []
+  },
+  {
     "block": "ds-stepper",
     "properties": {
       "p656e61626c65496e707574": "true",
@@ -789,9 +915,66 @@
       "p7374617465": "enabled",
       "p686173426f72646572": "true",
       "p73746570": 1,
+      "p76616c7565": 0,
       "schemaVersion": "toranja-v3"
     },
     "items": []
+  },
+  {
+    "block": "ds-table",
+    "properties": {
+      "p746f6f6c6261722e7469746c65": "Produtos ilustrativos",
+      "p73686f7744697669646572": "true",
+      "p706167696e6174696f6e": "true",
+      "p696e697469616c5061676553697a65": 10,
+      "schemaVersion": "toranja-v3"
+    },
+    "items": [
+      {
+        "p6964": "name",
+        "p6163636573736f72": "name",
+        "p686561646572": "Produto",
+        "p63656c6c54797065": "text",
+        "p736f727461626c65": true,
+        "collection": "columns"
+      },
+      {
+        "p6964": "category",
+        "p6163636573736f72": "category",
+        "p686561646572": "Categoria",
+        "p63656c6c54797065": "text",
+        "p736f727461626c65": true,
+        "collection": "columns"
+      },
+      {
+        "collection": "data",
+        "c64617461p76616c7565": {
+          "id": "1",
+          "name": "Conta Digital",
+          "category": "Conta"
+        }
+      },
+      {
+        "collection": "data",
+        "c64617461p76616c7565": {
+          "id": "2",
+          "name": "Cartão",
+          "category": "Crédito"
+        }
+      },
+      {
+        "collection": "pageSizeOptions",
+        "c7061676553697a654f7074696f6e73p76616c7565": 10
+      },
+      {
+        "collection": "pageSizeOptions",
+        "c7061676553697a654f7074696f6e73p76616c7565": 25
+      },
+      {
+        "collection": "pageSizeOptions",
+        "c7061676553697a654f7074696f6e73p76616c7565": 50
+      }
+    ]
   },
   {
     "block": "ds-tabs",
@@ -876,6 +1059,18 @@
         "collection": "items"
       }
     ]
+  },
+  {
+    "block": "ds-tooltip-description",
+    "properties": {
+      "p6465736372697074696f6e": "Informação complementar exibida pelo componente oficial.",
+      "p616c69676e": "left",
+      "p706c6163656d656e74": "bottom",
+      "p7469746c65": "Saiba mais",
+      "triggerLabel": "Abrir TooltipDescription",
+      "schemaVersion": "toranja-v3"
+    },
+    "items": []
   },
   {
     "block": "ds-widget",

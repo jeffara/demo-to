@@ -1,7 +1,7 @@
 import { scaleY as c, buildHighlightAnnouncement as a, scaleX as h, buildTooltipItems as m } from "../ChartLine.helper.js";
-import { resolveChartFlags as u, resolveChartVisibility as b, resolveAccessibleName as d, buildContainerAccessibility as g } from "../../shared/resolveChartState.js";
+import { resolveAccessibleName as u, buildContainerAccessibility as b, resolveChartFlags as d, resolveChartVisibility as g } from "../../shared/resolveChartState.js";
 import { resolveChartAreaHeight as L, resolveChartHeight as X } from "../../shared/resolveChartState.js";
-const C = (e, i, t, o) => u(e, i, t, o), p = ({
+const C = (e, i, t, o) => d(e, i, t, o), p = ({
   isInteractive: e,
   showXAxis: i,
   showYAxis: t,
@@ -11,7 +11,7 @@ const C = (e, i, t, o) => u(e, i, t, o), p = ({
   showDots: s,
   seriesCount: r
 }) => ({
-  ...b({
+  ...g({
     isInteractive: e,
     showXAxis: i,
     showYAxis: t,
@@ -22,10 +22,10 @@ const C = (e, i, t, o) => u(e, i, t, o), p = ({
     defaultShowLegend: !0
   }),
   shouldShowDots: e && s
-}), f = (e, i) => d(
+}), f = (e, i) => u(
   e,
   `Gráfico de linha com ${i} série${i === 1 ? "" : "s"}`
-), y = (e, i, t) => g({
+), y = (e, i, t) => b({
   isSkeleton: e,
   isInteractive: i,
   accessibleName: t

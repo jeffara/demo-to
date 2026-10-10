@@ -3,66 +3,68 @@ import '../../../assets/components/Molecules/Avatar/Avatar.modules.css';/* empty
 import { AvatarContent as E } from "./components/AvatarContent.js";
 import { useAvatar as I } from "./hooks/useAvatar.js";
 import { Badge as S } from "../../Atoms/Badge/Badge.js";
-const F = (r) => {
+const P = (r) => {
   const {
-    variant: o,
-    state: i,
+    variant: i,
+    state: o,
     iconAsset: s,
     src: l,
     alt: n,
     onError: d,
     badgeProps: t,
-    isBadgeLarge: c,
-    editIcon: m,
-    flag: v,
-    onEdit: h,
+    isBadgeLarge: m,
+    editIcon: c,
+    flag: h,
+    onEdit: v,
     shouldShowEdit: g,
-    shouldShowFlag: u,
-    shouldShowBadge: b,
-    isDisabled: f,
+    shouldShowFlag: p,
+    shouldShowBadge: u,
+    isDisabled: b,
     isInteractive: e,
-    containerClassName: p,
+    containerClassName: f,
     avatarClassName: C,
-    flagClassName: w,
-    initials: A,
-    ariaLabel: N,
-    handleClick: x,
+    flagClassName: N,
+    initials: w,
+    initialTypographyClassName: A,
+    ariaLabel: x,
+    handleClick: y,
     handleKeyDown: B
   } = I(r);
   return /* @__PURE__ */ D(
     "div",
     {
-      className: p,
-      onClick: x,
+      className: f,
+      onClick: y,
       onKeyDown: B,
       role: e ? "button" : void 0,
       tabIndex: e ? 0 : -1,
       "data-testid": "avatar-container",
       children: [
-        b && t ? /* @__PURE__ */ a(S, { ...t, "data-large": c ? "true" : "false" }) : null,
+        u && t ? /* @__PURE__ */ a(S, { ...t, "data-large": m ? "true" : "false" }) : null,
         /* @__PURE__ */ a(
           "div",
           {
             "data-testid": "Avatar",
             className: C,
-            "aria-disabled": f,
-            "aria-label": N,
+            "aria-disabled": b,
+            "aria-label": x,
             children: /* @__PURE__ */ a(
               E,
               {
-                variant: o,
-                state: i,
+                variant: i,
+                state: o,
                 iconAsset: s,
                 src: l,
                 alt: n,
                 onError: d,
-                editIcon: m,
-                flag: v,
-                onEdit: h,
+                editIcon: c,
+                flag: h,
+                onEdit: v,
                 shouldShowEdit: g,
-                shouldShowFlag: u,
-                flagClassName: w,
-                initials: A
+                shouldShowFlag: p,
+                flagClassName: N,
+                initials: w,
+                initialTypographyClassName: A
               }
             )
           }
@@ -72,5 +74,5 @@ const F = (r) => {
   );
 };
 export {
-  F as Avatar
+  P as Avatar
 };

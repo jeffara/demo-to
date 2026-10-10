@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=require("../../../../../../utils/classNamesMerge.cjs"),a=e=>{const{visualState:l="enabled",align:t="start"}=e;return{rootClasses:s.classNamesMerge("table-cell",`table-cell--align-${t}`,`table-cell--${l}`,`table-cell--type-${e.type}`)}};exports.useTableCell=a;

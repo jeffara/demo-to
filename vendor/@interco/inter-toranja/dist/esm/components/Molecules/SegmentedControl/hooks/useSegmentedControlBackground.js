@@ -1,32 +1,42 @@
-import { useState as p, useRef as u, useLayoutEffect as f } from "react";
-const x = (o, d) => {
-  const [l, a] = p({
+import { useState as p, useRef as u, useLayoutEffect as g } from "react";
+const h = (s, d) => {
+  const [f, a] = p({
     left: "0px",
     width: "0px",
     height: "0px",
     top: "0px"
-  }), c = u([]), r = u(null);
-  return f(() => {
-    const g = () => {
-      const t = c.current[o], i = r.current;
-      if (!t || !i)
+  }), r = u([]), i = u(null);
+  return g(() => {
+    const l = () => {
+      const e = r.current[s], n = i.current;
+      if (!e || !n)
         return null;
-      const e = t.getBoundingClientRect(), s = i.getBoundingClientRect();
+      const t = e.getBoundingClientRect(), c = n.getBoundingClientRect();
       return {
-        left: `${e.left - s.left}px`,
-        width: `${e.width}px`,
-        height: `${e.height}px`,
-        top: `${e.top - s.top}px`
+        left: `${t.left - c.left}px`,
+        width: `${t.width}px`,
+        height: `${t.height}px`,
+        top: `${t.top - c.top}px`
       };
-    }, n = () => {
-      const t = g();
-      t && a(t);
+    }, o = () => {
+      const e = l();
+      e && a(e);
     };
-    return n(), window.addEventListener("resize", n), () => {
-      window.removeEventListener("resize", n);
+    if (o(), window.addEventListener("resize", o), typeof ResizeObserver < "u") {
+      const e = i.current, n = new ResizeObserver(() => {
+        o();
+      });
+      return e && n.observe(e), r.current.forEach((t) => {
+        t && n.observe(t);
+      }), () => {
+        n.disconnect(), window.removeEventListener("resize", o);
+      };
+    }
+    return () => {
+      window.removeEventListener("resize", o);
     };
-  }, [o, d]), [l, r, c];
+  }, [s, d]), [f, i, r];
 };
 export {
-  x as useSegmentedControlBackground
+  h as useSegmentedControlBackground
 };

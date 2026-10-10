@@ -1,1 +1,1 @@
-"use strict";const e=require("./_commonjsHelpers.cjs"),r=require("../node_modules/@interco/icons/dist/toranja/assets/status/ic_check_circle_fill/index.cjs");var c=r.__require();const s=e.getDefaultExportFromCjs(c);module.exports=s;
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("../node_modules/react-dom/index.cjs");var r=e.__require();exports.reactDomExports=r;

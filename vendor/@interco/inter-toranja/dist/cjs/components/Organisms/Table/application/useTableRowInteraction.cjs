@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=require("react"),i=r=>{const{onRowClick:e,onRowDoubleClick:o}=r,c=!!(e??o),a=n.useCallback(t=>{if(e)return()=>{e(t)}},[e]),l=n.useCallback(t=>{if(o)return()=>{o(t)}},[o]);return{hasRowInteraction:c,createRowClickHandler:a,createRowDoubleClickHandler:l}};exports.useTableRowInteraction=i;

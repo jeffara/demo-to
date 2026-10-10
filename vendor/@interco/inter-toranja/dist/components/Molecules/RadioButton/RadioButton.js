@@ -1,44 +1,41 @@
-import { jsx as o, jsxs as f } from "react/jsx-runtime";
-import h from "react";
+import { jsx as o, jsxs as d } from "react/jsx-runtime";
+import c from "react";
 import { Text as x } from "../../Atoms/Text/Text.js";
-import { TextType as T, TextSize as _ } from "../../Atoms/Text/types.js";
-import { STATE as u } from "../../../utils/pattern.js";
+import { TextType as f, TextSize as T } from "../../Atoms/Text/types.js";
+import { STATE as h } from "../../../utils/pattern.js";
 import '../../../assets/RadioButton.css';const a = ({
   checked: r,
   children: e,
   id: t,
-  name: l,
-  onChange: i,
-  onTag: b,
-  state: n,
-  value: s,
-  variant: p
+  name: n,
+  onChange: l,
+  state: i,
+  value: p,
+  variant: s
 }) => {
-  const m = `radio__content__option--${p}--${n}`, d = (c) => {
-    i && i(c);
-  };
-  return /* @__PURE__ */ f("div", { children: [
+  const m = `radio__content__option--${s}--${i}`;
+  return /* @__PURE__ */ d("div", { children: [
     /* @__PURE__ */ o("label", { htmlFor: t, className: m, children: /* @__PURE__ */ o(
       "input",
       {
         checked: r,
-        disabled: n === u.DISABLED,
+        disabled: i === h.DISABLED,
         id: t,
-        name: l,
-        onChange: d,
+        name: n,
+        onChange: l,
         type: "radio",
-        value: s
+        value: p
       }
     ) }),
-    e && /* @__PURE__ */ o(x, { textSize: _.Medium, textType: T.Label, as: "span", children: /* @__PURE__ */ o("label", { htmlFor: t, children: e }) })
+    e && /* @__PURE__ */ o(x, { textSize: T.Medium, textType: f.Label, as: "span", children: /* @__PURE__ */ o("label", { htmlFor: t, children: e }) })
   ] });
-}, y = ({ children: r }) => {
-  const e = h.Children.toArray(r).filter(
+}, _ = ({ children: r }) => {
+  const e = c.Children.toArray(r).filter(
     (t) => t.type === a
   );
   return /* @__PURE__ */ o("div", { className: "radio", children: e });
 };
-y.Option = a;
+_.Option = a;
 export {
-  y as Radio
+  _ as Radio
 };

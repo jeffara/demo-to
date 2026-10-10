@@ -35,5 +35,5 @@ export interface UsePinCodeReturn {
     handleBlur: (e: React.FocusEvent<HTMLInputElement>) => void;
     handleContainerPointerDown: (e: React.MouseEvent | React.PointerEvent) => void;
     getClassNames: (index: number) => string;
-    getInputClassNames: () => string;
+    getInputClassNames: (index: number) => string;
 }

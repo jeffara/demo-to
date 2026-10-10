@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=[0,0,.38,.9],i=[.2,0,1,.9],t={entrance:{duration:.4,ease:e},exit:{duration:.4,ease:i}},n=()=>({visible:{x:0,opacity:1,transition:t.entrance},hidden:{x:"100%",opacity:0,transition:t.exit}});exports.SIDE_SHEET_ANIMATION_TRANSITIONS=t;exports.getSideSheetAnimationVariants=n;

@@ -1,28 +1,28 @@
-import { HeaderType as i, HeaderVariant as p, HEADER_BASE_CLASS as n } from "../constants.js";
-import { useHeaderSearchExpandState as Y } from "./useHeaderSearchExpandState.js";
+import { HeaderType as r, HeaderVariant as v, HEADER_BASE_CLASS as n } from "../constants.js";
+import { useHeaderSearchExpandState as Z } from "./useHeaderSearchExpandState.js";
 import { classNamesMerge as h } from "../../../../utils/classNamesMerge.js";
-import { STATE as u, SIZE as f } from "../../../../utils/pattern.js";
-const Z = /* @__PURE__ */ new Set([
-  i.Avatar,
-  i.AvatarFlag,
-  i.AvatarSegmentedControl
-]), j = (e) => e === u.SKELETON ? u.SKELETON : u.ENABLED, q = (e) => "size" in e && e.size ? e.size : f.SMALL, s = (e, t) => {
+import { STATE as S, SIZE as w } from "../../../../utils/pattern.js";
+const j = /* @__PURE__ */ new Set([
+  r.Avatar,
+  r.AvatarFlag,
+  r.AvatarSegmentedControl
+]), q = (e) => e === S.SKELETON ? S.SKELETON : S.ENABLED, J = (e) => "size" in e && e.size ? e.size : w.SMALL, s = (e, t) => {
   if (t in e)
     return e[t];
-}, J = (e) => {
+}, Q = (e) => {
   if ("logo" in e && e.logo)
     return e.logo;
-}, Q = (e, t) => e !== f.LARGE ? !1 : t === i.Title, W = ({
+}, W = (e, t) => e !== w.LARGE ? !1 : t === r.Title, X = ({
   isSearchUiExpanded: e,
   onSearchOpenChange: t,
   onBackClick: a,
-  handleCloseSearch: r,
+  handleCloseSearch: i,
   propsOnCloseClick: o
-}) => e && t && !a ? r : o, X = ({
+}) => e && t && !a ? i : o, ee = ({
   onTag: e,
   variant: t,
   type: a,
-  size: r,
+  size: i,
   title: o
 }) => {
   if (e)
@@ -34,12 +34,12 @@ const Z = /* @__PURE__ */ new Set([
           nested_in: "Header",
           nested_variant: t,
           nested_type: a,
-          nested_size: r,
+          nested_size: i,
           nested_title: o
         }
       }));
     };
-}, ee = (e, t, a) => h(n, {
+}, te = (e, t, a) => h(n, {
   [`${n}--top-pages`]: e.isTopPages,
   [`${n}--inner-pages`]: e.isInnerPages,
   [`${n}--modal-pages`]: e.isModalPages,
@@ -47,44 +47,45 @@ const Z = /* @__PURE__ */ new Set([
   [`${n}--large`]: e.isLarge,
   [`${n}--collapsed`]: a,
   [`${n}--stacked`]: e.stacked,
+  [`${n}--background-transparent`]: e.isTransparentBackground,
   [`${n}--skeleton`]: e.isSkeleton,
   [`${n}--search-expanded`]: e.isSearchUiExpanded,
-  [`${n}--type-title`]: t === i.Title,
+  [`${n}--type-title`]: t === r.Title,
   [`${n}--type-title-chip`]: e.isTitleChip,
   [`${n}--type-logo`]: e.isLogoType,
-  [`${n}--type-avatar`]: t === i.Avatar,
-  [`${n}--type-avatar-flag`]: t === i.AvatarFlag,
-  [`${n}--type-avatar-segmented`]: t === i.AvatarSegmentedControl,
+  [`${n}--type-avatar`]: t === r.Avatar,
+  [`${n}--type-avatar-flag`]: t === r.AvatarFlag,
+  [`${n}--type-avatar-segmented`]: t === r.AvatarSegmentedControl,
   [`${n}--type-search`]: e.isSearchType
-}), te = (e, t, a) => h(`${n}__title`, {
-  [`${n}__title--top`]: e.isTopPages && t === i.Title,
-  [`${n}__title--small`]: !e.isTopPages || t !== i.Title,
+}), ae = (e, t, a) => h(`${n}__title`, {
+  [`${n}__title--top`]: e.isTopPages && t === r.Title,
+  [`${n}__title--small`]: !e.isTopPages || t !== r.Title,
   [`${n}__title--avatar`]: e.isAvatarType,
   [`${n}__title--collapsed-enter`]: a && e.isLarge
-}), ae = ({
+}), ne = ({
   hasNavigation: e,
   isAvatarType: t,
   avatar: a,
-  isLogoType: r,
+  isLogoType: i,
   isSearchUiExpanded: o
-}) => e ? !0 : o ? !1 : t && a ? !0 : r, ne = ({
+}) => e ? !0 : o ? !1 : t && a ? !0 : i, re = ({
   hasNavigation: e,
   isLeadingSlotVisible: t,
   hasLeadingVisual: a,
-  hasInlineTitle: r,
+  hasInlineTitle: i,
   title: o
-}) => e || !t || !a || !r ? !1 : !!o, ie = ({
+}) => e || !t || !a || !i ? !1 : !!o, ie = ({
   flags: e,
   onBackClick: t,
   onCloseClick: a,
-  avatar: r,
+  avatar: i,
   title: o,
   hasInlineTitle: g
 }) => {
-  const d = !!t || !!a, T = d || !e.isSearchUiExpanded, _ = ae({
+  const d = !!t || !!a, C = d || !e.isSearchUiExpanded, T = ne({
     hasNavigation: d,
     isAvatarType: e.isAvatarType,
-    avatar: r,
+    avatar: i,
     isLogoType: e.isLogoType,
     isSearchUiExpanded: e.isSearchUiExpanded
   });
@@ -92,120 +93,122 @@ const Z = /* @__PURE__ */ new Set([
     "header__leading--top-pages": e.isTopPages && !e.isSearchUiExpanded,
     "header__leading--has-navigation": d,
     "header__leading--search-expanded": e.isSearchUiExpanded,
-    "header__leading--with-gap": ne({
+    "header__leading--with-gap": re({
       hasNavigation: d,
-      isLeadingSlotVisible: T,
-      hasLeadingVisual: _,
+      isLeadingSlotVisible: C,
+      hasLeadingVisual: T,
       hasInlineTitle: g,
       title: o
     })
   });
-}, re = (e, t) => h("header__trailing", {
-  "header__trailing--type-avatar-flag": t === i.AvatarFlag,
-  "header__trailing--type-avatar-segmented": t === i.AvatarSegmentedControl,
+}, se = (e, t) => h("header__trailing", {
+  "header__trailing--type-avatar-flag": t === r.AvatarFlag,
+  "header__trailing--type-avatar-segmented": t === r.AvatarSegmentedControl,
   "header__trailing--type-search": e.isSearchType,
   "header__trailing--search-expanded": e.isSearchUiExpanded && !e.isSearchType
-}), se = ({
+}), oe = ({
   flags: e,
   type: t,
   title: a,
-  isCollapsed: r
-}) => e.isSearchUiExpanded || e.isLogoType || e.isLarge && !r ? !1 : e.isAvatarType ? !!a : t === i.Title ? !0 : e.isTitleChip, oe = ({
+  isCollapsed: i
+}) => e.isSearchUiExpanded || e.isLogoType || e.isLarge && !i ? !1 : e.isAvatarType ? !!a : t === r.Title ? !0 : e.isTitleChip, le = ({
   flags: e,
   type: t,
   title: a,
-  isCollapsed: r
-}) => !e.isLarge || t !== i.Title || !a || r ? !1 : !e.isSearchUiExpanded, ge = (e) => {
+  isCollapsed: i
+}) => !e.isLarge || t !== r.Title || !a || i ? !1 : !e.isSearchUiExpanded, ue = (e) => {
   const {
     variant: t,
     type: a,
-    state: r = u.ENABLED,
+    state: i = S.ENABLED,
     stacked: o = !1,
-    isSearchOpen: g = !1,
-    onTag: d
-  } = e, T = j(r), _ = q(e), L = T === u.SKELETON, E = Q(_, a), m = t === p.TopPages, w = t === p.InnerPages, P = t === p.ModalPages, A = Z.has(a), y = a === i.Search, x = a === i.Logo, k = a === i.TitleChip, S = s(e, "title"), v = s(e, "onBackClick"), O = s(e, "onCloseClick"), {
+    background: g = "default",
+    isSearchOpen: d = !1,
+    onTag: C
+  } = e, T = q(i), L = J(e), E = T === S.SKELETON, m = W(L, a), A = t === v.TopPages, P = t === v.InnerPages, k = t === v.ModalPages, $ = j.has(a), y = a === r.Search, x = a === r.Logo, O = a === r.TitleChip, u = s(e, "title"), p = s(e, "onBackClick"), B = s(e, "onCloseClick"), {
     isSearchFieldVisible: H,
-    isSearchUiExpanded: C,
+    isSearchUiExpanded: _,
     areTrailingIconsHidden: U,
-    handleSearchExitComplete: B,
-    handleCloseSearch: N
-  } = Y({
-    isSearchOpen: g,
+    handleSearchExitComplete: N,
+    handleCloseSearch: R
+  } = Z({
+    isSearchOpen: d,
     isPermanentSearch: y,
     onSearchOpenChange: e.onSearchOpenChange
-  }), $ = W({
-    isSearchUiExpanded: C,
+  }), I = X({
+    isSearchUiExpanded: _,
     onSearchOpenChange: e.onSearchOpenChange,
-    onBackClick: v,
-    handleCloseSearch: N,
-    propsOnCloseClick: O
-  }), I = s(e, "avatar"), R = s(e, "chip"), M = s(
+    onBackClick: p,
+    handleCloseSearch: R,
+    propsOnCloseClick: B
+  }), f = s(e, "avatar"), b = s(e, "chip"), M = s(
     e,
     "segmentedControl"
-  ), b = J(e), z = s(e, "showStartIcon"), V = s(e, "startIcon"), F = s(e, "showMiddleIcon"), D = s(e, "middleIcon"), K = s(e, "showEndIcon"), G = s(e, "endIcon"), c = {
-    isSkeleton: L,
-    isLarge: E,
-    isTopPages: m,
-    isInnerPages: w,
-    isModalPages: P,
-    isAvatarType: A,
+  ), z = Q(e), V = s(e, "showStartIcon"), F = s(e, "startIcon"), D = s(e, "showMiddleIcon"), K = s(e, "middleIcon"), G = s(e, "showEndIcon"), Y = s(e, "endIcon"), c = {
+    isSkeleton: E,
+    isLarge: m,
+    isTopPages: A,
+    isInnerPages: P,
+    isModalPages: k,
+    isAvatarType: $,
     isSearchType: y,
     isLogoType: x,
-    isTitleChip: k,
-    isSearchUiExpanded: C,
-    stacked: o
+    isTitleChip: O,
+    isSearchUiExpanded: _,
+    stacked: o,
+    isTransparentBackground: g === "transparent"
   };
   return {
     variant: t,
     type: a,
     state: T,
-    isSkeleton: L,
-    isLarge: E,
-    isTopPages: m,
-    isAvatarType: A,
-    isSearchExpanded: C,
+    isSkeleton: E,
+    isLarge: m,
+    isTopPages: A,
+    isAvatarType: $,
+    isSearchExpanded: _,
     isSearchFieldVisible: H,
     areTrailingIconsHidden: U,
-    handleSearchExitComplete: B,
-    title: S,
-    onBackClick: v,
-    onCloseClick: $,
-    avatar: I,
-    chip: R,
+    handleSearchExitComplete: N,
+    title: u,
+    onBackClick: p,
+    onCloseClick: I,
+    avatar: f,
+    chip: b,
     segmentedControl: M,
-    logo: b,
-    showStartIcon: z,
-    startIcon: V,
-    showMiddleIcon: F,
-    middleIcon: D,
-    showEndIcon: K,
-    endIcon: G,
+    logo: z,
+    showStartIcon: V,
+    startIcon: F,
+    showMiddleIcon: D,
+    middleIcon: K,
+    showEndIcon: G,
+    endIcon: Y,
     searchProps: e.searchProps,
     onSearchOpenChange: e.onSearchOpenChange,
     scrollContainer: e.scrollContainer,
-    handleNestedTag: X({ onTag: d, variant: t, type: a, size: _, title: S }),
-    getRootClasses: (l) => ee(c, a, l),
-    getInlineTitleClasses: (l) => te(c, a, l),
+    handleNestedTag: ee({ onTag: C, variant: t, type: a, size: L, title: u }),
+    getRootClasses: (l) => te(c, a, l),
+    getInlineTitleClasses: (l) => ae(c, a, l),
     getLargeTitleClasses: () => `${n}__title ${n}__title--large`,
     getRowClasses: () => h("header__row", {
-      "header__row--type-search": C
+      "header__row--type-search": _
     }),
     getLeadingClasses: (l) => ie({
       flags: c,
-      onBackClick: v,
-      onCloseClick: $,
-      avatar: I,
-      title: S,
+      onBackClick: p,
+      onCloseClick: I,
+      avatar: f,
+      title: u,
       hasInlineTitle: l
     }),
-    getTrailingClasses: () => re(c, a),
+    getTrailingClasses: () => se(c, a),
     getLargeTitleRowClasses: (l) => h("header__title-row", {
       "header__title-row--hidden": l
     }),
-    shouldShowInlineTitle: (l) => se({ flags: c, type: a, title: S, isCollapsed: l }),
-    shouldShowLargeTitleRow: (l) => oe({ flags: c, type: a, title: S, isCollapsed: l })
+    shouldShowInlineTitle: (l) => oe({ flags: c, type: a, title: u, isCollapsed: l }),
+    shouldShowLargeTitleRow: (l) => le({ flags: c, type: a, title: u, isCollapsed: l })
   };
 };
 export {
-  ge as useHeader
+  ue as useHeader
 };

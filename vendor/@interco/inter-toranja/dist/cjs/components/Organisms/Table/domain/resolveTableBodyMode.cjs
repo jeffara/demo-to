@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=({isLoading:e,skeleton:r,error:t,totalItemCount:o})=>e?"loading":r?"skeleton":t?"error":o===0?"empty":"data";exports.resolveTableBodyMode=n;

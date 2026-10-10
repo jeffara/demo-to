@@ -1,16 +1,26 @@
-import { useEffect as u } from "react";
-const c = ({ ref: e, isActive: t, onClickOutside: n }) => {
-  u(() => {
-    if (!t)
+import { useEffect as a } from "react";
+const E = ({
+  ref: o,
+  extraRef: n,
+  isActive: e,
+  onClickOutside: s
+}) => {
+  a(() => {
+    if (!e)
       return;
-    const r = (o) => {
-      e.current && !e.current.contains(o.target) && n();
+    const r = (u) => {
+      var c, i;
+      const t = u.target;
+      if (!(t instanceof Node))
+        return;
+      const d = !!((c = o.current) != null && c.contains(t)), m = !!((i = n == null ? void 0 : n.current) != null && i.contains(t));
+      d || m || s();
     };
     return document.addEventListener("mousedown", r), () => {
       document.removeEventListener("mousedown", r);
     };
-  }, [e, t, n]);
+  }, [o, n, e, s]);
 };
 export {
-  c as useClickOutside
+  E as useClickOutside
 };

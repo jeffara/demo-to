@@ -1,37 +1,37 @@
 import { createElement as t } from "react";
 import { ListItemLeading as I } from "../../ListItemBase/components/ListItemLeading/ListItemLeading.js";
 import { ListItemContent as d } from "../../ListItemBase/components/ListItemContent/ListItemContent.js";
-import { ListItemTrailing as u } from "../../ListItemBase/components/ListItemTrailing/ListItemTrailing.js";
-const b = (o) => {
+import { ListItemTrailing as L } from "../../ListItemBase/components/ListItemTrailing/ListItemTrailing.js";
+const T = "checkbox", C = (n) => {
   const {
-    label: r,
-    labelIcon: l,
+    label: o,
+    labelIcon: r,
     paragraph: i,
-    paragraphSupport: a,
-    tags: m,
+    paragraphSupport: l,
+    tags: a,
     leadingProps: e,
-    trailingVariant: n,
-    trailingProps: s
-  } = o, p = e ? t(I, {
+    trailingVariant: s,
+    trailingProps: m
+  } = n, p = e ? t(I, {
     ...e,
     testId: "listItemControl-leading"
-  }) : null, g = t(d, {
-    label: r,
-    labelIcon: l,
+  }) : null, c = t(d, {
+    label: o,
+    labelIcon: r,
     paragraph: i,
-    paragraphSupport: a,
-    tags: m,
+    paragraphSupport: l,
+    tags: a,
     testId: "listItemControl-content"
-  }), c = n ? t(u, {
-    type: n,
-    ...s
-  }) : null;
+  }), g = t(L, {
+    type: s ?? T,
+    ...m
+  });
   return {
     leadingElement: p,
-    contentElement: g,
-    trailingElement: c
+    contentElement: c,
+    trailingElement: g
   };
 };
 export {
-  b as useListItemControlViewModel
+  C as useListItemControlViewModel
 };

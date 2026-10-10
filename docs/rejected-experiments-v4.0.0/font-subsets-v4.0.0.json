@@ -1,0 +1,24 @@
+[
+  {
+    "source": "fonts/inter-latin.woff2",
+    "sourceSha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "output": "fonts/inter-critical.woff2",
+    "sha256": "958232d07c96f84336b6922179646fda2dce1d7b62b5cda091e223af76ab47eb",
+    "sourceBytes": 48256,
+    "outputBytes": 32344,
+    "characters": 144,
+    "outlinesAndMetricsUnchanged": true,
+    "fullFontRetained": true
+  },
+  {
+    "source": "fonts/citrina-regular.woff2",
+    "sourceSha256": "9b143779d5fbfc1dcffc843a5bfa8f2ade646ecec60edf2734b4ed7eed65e771",
+    "output": "fonts/citrina-critical.woff2",
+    "sha256": "507e87dc474dc2c440d571d5a6e4deed1714666c3829b96da6ea7be9d2762161",
+    "sourceBytes": 30116,
+    "outputBytes": 20744,
+    "characters": 154,
+    "outlinesAndMetricsUnchanged": true,
+    "fullFontRetained": true
+  }
+]

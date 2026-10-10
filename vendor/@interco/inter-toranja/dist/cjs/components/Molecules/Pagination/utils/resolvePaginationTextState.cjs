@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("../../../../utils/pattern.cjs"),n=(e,r)=>e?t.STATE.SKELETON:r?t.STATE.ENABLED:t.STATE.DISABLED;exports.resolvePaginationTextState=n;

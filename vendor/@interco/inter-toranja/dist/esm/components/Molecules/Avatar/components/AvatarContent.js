@@ -1,32 +1,32 @@
-import { jsxs as f, Fragment as x, jsx as t } from "react/jsx-runtime";
+import { jsxs as N, Fragment as _, jsx as a } from "react/jsx-runtime";
 import { AvatarVariant as l } from "../types.js";
-import { AvatarEditButton as _ } from "./AvatarEditButton.js";
-import { AvatarFlag as h } from "./AvatarFlag.js";
-import { Text as N } from "../../../Atoms/Text/Text.js";
-import { TextType as T, TextSize as y } from "../../../Atoms/Text/types.js";
-import { Icon as A } from "../../../Atoms/Icon/Icon.js";
-import { IconColors as C } from "../../../Atoms/Icon/constants/iconColors.js";
-const I = ({
-  variant: a,
-  state: e,
-  iconAsset: i,
-  src: o,
-  alt: n,
-  onError: c,
-  initials: r
+import { AvatarEditButton as h } from "./AvatarEditButton.js";
+import { AvatarFlag as A } from "./AvatarFlag.js";
+import { classNamesMerge as C } from "../../../../utils/classNamesMerge.js";
+import { Icon as I } from "../../../Atoms/Icon/Icon.js";
+import { IconColors as g } from "../../../Atoms/Icon/constants/iconColors.js";
+const x = ({
+  variant: r,
+  state: i,
+  iconAsset: e,
+  src: n,
+  alt: o,
+  onError: s,
+  initials: c,
+  initialTypographyClassName: t
 }) => {
-  switch (a) {
+  switch (r) {
     case l.Icon:
-      return /* @__PURE__ */ t("div", { className: "avatar__icon", "data-testid": "icon", children: /* @__PURE__ */ t(A, { asset: i, state: e, color: C.Neutral.Primary }) });
+      return /* @__PURE__ */ a("div", { className: "avatar__icon", "data-testid": "icon", children: /* @__PURE__ */ a(I, { asset: e, state: i, color: g.Neutral.Primary }) });
     case l.Initial:
-      return /* @__PURE__ */ t("div", { className: "avatar__initial", "data-testid": "initial", children: r ? /* @__PURE__ */ t(N, { textSize: y.Large, textType: T.Body, children: r }) : null });
+      return /* @__PURE__ */ a("div", { className: C("avatar__initial", t), "data-testid": "initial", children: c });
     case l.Picture:
-      return /* @__PURE__ */ t(
+      return /* @__PURE__ */ a(
         "img",
         {
-          src: o,
-          alt: n,
-          onError: c,
+          src: n,
+          alt: o,
+          onError: s,
           className: "avatar__picture",
           "data-testid": "avatarPicture"
         }
@@ -34,33 +34,35 @@ const I = ({
     default:
       return null;
   }
-}, k = ({
-  variant: a,
-  state: e,
-  iconAsset: i,
-  src: o,
-  alt: n,
-  onError: c,
-  editIcon: r,
-  flag: m,
-  onEdit: s,
+}, B = ({
+  variant: r,
+  state: i,
+  iconAsset: e,
+  src: n,
+  alt: o,
+  onError: s,
+  editIcon: c,
+  flag: t,
+  onEdit: m,
   shouldShowEdit: d,
   shouldShowFlag: u,
-  flagClassName: p,
-  initials: v
-}) => /* @__PURE__ */ f(x, { children: [
-  d && s ? /* @__PURE__ */ t(_, { onClick: s, editIcon: r }) : null,
-  u && m ? /* @__PURE__ */ t(h, { flag: m, className: p }) : null,
-  I({
-    variant: a,
-    state: e,
-    iconAsset: i,
-    src: o,
-    alt: n,
-    onError: c,
-    initials: v
+  flagClassName: v,
+  initials: p,
+  initialTypographyClassName: f
+}) => /* @__PURE__ */ N(_, { children: [
+  d && m ? /* @__PURE__ */ a(h, { onClick: m, editIcon: c }) : null,
+  u && t ? /* @__PURE__ */ a(A, { flag: t, className: v }) : null,
+  x({
+    variant: r,
+    state: i,
+    iconAsset: e,
+    src: n,
+    alt: o,
+    onError: s,
+    initials: p,
+    initialTypographyClassName: f
   })
 ] });
 export {
-  k as AvatarContent
+  B as AvatarContent
 };

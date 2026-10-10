@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("../infrastructure/constants.cjs"),n=(t,o)=>t.toLocaleString(e.PAGINATION_LOCALE[o]);exports.formatPaginationNumber=n;

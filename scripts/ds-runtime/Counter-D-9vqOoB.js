@@ -1,0 +1,1 @@
+import{V as a}from"./toranja-core-BeIyWOOf.js";var e=a(),r=({count:a,maxLength:r,...s})=>(0,e.jsxs)("div",{...s,className:`${s.className} type-label-small-regular`,children:[a,"/",r]});export{r as Counter};

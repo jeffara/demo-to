@@ -1,0 +1,10 @@
+{
+  "sourceArchive": "01-interco-toranja-1-.zip",
+  "sha256": "5bba4a23457ef75a335b7921c85c69c02f80acc9d879ea0d1d84eed21393d704",
+  "package": "@interco/inter-toranja",
+  "version": "2.0.1",
+  "files": 4230,
+  "allFileContentsMatchArchive": true,
+  "filenameDecoding": "UTF-8 bytes recovered from unflagged CP437 ZIP names; file bytes unchanged",
+  "patches": []
+}
